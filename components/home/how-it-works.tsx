@@ -18,15 +18,36 @@ export function HowItWorks() {
     <section>
       <h2 className="mb-3 text-2xl font-semibold text-black">How it Works</h2>
       <div className="grid gap-3 md:grid-cols-3">
-        {STEPS.map((step) => (
-          <div
-            key={step.title}
-            className="rounded-xl border border-zinc-800 bg-zinc-900/60 p-4"
-          >
-            <h3 className="text-sm font-semibold text-zinc-100">{step.title}</h3>
-            <p className="mt-1 text-sm text-white">{step.body}</p>
-          </div>
-        ))}
+        {STEPS.map((step) => {
+          const isCompareStep = step.title === "Compare Against Others";
+          const cardBg =
+            step.title === "Pick Your Nation"
+              ? "bg-zinc-900/60"
+              : "bg-[rgba(111,110,108,0.75)]";
+          return (
+            <div
+              key={step.title}
+              className={`rounded-xl border border-zinc-800 p-4 ${cardBg}${isCompareStep ? " text-white" : ""}`}
+            >
+              <h3
+                className={
+                  isCompareStep
+                    ? "text-[1.3125rem] font-semibold leading-tight"
+                    : "text-[1.3125rem] font-semibold leading-tight text-zinc-100"
+                }
+              >
+                {step.title}
+              </h3>
+              <p
+                className={
+                  isCompareStep ? "mt-3 text-sm" : "mt-3 text-sm text-white"
+                }
+              >
+                {step.body}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

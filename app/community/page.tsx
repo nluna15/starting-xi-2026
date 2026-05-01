@@ -1,29 +1,81 @@
 import Link from "next/link";
+import { inArray, sql } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
 import { CommunityPitch } from "@/components/community-pitch";
-import { getGlobalCrowdStats } from "@/lib/db/queries";
+import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
+import { db } from "@/lib/db/client";
+import { players, submissions, teams, type Player } from "@/lib/db/schema";
+import { getGlobalCrowdStats, getPickRatesForTeam } from "@/lib/db/queries";
 import { FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
 
-export default async function CommunityPage() {
+type SearchParams = Promise<{ submitted?: string | string[] }>;
+
+async function loadSubmittedContext(slug: string) {
+  const submissionRow = (
+    await db.select().from(submissions).where(sql`${submissions.publicSlug} = ${slug}`).limit(1)
+  )[0];
+  if (!submissionRow) return null;
+
+  const teamRow = (
+    await db.select().from(teams).where(sql`${teams.id} = ${submissionRow.teamId}`).limit(1)
+  )[0];
+  if (!teamRow) return null;
+
+  const allIds = [...submissionRow.starters, ...submissionRow.bench];
+  const playerRows = allIds.length
+    ? await db.select().from(players).where(inArray(players.id, allIds))
+    : [];
+  const byId = new Map(playerRows.map((p) => [p.id, p] as const));
+
+  const starters = submissionRow.starters
+    .map((id) => byId.get(id) ?? null)
+    .filter((p): p is Player => Boolean(p));
+  const bench = submissionRow.bench
+    .map((id) => byId.get(id) ?? null)
+    .filter((p): p is Player => Boolean(p));
+
+  const pickRates = await getPickRatesForTeam(teamRow.id);
+
+  return {
+    team: { name: teamRow.name, flagEmoji: teamRow.flagEmoji },
+    teamCode: teamRow.code,
+    starters,
+    bench,
+    pickRates,
+  };
+}
+
+export default async function CommunityPage({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
+  const { submitted } = await searchParams;
+  const submittedSlug = Array.isArray(submitted) ? submitted[0] : submitted;
+  const submittedContext = submittedSlug ? await loadSubmittedContext(submittedSlug) : null;
+
   const stats = await getGlobalCrowdStats();
 
   if (stats.totalSubmissions === 0) {
     return (
-      <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
-        <span className="text-4xl" aria-hidden>
-          🏆
-        </span>
-        <h1 className="text-2xl font-bold">No submissions yet</h1>
-        <p className="max-w-md text-sm text-zinc-400">
-          Be the first to submit a lineup and the community page will start to fill in.
-        </p>
-        <Link href="/countries">
-          <Button>Pick a country</Button>
-        </Link>
-      </div>
+      <>
+        <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
+          <span className="text-4xl" aria-hidden>
+            🏆
+          </span>
+          <h1 className="text-2xl font-bold">No submissions yet</h1>
+          <p className="max-w-md text-sm text-zinc-400">
+            Be the first to submit a lineup and the community page will start to fill in.
+          </p>
+          <Link href="/countries">
+            <Button>Pick a country</Button>
+          </Link>
+        </div>
+        {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
+      </>
     );
   }
 
@@ -45,18 +97,15 @@ export default async function CommunityPage() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <p className="text-xs font-semibold uppercase tracking-widest text-blue-400">
-          Wisdom of the crowd · Global
-        </p>
-        <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
-          Community&rsquo;s Best 11
-        </h1>
-        <p className="mt-1 text-sm text-zinc-400">
-          Mixed across all national teams. Based on {stats.totalSubmissions} submission
-          {stats.totalSubmissions === 1 ? "" : "s"}. Each slot shows the player picked most often
-          worldwide for that position.
-        </p>
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+            Community&rsquo;s Best 11
+          </h1>
+        </div>
+        <Link href="/countries" className="sm:shrink-0">
+          <Button size="lg">Submit your own XI</Button>
+        </Link>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
@@ -70,13 +119,13 @@ export default async function CommunityPage() {
           </div>
         )}
         <div className="space-y-4">
-          <Card title="Most-popular formation">
+          <Card title="Most-popular formation" className="text-white" titleClassName="text-white">
             <div className="text-2xl font-bold">{stats.topFormation?.name ?? "—"}</div>
-            <ul className="mt-2 space-y-1 text-sm text-zinc-400">
+            <ul className="mt-2 space-y-1 text-sm">
               {stats.formationCounts.map((f) => (
                 <li key={f.name} className="flex items-center justify-between">
                   <span>{f.name}</span>
-                  <span className="text-zinc-300">
+                  <span>
                     {f.count} ({Math.round((f.count / stats.totalSubmissions) * 100)}%)
                   </span>
                 </li>
@@ -84,41 +133,46 @@ export default async function CommunityPage() {
             </ul>
           </Card>
 
-          <Card title="Most-picked players">
-            <ol className="space-y-2 text-sm">
+          <Card title="Most-picked players" titleClassName="text-white">
+            <ol className="space-y-2 text-sm text-white">
               {stats.topPlayers.length === 0 && (
-                <li className="text-zinc-500">No data yet.</li>
+                <li>No data yet.</li>
               )}
               {stats.topPlayers.map((b, i) => (
                 <li key={b.player.id} className="flex items-center justify-between gap-2">
                   <span className="flex items-center gap-2">
-                    <span className="text-zinc-500">{i + 1}.</span>
-                    <span className="font-medium text-zinc-100">{b.player.fullName}</span>
-                    <span className="text-xs text-zinc-500">{b.player.detailedPosition}</span>
+                    <span>{i + 1}.</span>
+                    <span className="font-medium">{b.player.fullName}</span>
+                    <span className="text-xs">{b.player.detailedPosition}</span>
                   </span>
-                  <span className="text-xs text-zinc-400">
-                    {Math.round(b.rate * 100)}%
-                  </span>
+                  <span className="text-xs">{Math.round(b.rate * 100)}%</span>
                 </li>
               ))}
             </ol>
           </Card>
         </div>
       </div>
-
-      <div className="flex justify-center">
-        <Link href="/countries">
-          <Button size="lg">Submit your own XI</Button>
-        </Link>
-      </div>
+      {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({
+  title,
+  children,
+  className = "",
+  titleClassName = "text-zinc-300",
+}: {
+  title: string;
+  children: React.ReactNode;
+  className?: string;
+  titleClassName?: string;
+}) {
   return (
-    <section className="rounded-xl border border-zinc-800 bg-zinc-900/60 p-4">
-      <h2 className="mb-2 text-sm font-semibold text-zinc-300">{title}</h2>
+    <section
+      className={`rounded-xl border border-zinc-800 bg-zinc-900/60 p-4 ${className}`.trim()}
+    >
+      <h2 className={`mb-2 text-sm font-semibold ${titleClassName}`}>{title}</h2>
       {children}
     </section>
   );

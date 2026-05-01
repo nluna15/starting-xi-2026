@@ -119,14 +119,10 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
               <BuildPitch
                 formation={formation}
                 starters={startersResolved}
+                bench={benchResolved}
                 showPhotos
               />
             </div>
-          </div>
-          <div className="flex items-center justify-center gap-6 pt-2">
-            {benchResolved.map((p, i) => (
-              <BenchCircle key={i} player={p} index={i} />
-            ))}
           </div>
         </div>
 
@@ -145,11 +141,6 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
             <OwnerLineupActions
               slug={slug}
               initialNote={submissionRow.note ?? null}
-              team={{ name: teamRow.name, flagEmoji: teamRow.flagEmoji }}
-              teamCode={teamRow.code}
-              starters={startersResolved.filter((p): p is Player => Boolean(p))}
-              bench={benchResolved.filter((p): p is Player => Boolean(p))}
-              pickRates={pickRates}
             />
           ) : submissionRow.note ? (
             <div>
@@ -216,53 +207,6 @@ function StatTile({ label, value }: { label: string; value: string }) {
   );
 }
 
-function BenchCircle({ player, index }: { player: Player | null; index: number }) {
-  return (
-    <div className="flex flex-col items-center gap-1.5">
-      <div className="relative">
-        <div
-          className={cn(
-            "flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border-2 text-xs font-semibold shadow-sm sm:h-14 sm:w-14 sm:text-sm",
-            player
-              ? "border-foreground/20 bg-surface text-foreground"
-              : "border-dashed border-border-strong bg-surface-muted text-muted",
-          )}
-        >
-          {player?.photoUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={player.photoUrl}
-              alt={player.fullName}
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
-          ) : player ? (
-            getInitials(player.fullName)
-          ) : (
-            "—"
-          )}
-        </div>
-        {player?.jerseyNumber != null && (
-          <span className="pointer-events-none absolute -top-1 -left-1 flex h-5 w-5 items-center justify-center rounded-full border border-border bg-surface text-[10px] font-bold leading-none text-foreground shadow-sm">
-            {player.jerseyNumber}
-          </span>
-        )}
-        <span className="pointer-events-none absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] font-bold leading-none text-accent-foreground shadow-sm">
-          {index + 1}
-        </span>
-      </div>
-      <span
-        className={cn(
-          "max-w-[80px] truncate text-[11px] font-semibold uppercase tracking-wide",
-          player ? "text-foreground" : "text-muted",
-        )}
-      >
-        {player ? getLastName(player.fullName) : `Sub ${index + 1}`}
-      </span>
-    </div>
-  );
-}
-
 function PickRow({
   player,
   slotLabel,
@@ -302,14 +246,3 @@ function PickRow({
   );
 }
 
-function getInitials(name: string): string {
-  const parts = name.split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return "?";
-  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-}
-
-function getLastName(name: string): string {
-  const parts = name.split(/\s+/).filter(Boolean);
-  return parts[parts.length - 1] ?? name;
-}
