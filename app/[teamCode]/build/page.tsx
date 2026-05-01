@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LineupBuilder } from "@/components/lineup-builder";
 import { Button } from "@/components/ui/button";
-import { getPlayersForTeam, getSubmissionCountForTeam, getTeamByCode } from "@/lib/db/queries";
+import { getPickRatesForTeam, getPlayersForTeam, getTeamByCode } from "@/lib/db/queries";
 
 export const dynamic = "force-dynamic";
 
@@ -13,9 +13,9 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
   const team = await getTeamByCode(teamCode.toUpperCase());
   if (!team) notFound();
 
-  const [pool, submissionCount] = await Promise.all([
+  const [pool, pickRates] = await Promise.all([
     getPlayersForTeam(team.id),
-    getSubmissionCountForTeam(team.id),
+    getPickRatesForTeam(team.id),
   ]);
 
   if (pool.length === 0) {
@@ -25,7 +25,7 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
           {team.flagEmoji}
         </span>
         <h1 className="text-2xl font-semibold">{team.name} roster coming soon</h1>
-        <p className="max-w-md text-sm text-zinc-400">
+        <p className="max-w-md text-sm text-muted">
           We haven&rsquo;t loaded a player pool for {team.name} yet. Check back later, or pick a
           different country.
         </p>
@@ -38,28 +38,32 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-blue-400">
-            {team.flagEmoji} {team.name}
-          </p>
-          <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
-            Build your {team.name} XI
-          </h1>
-          <p className="mt-1 text-sm text-zinc-400">
-            {pool.length} players in the pool. Pick your formation, fill all 14 slots, then submit.
+      <div className="flex items-end justify-between gap-3 border-b border-border pb-4">
+        <div className="flex items-center gap-3">
+          <span className="text-2xl leading-none" aria-hidden>
+            {team.flagEmoji}
+          </span>
+          <div>
+            <h1 className="text-lg font-semibold uppercase tracking-wide leading-tight">
+              {team.name}
+            </h1>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted">
+              Building XI
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-end gap-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+            Step 02 / 03
           </p>
         </div>
-        {submissionCount > 0 && (
-          <Link
-            href={`/${team.code}/crowd`}
-            className="text-sm font-medium text-blue-400 hover:text-blue-300"
-          >
-            See the crowd&rsquo;s XI →
-          </Link>
-        )}
       </div>
-      <LineupBuilder players={pool} teamCode={team.code} />
+      <LineupBuilder
+        players={pool}
+        teamCode={team.code}
+        pickCounts={Array.from(pickRates.picksByPlayerId.entries())}
+        totalSubmissions={pickRates.totalSubmissions}
+      />
     </div>
   );
 }

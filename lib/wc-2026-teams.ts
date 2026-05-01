@@ -86,6 +86,61 @@ export const WC_2026_SLOTS: WcSlot[] = [
   { kind: "confirmed", code: "NZL", name: "New Zealand", flagEmoji: "🇳🇿" },
 ];
 
+// FIFA 3-letter code → ISO 3166-1 alpha-2 country code.
+// Consumed by the community pitch to feed `countryCode` into the soccer-pitch
+// package, whose flag converter only accepts 2-letter regional-indicator
+// codes. ENG and SCO are intentionally absent — their flags are tag-based
+// emojis (subdivisions of GB) with no regional-indicator equivalent, and
+// substituting "GB" would render the wrong flag.
+export const FIFA_TO_ISO2: Record<string, string> = {
+  USA: "US",
+  MEX: "MX",
+  CAN: "CA",
+  ARG: "AR",
+  BRA: "BR",
+  URU: "UY",
+  COL: "CO",
+  ECU: "EC",
+  PAR: "PY",
+  FRA: "FR",
+  ESP: "ES",
+  GER: "DE",
+  POR: "PT",
+  NED: "NL",
+  BEL: "BE",
+  CRO: "HR",
+  SUI: "CH",
+  AUT: "AT",
+  NOR: "NO",
+  SWE: "SE",
+  CZE: "CZ",
+  TUR: "TR",
+  BIH: "BA",
+  JPN: "JP",
+  KOR: "KR",
+  IRN: "IR",
+  AUS: "AU",
+  KSA: "SA",
+  QAT: "QA",
+  JOR: "JO",
+  IRQ: "IQ",
+  UZB: "UZ",
+  MAR: "MA",
+  SEN: "SN",
+  EGY: "EG",
+  CIV: "CI",
+  ALG: "DZ",
+  TUN: "TN",
+  GHA: "GH",
+  RSA: "ZA",
+  CPV: "CV",
+  COD: "CD",
+  PAN: "PA",
+  HAI: "HT",
+  CUW: "CW",
+  NZL: "NZ",
+};
+
 // FIFA 3-letter code → country_name as it appears in the
 // transfermarkt-datasets.duckdb `national_teams.country_name` column.
 // Used by scripts that build/audit player JSON from the DuckDB snapshot.

@@ -7,6 +7,7 @@ import { and, eq, inArray } from "drizzle-orm";
 import { nanoid } from "nanoid";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
+import { getFormation } from "@/lib/formations";
 import { getOrCreateFingerprint } from "@/lib/fingerprint";
 
 const SubmitSchema = z.object({
@@ -42,11 +43,24 @@ export async function submitLineupAction(input: SubmitInput): Promise<SubmitResu
     return { ok: false, error: `Unknown team: ${teamCode}` };
   }
 
-  const formationRow = (
+  let formationRow = (
     await db.select().from(formations).where(eq(formations.name, formationName)).limit(1)
   )[0];
   if (!formationRow) {
-    return { ok: false, error: `Unknown formation: ${formationName}` };
+    const def = getFormation(formationName);
+    if (!def) {
+      return { ok: false, error: `Unknown formation: ${formationName}` };
+    }
+    formationRow = (
+      await db
+        .insert(formations)
+        .values({ name: def.name, slots: def.slots })
+        .onConflictDoUpdate({
+          target: formations.name,
+          set: { slots: def.slots },
+        })
+        .returning()
+    )[0];
   }
   if (formationRow.slots.length !== 11) {
     return { ok: false, error: "Formation does not have 11 slots." };

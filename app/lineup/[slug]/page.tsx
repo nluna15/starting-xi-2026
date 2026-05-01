@@ -2,13 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
-import { FormationPitch } from "@/components/formation-pitch";
-import { NoteForm } from "@/components/note-form";
+import { BuildPitch } from "@/components/build-pitch";
+import { OwnerLineupActions } from "@/components/owner-lineup-actions";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
 import { getPickRatesForTeam } from "@/lib/db/queries";
 import { readFingerprint } from "@/lib/fingerprint";
-import { cn, formatEur } from "@/lib/utils";
+import { cn, formatAge, formatEur } from "@/lib/utils";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 
@@ -27,15 +27,15 @@ function categorize(rate: number): PickCategory {
 const CATEGORY_STYLES: Record<PickCategory, { label: string; className: string }> = {
   conventional: {
     label: "Conventional",
-    className: "border-emerald-700/60 bg-emerald-900/40 text-emerald-200",
+    className: "border-emerald-300 bg-emerald-100 text-emerald-800",
   },
   debated: {
     label: "Debated",
-    className: "border-amber-700/60 bg-amber-900/40 text-amber-200",
+    className: "border-amber-300 bg-amber-100 text-amber-800",
   },
   bold: {
     label: "Bold",
-    className: "border-fuchsia-700/60 bg-fuchsia-900/40 text-fuchsia-200",
+    className: "border-fuchsia-300 bg-fuchsia-100 text-fuchsia-800",
   },
 };
 
@@ -100,62 +100,70 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
     <div className="space-y-6">
       <div className="flex items-end justify-between gap-3">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-blue-400">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
             {teamRow.flagEmoji} {teamRow.name} · {formation.name}
           </p>
-          <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
+          <h1 className="mt-1 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
             {isOwner ? "Your" : "One fan's"} {teamRow.name} 2026
           </h1>
         </div>
-        <Link href={`/${teamRow.code}/build`}>
-          <Button variant="outline" size="md">
-            Build your own
-          </Button>
-        </Link>
       </div>
 
-      <FormationPitch
-        formation={formation}
-        starters={startersResolved}
-        readOnly
-        showPhotos={teamRow.code === "USA"}
-      />
-
-      <div>
-        <h3 className="mb-2 text-sm font-semibold text-zinc-300">Bench</h3>
-        <ul className="grid grid-cols-3 gap-2">
-          {benchResolved.map((p, i) => (
-            <li
-              key={i}
-              className="rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-xs"
-            >
-              <div className="font-semibold text-zinc-100">{p?.fullName ?? "—"}</div>
-              <div className="text-zinc-400">
-                {p ? `${p.detailedPosition} · ${formatEur(p.marketValueEur)}` : ""}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <section>
-        <h3 className="mb-2 text-sm font-semibold text-zinc-300">Squad summary</h3>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Stat label="Formation" value={formation.name} />
-          <Stat
-            label="Avg age (14)"
-            value={avgAge != null ? avgAge.toFixed(1) : "—"}
-          />
-          <Stat label="Total value" value={formatEur(totalValue)} />
-          <Stat
-            label="Fans for this team"
-            value={pickRates.totalSubmissions.toLocaleString()}
-          />
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="space-y-4">
+          <div className="space-y-2">
+            <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+              Formation {formation.name}
+            </p>
+            <div className="w-[90%]">
+              <BuildPitch
+                formation={formation}
+                starters={startersResolved}
+                showPhotos
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-6 pt-2">
+            {benchResolved.map((p, i) => (
+              <BenchCircle key={i} player={p} index={i} />
+            ))}
+          </div>
         </div>
-      </section>
+
+        <div className="space-y-4 lg:mt-7">
+          <div className="grid grid-cols-2 gap-3">
+            <StatTile label="Average Age" value={formatAge(avgAge)} />
+            <StatTile label="Team Market Value" value={formatEur(totalValue)} />
+            <StatTile label="International Caps" value="—" />
+            <StatTile
+              label="Fans for this team"
+              value={pickRates.totalSubmissions.toLocaleString()}
+            />
+          </div>
+
+          {isOwner ? (
+            <OwnerLineupActions
+              slug={slug}
+              initialNote={submissionRow.note ?? null}
+              team={{ name: teamRow.name, flagEmoji: teamRow.flagEmoji }}
+              teamCode={teamRow.code}
+              starters={startersResolved.filter((p): p is Player => Boolean(p))}
+              bench={benchResolved.filter((p): p is Player => Boolean(p))}
+              pickRates={pickRates}
+            />
+          ) : submissionRow.note ? (
+            <div>
+              <h3 className="mb-2 text-sm font-semibold text-foreground">Their reasoning</h3>
+              <blockquote className="rounded-lg border border-border bg-surface px-3 py-2 text-sm italic text-foreground">
+                {submissionRow.note}
+              </blockquote>
+            </div>
+          ) : null}
+        </div>
+      </div>
 
       <section>
-        <h3 className="mb-2 text-sm font-semibold text-zinc-300">How your picks compare</h3>
+        <h3 className="mb-2 text-sm font-semibold text-foreground">How your picks compare</h3>
         {tagsEnabled ? (
           <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {startersResolved.map((p, i) => (
@@ -178,25 +186,12 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
             ))}
           </ul>
         ) : (
-          <p className="rounded-lg border border-dashed border-zinc-800 bg-zinc-950 px-3 py-4 text-xs text-zinc-500">
+          <p className="rounded-lg border border-dashed border-border bg-surface-muted px-3 py-4 text-xs text-muted">
             Need at least {MIN_SUBMISSIONS_FOR_TAGS} {teamRow.name} lineups before we can label
             picks. Currently at {pickRates.totalSubmissions}. Share the link to get more fans
             in.
           </p>
         )}
-      </section>
-
-      <section>
-        {isOwner ? (
-          <NoteForm slug={slug} initialNote={submissionRow.note ?? null} />
-        ) : submissionRow.note ? (
-          <div>
-            <h3 className="mb-2 text-sm font-semibold text-zinc-300">Their reasoning</h3>
-            <blockquote className="rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm italic text-zinc-300">
-              {submissionRow.note}
-            </blockquote>
-          </div>
-        ) : null}
       </section>
 
       <div className="flex justify-end">
@@ -210,11 +205,60 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function StatTile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2">
-      <div className="text-[11px] uppercase tracking-wide text-zinc-500">{label}</div>
-      <div className="text-sm font-semibold text-zinc-100">{value}</div>
+    <div className="rounded-lg border border-border bg-surface-muted px-4 py-4 text-center">
+      <div className="text-[11px] font-medium uppercase tracking-wide text-muted">
+        {label}
+      </div>
+      <div className="mt-1 text-base font-semibold text-foreground">{value}</div>
+    </div>
+  );
+}
+
+function BenchCircle({ player, index }: { player: Player | null; index: number }) {
+  return (
+    <div className="flex flex-col items-center gap-1.5">
+      <div className="relative">
+        <div
+          className={cn(
+            "flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border-2 text-xs font-semibold shadow-sm sm:h-14 sm:w-14 sm:text-sm",
+            player
+              ? "border-foreground/20 bg-surface text-foreground"
+              : "border-dashed border-border-strong bg-surface-muted text-muted",
+          )}
+        >
+          {player?.photoUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={player.photoUrl}
+              alt={player.fullName}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          ) : player ? (
+            getInitials(player.fullName)
+          ) : (
+            "—"
+          )}
+        </div>
+        {player?.jerseyNumber != null && (
+          <span className="pointer-events-none absolute -top-1 -left-1 flex h-5 w-5 items-center justify-center rounded-full border border-border bg-surface text-[10px] font-bold leading-none text-foreground shadow-sm">
+            {player.jerseyNumber}
+          </span>
+        )}
+        <span className="pointer-events-none absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] font-bold leading-none text-accent-foreground shadow-sm">
+          {index + 1}
+        </span>
+      </div>
+      <span
+        className={cn(
+          "max-w-[80px] truncate text-[11px] font-semibold uppercase tracking-wide",
+          player ? "text-foreground" : "text-muted",
+        )}
+      >
+        {player ? getLastName(player.fullName) : `Sub ${index + 1}`}
+      </span>
     </div>
   );
 }
@@ -233,12 +277,12 @@ function PickRow({
   const category = hasData ? categorize(rate) : null;
   const style = category ? CATEGORY_STYLES[category] : null;
   return (
-    <li className="flex items-center justify-between gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2">
+    <li className="flex items-center justify-between gap-3 rounded-lg border border-border bg-surface px-3 py-2">
       <div className="min-w-0">
-        <div className="truncate text-sm font-semibold text-zinc-100">
+        <div className="truncate text-sm font-semibold text-foreground">
           {player?.fullName ?? "—"}
         </div>
-        <div className="truncate text-[11px] text-zinc-500">
+        <div className="truncate text-[11px] text-muted">
           {slotLabel}
           {player ? ` · ${player.detailedPosition}` : ""}
           {hasData ? ` · ${Math.round(rate * 100)}% pick rate` : ""}
@@ -256,4 +300,16 @@ function PickRow({
       )}
     </li>
   );
+}
+
+function getInitials(name: string): string {
+  const parts = name.split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "?";
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function getLastName(name: string): string {
+  const parts = name.split(/\s+/).filter(Boolean);
+  return parts[parts.length - 1] ?? name;
 }
