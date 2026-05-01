@@ -1,5 +1,6 @@
 import formationsJson from "@/data/formations.json";
 import type { FormationSlot, Player } from "@/lib/db/schema";
+import type { FormationName } from "soccer-pitch";
 
 export type FormationDef = {
   name: string;
@@ -7,6 +8,52 @@ export type FormationDef = {
 };
 
 export const FORMATIONS: FormationDef[] = formationsJson as FormationDef[];
+
+export const PACKAGE_FORMATION_NAMES: ReadonlySet<string> = new Set<FormationName>([
+  "4-4-2",
+  "4-3-3",
+  "3-5-2",
+  "4-2-3-1",
+  "4-1-4-1",
+  "3-4-3",
+  "5-3-2",
+  "4-4-1-1",
+  "5-4-1",
+  "4-5-1",
+  "3-4-2-1",
+  "4-3-2-1",
+]);
+
+export const BUILDABLE_FORMATIONS: FormationDef[] = FORMATIONS.filter((f) =>
+  PACKAGE_FORMATION_NAMES.has(f.name),
+);
+
+/** Lineup builder chip order (not DEF-slot count — e.g. 3-5-2 wingbacks are DEF in slot data). */
+export const BUILDABLE_FORMATION_CHIP_ORDER: readonly string[] = [
+  "3-4-2-1",
+  "3-4-3",
+  "3-5-2",
+  "4-1-4-1",
+  "4-2-3-1",
+  "4-3-2-1",
+  "4-3-3",
+  "4-4-1-1",
+  "4-4-2",
+  "4-5-1",
+  "5-3-2",
+  "5-4-1",
+] as const;
+
+const BUILDABLE_FORMATION_CHIP_INDEX: ReadonlyMap<string, number> = new Map(
+  BUILDABLE_FORMATION_CHIP_ORDER.map((name, i) => [name, i]),
+);
+
+export function compareBuildableFormationChips(a: FormationDef, b: FormationDef): number {
+  const ia = BUILDABLE_FORMATION_CHIP_INDEX.get(a.name) ?? 1e3;
+  const ib = BUILDABLE_FORMATION_CHIP_INDEX.get(b.name) ?? 1e3;
+  if (ia !== ib) return ia - ib;
+  return a.name.localeCompare(b.name);
+}
 
 export function getFormation(name: string): FormationDef | undefined {
   return FORMATIONS.find((f) => f.name === name);
@@ -66,6 +113,7 @@ export const SLOT_TO_DETAILED: Record<string, string> = {
   ST: "ST",
   LST: "ST",
   RST: "ST",
+  SS: "SS",
 };
 
 const COMPATIBLE: Record<FormationSlot["position"], FormationSlot["position"][]> = {

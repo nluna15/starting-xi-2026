@@ -37,3 +37,21 @@ html, body {
 body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
+
+.sp-soccer-pitch {
+  --sp-dot-min: 65px !important;
+  --sp-dot-preferred: 17.5% !important;
+  --sp-dot-max: 121px !important;
+}
+
+.sp-soccer-pitch .sp-bench {
+  margin-top: 80px !important;
+}
+
+.sp-soccer-pitch .sp-bench-row {
+  height: 96px !important;
+}
+
+.sp-soccer-pitch .sp-bench-title {
+  color: rgba(0, 0, 0, 1);
+}

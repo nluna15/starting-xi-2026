@@ -8,7 +8,6 @@ import {
   BROAD_ORDER,
   DETAILED_BY_BROAD,
   DETAILED_TO_BROAD,
-  POSITION_LABEL,
   type BroadPosition,
 } from "@/lib/formations";
 import { cn } from "@/lib/utils";
@@ -52,19 +51,7 @@ export function PlayerPicker(props: PlayerPickerProps) {
         className="max-w-xl"
       >
         <PickerBody {...props} />
-        <div className="flex items-center justify-between gap-2 border-t border-border p-3">
-          {props.onClear && props.currentPick ? (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={props.onClear}
-              className="bg-accent text-accent-foreground hover:bg-accent-hover hover:text-accent-foreground"
-            >
-              Clear slot
-            </Button>
-          ) : (
-            <span />
-          )}
+        <div className="flex justify-end gap-2 border-t border-border p-3">
           <Button variant="secondary" size="sm" onClick={props.onClose}>
             Cancel
           </Button>
@@ -153,14 +140,12 @@ function PickerBody({
   );
 
   const positionCode = slotPositionCode ?? null;
-  const positionWord = positionCode ? POSITION_LABEL[positionCode]?.toUpperCase() : "PLAYER";
+  const positionAbbrev =
+    slotDetailedCode?.trim() ||
+    positionCode ||
+    null;
+  const positionWord = positionAbbrev ? positionAbbrev.toUpperCase() : "PLAYER";
   const noun = positionCode ? POSITION_NOUN[positionCode] ?? "players" : "players";
-  const slotNumberText =
-    slotKind === "bench"
-      ? `BENCH ${(slotIndex ?? 0) + 1}`
-      : slotIndex != null
-        ? `SLOT ${slotIndex + 1}`
-        : null;
 
   function toggleDetailed(code: string) {
     setSelected((prev) => {
@@ -194,24 +179,21 @@ function PickerBody({
   return (
     <div className="flex flex-col">
       <div className="space-y-3 border-b border-border p-4">
-        <div>
-          <p className="text-sm font-bold uppercase tracking-wide text-foreground">
-            Pick for{" "}
-            <span className="text-foreground">{positionWord}</span>{" "}
-            {slotNumberText && (
-              <span className="text-accent">· {slotNumberText}</span>
-            )}
-          </p>
-          <p className="mt-1 text-xs text-muted">
-            {currentPick ? (
-              <>
-                Current: <span className="font-medium text-foreground">{currentPick.fullName}</span>{" "}
-                — tap another to swap
-              </>
-            ) : (
-              <>No pick yet — tap a player to fill this slot</>
-            )}
-          </p>
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-bold uppercase tracking-wide text-foreground">
+              Pick for <span className="text-foreground">{positionWord}</span>
+            </p>
+          </div>
+          {onClear && currentPick ? (
+            <button
+              type="button"
+              onClick={onClear}
+              className="shrink-0 rounded-md bg-red-600 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-white hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+            >
+              Clear slot
+            </button>
+          ) : null}
         </div>
 
         <div className="space-y-1.5">
@@ -323,20 +305,11 @@ function PickerBody({
         })}
       </ul>
 
-      <div className="flex items-center justify-between gap-2 border-t border-border bg-surface-muted px-4 py-2 text-[11px] uppercase tracking-wide text-muted">
+      <div className="border-t border-border bg-surface-muted px-4 py-2 text-[11px] uppercase tracking-wide text-muted">
         <span>
           {eligibleCount} eligible
           {mode === "panel" && " · click a pitch slot to retarget"}
         </span>
-        {mode === "panel" && onClear && currentPick && (
-          <button
-            type="button"
-            onClick={onClear}
-            className="font-semibold text-accent hover:text-accent-hover"
-          >
-            Clear slot
-          </button>
-        )}
       </div>
     </div>
   );

@@ -107,7 +107,7 @@ function SlotMarker({
       <div className="relative">
         <div
           className={cn(
-            "flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border-2 text-xs font-semibold shadow-md sm:h-14 sm:w-14 sm:text-sm",
+            "flex h-[84px] w-[84px] items-center justify-center overflow-hidden rounded-full border-2 text-sm font-semibold shadow-md sm:h-[98px] sm:w-[98px] sm:text-base",
             player
               ? "border-white bg-white text-emerald-900"
               : "border-white/60 border-dashed bg-emerald-900/40 text-white",

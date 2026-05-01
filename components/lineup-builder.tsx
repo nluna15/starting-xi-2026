@@ -2,16 +2,17 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { FormationPitch } from "@/components/formation-pitch";
+import { BuildPitch } from "@/components/build-pitch";
 import { PlayerPicker } from "@/components/player-picker";
 import {
-  FORMATIONS,
+  BUILDABLE_FORMATIONS,
+  compareBuildableFormationChips,
   SLOT_TO_DETAILED,
   reassignStarters,
   type FormationDef,
 } from "@/lib/formations";
 import type { Player } from "@/lib/db/schema";
-import { cn, formatAge, formatEur } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { submitLineupAction } from "@/app/[teamCode]/build/actions";
 
 const BENCH_SIZE = 3;
@@ -37,17 +38,11 @@ export function LineupBuilder({
   const showPhotos = true;
   const [formationName, setFormationName] = React.useState(defaultFormation);
   const formation = React.useMemo<FormationDef>(
-    () => FORMATIONS.find((f) => f.name === formationName) ?? FORMATIONS[0],
+    () => BUILDABLE_FORMATIONS.find((f) => f.name === formationName) ?? BUILDABLE_FORMATIONS[0],
     [formationName],
   );
   const sortedFormations = React.useMemo(
-    () =>
-      [...FORMATIONS].sort((a, b) => {
-        const aDefenders = a.slots.filter((slot) => slot.position === "DEF").length;
-        const bDefenders = b.slots.filter((slot) => slot.position === "DEF").length;
-        if (aDefenders !== bDefenders) return aDefenders - bDefenders;
-        return a.name.localeCompare(b.name);
-      }),
+    () => [...BUILDABLE_FORMATIONS].sort(compareBuildableFormationChips),
     [],
   );
 
@@ -143,16 +138,9 @@ export function LineupBuilder({
 
   const filledCount = starters.filter(Boolean).length + bench.filter(Boolean).length;
   const startersFilled = starters.filter(Boolean).length;
+  const benchFilled = bench.filter(Boolean).length;
   const allFilled =
     starters.every((p): p is Player => Boolean(p)) && bench.every((p): p is Player => Boolean(p));
-
-  const startersOnly = starters.filter((p): p is Player => Boolean(p));
-  const allPicks = [...startersOnly, ...bench.filter((p): p is Player => Boolean(p))];
-  const avgAge =
-    startersOnly.length > 0
-      ? startersOnly.reduce((s, p) => s + p.age, 0) / startersOnly.length
-      : null;
-  const totalValue = allPicks.reduce((s, p) => s + p.marketValueEur, 0);
 
   async function handleSubmit() {
     if (!allFilled || submitting) return;
@@ -205,94 +193,75 @@ export function LineupBuilder({
       </div>
 
       <div className="grid gap-6 md:grid-cols-[1fr_360px]">
-        <div className="space-y-4">
+        <div className="order-2 space-y-4 md:order-1">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-muted px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground">
-              <span className={cn("h-1.5 w-1.5 rounded-full", allFilled ? "bg-accent" : "bg-muted")} />
-              {startersFilled} / 11 Starting
+            <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5 rounded-full border border-border bg-surface-muted px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground">
+              <span className={cn("h-1.5 w-1.5 shrink-0 rounded-full", allFilled ? "bg-accent" : "bg-muted")} />
+              <span className="tabular-nums">
+                {startersFilled} / 11 starting
+              </span>
+              <span className="text-foreground/35" aria-hidden>
+                |
+              </span>
+              <span className="tabular-nums">
+                {benchFilled} / {BENCH_SIZE} substitutes
+              </span>
             </span>
           </div>
 
-          <FormationPitch
-            formation={formation}
-            starters={starters}
-            onSlotClick={(idx) => setActiveSlot({ kind: "starter", index: idx })}
-            highlightSlot={highlightSlot}
-            showPhotos={showPhotos}
-          />
-
-          <div className="flex items-end justify-center gap-6 pt-2">
-            {bench.map((p, i) => {
-              const isActive = active.kind === "bench" && active.index === i;
-              return (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => setActiveSlot({ kind: "bench", index: i })}
-                  className="group flex flex-col items-center gap-1.5 focus:outline-none"
-                >
-                  <div className="relative">
-                    <div
-                      className={cn(
-                        "flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border-2 text-xs font-semibold shadow-sm sm:h-14 sm:w-14 sm:text-sm",
-                        p
-                          ? "border-foreground/20 bg-surface text-foreground"
-                          : "border-dashed border-border-strong bg-surface-muted text-muted",
-                        isActive && "ring-2 ring-accent ring-offset-2 ring-offset-background",
-                      )}
-                    >
-                      {p?.photoUrl ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          src={p.photoUrl}
-                          alt={p.fullName}
-                          className="h-full w-full object-cover"
-                          loading="lazy"
-                        />
-                      ) : p ? (
-                        getInitials(p.fullName)
-                      ) : (
-                        "+"
-                      )}
-                    </div>
-                    {p?.jerseyNumber != null && (
-                      <span className="pointer-events-none absolute -top-1 -left-1 flex h-5 w-5 items-center justify-center rounded-full border border-border bg-surface text-[10px] font-bold leading-none text-foreground shadow-sm">
-                        {p.jerseyNumber}
-                      </span>
-                    )}
-                  </div>
-                  <span
-                    className={cn(
-                      "max-w-[80px] truncate text-[11px] font-semibold uppercase tracking-wide",
-                      p ? "text-foreground" : "text-muted",
-                    )}
-                  >
-                    {p ? getLastName(p.fullName) : `Sub ${i + 1}`}
-                  </span>
-                </button>
-              );
-            })}
+          <div className="w-[90%]">
+            <BuildPitch
+              formation={formation}
+              starters={starters}
+              bench={bench}
+              onSlotClick={(idx) => setActiveSlot({ kind: "starter", index: idx })}
+              onBenchClick={(idx) => setActiveSlot({ kind: "bench", index: idx })}
+              highlightSlot={highlightSlot}
+              showPhotos={showPhotos}
+            />
           </div>
         </div>
 
-        <div className="hidden md:block">
-          <PlayerPicker
-            mode="panel"
-            onPick={handlePick}
-            onClear={handleClear}
-            players={players}
-            pickedIds={pickedIds}
-            filterPosition={slotPositionCode}
-            slotLabel={slotLabel}
-            slotPositionCode={slotPositionCode}
-            slotDetailedCode={slotDetailedCode}
-            slotIndex={active.index}
-            slotKind={active.kind}
-            currentPick={currentPick}
-            showPhotos={showPhotos}
-            pickCounts={pickCountMap}
-            totalSubmissions={totalSubmissions}
-          />
+        <div className="order-1 flex flex-col gap-4 md:order-2">
+          <div className="flex justify-end">
+            <button
+              type="button"
+              onClick={handleSubmit}
+              disabled={!allFilled || submitting}
+              className={cn(
+                "inline-flex h-12 items-center justify-center gap-2 rounded-md px-6 text-sm font-bold uppercase tracking-wide transition",
+                allFilled && !submitting
+                  ? "bg-accent text-accent-foreground hover:bg-accent-hover"
+                  : "cursor-not-allowed bg-border text-muted",
+              )}
+            >
+              {submitting
+                ? "Submitting…"
+                : allFilled
+                  ? "Review & Submit"
+                  : `${14 - filledCount} ${14 - filledCount === 1 ? "pick" : "picks"} remaining`}
+            </button>
+          </div>
+
+          <div className="hidden min-h-0 flex-1 md:block">
+            <PlayerPicker
+              mode="panel"
+              onPick={handlePick}
+              onClear={handleClear}
+              players={players}
+              pickedIds={pickedIds}
+              filterPosition={slotPositionCode}
+              slotLabel={slotLabel}
+              slotPositionCode={slotPositionCode}
+              slotDetailedCode={slotDetailedCode}
+              slotIndex={active.index}
+              slotKind={active.kind}
+              currentPick={currentPick}
+              showPhotos={showPhotos}
+              pickCounts={pickCountMap}
+              totalSubmissions={totalSubmissions}
+            />
+          </div>
         </div>
       </div>
 
@@ -323,38 +292,6 @@ export function LineupBuilder({
           {error}
         </div>
       )}
-
-      <div className="flex flex-col items-stretch gap-4 border-t border-border pt-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
-          <Stat label="Avg age" value={formatAge(avgAge)} />
-          <Stat label="Filled" value={`${filledCount} / 14`} />
-          <Stat label="Value" value={formatEur(totalValue)} />
-        </div>
-        <button
-          type="button"
-          onClick={handleSubmit}
-          disabled={!allFilled || submitting}
-          className={cn(
-            "inline-flex h-12 items-center justify-center gap-2 rounded-md px-6 text-sm font-bold uppercase tracking-wide transition",
-            allFilled && !submitting
-              ? "bg-accent text-accent-foreground hover:bg-accent-hover"
-              : "cursor-not-allowed bg-border text-muted",
-          )}
-        >
-          {submitting ? "Submitting…" : allFilled ? "Review & Submit" : `Fill ${14 - filledCount} more`}
-        </button>
-      </div>
-    </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex flex-col">
-      <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-        {label}
-      </span>
-      <span className="text-lg font-bold tabular-nums text-foreground">{value}</span>
     </div>
   );
 }
@@ -384,16 +321,4 @@ function findNextEmptyBench(bench: (Player | null)[], fromIndex: number): number
     if (!bench[i]) return i;
   }
   return null;
-}
-
-function getInitials(name: string): string {
-  const parts = name.split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return "?";
-  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-}
-
-function getLastName(name: string): string {
-  const parts = name.split(/\s+/).filter(Boolean);
-  return parts[parts.length - 1] ?? name;
 }

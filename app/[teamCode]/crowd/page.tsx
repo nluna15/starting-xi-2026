@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { FormationPitch } from "@/components/formation-pitch";
+import { BuildPitch } from "@/components/build-pitch";
 import { getCrowdStats, getTeamByCode } from "@/lib/db/queries";
 import { formatAge, formatEur } from "@/lib/utils";
 
@@ -37,7 +37,6 @@ export default async function CrowdPage({ params }: { params: Promise<Params> })
 
   const slots = stats.mostLikelyXi.slots;
   const startersResolved = slots.map((s) => s.player);
-  const pickRates = slots.map((s) => s.pickRate);
 
   const formationDef = stats.mostLikelyXi.formation
     ? { name: stats.mostLikelyXi.formation.name, slots: stats.mostLikelyXi.formation.slots }
@@ -61,13 +60,13 @@ export default async function CrowdPage({ params }: { params: Promise<Params> })
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <FormationPitch
-            formation={formationDef}
-            starters={startersResolved}
-            readOnly
-            pickRates={pickRates}
-            showPhotos
-          />
+          <div className="w-[90%]">
+            <BuildPitch
+              formation={formationDef}
+              starters={startersResolved}
+              showPhotos
+            />
+          </div>
         )}
         <div className="space-y-4">
           <Card title="Most-popular formation">

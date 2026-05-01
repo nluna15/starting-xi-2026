@@ -50,6 +50,7 @@ export default async function CountriesPage() {
                   enabled={status === "ready"}
                   layout="card"
                   size="md"
+                  borderless
                 />
               </li>
             );

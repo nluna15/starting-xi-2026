@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  CountryTile,
-  COUNTRY_TILE_BASE,
-  COUNTRY_TILE_ENABLED,
-} from "@/components/country-tile";
+import { CountryTile } from "@/components/country-tile";
 import { cn } from "@/lib/utils";
 
 export type CarouselTile = {
@@ -29,6 +25,7 @@ export function NationCarousel({ tiles, viewAllHref }: Props) {
             flagEmoji={tile.flagEmoji}
             enabled={tile.enabled}
             layout="row"
+            borderless
           />
         </li>
       ))}
@@ -44,8 +41,8 @@ function ViewAllTile({ href }: { href: string }) {
     <Link href={href} aria-label="All nations" className="block">
       <div
         className={cn(
-          COUNTRY_TILE_BASE,
-          COUNTRY_TILE_ENABLED,
+          "rounded-lg border-0 bg-[#cecaca] text-black transition",
+          "hover:bg-[#B91C1C] hover:text-white",
           "flex h-14 items-center justify-center px-3 text-base font-medium",
         )}
       >

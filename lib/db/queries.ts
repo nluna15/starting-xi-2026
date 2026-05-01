@@ -370,6 +370,7 @@ export type GlobalCrowdStats = {
       y: number;
       player: Player | null;
       pickRate: number;
+      teamCode: string | null;
     }>;
   };
   topPlayers: Array<{ player: Player; count: number; rate: number }>;
@@ -443,9 +444,19 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
 
       const playerIds = (slotRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
       const playerMap = new Map<number, Player>();
+      const teamCodeByTeamId = new Map<number, string>();
       if (playerIds.length > 0) {
         const ps = await db.select().from(players).where(inArray(players.id, playerIds));
         for (const p of ps) playerMap.set(p.id, p);
+
+        const teamIds = Array.from(new Set(Array.from(playerMap.values(), (p) => p.teamId)));
+        if (teamIds.length > 0) {
+          const ts = await db
+            .select({ id: teams.id, code: teams.code })
+            .from(teams)
+            .where(inArray(teams.id, teamIds));
+          for (const t of ts) teamCodeByTeamId.set(t.id, t.code);
+        }
       }
 
       slotResults = mostLikelyFormation.slots.map((slot, idx) => {
@@ -457,7 +468,8 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
         }>).find((r) => Number(r.slot_index) === idx);
         const player = row ? playerMap.get(Number(row.player_id)) ?? null : null;
         const pickRate = row && row.total_picks ? Number(row.picks) / Number(row.total_picks) : 0;
-        return { ...slot, player, pickRate };
+        const teamCode = player ? teamCodeByTeamId.get(player.teamId) ?? null : null;
+        return { ...slot, player, pickRate, teamCode };
       });
     }
   }

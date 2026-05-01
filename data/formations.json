@@ -2,23 +2,23 @@
   {
     "name": "4-3-3",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
       { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
       { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
-      { "slot": "CDM", "position": "MID", "x": 50, "y": 48 },
-      { "slot": "LCM", "position": "MID", "x": 30, "y": 58 },
-      { "slot": "RCM", "position": "MID", "x": 70, "y": 58 },
-      { "slot": "LW",  "position": "FWD", "x": 18, "y": 82 },
-      { "slot": "ST",  "position": "FWD", "x": 50, "y": 86 },
-      { "slot": "RW",  "position": "FWD", "x": 82, "y": 82 }
+      { "slot": "CDM", "position": "MID", "x": 50, "y": 42 },
+      { "slot": "LCM", "position": "MID", "x": 30, "y": 55 },
+      { "slot": "RCM", "position": "MID", "x": 70, "y": 55 },
+      { "slot": "LW",  "position": "FWD", "x": 10, "y": 72 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 },
+      { "slot": "RW",  "position": "FWD", "x": 90, "y": 72 }
     ]
   },
   {
     "name": "4-4-2",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
       { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
@@ -27,62 +27,62 @@
       { "slot": "LCM", "position": "MID", "x": 38, "y": 56 },
       { "slot": "RCM", "position": "MID", "x": 62, "y": 56 },
       { "slot": "RM",  "position": "MID", "x": 88, "y": 56 },
-      { "slot": "LST", "position": "FWD", "x": 38, "y": 84 },
-      { "slot": "RST", "position": "FWD", "x": 62, "y": 84 }
+      { "slot": "LST", "position": "FWD", "x": 38, "y": 80 },
+      { "slot": "RST", "position": "FWD", "x": 62, "y": 80 }
     ]
   },
   {
     "name": "4-2-3-1",
     "slots": [
-      { "slot": "GK",   "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",   "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LB",   "position": "DEF", "x": 12, "y": 28 },
       { "slot": "LCB",  "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB",  "position": "DEF", "x": 64, "y": 24 },
       { "slot": "RB",   "position": "DEF", "x": 88, "y": 28 },
-      { "slot": "LCDM", "position": "MID", "x": 38, "y": 46 },
-      { "slot": "RCDM", "position": "MID", "x": 62, "y": 46 },
-      { "slot": "LW",   "position": "FWD", "x": 18, "y": 70 },
-      { "slot": "CAM",  "position": "MID", "x": 50, "y": 68 },
-      { "slot": "RW",   "position": "FWD", "x": 82, "y": 70 },
-      { "slot": "ST",   "position": "FWD", "x": 50, "y": 88 }
+      { "slot": "LCDM", "position": "MID", "x": 38, "y": 44 },
+      { "slot": "RCDM", "position": "MID", "x": 62, "y": 44 },
+      { "slot": "LW",   "position": "FWD", "x": 15, "y": 70 },
+      { "slot": "CAM",  "position": "MID", "x": 50, "y": 62 },
+      { "slot": "RW",   "position": "FWD", "x": 85, "y": 70 },
+      { "slot": "ST",   "position": "FWD", "x": 50, "y": 80 }
     ]
   },
   {
     "name": "3-5-2",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LCB", "position": "DEF", "x": 25, "y": 24 },
       { "slot": "CB",  "position": "DEF", "x": 50, "y": 22 },
       { "slot": "RCB", "position": "DEF", "x": 75, "y": 24 },
-      { "slot": "LWB", "position": "DEF", "x": 8,  "y": 50 },
-      { "slot": "LCM", "position": "MID", "x": 32, "y": 52 },
-      { "slot": "CDM", "position": "MID", "x": 50, "y": 48 },
-      { "slot": "RCM", "position": "MID", "x": 68, "y": 52 },
-      { "slot": "RWB", "position": "DEF", "x": 92, "y": 50 },
-      { "slot": "LST", "position": "FWD", "x": 38, "y": 84 },
-      { "slot": "RST", "position": "FWD", "x": 62, "y": 84 }
+      { "slot": "LWB", "position": "DEF", "x": 8,  "y": 38 },
+      { "slot": "LCM", "position": "MID", "x": 32, "y": 58 },
+      { "slot": "CDM", "position": "MID", "x": 50, "y": 44 },
+      { "slot": "RCM", "position": "MID", "x": 68, "y": 58 },
+      { "slot": "RWB", "position": "DEF", "x": 92, "y": 38 },
+      { "slot": "LST", "position": "FWD", "x": 35, "y": 80 },
+      { "slot": "RST", "position": "FWD", "x": 65, "y": 80 }
     ]
   },
   {
     "name": "3-4-3",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LCB", "position": "DEF", "x": 25, "y": 24 },
       { "slot": "CB",  "position": "DEF", "x": 50, "y": 22 },
       { "slot": "RCB", "position": "DEF", "x": 75, "y": 24 },
-      { "slot": "LM",  "position": "MID", "x": 14, "y": 54 },
-      { "slot": "LCM", "position": "MID", "x": 38, "y": 54 },
-      { "slot": "RCM", "position": "MID", "x": 62, "y": 54 },
-      { "slot": "RM",  "position": "MID", "x": 86, "y": 54 },
-      { "slot": "LW",  "position": "FWD", "x": 20, "y": 82 },
-      { "slot": "ST",  "position": "FWD", "x": 50, "y": 86 },
-      { "slot": "RW",  "position": "FWD", "x": 80, "y": 82 }
+      { "slot": "LM",  "position": "MID", "x": 10, "y": 50 },
+      { "slot": "LCM", "position": "MID", "x": 35, "y": 50 },
+      { "slot": "RCM", "position": "MID", "x": 65, "y": 50 },
+      { "slot": "RM",  "position": "MID", "x": 90, "y": 50 },
+      { "slot": "LW",  "position": "FWD", "x": 20, "y": 75 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 },
+      { "slot": "RW",  "position": "FWD", "x": 80, "y": 75 }
     ]
   },
   {
     "name": "4-1-2-1-2",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
       { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
@@ -98,49 +98,113 @@
   {
     "name": "4-5-1",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
       { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
       { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
-      { "slot": "LM",  "position": "MID", "x": 12, "y": 58 },
-      { "slot": "LCM", "position": "MID", "x": 32, "y": 54 },
-      { "slot": "CM",  "position": "MID", "x": 50, "y": 52 },
-      { "slot": "RCM", "position": "MID", "x": 68, "y": 54 },
-      { "slot": "RM",  "position": "MID", "x": 88, "y": 58 },
-      { "slot": "ST",  "position": "FWD", "x": 50, "y": 86 }
+      { "slot": "LM",  "position": "MID", "x": 8, "y": 60 },
+      { "slot": "LCM", "position": "MID", "x": 32, "y": 58 },
+      { "slot": "CM",  "position": "MID", "x": 50, "y": 45 },
+      { "slot": "RCM", "position": "MID", "x": 68, "y": 58 },
+      { "slot": "RM",  "position": "MID", "x": 92, "y": 60 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 }
     ]
   },
   {
     "name": "5-3-2",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
-      { "slot": "LWB", "position": "DEF", "x": 8,  "y": 44 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
+      { "slot": "LWB", "position": "DEF", "x": 8,  "y": 38 },
       { "slot": "LCB", "position": "DEF", "x": 25, "y": 24 },
       { "slot": "CB",  "position": "DEF", "x": 50, "y": 22 },
       { "slot": "RCB", "position": "DEF", "x": 75, "y": 24 },
-      { "slot": "RWB", "position": "DEF", "x": 92, "y": 44 },
-      { "slot": "LCM", "position": "MID", "x": 32, "y": 58 },
-      { "slot": "CDM", "position": "MID", "x": 50, "y": 54 },
-      { "slot": "RCM", "position": "MID", "x": 68, "y": 58 },
-      { "slot": "LST", "position": "FWD", "x": 38, "y": 84 },
-      { "slot": "RST", "position": "FWD", "x": 62, "y": 84 }
+      { "slot": "RWB", "position": "DEF", "x": 92, "y": 38 },
+      { "slot": "LCM", "position": "MID", "x": 30, "y": 58 },
+      { "slot": "CDM", "position": "MID", "x": 50, "y": 45 },
+      { "slot": "RCM", "position": "MID", "x": 70, "y": 58 },
+      { "slot": "LST", "position": "FWD", "x": 38, "y": 80 },
+      { "slot": "RST", "position": "FWD", "x": 62, "y": 80 }
     ]
   },
   {
     "name": "4-3-2-1",
     "slots": [
-      { "slot": "GK",  "position": "GK",  "x": 50, "y": 8 },
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
       { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
       { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
       { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
-      { "slot": "LCM", "position": "MID", "x": 30, "y": 50 },
-      { "slot": "CDM", "position": "MID", "x": 50, "y": 46 },
-      { "slot": "RCM", "position": "MID", "x": 70, "y": 50 },
-      { "slot": "LAM", "position": "MID", "x": 32, "y": 72 },
-      { "slot": "RAM", "position": "MID", "x": 68, "y": 72 },
-      { "slot": "ST",  "position": "FWD", "x": 50, "y": 88 }
+      { "slot": "LCM", "position": "MID", "x": 25, "y": 48 },
+      { "slot": "CDM", "position": "MID", "x": 50, "y": 42 },
+      { "slot": "RCM", "position": "MID", "x": 75, "y": 48 },
+      { "slot": "LAM", "position": "MID", "x": 32, "y": 65 },
+      { "slot": "RAM", "position": "MID", "x": 68, "y": 65 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 }
+    ]
+  },
+  {
+    "name": "4-1-4-1",
+    "slots": [
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
+      { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
+      { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
+      { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
+      { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
+      { "slot": "CDM", "position": "MID", "x": 50, "y": 40 },
+      { "slot": "LM",  "position": "MID", "x": 12, "y": 60 },
+      { "slot": "LCM", "position": "MID", "x": 38, "y": 60 },
+      { "slot": "RCM", "position": "MID", "x": 62, "y": 60 },
+      { "slot": "RM",  "position": "MID", "x": 88, "y": 60 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 }
+    ]
+  },
+  {
+    "name": "4-4-1-1",
+    "slots": [
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
+      { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
+      { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
+      { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
+      { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
+      { "slot": "LM",  "position": "MID", "x": 12, "y": 50 },
+      { "slot": "LCM", "position": "MID", "x": 38, "y": 50 },
+      { "slot": "RCM", "position": "MID", "x": 62, "y": 50 },
+      { "slot": "RM",  "position": "MID", "x": 88, "y": 50 },
+      { "slot": "SS",  "position": "FWD", "x": 37, "y": 70 },
+      { "slot": "ST",  "position": "FWD", "x": 63, "y": 80 }
+    ]
+  },
+  {
+    "name": "5-4-1",
+    "slots": [
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
+      { "slot": "LWB", "position": "DEF", "x": 8,  "y": 35 },
+      { "slot": "LCB", "position": "DEF", "x": 28, "y": 24 },
+      { "slot": "CB",  "position": "DEF", "x": 50, "y": 22 },
+      { "slot": "RCB", "position": "DEF", "x": 72, "y": 24 },
+      { "slot": "RWB", "position": "DEF", "x": 92, "y": 35 },
+      { "slot": "LM",  "position": "MID", "x": 12, "y": 58 },
+      { "slot": "LCM", "position": "MID", "x": 38, "y": 56 },
+      { "slot": "RCM", "position": "MID", "x": 62, "y": 56 },
+      { "slot": "RM",  "position": "MID", "x": 88, "y": 58 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 }
+    ]
+  },
+  {
+    "name": "3-4-2-1",
+    "slots": [
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
+      { "slot": "LCB", "position": "DEF", "x": 25, "y": 24 },
+      { "slot": "CB",  "position": "DEF", "x": 50, "y": 22 },
+      { "slot": "RCB", "position": "DEF", "x": 75, "y": 24 },
+      { "slot": "LM",  "position": "MID", "x": 8, "y": 50 },
+      { "slot": "LCM", "position": "MID", "x": 38, "y": 45 },
+      { "slot": "RCM", "position": "MID", "x": 62, "y": 45 },
+      { "slot": "RM",  "position": "MID", "x": 92, "y": 50 },
+      { "slot": "LAM", "position": "MID", "x": 34, "y": 65 },
+      { "slot": "RAM", "position": "MID", "x": 66, "y": 65 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 }
     ]
   }
 ]

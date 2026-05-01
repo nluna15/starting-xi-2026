@@ -2,9 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
-import { FormationPitch } from "@/components/formation-pitch";
-import { LineupSubmittedOverlay } from "@/components/lineup-submitted-overlay";
-import { NoteForm } from "@/components/note-form";
+import { BuildPitch } from "@/components/build-pitch";
+import { OwnerLineupActions } from "@/components/owner-lineup-actions";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
 import { getPickRatesForTeam } from "@/lib/db/queries";
@@ -108,32 +107,30 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
             {isOwner ? "Your" : "One fan's"} {teamRow.name} 2026
           </h1>
         </div>
-        <Link href={`/${teamRow.code}/build`}>
-          <Button variant="outline" size="md">
-            Build your own
-          </Button>
-        </Link>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="space-y-4">
-          <FormationPitch
-            formation={formation}
-            starters={startersResolved}
-            readOnly
-            showPhotos
-          />
+          <div className="space-y-2">
+            <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+              Formation {formation.name}
+            </p>
+            <div className="w-[90%]">
+              <BuildPitch
+                formation={formation}
+                starters={startersResolved}
+                showPhotos
+              />
+            </div>
+          </div>
           <div className="flex items-center justify-center gap-6 pt-2">
             {benchResolved.map((p, i) => (
               <BenchCircle key={i} player={p} index={i} />
             ))}
           </div>
-          <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
-            Formation {formation.name}
-          </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 lg:mt-7">
           <div className="grid grid-cols-2 gap-3">
             <StatTile label="Average Age" value={formatAge(avgAge)} />
             <StatTile label="Team Market Value" value={formatEur(totalValue)} />
@@ -145,7 +142,15 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
           </div>
 
           {isOwner ? (
-            <NoteForm slug={slug} initialNote={submissionRow.note ?? null} />
+            <OwnerLineupActions
+              slug={slug}
+              initialNote={submissionRow.note ?? null}
+              team={{ name: teamRow.name, flagEmoji: teamRow.flagEmoji }}
+              teamCode={teamRow.code}
+              starters={startersResolved.filter((p): p is Player => Boolean(p))}
+              bench={benchResolved.filter((p): p is Player => Boolean(p))}
+              pickRates={pickRates}
+            />
           ) : submissionRow.note ? (
             <div>
               <h3 className="mb-2 text-sm font-semibold text-foreground">Their reasoning</h3>
@@ -154,17 +159,6 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
               </blockquote>
             </div>
           ) : null}
-
-          {isOwner && (
-            <LineupSubmittedOverlay
-              slug={slug}
-              team={{ name: teamRow.name, flagEmoji: teamRow.flagEmoji }}
-              teamCode={teamRow.code}
-              starters={startersResolved.filter((p): p is Player => Boolean(p))}
-              bench={benchResolved.filter((p): p is Player => Boolean(p))}
-              pickRates={pickRates}
-            />
-          )}
         </div>
       </div>
 

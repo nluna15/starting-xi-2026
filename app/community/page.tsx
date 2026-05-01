@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { FormationPitch } from "@/components/formation-pitch";
+import { CommunityPitch } from "@/components/community-pitch";
 import { getGlobalCrowdStats } from "@/lib/db/queries";
+import { FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
@@ -27,8 +28,16 @@ export default async function CommunityPage() {
   }
 
   const slots = stats.mostLikelyXi.slots;
-  const startersResolved = slots.map((s) => s.player);
-  const pickRates = slots.map((s) => s.pickRate);
+  const startersResolved = slots.map((s) =>
+    s.player
+      ? {
+          id: s.player.id,
+          fullName: s.player.fullName,
+          photoUrl: s.player.photoUrl,
+          countryCode: s.teamCode ? FIFA_TO_ISO2[s.teamCode] ?? null : null,
+        }
+      : null,
+  );
 
   const formationDef = stats.mostLikelyXi.formation
     ? { name: stats.mostLikelyXi.formation.name, slots: stats.mostLikelyXi.formation.slots }
@@ -52,13 +61,13 @@ export default async function CommunityPage() {
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <FormationPitch
-            formation={formationDef}
-            starters={startersResolved}
-            readOnly
-            pickRates={pickRates}
-            showPhotos
-          />
+          <div className="w-[90%]">
+            <CommunityPitch
+              formation={formationDef}
+              starters={startersResolved}
+              showPhotos
+            />
+          </div>
         )}
         <div className="space-y-4">
           <Card title="Most-popular formation">

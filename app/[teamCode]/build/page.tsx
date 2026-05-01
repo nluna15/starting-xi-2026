@@ -2,12 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LineupBuilder } from "@/components/lineup-builder";
 import { Button } from "@/components/ui/button";
-import {
-  getPickRatesForTeam,
-  getPlayersForTeam,
-  getSubmissionCountForTeam,
-  getTeamByCode,
-} from "@/lib/db/queries";
+import { getPickRatesForTeam, getPlayersForTeam, getTeamByCode } from "@/lib/db/queries";
 
 export const dynamic = "force-dynamic";
 
@@ -18,9 +13,8 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
   const team = await getTeamByCode(teamCode.toUpperCase());
   if (!team) notFound();
 
-  const [pool, submissionCount, pickRates] = await Promise.all([
+  const [pool, pickRates] = await Promise.all([
     getPlayersForTeam(team.id),
-    getSubmissionCountForTeam(team.id),
     getPickRatesForTeam(team.id),
   ]);
 
@@ -62,14 +56,6 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
             Step 02 / 03
           </p>
-          {submissionCount > 0 && (
-            <Link
-              href={`/${team.code}/crowd`}
-              className="text-xs font-medium text-accent hover:text-accent-hover"
-            >
-              See the crowd&rsquo;s XI →
-            </Link>
-          )}
         </div>
       </div>
       <LineupBuilder

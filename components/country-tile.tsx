@@ -11,6 +11,8 @@ type Props = {
   enabled: boolean;
   layout?: Layout;
   size?: Size;
+  /** No outline border (e.g. home nation pickers). */
+  borderless?: boolean;
   className?: string;
 };
 
@@ -28,15 +30,26 @@ export function CountryTile({
   enabled,
   layout = "card",
   size = "md",
+  borderless = false,
   className,
 }: Props) {
+  const surface = borderless
+    ? "rounded-lg border-0 bg-[#cecaca] text-black transition"
+    : COUNTRY_TILE_BASE;
+  const enabledSurface = borderless
+    ? "hover:bg-[#B91C1C] hover:text-white"
+    : COUNTRY_TILE_ENABLED;
+  const disabledSurface = borderless
+    ? "cursor-not-allowed opacity-50"
+    : COUNTRY_TILE_DISABLED;
+
   const inner =
     layout === "row" ? (
       <div
         className={cn(
-          COUNTRY_TILE_BASE,
+          surface,
           "flex h-14 items-center gap-2 px-3",
-          enabled ? COUNTRY_TILE_ENABLED : COUNTRY_TILE_DISABLED,
+          enabled ? enabledSurface : disabledSurface,
           className,
         )}
       >
@@ -48,10 +61,10 @@ export function CountryTile({
     ) : (
       <div
         className={cn(
-          COUNTRY_TILE_BASE,
+          surface,
           "flex flex-col items-center justify-center gap-1 px-3 text-center",
           size === "lg" ? "h-28 gap-2 rounded-xl" : "h-24",
-          enabled ? COUNTRY_TILE_ENABLED : COUNTRY_TILE_DISABLED,
+          enabled ? enabledSurface : disabledSurface,
           className,
         )}
       >
@@ -83,7 +96,11 @@ export function CountryTile({
   if (!enabled) return inner;
 
   return (
-    <Link href={`/${code}/build`} aria-label={`Build the ${name} XI`}>
+    <Link
+      href={`/${code}/build`}
+      aria-label={`Build the ${name} XI`}
+      className="block text-black no-underline"
+    >
       {inner}
     </Link>
   );

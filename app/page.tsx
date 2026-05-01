@@ -52,6 +52,7 @@ export default async function Home() {
                 enabled={tile.status === "ready"}
                 layout="card"
                 size="lg"
+                borderless
               />
             </li>
           ))}
