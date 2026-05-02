@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242089-1716965449.jpg?lm=1"
   },
   {
+    "transfermarktId": 486605,
+    "fullName": "Jakub Markovic",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "SK Slavia Praha, a.s",
+    "age": 24,
+    "marketValueEur": 2800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486605-1605982386.png?lm=1"
+  },
+  {
+    "transfermarktId": 293357,
+    "fullName": "Martin Jedlicka",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Baník Ostrava a.s",
+    "age": 28,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293357-1581666944.png?lm=1"
+  },
+  {
+    "transfermarktId": 339079,
+    "fullName": "Jiri Letacek",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Getafe Club de Fútbol S. A. D. Team Dubai",
+    "age": 27,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339079-1714922207.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 517126,
+    "fullName": "Adam Zadrazil",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Hradec Králové a.s",
+    "age": 25,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
     "transfermarktId": 345911,
     "fullName": "Ladislav Krejčí",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 33,
     "marketValueEur": 1200000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/216278-1697831325.png?lm=1"
+  },
+  {
+    "transfermarktId": 728635,
+    "fullName": "Filip Prebsl",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "MFK Karvina",
+    "age": 23,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728635-1706252244.png?lm=1"
+  },
+  {
+    "transfermarktId": 652050,
+    "fullName": "Matej Hadas",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 22,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652050-1701892567.png?lm=1"
+  },
+  {
+    "transfermarktId": 633447,
+    "fullName": "Martin Cedidla",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "FK Jablonec a.s",
+    "age": 24,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/633447-1760492067.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 671518,
+    "fullName": "Albert Labik",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "MFK Karvina",
+    "age": 21,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671518-1670006876.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 293360,
+    "fullName": "Jakub Martinec",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "AC Sparta Praha, a. s",
+    "age": 28,
+    "marketValueEur": 850000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293360-1699718998.png?lm=1"
+  },
+  {
+    "transfermarktId": 724169,
+    "fullName": "Filip Slavicek",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 23,
+    "marketValueEur": 850000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724169-1701971491.png?lm=1"
+  },
+  {
+    "transfermarktId": 889437,
+    "fullName": "Adam Kadlec",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 22,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 430054,
+    "fullName": "Michal Sacek",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
+    "age": 29,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/430054-1718375936.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 728626,
+    "fullName": "Dalibor Vecerka",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FK Teplice, a.s",
+    "age": 23,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728626-1770410758.png?lm=1"
+  },
+  {
+    "transfermarktId": 358132,
+    "fullName": "Jan Kral",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 27,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358132-1695061840.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 665538,
+    "fullName": "Adam Gabriel",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Fodbold Club Midtjylland",
+    "age": 24,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/665538-1727290765.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 486608,
+    "fullName": "Simon Gabriel",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Slovan Liberec",
+    "age": 24,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486608-1764433365.png?lm=1"
   },
   {
     "transfermarktId": 500053,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652047-1756904824.jpg?lm=1"
   },
   {
+    "transfermarktId": 1066142,
+    "fullName": "Dominik Pech",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Berner Sport Club Young Boys",
+    "age": 19,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1066142-1697910947.png?lm=1"
+  },
+  {
+    "transfermarktId": 1013804,
+    "fullName": "Jiri Panos",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 18,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1013804-1754428041.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 652060,
+    "fullName": "Denis Visinsky",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 23,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652060-1706253771.png?lm=1"
+  },
+  {
+    "transfermarktId": 572240,
+    "fullName": "Matej Valenta",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 26,
+    "marketValueEur": 1700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/572240-1703023216.png?lm=1"
+  },
+  {
+    "transfermarktId": 728609,
+    "fullName": "Vojtech Stransky",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Slovan Liberec",
+    "age": 23,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728609-1701237462.png?lm=1"
+  },
+  {
+    "transfermarktId": 464273,
+    "fullName": "Jiri Boula",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Baník Ostrava a.s",
+    "age": 27,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464273-1755304106.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 242084,
+    "fullName": "Lukas Sadilek",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
+    "age": 29,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242084-1726745688.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 143798,
+    "fullName": "Pavel Kaderabek",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "AC Sparta Praha, a. s",
+    "age": 34,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/143798-1657200722.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 671542,
+    "fullName": "Daniel Samek",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Hradec Králové a.s",
+    "age": 22,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671542-1709655781.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 400649,
+    "fullName": "Roman Kvet",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Verbroedering Denderhoutem Denderleeuw Eendracht Hekelgem",
+    "age": 28,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400649-1693401752.png?lm=1"
+  },
+  {
+    "transfermarktId": 428189,
+    "fullName": "Tomas Ostrák",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "St. Louis City Soccer Club",
+    "age": 26,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/428189-1771788183.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 826103,
+    "fullName": "Alexandr Sojka",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 23,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/826103-1750680908.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 928023,
+    "fullName": "Alexandr Buzek",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "SK Slavia Praha, a.s",
+    "age": 21,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928023-1749879517.png?lm=1"
+  },
+  {
     "transfermarktId": 242086,
     "fullName": "Patrik Schick",
     "position": "FWD",
@@ -534,7 +853,7 @@
     "detailedPosition": "ST",
     "jerseyNumber": null,
     "club": "SK Slavia Praha, a.s",
-    "age": 26,
+    "age": 27,
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405855-1697832425.png?lm=1"
   },
@@ -658,5 +977,126 @@
     "age": 27,
     "marketValueEur": 850000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/558473-1618928994.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 405856,
+    "fullName": "David Buchta",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FC Baník Ostrava a.s",
+    "age": 26,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405856-1755310969.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 995525,
+    "fullName": "Pavel Kacor",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "MFK Karvina",
+    "age": 19,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/995525-1713243185.png?lm=1"
+  },
+  {
+    "transfermarktId": 101500,
+    "fullName": "Matej Vydra",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 34,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/101500-1520420314.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 707347,
+    "fullName": "Christophe Kabongo",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FK Mladá Boleslav, a.s",
+    "age": 22,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/707347-1596835050.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 622254,
+    "fullName": "Jachym Sip",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 23,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/622254-1701971391.png?lm=1"
+  },
+  {
+    "transfermarktId": 464271,
+    "fullName": "Vojtech Patrak",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "FK Pardubice",
+    "age": 26,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464271-1761891198.png?lm=1"
+  },
+  {
+    "transfermarktId": 1013797,
+    "fullName": "Ondrej Penxa",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "AC Sparta Praha, a. s",
+    "age": 19,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 218299,
+    "fullName": "Jan Kliment",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 32,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/218299-1762008314.png?lm=1"
+  },
+  {
+    "transfermarktId": 765108,
+    "fullName": "Daniel Rus",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Slovan Liberec",
+    "age": 20,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/765108-1719428277.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 318112,
+    "fullName": "Antonin Rusek",
+    "position": "FWD",
+    "detailedPosition": "SS",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 27,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/318112-1701971166.png?lm=1"
+  },
+  {
+    "transfermarktId": 652051,
+    "fullName": "Filip Vecheta",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FK Pardubice",
+    "age": 23,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652051-1703023646.png?lm=1"
   }
 ]

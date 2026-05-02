@@ -115,7 +115,7 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
             <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
               Formation {formation.name}
             </p>
-            <div className="w-[90%]">
+            <div className="mx-auto w-[90%]">
               <BuildPitch
                 formation={formation}
                 starters={startersResolved}

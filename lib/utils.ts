@@ -1,8 +1,32 @@
+import * as React from "react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
+}
+
+export function lastName(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/).filter(Boolean);
+  return parts.length > 1 ? parts[parts.length - 1] : fullName;
+}
+
+/**
+ * Returns true once mounted on a client whose viewport matches `query`.
+ * SSR-safe: returns `false` on the server and on first client render so
+ * hydration markup matches; switches to the live value on mount.
+ */
+export function useMediaQuery(query: string): boolean {
+  const [matches, setMatches] = React.useState(false);
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mql = window.matchMedia(query);
+    const update = () => setMatches(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, [query]);
+  return matches;
 }
 
 export function formatEur(value: number | null | undefined): string {

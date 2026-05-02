@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3">
             <Link href="/" className="flex items-center gap-2 text-sm font-semibold tracking-tight">
               <span aria-hidden>🏆</span>
-              <span>World Cup Roster</span>
+              <span>Starting XI 2026</span>
             </Link>
             <Link
               href="/community"

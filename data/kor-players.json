@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652530-1583178640.JPG?lm=1"
   },
   {
+    "transfermarktId": 312424,
+    "fullName": "Hyeon-mu Kang",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Seoul",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/312424-1615486753.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 238030,
+    "fullName": "Sung-yun Gu",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Seoul",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/238030-1615446051.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 428671,
+    "fullName": "In-jae Hwang",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Pohang Steelers",
+    "age": 32,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/428671-1615484547.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 304684,
+    "fullName": "Kyeong-min Kim",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Gwangju FC",
+    "age": 34,
+    "marketValueEur": 375000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/304684-1745714376.jpg?lm=1"
+  },
+  {
     "transfermarktId": 503482,
     "fullName": "Min-jae Kim",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 29,
     "marketValueEur": 600000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652527-1585390123.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 260197,
+    "fullName": "Ji-su Park",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 31,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/260197-1563347567.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 645846,
+    "fullName": "Min-gyu Jang",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Jeju SK FC",
+    "age": 27,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/645846-1646994297.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 677469,
+    "fullName": "Hyun-taek Cho",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Ulsan Hyundai FC",
+    "age": 24,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677469-1585390722.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 784335,
+    "fullName": "Jun-soo Byeon",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Gimcheon Sangmu FC",
+    "age": 24,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/784335-1714079199.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 314773,
+    "fullName": "Myung-jae Lee",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Foundation Coorperation Hana Financial Group Inc. FC",
+    "age": 32,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314773-1738620380.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 402163,
+    "fullName": "Jong-gyu Yoon",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Ulsan Hyundai FC",
+    "age": 28,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/402163-1584688022.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 353565,
+    "fullName": "Min-tae Kim",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "S-Pulse",
+    "age": 32,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353565-1773591476.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 1060671,
+    "fullName": "Gun-hee Kim",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Incheon United FC",
+    "age": 23,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 552541,
+    "fullName": "Soo-il Park",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "FC Seoul",
+    "age": 30,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/552541-1585247773.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 260189,
+    "fullName": "Kyung-won Kwon",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Anyang",
+    "age": 34,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/260189-1523621695.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 528965,
+    "fullName": "Yun-sung Kang",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Foundation Coorperation Hana Financial Group Inc. FC",
+    "age": 28,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/528965-1589997735.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 379409,
+    "fullName": "Young-bin Kim",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 34,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   },
   {
     "transfermarktId": 557149,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/260166-1761656009.jpg?lm=1"
   },
   {
+    "transfermarktId": 734395,
+    "fullName": "Kang-hee Lee",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fußballklub Austria Wien",
+    "age": 24,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/734395-1589994990.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 508376,
+    "fullName": "Soon-min Lee",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Foundation Coorperation Hana Financial Group Inc. FC",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/508376-1615445211.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 389181,
+    "fullName": "Gyu-sung Lee",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Ulsan Hyundai FC",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/389181-1582743329.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 118451,
+    "fullName": "Tae-hee Nam",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Jeju SK FC",
+    "age": 34,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/118451-1725788077.jpeg?lm=1"
+  },
+  {
+    "transfermarktId": 402166,
+    "fullName": "Seung-mo Lee",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Seoul",
+    "age": 28,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/402166-1615485414.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 261401,
+    "fullName": "Chang-min Lee",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Jeju SK FC",
+    "age": 32,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/261401-1589997749.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 290171,
+    "fullName": "Kyoung-rok Choi",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Gwangju FC",
+    "age": 31,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290171-1657894852.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 839460,
+    "fullName": "Seung-won Lee",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Gangwon FC",
+    "age": 23,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/839460-1692967473.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 429730,
+    "fullName": "Geon-ung Kim",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Jeju SK FC",
+    "age": 28,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429730-1589995702.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 639245,
+    "fullName": "Young-jun Goh",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Gangwon FC",
+    "age": 24,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/639245-1615487453.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 562357,
+    "fullName": "Hyeon-sik Lee",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Foundation Coorperation Hana Financial Group Inc. FC",
+    "age": 30,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 81796,
+    "fullName": "Sung-yueng Ki",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "FC Pohang Steelers",
+    "age": 37,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/81796-1628517587.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 163990,
+    "fullName": "Bit-garam Yoon",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Bucheon FC 1995",
+    "age": 35,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/163990-1585390266.jpg?lm=1"
+  },
+  {
     "transfermarktId": 91845,
     "fullName": "Heung-min Son",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 29,
     "marketValueEur": 700000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/497439-1583089516.png?lm=1"
+  },
+  {
+    "transfermarktId": 131480,
+    "fullName": "Il-lok Yun",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Ulsan Hyundai FC",
+    "age": 34,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/131480-1604257271.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 572166,
+    "fullName": "Jae-hyun Go",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Gimcheon Sangmu FC",
+    "age": 27,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/572166-1558953081.png?lm=1"
+  },
+  {
+    "transfermarktId": 858766,
+    "fullName": "Byung-kwan Jeon",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Gimcheon Sangmu FC",
+    "age": 23,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/858766-1718447832.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 639040,
+    "fullName": "Yun-sang Hong",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Gimcheon Sangmu FC",
+    "age": 24,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/639040-1691266133.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 269601,
+    "fullName": "Dong-jun Lee",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 29,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/269601-1657099122.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 297720,
+    "fullName": "Young-wook Cho",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Seoul",
+    "age": 27,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/297720-1639747212.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 497440,
+    "fullName": "Seung-won Jeong",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FC Seoul",
+    "age": 29,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/497440-1583089656.png?lm=1"
+  },
+  {
+    "transfermarktId": 576188,
+    "fullName": "Seung-sub Kim",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 29,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 280239,
+    "fullName": "Seung-woo Lee",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Jeonbuk Hyundai Motors",
+    "age": 28,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/280239-1626771505.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 873452,
+    "fullName": "Young-jun Lee",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Grasshopper Club Zürich",
+    "age": 22,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/873452-1631646741.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 677470,
+    "fullName": "Yool Heo",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Ulsan Hyundai FC",
+    "age": 25,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677470-1585246044.jpg?lm=1"
   }
 ]

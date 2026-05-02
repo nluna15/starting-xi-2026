@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   },
   {
+    "transfermarktId": 1079362,
+    "fullName": "Eamonn McCarron",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Wellington Phoenix FC",
+    "age": 18,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 887859,
+    "fullName": "Joseph Knowles",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 21,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1142610,
+    "fullName": "Blake Callinan",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 20,
+    "marketValueEur": 75000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1142610-1746783123.png?lm=1"
+  },
+  {
+    "transfermarktId": 1375572,
+    "fullName": "Eli Jones",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 19,
+    "marketValueEur": 75000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1375572-1746779915.png?lm=1"
+  },
+  {
     "transfermarktId": 469211,
     "fullName": "Liberato Cacace",
     "position": "DEF",
@@ -264,6 +308,116 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617015-1705967164.jpg?lm=1"
   },
   {
+    "transfermarktId": 509709,
+    "fullName": "George Stanger",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Kilmarnock FC",
+    "age": 25,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509709-1558942459.png?lm=1"
+  },
+  {
+    "transfermarktId": 881221,
+    "fullName": "Tze-Xuan Loke",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Wellington Phoenix FC",
+    "age": 21,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/881221-1758547172.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 81723,
+    "fullName": "Michael Boxall",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Minnesota United FC",
+    "age": 37,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/81723-1771697078.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 880131,
+    "fullName": "Adama Coulibaly",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 21,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 540725,
+    "fullName": "Dalton Wilkins",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Sønderjyske Fodbold",
+    "age": 27,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 480874,
+    "fullName": "Dan Edwards",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Wellington Phoenix FC",
+    "age": 27,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 724726,
+    "fullName": "Zac Zoricich",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 23,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1183555,
+    "fullName": "Jayden Smith",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Wellington Phoenix FC",
+    "age": 18,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1183555-1758546960.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 627143,
+    "fullName": "Ronan Wynne",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 24,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1153793,
+    "fullName": "Luka Vicelich",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 17,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1153793-1746779946.png?lm=1"
+  },
+  {
     "transfermarktId": 617018,
     "fullName": "Marko Stamenić",
     "position": "MID",
@@ -292,7 +446,7 @@
     "detailedPosition": "CAM",
     "jerseyNumber": null,
     "club": "Silkeborg Idrætsforening",
-    "age": 26,
+    "age": 27,
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400797-1763565137.jpg?lm=1"
   },
@@ -501,7 +655,7 @@
     "detailedPosition": "RW",
     "jerseyNumber": null,
     "club": "Motherwell FC",
-    "age": 25,
+    "age": 26,
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/485672-1768832018.png?lm=1"
   },
@@ -656,6 +810,17 @@
     "jerseyNumber": null,
     "club": "Auckland FC",
     "age": 19,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1169835,
+    "fullName": "Oscar Faulds",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Auckland FC",
+    "age": 24,
     "marketValueEur": 100000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   }

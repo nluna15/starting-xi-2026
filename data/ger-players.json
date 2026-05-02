@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/72476-1774470314.jpg?lm=1"
   },
   {
+    "transfermarktId": 800946,
+    "fullName": "Dennis Seimen",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Verein für Bewegungsspiele Stuttgart 1893",
+    "age": 20,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/800946-1691998825.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 448705,
+    "fullName": "Diant Ramaj",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "1. Fußballclub Heidenheim 1846",
+    "age": 24,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/448705-1755088320.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 196829,
+    "fullName": "Timon Wellenreuther",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Feyenoord Rotterdam",
+    "age": 30,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/196829-1765213835.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 284270,
+    "fullName": "Moritz Nicolas",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Borussia Mönchengladbach",
+    "age": 28,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/284270-1722945496.jpg?lm=1"
+  },
+  {
     "transfermarktId": 388198,
     "fullName": "Nico Schlotterbeck",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 25,
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/448258-1691999620.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 86202,
+    "fullName": "Antonio Rüdiger",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Real Madrid Club de Fútbol",
+    "age": 33,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/86202-1684484602.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 202591,
+    "fullName": "Benjamin Henrichs",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "RasenBallsport Leipzig",
+    "age": 29,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/202591-1715858341.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 467563,
+    "fullName": "Armel Bella-Kotchap",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Verona Hellas FC",
+    "age": 24,
+    "marketValueEur": 7500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/467563-1663251475.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 580193,
+    "fullName": "Bright Arrey-Mbi",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sporting Clube de Braga",
+    "age": 23,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/580193-1708164169.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 787151,
+    "fullName": "Lukas Ullrich",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Borussia Mönchengladbach",
+    "age": 22,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/787151-1691248738.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 124502,
+    "fullName": "Matthias Ginter",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sport-Club Freiburg",
+    "age": 32,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/124502-1753984264.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 524285,
+    "fullName": "Luca Netz",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Nottingham Forest FC",
+    "age": 22,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/524285-1760967382.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 599419,
+    "fullName": "Max Rosenfelder",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sport-Club Freiburg",
+    "age": 23,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/599419-1753955074.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 413843,
+    "fullName": "Keven Schlotterbeck",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Augsburg 1907",
+    "age": 29,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413843-1755201026.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 730484,
+    "fullName": "Aaron Zehnter",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Verein für Leibesübungen Wolfsburg",
+    "age": 21,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/730484-1752736438.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 435796,
+    "fullName": "Kilian Fischer",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Verein für Leibesübungen Wolfsburg",
+    "age": 25,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435796-1752736015.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 810100,
+    "fullName": "Taylan Bulut",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Beşiktaş Jimnastik Kulübü",
+    "age": 20,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/810100-1770375467.png?lm=1"
   },
   {
     "transfermarktId": 580195,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/443331-1723190030.jpg?lm=1"
   },
   {
+    "transfermarktId": 777005,
+    "fullName": "Mert Kömür",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC Augsburg 1907",
+    "age": 20,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/777005-1755201514.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1070979,
+    "fullName": "Wael Mohya",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Borussia Mönchengladbach",
+    "age": 17,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1070979-1760967470.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 190284,
+    "fullName": "Maximilian Eggestein",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Sport-Club Freiburg",
+    "age": 29,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/190284-1723189965.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 31909,
+    "fullName": "Toni Kroos",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Real Madrid Club de Fútbol",
+    "age": 36,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31909-1700638741.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 597000,
+    "fullName": "Eric Martel",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "1. FC Köln",
+    "age": 24,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/597000-1657110079.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 654234,
+    "fullName": "Anton Kade",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "FC Augsburg 1907",
+    "age": 22,
+    "marketValueEur": 7500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/654234-1773671161.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 159088,
+    "fullName": "Robert Andrich",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Bayer 04 Leverkusen",
+    "age": 31,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/159088-1758703807.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 592534,
+    "fullName": "Nicolai Remberg",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Hamburger SV",
+    "age": 25,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/592534-1758188560.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 929943,
+    "fullName": "Francis Onyeka",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Bayer 04 Leverkusen",
+    "age": 19,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/929943-1753298473.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 904974,
+    "fullName": "Noel Aseko",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "FC Bayern München",
+    "age": 20,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/904974-1757924687.png?lm=1"
+  },
+  {
+    "transfermarktId": 146155,
+    "fullName": "Hany Mukhtar",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Nashville SC",
+    "age": 31,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/146155-1771709431.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 335516,
+    "fullName": "Idrissa Touré",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "Pisa Sporting Club",
+    "age": 28,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335516-1753431661.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 405670,
+    "fullName": "Yannik Engelhardt",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Borussia Mönchengladbach",
+    "age": 25,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405670-1760966867.jpg?lm=1"
+  },
+  {
     "transfermarktId": 455661,
     "fullName": "Nick Woltemade",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 26,
     "marketValueEur": 12000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/336012-1752477155.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 796213,
+    "fullName": "Nelson Weiper",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "1. - und Sportverein Mainz 05",
+    "age": 21,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/796213-1692000176.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 272278,
+    "fullName": "Chris Führich",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Verein für Bewegungsspiele Stuttgart 1893",
+    "age": 28,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/272278-1691999004.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 314288,
+    "fullName": "Lukas Nmecha",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Leeds United",
+    "age": 27,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314288-1657203640.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 193033,
+    "fullName": "Tim Kleindienst",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Borussia Mönchengladbach",
+    "age": 30,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193033-1722945738.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 819636,
+    "fullName": "Dzenan Pejcinovic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Verein für Leibesübungen Wolfsburg",
+    "age": 21,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/819636-1689865855.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 284010,
+    "fullName": "Robin Hack",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Borussia Mönchengladbach",
+    "age": 27,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/284010-1722945425.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 416380,
+    "fullName": "Ragnar Ache",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "1. FC Köln",
+    "age": 27,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/416380-1752742777.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 453870,
+    "fullName": "Benedict Hollerbach",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "1. - und Sportverein Mainz 05",
+    "age": 24,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/453870-1752587912.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 692368,
+    "fullName": "Younes Ebnoutalib",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Eintracht Frankfurt AG",
+    "age": 22,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692368-1753442833.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 923595,
+    "fullName": "Max Moerstedt",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
+    "age": 20,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/923595-1723920909.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 342967,
+    "fullName": "Niklas Beste",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Sport-Club Freiburg",
+    "age": 27,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/342967-1753984040.jpg?lm=1"
   }
 ]

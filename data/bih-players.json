@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/584112-1709020613.png?lm=1"
   },
   {
+    "transfermarktId": 188881,
+    "fullName": "Osman Hadzikic",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "NK Slaven Belupo Koprivnica",
+    "age": 30,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/188881-1634913590.png?lm=1"
+  },
+  {
+    "transfermarktId": 248358,
+    "fullName": "Luka Kukic",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Asociația Fotbal Club Botoșani",
+    "age": 29,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/248358-1727786016.png?lm=1"
+  },
+  {
+    "transfermarktId": 156680,
+    "fullName": "Hidajet Hankic",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FK Rostov",
+    "age": 31,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/156680-1721921530.png?lm=1"
+  },
+  {
+    "transfermarktId": 33873,
+    "fullName": "Asmir Begovic",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Everton FC",
+    "age": 38,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/33873-1737919950.jpg?lm=1"
+  },
+  {
     "transfermarktId": 679423,
     "fullName": "Tarik Muharemović",
     "position": "DEF",
@@ -264,6 +308,138 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1430854-1754882274.jpg?lm=1"
   },
   {
+    "transfermarktId": 318829,
+    "fullName": "Advan Kadusic",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "NK Istra 1961",
+    "age": 28,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/318829-1768639588.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 435325,
+    "fullName": "Mehmed Cosic",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "FK Radnički 1923 Kragujevac",
+    "age": 28,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435325-1695417707.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 603126,
+    "fullName": "Andrija Janjic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Zorya Lugansk",
+    "age": 23,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/603126-1753975365.png?lm=1"
+  },
+  {
+    "transfermarktId": 466452,
+    "fullName": "Ivan Milicevic",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Athlitiki Enosi Kifisias",
+    "age": 27,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/466452-1616334860.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 376110,
+    "fullName": "Jasmin Celikovic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Panetolikos Agrinio",
+    "age": 27,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/376110-1689599853.png?lm=1"
+  },
+  {
+    "transfermarktId": 1026246,
+    "fullName": "Anes Cardaklija",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "GAIS",
+    "age": 20,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1026246-1721934674.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 131728,
+    "fullName": "Daniel Graovac",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "SC Fotbal Club FCSB SA",
+    "age": 32,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/131728-1753789995.png?lm=1"
+  },
+  {
+    "transfermarktId": 51676,
+    "fullName": "Ermin Bicakcic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 36,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/51676-1722892469.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 891575,
+    "fullName": "Filip Taraba",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "NK Istra 1961",
+    "age": 19,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/891575-1768653118.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 620963,
+    "fullName": "Riad Suta",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Asociația Fotbal Club Botoșani",
+    "age": 23,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620963-1753432523.png?lm=1"
+  },
+  {
+    "transfermarktId": 1039047,
+    "fullName": "Haris Berbic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Slovan Liberec",
+    "age": 20,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1039047-1771651332.png?lm=1"
+  },
+  {
+    "transfermarktId": 371078,
+    "fullName": "Rijad Sadiku",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Asociația Fotbal Club Botoșani",
+    "age": 26,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/371078-1727436147.png?lm=1"
+  },
+  {
     "transfermarktId": 787907,
     "fullName": "Benjamin Tahirović",
     "position": "MID",
@@ -457,7 +633,7 @@
     "detailedPosition": "CM",
     "jerseyNumber": null,
     "club": "Unknown",
-    "age": 23,
+    "age": 24,
     "marketValueEur": 1000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620560-1690113422.png?lm=1"
   },
@@ -482,6 +658,149 @@
     "age": 30,
     "marketValueEur": 800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251676-1765113513.png?lm=1"
+  },
+  {
+    "transfermarktId": 261550,
+    "fullName": "Nemanja Andjusic",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC Zorya Lugansk",
+    "age": 29,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/261550-1726634751.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 293228,
+    "fullName": "Dario Saric",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Antalyaspor",
+    "age": 28,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293228-1757670257.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 620722,
+    "fullName": "Dejan Popara",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "FC Zorya Lugansk",
+    "age": 23,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620722-1736342765.png?lm=1"
+  },
+  {
+    "transfermarktId": 251295,
+    "fullName": "Dzenis Burnic",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 27,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251295-1690132888.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 570548,
+    "fullName": "Armin Hodzic",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Hatayspor",
+    "age": 26,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570548-1728055672.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 499341,
+    "fullName": "Milorad Stajic",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Brisbane Roar FC",
+    "age": 24,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/499341-1702710174.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 697030,
+    "fullName": "Jovan Ilic",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fudbalski klub Napredak Kruševac",
+    "age": 26,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697030-1680696527.png?lm=1"
+  },
+  {
+    "transfermarktId": 361772,
+    "fullName": "Dino Besirovic",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Allmänna Idrottsklubben",
+    "age": 32,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/361772-1718958221.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 399925,
+    "fullName": "Haris Hajdarevic",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Fudbalski klub Radnik Surdulica",
+    "age": 27,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399925-1747404842.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 685484,
+    "fullName": "Luka Duric",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
+    "age": 22,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/685484-1756890134.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 293210,
+    "fullName": "Amer Gojak",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Hrvatski Nogometni Klub Rijeka",
+    "age": 29,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293210-1605123264.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 215644,
+    "fullName": "Josip Corluka",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "Zagłębie Lubin Spółka Akcyjna",
+    "age": 31,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/215644-1765128414.png?lm=1"
+  },
+  {
+    "transfermarktId": 602906,
+    "fullName": "Blaz Boskovic",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "NK Lokomotiva Zagreb",
+    "age": 24,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/602906-1603481393.jpg?lm=1"
   },
   {
     "transfermarktId": 335457,
@@ -658,5 +977,126 @@
     "age": 22,
     "marketValueEur": 600000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/663897-1768660119.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 197126,
+    "fullName": "Kenan Kodro",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Gaziantep Futbol Kulübü A.Ş",
+    "age": 32,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/197126-1725480024.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 652996,
+    "fullName": "Said Hamulic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Wisła Płock Spółka Akcyjna",
+    "age": 25,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652996-1706692388.png?lm=1"
+  },
+  {
+    "transfermarktId": 447462,
+    "fullName": "Gedeon Guzina",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Orenburg",
+    "age": 32,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/447462-1754115078.png?lm=1"
+  },
+  {
+    "transfermarktId": 678606,
+    "fullName": "Admir Bristric",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FK Polissya Zhytomyr",
+    "age": 23,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/678606-1755789482.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 109217,
+    "fullName": "Edin Visca",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Trabzonspor Kulübü",
+    "age": 36,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/109217-1756307005.png?lm=1"
+  },
+  {
+    "transfermarktId": 465593,
+    "fullName": "Stipe Juric",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "NK Varazdin",
+    "age": 27,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/465593-1676574181.png?lm=1"
+  },
+  {
+    "transfermarktId": 313241,
+    "fullName": "Ivan Jukic",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "FC Anyang",
+    "age": 29,
+    "marketValueEur": 225000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/313241-1647375590.png?lm=1"
+  },
+  {
+    "transfermarktId": 70176,
+    "fullName": "Muris Mesanovic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FK Dukla Praha a.s",
+    "age": 35,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/70176-1748096000.png?lm=1"
+  },
+  {
+    "transfermarktId": 197881,
+    "fullName": "Irfan Hadzic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fudbalski Klub Mladost Lučani",
+    "age": 32,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/197881-1647375613.png?lm=1"
+  },
+  {
+    "transfermarktId": 890362,
+    "fullName": "Darije Markocevic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fudbalski klub Radnik Surdulica",
+    "age": 19,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/890362-1694786985.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 798026,
+    "fullName": "Hamza Jaganjac",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "NK Istra 1961",
+    "age": 22,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/798026-1753808285.jpg?lm=1"
   }
 ]

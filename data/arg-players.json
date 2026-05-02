@@ -39,7 +39,7 @@
     "detailedPosition": "GK",
     "jerseyNumber": null,
     "club": "Rayo Vallecano de Madrid S. A. D",
-    "age": 29,
+    "age": 30,
     "marketValueEur": 6000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/275218-1656336113.JPG?lm=1"
   },
@@ -64,6 +64,50 @@
     "age": 33,
     "marketValueEur": 5000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/296802-1682332928.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 570470,
+    "fullName": "Juan Pablo Cozzani",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Al-Kholood Club",
+    "age": 27,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570470-1724876650.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 323918,
+    "fullName": "Nahuel Losada",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Club Atlético Lanús",
+    "age": 33,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/323918-1721933353.png?lm=1"
+  },
+  {
+    "transfermarktId": 826527,
+    "fullName": "Felipe Zenobio",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Club Atlético Tigre",
+    "age": 25,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/826527-1727448033.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 242359,
+    "fullName": "Juan Musso",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Atlético Madrid",
+    "age": 31,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242359-1663583047.jpg?lm=1"
   },
   {
     "transfermarktId": 355915,
@@ -160,7 +204,7 @@
     "detailedPosition": "CB",
     "jerseyNumber": null,
     "club": "Racing Club de Strasbourg Alsace",
-    "age": 20,
+    "age": 21,
     "marketValueEur": 12000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1145504-1766483410.jpg?lm=1"
   },
@@ -262,6 +306,138 @@
     "age": 27,
     "marketValueEur": 7000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/553663-1757716144.png?lm=1"
+  },
+  {
+    "transfermarktId": 1019744,
+    "fullName": "Lautaro Di Lollo",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Atlético Boca Juniors",
+    "age": 22,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1019744-1739889666.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 839029,
+    "fullName": "Marco Di Césare",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Racing Club Asociación Civil de Avellaneda",
+    "age": 24,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/839029-1724348267.png?lm=1"
+  },
+  {
+    "transfermarktId": 719635,
+    "fullName": "Alexandro Bernabei",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Sport Club Internacional",
+    "age": 25,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/719635-1636410028.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 131225,
+    "fullName": "Nicolás Tagliafico",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Olympique Lyonnais",
+    "age": 33,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/131225-1668181437.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 875947,
+    "fullName": "Román Vega",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "AO FK Zenit Sankt-Peterburg",
+    "age": 22,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/875947-1756746536.png?lm=1"
+  },
+  {
+    "transfermarktId": 628750,
+    "fullName": "Juan Pablo Freytes",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Fluminense FC",
+    "age": 26,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/628750-1751719633.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 251876,
+    "fullName": "Pablo Maffeo",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Real Club Deportivo Mallorca",
+    "age": 28,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251876-1699449290.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 379752,
+    "fullName": "Alexander Barboza",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "S. A. F. Botafogo",
+    "age": 31,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/379752-1680009523.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 842910,
+    "fullName": "Ayrton Costa",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Atlético Boca Juniors",
+    "age": 26,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/842910-1739889633.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 402733,
+    "fullName": "Gonzalo Montiel",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Club Atlético River Plate",
+    "age": 29,
+    "marketValueEur": 4500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/402733-1762437910.png?lm=1"
+  },
+  {
+    "transfermarktId": 373373,
+    "fullName": "Lucas Martínez Quarta",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Atlético River Plate",
+    "age": 29,
+    "marketValueEur": 4500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/373373-1762437997.png?lm=1"
+  },
+  {
+    "transfermarktId": 1064191,
+    "fullName": "Tomás Avilés",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club de Foot Montréal",
+    "age": 22,
+    "marketValueEur": 4500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1064191-1771706898.jpg?lm=1"
   },
   {
     "transfermarktId": 648195,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/689211-1724349034.png?lm=1"
   },
   {
+    "transfermarktId": 661133,
+    "fullName": "Cristian Medina",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "S. A. F. Botafogo",
+    "age": 23,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661133-1739827027.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 639152,
+    "fullName": "José Paradela",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Club de Fútbol Cruz Azul",
+    "age": 27,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/639152-1625771604.png?lm=1"
+  },
+  {
+    "transfermarktId": 787618,
+    "fullName": "Valentín Carboni",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Racing Club Asociación Civil de Avellaneda",
+    "age": 21,
+    "marketValueEur": 8500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/787618-1753072933.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 576026,
+    "fullName": "Santiago Sosa",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Racing Club Asociación Civil de Avellaneda",
+    "age": 26,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/576026-1678216970.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 642758,
+    "fullName": "Aníbal Moreno",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Club Atlético River Plate",
+    "age": 26,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/642758-1746577695.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 440988,
+    "fullName": "Martín Ojeda",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Orlando City Soccer Club",
+    "age": 27,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/440988-1771712655.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 991134,
+    "fullName": "Alan Lescano",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Asociación Atlética Argentinos Juniors",
+    "age": 24,
+    "marketValueEur": 7500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/991134-1720122877.png?lm=1"
+  },
+  {
+    "transfermarktId": 1236677,
+    "fullName": "Milton Delgado",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Club Atlético Boca Juniors",
+    "age": 20,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1236677-1739899248.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 423436,
+    "fullName": "Santiago Ascacíbar",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Club Atlético Boca Juniors",
+    "age": 29,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/423436-1739827128.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 466268,
+    "fullName": "Juan Brunetta",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Club Tigres UANL Sinergia Deportiva",
+    "age": 28,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/466268-1698780385.jpeg?lm=1"
+  },
+  {
+    "transfermarktId": 1043646,
+    "fullName": "Christian Ordóñez",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Parma Calcio 1913",
+    "age": 21,
+    "marketValueEur": 6500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1043646-1751354832.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1305935,
+    "fullName": "Santino Andino",
+    "position": "MID",
+    "detailedPosition": "LM",
+    "jerseyNumber": null,
+    "club": "Panathinaikos Athlitikos Omilos",
+    "age": 20,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1305935-1770126109.png?lm=1"
+  },
+  {
+    "transfermarktId": 555820,
+    "fullName": "Martín Payero",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Unione Sportiva Cremonese",
+    "age": 27,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/555820-1707213845.jpg?lm=1"
+  },
+  {
     "transfermarktId": 576024,
     "fullName": "Julián Alvarez",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 20,
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1162160-1720648195.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1228194,
+    "fullName": "Álvaro Montoro",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "S. A. F. Botafogo",
+    "age": 19,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1228194-1720648057.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 961022,
+    "fullName": "Benja Domínguez",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Bologna FC 1909",
+    "age": 22,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/961022-1757664923.png?lm=1"
+  },
+  {
+    "transfermarktId": 266807,
+    "fullName": "Ángel Correa",
+    "position": "FWD",
+    "detailedPosition": "SS",
+    "jerseyNumber": null,
+    "club": "Club Tigres UANL Sinergia Deportiva",
+    "age": 31,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/266807-1701212448.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 628366,
+    "fullName": "Lucas Beltrán",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Valencia Club de Fútbol S. A. D",
+    "age": 25,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/628366-1692881138.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 636784,
+    "fullName": "Luca Orellano",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Club de Fútbol Monterrey Rayados A.C",
+    "age": 26,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/636784-1741201039.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 851111,
+    "fullName": "Luciano Gondou",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "PFK CSKA Moskva",
+    "age": 24,
+    "marketValueEur": 7500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/851111-1774610694.png?lm=1"
+  },
+  {
+    "transfermarktId": 661132,
+    "fullName": "Exequiel Zeballos",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Club Atlético Boca Juniors",
+    "age": 24,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661132-1739899419.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 756991,
+    "fullName": "Pablo Solari",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FK Spartak Moskva",
+    "age": 25,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/756991-1754042383.png?lm=1"
+  },
+  {
+    "transfermarktId": 613873,
+    "fullName": "Álvaro Barreal",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Santos Futebol Clube",
+    "age": 25,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/613873-1759764254.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 491704,
+    "fullName": "Benjamín Rollheiser",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Santos Futebol Clube",
+    "age": 26,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/491704-1725535826.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1213080,
+    "fullName": "Mateo Silvetti",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Club Internacional de Fútbol Miami",
+    "age": 20,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1213080-1771694988.jpg?lm=1"
   }
 ]

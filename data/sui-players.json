@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583038-1715938433.jpg?lm=1"
   },
   {
+    "transfermarktId": 496237,
+    "fullName": "Niklas Steffen",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Thun",
+    "age": 25,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496237-1677450559.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 496239,
+    "fullName": "Justin Hammel",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Grasshopper Club Zürich",
+    "age": 25,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496239-1613227382.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 247915,
+    "fullName": "Jonas Omlin",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Bayer 04 Leverkusen",
+    "age": 32,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/247915-1691248651.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 59027,
+    "fullName": "Roman Bürki",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "St. Louis City Soccer Club",
+    "age": 35,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/59027-1771787475.jpg?lm=1"
+  },
+  {
     "transfermarktId": 284730,
     "fullName": "Manuel Akanji",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 24,
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507345-1723707260.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 582987,
+    "fullName": "Adrian Bajrami",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Luzern",
+    "age": 24,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/582987-1704294917.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 359409,
+    "fullName": "Dominik Schmid",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC Basel 1893 AG",
+    "age": 28,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/359409-1758784182.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 298583,
+    "fullName": "Eray Cömert",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Valencia Club de Fútbol S. A. D",
+    "age": 28,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/298583-1704213027.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 805484,
+    "fullName": "Roggerio Nyakossi",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Oud-Heverlee Leuven",
+    "age": 22,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/805484-1646144881.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 539795,
+    "fullName": "Bryan Okoh",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Association de la Jeunesse auxerroise",
+    "age": 22,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/539795-1722523891.png?lm=1"
+  },
+  {
+    "transfermarktId": 922791,
+    "fullName": "Bung Meng Freimann",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Luzern",
+    "age": 20,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/922791-1764843118.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 449597,
+    "fullName": "Isaac Schmidt",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Sportverein Werder Bremen von 1899",
+    "age": 26,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/449597-1758702525.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 507455,
+    "fullName": "Lewin Blum",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Royal Charleroi Sporting Club",
+    "age": 24,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507455-1646126761.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 507488,
+    "fullName": "Nicolas Vouilloz",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Basel 1893 AG",
+    "age": 24,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507488-1667291417.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 203125,
+    "fullName": "Gregory Wüthrich",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Berner Sport Club Young Boys",
+    "age": 31,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203125-1736777794.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 86784,
+    "fullName": "Ricardo Rodríguez",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Real Betis Balompié",
+    "age": 33,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/86784-1718216908.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 499324,
+    "fullName": "Louis Lurvink",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "SK Sigma Olomouc, a.s",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/499324-1761891313.png?lm=1"
   },
   {
     "transfermarktId": 927353,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/250490-1626261724.jpg?lm=1"
   },
   {
+    "transfermarktId": 86792,
+    "fullName": "Xherdan Shaqiri",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC Basel 1893 AG",
+    "age": 34,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/86792-1723811199.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 421807,
+    "fullName": "Maren Haile-Selassie",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "Chicago Fire Soccer Club",
+    "age": 27,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/421807-1771696194.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 469957,
+    "fullName": "Kastriot Imeri",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Thun",
+    "age": 25,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/469957-1770637268.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 948736,
+    "fullName": "Corsin Konietzke",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC St. Gallen 1879",
+    "age": 19,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948736-1755009216.png?lm=1"
+  },
+  {
+    "transfermarktId": 507479,
+    "fullName": "Darian Males",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "Berner Sport Club Young Boys",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507479-1698353019.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 608212,
+    "fullName": "Daniel Dos Santos",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC Lugano",
+    "age": 23,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/608212-1755184915.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 583055,
+    "fullName": "Tyron Owusu",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Luzern",
+    "age": 22,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583055-1653238489.png?lm=1"
+  },
+  {
+    "transfermarktId": 346898,
+    "fullName": "Alexis Antunes",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Göztepe Sportif Yatırımlar A.Ş",
+    "age": 25,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346898-1773996404.png?lm=1"
+  },
+  {
+    "transfermarktId": 192637,
+    "fullName": "Anto Grgic",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Lugano",
+    "age": 29,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192637-1755184680.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 671806,
+    "fullName": "Valmir Matoshi",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Thun",
+    "age": 22,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671806-1663596129.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 807941,
+    "fullName": "Tim Meyer",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Grasshopper Club Zürich",
+    "age": 21,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/807941-1759939005.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 390179,
+    "fullName": "Bastien Toma",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC St. Gallen 1879",
+    "age": 26,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/390179-1755009438.png?lm=1"
+  },
+  {
+    "transfermarktId": 207561,
+    "fullName": "Maxime Dominguez",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Klub Sportowy Cracovia Spółka Akcyjna",
+    "age": 30,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/207561-1757776026.jpg?lm=1"
+  },
+  {
     "transfermarktId": 365108,
     "fullName": "Dan Ndoye",
     "position": "FWD",
@@ -611,7 +930,7 @@
     "detailedPosition": "ST",
     "jerseyNumber": null,
     "club": "FC Luzern",
-    "age": 22,
+    "age": 23,
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/707759-1693385096.png?lm=1"
   },
@@ -658,5 +977,126 @@
     "age": 23,
     "marketValueEur": 1200000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/627196-1772117130.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 195906,
+    "fullName": "Albian Ajeti",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Basel 1893 AG",
+    "age": 29,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/195906-1758784484.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 659317,
+    "fullName": "Marc Giger",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Royale Union Saint-Gilloise",
+    "age": 22,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/659317-1772107416.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1057525,
+    "fullName": "Enrique Aguilar",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 19,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1057525-1754993283.png?lm=1"
+  },
+  {
+    "transfermarktId": 994389,
+    "fullName": "Winsley Boteli",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Sion",
+    "age": 19,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/994389-1772117600.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 346903,
+    "fullName": "Christopher Lungoyi",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Gaziantep Futbol Kulübü A.Ş",
+    "age": 25,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346903-1725444576.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1138255,
+    "fullName": "Giacomo Koloto",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Basel 1893 AG",
+    "age": 18,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1138255-1761126348.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 500762,
+    "fullName": "Julian Von Moos",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FC Luzern",
+    "age": 25,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500762-1670354583.png?lm=1"
+  },
+  {
+    "transfermarktId": 583011,
+    "fullName": "Andrin Hunziker",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fussballclub Winterthur",
+    "age": 23,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583011-1721466119.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 68033,
+    "fullName": "Steven Zuber",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "APS Atromitos Athinon",
+    "age": 34,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/68033-1754377961.png?lm=1"
+  },
+  {
+    "transfermarktId": 194638,
+    "fullName": "Renato Steffen",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FC Lugano",
+    "age": 34,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/194638-1755185268.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 507496,
+    "fullName": "Felix Mambimbi",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Le Havre Athletic Club",
+    "age": 25,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507496-1721331170.png?lm=1"
   }
 ]

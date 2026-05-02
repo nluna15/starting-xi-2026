@@ -23,11 +23,17 @@ export function HowItWorks() {
           const cardBg =
             step.title === "Pick Your Nation"
               ? "bg-zinc-900/60"
-              : "bg-[rgba(111,110,108,0.75)]";
+              : isCompareStep
+                ? "bg-[rgba(111,110,108,0.5)]"
+                : "bg-[rgba(111,110,108,0.75)]";
+          const cardBorder =
+            step.title === "Pick Your Nation"
+              ? "border-black"
+              : "border-zinc-800";
           return (
             <div
               key={step.title}
-              className={`rounded-xl border border-zinc-800 p-4 ${cardBg}${isCompareStep ? " text-white" : ""}`}
+              className={`rounded-xl border ${cardBorder} p-4 ${cardBg}${isCompareStep ? " text-white" : ""}`}
             >
               <h3
                 className={

@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/683271-1772672828.JPG?lm=1"
   },
   {
+    "transfermarktId": 405382,
+    "fullName": "Kosei Tani",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Zelvia",
+    "age": 25,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405382-1773590970.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 286504,
+    "fullName": "Ryosuke Kojima",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Hitachi Kashiwa Reysol",
+    "age": 29,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/286504-1773586293.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 489081,
+    "fullName": "Daiya Maekawa",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Rakuten Vissel Kobe",
+    "age": 31,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489081-1772722912.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 843027,
+    "fullName": "Konosuke Nishikawa",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Mito HollyHock",
+    "age": 23,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/843027-1773593802.jpg?lm=1"
+  },
+  {
     "transfermarktId": 353892,
     "fullName": "Hiroki Ito",
     "position": "DEF",
@@ -264,6 +308,138 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/936294-1758617690.jpg?lm=1"
   },
   {
+    "transfermarktId": 489072,
+    "fullName": "Taiyo Koga",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Hitachi Kashiwa Reysol",
+    "age": 27,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489072-1773585802.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 423112,
+    "fullName": "Takuma Ominami",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Oud-Heverlee Leuven",
+    "age": 28,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/423112-1608298199.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1030663,
+    "fullName": "Yuto Tsunashima",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Royal Antwerp FC",
+    "age": 25,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1030663-1754466605.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 733309,
+    "fullName": "Takahiro Akimoto",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Oud-Heverlee Leuven",
+    "age": 28,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733309-1713337957.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 754608,
+    "fullName": "Shuto Nakano",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Sanfrecce Hiroshima",
+    "age": 25,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/754608-1770310358.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 404379,
+    "fullName": "Tetsushi Yamakawa",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Rakuten Vissel Kobe",
+    "age": 28,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/404379-1772732069.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 532054,
+    "fullName": "Riku Handa",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Gamba Osaka",
+    "age": 24,
+    "marketValueEur": 1400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/532054-1772685073.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 501749,
+    "fullName": "Seiji Kimura",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Koninklijke Voetbal Club Westerlo",
+    "age": 24,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501749-1628084836.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 353785,
+    "fullName": "Ryoya Ogawa",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Kashima Antlers FC",
+    "age": 29,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353785-1772672755.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 275532,
+    "fullName": "Shinnosuke Nakatani",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Gamba Osaka",
+    "age": 30,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/275532-1772685012.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 188915,
+    "fullName": "Naomichi Ueda",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Kashima Antlers FC",
+    "age": 31,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/188915-1772673327.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 395589,
+    "fullName": "Miki Yamane",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Los Angeles Galaxy",
+    "age": 32,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395589-1771693780.jpg?lm=1"
+  },
+  {
     "transfermarktId": 643574,
     "fullName": "Kaishu Sano",
     "position": "MID",
@@ -457,7 +633,7 @@
     "detailedPosition": "CAM",
     "jerseyNumber": null,
     "club": "Göztepe Sportif Yatırımlar A.Ş",
-    "age": 22,
+    "age": 23,
     "marketValueEur": 2400000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/902021-1727795832.png?lm=1"
   },
@@ -482,6 +658,149 @@
     "age": 21,
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814489-1764841247.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 512699,
+    "fullName": "Yasuto Wakizaka",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Kawasaki Frontale",
+    "age": 30,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/512699-1770530606.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 515650,
+    "fullName": "Takumu Kawamura",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 26,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/515650-1754993708.png?lm=1"
+  },
+  {
+    "transfermarktId": 733371,
+    "fullName": "Sota Kawasaki",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "1. - und Sportverein Mainz 05",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733371-1752588052.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 577216,
+    "fullName": "Shunki Higashi",
+    "position": "MID",
+    "detailedPosition": "LM",
+    "jerseyNumber": null,
+    "club": "Sanfrecce Hiroshima",
+    "age": 25,
+    "marketValueEur": 1400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/577216-1772963103.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 295091,
+    "fullName": "Ryoma Watanabe",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Urawa Red Diamonds",
+    "age": 29,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/295091-1499758208.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 948169,
+    "fullName": "Ryunosuke Sato",
+    "position": "MID",
+    "detailedPosition": "LM",
+    "jerseyNumber": null,
+    "club": "Tokyo FC",
+    "age": 19,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948169-1772965432.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 457830,
+    "fullName": "Takahiro Ko",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Tokyo FC",
+    "age": 28,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/457830-1772683336.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 673858,
+    "fullName": "Shunta Tanaka",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Cerezo Osaka",
+    "age": 28,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/673858-1772817174.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 589813,
+    "fullName": "Tojiro Kubo",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "Hitachi Kashiwa Reysol",
+    "age": 27,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589813-1773586268.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 515653,
+    "fullName": "Daiju Sasaki",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Rakuten Vissel Kobe",
+    "age": 26,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/515653-1772732536.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 684058,
+    "fullName": "Tomoya Miki",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Avispa Fukuoka",
+    "age": 28,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684058-1770556365.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 681947,
+    "fullName": "Kento Tachibanada",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Kawasaki Frontale",
+    "age": 27,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/681947-1770530412.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 588478,
+    "fullName": "Yuki Yamamoto",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Kawasaki Frontale",
+    "age": 28,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/588478-1770530409.JPG?lm=1"
   },
   {
     "transfermarktId": 405398,
@@ -658,5 +977,126 @@
     "age": 30,
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345323-1772673325.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 594069,
+    "fullName": "Yuki Soma",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Zelvia",
+    "age": 29,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/594069-1773591125.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 566013,
+    "fullName": "Shunsuke Mito",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Sparta Rotterdam",
+    "age": 23,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/566013-1755698448.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 245744,
+    "fullName": "Takuma Asano",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Real Club Deportivo Mallorca",
+    "age": 31,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/245744-1657284052.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 663514,
+    "fullName": "Mao Hosoya",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Hitachi Kashiwa Reysol",
+    "age": 24,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/663514-1773585881.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 602781,
+    "fullName": "Daisuke Yokota",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Koninklijke Atletiek Associatie Gent",
+    "age": 25,
+    "marketValueEur": 1700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/602781-1757924561.png?lm=1"
+  },
+  {
+    "transfermarktId": 495752,
+    "fullName": "Taichi Hara",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC St. Pauli von 1910",
+    "age": 26,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/495752-1769616700.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 657625,
+    "fullName": "Takuro Kaneko",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Urawa Red Diamonds",
+    "age": 28,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/657625-1628004985.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 634859,
+    "fullName": "Sho Fukuda",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Brøndby Idrætsforening",
+    "age": 25,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/634859-1752323514.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 290705,
+    "fullName": "Koya Kitagawa",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "S-Pulse",
+    "age": 29,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290705-1774194550.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 353567,
+    "fullName": "Takuma Nishimura",
+    "position": "FWD",
+    "detailedPosition": "SS",
+    "jerseyNumber": null,
+    "club": "Zelvia",
+    "age": 29,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353567-1773591370.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 307052,
+    "fullName": "Masaya Okugawa",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Kyoto Purple Sanga",
+    "age": 30,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307052-1773589553.JPG?lm=1"
   }
 ]

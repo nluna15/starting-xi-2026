@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/333175-1525697908.jpg?lm=1"
   },
   {
+    "transfermarktId": 916497,
+    "fullName": "Massamba N'Diaye",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Clermont Foot 63",
+    "age": 24,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/916497-1678723186.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 568728,
+    "fullName": "Pape Sy",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC de Metz",
+    "age": 28,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/568728-1676124787.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 666975,
+    "fullName": "Ousmane Ba",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC de Metz",
+    "age": 23,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/666975-1692804839.png?lm=1"
+  },
+  {
+    "transfermarktId": 836132,
+    "fullName": "Boubacar Fall",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "AS Saint-Étienne",
+    "age": 25,
+    "marketValueEur": 10000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/836132-1727720972.jpg?lm=1"
+  },
+  {
     "transfermarktId": 1111589,
     "fullName": "El Hadji Malick Diouf",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 22,
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1038821-1771787670.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 649022,
+    "fullName": "Moussa Ndiaye",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC Schalke 04",
+    "age": 23,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/649022-1770026706.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1182738,
+    "fullName": "Abdoulaye Faye",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Lorient-Bretagne Sud",
+    "age": 21,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1182738-1695367426.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1191154,
+    "fullName": "Ibrahima Ba",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Futebol Clube de Famalicão",
+    "age": 20,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1191154-1758311322.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 135492,
+    "fullName": "Youssouf Sabaly",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Real Betis Balompié",
+    "age": 33,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/135492-1762259662.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1049965,
+    "fullName": "Gora Diouf",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Yellow-Red Koninklijke Voetbalclub Mechelen",
+    "age": 22,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1049965-1739452053.png?lm=1"
+  },
+  {
+    "transfermarktId": 379168,
+    "fullName": "Noah Fadiga",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Aris Thessalonikis",
+    "age": 26,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/379168-1696754051.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 364234,
+    "fullName": "Pape Abou Cissé",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Adana Demirspor",
+    "age": 30,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/364234-1703004335.png?lm=1"
+  },
+  {
+    "transfermarktId": 265383,
+    "fullName": "Abdoulaye Seck",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 33,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265383-1616852043.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 520815,
+    "fullName": "Ousseynou Ba",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "İstanbul Başakşehir Futbol Kulübü",
+    "age": 30,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/520815-1759746817.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 949111,
+    "fullName": "Aliou Thiaré",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Futbolniy Klub Dynamo Kyiv",
+    "age": 22,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/949111-1772205841.png?lm=1"
+  },
+  {
+    "transfermarktId": 1250976,
+    "fullName": "Mamadou Thierno Barry",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Royale Union Saint-Gilloise",
+    "age": 21,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1250976-1772107379.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 296422,
+    "fullName": "Fodé Ballo-Touré",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC de Metz",
+    "age": 29,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/296422-1614110347.jpg?lm=1"
   },
   {
     "transfermarktId": 485963,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   },
   {
+    "transfermarktId": 287635,
+    "fullName": "Assane Dioussé",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Association de la Jeunesse auxerroise",
+    "age": 28,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/287635-1657714916.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 204585,
+    "fullName": "Joseph Lopy",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Angers Sporting Club de l'Ouest",
+    "age": 34,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/s_204585_750_2012_2.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 658737,
+    "fullName": "Mor Ndiaye",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Morski Klub Sportowy Pogoń Szczecin",
+    "age": 25,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/658737-1747850466.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 478198,
+    "fullName": "Franck Kanouté",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Fudbalski Klub Radnički Niš",
+    "age": 27,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/478198-1581175370.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 649024,
+    "fullName": "Lamine Diack",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "FC Sion",
+    "age": 25,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/649024-1772117272.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1178485,
+    "fullName": "Papa Amady Gadio",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "RFK Akhmat Grozny",
+    "age": 24,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1178485-1743873308.PNG?lm=1"
+  },
+  {
+    "transfermarktId": 1292706,
+    "fullName": "Jean Unjanque",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "Querétaro Fútbol Club",
+    "age": 21,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1292706-1756755086.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 211325,
+    "fullName": "Badou Ndiaye",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Gaziantep Futbol Kulübü A.Ş",
+    "age": 35,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/211325-1728296431.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1497653,
+    "fullName": "Bara Sapoko Ndiaye",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Bayern München",
+    "age": 18,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1497653-1767449727.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1133732,
+    "fullName": "Abdou Aziz Fall",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Fenerbahçe Spor Kulübü",
+    "age": 19,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1133732-1765461128.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1111051,
+    "fullName": "Mamadou Gning",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Aris Thessalonikis",
+    "age": 19,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1111051-1763121776.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 984674,
+    "fullName": "Pape Youssou Niang",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "KAS Eupen",
+    "age": 23,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1401774,
+    "fullName": "Ousseynou Fall Seck",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Randers Fodbold Club",
+    "age": 18,
+    "marketValueEur": 25000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1401774-1755605553.jpg?lm=1"
+  },
+  {
     "transfermarktId": 623570,
     "fullName": "Iliman Ndiaye",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 25,
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/704270-1645697334.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 568696,
+    "fullName": "Cheikh Sabaly",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Vancouver Whitecaps FC",
+    "age": 27,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/568696-1771861885.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 979551,
+    "fullName": "Pathé Mboup",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Stade brestois 29",
+    "age": 22,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/979551-1709884981.png?lm=1"
+  },
+  {
+    "transfermarktId": 662208,
+    "fullName": "Philippe Keny",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Zürich",
+    "age": 26,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/662208-1754664513.png?lm=1"
+  },
+  {
+    "transfermarktId": 490417,
+    "fullName": "Ibrahima Niane",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Angers Sporting Club de l'Ouest",
+    "age": 27,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/490417-1750956872.png?lm=1"
+  },
+  {
+    "transfermarktId": 852858,
+    "fullName": "Mbaye Ndiaye",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Motor Lublin Spółka Akcyjna",
+    "age": 22,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/852858-1752827372.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 606849,
+    "fullName": "Makhtar Gueye",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "RWD Molenbeek",
+    "age": 28,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/606849-1709884852.png?lm=1"
+  },
+  {
+    "transfermarktId": 339820,
+    "fullName": "Amath Ndiaye",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Real Valladolid CF",
+    "age": 29,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339820-1510233284.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1176295,
+    "fullName": "Pape Moussa Fall",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "RAAL La Louvière",
+    "age": 21,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1176295-1772797020.png?lm=1"
+  },
+  {
+    "transfermarktId": 585339,
+    "fullName": "Pape Habib Guèye",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Kasımpaşa A.Ş",
+    "age": 26,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/585339-1759931569.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 569777,
+    "fullName": "Alassane Ndao",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Konyaspor",
+    "age": 29,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/569777-1755610229.png?lm=1"
+  },
+  {
+    "transfermarktId": 163053,
+    "fullName": "Mame Thiam",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Eyüp Spor Kulübü",
+    "age": 33,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/163053-1761573946.jpg?lm=1"
   }
 ]

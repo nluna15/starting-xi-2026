@@ -110,7 +110,7 @@ export default async function CommunityPage({
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <div className="w-[90%]">
+          <div className="mx-auto w-[90%]">
             <CommunityPitch
               formation={formationDef}
               starters={startersResolved}
@@ -170,7 +170,7 @@ function Card({
 }) {
   return (
     <section
-      className={`rounded-xl border border-zinc-800 bg-zinc-900/60 p-4 ${className}`.trim()}
+      className={`rounded-xl border border-zinc-800 bg-[rgba(111,110,108,0.75)] p-4 ${className}`.trim()}
     >
       <h2 className={`mb-2 text-sm font-semibold ${titleClassName}`}>{title}</h2>
       {children}

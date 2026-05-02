@@ -209,7 +209,7 @@ export function LineupBuilder({
             </span>
           </div>
 
-          <div className="w-[90%]">
+          <div className="mx-auto w-[90%]">
             <BuildPitch
               formation={formation}
               starters={starters}

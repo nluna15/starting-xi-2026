@@ -55,3 +55,19 @@ body {
 .sp-soccer-pitch .sp-bench-title {
   color: rgba(0, 0, 0, 1);
 }
+
+@media (max-width: 410px) {
+  .sp-soccer-pitch {
+    --sp-dot-min: 32.5px !important;
+    --sp-dot-preferred: 8.75% !important;
+    --sp-dot-max: 60.5px !important;
+  }
+
+  .sp-soccer-pitch .sp-bench {
+    margin-top: 30px !important;
+  }
+
+  .sp-soccer-pitch .sp-bench-row {
+    height: 48px !important;
+  }
+}

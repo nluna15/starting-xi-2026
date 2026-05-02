@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/398971-1548408642.jpg?lm=1"
   },
   {
+    "transfermarktId": 929878,
+    "fullName": "Filip Sidklev",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Aris Thessalonikis",
+    "age": 21,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/929878-1762258840.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 365544,
+    "fullName": "Pontus Dahlberg",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Lillestrøm Sportsklubb",
+    "age": 27,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/365544-1497953992.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1125081,
+    "fullName": "David Andersson",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "BK Häcken",
+    "age": 22,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1125081-1723796884.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 75458,
+    "fullName": "Robin Olsen",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Malmö Fotbollförening",
+    "age": 36,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/75458-1697721104.jpg?lm=1"
+  },
+  {
     "transfermarktId": 503075,
     "fullName": "Isak Hien",
     "position": "DEF",
@@ -94,7 +138,7 @@
     "detailedPosition": "LB",
     "jerseyNumber": null,
     "club": "Leeds United",
-    "age": 26,
+    "age": 27,
     "marketValueEur": 20000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/362108-1666691160.jpg?lm=1"
   },
@@ -262,6 +306,138 @@
     "age": 32,
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/170646-1693900836.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 741090,
+    "fullName": "Jonas Rouhi",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Juventus FC",
+    "age": 22,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/741090-1757604908.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1126894,
+    "fullName": "Malcolm Jeng",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Feyenoord Rotterdam",
+    "age": 21,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1126894-1724838826.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 321155,
+    "fullName": "Christopher McVey",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "San Diego FC",
+    "age": 29,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/321155-1771754590.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1072724,
+    "fullName": "John Mellberg",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 19,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1072724-1754993980.png?lm=1"
+  },
+  {
+    "transfermarktId": 416104,
+    "fullName": "Axel Norén",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Mjällby Almänna Idrottsförening",
+    "age": 27,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/416104-1723539344.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 270905,
+    "fullName": "Filip Dagerstal",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "KKS Lech Poznań Spółka Akcyjna",
+    "age": 29,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/270905-1671293534.png?lm=1"
+  },
+  {
+    "transfermarktId": 958649,
+    "fullName": "Zinedin Smajlović",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sandefjord Fotball",
+    "age": 22,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/958649-1692946654.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 867674,
+    "fullName": "Noah Persson",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Hammarby IF",
+    "age": 22,
+    "marketValueEur": 1300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867674-1700817165.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 249125,
+    "fullName": "Linus Wahlqvist",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Morski Klub Sportowy Pogoń Szczecin",
+    "age": 29,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/249125-1726213574.png?lm=1"
+  },
+  {
+    "transfermarktId": 255469,
+    "fullName": "Joel Andersson",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Fodbold Club Midtjylland",
+    "age": 29,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/255469-1753810527.png?lm=1"
+  },
+  {
+    "transfermarktId": 1069508,
+    "fullName": "Bleon Kurtulus",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Malmö Fotbollförening",
+    "age": 18,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1069508-1725482104.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 504243,
+    "fullName": "Rasmus Wikström",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Idrottsföreningen Elfsborg",
+    "age": 25,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504243-1629726456.jpg?lm=1"
   },
   {
     "transfermarktId": 866246,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/322293-1565343443.jpg?lm=1"
   },
   {
+    "transfermarktId": 1065043,
+    "fullName": "Pontus Dahbo",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "BK Häcken",
+    "age": 20,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1065043-1691577451.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 667249,
+    "fullName": "Otto Rosengren",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Malmö Fotbollförening",
+    "age": 22,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/667249-1687343329.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 193592,
+    "fullName": "Kristoffer Olsson",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Fodbold Club Midtjylland",
+    "age": 30,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193592-1574609450.png?lm=1"
+  },
+  {
+    "transfermarktId": 255473,
+    "fullName": "Samuel Gustafson",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Urawa Red Diamonds",
+    "age": 31,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/255473-1608312332.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 413942,
+    "fullName": "John Björkengren",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Randers Fodbold Club",
+    "age": 27,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413942-1735076558.png?lm=1"
+  },
+  {
+    "transfermarktId": 321158,
+    "fullName": "Simon Olsson",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Idrottsföreningen Elfsborg",
+    "age": 28,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/321158-1723713762.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 721470,
+    "fullName": "Patrik Wålemark",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "KKS Lech Poznań Spółka Akcyjna",
+    "age": 24,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/721470-1758475480.png?lm=1"
+  },
+  {
+    "transfermarktId": 783178,
+    "fullName": "Melker Heier",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "IK Sirius",
+    "age": 24,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/783178-1724966194.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 322077,
+    "fullName": "Besard Šabović",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Austin FC",
+    "age": 28,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/322077-1740778678.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 744853,
+    "fullName": "Herman Johansson",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "FC Dallas",
+    "age": 28,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/744853-1771675287.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 225569,
+    "fullName": "Kerim Mrabti",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Yellow-Red Koninklijke Voetbalclub Mechelen",
+    "age": 31,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/225569-1664349345.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 579295,
+    "fullName": "Melker Widell",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Swansea City",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/579295-1704806053.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 532965,
+    "fullName": "David Edvardsson",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Tromsø Idrettslag",
+    "age": 24,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/532965-1729965735.jpg?lm=1"
+  },
+  {
     "transfermarktId": 349066,
     "fullName": "Alexander Isak",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 27,
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/633454-1756808339.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 795274,
+    "fullName": "Mayckel Lahdo",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Brøndby Idrætsforening",
+    "age": 23,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/795274-1723819960.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 308552,
+    "fullName": "Jordan Larsson",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FC København",
+    "age": 28,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/308552-1659600431.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 111078,
+    "fullName": "Emil Forsberg",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Red Bull New York",
+    "age": 34,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/111078-1771716268.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 934527,
+    "fullName": "Alieu Njie",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Torino Calcio",
+    "age": 20,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/934527-1739284093.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 675657,
+    "fullName": "Joakim Persson",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "IK Sirius",
+    "age": 24,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/675657-1704805998.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 252689,
+    "fullName": "Carlos Strandberg",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Hatayspor",
+    "age": 30,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/252689-1728055291.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 929876,
+    "fullName": "Momodou Sonko",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Koninklijke Atletiek Associatie Gent",
+    "age": 21,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/929876-1706694287.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 116598,
+    "fullName": "Viktor Claesson",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC København",
+    "age": 34,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/116598-1701290255.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 320440,
+    "fullName": "Gustaf Nilsson",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club Brugge Koninklijke Voetbalvereniging",
+    "age": 28,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/320440-1754511265.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 300532,
+    "fullName": "Pontus Almqvist",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Parma Calcio 1913",
+    "age": 26,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/300532-1692964187.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1172431,
+    "fullName": "Kevin Filling",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Allmänna Idrottsklubben",
+    "age": 17,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1172431-1763379437.jpg?lm=1"
   }
 ]

@@ -6,7 +6,7 @@ import { Modal } from "@/components/ui/modal";
 import { Button } from "@/components/ui/button";
 import { computeAverages } from "@/components/lineup-summary";
 import type { Player } from "@/lib/db/schema";
-import { cn, formatAge, formatEur } from "@/lib/utils";
+import { cn, formatAge, formatEur, lastName } from "@/lib/utils";
 
 type Team = { name: string; flagEmoji: string };
 
@@ -165,7 +165,3 @@ function Stat({
   );
 }
 
-function lastName(fullName: string): string {
-  const parts = fullName.trim().split(/\s+/);
-  return parts.length > 1 ? parts[parts.length - 1] : fullName;
-}

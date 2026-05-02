@@ -4,6 +4,7 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { FormationDef } from "@/lib/formations";
 import type { Player } from "@/lib/db/schema";
+import { lastName, useMediaQuery } from "@/lib/utils";
 
 type Props = {
   formation: FormationDef;
@@ -15,11 +16,15 @@ type Props = {
   showPhotos?: boolean;
 };
 
-function toPkgPlayer(p: Player | null, showPhotos: boolean): PkgPlayer | null {
+function toPkgPlayer(
+  p: Player | null,
+  showPhotos: boolean,
+  shortenName: boolean,
+): PkgPlayer | null {
   if (!p) return null;
   return {
     id: String(p.id),
-    name: p.fullName,
+    name: shortenName ? lastName(p.fullName) : p.fullName,
     photoUrl: showPhotos ? p.photoUrl ?? undefined : undefined,
   };
 }
@@ -33,6 +38,7 @@ export function BuildPitch({
   highlightSlot = null,
   showPhotos = false,
 }: Props) {
+  const isNarrow = useMediaQuery("(max-width: 410px)");
   const pkgFormation = {
     name: formation.name,
     slots: formation.slots.map((s) => ({
@@ -41,8 +47,8 @@ export function BuildPitch({
       role: s.slot,
     })),
   };
-  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos));
-  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos));
+  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos, isNarrow));
+  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, isNarrow));
   const hl = highlightSlot != null ? formation.slots[highlightSlot] ?? null : null;
 
   return (
@@ -60,7 +66,7 @@ export function BuildPitch({
       {hl && (
         <div
           aria-hidden
-          className="pointer-events-none absolute z-10 h-[98px] w-[98px] -translate-x-1/2 -translate-y-1/2 rounded-full ring-2 ring-accent ring-offset-2 ring-offset-transparent sm:h-[112px] sm:w-[112px]"
+          className="pointer-events-none absolute z-10 h-[98px] w-[98px] -translate-x-1/2 -translate-y-1/2 rounded-full ring-2 ring-accent ring-offset-2 ring-offset-transparent max-[410px]:h-[49px] max-[410px]:w-[49px] sm:h-[112px] sm:w-[112px]"
           style={{ left: `${hl.x}%`, top: `${100 - hl.y}%` }}
         />
       )}

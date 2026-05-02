@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/646353-1664348532.jpg?lm=1"
   },
   {
+    "transfermarktId": 226049,
+    "fullName": "Freddie Woodman",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Liverpool FC",
+    "age": 29,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226049-1737883837.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 110864,
+    "fullName": "Sam Johnstone",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Wolverhampton Wanderers FC",
+    "age": 33,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/110864-1672915792.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 503769,
+    "fullName": "Arthur Okonkwo",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Arsenal FC",
+    "age": 24,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503769-1673651811.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 670840,
+    "fullName": "Joe Whitworth",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Crystal Palace FC",
+    "age": 22,
+    "marketValueEur": 1700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670840-1669114466.jpg?lm=1"
+  },
+  {
     "transfermarktId": 314353,
     "fullName": "Trent Alexander-Arnold",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 26,
     "marketValueEur": 25000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/730893-1693826944.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 392775,
+    "fullName": "Ryan Sessegnon",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Fulham FC",
+    "age": 25,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392775-1722077271.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 480116,
+    "fullName": "Lloyd Kelly",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Juventus FC",
+    "age": 27,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/480116-1739281396.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 303254,
+    "fullName": "Fikayo Tomori",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "AC Milan",
+    "age": 28,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303254-1684856117.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1078163,
+    "fullName": "Ayden Heaven",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Manchester United FC",
+    "age": 19,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1078163-1727382016.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 503977,
+    "fullName": "Taylor Harwood-Bellis",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Southampton FC",
+    "age": 24,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503977-1687975943.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 596446,
+    "fullName": "Leif Davis",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Ipswich Town",
+    "age": 26,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/596446-1738823882.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 258878,
+    "fullName": "Tosin Adarabioyo",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Chelsea FC",
+    "age": 28,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258878-1646903871.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 728733,
+    "fullName": "Brooke Norton-Cuffy",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Genoa Cricket and FC",
+    "age": 22,
+    "marketValueEur": 16000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728733-1736498622.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 525247,
+    "fullName": "Maximilian Kilman",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "West Ham United FC",
+    "age": 28,
+    "marketValueEur": 16000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/525247-1688370291.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 693095,
+    "fullName": "Jacob Greaves",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Ipswich Town",
+    "age": 25,
+    "marketValueEur": 16000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/693095-1727786112.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 186590,
+    "fullName": "John Stones",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Manchester City FC",
+    "age": 31,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/186590-1684764261.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 256178,
+    "fullName": "Joe Gomez",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Liverpool FC",
+    "age": 28,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256178-1746645094.jpg?lm=1"
   },
   {
     "transfermarktId": 581678,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/741238-1770845529.jpg?lm=1"
   },
   {
+    "transfermarktId": 796297,
+    "fullName": "Jobe Bellingham",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Borussia Dortmund",
+    "age": 20,
+    "marketValueEur": 30000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/796297-1766483351.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 618494,
+    "fullName": "Tyler Morton",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Olympique Lyonnais",
+    "age": 23,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/618494-1719220555.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 947411,
+    "fullName": "Chris Rigg",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Sunderland AFC",
+    "age": 18,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/947411-1707494096.png?lm=1"
+  },
+  {
+    "transfermarktId": 294057,
+    "fullName": "James Maddison",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Tottenham Hotspur FC",
+    "age": 29,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/294057-1687982662.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 922769,
+    "fullName": "Lewis Miley",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Newcastle United FC",
+    "age": 20,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/922769-1696453881.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 644401,
+    "fullName": "Keane Lewis-Potter",
+    "position": "MID",
+    "detailedPosition": "LM",
+    "jerseyNumber": null,
+    "club": "Brentford FC",
+    "age": 25,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/644401-1767003558.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 399434,
+    "fullName": "Marcus Tavernier",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "AFC Bournemouth",
+    "age": 27,
+    "marketValueEur": 23000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399434-1700650360.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 565822,
+    "fullName": "Harvey Elliott",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Aston Villa FC",
+    "age": 23,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565822-1665128076.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 867688,
+    "fullName": "Jack Hinshelwood",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Brighton and Hove Albion FC",
+    "age": 21,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867688-1698353957.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 392765,
+    "fullName": "Emile Smith Rowe",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Fulham FC",
+    "age": 25,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392765-1684164628.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 583199,
+    "fullName": "James McAtee",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Nottingham Forest FC",
+    "age": 23,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583199-1770845444.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1011131,
+    "fullName": "Josh King",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Fulham FC",
+    "age": 19,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1011131-1752773470.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 340329,
+    "fullName": "Joe Willock",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Newcastle United FC",
+    "age": 26,
+    "marketValueEur": 16000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340329-1761077592.jpg?lm=1"
+  },
+  {
     "transfermarktId": 433177,
     "fullName": "Bukayo Saka",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 20,
     "marketValueEur": 22000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/866655-1724485194.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 936874,
+    "fullName": "Tyrique George",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Everton FC",
+    "age": 20,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/936874-1731016609.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 401173,
+    "fullName": "Jadon Sancho",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Aston Villa FC",
+    "age": 26,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/401173-1688564217.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 331726,
+    "fullName": "Tammy Abraham",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Aston Villa FC",
+    "age": 28,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331726-1761563884.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 584769,
+    "fullName": "Dwight McNeil",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Everton FC",
+    "age": 26,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/584769-1700651579.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 672381,
+    "fullName": "Jonathan Rowe",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Bologna FC 1909",
+    "age": 23,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672381-1750074903.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1108466,
+    "fullName": "Rio Ngumoha",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Liverpool FC",
+    "age": 17,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1108466-1730834754.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1187629,
+    "fullName": "Max Dowman",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Arsenal FC",
+    "age": 16,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1187629-1773914587.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 251664,
+    "fullName": "Ivan Toney",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Al-Ahli Saudi FC",
+    "age": 30,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251664-1677676808.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 665390,
+    "fullName": "Jaden Philogene",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Aston Villa FC",
+    "age": 24,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/665390-1737014900.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 696346,
+    "fullName": "Jay Stansfield",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fulham FC",
+    "age": 23,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/696346-1669625394.png?lm=1"
+  },
+  {
+    "transfermarktId": 684210,
+    "fullName": "Jaidon Anthony",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Burnley FC",
+    "age": 26,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684210-1637578473.jpg?lm=1"
   }
 ]

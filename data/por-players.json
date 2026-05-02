@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670710-1679905817.jpg?lm=1"
   },
   {
+    "transfermarktId": 527026,
+    "fullName": "Ricardo Velho",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Gençlerbirliği Spor Kulübü",
+    "age": 27,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/527026-1774430936.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 929334,
+    "fullName": "Gonçalo Ribeiro",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Futebol Clube do Porto",
+    "age": 20,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/929334-1714391105.png?lm=1"
+  },
+  {
+    "transfermarktId": 84993,
+    "fullName": "Daniel Heuer Fernandes",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Hamburger SV",
+    "age": 33,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/84993-1758189215.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 60561,
+    "fullName": "Anthony Lopes",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC de Nantes",
+    "age": 35,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/60561-1640775949.jpg?lm=1"
+  },
+  {
     "transfermarktId": 616341,
     "fullName": "Nuno Mendes",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 31,
     "marketValueEur": 9000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/182712-1675080937.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 479643,
+    "fullName": "Alexandre Penetra",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Alkmaar Zaanstreek",
+    "age": 24,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/479643-1753351033.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 537602,
+    "fullName": "João Mário",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Bologna FC 1909",
+    "age": 26,
+    "marketValueEur": 8500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/537602-1753421209.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 231572,
+    "fullName": "Nélson Semedo",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Fenerbahçe Spor Kulübü",
+    "age": 32,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/231572-1765459986.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 669956,
+    "fullName": "Leonardo Lelo",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Sporting Clube de Braga",
+    "age": 26,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/669956-1663603059.png?lm=1"
+  },
+  {
+    "transfermarktId": 420465,
+    "fullName": "Tiago Djaló",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Beşiktaş Jimnastik Kulübü",
+    "age": 26,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/420465-1770375312.png?lm=1"
+  },
+  {
+    "transfermarktId": 170986,
+    "fullName": "Raphaël Guerreiro",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC Bayern München",
+    "age": 32,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/170986-1711745629.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 539252,
+    "fullName": "Costinha",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Olympiakos Syndesmos Filathlon Peiraios",
+    "age": 26,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/539252-1757716210.png?lm=1"
+  },
+  {
+    "transfermarktId": 818252,
+    "fullName": "Pedro Malheiro",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Trabzonspor Kulübü",
+    "age": 25,
+    "marketValueEur": 5500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/818252-1723802085.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 637782,
+    "fullName": "André Amaro",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Vitória Sport Clube",
+    "age": 23,
+    "marketValueEur": 5500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/637782-1631003983.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 668587,
+    "fullName": "Nazinho",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Cercle Brugge Koninklijke Sportvereniging",
+    "age": 22,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/668587-1772556287.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 927734,
+    "fullName": "Martim Marques",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC Lugano",
+    "age": 22,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/927734-1755185151.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 898721,
+    "fullName": "Chissumba",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Futebol Clube de Alverca",
+    "age": 20,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/898721-1732826797.jpg?lm=1"
   },
   {
     "transfermarktId": 487469,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/461943-1765306925.jpg?lm=1"
   },
   {
+    "transfermarktId": 559263,
+    "fullName": "Fábio Carvalho",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Brentford FC",
+    "age": 23,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/559263-1687517452.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 699592,
+    "fullName": "Manu Silva",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Sport Lisboa e Benfica",
+    "age": 24,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/699592-1758716910.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 375382,
+    "fullName": "André Almeida",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Valencia Club de Fútbol S. A. D",
+    "age": 25,
+    "marketValueEur": 7500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/375382-1547563680.png?lm=1"
+  },
+  {
+    "transfermarktId": 645588,
+    "fullName": "Tomás Händel",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fudbalski klub Crvena zvezda Beograd",
+    "age": 25,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/645588-1728373966.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1061975,
+    "fullName": "Mathias de Amorim",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Futebol Clube de Famalicão",
+    "age": 21,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1061975-1766702373.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 549027,
+    "fullName": "Martim Neto",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Elche Club de Fútbol",
+    "age": 23,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/549027-1737124895.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 334557,
+    "fullName": "Chiquinho",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Olympiakos Syndesmos Filathlon Peiraios",
+    "age": 30,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/334557-1757716528.png?lm=1"
+  },
+  {
+    "transfermarktId": 221025,
+    "fullName": "André Gomes",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Columbus Crew",
+    "age": 32,
+    "marketValueEur": 4500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/221025-1666691237.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 984540,
+    "fullName": "Diego Rodrigues",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Sporting Clube de Braga",
+    "age": 20,
+    "marketValueEur": 4500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/984540-1732827172.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 504090,
+    "fullName": "Paulo Bernardo",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Celtic FC",
+    "age": 24,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504090-1701211884.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 258005,
+    "fullName": "João Carvalho",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Grupo Desportivo Estoril Praia",
+    "age": 29,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258005-1541149759.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 654099,
+    "fullName": "Diogo Nascimento",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Olympiakos Syndesmos Filathlon Peiraios",
+    "age": 23,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/654099-1757716438.png?lm=1"
+  },
+  {
+    "transfermarktId": 637803,
+    "fullName": "Rafael Luís",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Racing Club de Strasbourg Alsace",
+    "age": 21,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/637803-1750853311.jpg?lm=1"
+  },
+  {
     "transfermarktId": 357164,
     "fullName": "Rafael Leão",
     "position": "FWD",
@@ -512,7 +831,7 @@
     "detailedPosition": "RW",
     "jerseyNumber": null,
     "club": "Sporting Clube de Portugal",
-    "age": 18,
+    "age": 19,
     "marketValueEur": 42000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1138758-1761232238.jpg?lm=1"
   },
@@ -658,5 +977,126 @@
     "age": 31,
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/261927-1702415787.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 952282,
+    "fullName": "Afonso Moreira",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Olympique Lyonnais",
+    "age": 21,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/952282-1688369515.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 670688,
+    "fullName": "Youssef Chermiti",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Rangers FC",
+    "age": 21,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670688-1708426195.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 586853,
+    "fullName": "Vitinha",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Genoa Cricket and FC",
+    "age": 26,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/586853-1730184491.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 225122,
+    "fullName": "Gonçalo Guedes",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Real Sociedad de Fútbol",
+    "age": 29,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/225122-1701334424.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 211072,
+    "fullName": "Paulinho",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Deportivo Toluca Futbol Club",
+    "age": 33,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/211072-1612359887.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 461937,
+    "fullName": "Nuno Moreira",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Club de Regatas Vasco da Gama",
+    "age": 26,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/461937-1759764297.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 740596,
+    "fullName": "Cláudio Braga",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Heart of Midlothian FC",
+    "age": 26,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/740596-1712103309.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 238055,
+    "fullName": "Rafa Silva",
+    "position": "FWD",
+    "detailedPosition": "SS",
+    "jerseyNumber": null,
+    "club": "Sport Lisboa e Benfica",
+    "age": 32,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/238055-1727356372.png?lm=1"
+  },
+  {
+    "transfermarktId": 329812,
+    "fullName": "Jota",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Celtic FC",
+    "age": 27,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/329812-1688393694.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 139396,
+    "fullName": "Bruma",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Sport Lisboa e Benfica",
+    "age": 31,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/139396-1700235976.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 256977,
+    "fullName": "Daniel Podence",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Olympiakos Syndesmos Filathlon Peiraios",
+    "age": 30,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256977-1757716630.png?lm=1"
   }
 ]

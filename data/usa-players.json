@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500309-1771710880.jpg?lm=1"
   },
   {
+    "transfermarktId": 221624,
+    "fullName": "Zack Steffen",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Colorado Rapids",
+    "age": 31,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/221624-1771673738.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 723561,
+    "fullName": "Drake Callender",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Minnesota United FC",
+    "age": 28,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/723561-1771697138.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 242284,
+    "fullName": "Ethan Horvath",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Red Bull New York",
+    "age": 30,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242284-1771716428.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 433962,
+    "fullName": "Benny Díaz",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Fútbol Club Juárez",
+    "age": 27,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/433962-1678996373.jpg?lm=1"
+  },
+  {
     "transfermarktId": 349701,
     "fullName": "Antonee Robinson",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 29,
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/334597-1771719378.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 507901,
+    "fullName": "Jackson Ragen",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Seattle Sounders FC",
+    "age": 27,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507901-1771757388.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 683812,
+    "fullName": "John Tolkin",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Holstein Kiel",
+    "age": 23,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/683812-1710582118.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1137865,
+    "fullName": "Luca Bombino",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "San Diego FC",
+    "age": 19,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1137865-1771754047.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 429443,
+    "fullName": "Marco Farfán",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Club Tigres UANL Sinergia Deportiva",
+    "age": 27,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429443-1740506232.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 610628,
+    "fullName": "Justin Haak",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Los Angeles Galaxy",
+    "age": 24,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/610628-1771691308.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 405189,
+    "fullName": "Jack Maher",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Nashville SC",
+    "age": 26,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405189-1771709384.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 245337,
+    "fullName": "Walker Zimmerman",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Toronto FC",
+    "age": 32,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/245337-1771790204.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 245893,
+    "fullName": "Matt Miazga",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Cincinnati",
+    "age": 30,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/245893-1771597717.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 504147,
+    "fullName": "George Bello",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Linzer Athletik-Sport-Klub",
+    "age": 24,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504147-1754322465.png?lm=1"
+  },
+  {
+    "transfermarktId": 124732,
+    "fullName": "John Brooks",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
+    "age": 33,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/124732-1691269735.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 644798,
+    "fullName": "Sean Nealis",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "D.C. United",
+    "age": 29,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/644798-1771687860.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 972467,
+    "fullName": "Anthony Markanich Jr.",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Minnesota United FC",
+    "age": 26,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/972467-1771697535.jpg?lm=1"
   },
   {
     "transfermarktId": 332697,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504215-1760967520.jpg?lm=1"
   },
   {
+    "transfermarktId": 797414,
+    "fullName": "Owen Wolff",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Austin FC",
+    "age": 21,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/797414-1740778873.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 605144,
+    "fullName": "Cole Bassett",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Portland Timbers",
+    "age": 24,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/605144-1771714866.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 354792,
+    "fullName": "Cristian Roldán",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Seattle Sounders FC",
+    "age": 30,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/354792-1771757451.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1009732,
+    "fullName": "Cavan Sullivan",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Philadelphia Union",
+    "age": 16,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1009732-1771714252.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 652470,
+    "fullName": "Edwin Cerrillo",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Los Angeles Galaxy",
+    "age": 25,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652470-1771690982.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 315762,
+    "fullName": "Luca de la Torre",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Charlotte FC",
+    "age": 27,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/315762-1771611557.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 310662,
+    "fullName": "Timothy Tillman",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Los Angeles FC",
+    "age": 27,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/310662-1771690506.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 711517,
+    "fullName": "Kevin Paredes",
+    "position": "MID",
+    "detailedPosition": "LM",
+    "jerseyNumber": null,
+    "club": "Verein für Leibesübungen Wolfsburg",
+    "age": 22,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/711517-1752736742.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 451860,
+    "fullName": "Keaton Parks",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "New York City FC",
+    "age": 28,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/451860-1771711236.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 636081,
+    "fullName": "Hassani Dotson",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Seattle Sounders FC",
+    "age": 28,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/636081-1771756686.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 222565,
+    "fullName": "Mark Delgado",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Los Angeles FC",
+    "age": 30,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/222565-1771689870.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 392710,
+    "fullName": "Lennard Maloney",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "1. - und Sportverein Mainz 05",
+    "age": 26,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392710-1752587852.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 670168,
+    "fullName": "Emeka Eneli",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Real Salt Lake",
+    "age": 26,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670168-1771753469.jpg?lm=1"
+  },
+  {
     "transfermarktId": 315779,
     "fullName": "Christian Pulisic",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 26,
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/637271-1771713827.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 503092,
+    "fullName": "Paul Rothrock",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Seattle Sounders FC",
+    "age": 27,
+    "marketValueEur": 2800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503092-1771757476.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 469860,
+    "fullName": "Indiana Vassilev",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Philadelphia Union",
+    "age": 25,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/469860-1771714357.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 746837,
+    "fullName": "Darren Yapi",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Colorado Rapids",
+    "age": 21,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/746837-1771673938.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 381187,
+    "fullName": "Emmanuel Sabbi",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Vancouver Whitecaps FC",
+    "age": 28,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/381187-1771861917.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1089572,
+    "fullName": "Duncan McGuire",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Orlando City Soccer Club",
+    "age": 25,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1089572-1771712585.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 627205,
+    "fullName": "Griffin Yow",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "New England Revolution",
+    "age": 23,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/627205-1771708642.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 355369,
+    "fullName": "Jordan",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Clube Desportivo de Tondela",
+    "age": 30,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/355369-1692707635.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 413690,
+    "fullName": "Alex Muyl",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Nashville SC",
+    "age": 30,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413690-1771709458.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 466809,
+    "fullName": "Konrad de la Fuente",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "FC Lausanne-Sport",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/466809-1605278989.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1007383,
+    "fullName": "Zavier Gozo",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Real Salt Lake",
+    "age": 19,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1007383-1771753514.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 513963,
+    "fullName": "Taylor Booth",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "FC Twente",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/513963-1764688522.png?lm=1"
   }
 ]

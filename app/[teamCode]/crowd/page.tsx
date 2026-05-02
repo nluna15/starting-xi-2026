@@ -60,7 +60,7 @@ export default async function CrowdPage({ params }: { params: Promise<Params> })
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <div className="w-[90%]">
+          <div className="mx-auto w-[90%]">
             <BuildPitch
               formation={formationDef}
               starters={startersResolved}
@@ -123,7 +123,7 @@ export default async function CrowdPage({ params }: { params: Promise<Params> })
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="rounded-xl border border-zinc-800 bg-zinc-900/60 p-4">
+    <section className="rounded-xl border border-zinc-800 bg-[rgba(111,110,108,0.75)] p-4">
       <h2 className="mb-2 text-sm font-semibold text-zinc-300">{title}</h2>
       {children}
     </section>

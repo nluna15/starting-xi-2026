@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1223311-1771527605.jpg?lm=1"
   },
   {
+    "transfermarktId": 459842,
+    "fullName": "Sébastian Breza",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Club de Foot Montréal",
+    "age": 28,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/459842-1771706925.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 67797,
+    "fullName": "Milan Borjan",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Al-Riyadh Saudi Club",
+    "age": 38,
+    "marketValueEur": 275000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/67797-1713529293.png?lm=1"
+  },
+  {
+    "transfermarktId": 802143,
+    "fullName": "Isaac Boehmer",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Vancouver Whitecaps FC",
+    "age": 24,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/802143-1771861348.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 487505,
+    "fullName": "Thomas Hasal",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Los Angeles FC",
+    "age": 26,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/487505-1771689988.jpg?lm=1"
+  },
+  {
     "transfermarktId": 424204,
     "fullName": "Alphonso Davies",
     "position": "DEF",
@@ -262,6 +306,116 @@
     "age": 19,
     "marketValueEur": 500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1108459-1771707114.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 797623,
+    "fullName": "Matteo de Brienne",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "GAIS",
+    "age": 23,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/797623-1714820104.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 395676,
+    "fullName": "Zachary Brault-Guillard",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "FC Lugano",
+    "age": 27,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395676-1755185495.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 718086,
+    "fullName": "Kobe Franklin",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Toronto FC",
+    "age": 22,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/718086-1771789539.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1010899,
+    "fullName": "Lazar Stefanović",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Toronto FC",
+    "age": 19,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1010899-1771790008.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 222686,
+    "fullName": "Manjrekar James",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Wellington Phoenix FC",
+    "age": 32,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/222686-1731610117.png?lm=1"
+  },
+  {
+    "transfermarktId": 496606,
+    "fullName": "Dominick Zator",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Morski Związkowy Klub Sportowy Arka Gdynia Spółka Akcyjna",
+    "age": 31,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496606-1753989475.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1128515,
+    "fullName": "Ethan Schilte-Brown",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Kilmarnock FC",
+    "age": 20,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1128515-1683140298.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 990585,
+    "fullName": "Jordan Knight",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Nashville SC",
+    "age": 23,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/990585-1771709254.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1492790,
+    "fullName": "Nikola Marković",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "D.C. United",
+    "age": 21,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1492790-1771687325.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 54716,
+    "fullName": "Steven Vitória",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Boavista FC",
+    "age": 39,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/54716-1630252446.jpg?lm=1"
   },
   {
     "transfermarktId": 921655,
@@ -484,6 +638,28 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   },
   {
+    "transfermarktId": 1504946,
+    "fullName": "Charles-Emile Brunet",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Nashville SC",
+    "age": 22,
+    "marketValueEur": 75000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1504946-1771709170.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 55291,
+    "fullName": "Scott Arfield",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Livingston FC",
+    "age": 37,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/55291-1709368059.jpg?lm=1"
+  },
+  {
     "transfermarktId": 533738,
     "fullName": "Jonathan David",
     "position": "FWD",
@@ -658,5 +834,115 @@
     "age": 23,
     "marketValueEur": 500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877417-1771790097.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 595028,
+    "fullName": "Charles-Andreas Brym",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Nooit Opgeven Altijd Doorzetten Aangenaam Door Vermaak En Nuttig Door Ontspanning Combinatie Breda",
+    "age": 27,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/595028-1755785394.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1157676,
+    "fullName": "Adonija Ouanda",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "1. FC Slovácko",
+    "age": 21,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1157676-1771651517.png?lm=1"
+  },
+  {
+    "transfermarktId": 921090,
+    "fullName": "Dieu-Merci Michel",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Vitória Sport Clube",
+    "age": 22,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 862698,
+    "fullName": "Samuel Salter",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "GAIS",
+    "age": 25,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/862698-1762719993.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1128512,
+    "fullName": "Kimani Stewart-Baynes",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Colorado Rapids",
+    "age": 21,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1128512-1771673789.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1002288,
+    "fullName": "Tiago Coimbra",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Idrottsföreningen Kamraterna Göteborg",
+    "age": 22,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1002288-1762760396.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1089531,
+    "fullName": "Brandon Cambridge",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Fudbalski klub Čukarički Beograd",
+    "age": 24,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1089531-1740509580.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1341188,
+    "fullName": "Owen Graham-Roache",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club de Foot Montréal",
+    "age": 18,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1341188-1771707083.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 58993,
+    "fullName": "Junior Hoilett",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 35,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/58993-1554051302.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1095864,
+    "fullName": "Santiago López",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club Universidad Nacional A. C",
+    "age": 20,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   }
 ]

@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1060899-1758548343.jpg?lm=1"
   },
   {
+    "transfermarktId": 447495,
+    "fullName": "Raghed Al-Najjar",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Al-Nassr FC",
+    "age": 29,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/447495-1685908931.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 743948,
+    "fullName": "Moataz Al-Baqaawi",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Damac FC",
+    "age": 28,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743948-1680718932.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 177956,
+    "fullName": "Ahmed Al-Kassar",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Al-Qadsiah Saudi FC",
+    "age": 34,
+    "marketValueEur": 175000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/177956-1697280635.png?lm=1"
+  },
+  {
+    "transfermarktId": 901096,
+    "fullName": "Mohammed Al-Mahasneh",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 29,
+    "marketValueEur": 175000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901096-1680216164.JPG?lm=1"
+  },
+  {
     "transfermarktId": 631927,
     "fullName": "Saud Abdulhamid",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 22,
     "marketValueEur": 700000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1020859-1749200387.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1060901,
+    "fullName": "Ahmed Al-Julaydan",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Al-Ittihad FC",
+    "age": 22,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1060901-1716739952.png?lm=1"
+  },
+  {
+    "transfermarktId": 922536,
+    "fullName": "Rayan Hamed",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Al-Ahli Saudi FC",
+    "age": 24,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 171915,
+    "fullName": "Yasser Al-Shahrani",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Al-Qadsiah Saudi FC",
+    "age": 33,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/171915-1697051149.png?lm=1"
+  },
+  {
+    "transfermarktId": 514927,
+    "fullName": "Ahmed Bamsaud",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Al-Fayha FC",
+    "age": 30,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/514927-1765232897.png?lm=1"
+  },
+  {
+    "transfermarktId": 970673,
+    "fullName": "Salem Al-Najdi",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Al-Nassr FC",
+    "age": 23,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/970673-1716742255.png?lm=1"
+  },
+  {
+    "transfermarktId": 888634,
+    "fullName": "Saad Al-Nasser",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Al-Nassr FC",
+    "age": 25,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888634-1686075240.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 821382,
+    "fullName": "Saad Balobaid",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 26,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/821382-1685909705.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 364450,
+    "fullName": "Fawaz Al-Sqoor",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 30,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/364450-1685911594.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1173794,
+    "fullName": "Mohammed Al-Shwirekh",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 27,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 265940,
+    "fullName": "Abdullah Madu",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Al-Ettifaq FC",
+    "age": 32,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265940-1685033991.PNG?lm=1"
+  },
+  {
+    "transfermarktId": 1169185,
+    "fullName": "Mohammed Abdulrahman",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Al-Ahli Saudi FC",
+    "age": 23,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 319552,
+    "fullName": "Ahmed Sharahili",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Al-Ittihad FC",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/319552-1687958573.JPG?lm=1"
   },
   {
     "transfermarktId": 901181,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   },
   {
+    "transfermarktId": 509898,
+    "fullName": "Ali Al-Asmari",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 29,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1168837,
+    "fullName": "Abdalellah Hawsawi",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Taawoun FC",
+    "age": 24,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1168837-1716137478.png?lm=1"
+  },
+  {
+    "transfermarktId": 155487,
+    "fullName": "Salman Al-Faraj",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Neom Sports Club",
+    "age": 36,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/155487-1697050776.png?lm=1"
+  },
+  {
+    "transfermarktId": 921112,
+    "fullName": "Abdulelah Al-Shammari",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Al-Najma Sport Club",
+    "age": 27,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/921112-1680215064.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 1190454,
+    "fullName": "Faris Al-Ghamdi",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Ettifaq FC",
+    "age": 22,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1188906,
+    "fullName": "Ayman Fallatah",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Neom Sports Club",
+    "age": 22,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1188906-1746703161.png?lm=1"
+  },
+  {
+    "transfermarktId": 672382,
+    "fullName": "Mansor Al-Beshe",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Fayha FC",
+    "age": 26,
+    "marketValueEur": 225000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672382-1765232886.png?lm=1"
+  },
+  {
+    "transfermarktId": 593337,
+    "fullName": "Hamed Al-Ghamdi",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Ittihad FC",
+    "age": 27,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/593337-1685658336.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 901163,
+    "fullName": "Awad Al-Nashri",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Al-Ittihad FC",
+    "age": 24,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901163-1687958384.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 1234622,
+    "fullName": "Majed Dawran",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Najma Sport Club",
+    "age": 22,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 901072,
+    "fullName": "Nawaf Al-Harthi",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Fayha FC",
+    "age": 27,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901072-1765232739.png?lm=1"
+  },
+  {
+    "transfermarktId": 187951,
+    "fullName": "Riyadh Sharahili",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Damac FC",
+    "age": 33,
+    "marketValueEur": 175000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/187951-1685911889.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 470011,
+    "fullName": "Khaled Al-Sumairi",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Damac FC",
+    "age": 29,
+    "marketValueEur": 175000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470011-1716229561.png?lm=1"
+  },
+  {
     "transfermarktId": 631922,
     "fullName": "Firas Al-Buraikan",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 32,
     "marketValueEur": 450000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/229940-1703279350.png?lm=1"
+  },
+  {
+    "transfermarktId": 201379,
+    "fullName": "Hattan Bahebri",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Al-Taawoun FC",
+    "age": 33,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/201379-1685911033.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 888633,
+    "fullName": "Abdullah Radif",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Al-Fayha FC",
+    "age": 23,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888633-1686142134.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 210349,
+    "fullName": "Sultan Mandash",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Al-Hilal Saudi FC",
+    "age": 31,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/210349-1697280616.png?lm=1"
+  },
+  {
+    "transfermarktId": 1014574,
+    "fullName": "Khaled Al-Lazam",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Al-Okhdood Club",
+    "age": 27,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 901129,
+    "fullName": "Saleh Abu Al-Shamat",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Al-Ahli Saudi FC",
+    "age": 23,
+    "marketValueEur": 375000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 193153,
+    "fullName": "Fahad Al-Muwallad",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 31,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193153-1685911928.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 31406,
+    "fullName": "Haroune Camara",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 28,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31406-1703280105.png?lm=1"
+  },
+  {
+    "transfermarktId": 1131858,
+    "fullName": "Mohammed Sawaan",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Al-Kholood Club",
+    "age": 25,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1131858-1694534843.png?lm=1"
+  },
+  {
+    "transfermarktId": 68626,
+    "fullName": "Abdullah Al-Hamdan",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Al-Nassr FC",
+    "age": 26,
+    "marketValueEur": 325000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/68626-1697051244.png?lm=1"
+  },
+  {
+    "transfermarktId": 153350,
+    "fullName": "Abdulaziz Al-Bishi",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Al-Ittihad FC",
+    "age": 32,
+    "marketValueEur": 325000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 748080,
+    "fullName": "Abdulaziz Al-Aliwa",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Al-Ettifaq FC",
+    "age": 22,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/748080-1685033856.png?lm=1"
   }
 ]

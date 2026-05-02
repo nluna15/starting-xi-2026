@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500091-1727354578.png?lm=1"
   },
   {
+    "transfermarktId": 204189,
+    "fullName": "Okan Kocuk",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Samsunspor",
+    "age": 30,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/204189-1758534083.png?lm=1"
+  },
+  {
+    "transfermarktId": 361032,
+    "fullName": "Bilal Bayazıt",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Kayserispor Kulübü",
+    "age": 27,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/361032-1770893965.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 322873,
+    "fullName": "İrfan Can Eğribayat",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Samsunspor",
+    "age": 27,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/322873-1765457606.png?lm=1"
+  },
+  {
+    "transfermarktId": 576033,
+    "fullName": "Doğan Alemdar",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "İstanbul Başakşehir Futbol Kulübü",
+    "age": 23,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/576033-1759746256.jpg?lm=1"
+  },
+  {
     "transfermarktId": 369316,
     "fullName": "Ferdi Kadıoğlu",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 24,
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/477930-1727381049.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 390379,
+    "fullName": "Mustafa Eskihellaç",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Trabzonspor Kulübü",
+    "age": 28,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/390379-1756296973.png?lm=1"
+  },
+  {
+    "transfermarktId": 615350,
+    "fullName": "Cenk Özkacar",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "1. FC Köln",
+    "age": 25,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/615350-1641457298.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 616885,
+    "fullName": "Taha Şahin",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Çaykur Rizespor Kulübü",
+    "age": 25,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/616885-1759320247.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 618869,
+    "fullName": "Metehan Baltacı",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Galatasaray Spor Kulübü",
+    "age": 23,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/618869-1671037619.png?lm=1"
+  },
+  {
+    "transfermarktId": 620072,
+    "fullName": "Bünyamin Balcı",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Antalyaspor",
+    "age": 25,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620072-1757669020.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 655893,
+    "fullName": "Ravil Tagir",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Koninklijke Voetbal Club Westerlo",
+    "age": 22,
+    "marketValueEur": 2200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/655893-1705504963.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 988247,
+    "fullName": "Hamza Güreler",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "İstanbul Başakşehir Futbol Kulübü",
+    "age": 20,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/988247-1759746874.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 354173,
+    "fullName": "Adil Demirbağ",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Konyaspor",
+    "age": 28,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/354173-1755608954.png?lm=1"
+  },
+  {
+    "transfermarktId": 697149,
+    "fullName": "Kazımcan Karataş",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "İstanbul Başakşehir Futbol Kulübü",
+    "age": 23,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697149-1671038344.png?lm=1"
+  },
+  {
+    "transfermarktId": 889613,
+    "fullName": "Arif Kocaman",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Kayserispor Kulübü",
+    "age": 22,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/889613-1694080559.png?lm=1"
+  },
+  {
+    "transfermarktId": 462772,
+    "fullName": "Tayyip Talha Sanuç",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Gaziantep Futbol Kulübü A.Ş",
+    "age": 26,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/462772-1772618275.png?lm=1"
+  },
+  {
+    "transfermarktId": 703720,
+    "fullName": "Mithat Pala",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Çaykur Rizespor Kulübü",
+    "age": 25,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/703720-1759320679.jpg?lm=1"
   },
   {
     "transfermarktId": 861410,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/271495-1757669130.jpg?lm=1"
   },
   {
+    "transfermarktId": 119031,
+    "fullName": "Kaan Ayhan",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Galatasaray Spor Kulübü",
+    "age": 31,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/119031-1742638125.jpeg?lm=1"
+  },
+  {
+    "transfermarktId": 469787,
+    "fullName": "Berkan Kutlu",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Konyaspor",
+    "age": 28,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/469787-1671101403.png?lm=1"
+  },
+  {
+    "transfermarktId": 655912,
+    "fullName": "Göktan Gürpüz",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Gençlerbirliği Spor Kulübü",
+    "age": 23,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/655912-1754986859.png?lm=1"
+  },
+  {
+    "transfermarktId": 391555,
+    "fullName": "Melih İbrahimoğlu",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Konyaspor",
+    "age": 25,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/391555-1755610825.png?lm=1"
+  },
+  {
+    "transfermarktId": 483495,
+    "fullName": "Ali Kaan Güneren",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "MKE Ankaragücü",
+    "age": 26,
+    "marketValueEur": 1600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/483495-1696616719.png?lm=1"
+  },
+  {
+    "transfermarktId": 236471,
+    "fullName": "Ozan Tufan",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Trabzonspor Kulübü",
+    "age": 31,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/236471-1756296765.png?lm=1"
+  },
+  {
+    "transfermarktId": 137616,
+    "fullName": "Okay Yokuşlu",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Trabzonspor Kulübü",
+    "age": 32,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/137616-1756290191.png?lm=1"
+  },
+  {
+    "transfermarktId": 655895,
+    "fullName": "Bartuğ Elmaz",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fatih Karagümrük Sportif Faaliyetler San. Tic. A.Ş",
+    "age": 23,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/655895-1765460045.png?lm=1"
+  },
+  {
+    "transfermarktId": 249952,
+    "fullName": "Berkay Özcan",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Fatih Karagümrük Sportif Faaliyetler San. Tic. A.Ş",
+    "age": 28,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/249952-1755098866.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 440653,
+    "fullName": "Oğulcan Ülgün",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Gençlerbirliği Spor Kulübü",
+    "age": 27,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/440653-1754988056.png?lm=1"
+  },
+  {
+    "transfermarktId": 159908,
+    "fullName": "Aytaç Kara",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Kasımpaşa A.Ş",
+    "age": 33,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/159908-1772222610.png?lm=1"
+  },
+  {
+    "transfermarktId": 327402,
+    "fullName": "Efkan Bekiroğlu",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Göztepe Sportif Yatırımlar A.Ş",
+    "age": 30,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/327402-1759400177.png?lm=1"
+  },
+  {
+    "transfermarktId": 170838,
+    "fullName": "Salih Uçan",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Beşiktaş Jimnastik Kulübü",
+    "age": 32,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/170838-1727357729.png?lm=1"
+  },
+  {
     "transfermarktId": 845654,
     "fullName": "Kenan Yıldız",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 27,
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/517376-1759748116.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 452084,
+    "fullName": "Ahmed Kutucu",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Galatasaray Spor Kulübü",
+    "age": 26,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/452084-1730285629.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 743376,
+    "fullName": "Cihan Çanak",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Gençlerbirliği Spor Kulübü",
+    "age": 21,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743376-1756305564.png?lm=1"
+  },
+  {
+    "transfermarktId": 699980,
+    "fullName": "Enis Destan",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Koninklijke Voetbal Club Westerlo",
+    "age": 23,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/699980-1723801235.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 271787,
+    "fullName": "Deniz Hümmet",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Djurgårdens Idrottsförening",
+    "age": 29,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/271787-1772685247.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 618898,
+    "fullName": "Erencan Yardımcı",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 24,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/618898-1753694030.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 134631,
+    "fullName": "Sinan Bakış",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
+    "age": 32,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/134631-1564741193.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 462086,
+    "fullName": "Elayis Tavsan",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Samsunspor",
+    "age": 25,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/462086-1704798303.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 993407,
+    "fullName": "Poyraz Yıldırım",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Trabzonspor Kulübü",
+    "age": 21,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/993407-1757670421.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 508639,
+    "fullName": "Naci Ünüvar",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Heracles Almelo",
+    "age": 22,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/508639-1764689822.png?lm=1"
+  },
+  {
+    "transfermarktId": 345105,
+    "fullName": "Gökdeniz Bayrakdar",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Bodrum FK",
+    "age": 24,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345105-1717099642.png?lm=1"
+  },
+  {
+    "transfermarktId": 858259,
+    "fullName": "Emircan Gürlük",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "FC Orenburg",
+    "age": 22,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/858259-1754115019.png?lm=1"
   }
 ]

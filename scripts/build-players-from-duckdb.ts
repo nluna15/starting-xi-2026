@@ -52,10 +52,10 @@ const FLOOR: Record<"GK" | "DEF" | "MID" | "FWD", number> = {
   FWD: 8,
 };
 const CEILING: Record<"GK" | "DEF" | "MID" | "FWD", number> = {
-  GK: 6,
-  DEF: 18,
-  MID: 20,
-  FWD: 16,
+  GK: 10,
+  DEF: 30,
+  MID: 33,
+  FWD: 27,
 };
 // Transfermarkt fills current_national_team_id for active call-ups but not
 // always; falling back to citizenship + recent activity catches the rest.

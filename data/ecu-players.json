@@ -242,6 +242,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331501-1773853260.png?lm=1"
   },
   {
+    "transfermarktId": 355650,
+    "fullName": "Dennys Quintero",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Llaneros FC",
+    "age": 28,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/355650-1722397006.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 354640,
+    "fullName": "José Hernández",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC Oleksandriya",
+    "age": 29,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/354640-1693848284.png?lm=1"
+  },
+  {
+    "transfermarktId": 993870,
+    "fullName": "Davis Bautista",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Eintracht Frankfurt AG",
+    "age": 21,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/993870-1724772763.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1074505,
+    "fullName": "Jair Collahuazo",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FK Kudrivka-1",
+    "age": 20,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1074505-1774475362.png?lm=1"
+  },
+  {
     "transfermarktId": 687626,
     "fullName": "Moisés Caicedo",
     "position": "MID",
@@ -336,7 +380,7 @@
     "detailedPosition": "CDM",
     "jerseyNumber": null,
     "club": "Portland Timbers",
-    "age": 29,
+    "age": 30,
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/348630-1771715336.jpg?lm=1"
   },
@@ -603,5 +647,115 @@
     "age": 29,
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/656389-1717292823.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1227106,
+    "fullName": "Elías Legendre Quiñónez",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Stade Rennais FC",
+    "age": 18,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1227106-1741010867.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 974374,
+    "fullName": "Anthony Valencia",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Royal Antwerp FC",
+    "age": 22,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/974374-1659086874.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1241373,
+    "fullName": "Bruno Caicedo",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Vancouver Whitecaps FC",
+    "age": 21,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1241373-1717330592.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 348039,
+    "fullName": "Ronie Carrillo",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Portimonense SC",
+    "age": 29,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/348039-1678386669.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 388519,
+    "fullName": "Kike Saverio",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Esporte Clube Vitória",
+    "age": 26,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/388519-1590570239.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 450237,
+    "fullName": "Billy Arce",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Mazatlán Futbol Club",
+    "age": 27,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/450237-1750354392.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 885175,
+    "fullName": "Cristhoper Zambrano",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Al-Taawoun FC",
+    "age": 21,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/885175-1739810625.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 450239,
+    "fullName": "Alejandro Cabeza",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FK Sochi",
+    "age": 29,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/450239-1698059657.png?lm=1"
+  },
+  {
+    "transfermarktId": 893663,
+    "fullName": "Justin Cuero",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Orenburg",
+    "age": 22,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/893663-1722313203.png?lm=1"
+  },
+  {
+    "transfermarktId": 591375,
+    "fullName": "Stiven Plaza",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "SC Oţelul Galaţi",
+    "age": 27,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/591375-1599760144.jpeg?lm=1"
   }
 ]

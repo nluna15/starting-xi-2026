@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/127202-1665067633.jpg?lm=1"
   },
   {
+    "transfermarktId": 580434,
+    "fullName": "Tobe Leysen",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Oud-Heverlee Leuven",
+    "age": 24,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/580434-1713278155.png?lm=1"
+  },
+  {
+    "transfermarktId": 77757,
+    "fullName": "Thomas Kaminski",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Luton Town",
+    "age": 33,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/77757-1546948273.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 426849,
+    "fullName": "Jari De Busser",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Go Ahead Eagles",
+    "age": 26,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/426849-1753438391.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 338651,
+    "fullName": "Gaëtan Coucke",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Al-Orobah FC",
+    "age": 27,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/338651-1710924593.jpg?lm=1"
+  },
+  {
     "transfermarktId": 548193,
     "fullName": "Zeno Debast",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 24,
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620598-1753308180.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 654918,
+    "fullName": "Matteo Dams",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Al-Ahli Saudi FC",
+    "age": 22,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/654918-1726554381.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 490423,
+    "fullName": "Ignace Van der Brempt",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Calcio Como",
+    "age": 24,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/490423-1757664819.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 565016,
+    "fullName": "Ibe Hautekiet",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Royal Standard Club de Liège",
+    "age": 24,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565016-1672687228.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 454336,
+    "fullName": "Killian Sardella",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Royal Sporting Club Anderlecht",
+    "age": 23,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/454336-1660676236.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 743381,
+    "fullName": "Jorne Spileers",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Brugge Koninklijke Voetbalvereniging",
+    "age": 21,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743381-1705658468.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 486051,
+    "fullName": "Marco Kana",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Royal Sporting Club Anderlecht",
+    "age": 23,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486051-1660720218.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 236168,
+    "fullName": "Brandon Mechele",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Brugge Koninklijke Voetbalvereniging",
+    "age": 33,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/236168-1704874625.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 502247,
+    "fullName": "Louis Patris",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Royale Union Saint-Gilloise",
+    "age": 24,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/502247-1772107757.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 743379,
+    "fullName": "Lucas Noubi",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Royal Standard Club de Liège",
+    "age": 21,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743379-1663871275.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 621802,
+    "fullName": "Olivier Deman",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Sportverein Werder Bremen von 1899",
+    "age": 26,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/621802-1722887784.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 578680,
+    "fullName": "Hugo Siquet",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Club Brugge Koninklijke Voetbalvereniging",
+    "age": 23,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/578680-1754510812.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 579089,
+    "fullName": "Christiaan Ravych",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Cercle Brugge Koninklijke Sportvereniging",
+    "age": 23,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/579089-1659434250.jpg?lm=1"
   },
   {
     "transfermarktId": 485706,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503881-1657202999.jpg?lm=1"
   },
   {
+    "transfermarktId": 569845,
+    "fullName": "Charles Vanhoutte",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Olympique Gymnaste Club Nice Côte d'Azur",
+    "age": 27,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/569845-1757513060.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 565436,
+    "fullName": "Alonzo Engwanda",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "FC Utrecht",
+    "age": 23,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565436-1723461188.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 137576,
+    "fullName": "Hans Vanaken",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Club Brugge Koninklijke Voetbalvereniging",
+    "age": 33,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/137576-1705414489.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 129592,
+    "fullName": "Julien De Sart",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Koninklijke Atletiek Associatie Gent",
+    "age": 31,
+    "marketValueEur": 5500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/129592-1740664902.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 743387,
+    "fullName": "Stanis Idumbo",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "AS Monaco FC",
+    "age": 20,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743387-1652692759.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 486039,
+    "fullName": "Anouar Ait El Hadj",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Royale Union Saint-Gilloise",
+    "age": 24,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486039-1772107085.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 446491,
+    "fullName": "Daan Heymans",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Koninklijke Racing Club Genk",
+    "age": 26,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/446491-1672593669.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 258827,
+    "fullName": "Jari Vandeputte",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Unione Sportiva Cremonese",
+    "age": 30,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258827-1712490921.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 775981,
+    "fullName": "Arthur Piedfort",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Koninklijke Voetbal Club Westerlo",
+    "age": 21,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/775981-1713450074.png?lm=1"
+  },
+  {
+    "transfermarktId": 340791,
+    "fullName": "Philippe Rommens",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Go Ahead Eagles",
+    "age": 28,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340791-1690212545.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 168157,
+    "fullName": "Leander Dendoncker",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Real Oviedo",
+    "age": 31,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/168157-1662059450.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 502302,
+    "fullName": "Yari Verschaeren",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Royal Sporting Club Anderlecht",
+    "age": 24,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/502302-1704982236.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 708455,
+    "fullName": "Mathis Servais",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Yellow-Red Koninklijke Voetbalclub Mechelen",
+    "age": 21,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/708455-1714738209.png?lm=1"
+  },
+  {
     "transfermarktId": 486049,
     "fullName": "Jérémy Doku",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 25,
     "marketValueEur": 8000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358032-1674197416.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 423604,
+    "fullName": "Francis Amuzu",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Grêmio Foot-Ball Porto Alegrense",
+    "age": 26,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/423604-1704981793.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 819215,
+    "fullName": "Julien Duranville",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "FC Basel 1893 AG",
+    "age": 19,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/819215-1733829401.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 140776,
+    "fullName": "Yannick Carrasco",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Al-Shabab Club",
+    "age": 32,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/140776-1664969500.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 409517,
+    "fullName": "Yorbe Vertessen",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 25,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/409517-1754993819.png?lm=1"
+  },
+  {
+    "transfermarktId": 364896,
+    "fullName": "Adriano Bertaccini",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Royal Sporting Club Anderlecht",
+    "age": 25,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/364896-1713353059.png?lm=1"
+  },
+  {
+    "transfermarktId": 912436,
+    "fullName": "Noah Adedeji-Sternberg",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Koninklijke Racing Club Genk",
+    "age": 20,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/912436-1714038356.png?lm=1"
+  },
+  {
+    "transfermarktId": 148368,
+    "fullName": "Divock Origi",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Nottingham Forest FC",
+    "age": 31,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/148368-1709306595.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 565406,
+    "fullName": "Kazeem Olaigbe",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Konyaspor",
+    "age": 23,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565406-1756306440.png?lm=1"
+  },
+  {
+    "transfermarktId": 952439,
+    "fullName": "Robin Mirisola",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Koninklijke Racing Club Genk",
+    "age": 19,
+    "marketValueEur": 3500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/952439-1714046487.png?lm=1"
+  },
+  {
+    "transfermarktId": 179184,
+    "fullName": "Michy Batshuayi",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Eintracht Frankfurt AG",
+    "age": 32,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/179184-1753985153.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 422760,
+    "fullName": "Mathis Suray",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Go Ahead Eagles",
+    "age": 24,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/422760-1763726012.jpg?lm=1"
   }
 ]

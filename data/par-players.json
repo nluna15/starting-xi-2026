@@ -231,6 +231,127 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/401576-1770652428.png?lm=1"
   },
   {
+    "transfermarktId": 353035,
+    "fullName": "Saúl Salcedo",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Atlético Newell’s Old Boys",
+    "age": 28,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353035-1715629857.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 912703,
+    "fullName": "Alan Núñez",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Clube Desportivo Nacional",
+    "age": 21,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/912703-1688431907.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1244188,
+    "fullName": "Clever Ferreira",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Atlético Tucumán",
+    "age": 23,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1244188-1755110399.png?lm=1"
+  },
+  {
+    "transfermarktId": 690124,
+    "fullName": "Daniel Rivas",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "AVS Futebol",
+    "age": 24,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/690124-1710426613.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 312562,
+    "fullName": "Iván Villalba",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Club Sportivo Independiente Rivadavia",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/312562-1724872225.JPEG?lm=1"
+  },
+  {
+    "transfermarktId": 415843,
+    "fullName": "Walter Clar",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Associação Chapecoense de Futebol",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415843-1759511244.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 836251,
+    "fullName": "Fernando Román",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Club Atlético Aldosivi",
+    "age": 27,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/836251-1771937311.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 567663,
+    "fullName": "Darío Cáceres",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Club Social y Deportivo Defensa y Justicia",
+    "age": 28,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/567663-1692279298.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 331245,
+    "fullName": "Juan Franco",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Club Atlético Gimnasia y Esgrima de Mendoza",
+    "age": 34,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331245-1717079603.jpeg?lm=1"
+  },
+  {
+    "transfermarktId": 265590,
+    "fullName": "Danilo Ortiz",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Deportivo Pereira",
+    "age": 33,
+    "marketValueEur": 175000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265590-1741555558.png?lm=1"
+  },
+  {
+    "transfermarktId": 1375323,
+    "fullName": "Elian Peralta",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Boyacá Chicó FC",
+    "age": 25,
+    "marketValueEur": 150000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1375323-1752422668.jpg?lm=1"
+  },
+  {
     "transfermarktId": 996897,
     "fullName": "Diego Gómez",
     "position": "MID",
@@ -534,7 +655,7 @@
     "detailedPosition": "RW",
     "jerseyNumber": null,
     "club": "Club Atlético de San Luis",
-    "age": 28,
+    "age": 29,
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353037-1689010173.png?lm=1"
   },
@@ -570,5 +691,126 @@
     "age": 30,
     "marketValueEur": 1000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/520405-1726737466.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 262262,
+    "fullName": "Ángel Romero",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Club Atlético Boca Juniors",
+    "age": 33,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/262262-1718340912.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 358418,
+    "fullName": "Gabriel Ávalos",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club Atlético Independiente de Avellaneda",
+    "age": 35,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358418-1720465400.png?lm=1"
+  },
+  {
+    "transfermarktId": 480422,
+    "fullName": "Guillermo Paiva",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Junior FC",
+    "age": 28,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/480422-1748210580.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 905417,
+    "fullName": "Héctor Bobadilla",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club Atlético Platense",
+    "age": 24,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/905417-1771031275.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 491603,
+    "fullName": "Blas Armoa",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Club Atlético Gimnasia y Esgrima de Mendoza",
+    "age": 26,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/491603-1727450567.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 835677,
+    "fullName": "Manuel Romero",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Instituto Atlético Central Córdoba",
+    "age": 24,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/835677-1721835372.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 518354,
+    "fullName": "Alfio Oviedo",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club Atlético Tigre",
+    "age": 30,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/518354-1576676638.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1124285,
+    "fullName": "David Fernández",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club Social y Deportivo Defensa y Justicia",
+    "age": 20,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1124285-1770654069.png?lm=1"
+  },
+  {
+    "transfermarktId": 661243,
+    "fullName": "Diego Duarte",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "AVS Futebol",
+    "age": 24,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661243-1710427443.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 340179,
+    "fullName": "Sergio Díaz",
+    "position": "FWD",
+    "detailedPosition": "SS",
+    "jerseyNumber": null,
+    "club": "Panetolikos Agrinio",
+    "age": 28,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340179-1738082746.png?lm=1"
+  },
+  {
+    "transfermarktId": 635107,
+    "fullName": "Javier Ferreira",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Asociación Atlética Estudiantes",
+    "age": 34,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
   }
 ]

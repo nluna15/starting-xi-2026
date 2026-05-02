@@ -66,6 +66,17 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/385412-1678379004.jpg?lm=1"
   },
   {
+    "transfermarktId": 659225,
+    "fullName": "Emmanuel Ogura",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Randers Fodbold Club",
+    "age": 23,
+    "marketValueEur": 75000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/659225-1735077407.png?lm=1"
+  },
+  {
     "transfermarktId": 563963,
     "fullName": "Mohammed Salisu",
     "position": "DEF",
@@ -262,6 +273,138 @@
     "age": 28,
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/396516-1759929993.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 646829,
+    "fullName": "Nathaniel Adjei",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Lorient-Bretagne Sud",
+    "age": 23,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/646829-1706408527.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 875178,
+    "fullName": "Willy Kumado",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "San Diego FC",
+    "age": 23,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/875178-1771754443.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 358250,
+    "fullName": "Joseph Aidoo",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Real Club Celta de Vigo S. A. D",
+    "age": 30,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358250-1496923402.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1355954,
+    "fullName": "Manu Duah",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "San Diego FC",
+    "age": 20,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1355954-1771754200.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 327536,
+    "fullName": "Stephan Ambrosius",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 27,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/327536-1696404207.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 257988,
+    "fullName": "Leeroy Owusu",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Odense Boldklub",
+    "age": 29,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/257988-1629791367.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 263801,
+    "fullName": "Kasim Adams",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Servette FC 1890 SA",
+    "age": 30,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/263801-1657200649.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 543494,
+    "fullName": "Abdul Yusif",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Železničar Pančevo",
+    "age": 24,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/543494-1709884301.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 562391,
+    "fullName": "Ema Twumasi",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Gliwicki Klub Sportowy Piast Spółka Akcyjna",
+    "age": 28,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/562391-1753897311.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1268078,
+    "fullName": "Stephen Acquah",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Fodbold Club Nordsjælland",
+    "age": 20,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1268078-1773649170.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 482611,
+    "fullName": "Lalas Abubakar",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Dallas",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/482611-1771674534.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 374554,
+    "fullName": "Joshua Yaro",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "St. Louis City Soccer Club",
+    "age": 31,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/374554-1771788508.jpg?lm=1"
   },
   {
     "transfermarktId": 1240763,
@@ -484,6 +627,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1303880-1749450867.jpg?lm=1"
   },
   {
+    "transfermarktId": 952210,
+    "fullName": "Frank Junior Adjei",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Hammarby IF",
+    "age": 22,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/952210-1724963533.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 579628,
+    "fullName": "Leonard Owusu",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fredrikstad Fotballklubb",
+    "age": 28,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/579628-1618858349.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 564489,
+    "fullName": "Kamal Sowah",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Nooit Opgeven Altijd Doorzetten Aangenaam Door Vermaak En Nuttig Door Ontspanning Combinatie Breda",
+    "age": 26,
+    "marketValueEur": 750000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/564489-1755782060.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 360140,
+    "fullName": "Majeed Ashimeru",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "RAAL La Louvière",
+    "age": 28,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/360140-1772795998.png?lm=1"
+  },
+  {
+    "transfermarktId": 648812,
+    "fullName": "Sabit Abdulai",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Futebol Clube de Alverca",
+    "age": 26,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/648812-1638365169.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 236272,
+    "fullName": "Nana Boateng",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fotbal Club Petrolul Ploiești",
+    "age": 31,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/236272-1661769949.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1135739,
+    "fullName": "Ronald Donkor",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Red Bull New York",
+    "age": 21,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1135739-1771716195.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 706176,
+    "fullName": "Abdul Awudu",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Vizela",
+    "age": 25,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 579975,
+    "fullName": "Cletus Nombil",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "FC Trinity Zlin",
+    "age": 25,
+    "marketValueEur": 450000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/579975-1652959460.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 801328,
+    "fullName": "Emmanuel Danso",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Livingston FC",
+    "age": 25,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/801328-1712183736.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 477477,
+    "fullName": "Emmanuel Boateng",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Konyaspor",
+    "age": 28,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/477477-1727457557.png?lm=1"
+  },
+  {
+    "transfermarktId": 863745,
+    "fullName": "Emmanuel Essiam",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Fussballclub Winterthur",
+    "age": 22,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/863745-1738362399.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 672933,
+    "fullName": "Yaw Ackah",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Kayserispor Kulübü",
+    "age": 26,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672933-1744710501.jpg?lm=1"
+  },
+  {
     "transfermarktId": 583255,
     "fullName": "Antoine Semenyo",
     "position": "FWD",
@@ -658,5 +944,126 @@
     "age": 27,
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/548650-1740777598.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1310437,
+    "fullName": "Joseph Opoku",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Sportvereniging Zulte Waregem",
+    "age": 20,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1310437-1741365119.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 734799,
+    "fullName": "Prince Adu",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Viktoria Plzeň, a.s",
+    "age": 22,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/734799-1723573096.png?lm=1"
+  },
+  {
+    "transfermarktId": 979410,
+    "fullName": "Mohammed Fuseini",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Royale Union Saint-Gilloise",
+    "age": 23,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/979410-1772107449.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 207593,
+    "fullName": "Prince Owusu",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Club de Foot Montréal",
+    "age": 29,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/207593-1771707481.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 543501,
+    "fullName": "Ibrahim Sadiq",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Alkmaar Zaanstreek",
+    "age": 25,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/543501-1753350943.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 503212,
+    "fullName": "Aziz Yakubu",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Rio Ave Futebol Clube",
+    "age": 27,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503212-1676556513.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1305075,
+    "fullName": "Douglas Owusu",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Fudbalski klub Crvena zvezda Beograd",
+    "age": 20,
+    "marketValueEur": 2500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1305075-1747404886.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 340994,
+    "fullName": "Samuel Owusu",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Omladinski fudbalski klub Beograd",
+    "age": 30,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340994-1461862463.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1152491,
+    "fullName": "Jalal Abdullai",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Molde Fotballklubb",
+    "age": 21,
+    "marketValueEur": 2000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1152491-1723620007.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 108354,
+    "fullName": "Jordan Ayew",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Leicester City",
+    "age": 34,
+    "marketValueEur": 1800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/108354-1668429913.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1033040,
+    "fullName": "Mark Assinor",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "LNZ Cherkasy",
+    "age": 25,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1033040-1720637011.png?lm=1"
   }
 ]

@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/191056-1602242038.jpg?lm=1"
   },
   {
+    "transfermarktId": 290537,
+    "fullName": "Jean Butez",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Calcio Como",
+    "age": 30,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290537-1704961364.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 750878,
+    "fullName": "Obed Nkambadio",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Paris FC",
+    "age": 23,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/750878-1750172738.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 120629,
+    "fullName": "Alphonse Areola",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "West Ham United FC",
+    "age": 33,
+    "marketValueEur": 5000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/120629-1663243036.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 357047,
+    "fullName": "Gautier Larsonneur",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "AS Saint-Étienne",
+    "age": 29,
+    "marketValueEur": 3000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/357047-1727720726.jpg?lm=1"
+  },
+  {
     "transfermarktId": 495666,
     "fullName": "William Saliba",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 24,
     "marketValueEur": 25000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/654539-1754901329.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 605184,
+    "fullName": "Jean-Clair Todibo",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "West Ham United FC",
+    "age": 26,
+    "marketValueEur": 23000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/605184-1699439806.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 569383,
+    "fullName": "Chrislain Matsima",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "FC Augsburg 1907",
+    "age": 23,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/569383-1755200922.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 164770,
+    "fullName": "Raphaël Varane",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Calcio Como",
+    "age": 33,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/164770-1727257324.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 281963,
+    "fullName": "Lucas Hernández",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Paris Saint-Germain FC",
+    "age": 30,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/281963-1667830435.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 786436,
+    "fullName": "Ismaël Doukouré",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Racing Club de Strasbourg Alsace",
+    "age": 22,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/786436-1732576094.png?lm=1"
+  },
+  {
+    "transfermarktId": 666234,
+    "fullName": "Mohamed Simakan",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Al-Nassr FC",
+    "age": 25,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/666234-1713944910.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1006411,
+    "fullName": "Jaydee Canvot",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Crystal Palace FC",
+    "age": 19,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1006411-1741897197.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 463665,
+    "fullName": "Oumar Solet",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Udinese Calcio",
+    "age": 26,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/463665-1739281800.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 923832,
+    "fullName": "Nathan Zézé",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Neom Sports Club",
+    "age": 20,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/923832-1703065128.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 463603,
+    "fullName": "Benoît Badiashile",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Chelsea FC",
+    "age": 25,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/463603-1714721596.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 348026,
+    "fullName": "Nordi Mukiele",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Sunderland AFC",
+    "age": 28,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/348026-1727378130.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 353366,
+    "fullName": "Benjamin Pavard",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Olympique de Marseille",
+    "age": 30,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353366-1713819215.jpg?lm=1"
   },
   {
     "transfermarktId": 413112,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395237-1739281407.jpg?lm=1"
   },
   {
+    "transfermarktId": 931160,
+    "fullName": "Djaoui Cissé",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Stade Rennais FC",
+    "age": 22,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931160-1740392570.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 855308,
+    "fullName": "Arthur Atta",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Udinese Calcio",
+    "age": 23,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/855308-1752140643.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 955356,
+    "fullName": "Saïmon Bouabré",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Al-Hilal Saudi FC",
+    "age": 19,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/955356-1693947953.png?lm=1"
+  },
+  {
+    "transfermarktId": 384593,
+    "fullName": "Alexis Claude-Maurice",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC Augsburg 1907",
+    "age": 27,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/384593-1755201378.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 745173,
+    "fullName": "Mamadou Coulibaly",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "AS Monaco FC",
+    "age": 22,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/745173-1693947752.png?lm=1"
+  },
+  {
+    "transfermarktId": 1200427,
+    "fullName": "Alexis Vossah",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Toulouse FC",
+    "age": 18,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1200427-1758106573.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1241211,
+    "fullName": "Rudy Matondo",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Paris FC",
+    "age": 18,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1241211-1750676329.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 344605,
+    "fullName": "Boubakary Soumaré",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Leicester City",
+    "age": 27,
+    "marketValueEur": 14000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/344605-1746644742.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 190393,
+    "fullName": "Corentin Tolisso",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Olympique Lyonnais",
+    "age": 31,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/190393-1672830594.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 569384,
+    "fullName": "Lucien Agoumé",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Sevilla Fútbol Club",
+    "age": 24,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/569384-1656577561.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1119456,
+    "fullName": "Louis Leroux",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "FC de Nantes",
+    "age": 20,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1119456-1740392399.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 743496,
+    "fullName": "Kévin Danois",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Association de la Jeunesse auxerroise",
+    "age": 21,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743496-1672330479.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 203496,
+    "fullName": "Nabil Fekir",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Real Betis Balompié",
+    "age": 32,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203496-1653041152.jpg?lm=1"
+  },
+  {
     "transfermarktId": 342229,
     "fullName": "Kylian Mbappé",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 21,
     "marketValueEur": 25000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/801734-1700040486.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 939964,
+    "fullName": "Jean-Mattéo Bahoya",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Eintracht Frankfurt AG",
+    "age": 20,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/939964-1724772389.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 585959,
+    "fullName": "Arnaud Kalimuendo",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Eintracht Frankfurt AG",
+    "age": 24,
+    "marketValueEur": 25000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/585959-1666698479.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 243714,
+    "fullName": "Kingsley Coman",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Al-Nassr FC",
+    "age": 29,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/243714-1700040256.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 487969,
+    "fullName": "Randal Kolo Muani",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Tottenham Hotspur FC",
+    "age": 27,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/487969-1718697120.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 743498,
+    "fullName": "Wilson Odobert",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Tottenham Hotspur FC",
+    "age": 21,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743498-1740605858.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 659543,
+    "fullName": "Matthis Abline",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC de Nantes",
+    "age": 23,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/659543-1704213657.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 461607,
+    "fullName": "Estéban Lepaul",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Stade Rennais FC",
+    "age": 26,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/461607-1750956916.png?lm=1"
+  },
+  {
+    "transfermarktId": 579930,
+    "fullName": "Armand Laurienté",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Unione Sportiva Sassuolo Calcio",
+    "age": 27,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/579930-1753431935.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1131161,
+    "fullName": "Robinio Vaz",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Associazione Sportiva Roma",
+    "age": 19,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1131161-1761232363.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 986288,
+    "fullName": "Sidiki Chérif",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fenerbahçe Spor Kulübü",
+    "age": 19,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/986288-1770977210.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 607226,
+    "fullName": "Loum Tchaouna",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Burnley FC",
+    "age": 22,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/607226-1695710683.jpg?lm=1"
   }
 ]

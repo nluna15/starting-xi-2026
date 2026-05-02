@@ -66,6 +66,50 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/212862-1694594210.jpg?lm=1"
   },
   {
+    "transfermarktId": 388516,
+    "fullName": "Josep Martínez",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "FC Internazionale Milano",
+    "age": 27,
+    "marketValueEur": 7500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/388516-1686153132.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 192279,
+    "fullName": "Kepa Arrizabalaga",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Arsenal FC",
+    "age": 31,
+    "marketValueEur": 7000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192279-1661855851.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 298197,
+    "fullName": "Antonio Sivera",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Deportivo Alavés S. A. D",
+    "age": 29,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/298197-1713856039.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 562742,
+    "fullName": "Leo Román",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Real Club Deportivo Mallorca",
+    "age": 25,
+    "marketValueEur": 6000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/562742-1745395600.jpg?lm=1"
+  },
+  {
     "transfermarktId": 962110,
     "fullName": "Pau Cubarsí",
     "position": "DEF",
@@ -262,6 +306,138 @@
     "age": 29,
     "marketValueEur": 22000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399776-1765899002.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 282411,
+    "fullName": "Marcos Llorente",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Atlético Madrid",
+    "age": 31,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/282411-1773182531.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 741257,
+    "fullName": "Álex Jiménez",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "AFC Bournemouth",
+    "age": 20,
+    "marketValueEur": 22000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/741257-1751532035.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1018938,
+    "fullName": "Jon Martín",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Real Sociedad de Fútbol",
+    "age": 20,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1018938-1732794896.png?lm=1"
+  },
+  {
+    "transfermarktId": 331505,
+    "fullName": "Óscar Mingueza",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Real Club Celta de Vigo S. A. D",
+    "age": 26,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331505-1698852962.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 525299,
+    "fullName": "Miguel Gutiérrez",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "SS Calcio Napoli",
+    "age": 24,
+    "marketValueEur": 17000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/525299-1755681125.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 895334,
+    "fullName": "Yarek Gasiorowski",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "PSV Eindhoven",
+    "age": 21,
+    "marketValueEur": 16000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/895334-1730461387.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 676042,
+    "fullName": "Juanlu Sánchez",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Sevilla Fútbol Club",
+    "age": 22,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/676042-1695240552.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 617060,
+    "fullName": "Mika Mármol",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "UD Las Palmas",
+    "age": 24,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617060-1737366208.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 591916,
+    "fullName": "Aitor Paredes",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Athletic Club Bilbao",
+    "age": 26,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/591916-1709675052.png?lm=1"
+  },
+  {
+    "transfermarktId": 341227,
+    "fullName": "Juan Miranda",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Bologna FC 1909",
+    "age": 26,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/341227-1752838396.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 366930,
+    "fullName": "Sergio Gómez",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Real Sociedad de Fútbol",
+    "age": 25,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/366930-1727678534.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1076815,
+    "fullName": "Javi Rodríguez",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Real Club Celta de Vigo S. A. D",
+    "age": 22,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1076815-1732611843.jpg?lm=1"
   },
   {
     "transfermarktId": 683840,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1375227-1755633821.jpg?lm=1"
   },
   {
+    "transfermarktId": 466801,
+    "fullName": "Sergi Altimira",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Real Betis Balompié",
+    "age": 24,
+    "marketValueEur": 20000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/466801-1744375696.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 625047,
+    "fullName": "Beñat Prados",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Athletic Club Bilbao",
+    "age": 25,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/625047-1709675858.png?lm=1"
+  },
+  {
+    "transfermarktId": 331511,
+    "fullName": "Riqui Puig",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Los Angeles Galaxy",
+    "age": 26,
+    "marketValueEur": 18000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331511-1740776617.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1064471,
+    "fullName": "Fer López",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Real Club Celta de Vigo S. A. D",
+    "age": 21,
+    "marketValueEur": 16000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1064471-1744632582.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 296622,
+    "fullName": "Marco Asensio",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Fenerbahçe Spor Kulübü",
+    "age": 30,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/296622-1765459707.png?lm=1"
+  },
+  {
+    "transfermarktId": 668179,
+    "fullName": "Carlos Álvarez",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Levante Unión Deportiva",
+    "age": 22,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/668179-1726053882.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 466802,
+    "fullName": "Adrián Bernabé",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Parma Calcio 1913",
+    "age": 24,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/466802-1714503707.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 948279,
+    "fullName": "Chema Andrés",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Verein für Bewegungsspiele Stuttgart 1893",
+    "age": 21,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948279-1760444727.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 892932,
+    "fullName": "Miguel Román",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Real Club Celta de Vigo S. A. D",
+    "age": 23,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/892932-1769759183.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 309110,
+    "fullName": "Brais Méndez",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Real Sociedad de Fútbol",
+    "age": 29,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/309110-1665057568.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 128220,
+    "fullName": "Luis Alberto",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "SS Lazio",
+    "age": 33,
+    "marketValueEur": 11000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/128220-1695026651.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 634431,
+    "fullName": "Beñat Turrientes",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Real Sociedad de Fútbol",
+    "age": 24,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/634431-1702416501.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 948273,
+    "fullName": "Mario Martín",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Getafe Club de Fútbol S. A. D. Team Dubai",
+    "age": 22,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948273-1707861820.jpg?lm=1"
+  },
+  {
     "transfermarktId": 937958,
     "fullName": "Lamine Yamal",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 23,
     "marketValueEur": 15000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/466810-1721828228.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1301775,
+    "fullName": "Jan Virgili",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Real Club Deportivo Mallorca",
+    "age": 19,
+    "marketValueEur": 15000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1301775-1750759323.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 617081,
+    "fullName": "Diego López",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Valencia Club de Fútbol S. A. D",
+    "age": 23,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617081-1683211924.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 537382,
+    "fullName": "Bryan Gil",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Girona Fútbol Club S. A. D",
+    "age": 25,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/537382-1769784260.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 938158,
+    "fullName": "Marc Guiu",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Chelsea FC",
+    "age": 20,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/938158-1719846394.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 573775,
+    "fullName": "Hugo Duro",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Valencia Club de Fútbol S. A. D",
+    "age": 26,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/573775-1683213249.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 455181,
+    "fullName": "Jorge de Frutos",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Rayo Vallecano de Madrid S. A. D",
+    "age": 29,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/455181-1756820871.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 707572,
+    "fullName": "Pau Víctor",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Sporting Clube de Braga",
+    "age": 24,
+    "marketValueEur": 12000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/707572-1724052852.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 720518,
+    "fullName": "Roberto Fernández",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Reial Club Deportiu Espanyol de Barcelona",
+    "age": 23,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/720518-1732827310.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 713644,
+    "fullName": "Bryan Zaragoza",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Associazione Sportiva Roma",
+    "age": 24,
+    "marketValueEur": 10000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/713644-1714503809.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 128223,
+    "fullName": "Álvaro Morata",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Calcio Como",
+    "age": 33,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/128223-1719989301.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 204103,
+    "fullName": "Adama Traoré",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "West Ham United FC",
+    "age": 30,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/204103-1736153427.jpg?lm=1"
   }
 ]

@@ -39,7 +39,7 @@
     "detailedPosition": "GK",
     "jerseyNumber": null,
     "club": "Linzer Athletik-Sport-Klub",
-    "age": 21,
+    "age": 22,
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629011-1754322984.png?lm=1"
   },
@@ -64,6 +64,50 @@
     "age": 25,
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/393999-1773666827.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 404881,
+    "fullName": "Niklas Hedl",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Sportklub Rapid",
+    "age": 25,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/404881-1726051061.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 915421,
+    "fullName": "Christian Zawieschitzky",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 18,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/915421-1754993151.png?lm=1"
+  },
+  {
+    "transfermarktId": 164145,
+    "fullName": "Ivan Lucic",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "HNK Hajduk Split",
+    "age": 31,
+    "marketValueEur": 650000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/164145-1767281579.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 629032,
+    "fullName": "Matteo Bignetti",
+    "position": "GK",
+    "detailedPosition": "GK",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 21,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629032-1694035049.jpg?lm=1"
   },
   {
     "transfermarktId": 223967,
@@ -262,6 +306,138 @@
     "age": 32,
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/127573-1722886402.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 307807,
+    "fullName": "Dario Maresic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "HNK Hajduk Split",
+    "age": 26,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307807-1768639886.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 434110,
+    "fullName": "Leo Greiml",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Nooit Opgeven Altijd Doorzetten Aangenaam Door Vermaak En Nuttig Door Ontspanning Combinatie Breda",
+    "age": 24,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/434110-1755781164.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 804035,
+    "fullName": "Tim Trummer",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 20,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/804035-1754993343.png?lm=1"
+  },
+  {
+    "transfermarktId": 378260,
+    "fullName": "David Schnegg",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Charlotte FC",
+    "age": 27,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/378260-1771611887.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 394152,
+    "fullName": "Emanuel Aiwu",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 25,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/394152-1736777278.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 523895,
+    "fullName": "Paul Koller",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 24,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/523895-1752849508.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 375434,
+    "fullName": "Michael Steinwender",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Heart of Midlothian FC",
+    "age": 25,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/375434-1692987593.png?lm=1"
+  },
+  {
+    "transfermarktId": 85791,
+    "fullName": "Stefan Lainer",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 33,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/85791-1754993552.png?lm=1"
+  },
+  {
+    "transfermarktId": 394008,
+    "fullName": "Niklas Geyrhofer",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 26,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/394008-1736777424.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 438961,
+    "fullName": "Michael Svoboda",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Venezia FC",
+    "age": 27,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/438961-1717659180.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 307658,
+    "fullName": "Tin Plavotic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Fußballklub Austria Wien",
+    "age": 28,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307658-1726049405.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 59032,
+    "fullName": "Aleksandar Dragovic",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Fußballklub Austria Wien",
+    "age": 35,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/59032-1694784685.jpg?lm=1"
   },
   {
     "transfermarktId": 324278,
@@ -484,6 +660,149 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/186365-1754323456.png?lm=1"
   },
   {
+    "transfermarktId": 1048618,
+    "fullName": "Philipp Maybach",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fußballklub Austria Wien",
+    "age": 18,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1048618-1724841433.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 803967,
+    "fullName": "Sanel Saljic",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Fußballklub Austria Wien",
+    "age": 20,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/803967-1726049434.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 601143,
+    "fullName": "Nikolas Veratschnig",
+    "position": "MID",
+    "detailedPosition": "RM",
+    "jerseyNumber": null,
+    "club": "1. - und Sportverein Mainz 05",
+    "age": 23,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/601143-1722885901.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 488052,
+    "fullName": "Matthias Braunöder",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Calcio Como",
+    "age": 24,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/488052-1692968166.png?lm=1"
+  },
+  {
+    "transfermarktId": 804034,
+    "fullName": "Valentin Sulzbacher",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Fußballclub Red Bull Salzburg",
+    "age": 21,
+    "marketValueEur": 1200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/804034-1754993314.png?lm=1"
+  },
+  {
+    "transfermarktId": 106270,
+    "fullName": "Florian Kainz",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "1. FC Köln",
+    "age": 33,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/106270-1721140143.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 629005,
+    "fullName": "Dijon Kameri",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Klub Sportowy Cracovia Spółka Akcyjna",
+    "age": 22,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629005-1722523800.png?lm=1"
+  },
+  {
+    "transfermarktId": 118397,
+    "fullName": "Alessandro Schöpf",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "RZ Pellets Wolfsberger Athletiksport Club",
+    "age": 32,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/118397-1753455659.png?lm=1"
+  },
+  {
+    "transfermarktId": 307817,
+    "fullName": "Valentino Müller",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Wattener Sportgemeinschaft Swarovski Tirol",
+    "age": 27,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307817-1722351901.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 434104,
+    "fullName": "Matthäus Taferner",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Wattener Sportgemeinschaft Swarovski Tirol",
+    "age": 25,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/434104-1722351957.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 693101,
+    "fullName": "Jonas Mayer",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Sportvereinigung Ried 1912",
+    "age": 21,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/693101-1753367416.png?lm=1"
+  },
+  {
+    "transfermarktId": 393699,
+    "fullName": "Aleksandar Jukic",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "FC Rubin Kazan",
+    "age": 25,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/393699-1722142315.png?lm=1"
+  },
+  {
+    "transfermarktId": 224871,
+    "fullName": "Lukas Grgic",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Sportklub Rapid",
+    "age": 30,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/224871-1726049948.jpg?lm=1"
+  },
+  {
     "transfermarktId": 533295,
     "fullName": "Patrick Wimmer",
     "position": "FWD",
@@ -658,5 +977,126 @@
     "age": 27,
     "marketValueEur": 1300000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/268426-1724781947.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 620496,
+    "fullName": "Simon Seidl",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Fußballclub Blau-Weiß Linz",
+    "age": 23,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620496-1755081804.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 548031,
+    "fullName": "Yusuf Demir",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Sportklub Rapid",
+    "age": 22,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/548031-1671104592.png?lm=1"
+  },
+  {
+    "transfermarktId": 693092,
+    "fullName": "Belmin Beganovic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 21,
+    "marketValueEur": 1000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/693092-1725007438.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 167342,
+    "fullName": "Adrian Grbic",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "FC Luzern",
+    "age": 29,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/167342-1540456985.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 320701,
+    "fullName": "Ercan Kara",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Sportklub Rapid",
+    "age": 30,
+    "marketValueEur": 900000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/320701-1730130504.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 120189,
+    "fullName": "Nikola Dovedan",
+    "position": "FWD",
+    "detailedPosition": "SS",
+    "jerseyNumber": null,
+    "club": "1. Fußballclub Heidenheim 1846",
+    "age": 31,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/120189-1690187018.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 655247,
+    "fullName": "Moritz Wels",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Wattener Sportgemeinschaft Swarovski Tirol",
+    "age": 21,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/655247-1726049322.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 403184,
+    "fullName": "Maximilian Entrup",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Linzer Athletik-Sport-Klub",
+    "age": 28,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/403184-1754323110.png?lm=1"
+  },
+  {
+    "transfermarktId": 288690,
+    "fullName": "Manprit Sarkaria",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Sportklub Puntigamer Sturm Graz",
+    "age": 29,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/288690-1694035854.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 523870,
+    "fullName": "Angelo Gattermayer",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "RZ Pellets Wolfsberger Athletiksport Club",
+    "age": 23,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/523870-1753455335.png?lm=1"
+  },
+  {
+    "transfermarktId": 960458,
+    "fullName": "Konstantin Aleksa",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Fußballklub Austria Wien",
+    "age": 19,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/960458-1724841066.jpg?lm=1"
   }
 ]

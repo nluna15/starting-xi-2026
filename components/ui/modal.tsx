@@ -36,13 +36,13 @@ export function Modal({ open, onClose, title, children, className }: ModalProps)
     >
       <div
         className={cn(
-          "w-full max-w-lg overflow-hidden rounded-t-2xl border border-zinc-800 bg-zinc-950 text-zinc-100 shadow-xl sm:rounded-2xl",
+          "w-full max-w-lg overflow-hidden rounded-t-2xl border border-border bg-surface text-foreground shadow-xl sm:rounded-2xl",
           className,
         )}
         onClick={(e) => e.stopPropagation()}
       >
         {title && (
-          <div className="border-b border-zinc-800 px-4 py-3 text-base font-semibold">
+          <div className="border-b border-border px-4 py-3 text-base font-semibold">
             {title}
           </div>
         )}

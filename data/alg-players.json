@@ -253,6 +253,105 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/387944-1759254023.png?lm=1"
   },
   {
+    "transfermarktId": 629567,
+    "fullName": "Yanis Hamache",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "FC Oleksandriya",
+    "age": 26,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629567-1737973783.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 118303,
+    "fullName": "Mehdi Zeffane",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "Clermont Foot 63",
+    "age": 33,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/118303-1679508172.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 376649,
+    "fullName": "Abdelkader Bedrane",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Damac FC",
+    "age": 34,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/376649-1680214671.JPG?lm=1"
+  },
+  {
+    "transfermarktId": 462738,
+    "fullName": "Naoufel Khacef",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 28,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/462738-1765215842.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 477834,
+    "fullName": "Ilyes Chetti",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 31,
+    "marketValueEur": 350000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/477834-1755271436.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 126656,
+    "fullName": "Faouzi Ghoulam",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Hatayspor",
+    "age": 35,
+    "marketValueEur": 300000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/126656-1696432810.png?lm=1"
+  },
+  {
+    "transfermarktId": 745177,
+    "fullName": "Nazim Babaï",
+    "position": "DEF",
+    "detailedPosition": "RB",
+    "jerseyNumber": null,
+    "club": "AS Monaco FC",
+    "age": 23,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/745177-1693948509.png?lm=1"
+  },
+  {
+    "transfermarktId": 743520,
+    "fullName": "Yacine Gaya",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Angers Sporting Club de l'Ouest",
+    "age": 21,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743520-1744204432.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 931668,
+    "fullName": "Elias Benkara",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 19,
+    "marketValueEur": 50000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931668-1713462177.jpg?lm=1"
+  },
+  {
     "transfermarktId": 905011,
     "fullName": "Ibrahim Maza",
     "position": "MID",
@@ -473,6 +572,83 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264811-1739290142.jpg?lm=1"
   },
   {
+    "transfermarktId": 496357,
+    "fullName": "Mehdi Boudjemaa",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Al-Wehda FC",
+    "age": 28,
+    "marketValueEur": 550000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496357-1755271780.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 122493,
+    "fullName": "Amir Sayoud",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Al-Hazem Sport Club",
+    "age": 35,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/122493-1680719731.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 57162,
+    "fullName": "Sofiane Feghouli",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Fatih Karagümrük Sportif Faaliyetler San. Tic. A.Ş",
+    "age": 36,
+    "marketValueEur": 400000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/57162-1695219817.png?lm=1"
+  },
+  {
+    "transfermarktId": 944427,
+    "fullName": "Edhy Zuliani",
+    "position": "MID",
+    "detailedPosition": "CAM",
+    "jerseyNumber": null,
+    "club": "Toulouse FC",
+    "age": 21,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 612065,
+    "fullName": "Karim Zedadka",
+    "position": "MID",
+    "detailedPosition": "LM",
+    "jerseyNumber": null,
+    "club": "SS Calcio Napoli",
+    "age": 25,
+    "marketValueEur": 250000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/612065-1656581104.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 1214946,
+    "fullName": "Sid Ahmed Aissaoui",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "PFK CSKA Moskva",
+    "age": 21,
+    "marketValueEur": 100000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1214946-1708430557.png?lm=1"
+  },
+  {
+    "transfermarktId": 1051756,
+    "fullName": "Stan Berkani",
+    "position": "MID",
+    "detailedPosition": "CDM",
+    "jerseyNumber": null,
+    "club": "Clermont Foot 63",
+    "age": 22,
+    "marketValueEur": 75000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1051756-1722949692.png?lm=1"
+  },
+  {
     "transfermarktId": 418659,
     "fullName": "Amine Gouiri",
     "position": "FWD",
@@ -647,5 +823,126 @@
     "age": 34,
     "marketValueEur": 1700000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/111039-1718692824.png?lm=1"
+  },
+  {
+    "transfermarktId": 175014,
+    "fullName": "Youcef Belaïli",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Unknown",
+    "age": 34,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/175014-1743953300.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 122797,
+    "fullName": "Andy Delort",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Montpellier HSC",
+    "age": 34,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/122797-1593970837.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 543051,
+    "fullName": "Billal Brahimi",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Club Football Estrela da Amadora",
+    "age": 26,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/543051-1756806904.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 718034,
+    "fullName": "Abde Rebbach",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Deportivo Alavés S. A. D",
+    "age": 27,
+    "marketValueEur": 1500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/718034-1705337308.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 131589,
+    "fullName": "Billel Omrani",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "ACSM Politehnica Iasi",
+    "age": 32,
+    "marketValueEur": 850000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/131589-1759522286.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 425400,
+    "fullName": "Farid El Melali",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "Angers Sporting Club de l'Ouest",
+    "age": 28,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/425400-1765217100.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 587588,
+    "fullName": "Camiel Neghli",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Sparta Rotterdam",
+    "age": 24,
+    "marketValueEur": 800000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/587588-1723809790.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 118287,
+    "fullName": "Rachid Ghezzal",
+    "position": "FWD",
+    "detailedPosition": "RW",
+    "jerseyNumber": null,
+    "club": "Olympique Lyonnais",
+    "age": 33,
+    "marketValueEur": 700000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/118287-1729518411.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 394127,
+    "fullName": "Mouhamed Belkheir",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "RAAL La Louvière",
+    "age": 27,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/394127-1772796936.png?lm=1"
+  },
+  {
+    "transfermarktId": 840254,
+    "fullName": "Nadhir Benbouali",
+    "position": "FWD",
+    "detailedPosition": "ST",
+    "jerseyNumber": null,
+    "club": "Royal Charleroi Sporting Club",
+    "age": 26,
+    "marketValueEur": 600000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/840254-1706262937.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 545400,
+    "fullName": "Billal Messaoudi",
+    "position": "FWD",
+    "detailedPosition": "LW",
+    "jerseyNumber": null,
+    "club": "KV Kortrijk",
+    "age": 28,
+    "marketValueEur": 500000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/545400-1700837753.png?lm=1"
   }
 ]
