@@ -25,7 +25,7 @@ export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
           <HeroPitch />
         </div>
         <div className="flex w-full flex-col items-start gap-[11px] text-left md:ml-auto md:w-[300px]">
-          <h1 className="my-[10px] flex flex-wrap text-[60px] font-semibold tracking-tight text-[rgb(219,38,39)]">
+          <h1 className="my-[10px] flex flex-wrap font-[family-name:Geist] text-[60px] font-semibold tracking-[-2.5px] text-[rgb(219,38,39)]">
             Pick Your Side
           </h1>
           <div className="space-y-1">

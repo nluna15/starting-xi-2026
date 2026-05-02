@@ -2,6 +2,11 @@ import { sql, eq, inArray } from "drizzle-orm";
 import { db } from "./client";
 import { formations, players, submissions, teams } from "./schema";
 import type { Formation, Player, Team } from "./schema";
+import { SLOT_TO_DETAILED } from "@/lib/formations";
+
+const DECAY_HALF_LIFE_DAYS = 10;
+const SMOOTHING_ALPHA = 5;
+const MIN_WEIGHTED_PICKS = 1.0;
 
 export type RosterStatus = "ready" | "empty" | "missing";
 
@@ -378,8 +383,18 @@ export type GlobalCrowdStats = {
 
 // Aggregates submissions across every team. The "most likely XI" mixes players
 // from different national teams, so the lineup is a fantasy mash-up rather than
-// a coherent national side. Same query shape as getCrowdStats, just without the
-// team_id filter.
+// a coherent national side.
+//
+// Player selection pipeline (XI only — side cards stay on raw counts so users
+// see honest "X submissions" totals):
+//   1. Latest submission per fingerprint  → one vote per browser
+//   2. exp(-Δdays / 10) decay              → recent submissions weigh more
+//   3. Aggregate weighted picks per player_id, globally (no formation gate,
+//      no slot ordinal — every starter pick contributes)
+//   4. Walk the winning formation's slots; greedy-place the highest-scored
+//      unplaced player whose detailedPosition matches the slot, falling back
+//      to broad position. Slot stays empty if no candidate clears
+//      MIN_WEIGHTED_PICKS. Tie-break by player_id for deterministic reloads.
 export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
   const total = await getTotalSubmissionCount();
   if (total === 0) {
@@ -397,7 +412,7 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     from ${submissions} s
     join ${formations} f on f.id = s.formation_id
     group by f.name
-    order by count desc
+    order by count desc, f.name asc
   `);
   const formationCounts = (formationCountsRows.rows as Array<{ name: string; count: number }>).map(
     (r) => ({ name: r.name, count: Number(r.count) }),
@@ -416,33 +431,43 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     mostLikelyFormation = fRows[0] ?? null;
 
     if (mostLikelyFormation) {
-      const slotRows = await db.execute(sql`
-        with picks as (
-          select (slot.ord - 1)::int as slot_index, slot.value::int as player_id
-          from ${submissions} s,
-            jsonb_array_elements_text(s.starters) with ordinality as slot(value, ord)
-          where s.formation_id = ${mostLikelyFormation.id}
+      const playerRows = await db.execute(sql`
+        with latest as (
+          select distinct on (fingerprint) id, starters, created_at
+          from ${submissions}
+          order by fingerprint, created_at desc
         ),
-        slot_totals as (
-          select slot_index, count(*)::int as total_picks
-          from picks
-          group by slot_index
+        weighted as (
+          select id, starters,
+                 exp(-extract(epoch from (now() - created_at)) / (${DECAY_HALF_LIFE_DAYS} * 86400.0)) as w
+          from latest
         ),
-        ranked as (
-          select p.slot_index, p.player_id, count(*)::int as picks,
-                 row_number() over (partition by p.slot_index order by count(*) desc) as rn
-          from picks p
-          where exists (select 1 from ${players} pl where pl.id = p.player_id)
-          group by p.slot_index, p.player_id
+        starter_picks as (
+          select pid::int as player_id, w
+          from weighted s,
+            jsonb_array_elements_text(s.starters) pid
+        ),
+        scored as (
+          select sp.player_id, sum(sp.w)::float as score
+          from starter_picks sp
+          where exists (select 1 from ${players} pl where pl.id = sp.player_id)
+          group by sp.player_id
         )
-        select r.slot_index, r.player_id, r.picks, st.total_picks
-        from ranked r
-        join slot_totals st on st.slot_index = r.slot_index
-        where r.rn = 1
-        order by r.slot_index
+        select s.player_id, s.score,
+               coalesce((select sum(w) from weighted), 0)::float as total_weight
+        from scored s
+        order by s.score desc, s.player_id asc
       `);
 
-      const playerIds = (slotRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
+      type ScoredRow = { player_id: number; score: number; total_weight: number };
+      const rankedRows = playerRows.rows as ScoredRow[];
+      const ranked = rankedRows.map((r) => ({
+        playerId: Number(r.player_id),
+        score: Number(r.score),
+      }));
+      const totalWeight = Number(rankedRows[0]?.total_weight ?? 0);
+
+      const playerIds = ranked.map((r) => r.playerId);
       const playerMap = new Map<number, Player>();
       const teamCodeByTeamId = new Map<number, string>();
       if (playerIds.length > 0) {
@@ -459,16 +484,33 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
         }
       }
 
-      slotResults = mostLikelyFormation.slots.map((slot, idx) => {
-        const row = (slotRows.rows as Array<{
-          slot_index: number;
-          player_id: number;
-          picks: number;
-          total_picks: number;
-        }>).find((r) => Number(r.slot_index) === idx);
-        const player = row ? playerMap.get(Number(row.player_id)) ?? null : null;
-        const pickRate = row && row.total_picks ? Number(row.picks) / Number(row.total_picks) : 0;
+      const placed = new Set<number>();
+      const findCandidate = (predicate: (p: Player) => boolean) => {
+        for (const r of ranked) {
+          if (placed.has(r.playerId)) continue;
+          if (r.score < MIN_WEIGHTED_PICKS) break;
+          const p = playerMap.get(r.playerId);
+          if (!p) continue;
+          if (predicate(p)) return { player: p, score: r.score };
+        }
+        return null;
+      };
+
+      slotResults = mostLikelyFormation.slots.map((slot) => {
+        const detailedTarget = SLOT_TO_DETAILED[slot.slot];
+        let chosen: { player: Player; score: number } | null = null;
+        if (detailedTarget) {
+          chosen = findCandidate((p) => p.detailedPosition === detailedTarget);
+        }
+        if (!chosen) {
+          chosen = findCandidate((p) => p.position === slot.position);
+        }
+        if (chosen) placed.add(chosen.player.id);
+
+        const player = chosen?.player ?? null;
         const teamCode = player ? teamCodeByTeamId.get(player.teamId) ?? null : null;
+        const pickRate = chosen ? chosen.score / (totalWeight + SMOOTHING_ALPHA) : 0;
+
         return { ...slot, player, pickRate, teamCode };
       });
     }
@@ -484,7 +526,7 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     select player_id, count(*)::int as picks
     from starter_picks
     group by player_id
-    order by picks desc
+    order by picks desc, player_id asc
     limit 10
   `);
   const topIds = (topRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));

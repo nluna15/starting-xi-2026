@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { inArray, sql } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { CommunityPitch } from "@/components/community-pitch";
 import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
 import { db } from "@/lib/db/client";
@@ -119,7 +120,12 @@ export default async function CommunityPage({
           </div>
         )}
         <div className="space-y-4">
-          <Card title="Most-popular formation" className="text-white" titleClassName="text-white">
+          <Card
+            title="Most-popular formation"
+            className="text-white"
+            titleClassName="text-white"
+            borderless
+          >
             <div className="text-2xl font-bold">{stats.topFormation?.name ?? "—"}</div>
             <ul className="mt-2 space-y-1 text-sm">
               {stats.formationCounts.map((f) => (
@@ -133,7 +139,7 @@ export default async function CommunityPage({
             </ul>
           </Card>
 
-          <Card title="Most-picked players" titleClassName="text-white">
+          <Card title="Most-picked players" titleClassName="text-white" borderless>
             <ol className="space-y-2 text-sm text-white">
               {stats.topPlayers.length === 0 && (
                 <li>No data yet.</li>
@@ -162,15 +168,21 @@ function Card({
   children,
   className = "",
   titleClassName = "text-zinc-300",
+  borderless = false,
 }: {
   title: string;
   children: React.ReactNode;
   className?: string;
   titleClassName?: string;
+  borderless?: boolean;
 }) {
   return (
     <section
-      className={`rounded-xl border border-zinc-800 bg-[rgba(111,110,108,0.5)] p-4 ${className}`.trim()}
+      className={cn(
+        "rounded-xl bg-[rgba(111,110,108,0.5)] p-4",
+        !borderless && "border border-zinc-800",
+        className,
+      )}
     >
       <h2 className={`mb-2 text-sm font-semibold ${titleClassName}`}>{title}</h2>
       {children}

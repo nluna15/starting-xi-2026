@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 const STEPS = [
   {
     title: "Pick Your Nation",
@@ -20,20 +22,15 @@ export function HowItWorks() {
       <div className="grid gap-3 md:grid-cols-3">
         {STEPS.map((step) => {
           const isCompareStep = step.title === "Compare Against Others";
-          const cardBg =
-            step.title === "Pick Your Nation"
-              ? "bg-zinc-900/60"
-              : isCompareStep
-                ? "bg-[rgba(111,110,108,0.5)]"
-                : "bg-[rgba(111,110,108,0.75)]";
-          const cardBorder =
-            step.title === "Pick Your Nation"
-              ? "border-black"
-              : "border-zinc-800";
+          const cardBg = "bg-[rgba(111,110,108,0.5)]";
           return (
             <div
               key={step.title}
-              className={`rounded-xl border ${cardBorder} p-4 ${cardBg}${isCompareStep ? " text-white" : ""}`}
+              className={cn(
+                "rounded-xl p-4",
+                cardBg,
+                isCompareStep && "text-white",
+              )}
             >
               <h3
                 className={
