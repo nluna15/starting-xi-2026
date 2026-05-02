@@ -149,7 +149,7 @@ export default async function CommunityPage({
           <Card
             title="Most-popular formation"
             className="text-white"
-            titleClassName="text-white"
+            titleClassName="text-[21px] text-white"
             borderless
           >
             <div className="text-2xl font-bold">{stats.topFormation?.name ?? "—"}</div>
@@ -236,7 +236,7 @@ function Card({
         className,
       )}
     >
-      <h2 className={`mb-2 text-sm font-semibold ${titleClassName}`}>{title}</h2>
+      <h2 className={cn("mb-2 text-sm font-semibold", titleClassName)}>{title}</h2>
       {children}
     </section>
   );
