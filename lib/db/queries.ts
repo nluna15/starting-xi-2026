@@ -552,3 +552,64 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     topPlayers,
   };
 }
+
+export type CountrySquadStat = {
+  code: string;
+  name: string;
+  flagEmoji: string;
+  pickCount: number;
+  submissionCount: number;
+  avgAge: number;
+  avgMarketValueEur: number;
+};
+
+// Per-country averages computed across all players users have actually picked
+// (starters + bench) in their submissions. Each pick contributes once, so a
+// player chosen in 5 submissions counts 5 times in the average. Countries with
+// no submissions are excluded.
+export async function getCountrySquadStats(): Promise<CountrySquadStat[]> {
+  const rows = await db.execute(sql`
+    with picked as (
+      select s.team_id, pid::int as player_id
+      from ${submissions} s, jsonb_array_elements_text(s.starters) pid
+      union all
+      select s.team_id, pid::int as player_id
+      from ${submissions} s, jsonb_array_elements_text(s.bench) pid
+    ),
+    sub_counts as (
+      select team_id, count(*)::int as submission_count
+      from ${submissions}
+      group by team_id
+    )
+    select t.code, t.name, t.flag_emoji as flag_emoji,
+           count(*)::int as pick_count,
+           coalesce(sc.submission_count, 0)::int as submission_count,
+           avg(p.age)::float as avg_age,
+           avg(p.market_value_eur)::float as avg_market_value_eur
+    from picked pk
+    join ${teams} t on t.id = pk.team_id
+    join ${players} p on p.id = pk.player_id
+    left join sub_counts sc on sc.team_id = t.id
+    group by t.id, t.code, t.name, t.flag_emoji, sc.submission_count
+    having count(*) > 0
+    order by t.name asc
+  `);
+
+  return (rows.rows as Array<{
+    code: string;
+    name: string;
+    flag_emoji: string;
+    pick_count: number;
+    submission_count: number;
+    avg_age: number;
+    avg_market_value_eur: number;
+  }>).map((r) => ({
+    code: r.code,
+    name: r.name,
+    flagEmoji: r.flag_emoji,
+    pickCount: Number(r.pick_count),
+    submissionCount: Number(r.submission_count),
+    avgAge: Number(r.avg_age),
+    avgMarketValueEur: Number(r.avg_market_value_eur),
+  }));
+}

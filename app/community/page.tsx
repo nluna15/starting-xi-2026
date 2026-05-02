@@ -4,9 +4,14 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CommunityPitch } from "@/components/community-pitch";
 import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
+import { HorizontalBarChart, type BarRow } from "@/components/horizontal-bar-chart";
 import { db } from "@/lib/db/client";
 import { players, submissions, teams, type Player } from "@/lib/db/schema";
-import { getGlobalCrowdStats, getPickRatesForTeam } from "@/lib/db/queries";
+import {
+  getCountrySquadStats,
+  getGlobalCrowdStats,
+  getPickRatesForTeam,
+} from "@/lib/db/queries";
 import { FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
@@ -58,7 +63,28 @@ export default async function CommunityPage({
   const submittedSlug = Array.isArray(submitted) ? submitted[0] : submitted;
   const submittedContext = submittedSlug ? await loadSubmittedContext(submittedSlug) : null;
 
-  const stats = await getGlobalCrowdStats();
+  const [stats, countryStats] = await Promise.all([
+    getGlobalCrowdStats(),
+    getCountrySquadStats(),
+  ]);
+
+  const ageRows: BarRow[] = [...countryStats]
+    .sort((a, b) => b.avgAge - a.avgAge)
+    .map((c) => ({
+      key: c.code,
+      label: c.code,
+      flagEmoji: c.flagEmoji,
+      value: c.avgAge,
+    }));
+
+  const valueRows: BarRow[] = [...countryStats]
+    .sort((a, b) => b.avgMarketValueEur - a.avgMarketValueEur)
+    .map((c) => ({
+      key: c.code,
+      label: c.code,
+      flagEmoji: c.flagEmoji,
+      value: c.avgMarketValueEur,
+    }));
 
   if (stats.totalSubmissions === 0) {
     return (
@@ -111,7 +137,7 @@ export default async function CommunityPage({
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <div className="mx-auto w-[90%]">
+          <div className="mx-auto w-[81%]">
             <CommunityPitch
               formation={formationDef}
               starters={startersResolved}
@@ -158,9 +184,35 @@ export default async function CommunityPage({
           </Card>
         </div>
       </div>
+
+      <div className="grid gap-6 md:grid-cols-3">
+        <Card title="Average squad age" titleClassName="text-white" borderless>
+          <HorizontalBarChart
+            rows={ageRows}
+            formatValue={(v) => v.toFixed(1)}
+          />
+        </Card>
+        <Card title="Average market value per player" titleClassName="text-white" borderless>
+          <HorizontalBarChart
+            rows={valueRows}
+            formatValue={formatEurCompact}
+          />
+        </Card>
+        <Card title="Coming soon" titleClassName="text-white" borderless>
+          <div className="flex h-full min-h-48 items-center justify-center text-xs text-zinc-300">
+            Placeholder — metric TBD
+          </div>
+        </Card>
+      </div>
       {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>
   );
+}
+
+function formatEurCompact(eur: number): string {
+  if (eur >= 1_000_000) return `€${(eur / 1_000_000).toFixed(1)}M`;
+  if (eur >= 1_000) return `€${(eur / 1_000).toFixed(0)}K`;
+  return `€${Math.round(eur)}`;
 }
 
 function Card({

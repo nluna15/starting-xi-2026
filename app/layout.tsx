@@ -34,7 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </header>
         <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-4 py-6">{children}</main>
         <footer className="border-t border-border py-4 text-center text-xs text-muted">
-          Anonymous picks · World Cup 2026 · Not affiliated with FIFA.
+          Made with joy by Plays and Pixels * Not affiliated with FIFA
         </footer>
       </body>
     </html>
