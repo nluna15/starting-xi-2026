@@ -170,7 +170,7 @@ function Card({
 }) {
   return (
     <section
-      className={`rounded-xl border border-zinc-800 bg-[rgba(111,110,108,0.75)] p-4 ${className}`.trim()}
+      className={`rounded-xl border border-zinc-800 bg-[rgba(111,110,108,0.5)] p-4 ${className}`.trim()}
     >
       <h2 className={`mb-2 text-sm font-semibold ${titleClassName}`}>{title}</h2>
       {children}

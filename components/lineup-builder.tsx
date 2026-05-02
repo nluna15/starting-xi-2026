@@ -105,6 +105,10 @@ export function LineupBuilder({
       const nextEmpty = findNextEmpty(starters, active.index, player);
       if (nextEmpty != null) {
         setActive({ kind: "starter", index: nextEmpty });
+      } else {
+        // All starters filled — advance to the first empty bench slot.
+        const firstBench = bench.findIndex((p) => !p);
+        if (firstBench !== -1) setActive({ kind: "bench", index: firstBench });
       }
     } else {
       setBench((prev) => {
@@ -115,6 +119,10 @@ export function LineupBuilder({
       const nextEmpty = findNextEmptyBench(bench, active.index);
       if (nextEmpty != null) {
         setActive({ kind: "bench", index: nextEmpty });
+      } else {
+        // All bench filled — fall back to first empty starter if any.
+        const firstStarter = starters.findIndex((p) => !p);
+        if (firstStarter !== -1) setActive({ kind: "starter", index: firstStarter });
       }
     }
     setSheetOpen(false);
@@ -164,6 +172,37 @@ export function LineupBuilder({
 
   const highlightSlot = active.kind === "starter" ? active.index : null;
 
+  // The "next blank to fill" is the active slot when it's empty; otherwise the
+  // next empty slot in reading order, falling through from starters to bench
+  // (or vice versa) so the highlight always lands on something the user can
+  // act on. Returns `null` only when every slot is filled.
+  const nextBlank = React.useMemo<
+    | { kind: "starter"; index: number }
+    | { kind: "bench"; index: number; total: number }
+    | null
+  >(() => {
+    const findEmpty = (arr: (Player | null)[], from: number) => {
+      for (let i = from; i < arr.length; i += 1) if (!arr[i]) return i;
+      for (let i = 0; i < from; i += 1) if (!arr[i]) return i;
+      return null;
+    };
+    if (active.kind === "starter") {
+      if (!starters[active.index]) return { kind: "starter", index: active.index };
+      const s = findEmpty(starters, active.index);
+      if (s != null) return { kind: "starter", index: s };
+      const b = findEmpty(bench, 0);
+      if (b != null) return { kind: "bench", index: b, total: bench.length };
+      return null;
+    }
+    if (!bench[active.index])
+      return { kind: "bench", index: active.index, total: bench.length };
+    const b = findEmpty(bench, active.index);
+    if (b != null) return { kind: "bench", index: b, total: bench.length };
+    const s = findEmpty(starters, 0);
+    if (s != null) return { kind: "starter", index: s };
+    return null;
+  }, [active, starters, bench]);
+
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-4">
@@ -196,7 +235,6 @@ export function LineupBuilder({
         <div className="order-2 space-y-4 md:order-1">
           <div>
             <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5 rounded-full border border-border bg-surface-muted px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground">
-              <span className={cn("h-1.5 w-1.5 shrink-0 rounded-full", allFilled ? "bg-accent" : "bg-muted")} />
               <span className="tabular-nums">
                 {startersFilled} / 11 starting
               </span>
@@ -217,6 +255,7 @@ export function LineupBuilder({
               onSlotClick={(idx) => setActiveSlot({ kind: "starter", index: idx })}
               onBenchClick={(idx) => setActiveSlot({ kind: "bench", index: idx })}
               highlightSlot={highlightSlot}
+              activeBlank={nextBlank}
               showPhotos={showPhotos}
             />
           </div>
