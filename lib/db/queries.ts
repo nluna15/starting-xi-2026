@@ -387,7 +387,7 @@ export type GlobalCrowdStats = {
 //
 // Player selection pipeline (XI only — side cards stay on raw counts so users
 // see honest "X submissions" totals):
-//   1. Latest submission per fingerprint  → one vote per browser
+//   1. Latest submission per (fingerprint, team)  → one vote per browser per country
 //   2. exp(-Δdays / 10) decay              → recent submissions weigh more
 //   3. Aggregate weighted picks per player_id, globally (no formation gate,
 //      no slot ordinal — every starter pick contributes)
@@ -433,9 +433,9 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     if (mostLikelyFormation) {
       const playerRows = await db.execute(sql`
         with latest as (
-          select distinct on (fingerprint) id, starters, created_at
+          select distinct on (fingerprint, team_id) id, starters, created_at
           from ${submissions}
-          order by fingerprint, created_at desc
+          order by fingerprint, team_id, created_at desc
         ),
         weighted as (
           select id, starters,

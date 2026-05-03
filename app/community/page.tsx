@@ -137,7 +137,7 @@ export default async function CommunityPage({
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <div className="mx-auto w-[81%]">
+          <div className="mx-auto w-[81%] max-w-[420px] pb-10 lg:max-w-[560px]">
             <CommunityPitch
               formation={formationDef}
               starters={startersResolved}

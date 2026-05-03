@@ -69,9 +69,15 @@ export function PlayerPicker(props: PlayerPickerProps) {
 
 function defaultSelected(
   slotKind: "starter" | "bench" | null | undefined,
+  slotPositionCode: string | null | undefined,
   slotDetailedCode: string | null | undefined,
 ): Set<string> {
-  if (slotKind === "starter" && slotDetailedCode) return new Set([slotDetailedCode]);
+  if (slotKind !== "starter") return new Set();
+  const broad = (slotPositionCode ?? DETAILED_TO_BROAD[slotDetailedCode ?? ""]) as
+    | BroadPosition
+    | undefined;
+  if (broad && DETAILED_BY_BROAD[broad]) return new Set(DETAILED_BY_BROAD[broad]);
+  if (slotDetailedCode) return new Set([slotDetailedCode]);
   return new Set();
 }
 
@@ -92,21 +98,23 @@ function PickerBody({
 }: PlayerPickerProps) {
   const [query, setQuery] = React.useState("");
   const [selected, setSelected] = React.useState<Set<string>>(() =>
-    defaultSelected(slotKind, slotDetailedCode),
+    defaultSelected(slotKind, slotPositionCode, slotDetailedCode),
   );
   const slotKey = `${slotKind ?? "_"}:${slotIndex ?? "_"}:${slotDetailedCode ?? slotPositionCode ?? "_"}`;
   const [prevSlotKey, setPrevSlotKey] = React.useState(slotKey);
 
   if (prevSlotKey !== slotKey) {
     setPrevSlotKey(slotKey);
-    setSelected(defaultSelected(slotKind, slotDetailedCode));
+    setSelected(defaultSelected(slotKind, slotPositionCode, slotDetailedCode));
     setQuery("");
   }
 
-  // Buckets visible in the broad-pill row.
+  // Buckets visible in the broad-pill row. GK slots stay locked to GK; outfield
+  // slots expose all three outfield buckets so users can place any field player.
   const visibleBuckets: BroadPosition[] = React.useMemo(() => {
     if (slotKind === "starter" && slotPositionCode) {
-      return [slotPositionCode as BroadPosition];
+      if (slotPositionCode === "GK") return ["GK"];
+      return ["DEF", "MID", "FWD"];
     }
     return BROAD_ORDER;
   }, [slotKind, slotPositionCode]);
@@ -128,11 +136,18 @@ function PickerBody({
   const filtered = React.useMemo(() => {
     const q = query.trim().toLowerCase();
     return players
-      .filter((p) => (selected.size === 0 ? true : selected.has(p.detailedPosition)))
+      .filter((p) => {
+        if (slotKind === "starter" && slotPositionCode) {
+          if (slotPositionCode === "GK" && p.position !== "GK") return false;
+          if (slotPositionCode !== "GK" && p.position === "GK") return false;
+        }
+        if (selected.size === 0) return true;
+        return selected.has(p.detailedPosition);
+      })
       .filter((p) =>
         q ? p.fullName.toLowerCase().includes(q) || p.club.toLowerCase().includes(q) : true,
       );
-  }, [players, query, selected]);
+  }, [players, query, selected, slotKind, slotPositionCode]);
 
   const eligibleCount = React.useMemo(
     () => filtered.filter((p) => !pickedIds.has(p.id) || p.id === currentPick?.id).length,

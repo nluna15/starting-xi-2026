@@ -78,10 +78,16 @@ export async function submitLineupAction(input: SubmitInput): Promise<SubmitResu
   for (let i = 0; i < starters.length; i += 1) {
     const slot = formationRow.slots[i];
     const player = playerById.get(starters[i])!;
-    if (player.position !== slot.position) {
+    if (slot.position === "GK" && player.position !== "GK") {
       return {
         ok: false,
-        error: `Slot ${slot.slot} expects a ${slot.position}, got ${player.fullName} (${player.position}).`,
+        error: `Slot ${slot.slot} requires a goalkeeper, got ${player.fullName} (${player.position}).`,
+      };
+    }
+    if (slot.position !== "GK" && player.position === "GK") {
+      return {
+        ok: false,
+        error: `Slot ${slot.slot} can't be a goalkeeper, got ${player.fullName} (${player.position}).`,
       };
     }
   }

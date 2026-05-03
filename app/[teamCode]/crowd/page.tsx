@@ -60,7 +60,7 @@ export default async function CrowdPage({ params }: { params: Promise<Params> })
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <div className="mx-auto w-[90%]">
+          <div className="mx-auto w-[90%] max-w-[420px] pb-10 lg:max-w-[560px]">
             <BuildPitch
               formation={formationDef}
               starters={startersResolved}
