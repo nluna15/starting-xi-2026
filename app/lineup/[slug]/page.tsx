@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
-import { Button } from "@/components/ui/button";
 import { BuildPitch } from "@/components/build-pitch";
 import { OwnerLineupActions } from "@/components/owner-lineup-actions";
 import { db } from "@/lib/db/client";
@@ -215,13 +213,6 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
         </div>
       </div>
 
-      <div className="flex justify-end">
-        <Link href={`/${teamRow.code}/crowd`}>
-          <Button variant="ghost" size="sm">
-            See the crowd&rsquo;s lineup →
-          </Button>
-        </Link>
-      </div>
     </div>
   );
 }
