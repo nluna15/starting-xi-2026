@@ -11,6 +11,10 @@ export function lastName(fullName: string): string {
   return parts.length > 1 ? parts[parts.length - 1] : fullName;
 }
 
+export function normalize(str: string): string {
+  return str.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+
 /**
  * Returns true once mounted on a client whose viewport matches `query`.
  * SSR-safe: returns `false` on the server and on first client render so

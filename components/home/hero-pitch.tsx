@@ -5,7 +5,7 @@ import { SoccerPitch, type FormationName } from "soccer-pitch";
 import "soccer-pitch/style.css";
 
 const EMPTY_STARTERS = Array(11).fill(null);
-const FORMATIONS: FormationName[] = ["4-2-3-1", "4-1-4-1", "4-3-3", "3-4-2-1"];
+const FORMATIONS: FormationName[] = ["4-2-3-1", "4-1-4-1", "3-4-3", "4-3-3", "3-4-2-1"];
 
 export function HeroPitch() {
   const [index, setIndex] = useState(0);
@@ -13,7 +13,7 @@ export function HeroPitch() {
   useEffect(() => {
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % FORMATIONS.length);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(id);
   }, []);
 

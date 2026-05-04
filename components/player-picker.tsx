@@ -10,7 +10,7 @@ import {
   DETAILED_TO_BROAD,
   type BroadPosition,
 } from "@/lib/formations";
-import { cn } from "@/lib/utils";
+import { cn, normalize } from "@/lib/utils";
 
 const POSITION_NOUN: Record<string, string> = {
   GK: "keepers",
@@ -134,7 +134,7 @@ function PickerBody({
   }, [slotKind, slotPositionCode, selected]);
 
   const filtered = React.useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalize(query.trim());
     return players
       .filter((p) => {
         if (slotKind === "starter" && slotPositionCode) {
@@ -145,7 +145,7 @@ function PickerBody({
         return selected.has(p.detailedPosition);
       })
       .filter((p) =>
-        q ? p.fullName.toLowerCase().includes(q) || p.club.toLowerCase().includes(q) : true,
+        q ? normalize(p.fullName).includes(q) || normalize(p.club).includes(q) : true,
       );
   }, [players, query, selected, slotKind, slotPositionCode]);
 
