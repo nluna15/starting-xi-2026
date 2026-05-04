@@ -84,7 +84,7 @@ function blankHighlightCSS(scope: string, blank: ActiveBlank): string {
   return `
     ${slotSel} { --sp-player-ring: var(--accent); }
     ${slotSel} .sp-rounded-full {
-      background: var(--accent-soft) !important;
+      background: color-mix(in srgb, var(--accent-soft) 75%, transparent) !important;
       outline: 4px solid var(--accent) !important;
     }
     ${slotSel} .sp-rounded-full > span { color: var(--accent) !important; }

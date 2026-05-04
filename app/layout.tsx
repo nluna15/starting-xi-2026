@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Barlow_Condensed, Barlow, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "@/components/chrome/footer";
 import { Header } from "@/components/chrome/header";
 import "./globals.css";
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-4 py-6">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
