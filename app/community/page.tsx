@@ -14,7 +14,7 @@ import {
   getPickRatesForTeam,
   getRosterStatusByCode,
 } from "@/lib/db/queries";
-import { FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
+import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
@@ -125,6 +125,7 @@ export default async function CommunityPage({
           fullName: s.player.fullName,
           photoUrl: s.player.photoUrl,
           countryCode: s.teamCode ? FIFA_TO_ISO2[s.teamCode] ?? null : null,
+          flagEmojiOverride: s.teamCode ? FIFA_FLAG_OVERRIDES[s.teamCode] ?? null : null,
           age: s.player.age,
           marketValueEur: s.player.marketValueEur,
           club: s.player.club,

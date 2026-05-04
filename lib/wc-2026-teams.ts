@@ -86,12 +86,21 @@ export const WC_2026_SLOTS: WcSlot[] = [
   { kind: "confirmed", code: "NZL", name: "New Zealand", flagEmoji: "🇳🇿" },
 ];
 
+// FIFA 3-letter codes whose flag is a tag-based subdivision emoji that the
+// soccer-pitch package's regional-indicator converter cannot render. Consumers
+// pass these via `flagEmojiOverride` so the actual subdivision flag (St.
+// George's Cross for ENG, St. Andrew's Cross for SCO) is rendered rather than
+// substituting GB (which would show the Union Jack).
+export const FIFA_FLAG_OVERRIDES: Record<string, string> = {
+  ENG: "\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}",
+  SCO: "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}",
+};
+
 // FIFA 3-letter code → ISO 3166-1 alpha-2 country code.
 // Consumed by the community pitch to feed `countryCode` into the soccer-pitch
 // package, whose flag converter only accepts 2-letter regional-indicator
-// codes. ENG and SCO are intentionally absent — their flags are tag-based
-// emojis (subdivisions of GB) with no regional-indicator equivalent, and
-// substituting "GB" would render the wrong flag.
+// codes. ENG and SCO are intentionally absent — they go through
+// `FIFA_FLAG_OVERRIDES` instead.
 export const FIFA_TO_ISO2: Record<string, string> = {
   USA: "US",
   MEX: "MX",

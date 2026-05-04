@@ -10,7 +10,7 @@ import {
   getRosterStatusByCode,
 } from "@/lib/db/queries";
 import { formatAge, formatEur } from "@/lib/utils";
-import { FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
+import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
@@ -35,6 +35,7 @@ export default async function CommunityCountryPage({
 
   const team = stats.team;
   const isoCountryCode = FIFA_TO_ISO2[team.code] ?? null;
+  const flagEmojiOverride = FIFA_FLAG_OVERRIDES[team.code] ?? null;
 
   const readyCodes = WC_2026_SLOTS.flatMap((s) =>
     s.kind === "confirmed" && statusByCode.get(s.code) === "ready" ? [s.code] : [],
@@ -80,6 +81,7 @@ export default async function CommunityCountryPage({
           fullName: s.player.fullName,
           photoUrl: s.player.photoUrl,
           countryCode: isoCountryCode,
+          flagEmojiOverride,
           age: s.player.age,
           marketValueEur: s.player.marketValueEur,
           club: s.player.club,
@@ -105,6 +107,7 @@ export default async function CommunityCountryPage({
     fullName: s.player.fullName,
     photoUrl: s.player.photoUrl,
     countryCode: isoCountryCode,
+    flagEmojiOverride,
     age: s.player.age,
     marketValueEur: s.player.marketValueEur,
     club: s.player.club,
