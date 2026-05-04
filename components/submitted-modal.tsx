@@ -159,7 +159,7 @@ function Stat({
   const display = value ?? placeholder ?? "—";
   const isPlaceholder = value == null;
   return (
-    <div className="rounded-lg border border-border bg-surface px-3 py-3 text-right">
+    <div className="rounded-lg border border-border bg-surface px-3 py-3 text-left">
       <div className="text-[11px] font-medium uppercase tracking-wide text-muted">
         {label}
       </div>
@@ -186,7 +186,7 @@ function PlayerStat({
 }) {
   return (
     <div className="rounded-lg border border-border bg-surface px-3 py-3">
-      <div className="text-right text-[11px] font-medium uppercase tracking-wide text-muted">
+      <div className="text-left text-[11px] font-medium uppercase tracking-wide text-muted">
         {label}
       </div>
       {player ? (
@@ -204,7 +204,7 @@ function PlayerStat({
               getInitials(player.fullName)
             )}
           </div>
-          <div className="flex-1 text-right">
+          <div className="flex-1 text-left">
             <div className="text-sm font-semibold leading-tight text-foreground">
               {player.fullName}
             </div>
@@ -212,7 +212,7 @@ function PlayerStat({
           </div>
         </div>
       ) : (
-        <div className="mt-1 text-right text-sm text-muted">{placeholder ?? "—"}</div>
+        <div className="mt-1 text-left text-sm text-muted">{placeholder ?? "—"}</div>
       )}
     </div>
   );
