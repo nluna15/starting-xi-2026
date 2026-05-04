@@ -28,7 +28,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               href="/community"
               className="text-sm font-medium text-accent hover:text-accent-hover"
             >
-              Community&rsquo;s Best 11 →
+              Global Fan&rsquo;s Best 11 →
             </Link>
           </div>
         </header>

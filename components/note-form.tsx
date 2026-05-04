@@ -36,13 +36,13 @@ export function NoteForm({
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <label htmlFor="lineup-note" className="text-sm font-semibold text-foreground">
-          Your reasoning <span className="font-normal text-muted">(optional)</span>
+        <label htmlFor="lineup-note" className="text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground">
+          Your Take <span className="font-normal text-muted">(optional)</span>
         </label>
         <span
-          className={remaining < 0 ? "text-xs font-medium text-accent" : "text-xs text-muted"}
+          className={remaining < 0 ? "text-[10px] font-medium text-accent" : "text-[10px] text-muted"}
         >
-          {remaining} left
+          {NOTE_MAX_LENGTH - remaining} / {NOTE_MAX_LENGTH}
         </span>
       </div>
       <textarea

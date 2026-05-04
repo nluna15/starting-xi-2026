@@ -14,8 +14,8 @@ import { WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 
-const PRIMARY_CODES = ["USA", "MEX", "CAN", "ENG"] as const;
-const CAROUSEL_CODES = ["FRA", "GER", "ARG", "MAR"] as const;
+const PRIMARY_CODES = ["USA", "MEX", "ARG", "FRA"] as const;
+const CAROUSEL_CODES = ["ENG", "GER", "BRA", "MAR"] as const;
 
 export default async function Home() {
   const [statusByCode, totalSubmissions, leaderboard] = await Promise.all([

@@ -14,6 +14,10 @@ type Props = {
   /** No outline border (e.g. home nation pickers). */
   borderless?: boolean;
   className?: string;
+  /** Override the default `/{code}/build` link target. */
+  hrefOverride?: string;
+  /** Override the default aria-label. */
+  ariaLabel?: string;
 };
 
 export const COUNTRY_TILE_BASE =
@@ -32,6 +36,8 @@ export function CountryTile({
   size = "md",
   borderless = false,
   className,
+  hrefOverride,
+  ariaLabel,
 }: Props) {
   const surface = borderless
     ? "rounded-lg border-0 bg-[#cecaca] text-black transition"
@@ -97,8 +103,8 @@ export function CountryTile({
 
   return (
     <Link
-      href={`/${code}/build`}
-      aria-label={`Build the ${name} XI`}
+      href={hrefOverride ?? `/${code}/build`}
+      aria-label={ariaLabel ?? `Build the ${name} XI`}
       className="block text-black no-underline"
     >
       {inner}

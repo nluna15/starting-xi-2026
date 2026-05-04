@@ -50,7 +50,7 @@ export const WC_2026_SLOTS: WcSlot[] = [
   { kind: "confirmed", code: "NOR", name: "Norway", flagEmoji: "🇳🇴" },
   { kind: "confirmed", code: "SWE", name: "Sweden", flagEmoji: "🇸🇪" },
   { kind: "confirmed", code: "SCO", name: "Scotland", flagEmoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿" },
-  { kind: "confirmed", code: "CZE", name: "Czech Republic", flagEmoji: "🇨🇿" },
+  { kind: "confirmed", code: "CZE", name: "Czechia", flagEmoji: "🇨🇿" },
   { kind: "confirmed", code: "TUR", name: "Turkey", flagEmoji: "🇹🇷" },
   { kind: "confirmed", code: "BIH", name: "Bosnia and Herzegovina", flagEmoji: "🇧🇦" },
 
@@ -170,7 +170,7 @@ export const TM_COUNTRY_BY_CODE: Record<string, string> = {
   NOR: "Norway",
   SWE: "Sweden",
   SCO: "Scotland",
-  CZE: "Czech Republic",
+  CZE: "Czechia",
   TUR: "Türkiye",
   BIH: "Bosnia-Herzegovina",
   JPN: "Japan",

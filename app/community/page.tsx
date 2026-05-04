@@ -2,6 +2,7 @@ import Link from "next/link";
 import { inArray, sql } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { CommunityCountryCarousel } from "@/components/community/country-carousel";
 import { CommunityPitch } from "@/components/community-pitch";
 import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
 import { HorizontalBarChart, type BarRow } from "@/components/horizontal-bar-chart";
@@ -11,8 +12,9 @@ import {
   getCountrySquadStats,
   getGlobalCrowdStats,
   getPickRatesForTeam,
+  getRosterStatusByCode,
 } from "@/lib/db/queries";
-import { FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
+import { FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
@@ -63,10 +65,15 @@ export default async function CommunityPage({
   const submittedSlug = Array.isArray(submitted) ? submitted[0] : submitted;
   const submittedContext = submittedSlug ? await loadSubmittedContext(submittedSlug) : null;
 
-  const [stats, countryStats] = await Promise.all([
+  const [stats, countryStats, statusByCode] = await Promise.all([
     getGlobalCrowdStats(),
     getCountrySquadStats(),
+    getRosterStatusByCode(),
   ]);
+
+  const readyCodes = WC_2026_SLOTS.flatMap((s) =>
+    s.kind === "confirmed" && statusByCode.get(s.code) === "ready" ? [s.code] : [],
+  );
 
   const ageRows: BarRow[] = [...countryStats]
     .sort((a, b) => b.avgAge - a.avgAge)
@@ -114,6 +121,9 @@ export default async function CommunityPage({
           fullName: s.player.fullName,
           photoUrl: s.player.photoUrl,
           countryCode: s.teamCode ? FIFA_TO_ISO2[s.teamCode] ?? null : null,
+          age: s.player.age,
+          marketValueEur: s.player.marketValueEur,
+          club: s.player.club,
         }
       : null,
   );
@@ -124,10 +134,16 @@ export default async function CommunityPage({
 
   return (
     <div className="space-y-8">
+      <CommunityCountryCarousel
+        slots={WC_2026_SLOTS}
+        readyCodes={readyCodes}
+        linkMode="community"
+      />
+
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Community&rsquo;s Best 11
+            Global Fan&rsquo;s Best 11
           </h1>
         </div>
         <Link href="/countries" className="sm:shrink-0">
@@ -175,7 +191,8 @@ export default async function CommunityPage({
                   <span className="flex items-center gap-2">
                     <span>{i + 1}.</span>
                     <span className="font-medium">{b.player.fullName}</span>
-                    <span className="text-xs">{b.player.detailedPosition}</span>
+                    <span className="text-xs">{b.player.detailedPosition},</span>
+                    {b.teamCode && <span className="text-xs text-white/80">{b.teamCode}</span>}
                   </span>
                   <span className="text-xs">{Math.round(b.rate * 100)}%</span>
                 </li>

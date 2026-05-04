@@ -76,19 +76,18 @@ export function OwnerLineupActions({
 
   return (
     <>
-      <NoteForm
-        value={value}
-        onChange={handleChange}
-        remaining={remaining}
-        status={status}
-        saving={saving}
-        helperText={
-          showSubmitButton ? "Your note will be saved when you submit the squad." : undefined
-        }
-        showSaveButton={!showSubmitButton}
-        canSave={canSave}
-        onSave={handleManualSave}
-      />
+      <div className="rounded-xl border border-border bg-surface p-4">
+        <NoteForm
+          value={value}
+          onChange={handleChange}
+          remaining={remaining}
+          status={status}
+          saving={saving}
+          showSaveButton={!showSubmitButton}
+          canSave={canSave}
+          onSave={handleManualSave}
+        />
+      </div>
       {showSubmitButton && (
         <Button
           variant="primary"
@@ -97,7 +96,7 @@ export function OwnerLineupActions({
           disabled={saving || remaining < 0}
           className="w-full"
         >
-          {saving ? "Saving note…" : "Submit Squad"}
+          {saving ? "Submitting…" : "Submit Squad"}
         </Button>
       )}
     </>

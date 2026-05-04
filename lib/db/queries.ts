@@ -32,6 +32,7 @@ export type CrowdStats = {
     }>;
   };
   topBench: Array<{ player: Player; count: number; rate: number }>;
+  topPlayers: Array<{ player: Player; count: number; rate: number }>;
 };
 
 export async function getTeamByCode(code: string) {
@@ -258,6 +259,37 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
     return [{ player: p, count: Number(r.picks), rate: Number(r.picks) / total }];
   });
 
+  // Top starter picks for this country (any slot). Used by the per-country
+  // community page's "Most-popular players" breakdown.
+  const topPlayerRows = await db.execute(sql`
+    with starter_picks as (
+      select pid::int as player_id
+      from ${submissions} s,
+        jsonb_array_elements_text(s.starters) pid
+      where s.team_id = ${team.id}
+    )
+    select player_id, count(*)::int as picks
+    from starter_picks
+    group by player_id
+    order by picks desc, player_id asc
+    limit 5
+  `);
+  const topPlayerIds = (topPlayerRows.rows as Array<{ player_id: number }>).map((r) =>
+    Number(r.player_id),
+  );
+  const topPlayerMap = new Map<number, Player>();
+  if (topPlayerIds.length > 0) {
+    const ps = await db.select().from(players).where(inArray(players.id, topPlayerIds));
+    for (const p of ps) topPlayerMap.set(p.id, p);
+  }
+  const topPlayers = (topPlayerRows.rows as Array<{ player_id: number; picks: number }>).flatMap(
+    (r) => {
+      const p = topPlayerMap.get(Number(r.player_id));
+      if (!p) return [];
+      return [{ player: p, count: Number(r.picks), rate: Number(r.picks) / total }];
+    },
+  );
+
   return {
     totalSubmissions: total,
     team: { code: team.code, name: team.name, flagEmoji: team.flagEmoji },
@@ -273,6 +305,7 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
       slots: slotResults,
     },
     topBench,
+    topPlayers,
   };
 }
 
@@ -285,6 +318,7 @@ function emptyStats(team: CrowdStats["team"]): CrowdStats {
     averages: { age: null, marketValueEur: null, submissionCount: 0 },
     mostLikelyXi: { formation: null, slots: [] },
     topBench: [],
+    topPlayers: [],
   };
 }
 
@@ -378,7 +412,7 @@ export type GlobalCrowdStats = {
       teamCode: string | null;
     }>;
   };
-  topPlayers: Array<{ player: Player; count: number; rate: number }>;
+  topPlayers: Array<{ player: Player; teamCode: string | null; count: number; rate: number }>;
 };
 
 // Aggregates submissions across every team. The "most likely XI" mixes players
@@ -531,14 +565,18 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
   `);
   const topIds = (topRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
   const topMap = new Map<number, Player>();
+  const teamCodeMap = new Map<number, string>();
   if (topIds.length > 0) {
     const ps = await db.select().from(players).where(inArray(players.id, topIds));
     for (const p of ps) topMap.set(p.id, p);
+    const teamIds = [...new Set(ps.map((p) => p.teamId))];
+    const ts = await db.select({ id: teams.id, code: teams.code }).from(teams).where(inArray(teams.id, teamIds));
+    for (const t of ts) teamCodeMap.set(t.id, t.code);
   }
   const topPlayers = (topRows.rows as Array<{ player_id: number; picks: number }>).flatMap((r) => {
     const p = topMap.get(Number(r.player_id));
     if (!p) return [];
-    return [{ player: p, count: Number(r.picks), rate: Number(r.picks) / total }];
+    return [{ player: p, teamCode: teamCodeMap.get(p.teamId) ?? null, count: Number(r.picks), rate: Number(r.picks) / total }];
   });
 
   return {

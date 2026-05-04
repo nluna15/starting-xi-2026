@@ -1,6 +1,5 @@
 import formationsJson from "@/data/formations.json";
 import type { FormationSlot, Player } from "@/lib/db/schema";
-import type { FormationName } from "soccer-pitch";
 
 export type FormationDef = {
   name: string;
@@ -9,12 +8,13 @@ export type FormationDef = {
 
 export const FORMATIONS: FormationDef[] = formationsJson as FormationDef[];
 
-export const PACKAGE_FORMATION_NAMES: ReadonlySet<string> = new Set<FormationName>([
+export const BUILDABLE_FORMATION_NAMES: ReadonlySet<string> = new Set<string>([
   "4-4-2",
   "4-3-3",
   "3-5-2",
   "4-2-3-1",
   "4-1-4-1",
+  "4-1-2-3",
   "3-4-3",
   "5-3-2",
   "4-4-1-1",
@@ -25,7 +25,7 @@ export const PACKAGE_FORMATION_NAMES: ReadonlySet<string> = new Set<FormationNam
 ]);
 
 export const BUILDABLE_FORMATIONS: FormationDef[] = FORMATIONS.filter((f) =>
-  PACKAGE_FORMATION_NAMES.has(f.name),
+  BUILDABLE_FORMATION_NAMES.has(f.name),
 );
 
 /** Lineup builder chip order (not DEF-slot count — e.g. 3-5-2 wingbacks are DEF in slot data). */
@@ -33,6 +33,7 @@ export const BUILDABLE_FORMATION_CHIP_ORDER: readonly string[] = [
   "3-4-2-1",
   "3-4-3",
   "3-5-2",
+  "4-1-2-3",
   "4-1-4-1",
   "4-2-3-1",
   "4-3-2-1",

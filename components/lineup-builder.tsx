@@ -60,7 +60,8 @@ export function LineupBuilder({
     const { starters: next } = reassignStarters(starters, prevFormation.slots, formation.slots);
     setPrevFormation(formation);
     setStarters(next);
-    setActive({ kind: "starter", index: 0 });
+    const firstEmpty = next.findIndex((p) => p === null);
+    setActive({ kind: "starter", index: firstEmpty !== -1 ? firstEmpty : 0 });
   }
 
   const pickCountMap = React.useMemo(() => {
@@ -269,16 +270,16 @@ export function LineupBuilder({
               disabled={!allFilled || submitting}
               className={cn(
                 "inline-flex h-12 items-center justify-center gap-2 rounded-md px-6 text-sm font-bold uppercase tracking-wide transition",
-                allFilled && !submitting
-                  ? "bg-accent text-accent-foreground hover:bg-accent-hover"
-                  : "cursor-not-allowed bg-border text-muted",
+                !allFilled
+                  ? "cursor-not-allowed bg-border text-muted"
+                  : submitting
+                    ? "bg-accent-hover text-accent-foreground"
+                    : "bg-accent text-accent-foreground hover:bg-accent-hover",
               )}
             >
-              {submitting
-                ? "Submitting…"
-                : allFilled
-                  ? "Review & Submit"
-                  : `${14 - filledCount} ${14 - filledCount === 1 ? "pick" : "picks"} remaining`}
+              {allFilled
+                ? "Review Lineup"
+                : `${14 - filledCount} ${14 - filledCount === 1 ? "pick" : "picks"} remaining`}
             </button>
           </div>
 

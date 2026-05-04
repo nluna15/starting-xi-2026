@@ -7,6 +7,22 @@
       { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
       { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
       { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
+      { "slot": "CM", "position": "MID", "x": 50, "y": 50 },
+      { "slot": "LCM", "position": "MID", "x": 20, "y": 50 },
+      { "slot": "RCM", "position": "MID", "x": 80, "y": 50 },
+      { "slot": "LW",  "position": "FWD", "x": 10, "y": 72 },
+      { "slot": "ST",  "position": "FWD", "x": 50, "y": 80 },
+      { "slot": "RW",  "position": "FWD", "x": 90, "y": 72 }
+    ]
+  },
+  {
+    "name": "4-1-2-3",
+    "slots": [
+      { "slot": "GK",  "position": "GK",  "x": 50, "y": 4 },
+      { "slot": "LB",  "position": "DEF", "x": 12, "y": 28 },
+      { "slot": "LCB", "position": "DEF", "x": 36, "y": 24 },
+      { "slot": "RCB", "position": "DEF", "x": 64, "y": 24 },
+      { "slot": "RB",  "position": "DEF", "x": 88, "y": 28 },
       { "slot": "CDM", "position": "MID", "x": 50, "y": 42 },
       { "slot": "LCM", "position": "MID", "x": 30, "y": 55 },
       { "slot": "RCM", "position": "MID", "x": 70, "y": 55 },
