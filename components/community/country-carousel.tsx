@@ -96,7 +96,11 @@ export function CommunityCountryCarousel({
                     layout="card"
                     size="md"
                     borderless
-                    className={cn("h-16", isActive && "ring-2 ring-blue-500")}
+                    className={cn(
+                      "h-16",
+                      isActive &&
+                        "bg-accent-soft text-accent-deep ring-2 ring-accent",
+                    )}
                     hrefOverride={hrefOverride}
                     ariaLabel={ariaLabel}
                   />
@@ -106,18 +110,18 @@ export function CommunityCountryCarousel({
             return (
               <div
                 key={slot.key}
-                className="snap-start shrink-0 flex h-16 w-44 flex-col items-center justify-center gap-0.5 rounded-lg bg-[#cecaca]/40 px-3 text-center text-zinc-400"
+                className="snap-start shrink-0 flex h-16 w-44 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
               >
                 <span className="text-xl leading-none" aria-hidden>
                   ❔
                 </span>
-                <span className="text-[11px] leading-tight">{slot.label}</span>
+                <span className="cond text-[11px] leading-tight">{slot.label}</span>
               </div>
             );
           })}
 
           {filteredSlots.length === 0 && (
-            <div className="flex h-16 shrink-0 items-center px-2 text-sm text-zinc-400">
+            <div className="flex h-16 shrink-0 items-center px-2 text-[13px] text-ink-3">
               No countries match &ldquo;{query}&rdquo;.
             </div>
           )}
@@ -148,7 +152,12 @@ export function CommunityCountryCarousel({
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search countries…"
           aria-label="Search countries"
-          className="w-full rounded-md border border-border bg-surface-muted px-3 py-2 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent"
+          className={cn(
+            "w-full rounded-md border border-line bg-bg px-3.5 py-3 text-[14px] text-ink placeholder:text-ink-faint",
+            "transition-[border-color,box-shadow] duration-150 ease-in-out",
+            "hover:border-line-strong",
+            "focus:outline-none focus:border-accent focus:shadow-[0_0_0_3px_var(--accent-soft)]",
+          )}
         />
       </div>
     </div>
@@ -165,20 +174,28 @@ function AllNationsTile({
   href?: string;
 }) {
   const cls = cn(
-    "snap-start shrink-0 w-44 flex h-16 flex-col items-center justify-center gap-0.5 rounded-lg px-3 text-center transition",
-    "bg-[#cecaca] text-black hover:bg-[#B91C1C] hover:text-white",
-    active && "ring-2 ring-blue-500",
+    "snap-start shrink-0 w-44 flex h-16 items-center justify-center gap-2 rounded-md px-3 text-center",
+    "border border-line bg-surface-2",
+    "cond text-[13px] font-bold text-ink",
+    "transition-[background-color,border-color,color] duration-150 ease-in-out",
+    "hover:border-accent hover:bg-accent-soft hover:text-accent-deep",
+    "focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft focus-visible:border-accent",
+    active && "border-accent bg-accent-soft text-accent-deep",
   );
   const inner = (
     <>
-      <span className="text-xl leading-none" aria-hidden>
+      <span className="text-base leading-none" aria-hidden>
         🌍
       </span>
-      <span className="text-xs font-semibold leading-tight">All Nations</span>
+      <span>All Nations</span>
     </>
   );
   if (href) {
-    return <Link href={href} className={cls}>{inner}</Link>;
+    return (
+      <Link href={href} className={cls}>
+        {inner}
+      </Link>
+    );
   }
   return (
     <button type="button" onClick={onClick} aria-pressed={active} className={cls}>
@@ -208,7 +225,11 @@ function CarouselButton({
       tabIndex={visible ? 0 : -1}
       aria-hidden={!visible}
       className={cn(
-        "absolute top-1/2 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900/90 text-white shadow-md transition sm:flex",
+        "absolute top-1/2 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full",
+        "border border-line-strong bg-bg-elev text-ink shadow-1 transition-[opacity,background-color,border-color] duration-150 ease-in-out",
+        "hover:border-ink-3 hover:bg-surface-2",
+        "focus-visible:outline-none focus-visible:border-accent focus-visible:ring-[3px] focus-visible:ring-accent-soft",
+        "sm:flex",
         side === "left" ? "left-1 sm:-left-3" : "right-1 sm:-right-3",
         visible ? "opacity-100" : "pointer-events-none opacity-0",
       )}

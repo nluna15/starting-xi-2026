@@ -324,7 +324,7 @@ function emptyStats(team: CrowdStats["team"]): CrowdStats {
 
 export type HomeLeaderboard = {
   totalSubmissions: number;
-  topPlayers: Array<{ player: Player; count: number; rate: number }>;
+  topPlayers: Array<{ player: Player; team: Team | null; count: number; rate: number }>;
   topCountries: Array<{ team: Team; count: number; rate: number }>;
   topFormations: Array<{ name: string; count: number; rate: number }>;
 };
@@ -353,11 +353,18 @@ export async function getHomeLeaderboard(): Promise<HomeLeaderboard> {
     const ps = await db.select().from(players).where(inArray(players.id, playerIds));
     for (const p of ps) playerMap.set(p.id, p);
   }
+  const teamIdsForPlayers = [...new Set([...playerMap.values()].map((p) => p.teamId))];
+  const playerTeamMap = new Map<number, Team>();
+  if (teamIdsForPlayers.length > 0) {
+    const ts = await db.select().from(teams).where(inArray(teams.id, teamIdsForPlayers));
+    for (const t of ts) playerTeamMap.set(t.id, t);
+  }
   const topPlayers = (playerRows.rows as Array<{ player_id: number; picks: number }>).flatMap((r) => {
     const p = playerMap.get(Number(r.player_id));
     if (!p) return [];
     const count = Number(r.picks);
-    return [{ player: p, count, rate: count / total }];
+    const team = playerTeamMap.get(p.teamId) ?? null;
+    return [{ player: p, team, count, rate: count / total }];
   });
 
   const countryRows = await db.execute(sql`

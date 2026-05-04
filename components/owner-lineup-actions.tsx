@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { saveNoteAction } from "@/app/lineup/[slug]/actions";
 import { NoteForm, NOTE_MAX_LENGTH, type NoteStatus } from "@/components/note-form";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 type Props = {
   slug: string;
@@ -76,7 +77,7 @@ export function OwnerLineupActions({
 
   return (
     <>
-      <div className="rounded-xl border border-border bg-surface p-4">
+      <Card padding="default">
         <NoteForm
           value={value}
           onChange={handleChange}
@@ -87,7 +88,7 @@ export function OwnerLineupActions({
           canSave={canSave}
           onSave={handleManualSave}
         />
-      </div>
+      </Card>
       {showSubmitButton && (
         <Button
           variant="primary"

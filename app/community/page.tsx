@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { inArray, sql } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
 import { CommunityPitch } from "@/components/community-pitch";
 import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
@@ -75,7 +75,7 @@ export default async function CommunityPage({
     s.kind === "confirmed" && statusByCode.get(s.code) === "ready" ? [s.code] : [],
   );
 
-  const ageRows: BarRow[] = [...countryStats]
+  const ageRowsAll: BarRow[] = [...countryStats]
     .sort((a, b) => b.avgAge - a.avgAge)
     .map((c) => ({
       key: c.code,
@@ -83,8 +83,10 @@ export default async function CommunityPage({
       flagEmoji: c.flagEmoji,
       value: c.avgAge,
     }));
+  const oldestRows = ageRowsAll.slice(0, 4);
+  const youngestRows = ageRowsAll.slice(-4).reverse();
 
-  const valueRows: BarRow[] = [...countryStats]
+  const valueRowsAll: BarRow[] = [...countryStats]
     .sort((a, b) => b.avgMarketValueEur - a.avgMarketValueEur)
     .map((c) => ({
       key: c.code,
@@ -92,6 +94,8 @@ export default async function CommunityPage({
       flagEmoji: c.flagEmoji,
       value: c.avgMarketValueEur,
     }));
+  const mostExpensiveRows = valueRowsAll.slice(0, 5);
+  const cheapestRows = valueRowsAll.slice(-3).reverse();
 
   if (stats.totalSubmissions === 0) {
     return (
@@ -100,8 +104,8 @@ export default async function CommunityPage({
           <span className="text-4xl" aria-hidden>
             🏆
           </span>
-          <h1 className="text-2xl font-bold">No submissions yet</h1>
-          <p className="max-w-md text-sm text-zinc-400">
+          <h1 className="display text-[44px] text-ink sm:text-[52px]">No submissions yet</h1>
+          <p className="max-w-md text-[14px] text-ink-3">
             Be the first to submit a lineup and the community page will start to fill in.
           </p>
           <Link href="/countries">
@@ -133,23 +137,23 @@ export default async function CommunityPage({
     : null;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <CommunityCountryCarousel
         slots={WC_2026_SLOTS}
         readyCodes={readyCodes}
         linkMode="community"
       />
 
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="space-y-1">
+          <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
             Global Fan&rsquo;s Best 11
           </h1>
         </div>
         <Link href="/countries" className="sm:shrink-0">
           <Button size="lg">Submit your own XI</Button>
         </Link>
-      </div>
+      </header>
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
@@ -161,65 +165,80 @@ export default async function CommunityPage({
             />
           </div>
         )}
-        <div className="space-y-4">
-          <Card
-            title="Most-popular formation"
-            className="text-white"
-            titleClassName="text-[21px] text-white"
-            borderless
-          >
-            <div className="text-2xl font-bold">{stats.topFormation?.name ?? "—"}</div>
-            <ul className="mt-2 space-y-1 text-sm">
-              {stats.formationCounts.map((f) => (
-                <li key={f.name} className="flex items-center justify-between">
-                  <span>{f.name}</span>
-                  <span>
+        <div className="space-y-3">
+          <StatCard title="Most-popular formation">
+            <div className="display text-[34px] text-ink">{stats.topFormation?.name ?? "—"}</div>
+            <ul className="mt-2 space-y-1">
+              {stats.formationCounts.slice(0, 6).map((f) => (
+                <li
+                  key={f.name}
+                  className="flex items-center justify-between gap-2 text-[13px]"
+                >
+                  <span className="cond text-[12px] font-bold text-ink">{f.name}</span>
+                  <span className="mono text-[12px] text-ink-3">
                     {f.count} ({Math.round((f.count / stats.totalSubmissions) * 100)}%)
                   </span>
                 </li>
               ))}
             </ul>
-          </Card>
+          </StatCard>
 
-          <Card title="Most-picked players" titleClassName="text-white" borderless>
-            <ol className="space-y-2 text-sm text-white">
+          <StatCard title="Most-picked players">
+            <ol className="space-y-2">
               {stats.topPlayers.length === 0 && (
-                <li>No data yet.</li>
+                <li className="text-[13px] text-ink-3">No data yet.</li>
               )}
               {stats.topPlayers.map((b, i) => (
-                <li key={b.player.id} className="flex items-center justify-between gap-2">
-                  <span className="flex items-center gap-2">
-                    <span>{i + 1}.</span>
-                    <span className="font-medium">{b.player.fullName}</span>
-                    <span className="text-xs">{b.player.detailedPosition},</span>
-                    {b.teamCode && <span className="text-xs text-white/80">{b.teamCode}</span>}
+                <li
+                  key={b.player.id}
+                  className="flex items-center justify-between gap-2 text-[13px]"
+                >
+                  <span className="flex min-w-0 items-center gap-2">
+                    <span className="mono w-5 shrink-0 text-[12px] text-ink-faint">
+                      {i + 1}.
+                    </span>
+                    <span className="truncate font-medium text-ink">
+                      {b.player.fullName}
+                    </span>
+                    <span className="mono text-[11px] text-ink-faint">
+                      {b.player.detailedPosition}
+                    </span>
+                    {b.teamCode && (
+                      <span className="mono text-[11px] text-ink-faint">{b.teamCode}</span>
+                    )}
                   </span>
-                  <span className="text-xs">{Math.round(b.rate * 100)}%</span>
+                  <span className="mono text-[12px] text-ink-2">
+                    {Math.round(b.rate * 100)}%
+                  </span>
                 </li>
               ))}
             </ol>
-          </Card>
+          </StatCard>
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        <Card title="Average squad age" titleClassName="text-white" borderless>
-          <HorizontalBarChart
-            rows={ageRows}
-            formatValue={(v) => v.toFixed(1)}
-          />
-        </Card>
-        <Card title="Average market value per player" titleClassName="text-white" borderless>
-          <HorizontalBarChart
-            rows={valueRows}
-            formatValue={formatEurCompact}
-          />
-        </Card>
-        <Card title="Coming soon" titleClassName="text-white" borderless>
-          <div className="flex h-full min-h-48 items-center justify-center text-xs text-zinc-300">
+      <div className="grid gap-3 md:grid-cols-3">
+        <StatCard title="Average squad age">
+          <div className="flex flex-col gap-3">
+            <Subhead>Oldest</Subhead>
+            <HorizontalBarChart rows={oldestRows} formatValue={(v) => v.toFixed(1)} />
+            <Subhead className="mt-2">Youngest</Subhead>
+            <HorizontalBarChart rows={youngestRows} formatValue={(v) => v.toFixed(1)} />
+          </div>
+        </StatCard>
+        <StatCard title="Average market value per player">
+          <div className="flex flex-col gap-3">
+            <Subhead>Most expensive</Subhead>
+            <HorizontalBarChart rows={mostExpensiveRows} formatValue={formatEurCompact} />
+            <Subhead className="mt-2">Lowest value</Subhead>
+            <HorizontalBarChart rows={cheapestRows} formatValue={formatEurCompact} />
+          </div>
+        </StatCard>
+        <StatCard title="Coming soon">
+          <div className="flex h-full min-h-48 items-center justify-center text-[12px] text-ink-faint">
             Placeholder — metric TBD
           </div>
-        </Card>
+        </StatCard>
       </div>
       {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>
@@ -232,29 +251,39 @@ function formatEurCompact(eur: number): string {
   return `€${Math.round(eur)}`;
 }
 
-function Card({
+/* -----------------------------------------------------------------------------
+   Local StatCard wrapper: design-system Card + handoff §6 card-header pattern
+   (cond 13px ink, hairline divider underneath, 8px gap to body content).
+   ----------------------------------------------------------------------------- */
+function StatCard({
   title,
   children,
-  className = "",
-  titleClassName = "text-zinc-300",
-  borderless = false,
 }: {
   title: string;
   children: React.ReactNode;
-  className?: string;
-  titleClassName?: string;
-  borderless?: boolean;
 }) {
   return (
-    <section
-      className={cn(
-        "rounded-xl bg-[rgba(111,110,108,0.5)] p-4",
-        !borderless && "border border-zinc-800",
-        className,
-      )}
+    <Card as="section">
+      <h2 className="cond border-b border-line pb-2 text-[13px] text-ink">{title}</h2>
+      <div className="flex flex-col gap-2">{children}</div>
+    </Card>
+  );
+}
+
+function Subhead({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <h3
+      className={`mono text-[11px] font-medium tracking-[0.16em] text-ink-faint${
+        className ? ` ${className}` : ""
+      }`}
     >
-      <h2 className={cn("mb-2 text-sm font-semibold", titleClassName)}>{title}</h2>
       {children}
-    </section>
+    </h3>
   );
 }

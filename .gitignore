@@ -43,3 +43,6 @@ next-env.d.ts
 # data
 *.duckdb
 .env*.local
+
+# internal design handoff (kept locally, not shipped)
+hifi-design-guidelines.md

@@ -38,15 +38,27 @@ export function NationCarousel({ tiles, viewAllHref }: Props) {
 
 function ViewAllTile({ href }: { href: string }) {
   return (
-    <Link href={href} aria-label="All nations" className="block">
+    <Link
+      href={href}
+      aria-label="All nations"
+      className={cn(
+        "block rounded-md focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft",
+      )}
+    >
       <div
         className={cn(
-          "rounded-lg border-0 bg-[#cecaca] text-black transition",
-          "hover:bg-[#B91C1C] hover:text-white",
-          "flex h-14 items-center justify-center px-3 text-base font-medium",
+          // Match the row-layout CountryTile silhouette (h-14 + rounded-lg) so
+          // the carousel reads as one rhythm.
+          "flex h-14 items-center justify-center gap-2 rounded-lg border border-line bg-surface-2 px-3",
+          "cond text-[13px] font-bold text-ink",
+          "transition-[background-color,border-color,color] duration-150 ease-in-out",
+          "hover:border-accent hover:bg-accent-soft hover:text-accent-deep",
         )}
       >
-        🌍 All nations
+        <span aria-hidden className="text-base leading-none">
+          🌍
+        </span>
+        <span>All Nations</span>
       </div>
     </Link>
   );

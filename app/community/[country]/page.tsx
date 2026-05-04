@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
 import { CommunityPitch } from "@/components/community-pitch";
 import {
@@ -8,7 +9,7 @@ import {
   getCrowdStats,
   getRosterStatusByCode,
 } from "@/lib/db/queries";
-import { cn, formatAge, formatEur } from "@/lib/utils";
+import { formatAge, formatEur } from "@/lib/utils";
 import { FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
@@ -56,10 +57,10 @@ export default async function CommunityCountryPage({
           <span className="text-4xl" aria-hidden>
             {team.flagEmoji}
           </span>
-          <h1 className="text-2xl font-bold">
+          <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
             No submissions yet for {team.name}
           </h1>
-          <p className="max-w-md text-sm text-zinc-400">
+          <p className="max-w-md text-[14px] text-ink-3">
             Be the first to submit a {team.name} XI and this page will start to
             fill in.
           </p>
@@ -126,7 +127,7 @@ export default async function CommunityCountryPage({
       : null;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <CommunityCountryCarousel
         slots={WC_2026_SLOTS}
         readyCodes={readyCodes}
@@ -134,16 +135,16 @@ export default async function CommunityCountryPage({
         activeCode={team.code}
       />
 
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="space-y-1">
+          <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
             <span aria-hidden>{team.flagEmoji}</span> {team.code}
             {stats.topFormation ? ` · ${stats.topFormation.name}` : ""}
           </p>
-          <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">
+          <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
             {team.name}&rsquo;s Best 11
           </h1>
-          <p className="mt-1 text-xs text-zinc-400">
+          <p className="mono text-[11px] tracking-[0.16em] text-ink-faint">
             From {stats.totalSubmissions.toLocaleString()}{" "}
             {stats.totalSubmissions === 1 ? "submission" : "submissions"}
           </p>
@@ -151,7 +152,7 @@ export default async function CommunityCountryPage({
         <Link href={submitHref} className="sm:shrink-0">
           <Button size="lg">{submitLabel}</Button>
         </Link>
-      </div>
+      </header>
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         <div className="space-y-4">
@@ -167,93 +168,109 @@ export default async function CommunityCountryPage({
           )}
         </div>
 
-        <div className="space-y-4">
-          <Card title="Most-popular formation" borderless>
-            <div className="text-2xl font-bold">
+        <div className="space-y-3">
+          <StatCard title="Most-popular formation">
+            <div className="display text-[34px] text-ink">
               {stats.topFormation?.name ?? "—"}
             </div>
-            <ul className="mt-2 space-y-1 text-sm">
+            <ul className="mt-2 space-y-1">
               {stats.formationCounts.map((f) => (
                 <li
                   key={f.name}
-                  className="flex items-center justify-between"
+                  className="flex items-center justify-between gap-2 text-[13px]"
                 >
-                  <span>{f.name}</span>
-                  <span>
+                  <span className="cond text-[12px] font-bold text-ink">{f.name}</span>
+                  <span className="mono text-[12px] text-ink-3">
                     {f.count} (
                     {Math.round((f.count / stats.totalSubmissions) * 100)}%)
                   </span>
                 </li>
               ))}
             </ul>
-          </Card>
+          </StatCard>
 
-          <Card title="Most-popular players" borderless>
-            <ol className="space-y-2 text-sm text-white">
-              {stats.topPlayers.length === 0 && <li>No data yet.</li>}
+          <StatCard title="Most-popular players">
+            <ol className="space-y-2">
+              {stats.topPlayers.length === 0 && (
+                <li className="text-[13px] text-ink-3">No data yet.</li>
+              )}
               {stats.topPlayers.map((b, i) => (
                 <li
                   key={b.player.id}
-                  className="flex items-center justify-between gap-2"
+                  className="flex items-center justify-between gap-2 text-[13px]"
                 >
-                  <span className="flex items-center gap-2">
-                    <span>{i + 1}.</span>
-                    <span className="font-medium">{b.player.fullName}</span>
-                    <span className="text-xs">{b.player.detailedPosition}</span>
+                  <span className="flex min-w-0 items-center gap-2">
+                    <span className="mono w-5 shrink-0 text-[12px] text-ink-faint">
+                      {i + 1}.
+                    </span>
+                    <span className="truncate font-medium text-ink">
+                      {b.player.fullName}
+                    </span>
+                    <span className="mono text-[11px] text-ink-faint">
+                      {b.player.detailedPosition}
+                    </span>
                   </span>
-                  <span className="text-xs">{Math.round(b.rate * 100)}%</span>
+                  <span className="mono text-[12px] text-ink-2">
+                    {Math.round(b.rate * 100)}%
+                  </span>
                 </li>
               ))}
             </ol>
-          </Card>
-        </div>
-      </div>
+          </StatCard>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card title="Average squad age" borderless>
-          <div className="text-3xl font-bold">{formatAge(stats.averages.age)}</div>
-          <div className="mt-1 text-xs text-zinc-300">
-            Community avg: {formatAge(communityAvgAge)}
-          </div>
-        </Card>
-        <Card title="Average market value per player" borderless>
-          <div className="text-3xl font-bold">
-            {formatEur(stats.averages.marketValueEur)}
-          </div>
-          <div className="mt-1 text-xs text-zinc-300">
-            Community avg: {formatEur(communityAvgValue)}
-          </div>
-        </Card>
+          <AverageCard
+            title="Average squad age"
+            value={formatAge(stats.averages.age)}
+            communityLabel={`Community avg ${formatAge(communityAvgAge)}`}
+          />
+          <AverageCard
+            title="Average market value per player"
+            value={formatEur(stats.averages.marketValueEur)}
+            communityLabel={`Community avg ${formatEur(communityAvgValue)}`}
+          />
+        </div>
       </div>
     </div>
   );
 }
 
-function Card({
+/* -----------------------------------------------------------------------------
+   Local StatCard wrapper: design-system Card + handoff §6 card-header pattern
+   (cond 13px ink, hairline divider underneath, 8px gap to body content).
+   Mirrors the one in app/community/page.tsx — kept inline rather than promoted
+   because the community surfaces are the only callers.
+   ----------------------------------------------------------------------------- */
+function StatCard({
   title,
   children,
-  className = "",
-  titleClassName = "text-white",
-  borderless = false,
 }: {
   title: string;
   children: React.ReactNode;
-  className?: string;
-  titleClassName?: string;
-  borderless?: boolean;
 }) {
   return (
-    <section
-      className={cn(
-        "rounded-xl bg-[rgba(111,110,108,0.5)] p-4",
-        !borderless && "border border-zinc-800",
-        className,
-      )}
-    >
-      <h2 className={cn("mb-2 text-sm font-semibold", titleClassName)}>
-        {title}
-      </h2>
-      {children}
-    </section>
+    <Card as="section">
+      <h2 className="cond border-b border-line pb-2 text-[13px] text-ink">{title}</h2>
+      <div className="flex flex-col gap-2">{children}</div>
+    </Card>
+  );
+}
+
+function AverageCard({
+  title,
+  value,
+  communityLabel,
+}: {
+  title: string;
+  value: string;
+  communityLabel: string;
+}) {
+  return (
+    <Card as="section">
+      <h2 className="cond border-b border-line pb-2 text-[13px] text-ink">{title}</h2>
+      <div className="flex flex-col items-start text-left">
+        <span className="mono text-[28px] font-bold text-ink">{value}</span>
+        <span className="cond text-[16px] text-ink-3">{communityLabel}</span>
+      </div>
+    </Card>
   );
 }

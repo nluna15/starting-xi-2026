@@ -1,4 +1,5 @@
 import { CountryTile } from "@/components/country-tile";
+import { SectionHeading } from "@/components/home/section-heading";
 import { getRosterStatusByCode } from "@/lib/db/queries";
 import { WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
@@ -20,23 +21,21 @@ export default async function CountriesPage() {
   const tbd = WC_2026_SLOTS.filter((s) => s.kind === "tbd");
 
   return (
-    <div className="space-y-8 py-2">
-      <div className="space-y-2 text-center">
-        <p className="text-xs font-semibold uppercase tracking-widest text-blue-400">
-          World Cup 2026 · 48 teams
+    <div className="space-y-10 py-2">
+      <header className="space-y-3 text-center">
+        <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
+          World Cup 2026 · 48 Teams
         </p>
-        <h1 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
           Pick your country
         </h1>
-        <p className="mx-auto max-w-xl text-pretty text-sm text-zinc-400">
+        <p className="mx-auto max-w-xl text-pretty text-[14px] text-ink-3">
           Choose a nation, build their starting eleven, and share your picks.
         </p>
-      </div>
+      </header>
 
-      <section>
-        <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          Confirmed teams
-        </h2>
+      <section className="space-y-3">
+        <SectionHeading eyebrow="01" title="Confirmed teams" />
         <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {confirmed.map((slot) => {
             if (slot.kind !== "confirmed") return null;
@@ -50,7 +49,6 @@ export default async function CountriesPage() {
                   enabled={status === "ready"}
                   layout="card"
                   size="md"
-                  borderless
                 />
               </li>
             );
@@ -59,10 +57,8 @@ export default async function CountriesPage() {
       </section>
 
       {tbd.length > 0 && (
-        <section>
-          <h2 className="mb-3 text-xs font-semibold uppercase tracking-widest text-zinc-400">
-            Awaiting qualification
-          </h2>
+        <section className="space-y-3">
+          <SectionHeading eyebrow="02" title="Awaiting qualification" />
           <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             {tbd.map((slot) => {
               if (slot.kind !== "tbd") return null;
@@ -81,11 +77,11 @@ export default async function CountriesPage() {
 
 function TbdTile({ label }: { label: string }) {
   return (
-    <div className="flex h-24 flex-col items-center justify-center gap-1 rounded-lg border border-dashed border-zinc-800 bg-zinc-950 px-3 text-center text-zinc-500">
+    <div className="flex h-24 flex-col items-center justify-center gap-1 rounded-md border border-dashed border-line-strong bg-bg-sunk px-3 text-center text-ink-faint">
       <span className="text-2xl leading-none" aria-hidden>
         ❔
       </span>
-      <span className="text-[11px] leading-tight">{label}</span>
+      <span className="cond text-[11px] leading-tight">{label}</span>
     </div>
   );
 }

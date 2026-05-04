@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Modal } from "@/components/ui/modal";
 import { Button } from "@/components/ui/button";
+import { Chip } from "@/components/ui/chip";
 import type { Player } from "@/lib/db/schema";
 import {
   BROAD_ORDER,
@@ -48,11 +49,12 @@ export function PlayerPicker(props: PlayerPickerProps) {
         open={Boolean(props.open)}
         onClose={props.onClose ?? (() => undefined)}
         title={undefined}
+        ariaLabel="Pick a player"
         className="max-w-xl"
       >
         <PickerBody {...props} />
-        <div className="flex justify-end gap-2 border-t border-border p-3">
-          <Button variant="secondary" size="sm" onClick={props.onClose}>
+        <div className="flex justify-end gap-2 border-t border-line p-3">
+          <Button variant="ghost" size="sm" onClick={props.onClose}>
             Cancel
           </Button>
         </div>
@@ -61,7 +63,7 @@ export function PlayerPicker(props: PlayerPickerProps) {
   }
 
   return (
-    <div className="sticky top-4 self-start overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+    <div className="sticky top-4 self-start overflow-hidden rounded-xl border border-line bg-surface shadow-1">
       <PickerBody {...props} />
     </div>
   );
@@ -155,10 +157,7 @@ function PickerBody({
   );
 
   const positionCode = slotPositionCode ?? null;
-  const positionAbbrev =
-    slotDetailedCode?.trim() ||
-    positionCode ||
-    null;
+  const positionAbbrev = slotDetailedCode?.trim() || positionCode || null;
   const positionWord = positionAbbrev ? positionAbbrev.toUpperCase() : "PLAYER";
   const noun = positionCode ? POSITION_NOUN[positionCode] ?? "players" : "players";
 
@@ -193,36 +192,48 @@ function PickerBody({
 
   return (
     <div className="flex flex-col">
-      <div className="space-y-3 border-b border-border p-4">
+      <div className="space-y-3 border-b border-line p-4">
         <div className="flex items-center justify-between gap-3">
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold uppercase tracking-wide text-foreground">
-              Pick for <span className="text-foreground">{positionWord}</span>
-            </p>
+            <span className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
+              Picking for
+            </span>
+            <p className="cond text-[13px] text-ink">{positionWord}</p>
           </div>
           {onClear && currentPick ? (
-            <button
-              type="button"
-              onClick={onClear}
-              className="shrink-0 rounded-md bg-red-600 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-white hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
-            >
+            <Button variant="destructive" size="sm" onClick={onClear}>
               Clear slot
-            </button>
+            </Button>
           ) : null}
         </div>
 
         <div className="space-y-1.5">
           <div className="flex flex-wrap items-center gap-1.5">
-            <FilterPill active={allActive} onClick={clearAll}>
+            <Chip
+              as="button"
+              type="button"
+              size="sm"
+              selected={allActive}
+              onClick={clearAll}
+              aria-pressed={allActive}
+            >
               All
-            </FilterPill>
+            </Chip>
             {visibleBuckets.map((broad) => {
               const codes = DETAILED_BY_BROAD[broad];
               const active = codes.every((c) => selected.has(c));
               return (
-                <FilterPill key={broad} active={active} onClick={() => toggleBucket(broad)}>
+                <Chip
+                  key={broad}
+                  as="button"
+                  type="button"
+                  size="sm"
+                  selected={active}
+                  onClick={() => toggleBucket(broad)}
+                  aria-pressed={active}
+                >
                   {broad}
-                </FilterPill>
+                </Chip>
               );
             })}
           </div>
@@ -230,14 +241,18 @@ function PickerBody({
             <div className="flex flex-wrap items-center gap-1.5">
               {expandedBuckets.flatMap((broad) =>
                 DETAILED_BY_BROAD[broad].map((code) => (
-                  <FilterPill
+                  <Chip
                     key={code}
-                    active={selected.has(code)}
+                    as="button"
+                    type="button"
+                    size="sm"
+                    selected={selected.has(code)}
                     onClick={() => toggleDetailed(code)}
-                    variant="detailed"
+                    aria-pressed={selected.has(code)}
+                    className="h-6 px-2.5 text-[10px]"
                   >
                     {code}
-                  </FilterPill>
+                  </Chip>
                 )),
               )}
             </div>
@@ -249,19 +264,25 @@ function PickerBody({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={`Search ${noun}…`}
-            className="w-full rounded-md border border-border bg-surface-muted px-3 py-2 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-accent"
+            aria-label={`Search ${noun}`}
+            className={cn(
+              "w-full rounded-md border border-line bg-bg px-3.5 py-2.5 text-[14px] text-ink placeholder:text-ink-faint",
+              "transition-[border-color,box-shadow] duration-150 ease-in-out",
+              "hover:border-line-strong",
+              "focus:outline-none focus:border-accent focus:shadow-[0_0_0_3px_var(--accent-soft)]",
+            )}
           />
         </div>
       </div>
 
       <ul
         className={cn(
-          "divide-y divide-border overflow-y-auto",
+          "divide-y divide-line overflow-y-auto",
           mode === "sheet" ? "max-h-[55vh]" : "max-h-[480px]",
         )}
       >
         {filtered.length === 0 && (
-          <li className="px-4 py-6 text-center text-sm text-muted">
+          <li className="px-4 py-6 text-center text-[13px] text-ink-3">
             No players match &ldquo;{query}&rdquo;.
           </li>
         )}
@@ -278,16 +299,18 @@ function PickerBody({
                 disabled={taken}
                 onClick={() => onPick(p)}
                 className={cn(
-                  "flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition",
+                  "flex w-full items-center justify-between gap-3 px-4 py-3 text-left",
+                  "transition-[background-color] duration-150 ease-in-out",
+                  "focus-visible:outline-none focus-visible:bg-surface-2",
                   taken
                     ? "cursor-not-allowed opacity-40"
-                    : "hover:bg-surface-muted",
+                    : "hover:bg-surface-2",
                   isCurrent && "bg-accent-soft",
                 )}
               >
                 <div className="flex min-w-0 items-center gap-3">
                   {showPhotos && (
-                    <div className="h-9 w-9 shrink-0 overflow-hidden rounded-full bg-surface-muted">
+                    <div className="h-9 w-9 shrink-0 overflow-hidden rounded-full border border-line bg-surface-2">
                       {p.photoUrl && (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -300,18 +323,22 @@ function PickerBody({
                     </div>
                   )}
                   <div className="min-w-0">
-                    <div className="truncate text-sm font-semibold uppercase tracking-wide text-foreground">
+                    <div className="truncate text-[14px] font-semibold text-ink">
                       {p.fullName}
                     </div>
-                    <div className="truncate text-[11px] uppercase tracking-wide text-muted">
+                    <div className="truncate mono text-[11px] tracking-[0.08em] text-ink-3">
                       {p.detailedPosition} · {p.age}y · {p.club}
                     </div>
                   </div>
                 </div>
                 {rate > 0 && (
                   <div className="shrink-0 text-right">
-                    <div className="text-xs font-bold text-accent">{Math.round(rate * 100)}%</div>
-                    <div className="text-[10px] uppercase tracking-wide text-muted">picked</div>
+                    <div className="mono text-[13px] font-bold text-accent">
+                      {Math.round(rate * 100)}%
+                    </div>
+                    <div className="mono text-[10px] tracking-[0.12em] text-ink-faint uppercase">
+                      picked
+                    </div>
                   </div>
                 )}
               </button>
@@ -320,40 +347,12 @@ function PickerBody({
         })}
       </ul>
 
-      <div className="border-t border-border bg-surface-muted px-4 py-2 text-[11px] uppercase tracking-wide text-muted">
-        <span>
-          {eligibleCount} eligible
+      <div className="border-t border-line bg-surface-2 px-4 py-2">
+        <span className="mono text-[10px] tracking-[0.12em] text-ink-faint uppercase">
+          <span className="tabular-nums">{eligibleCount}</span> eligible
           {mode === "panel" && " · click a pitch slot to retarget"}
         </span>
       </div>
     </div>
-  );
-}
-
-function FilterPill({
-  active,
-  onClick,
-  children,
-  variant = "broad",
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-  variant?: "broad" | "detailed";
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={cn(
-        "rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide transition",
-        variant === "detailed" ? "px-2.5 py-0.5 text-[11px]" : null,
-        active
-          ? "bg-accent text-accent-foreground"
-          : "border border-border bg-surface text-foreground hover:bg-surface-muted",
-      )}
-    >
-      {children}
-    </button>
   );
 }

@@ -20,16 +20,19 @@ type Props = {
   /** Index of the active starter slot — drawn as a non-blocking accent ring. */
   highlightSlot?: number | null;
   /**
-   * The next blank spot the user will fill. Styled with a red dotted outline
-   * and red 25%-opacity avatar via scoped CSS variable injection.
+   * The next blank spot the user will fill. Styled with an accent dotted outline
+   * and accent-tinted avatar via scoped CSS variable injection.
    */
   activeBlank?: ActiveBlank | null;
   showPhotos?: boolean;
 };
 
-const HIGHLIGHT_RED = "#dc2626";
-const HIGHLIGHT_RED_25 = "rgba(220, 38, 38, 0.25)";
-
+// Pull the design-system accent into the pitch package's slot ring + avatar
+// fill. The pitch package uses `--sp-player-ring` for both the dotted blank
+// outline and the slot label color; we inject `var(--accent)` so the active
+// blank visually agrees with the rest of the surface. The avatar background
+// fades to a tinted accent at ~25% opacity (matched to `--accent-soft`'s
+// visual weight without a literal rgba).
 function toPkgPlayer(
   p: Player | null,
   showPhotos: boolean,
@@ -46,11 +49,16 @@ function toPkgPlayer(
 /**
  * Generates scoped CSS that highlights a specific blank slot.
  *
- * Blank slots use `var(--sp-player-ring)` for both their dotted outline and
- * label color, and set `background: transparent` as an inline style on the
- * inner `.sp-rounded-full` div.  We override both by:
- *   1. Setting `--sp-player-ring` on the slot's outer element (cascades inward).
- *   2. Using `!important` to beat the inline background.
+ * The pitch package sets inline styles on the inner `.sp-rounded-full`:
+ *   - `outline: 2px dotted var(--sp-player-ring)` (the blank ring)
+ *   - `background: rgba(0,0,0,0.25)` (the dim fill)
+ * and an inline `color: #ffffff` on the role-label span. To make the active
+ * blank stand out we:
+ *   1. Set `--sp-player-ring` on the outer slot (cascades inward).
+ *   2. Override outline with a solid 4px ring (2× the default thickness).
+ *   3. Tint the background with `--accent-soft`.
+ *   4. Recolor the role label (e.g. "GK") to the accent red.
+ * `!important` is required to beat the package's inline styles.
  *
  * Pitch slot structure (relevant path):
  *   .sp-soccer-pitch
@@ -74,8 +82,12 @@ function blankHighlightCSS(scope: string, blank: ActiveBlank): string {
   }
 
   return `
-    ${slotSel} { --sp-player-ring: ${HIGHLIGHT_RED}; }
-    ${slotSel} .sp-rounded-full { background: ${HIGHLIGHT_RED_25} !important; }
+    ${slotSel} { --sp-player-ring: var(--accent); }
+    ${slotSel} .sp-rounded-full {
+      background: var(--accent-soft) !important;
+      outline: 4px solid var(--accent) !important;
+    }
+    ${slotSel} .sp-rounded-full > span { color: var(--accent) !important; }
   `;
 }
 

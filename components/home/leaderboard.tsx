@@ -1,5 +1,16 @@
 import type { HomeLeaderboard } from "@/lib/db/queries";
+import { Card } from "@/components/ui/card";
+import { SectionHeading } from "@/components/home/section-heading";
 import { cn } from "@/lib/utils";
+
+/* -----------------------------------------------------------------------------
+   Crowd Favorites — three editorial cards listing the top players, countries,
+   and formations.
+   - Card heading: cond 13px ink with a hairline underline (handoff §6).
+   - Numeric values use the `.mono` utility so percentages line up across rows.
+   - Hero row gets a larger display value; subsequent rows are condensed names
+     with mono percentages on the right rail.
+   ----------------------------------------------------------------------------- */
 
 type Props = {
   data: HomeLeaderboard;
@@ -9,8 +20,8 @@ export function Leaderboard({ data }: Props) {
   if (data.totalSubmissions === 0) return null;
 
   return (
-    <section>
-      <h2 className="mb-3 text-2xl font-semibold text-black">Crowd Favorites</h2>
+    <section className="space-y-3">
+      <SectionHeading title="Crowd Favorites" />
       <div className="grid gap-3 md:grid-cols-3">
         <PlayersCard players={data.topPlayers} />
         <CountriesCard countries={data.topCountries} />
@@ -20,56 +31,57 @@ export function Leaderboard({ data }: Props) {
   );
 }
 
-const cardShellClass =
-  "border-[rgba(207,202,202,1)] bg-[rgba(207,202,202,1)]";
-
-function Card({
-  title,
-  children,
-  bodyClassName,
-}: {
-  title: string;
-  children?: React.ReactNode;
-  bodyClassName?: string;
-}) {
+function PanelHeading({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className={cn(
-        "flex h-full min-h-0 flex-col rounded-xl border p-3 text-black",
-        cardShellClass,
-      )}
-    >
-      <h3 className="mb-2 shrink-0 text-[1.3125rem] font-semibold leading-tight">
-        {title}
-      </h3>
-      <div className={cn("min-h-0 flex-1", bodyClassName)}>{children}</div>
-    </div>
+    <h3 className="cond border-b border-line pb-2 text-[13px] font-bold text-ink">
+      {children}
+    </h3>
   );
 }
 
 function PlayersCard({ players }: { players: HomeLeaderboard["topPlayers"] }) {
-  if (players.length === 0) return <Card title="Most Featured Players" />;
+  if (players.length === 0)
+    return (
+      <Card padding="hero" className="gap-3">
+        <PanelHeading>Most Featured Players</PanelHeading>
+      </Card>
+    );
   const [hero, ...rest] = players;
   return (
-    <Card title="Most Featured Players">
-      <div className="flex flex-col items-center gap-1.5 pb-2">
+    <Card padding="hero" className="gap-3">
+      <PanelHeading>Most Featured Players</PanelHeading>
+      <div className="flex flex-1 flex-col items-center gap-2 pb-1">
         <PlayerAvatar player={hero.player} size="lg" />
         <div className="flex w-full items-center justify-between gap-2">
-          <span className="truncate text-sm font-semibold">
+          <span className="cond truncate text-[13px] font-bold text-ink">
             {formatPlayerName(hero.player.fullName)}
           </span>
-          <span className="text-sm font-semibold">{formatRate(hero.rate)}</span>
+          <div className="flex shrink-0 items-center gap-1.5">
+            {hero.team && (
+              <span className="text-[13px] leading-none" aria-label={hero.team.name}>
+                {hero.team.flagEmoji}
+              </span>
+            )}
+            <span className="mono text-[14px] font-bold text-ink">
+              {formatRate(hero.rate)}
+            </span>
+          </div>
         </div>
       </div>
       {rest.length > 0 && (
-        <ul className="space-y-1.5 border-t border-zinc-800 pt-2">
-          {rest.map(({ player, rate }) => (
+        <ul className="flex flex-col gap-2 border-t border-line pt-2">
+          {rest.map(({ player, team, rate }) => (
             <li key={player.id} className="flex items-center gap-2">
               <PlayerAvatar player={player} size="sm" />
-              <span className="flex-1 truncate text-sm">
+              <span className="flex-1 truncate font-sans text-[14px] text-ink">
                 {formatPlayerName(player.fullName)}
               </span>
-              <span className="text-sm">{formatRate(rate)}</span>
+              {team && (
+                <span className="text-[13px] leading-none" aria-label={team.name}>
+                  {team.flagEmoji}
+                </span>
+              )}
+              <span className="mono text-[13px] text-ink-3">{formatRate(rate)}</span>
             </li>
           ))}
         </ul>
@@ -79,24 +91,36 @@ function PlayersCard({ players }: { players: HomeLeaderboard["topPlayers"] }) {
 }
 
 function CountriesCard({ countries }: { countries: HomeLeaderboard["topCountries"] }) {
-  if (countries.length === 0) return <Card title="Country Leaderboard" />;
+  if (countries.length === 0)
+    return (
+      <Card padding="hero" className="gap-3">
+        <PanelHeading>Country Leaderboard</PanelHeading>
+      </Card>
+    );
   const [hero, ...rest] = countries;
   return (
-    <Card title="Country Leaderboard">
-      <div className="flex flex-col items-center gap-1.5 pb-2">
+    <Card padding="hero" className="gap-3">
+      <PanelHeading>Country Leaderboard</PanelHeading>
+      <div className="flex flex-1 flex-col items-center gap-2 pb-1">
         <FlagTile flag={hero.team.flagEmoji} size="lg" />
         <div className="flex w-full items-center justify-between gap-2">
-          <span className="truncate text-sm font-semibold">{hero.team.name}</span>
-          <span className="text-sm font-semibold">{formatRate(hero.rate)}</span>
+          <span className="cond truncate text-[13px] font-bold text-ink">
+            {hero.team.name}
+          </span>
+          <span className="mono text-[14px] font-bold text-ink">
+            {formatRate(hero.rate)}
+          </span>
         </div>
       </div>
       {rest.length > 0 && (
-        <ul className="space-y-1.5 border-t border-zinc-800 pt-2">
+        <ul className="flex flex-col gap-2 border-t border-line pt-2">
           {rest.map(({ team, rate }) => (
             <li key={team.code} className="flex items-center gap-2">
               <FlagTile flag={team.flagEmoji} size="sm" />
-              <span className="flex-1 truncate text-sm">{team.name}</span>
-              <span className="text-sm">{formatRate(rate)}</span>
+              <span className="flex-1 truncate font-sans text-[14px] text-ink">
+                {team.name}
+              </span>
+              <span className="mono text-[13px] text-ink-3">{formatRate(rate)}</span>
             </li>
           ))}
         </ul>
@@ -106,15 +130,21 @@ function CountriesCard({ countries }: { countries: HomeLeaderboard["topCountries
 }
 
 function FormationsCard({ formations }: { formations: HomeLeaderboard["topFormations"] }) {
-  if (formations.length === 0) return <Card title="Popular Formations" />;
+  if (formations.length === 0)
+    return (
+      <Card padding="hero" className="gap-3">
+        <PanelHeading>Popular Formations</PanelHeading>
+      </Card>
+    );
   const [hero, ...rest] = formations;
   return (
-    <Card title="Popular Formations" bodyClassName="flex min-h-0 flex-1 flex-col">
+    <Card padding="hero" className="gap-3">
+      <PanelHeading>Popular Formations</PanelHeading>
       <div className="flex min-h-0 flex-1 flex-col justify-center">
-        <FormationRow key={hero.name} formation={hero} index={0} rowTag="div" />
+        <FormationRow formation={hero} index={0} rowTag="div" />
       </div>
       {rest.length > 0 && (
-        <ul className="mt-1.5 shrink-0 space-y-1.5 border-t border-zinc-800 pt-2">
+        <ul className="flex flex-col gap-2 border-t border-line pt-2">
           {rest.map((f, i) => (
             <FormationRow key={f.name} formation={f} index={i + 1} rowTag="li" />
           ))}
@@ -138,7 +168,7 @@ function FormationRow({
     <RowTag
       className={cn(
         "flex w-full items-center",
-        isHero ? "gap-6 text-[1.75rem] leading-tight" : "gap-3 text-sm",
+        isHero ? "gap-5" : "gap-3",
       )}
     >
       <span
@@ -146,13 +176,26 @@ function FormationRow({
           "flex shrink-0 items-center justify-center leading-none",
           isHero ? "h-12 w-12 text-4xl" : "h-6 w-6 text-base",
         )}
+        aria-hidden
       >
         {rankGlyph(index)}
       </span>
-      <span className={cn("flex-1 truncate", isHero && "font-semibold")}>
+      <span
+        className={cn(
+          "flex-1 truncate",
+          isHero ? "display text-[28px] text-ink" : "font-sans text-[14px] text-ink",
+        )}
+      >
         {formation.name}
       </span>
-      <span className="shrink-0">{formatRate(formation.rate)}</span>
+      <span
+        className={cn(
+          "mono shrink-0",
+          isHero ? "text-[16px] font-bold text-ink" : "text-[13px] text-ink-3",
+        )}
+      >
+        {formatRate(formation.rate)}
+      </span>
     </RowTag>
   );
 }
@@ -169,7 +212,8 @@ function PlayerAvatar({
   return (
     <div
       className={cn(
-        "flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-zinc-400 bg-zinc-100 font-semibold text-black",
+        "flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-ink",
+        "cond font-bold",
         dimensions,
       )}
     >
@@ -208,7 +252,7 @@ function rankGlyph(index: number): React.ReactNode {
   if (index === 0) return "🥇";
   if (index === 1) return "🥈";
   if (index === 2) return "🥉";
-  return <span className="block h-3 w-3 rounded-sm bg-zinc-700" aria-hidden />;
+  return <span className="block h-2 w-2 rounded-sm bg-ink-mute" aria-hidden />;
 }
 
 function formatRate(rate: number): string {

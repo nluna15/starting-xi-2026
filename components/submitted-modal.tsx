@@ -4,6 +4,8 @@ import * as React from "react";
 import Link from "next/link";
 import { Modal } from "@/components/ui/modal";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { StatTile } from "@/components/ui/stat";
 import { computeAverages } from "@/components/lineup-summary";
 import type { Player } from "@/lib/db/schema";
 import { cn, formatAge, formatEur } from "@/lib/utils";
@@ -94,22 +96,38 @@ export function SubmittedModal({
     <Modal
       open={open}
       onClose={onClose}
-      className="max-w-xl border-border bg-surface text-foreground"
+      ariaLabel="Squad submitted"
+      className="max-w-xl"
     >
-      <div className="px-5 py-6 sm:px-6 sm:py-8">
+      <div className="px-5 py-6 sm:px-7 sm:py-8">
         <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-center sm:gap-5 sm:text-left">
           <div className="flex shrink-0 items-center gap-1 text-5xl leading-none sm:text-6xl" aria-hidden>
             <span>🏆</span>
             <span>{team.flagEmoji}</span>
           </div>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Squad Submitted!
-          </h2>
+          <div className="flex flex-col gap-1">
+            <span className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
+              Squad submitted
+            </span>
+            <h2 className="display text-[32px] text-ink leading-[0.95] sm:text-[40px]">
+              Nice XI!
+            </h2>
+          </div>
         </div>
 
         <div className="mt-6 grid grid-cols-2 gap-3">
-          <Stat label="Average Age" value={formatAge(squadAvg.age)} />
-          <Stat label="Avg Player Market Value" value={formatEur(squadAvg.value)} />
+          <StatTile
+            label="Average Age"
+            value={formatAge(squadAvg.age)}
+            size="md"
+            align="start"
+          />
+          <StatTile
+            label="Avg Player Market Value"
+            value={formatEur(squadAvg.value)}
+            size="md"
+            align="start"
+          />
           <PlayerStat
             label="Most Conventional Pick"
             player={mostConventional}
@@ -128,50 +146,19 @@ export function SubmittedModal({
             size="lg"
             onClick={handleCopy}
             disabled={!shareUrl}
-            className={cn(
-              "w-full transition-colors",
-              copied && "bg-emerald-600 hover:bg-emerald-600",
-            )}
+            className={cn("w-full", copied && "bg-success hover:bg-success")}
             aria-live="polite"
           >
             {copied ? "✓ Copied — paste anywhere" : "Share with a Friend!"}
           </Button>
-          <Link href={`/${teamCode}/crowd`} className="w-full">
-            <Button variant="secondary" size="lg" className="w-full">
+          <Link href={`/community/${teamCode}`} className="w-full">
+            <Button variant="outline" size="lg" className="w-full">
               View {team.name} Stats
             </Button>
           </Link>
         </div>
       </div>
     </Modal>
-  );
-}
-
-function Stat({
-  label,
-  value,
-  placeholder,
-}: {
-  label: string;
-  value: string | null;
-  placeholder?: string;
-}) {
-  const display = value ?? placeholder ?? "—";
-  const isPlaceholder = value == null;
-  return (
-    <div className="rounded-lg border border-border bg-surface px-3 py-3 text-left">
-      <div className="text-[11px] font-medium uppercase tracking-wide text-muted">
-        {label}
-      </div>
-      <div
-        className={cn(
-          "mt-1 truncate text-base font-semibold",
-          isPlaceholder ? "text-muted" : "text-foreground",
-        )}
-      >
-        {display}
-      </div>
-    </div>
   );
 }
 
@@ -185,13 +172,11 @@ function PlayerStat({
   placeholder?: string;
 }) {
   return (
-    <div className="rounded-lg border border-border bg-surface px-3 py-3">
-      <div className="text-left text-[11px] font-medium uppercase tracking-wide text-muted">
-        {label}
-      </div>
+    <Card padding="default" className="text-left">
+      <span className="cond text-[12px] text-ink-3">{label}</span>
       {player ? (
-        <div className="mt-2 flex items-center gap-2">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-zinc-300 bg-zinc-100 text-xs font-semibold text-zinc-600">
+        <div className="mt-1 flex items-center gap-2.5">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-[11px] font-semibold text-ink-3">
             {player.photoUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -204,16 +189,18 @@ function PlayerStat({
               getInitials(player.fullName)
             )}
           </div>
-          <div className="flex-1 text-left">
-            <div className="text-sm font-semibold leading-tight text-foreground">
+          <div className="min-w-0 flex-1">
+            <div className="truncate text-[13px] font-semibold leading-tight text-ink">
               {player.fullName}
             </div>
-            <div className="text-xs text-muted">{player.position}</div>
+            <div className="mono text-[11px] tracking-[0.08em] text-ink-3">
+              {player.position}
+            </div>
           </div>
         </div>
       ) : (
-        <div className="mt-1 text-left text-sm text-muted">{placeholder ?? "—"}</div>
+        <div className="mt-1 text-[13px] text-ink-faint">{placeholder ?? "—"}</div>
       )}
-    </div>
+    </Card>
   );
 }

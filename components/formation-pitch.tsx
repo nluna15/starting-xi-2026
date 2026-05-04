@@ -16,6 +16,13 @@ type Props = {
   showPhotos?: boolean;
 };
 
+/* -----------------------------------------------------------------------------
+   FormationPitch — chrome around the playing surface only.
+   The grass / lines / clip-path are intentionally not tokenized; the design
+   handoff scopes the playing surface as out-of-scope. Overlays (slot chips,
+   highlight ring, name plate, pick-rate pill) use the design-system tokens.
+   The .sp-* package internals are not touched.
+   ----------------------------------------------------------------------------- */
 export function FormationPitch({
   formation,
   starters,
@@ -28,7 +35,7 @@ export function FormationPitch({
 }: Props) {
   return (
     <div className="relative aspect-[9/8] w-full">
-      <div className="absolute inset-0 overflow-hidden rounded-xl border border-emerald-900/40 bg-gradient-to-b from-emerald-700 to-emerald-800 shadow-inner [clip-path:polygon(12%_0%,88%_0%,100%_100%,0%_100%)]">
+      <div className="absolute inset-0 overflow-hidden rounded-lg border border-emerald-900/40 bg-gradient-to-b from-emerald-700 to-emerald-800 shadow-inner [clip-path:polygon(12%_0%,88%_0%,100%_100%,0%_100%)]">
         <PitchMarkings />
       </div>
       <div className="absolute inset-0">
@@ -100,18 +107,25 @@ function SlotMarker({
         top: `${100 - slot.y}%`,
       }}
       className={cn(
-        "absolute -translate-x-1/2 -translate-y-1/2 rounded-full transition focus:outline-none",
-        onClick && "hover:scale-105 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-700",
+        "absolute -translate-x-1/2 -translate-y-1/2 rounded-full",
+        "transition-transform duration-150 ease-in-out",
+        "focus:outline-none",
+        onClick &&
+          cn(
+            "hover:scale-105",
+            "focus-visible:ring-[3px] focus-visible:ring-accent-soft focus-visible:ring-offset-2 focus-visible:ring-offset-transparent",
+          ),
       )}
     >
       <div className="relative">
         <div
           className={cn(
-            "flex h-[84px] w-[84px] items-center justify-center overflow-hidden rounded-full border-2 text-sm font-semibold shadow-md sm:h-[98px] sm:w-[98px] sm:text-base",
+            "flex h-[84px] w-[84px] items-center justify-center overflow-hidden rounded-full border-2 shadow-1 sm:h-[98px] sm:w-[98px]",
+            "cond text-[14px] sm:text-[15px]",
             player
-              ? "border-white bg-white text-emerald-900"
-              : "border-white/60 border-dashed bg-emerald-900/40 text-white",
-            highlight && "ring-2 ring-accent ring-offset-2 ring-offset-emerald-700",
+              ? "border-bg-elev bg-bg-elev text-ink"
+              : "border-bg-elev/60 border-dashed bg-emerald-900/40 text-bg-elev",
+            highlight && "ring-2 ring-accent ring-offset-2 ring-offset-transparent",
           )}
         >
           {usePhoto ? (
@@ -131,19 +145,33 @@ function SlotMarker({
         {jerseyNumber != null && (
           <span
             className={cn(
-              "pointer-events-none absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border border-emerald-900 bg-white text-[10px] font-bold leading-none text-emerald-900 shadow-sm",
-              "sm:-top-1.5 sm:-right-1.5 sm:h-5 sm:w-5",
+              "pointer-events-none absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full",
+              "border border-line-strong bg-bg-elev shadow-1",
+              "mono text-[10px] font-bold leading-none text-ink",
+              "sm:-top-1.5 sm:-right-1.5",
             )}
           >
             {jerseyNumber}
           </span>
         )}
       </div>
-      <div className="pointer-events-none mt-1 max-w-[72px] truncate rounded bg-black/55 px-1.5 py-0.5 text-[10px] font-medium leading-tight text-white sm:max-w-[88px] sm:text-xs">
+      <div
+        className={cn(
+          "pointer-events-none mt-1 max-w-[72px] truncate rounded-sm px-1.5 py-0.5",
+          "cond text-[10px] leading-tight text-bg-elev",
+          "bg-ink/60 sm:max-w-[88px] sm:text-[11px]",
+        )}
+      >
         {last}
       </div>
       {pickRate != null && pickRate > 0 && (
-        <div className="pointer-events-none mt-0.5 rounded bg-yellow-300/90 px-1.5 py-0.5 text-[10px] font-bold leading-tight text-emerald-950">
+        <div
+          className={cn(
+            "pointer-events-none mt-0.5 rounded-sm px-1.5 py-0.5",
+            "mono text-[10px] font-bold leading-tight",
+            "bg-gold text-ink",
+          )}
+        >
           {Math.round(pickRate * 100)}%
         </div>
       )}

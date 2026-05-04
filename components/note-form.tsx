@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const NOTE_MAX_LENGTH = 250;
 
@@ -33,14 +34,25 @@ export function NoteForm({
   canSave = false,
   onSave,
 }: Props) {
+  const overLimit = remaining < 0;
+
   return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between">
-        <label htmlFor="lineup-note" className="text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground">
-          Your Take <span className="font-normal text-muted">(optional)</span>
+    <div className="space-y-2.5">
+      <div className="flex items-center justify-between gap-3">
+        <label
+          htmlFor="lineup-note"
+          className="cond text-[12px] tracking-[0.08em] text-ink-2"
+        >
+          Your Take{" "}
+          <span className="font-normal normal-case tracking-normal text-ink-faint">
+            (optional)
+          </span>
         </label>
         <span
-          className={remaining < 0 ? "text-[10px] font-medium text-accent" : "text-[10px] text-muted"}
+          className={cn(
+            "mono text-[11px] tracking-[0.08em]",
+            overLimit ? "text-accent" : "text-ink-faint",
+          )}
         >
           {NOTE_MAX_LENGTH - remaining} / {NOTE_MAX_LENGTH}
         </span>
@@ -55,17 +67,25 @@ export function NoteForm({
         maxLength={NOTE_MAX_LENGTH}
         rows={5}
         placeholder="Why this XI? Share the logic behind the bold picks…"
-        className="w-full resize-y rounded-md border border-border bg-surface px-3 py-2 text-sm text-foreground placeholder:text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+        className={cn(
+          "w-full resize-y rounded-md border border-line bg-bg px-3.5 py-3 text-[14px] leading-[1.45] text-ink placeholder:text-ink-faint",
+          "transition-[border-color,box-shadow] duration-150 ease-in-out",
+          "hover:border-line-strong",
+          "focus:outline-none focus:border-accent focus:shadow-[0_0_0_3px_var(--accent-soft)]",
+          "disabled:cursor-not-allowed disabled:bg-surface-2 disabled:text-ink-mute",
+        )}
       />
       <div className="flex items-center justify-between gap-3">
-        <div className="text-xs">
+        <div className="text-[12px] leading-[1.45]">
           {status.kind === "idle" && helperText ? (
-            <span className="text-muted">{helperText}</span>
+            <span className="text-ink-faint">{helperText}</span>
           ) : null}
           {status.kind === "ok" && (
-            <span className="text-emerald-700">{status.message ?? "Saved."}</span>
+            <span className="text-success">{status.message ?? "Saved."}</span>
           )}
-          {status.kind === "error" && <span className="text-accent">{status.message}</span>}
+          {status.kind === "error" && (
+            <span className="text-accent-deep">{status.message}</span>
+          )}
         </div>
         {showSaveButton && (
           <Button

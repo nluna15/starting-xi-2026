@@ -1,4 +1,13 @@
-import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/card";
+import { SectionHeading } from "@/components/home/section-heading";
+
+/* -----------------------------------------------------------------------------
+   How it works — three numbered editorial cards.
+   - Step indicator: mono 11px ink-faint ("STEP 01 / 03").
+   - Title:          display 22px ink (a hair below the section heading so the
+                     section title still reads as the primary level).
+   - Body:           sans 14px ink-3, line-height 1.45.
+   ----------------------------------------------------------------------------- */
 
 const STEPS = [
   {
@@ -11,44 +20,27 @@ const STEPS = [
   },
   {
     title: "Compare Against Others",
-    body: "See how your lineup compares against others.",
+    body: "See how you line up against other fans and nations.",
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section>
-      <h2 className="mb-3 text-2xl font-semibold text-black">How it Works</h2>
+    <section className="space-y-3">
+      <SectionHeading title="How it Works" />
       <div className="grid gap-3 md:grid-cols-3">
-        {STEPS.map((step) => {
-          const isCompareStep = step.title === "Compare Against Others";
-          const cardBg = "bg-[rgba(111,110,108,0.5)]";
+        {STEPS.map((step, i) => {
+          const stepLabel = `Step ${String(i + 1).padStart(2, "0")} / ${String(STEPS.length).padStart(2, "0")}`;
           return (
-            <div
-              key={step.title}
-              className={cn(
-                "rounded-xl p-4",
-                cardBg,
-                isCompareStep && "text-white",
-              )}
-            >
-              <h3
-                className={
-                  isCompareStep
-                    ? "text-[1.3125rem] font-semibold leading-tight"
-                    : "text-[1.3125rem] font-semibold leading-tight text-zinc-100"
-                }
-              >
+            <Card key={step.title} padding="hero" className="gap-3">
+              <span className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
+                {stepLabel}
+              </span>
+              <h3 className="display text-[22px] leading-[0.95] text-ink [text-wrap:balance]">
                 {step.title}
               </h3>
-              <p
-                className={
-                  isCompareStep ? "mt-3 text-sm" : "mt-3 text-sm text-white"
-                }
-              >
-                {step.body}
-              </p>
-            </div>
+              <p className="font-sans text-[14px] leading-[1.45] text-ink-3">{step.body}</p>
+            </Card>
           );
         })}
       </div>

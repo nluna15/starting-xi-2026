@@ -4,6 +4,8 @@ import * as React from "react";
 import { useRouter } from "next/navigation";
 import { BuildPitch } from "@/components/build-pitch";
 import { PlayerPicker } from "@/components/player-picker";
+import { Button } from "@/components/ui/button";
+import { Chip } from "@/components/ui/chip";
 import {
   BUILDABLE_FORMATIONS,
   compareBuildableFormationChips,
@@ -12,7 +14,6 @@ import {
   type FormationDef,
 } from "@/lib/formations";
 import type { Player } from "@/lib/db/schema";
-import { cn } from "@/lib/utils";
 import { submitLineupAction } from "@/app/[teamCode]/build/actions";
 
 const BENCH_SIZE = 3;
@@ -204,48 +205,46 @@ export function LineupBuilder({
     return null;
   }, [active, starters, bench]);
 
+  const remainingPicks = 14 - filledCount;
+  const submitLabel = allFilled
+    ? "Review Lineup"
+    : `${remainingPicks} ${remainingPicks === 1 ? "pick" : "picks"} remaining`;
+
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-border pb-4">
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-foreground">
-          Formation
-        </span>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line pb-4">
+        <span className="cond text-[12px] text-ink-2">Formation</span>
         <div className="flex flex-wrap items-center gap-1.5">
-          {sortedFormations.map((f) => {
-            const active = f.name === formationName;
-            return (
-              <button
-                key={f.name}
-                type="button"
-                onClick={() => setFormationName(f.name)}
-                className={cn(
-                  "rounded-full border px-3 py-1 text-xs font-semibold transition",
-                  active
-                    ? "border-accent bg-accent text-accent-foreground"
-                    : "border-border text-foreground/70 hover:bg-surface-muted hover:text-foreground",
-                )}
-              >
-                {f.name}
-              </button>
-            );
-          })}
+          {sortedFormations.map((f) => (
+            <Chip
+              key={f.name}
+              as="button"
+              type="button"
+              size="sm"
+              selected={f.name === formationName}
+              onClick={() => setFormationName(f.name)}
+              aria-pressed={f.name === formationName}
+              className="mono tracking-[0.04em]"
+            >
+              {f.name}
+            </Chip>
+          ))}
         </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-[1fr_360px]">
         <div className="order-2 space-y-4 md:order-1">
-          <div>
-            <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5 rounded-full border border-border bg-surface-muted px-3 py-1 text-xs font-semibold uppercase tracking-wide text-foreground">
-              <span className="tabular-nums">
-                {startersFilled} / 11 starting
+          <div className="flex flex-wrap items-center gap-2">
+            <Chip variant="accent" size="sm">
+              <span className="mono tracking-[0.04em]">{startersFilled} / 11</span>
+              <span>Starting</span>
+            </Chip>
+            <Chip variant="neutral" size="sm">
+              <span className="mono tracking-[0.04em]">
+                {benchFilled} / {BENCH_SIZE}
               </span>
-              <span className="text-foreground/35" aria-hidden>
-                |
-              </span>
-              <span className="tabular-nums">
-                {benchFilled} / {BENCH_SIZE} substitutes
-              </span>
-            </span>
+              <span>Substitutes</span>
+            </Chip>
           </div>
 
           <div className="mx-auto w-[90%]">
@@ -264,23 +263,14 @@ export function LineupBuilder({
 
         <div className="order-1 flex flex-col gap-4 md:order-2">
           <div className="flex justify-end">
-            <button
-              type="button"
+            <Button
+              variant="primary"
+              size="lg"
               onClick={handleSubmit}
               disabled={!allFilled || submitting}
-              className={cn(
-                "inline-flex h-12 items-center justify-center gap-2 rounded-md px-6 text-sm font-bold uppercase tracking-wide transition",
-                !allFilled
-                  ? "cursor-not-allowed bg-border text-muted"
-                  : submitting
-                    ? "bg-accent-hover text-accent-foreground"
-                    : "bg-accent text-accent-foreground hover:bg-accent-hover",
-              )}
             >
-              {allFilled
-                ? "Review Lineup"
-                : `${14 - filledCount} ${14 - filledCount === 1 ? "pick" : "picks"} remaining`}
-            </button>
+              {submitting ? "Submitting…" : submitLabel}
+            </Button>
           </div>
 
           <div className="hidden min-h-0 flex-1 md:block">
@@ -328,7 +318,7 @@ export function LineupBuilder({
       </div>
 
       {error && (
-        <div className="rounded-md border border-accent/40 bg-accent-soft px-3 py-2 text-sm text-accent">
+        <div className="rounded-md border border-accent/40 bg-accent-soft px-3 py-2 text-[13px] text-accent-deep">
           {error}
         </div>
       )}

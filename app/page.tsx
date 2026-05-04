@@ -3,6 +3,7 @@ import { HeroCard } from "@/components/home/hero-card";
 import { HowItWorks } from "@/components/home/how-it-works";
 import { Leaderboard } from "@/components/home/leaderboard";
 import { NationCarousel, type CarouselTile } from "@/components/home/nation-carousel";
+import { SectionHeading } from "@/components/home/section-heading";
 import {
   getHomeLeaderboard,
   getRosterStatusByCode,
@@ -41,7 +42,7 @@ export default async function Home() {
       />
 
       <section id="pick-your-nation" className="space-y-3">
-        <h2 className="text-2xl font-semibold text-black">Pick your Nation</h2>
+        <SectionHeading title="Pick your Nation" />
         <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           {primaryTiles.map((tile) => (
             <li key={tile.code}>

@@ -20,12 +20,25 @@ type Props = {
   ariaLabel?: string;
 };
 
-export const COUNTRY_TILE_BASE =
-  "rounded-lg border bg-[#cecaca] text-black transition";
-export const COUNTRY_TILE_ENABLED =
-  "border-zinc-800 hover:border-blue-500 hover:bg-[#B91C1C] hover:text-white";
-export const COUNTRY_TILE_DISABLED =
-  "cursor-not-allowed border-zinc-800 opacity-50";
+/* -----------------------------------------------------------------------------
+   CountryTile — handoff §6 (cards) reskin.
+   - Surface: `--surface-2`. Hairline `--line` (or borderless when the host
+     provides its own rhythm — home nation pickers / community carousel).
+   - Hover (enabled only): tint to `--accent-soft`, border to `--accent`,
+     ink to `--accent-deep`. Mirrors the NationCarousel "All Nations" tile so
+     the row reads as one rhythm.
+   - Names are condensed uppercase per the editorial type system.
+   ----------------------------------------------------------------------------- */
+export const COUNTRY_TILE_BASE = cn(
+  "rounded-md border bg-surface-2 text-ink",
+  "transition-[background-color,border-color,color,box-shadow,transform] duration-150 ease-in-out",
+);
+export const COUNTRY_TILE_ENABLED = cn(
+  "border-line",
+  "hover:border-accent hover:bg-accent-soft hover:text-accent-deep",
+  "focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft focus-visible:border-accent",
+);
+export const COUNTRY_TILE_DISABLED = "cursor-not-allowed border-line opacity-55";
 
 export function CountryTile({
   code,
@@ -40,13 +53,19 @@ export function CountryTile({
   ariaLabel,
 }: Props) {
   const surface = borderless
-    ? "rounded-lg border-0 bg-[#cecaca] text-black transition"
+    ? cn(
+        "rounded-md border-0 bg-surface-2 text-ink",
+        "transition-[background-color,border-color,color] duration-150 ease-in-out",
+      )
     : COUNTRY_TILE_BASE;
   const enabledSurface = borderless
-    ? "hover:bg-[#B91C1C] hover:text-white"
+    ? cn(
+        "hover:bg-accent-soft hover:text-accent-deep",
+        "focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft",
+      )
     : COUNTRY_TILE_ENABLED;
   const disabledSurface = borderless
-    ? "cursor-not-allowed opacity-50"
+    ? "cursor-not-allowed opacity-55"
     : COUNTRY_TILE_DISABLED;
 
   const inner =
@@ -62,14 +81,14 @@ export function CountryTile({
         <span className="text-xl leading-none" aria-hidden>
           {flagEmoji}
         </span>
-        <span className="truncate text-base font-medium">{name}</span>
+        <span className="cond truncate text-[13px] font-bold">{name}</span>
       </div>
     ) : (
       <div
         className={cn(
           surface,
           "flex flex-col items-center justify-center gap-1 px-3 text-center",
-          size === "lg" ? "h-28 gap-2 rounded-xl" : "h-24",
+          size === "lg" ? "h-28 gap-2 rounded-lg" : "h-24",
           enabled ? enabledSurface : disabledSurface,
           className,
         )}
@@ -83,19 +102,21 @@ export function CountryTile({
         >
           {flagEmoji}
         </span>
-        <span
-          className={cn(
-            "font-semibold leading-tight",
-            size === "lg" ? "text-base" : "text-xs",
-          )}
-        >
-          {name}
-        </span>
-        {!enabled && (
-          <span className="text-[10px] uppercase tracking-wide">
-            Roster coming soon
+        <div className="flex flex-col items-center gap-0.5">
+          <span
+            className={cn(
+              "cond leading-tight",
+              size === "lg" ? "text-[14px] font-bold" : "text-[12px] font-bold",
+            )}
+          >
+            {name}
           </span>
-        )}
+          {!enabled && (
+            <span className="mono text-[10px] tracking-[0.12em] text-ink-faint">
+              Roster coming soon
+            </span>
+          )}
+        </div>
       </div>
     );
 
@@ -105,7 +126,7 @@ export function CountryTile({
     <Link
       href={hrefOverride ?? `/${code}/build`}
       aria-label={ariaLabel ?? `Build the ${name} XI`}
-      className="block text-black no-underline"
+      className="block rounded-md text-ink no-underline focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft"
     >
       {inner}
     </Link>

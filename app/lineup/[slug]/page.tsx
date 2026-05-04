@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
 import { BuildPitch } from "@/components/build-pitch";
 import { OwnerLineupActions } from "@/components/owner-lineup-actions";
+import { Card } from "@/components/ui/card";
+import { StatTile } from "@/components/ui/stat";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
 import { getPickRatesForTeam } from "@/lib/db/queries";
 import { readFingerprint } from "@/lib/fingerprint";
-import { formatAge, formatEur } from "@/lib/utils";
+import { cn, formatAge, formatEur } from "@/lib/utils";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 
@@ -93,23 +95,23 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
       ? [...pickCategories].sort((a, b) => a.rate - b.rate)[0]
       : null;
 
+  const pageTitle = `${isOwner ? "Your" : "One fan's"} ${teamRow.name} 2026`;
+
   return (
     <div className="space-y-6">
-      <div className="flex items-end justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-            {teamRow.flagEmoji} {teamRow.name} · {formation.name}
-          </p>
-          <h1 className="mt-1 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-            {isOwner ? "Your" : "One fan's"} {teamRow.name} 2026
-          </h1>
-        </div>
-      </div>
+      <header className="flex flex-col gap-2">
+        <span className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
+          Global Fan&rsquo;s Best 11 · {teamRow.flagEmoji} {teamRow.name} · {formation.name}
+        </span>
+        <h1 className="display text-[44px] text-ink leading-[0.95] [text-wrap:balance] sm:text-[52px]">
+          {pageTitle}
+        </h1>
+      </header>
 
       <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_360px]">
         <div className="space-y-4">
-          <div className="space-y-2">
-            <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+          <div className="space-y-3">
+            <p className="cond text-center text-[12px] tracking-[0.08em] text-ink-2">
               Formation {formation.name}
             </p>
             <div className="mx-auto w-[90%]">
@@ -123,75 +125,57 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
           </div>
         </div>
 
-        <div className="space-y-4 md:mt-7">
+        <div className="space-y-3 md:mt-7">
           {/* Squad at a Glance */}
-          <div className="rounded-xl border border-border bg-surface p-4">
-            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+          <Card padding="default" className="gap-3">
+            <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
               Squad at a Glance
-            </p>
+            </h2>
             <div className="grid grid-cols-2 gap-3">
-              <StatTile label="Avg Age" value={formatAge(avgAge)} />
-              <StatTile label="Value" value={formatEur(totalValue)} />
-              <StatTile label="Caps" value="—" />
+              <StatTile label="Avg Age" value={formatAge(avgAge)} size="md" />
+              <StatTile label="Value" value={formatEur(totalValue)} size="md" />
+              <StatTile label="Caps" value="—" size="md" />
               <StatTile
                 label="Fans"
                 value={pickRates.totalSubmissions.toLocaleString()}
+                size="md"
               />
             </div>
-          </div>
+          </Card>
 
           {/* VS. The Crowd */}
           {tagsEnabled && (
-            <div className="rounded-xl border border-border bg-surface p-4">
-              <div className="flex items-center justify-between">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground">
-                  VS. The Crowd
-                </p>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-muted">
-                  {conventionalCount}/{totalTagged} Aligned
-                </p>
+            <Card padding="default" className="gap-3">
+              <div className="flex items-center justify-between gap-3 border-b border-line pb-2">
+                <h2 className="cond text-[13px] text-ink">VS. The Crowd</h2>
+                <span className="mono text-[11px] tracking-[0.08em] text-ink-faint">
+                  {conventionalCount}/{totalTagged} aligned
+                </span>
               </div>
 
-              <div className="mt-3 flex h-2 w-full overflow-hidden rounded-full bg-border">
-                <div
-                  className="bg-emerald-500"
-                  style={{ width: `${(conventionalCount / totalTagged) * 100}%` }}
-                />
-                <div
-                  className="bg-amber-400"
-                  style={{ width: `${(debatedCount / totalTagged) * 100}%` }}
-                />
-                <div
-                  className="bg-rose-500"
-                  style={{ width: `${(boldCount / totalTagged) * 100}%` }}
-                />
-              </div>
+              <ConsensusBar
+                consensus={conventionalCount}
+                debated={debatedCount}
+                bold={boldCount}
+                total={totalTagged}
+              />
 
-              <div className="mt-2 flex gap-4 text-[11px] text-muted">
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                  {conventionalCount} consensus
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-amber-400" />
-                  {debatedCount} debated
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-rose-500" />
-                  {boldCount} bold
-                </span>
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5 mono text-[11px] tracking-[0.08em] text-ink-3">
+                <LegendChip color="success" label={`${conventionalCount} consensus`} />
+                <LegendChip color="gold" label={`${debatedCount} debated`} />
+                <LegendChip color="accent" label={`${boldCount} bold`} />
               </div>
 
               {boldestPick && (
                 <>
-                  <div className="my-3 border-t border-border" />
-                  <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+                  <div className="mt-1 border-t border-line" />
+                  <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
                     Your Boldest Call
                   </p>
                   <BoldestPickCard pick={boldestPick} />
                 </>
               )}
-            </div>
+            </Card>
           )}
 
           {/* Your Take / note */}
@@ -201,30 +185,73 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
               initialNote={submissionRow.note ?? null}
             />
           ) : submissionRow.note ? (
-            <div className="rounded-xl border border-border bg-surface p-4">
-              <h3 className="mb-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
+            <Card padding="default" className="gap-2">
+              <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
                 Their Reasoning
-              </h3>
-              <blockquote className="text-sm italic text-foreground">
+              </h2>
+              <blockquote className="text-[14px] leading-[1.5] text-ink-2 italic">
                 {submissionRow.note}
               </blockquote>
-            </div>
+            </Card>
           ) : null}
         </div>
       </div>
-
     </div>
   );
 }
 
-function StatTile({ label, value }: { label: string; value: string }) {
+function ConsensusBar({
+  consensus,
+  debated,
+  bold,
+  total,
+}: {
+  consensus: number;
+  debated: number;
+  bold: number;
+  total: number;
+}) {
+  if (total <= 0) {
+    return <div className="h-2 w-full rounded-pill bg-bg-sunk" />;
+  }
+  const segments = [
+    { color: "bg-success", count: consensus },
+    { color: "bg-gold", count: debated },
+    { color: "bg-accent", count: bold },
+  ];
   return (
-    <div className="rounded-lg border border-border bg-surface-muted px-4 py-4 text-center">
-      <div className="text-[11px] font-medium uppercase tracking-wide text-muted">
-        {label}
-      </div>
-      <div className="mt-1 text-base font-semibold text-foreground">{value}</div>
+    <div
+      className="flex h-2 w-full overflow-hidden rounded-pill bg-bg-sunk"
+      role="img"
+      aria-label={`${consensus} consensus, ${debated} debated, ${bold} bold of ${total} picks`}
+    >
+      {segments.map((s, i) =>
+        s.count > 0 ? (
+          <span
+            key={i}
+            className={cn("h-full min-w-[4px]", s.color)}
+            style={{ width: `${(s.count / total) * 100}%` }}
+          />
+        ) : null,
+      )}
     </div>
+  );
+}
+
+function LegendChip({
+  color,
+  label,
+}: {
+  color: "success" | "gold" | "accent";
+  label: string;
+}) {
+  const dot =
+    color === "success" ? "bg-success" : color === "gold" ? "bg-gold" : "bg-accent";
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      <span aria-hidden className={cn("h-2 w-2 rounded-full", dot)} />
+      {label}
+    </span>
   );
 }
 
@@ -234,40 +261,39 @@ function BoldestPickCard({
   pick: { player: Player; rate: number };
 }) {
   const { player, rate } = pick;
-  const parts = player.fullName.split(" ");
-  const lastName = parts.at(-1) ?? player.fullName;
-  const abbrev = parts.length > 1 ? `${parts[0][0]}. ${lastName}` : lastName;
+  const initial = player.fullName.split(" ")[0]?.[0] ?? "?";
 
   return (
     <div className="flex items-center gap-3">
-      <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-surface-muted">
+      <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-[13px] font-semibold text-ink-3">
         {player.photoUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={player.photoUrl}
             alt={player.fullName}
             className="h-full w-full object-cover"
+            loading="lazy"
           />
         ) : (
-          <span className="text-sm font-semibold text-foreground">{parts[0][0]}</span>
+          initial
         )}
         {player.jerseyNumber != null && (
-          <span className="absolute bottom-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-foreground text-[9px] font-bold text-surface">
+          <span className="absolute bottom-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-ink mono text-[9px] font-bold text-bg-elev">
             {player.jerseyNumber}
           </span>
         )}
       </div>
       <div className="min-w-0 flex-1">
-        <p className="truncate text-sm font-bold uppercase tracking-wide text-foreground">
-          {abbrev}
-        </p>
-        <p className="truncate text-[11px] uppercase tracking-wide text-muted">
-          {player.detailedPosition} · Overlooked by the crowd
+        <p className="truncate text-[13px] font-semibold text-ink">{player.fullName}</p>
+        <p className="truncate mono text-[11px] tracking-[0.08em] text-ink-3">
+          {player.detailedPosition} · {player.age}y · {player.club}
         </p>
       </div>
       <div className="shrink-0 text-right">
-        <p className="text-base font-bold text-accent">{Math.round(rate * 100)}%</p>
-        <p className="text-[10px] uppercase tracking-wide text-muted">Picked</p>
+        <p className="mono text-[14px] font-bold text-accent">
+          {Math.round(rate * 100)}%
+        </p>
+        <p className="mono text-[10px] tracking-[0.12em] text-ink-faint uppercase">picked</p>
       </div>
     </div>
   );
