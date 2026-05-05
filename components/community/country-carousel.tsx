@@ -27,6 +27,8 @@ export function CommunityCountryCarousel({
   activeCode,
   allNationsHref,
 }: Props) {
+  const resolvedAllNationsHref =
+    allNationsHref ?? (linkMode === "community" ? "/community" : undefined);
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const [canLeft, setCanLeft] = useState(false);
   const [canRight, setCanRight] = useState(false);
@@ -72,9 +74,9 @@ export function CommunityCountryCarousel({
           className="flex snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth px-4 pb-1 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           <AllNationsTile
-            active={!allNationsHref && query.trim().length === 0}
+            active={!resolvedAllNationsHref && query.trim().length === 0}
             onClick={() => setQuery("")}
-            href={allNationsHref}
+            href={resolvedAllNationsHref}
           />
 
           {filteredSlots.map((slot) => {

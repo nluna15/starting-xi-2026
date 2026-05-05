@@ -52,7 +52,6 @@ export default async function CommunityCountryPage({
           readyCodes={readyCodes}
           linkMode="community"
           activeCode={team.code}
-          allNationsHref="/community"
         />
         <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
           <span className="text-4xl" aria-hidden>
