@@ -30,7 +30,7 @@ export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
 
   return (
     <div className="p-4 sm:p-6">
-      <div className="grid items-center gap-3 md:grid-cols-2">
+      <div className="grid items-center gap-10 md:grid-cols-2 md:gap-3">
         <div className="mx-auto w-full max-w-[780px] md:max-w-none">
           <HeroPitch />
         </div>

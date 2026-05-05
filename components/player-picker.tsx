@@ -148,7 +148,8 @@ function PickerBody({
       })
       .filter((p) =>
         q ? normalize(p.fullName).includes(q) || normalize(p.club).includes(q) : true,
-      );
+      )
+      .sort((a, b) => b.marketValueEur - a.marketValueEur);
   }, [players, query, selected, slotKind, slotPositionCode]);
 
   const eligibleCount = React.useMemo(
