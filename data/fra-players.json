@@ -440,6 +440,17 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353366-1713819215.jpg?lm=1"
   },
   {
+    "transfermarktId": 126664,
+    "fullName": "Lucas Digne",
+    "position": "DEF",
+    "detailedPosition": "LB",
+    "jerseyNumber": null,
+    "club": "Aston Villa FC",
+    "age": 32,
+    "marketValueEur": 8000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/126664-1736160616.jpg?lm=1"
+  },
+  {
     "transfermarktId": 413112,
     "fullName": "Aurélien Tchouaméni",
     "position": "MID",

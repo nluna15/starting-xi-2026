@@ -420,6 +420,7 @@ export type GlobalCrowdStats = {
     }>;
   };
   topPlayers: Array<{ player: Player; teamCode: string | null; count: number; rate: number }>;
+  topBench: Array<{ player: Player; teamCode: string | null; count: number; rate: number }>;
 };
 
 // Aggregates submissions across every team. The "most likely XI" mixes players
@@ -445,6 +446,7 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
       formationCounts: [],
       mostLikelyXi: { formation: null, slots: [] },
       topPlayers: [],
+      topBench: [],
     };
   }
 
@@ -586,6 +588,35 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     return [{ player: p, teamCode: teamCodeMap.get(p.teamId) ?? null, count: Number(r.picks), rate: Number(r.picks) / total }];
   });
 
+  // Top 5 most-picked bench players globally (any slot, any team).
+  const benchRows = await db.execute(sql`
+    with bench_picks as (
+      select pid::int as player_id
+      from ${submissions} s,
+        jsonb_array_elements_text(s.bench) pid
+    )
+    select player_id, count(*)::int as picks
+    from bench_picks
+    group by player_id
+    order by picks desc, player_id asc
+    limit 5
+  `);
+  const benchIds = (benchRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
+  const benchMap = new Map<number, Player>();
+  const benchTeamCodeMap = new Map<number, string>();
+  if (benchIds.length > 0) {
+    const ps = await db.select().from(players).where(inArray(players.id, benchIds));
+    for (const p of ps) benchMap.set(p.id, p);
+    const teamIds = [...new Set(ps.map((p) => p.teamId))];
+    const ts = await db.select({ id: teams.id, code: teams.code }).from(teams).where(inArray(teams.id, teamIds));
+    for (const t of ts) benchTeamCodeMap.set(t.id, t.code);
+  }
+  const topBench = (benchRows.rows as Array<{ player_id: number; picks: number }>).flatMap((r) => {
+    const p = benchMap.get(Number(r.player_id));
+    if (!p) return [];
+    return [{ player: p, teamCode: benchTeamCodeMap.get(p.teamId) ?? null, count: Number(r.picks), rate: Number(r.picks) / total }];
+  });
+
   return {
     totalSubmissions: total,
     topFormation: topFormation ? { name: topFormation.name, count: Number(topFormation.count) } : null,
@@ -595,6 +626,7 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
       slots: slotResults,
     },
     topPlayers,
+    topBench,
   };
 }
 

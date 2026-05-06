@@ -131,10 +131,9 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
             <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
               Squad at a Glance
             </h2>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               <StatTile label="Avg Age" value={formatAge(avgAge)} size="md" />
               <StatTile label="Value" value={formatEur(totalValue)} size="md" />
-              <StatTile label="Caps" value="—" size="md" />
               <StatTile
                 label="Fans"
                 value={pickRates.totalSubmissions.toLocaleString()}

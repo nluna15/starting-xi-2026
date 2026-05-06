@@ -235,10 +235,47 @@ export default async function CommunityPage({
             <HorizontalBarChart rows={cheapestRows} formatValue={formatEurCompact} />
           </div>
         </StatCard>
-        <StatCard title="Coming soon">
-          <div className="flex h-full min-h-48 items-center justify-center text-[12px] text-ink-faint">
-            Placeholder — metric TBD
-          </div>
+        <StatCard title="Most important substitute">
+          <ol className="space-y-2.5">
+            {stats.topBench.length === 0 && (
+              <li className="text-[13px] text-ink-3">No data yet.</li>
+            )}
+            {stats.topBench.map((b) => (
+              <li key={b.player.id} className="flex items-center gap-2.5">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-[10px] font-semibold text-ink-3">
+                  {b.player.photoUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={b.player.photoUrl}
+                      alt={b.player.fullName}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    b.player.fullName
+                      .split(/\s+/)
+                      .filter(Boolean)
+                      .slice(0, 2)
+                      .map((w) => w[0])
+                      .join("")
+                      .toUpperCase()
+                  )}
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="truncate text-[13px] font-semibold leading-tight text-ink">
+                    {initialAndLast(b.player.fullName)}
+                  </div>
+                  <div className="mono text-[11px] tracking-[0.08em] text-ink-3">
+                    {b.player.detailedPosition}
+                    {b.teamCode && <span className="ml-1.5 text-ink-faint">{b.teamCode}</span>}
+                  </div>
+                </div>
+                <span className="mono text-[12px] text-ink-2">
+                  {Math.round(b.rate * 100)}%
+                </span>
+              </li>
+            ))}
+          </ol>
         </StatCard>
       </div>
       {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
@@ -250,6 +287,14 @@ function formatEurCompact(eur: number): string {
   if (eur >= 1_000_000) return `€${(eur / 1_000_000).toFixed(1)}M`;
   if (eur >= 1_000) return `€${(eur / 1_000).toFixed(0)}K`;
   return `€${Math.round(eur)}`;
+}
+
+function initialAndLast(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/).filter(Boolean);
+  if (parts.length <= 1) return fullName;
+  const first = parts[0];
+  const last = parts[parts.length - 1];
+  return `${first[0]}. ${last}`;
 }
 
 /* -----------------------------------------------------------------------------

@@ -440,6 +440,17 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/972467-1771697535.jpg?lm=1"
   },
   {
+    "transfermarktId": 145466,
+    "fullName": "Tim Ream",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Charlotte FC",
+    "age": 38,
+    "marketValueEur": 200000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/145466-1771611843.jpg?lm=1"
+  },
+  {
     "transfermarktId": 332697,
     "fullName": "Weston McKennie",
     "position": "MID",
@@ -526,6 +537,17 @@
     "age": 24,
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670096-1722196121.jpg?lm=1"
+  },
+  {
+    "transfermarktId": 513968,
+    "fullName": "Aidan Morris",
+    "position": "MID",
+    "detailedPosition": "CM",
+    "jerseyNumber": null,
+    "club": "Middlesbrough FC",
+    "age": 24,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/513968-1709481996.jpg?lm=1"
   },
   {
     "transfermarktId": 880626,

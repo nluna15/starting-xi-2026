@@ -214,7 +214,7 @@ export function LineupBuilder({
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line pb-4">
         <span className="cond text-[12px] text-ink-2">Formation</span>
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-1.5 max-[410px]:hidden">
           {sortedFormations.map((f) => (
             <Chip
               key={f.name}
@@ -230,12 +230,40 @@ export function LineupBuilder({
             </Chip>
           ))}
         </div>
+        <div className="relative hidden max-[410px]:block">
+          <select
+            value={formationName}
+            onChange={(e) => setFormationName(e.target.value)}
+            aria-label="Formation"
+            className="mono h-7 appearance-none rounded-pill border border-accent bg-accent-soft pl-3 pr-7 text-[11px] font-bold uppercase tracking-[0.04em] text-accent-deep focus-visible:border-accent focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft"
+          >
+            {sortedFormations.map((f) => (
+              <option key={f.name} value={f.name}>
+                {f.name}
+              </option>
+            ))}
+          </select>
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 12 12"
+            className="pointer-events-none absolute right-2 top-1/2 h-3 w-3 -translate-y-1/2 text-accent-deep"
+          >
+            <path
+              d="M3 4.5l3 3 3-3"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-[1fr_360px]">
         <div className="order-2 space-y-4 md:order-1">
           <div className="flex flex-wrap items-center gap-2">
-            <Chip variant="accent" size="sm">
+            <Chip variant="neutral" size="sm">
               <span className="mono tracking-[0.04em]">{startersFilled} / 11</span>
               <span>Starting</span>
             </Chip>

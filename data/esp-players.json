@@ -440,6 +440,17 @@
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1076815-1732611843.jpg?lm=1"
   },
   {
+    "transfermarktId": 176553,
+    "fullName": "Aymeric Laporte",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Athletic Bilbao",
+    "age": 31,
+    "marketValueEur": 9000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/176553-1685546335.jpg?lm=1"
+  },
+  {
     "transfermarktId": 683840,
     "fullName": "Pedri",
     "position": "MID",
