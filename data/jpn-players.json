@@ -8,7 +8,9 @@
     "club": "Parma Calcio 1913",
     "age": 23,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/432298-1713345567.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/432298-1713345567.png?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 501737,
@@ -19,7 +21,9 @@
     "club": "Koninklijke Sint-Truidense Voetbalvereniging",
     "age": 25,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501737-1604578645.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501737-1604578645.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 309196,
@@ -30,7 +34,9 @@
     "club": "Vancouver Whitecaps FC",
     "age": 30,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/309196-1771862016.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/309196-1771862016.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 617377,
@@ -41,7 +47,9 @@
     "club": "Royal Antwerp FC",
     "age": 23,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617377-1646992902.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617377-1646992902.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 415521,
@@ -52,7 +60,9 @@
     "club": "Sanfrecce Hiroshima",
     "age": 26,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415521-1770310185.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415521-1770310185.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 683271,
@@ -63,7 +73,9 @@
     "club": "Kashima Antlers FC",
     "age": 27,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/683271-1772672828.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/683271-1772672828.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 405382,
@@ -74,7 +86,9 @@
     "club": "Zelvia",
     "age": 25,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405382-1773590970.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405382-1773590970.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 286504,
@@ -85,7 +99,9 @@
     "club": "Hitachi Kashiwa Reysol",
     "age": 29,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/286504-1773586293.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/286504-1773586293.JPG?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 489081,
@@ -96,7 +112,9 @@
     "club": "Rakuten Vissel Kobe",
     "age": 31,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489081-1772722912.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489081-1772722912.JPG?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 843027,
@@ -107,7 +125,9 @@
     "club": "FC Mito HollyHock",
     "age": 23,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/843027-1773593802.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/843027-1773593802.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 353892,
@@ -118,7 +138,9 @@
     "club": "FC Bayern München",
     "age": 26,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353892-1657181215.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353892-1657181215.jpg?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 355816,
@@ -129,7 +151,9 @@
     "club": "AFC Ajax Amsterdam",
     "age": 29,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/355816-1662966245.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/355816-1662966245.jpg?lm=1",
+    "internationalCaps": 39,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 598791,
@@ -140,7 +164,9 @@
     "club": "Feyenoord Rotterdam",
     "age": 29,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/598791-1705504081.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/598791-1705504081.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 331560,
@@ -151,7 +177,9 @@
     "club": "AFC Ajax Amsterdam",
     "age": 27,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331560-1682591217.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331560-1682591217.jpg?lm=1",
+    "internationalCaps": 42,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 405385,
@@ -162,7 +190,9 @@
     "club": "Sportverein Werder Bremen von 1899",
     "age": 25,
     "marketValueEur": 7500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405385-1758702447.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405385-1758702447.jpg?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 415035,
@@ -173,7 +203,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 28,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415035-1755090800.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415035-1755090800.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1146988,
@@ -184,7 +216,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 20,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1146988-1758617811.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1146988-1758617811.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 671108,
@@ -195,7 +229,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 21,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671108-1745788815.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671108-1745788815.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 733438,
@@ -206,7 +242,9 @@
     "club": "Alkmaar Zaanstreek",
     "age": 28,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733438-1721657268.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733438-1721657268.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 610795,
@@ -217,7 +255,9 @@
     "club": "FC St. Pauli von 1910",
     "age": 27,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/610795-1760491841.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/610795-1760491841.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 353886,
@@ -228,7 +268,9 @@
     "club": "FC Basel 1893 AG",
     "age": 27,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353886-1755763333.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353886-1755763333.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 570572,
@@ -239,7 +281,9 @@
     "club": "Koninklijke Sint-Truidense Voetbalvereniging",
     "age": 24,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570572-1654247848.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570572-1654247848.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 948537,
@@ -250,7 +294,9 @@
     "club": "Fußballclub Red Bull Salzburg",
     "age": 22,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948537-1758627800.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948537-1758627800.png?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 848856,
@@ -261,7 +307,9 @@
     "club": "FC København",
     "age": 22,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/848856-1761081129.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/848856-1761081129.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 602314,
@@ -272,7 +320,9 @@
     "club": "Sanfrecce Hiroshima",
     "age": 29,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/602314-1770310214.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/602314-1770310214.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 570385,
@@ -283,7 +333,9 @@
     "club": "Nagoya Grampus Eight",
     "age": 25,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570385-1773664246.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570385-1773664246.JPG?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 346647,
@@ -294,7 +346,9 @@
     "club": "Zelvia",
     "age": 29,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346647-1773591345.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346647-1773591345.JPG?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 936294,
@@ -305,7 +359,9 @@
     "club": "Alkmaar Zaanstreek",
     "age": 20,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/936294-1758617690.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/936294-1758617690.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 489072,
@@ -316,7 +372,9 @@
     "club": "Hitachi Kashiwa Reysol",
     "age": 27,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489072-1773585802.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489072-1773585802.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 423112,
@@ -327,7 +385,9 @@
     "club": "Oud-Heverlee Leuven",
     "age": 28,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/423112-1608298199.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/423112-1608298199.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1030663,
@@ -338,7 +398,9 @@
     "club": "Royal Antwerp FC",
     "age": 25,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1030663-1754466605.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1030663-1754466605.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 733309,
@@ -349,7 +411,9 @@
     "club": "Oud-Heverlee Leuven",
     "age": 28,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733309-1713337957.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733309-1713337957.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 754608,
@@ -360,7 +424,9 @@
     "club": "Sanfrecce Hiroshima",
     "age": 25,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/754608-1770310358.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/754608-1770310358.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 404379,
@@ -371,7 +437,9 @@
     "club": "Rakuten Vissel Kobe",
     "age": 28,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/404379-1772732069.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/404379-1772732069.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 532054,
@@ -382,7 +450,9 @@
     "club": "Gamba Osaka",
     "age": 24,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/532054-1772685073.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/532054-1772685073.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 501749,
@@ -393,7 +463,9 @@
     "club": "Koninklijke Voetbal Club Westerlo",
     "age": 24,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501749-1628084836.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501749-1628084836.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 353785,
@@ -404,7 +476,9 @@
     "club": "Kashima Antlers FC",
     "age": 29,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353785-1772672755.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353785-1772672755.JPG?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 275532,
@@ -415,7 +489,9 @@
     "club": "Gamba Osaka",
     "age": 30,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/275532-1772685012.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/275532-1772685012.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 188915,
@@ -426,7 +502,9 @@
     "club": "Kashima Antlers FC",
     "age": 31,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/188915-1772673327.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/188915-1772673327.JPG?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 395589,
@@ -437,7 +515,9 @@
     "club": "Los Angeles Galaxy",
     "age": 32,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395589-1771693780.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395589-1771693780.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 643574,
@@ -448,7 +528,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 25,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/643574-1752587688.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/643574-1752587688.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 356141,
@@ -459,7 +541,9 @@
     "club": "Crystal Palace FC",
     "age": 29,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/356141-1707947777.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/356141-1707947777.jpg?lm=1",
+    "internationalCaps": 47,
+    "internationalGoals": 12
   },
   {
     "transfermarktId": 957544,
@@ -470,7 +554,9 @@
     "club": "Nijmegen Eendracht Combinatie",
     "age": 22,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/957544-1764256625.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/957544-1764256625.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 489359,
@@ -481,7 +567,9 @@
     "club": "Leeds United",
     "age": 27,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489359-1657113927.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489359-1657113927.jpg?lm=1",
+    "internationalCaps": 35,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 496656,
@@ -492,7 +580,9 @@
     "club": "Celtic FC",
     "age": 28,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496656-1671709618.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496656-1671709618.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 697277,
@@ -503,7 +593,9 @@
     "club": "FC St. Pauli von 1910",
     "age": 24,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697277-1755032962.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697277-1755032962.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 524315,
@@ -514,7 +606,9 @@
     "club": "Sporting Clube de Portugal",
     "age": 30,
     "marketValueEur": 9000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/524315-1765307094.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/524315-1765307094.jpg?lm=1",
+    "internationalCaps": 40,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 146310,
@@ -525,7 +619,9 @@
     "club": "Liverpool FC",
     "age": 33,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/146310-1657181542.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/146310-1657181542.jpg?lm=1",
+    "internationalCaps": 72,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 432403,
@@ -536,7 +632,9 @@
     "club": "Koninklijke Sint-Truidense Voetbalvereniging",
     "age": 24,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/432403-1713348369.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/432403-1713348369.png?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 405389,
@@ -547,7 +645,9 @@
     "club": "Le Havre Athletic Club",
     "age": 25,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405389-1558683017.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405389-1558683017.png?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 415522,
@@ -558,7 +658,9 @@
     "club": "Koninklijke Sint-Truidense Voetbalvereniging",
     "age": 28,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415522-1713348166.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415522-1713348166.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 671114,
@@ -569,7 +671,9 @@
     "club": "Fußballclub Red Bull Salzburg",
     "age": 21,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671114-1754993920.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671114-1754993920.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 415525,
@@ -580,7 +684,9 @@
     "club": "Gil Vicente Futebol Clube",
     "age": 26,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415525-1762329579.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/415525-1762329579.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 492715,
@@ -591,7 +697,9 @@
     "club": "Koninklijke Atletiek Associatie Gent",
     "age": 27,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/492715-1624526537.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/492715-1624526537.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 814491,
@@ -602,7 +710,9 @@
     "club": "Koninklijke Voetbal Club Westerlo",
     "age": 22,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814491-1736179574.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814491-1736179574.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 7
   },
   {
     "transfermarktId": 262489,
@@ -613,7 +723,9 @@
     "club": "Sanfrecce Hiroshima",
     "age": 30,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/262489-1770310197.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/262489-1770310197.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 356236,
@@ -624,7 +736,9 @@
     "club": "Celtic FC",
     "age": 29,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/356236-1702505466.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/356236-1702505466.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 902021,
@@ -635,7 +749,9 @@
     "club": "Göztepe Sportif Yatırımlar A.Ş",
     "age": 23,
     "marketValueEur": 2400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/902021-1727795832.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/902021-1727795832.png?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 868622,
@@ -646,7 +762,9 @@
     "club": "Futebol Clube de Arouca",
     "age": 21,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/868622-1692803071.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/868622-1692803071.png?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 814489,
@@ -657,7 +775,9 @@
     "club": "FC Luzern",
     "age": 21,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814489-1764841247.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814489-1764841247.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 512699,
@@ -668,7 +788,9 @@
     "club": "Kawasaki Frontale",
     "age": 30,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/512699-1770530606.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/512699-1770530606.JPG?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 515650,
@@ -679,7 +801,9 @@
     "club": "Fußballclub Red Bull Salzburg",
     "age": 26,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/515650-1754993708.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/515650-1754993708.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 733371,
@@ -690,7 +814,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 24,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733371-1752588052.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733371-1752588052.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 577216,
@@ -701,7 +827,9 @@
     "club": "Sanfrecce Hiroshima",
     "age": 25,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/577216-1772963103.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/577216-1772963103.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 295091,
@@ -712,7 +840,9 @@
     "club": "Urawa Red Diamonds",
     "age": 29,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/295091-1499758208.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/295091-1499758208.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 948169,
@@ -723,7 +853,9 @@
     "club": "Tokyo FC",
     "age": 19,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948169-1772965432.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/948169-1772965432.JPG?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 457830,
@@ -734,7 +866,9 @@
     "club": "Tokyo FC",
     "age": 28,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/457830-1772683336.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/457830-1772683336.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 673858,
@@ -745,7 +879,9 @@
     "club": "Cerezo Osaka",
     "age": 28,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/673858-1772817174.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/673858-1772817174.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 589813,
@@ -756,7 +892,9 @@
     "club": "Hitachi Kashiwa Reysol",
     "age": 27,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589813-1773586268.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589813-1773586268.JPG?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 515653,
@@ -767,7 +905,9 @@
     "club": "Rakuten Vissel Kobe",
     "age": 26,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/515653-1772732536.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/515653-1772732536.JPG?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 684058,
@@ -778,7 +918,9 @@
     "club": "Avispa Fukuoka",
     "age": 28,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684058-1770556365.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684058-1770556365.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 681947,
@@ -789,7 +931,9 @@
     "club": "Kawasaki Frontale",
     "age": 27,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/681947-1770530412.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/681947-1770530412.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 588478,
@@ -800,7 +944,9 @@
     "club": "Kawasaki Frontale",
     "age": 28,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/588478-1770530409.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/588478-1770530409.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 405398,
@@ -811,7 +957,9 @@
     "club": "Real Sociedad de Fútbol",
     "age": 24,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405398-1697110254.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405398-1697110254.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 7
   },
   {
     "transfermarktId": 504849,
@@ -822,7 +970,9 @@
     "club": "Brighton and Hove Albion FC",
     "age": 28,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504849-1731683095.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504849-1731683095.jpg?lm=1",
+    "internationalCaps": 29,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 358504,
@@ -833,7 +983,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 27,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358504-1757597784.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358504-1757597784.jpg?lm=1",
+    "internationalCaps": 62,
+    "internationalGoals": 11
   },
   {
     "transfermarktId": 668606,
@@ -844,7 +996,9 @@
     "club": "Sport-Club Freiburg",
     "age": 24,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/668606-1753955159.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/668606-1753955159.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 589128,
@@ -855,7 +1009,9 @@
     "club": "Feyenoord Rotterdam",
     "age": 27,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589128-1765214070.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589128-1765214070.jpg?lm=1",
+    "internationalCaps": 36,
+    "internationalGoals": 16
   },
   {
     "transfermarktId": 165793,
@@ -866,7 +1022,9 @@
     "club": "AS Monaco FC",
     "age": 31,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/165793-1737490576.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/165793-1737490576.jpg?lm=1",
+    "internationalCaps": 73,
+    "internationalGoals": 26
   },
   {
     "transfermarktId": 420931,
@@ -877,7 +1035,9 @@
     "club": "Celtic FC",
     "age": 28,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/420931-1669207346.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/420931-1669207346.jpg?lm=1",
+    "internationalCaps": 26,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 405397,
@@ -888,7 +1048,9 @@
     "club": "Stade Reims",
     "age": 25,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405397-1723837290.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405397-1723837290.png?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 10
   },
   {
     "transfermarktId": 916623,
@@ -899,7 +1061,9 @@
     "club": "Koninklijke Sint-Truidense Voetbalvereniging",
     "age": 20,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/916623-1737967086.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/916623-1737967086.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1144627,
@@ -910,7 +1074,9 @@
     "club": "Verein für Leibesübungen Wolfsburg",
     "age": 21,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1144627-1764256555.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1144627-1764256555.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 489463,
@@ -921,7 +1087,9 @@
     "club": "Unknown",
     "age": 31,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489463-1671709799.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/489463-1671709799.jpg?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 550580,
@@ -932,7 +1100,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 26,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/550580-1760967093.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/550580-1760967093.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 501743,
@@ -943,7 +1113,9 @@
     "club": "Queens Park Rangers",
     "age": 24,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501743-1626772054.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501743-1626772054.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 348791,
@@ -954,7 +1126,9 @@
     "club": "Koninklijke Racing Club Genk",
     "age": 33,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/348791-1723820780.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/348791-1723820780.png?lm=1",
+    "internationalCaps": 66,
+    "internationalGoals": 14
   },
   {
     "transfermarktId": 351567,
@@ -965,7 +1139,9 @@
     "club": "Nijmegen Eendracht Combinatie",
     "age": 28,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/351567-1764256684.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/351567-1764256684.png?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 10
   },
   {
     "transfermarktId": 345323,
@@ -976,7 +1152,9 @@
     "club": "Kashima Antlers FC",
     "age": 30,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345323-1772673325.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345323-1772673325.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 594069,
@@ -987,7 +1165,9 @@
     "club": "Zelvia",
     "age": 29,
     "marketValueEur": 2200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/594069-1773591125.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/594069-1773591125.JPG?lm=1",
+    "internationalCaps": 19,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 566013,
@@ -998,7 +1178,9 @@
     "club": "Sparta Rotterdam",
     "age": 23,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/566013-1755698448.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/566013-1755698448.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 245744,
@@ -1009,7 +1191,9 @@
     "club": "Real Club Deportivo Mallorca",
     "age": 31,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/245744-1657284052.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/245744-1657284052.jpg?lm=1",
+    "internationalCaps": 53,
+    "internationalGoals": 9
   },
   {
     "transfermarktId": 663514,
@@ -1020,7 +1204,9 @@
     "club": "Hitachi Kashiwa Reysol",
     "age": 24,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/663514-1773585881.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/663514-1773585881.JPG?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 602781,
@@ -1031,7 +1217,9 @@
     "club": "Koninklijke Atletiek Associatie Gent",
     "age": 25,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/602781-1757924561.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/602781-1757924561.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 495752,
@@ -1042,7 +1230,9 @@
     "club": "FC St. Pauli von 1910",
     "age": 26,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/495752-1769616700.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/495752-1769616700.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 657625,
@@ -1053,7 +1243,9 @@
     "club": "Urawa Red Diamonds",
     "age": 28,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/657625-1628004985.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/657625-1628004985.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 634859,
@@ -1064,7 +1256,9 @@
     "club": "Brøndby Idrætsforening",
     "age": 25,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/634859-1752323514.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/634859-1752323514.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 290705,
@@ -1075,7 +1269,9 @@
     "club": "S-Pulse",
     "age": 29,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290705-1774194550.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290705-1774194550.JPG?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 353567,
@@ -1086,7 +1282,9 @@
     "club": "Zelvia",
     "age": 29,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353567-1773591370.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353567-1773591370.JPG?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 307052,
@@ -1097,6 +1295,8 @@
     "club": "Kyoto Purple Sanga",
     "age": 30,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307052-1773589553.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307052-1773589553.JPG?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   }
 ]

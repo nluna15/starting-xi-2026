@@ -8,7 +8,9 @@
     "club": "Klub Sportowy Lechia Gdańsk",
     "age": 23,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617009-1765112812.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617009-1765112812.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 350347,
@@ -19,7 +21,9 @@
     "club": "Auckland FC",
     "age": 27,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/350347-1446020335.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/350347-1446020335.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 733234,
@@ -30,7 +34,9 @@
     "club": "GAIS",
     "age": 23,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733234-1721917318.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733234-1721917318.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 290838,
@@ -41,7 +47,9 @@
     "club": "Auckland FC",
     "age": 30,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290838-1722513133.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290838-1722513133.png?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 740164,
@@ -52,7 +60,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 877280,
@@ -63,7 +73,9 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1079362,
@@ -74,7 +86,9 @@
     "club": "Wellington Phoenix FC",
     "age": 18,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 887859,
@@ -85,7 +99,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1142610,
@@ -96,7 +112,9 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 75000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1142610-1746783123.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1142610-1746783123.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 1375572,
@@ -107,7 +125,9 @@
     "club": "Auckland FC",
     "age": 19,
     "marketValueEur": 75000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1375572-1746779915.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1375572-1746779915.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 469211,
@@ -118,7 +138,9 @@
     "club": "Unknown",
     "age": 25,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/469211-1730125371.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/469211-1730125371.jpg?lm=1",
+    "internationalCaps": 35,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1007720,
@@ -129,7 +151,9 @@
     "club": "Sheffield United",
     "age": 21,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1007720-1695905864.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1007720-1695905864.jpg?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 724809,
@@ -140,7 +164,9 @@
     "club": "Portland Timbers",
     "age": 22,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724809-1771715473.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724809-1771715473.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 617021,
@@ -151,7 +177,9 @@
     "club": "AS Saint-Étienne",
     "age": 23,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617021-1727721943.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617021-1727721943.jpg?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 207061,
@@ -162,7 +190,9 @@
     "club": "Auckland FC",
     "age": 31,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/207061-1511087669.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/207061-1511087669.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 877290,
@@ -173,7 +203,9 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877290-1721917559.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877290-1721917559.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 877294,
@@ -184,7 +216,9 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877294-1721917682.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877294-1721917682.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 953953,
@@ -195,7 +229,9 @@
     "club": "Wellington Phoenix FC",
     "age": 22,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/953953-1768229329.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/953953-1768229329.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 149901,
@@ -206,7 +242,9 @@
     "club": "Wellington Phoenix FC",
     "age": 32,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/149901-1415819896.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/149901-1415819896.jpg?lm=1",
+    "internationalCaps": 49,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 172333,
@@ -217,7 +255,9 @@
     "club": "Wellington Phoenix FC",
     "age": 31,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/172333-1740594362.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/172333-1740594362.jpg?lm=1",
+    "internationalCaps": 47,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 455425,
@@ -228,7 +268,9 @@
     "club": "Auckland FC",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/455425-1558942512.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/455425-1558942512.png?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 345343,
@@ -239,7 +281,9 @@
     "club": "Brisbane Roar FC",
     "age": 28,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345343-1747850285.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345343-1747850285.png?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 482204,
@@ -250,7 +294,9 @@
     "club": "Auckland FC",
     "age": 26,
     "marketValueEur": 375000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/482204-1558942642.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/482204-1558942642.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 470986,
@@ -261,7 +307,9 @@
     "club": "Perth Glory FC",
     "age": 24,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470986-1625845029.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470986-1625845029.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 175699,
@@ -272,7 +320,9 @@
     "club": "Central Coast Mariners FC",
     "age": 33,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/175699-1497616562.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/175699-1497616562.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 835325,
@@ -283,7 +333,9 @@
     "club": "Auckland FC",
     "age": 24,
     "marketValueEur": 225000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 264905,
@@ -294,7 +346,9 @@
     "club": "Auckland FC",
     "age": 30,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264905-1705967127.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264905-1705967127.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 617015,
@@ -305,7 +359,9 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617015-1705967164.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617015-1705967164.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 509709,
@@ -316,7 +372,9 @@
     "club": "Kilmarnock FC",
     "age": 25,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509709-1558942459.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509709-1558942459.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 881221,
@@ -327,7 +385,9 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/881221-1758547172.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/881221-1758547172.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 81723,
@@ -338,7 +398,9 @@
     "club": "Minnesota United FC",
     "age": 37,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/81723-1771697078.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/81723-1771697078.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 880131,
@@ -349,7 +411,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 540725,
@@ -360,7 +424,9 @@
     "club": "Sønderjyske Fodbold",
     "age": 27,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 480874,
@@ -371,7 +437,9 @@
     "club": "Wellington Phoenix FC",
     "age": 27,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 724726,
@@ -382,7 +450,9 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1183555,
@@ -393,7 +463,9 @@
     "club": "Wellington Phoenix FC",
     "age": 18,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1183555-1758546960.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1183555-1758546960.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 627143,
@@ -404,7 +476,9 @@
     "club": "Auckland FC",
     "age": 24,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1153793,
@@ -415,7 +489,9 @@
     "club": "Auckland FC",
     "age": 17,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1153793-1746779946.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1153793-1746779946.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 617018,
@@ -426,7 +502,9 @@
     "club": "Swansea City",
     "age": 24,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617018-1728417778.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617018-1728417778.png?lm=1",
+    "internationalCaps": 35,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 345700,
@@ -437,7 +515,9 @@
     "club": "Viking Fotballklubb",
     "age": 27,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345700-1711129756.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345700-1711129756.jpg?lm=1",
+    "internationalCaps": 30,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 400797,
@@ -448,7 +528,9 @@
     "club": "Silkeborg Idrætsforening",
     "age": 27,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400797-1763565137.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400797-1763565137.jpg?lm=1",
+    "internationalCaps": 29,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 203357,
@@ -459,7 +541,9 @@
     "club": "Prins Hendrik Ende Desespereert Nimmer Combinatie Zwolle",
     "age": 31,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203357-1724750728.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203357-1724750728.jpg?lm=1",
+    "internationalCaps": 24,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 256019,
@@ -470,7 +554,9 @@
     "club": "Wellington Phoenix FC",
     "age": 29,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256019-1721932700.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256019-1721932700.jpg?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 350357,
@@ -481,7 +567,9 @@
     "club": "Wellington Phoenix FC",
     "age": 27,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/350357-1689944061.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/350357-1689944061.jpg?lm=1",
+    "internationalCaps": 26,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 617019,
@@ -492,7 +580,9 @@
     "club": "Unknown",
     "age": 24,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617019-1661846532.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617019-1661846532.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 817611,
@@ -503,7 +593,9 @@
     "club": "Fulham FC",
     "age": 22,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/817611-1686496044.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/817611-1686496044.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 400799,
@@ -514,7 +606,9 @@
     "club": "Örgryte IS",
     "age": 27,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400799-1446020943.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400799-1446020943.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1109358,
@@ -525,7 +619,9 @@
     "club": "Newcastle United Jets FC",
     "age": 23,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109358-1721917080.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109358-1721917080.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 172323,
@@ -536,7 +632,9 @@
     "club": "Auckland FC",
     "age": 31,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/172323-1705966788.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/172323-1705966788.jpg?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 857968,
@@ -547,7 +645,9 @@
     "club": "Wellington Phoenix FC",
     "age": 22,
     "marketValueEur": 275000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/857968-1721917414.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/857968-1721917414.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 296673,
@@ -558,7 +658,9 @@
     "club": "Auckland FC",
     "age": 30,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 1122320,
@@ -569,7 +671,9 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1122320-1688038414.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1122320-1688038414.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 539836,
@@ -580,7 +684,9 @@
     "club": "Central Coast Mariners FC",
     "age": 25,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1104291,
@@ -591,7 +697,9 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 724770,
@@ -602,7 +710,9 @@
     "club": "Auckland FC",
     "age": 25,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1225803,
@@ -613,7 +723,9 @@
     "club": "Wellington Phoenix FC",
     "age": 17,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1225803-1709412323.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1225803-1709412323.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1010896,
@@ -624,7 +736,9 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1010896-1705968208.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1010896-1705968208.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1092674,
@@ -635,7 +749,9 @@
     "club": "Wellington Phoenix FC",
     "age": 20,
     "marketValueEur": 125000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 108725,
@@ -646,7 +762,9 @@
     "club": "Nottingham Forest FC",
     "age": 34,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/108725-1740646786.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/108725-1740646786.jpg?lm=1",
+    "internationalCaps": 88,
+    "internationalGoals": 45
   },
   {
     "transfermarktId": 485672,
@@ -657,7 +775,9 @@
     "club": "Motherwell FC",
     "age": 26,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/485672-1768832018.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/485672-1768832018.png?lm=1",
+    "internationalCaps": 41,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 677509,
@@ -668,7 +788,9 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677509-1572443463.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677509-1572443463.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 114940,
@@ -679,7 +801,9 @@
     "club": "Wellington Phoenix FC",
     "age": 34,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/114940-1680006990.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/114940-1680006990.jpg?lm=1",
+    "internationalCaps": 45,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 312317,
@@ -690,7 +814,9 @@
     "club": "Auckland FC",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/312317-1712677027.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/312317-1712677027.png?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 888602,
@@ -701,7 +827,9 @@
     "club": "Wellington Phoenix FC",
     "age": 23,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888602-1748212611.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888602-1748212611.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 835410,
@@ -712,7 +840,9 @@
     "club": "Saint Mirren FC",
     "age": 26,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/835410-1649409396.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/835410-1649409396.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 50200,
@@ -723,7 +853,9 @@
     "club": "Western Sydney Wanderers",
     "age": 36,
     "marketValueEur": 325000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/50200-1497616905.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/50200-1497616905.jpg?lm=1",
+    "internationalCaps": 73,
+    "internationalGoals": 9
   },
   {
     "transfermarktId": 878242,
@@ -734,7 +866,9 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/878242-1705967043.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/878242-1705967043.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1200303,
@@ -745,7 +879,9 @@
     "club": "Wellington Phoenix FC",
     "age": 20,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1200303-1758547306.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1200303-1758547306.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 1016716,
@@ -756,7 +892,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 953397,
@@ -767,7 +905,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 9
   },
   {
     "transfermarktId": 1000925,
@@ -778,7 +918,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1000925-1746780172.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1000925-1746780172.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 1092670,
@@ -789,7 +931,9 @@
     "club": "Wellington Phoenix FC",
     "age": 20,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092670-1758547426.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092670-1758547426.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 1092678,
@@ -800,7 +944,9 @@
     "club": "Wellington Phoenix FC",
     "age": 18,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092678-1733394474.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092678-1733394474.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 1045285,
@@ -811,7 +957,9 @@
     "club": "Auckland FC",
     "age": 19,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 1169835,
@@ -822,6 +970,8 @@
     "club": "Auckland FC",
     "age": 24,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   }
 ]

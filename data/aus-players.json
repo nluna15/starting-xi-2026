@@ -8,7 +8,9 @@
     "club": "Levante Unión Deportiva",
     "age": 34,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/128969-1668505563.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/128969-1668505563.jpg?lm=1",
+    "internationalCaps": 100,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 591844,
@@ -19,7 +21,9 @@
     "club": "Unknown",
     "age": 25,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/591844-1703230842.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/591844-1703230842.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 983578,
@@ -30,7 +34,9 @@
     "club": "Melbourne City FC",
     "age": 22,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/983578-1768225896.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/983578-1768225896.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 181921,
@@ -41,7 +47,9 @@
     "club": "Randers Fodbold Club",
     "age": 31,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/181921-1735076008.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/181921-1735076008.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 49347,
@@ -52,7 +60,9 @@
     "club": "Melbourne Victory FC",
     "age": 37,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/49347-1501147341.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/49347-1501147341.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1110879,
@@ -63,7 +73,9 @@
     "club": "Central Coast Mariners FC",
     "age": 19,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1110879-1768226343.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1110879-1768226343.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 561484,
@@ -74,7 +86,9 @@
     "club": "Perth Glory FC",
     "age": 26,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 181337,
@@ -85,7 +99,9 @@
     "club": "Western Sydney Wanderers",
     "age": 33,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/181337-1685083765.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/181337-1685083765.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 399981,
@@ -96,7 +112,9 @@
     "club": "Newcastle United Jets FC",
     "age": 26,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399981-1635323390.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399981-1635323390.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 497143,
@@ -107,7 +125,9 @@
     "club": "Dundee United FC",
     "age": 26,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/497143-1615795420.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/497143-1615795420.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 867137,
@@ -118,7 +138,9 @@
     "club": "Parma Calcio 1913",
     "age": 22,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867137-1712749046.jpeg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867137-1712749046.jpeg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 855731,
@@ -129,7 +151,9 @@
     "club": "Feyenoord Rotterdam",
     "age": 23,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/855731-1753260910.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/855731-1753260910.jpg?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 298091,
@@ -140,7 +164,9 @@
     "club": "Leicester City",
     "age": 27,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/298091-1669819322.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/298091-1669819322.jpg?lm=1",
+    "internationalCaps": 36,
+    "internationalGoals": 11
   },
   {
     "transfermarktId": 399990,
@@ -151,7 +177,9 @@
     "club": "D.C. United",
     "age": 27,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399990-1771687955.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399990-1771687955.jpg?lm=1",
+    "internationalCaps": 28,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 603864,
@@ -162,7 +190,9 @@
     "club": "Unknown",
     "age": 25,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/603864-1664871614.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/603864-1664871614.png?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 1013240,
@@ -173,7 +203,9 @@
     "club": "Portland Timbers",
     "age": 23,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1013240-1771714894.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1013240-1771714894.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 175745,
@@ -184,7 +216,9 @@
     "club": "FC Cincinnati",
     "age": 32,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/175745-1744235512.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/175745-1744235512.jpg?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 271997,
@@ -195,7 +229,9 @@
     "club": "Unknown",
     "age": 31,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/271997-1632994539.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/271997-1632994539.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 867761,
@@ -206,7 +242,9 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867761-1740676563.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867761-1740676563.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 627472,
@@ -217,7 +255,9 @@
     "club": "Viking Fotballklubb",
     "age": 27,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/627472-1711129178.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/627472-1711129178.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 367795,
@@ -228,7 +268,9 @@
     "club": "NK Osijek s.d.d",
     "age": 29,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/367795-1767281540.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/367795-1767281540.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1099708,
@@ -239,7 +281,9 @@
     "club": "Adelaide United FC",
     "age": 21,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1099708-1758619647.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1099708-1758619647.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 1279984,
@@ -250,7 +294,9 @@
     "club": "Colorado Rapids",
     "age": 18,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1279984-1771673292.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1279984-1771673292.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 556038,
@@ -261,7 +307,9 @@
     "club": "Melbourne City FC",
     "age": 26,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/556038-1669189807.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/556038-1669189807.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 366543,
@@ -272,7 +320,9 @@
     "club": "Yokohama Marinos",
     "age": 29,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/366543-1625837373.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/366543-1625837373.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 255788,
@@ -283,7 +333,9 @@
     "club": "Swansea City",
     "age": 30,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/255788-1664180001.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/255788-1664180001.jpg?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1118086,
@@ -294,7 +346,9 @@
     "club": "Melbourne Victory FC",
     "age": 21,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1118086-1708933470.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1118086-1708933470.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1109823,
@@ -305,7 +359,9 @@
     "club": "Central Coast Mariners FC",
     "age": 22,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109823-1696574882.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109823-1696574882.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 949477,
@@ -316,7 +372,9 @@
     "club": "Western Sydney Wanderers",
     "age": 23,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/949477-1696574956.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/949477-1696574956.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 486972,
@@ -327,7 +385,9 @@
     "club": "Adelaide United FC",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486972-1625839142.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486972-1625839142.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 833592,
@@ -338,7 +398,9 @@
     "club": "Auckland FC",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/833592-1768229078.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/833592-1768229078.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 549354,
@@ -349,7 +411,9 @@
     "club": "Dundee United FC",
     "age": 29,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/549354-1669106236.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/549354-1669106236.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 873755,
@@ -360,7 +424,9 @@
     "club": "Western Sydney Wanderers",
     "age": 23,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/873755-1768227704.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/873755-1768227704.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 225068,
@@ -371,7 +437,9 @@
     "club": "Sydney FC",
     "age": 32,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/225068-1615484617.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/225068-1615484617.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1154876,
@@ -382,7 +450,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 21,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1154876-1752587953.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1154876-1752587953.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 298883,
@@ -393,7 +463,9 @@
     "club": "Melbourne Victory FC",
     "age": 31,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/298883-1413963657.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/298883-1413963657.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 795253,
@@ -404,7 +476,9 @@
     "club": "Central Coast Mariners FC",
     "age": 24,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1118925,
@@ -415,7 +489,9 @@
     "club": "Melbourne City FC",
     "age": 20,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 331017,
@@ -426,7 +502,9 @@
     "club": "Western Sydney Wanderers",
     "age": 28,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331017-1709402146.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331017-1709402146.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 813296,
@@ -437,7 +515,9 @@
     "club": "Newcastle United Jets FC",
     "age": 23,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 428061,
@@ -448,7 +528,9 @@
     "club": "Middlesbrough FC",
     "age": 27,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/428061-1642195656.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/428061-1642195656.jpg?lm=1",
+    "internationalCaps": 33,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 867762,
@@ -459,7 +541,9 @@
     "club": "Nashville SC",
     "age": 24,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867762-1771709801.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867762-1771709801.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 385918,
@@ -470,7 +554,9 @@
     "club": "New York City FC",
     "age": 27,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/385918-1771711165.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/385918-1771711165.jpg?lm=1",
+    "internationalCaps": 27,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 522223,
@@ -481,7 +567,9 @@
     "club": "FC St. Pauli von 1910",
     "age": 26,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/522223-1755033011.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/522223-1755033011.jpg?lm=1",
+    "internationalCaps": 32,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 192557,
@@ -492,7 +580,9 @@
     "club": "FC St. Pauli von 1910",
     "age": 33,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192557-1755032060.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192557-1755032060.jpg?lm=1",
+    "internationalCaps": 79,
+    "internationalGoals": 13
   },
   {
     "transfermarktId": 399162,
@@ -503,7 +593,9 @@
     "club": "Heart of Midlothian FC",
     "age": 27,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399162-1632992221.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399162-1632992221.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 849428,
@@ -514,7 +606,9 @@
     "club": "Nooit Opgeven Altijd Doorzetten Aangenaam Door Vermaak En Nuttig Door Ontspanning Combinatie Breda",
     "age": 25,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/849428-1745315232.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/849428-1745315232.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 691326,
@@ -525,7 +619,9 @@
     "club": "New York City FC",
     "age": 24,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/691326-1771711494.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/691326-1771711494.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 734487,
@@ -536,7 +632,9 @@
     "club": "Heart of Midlothian FC",
     "age": 25,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/734487-1685083510.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/734487-1685083510.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1064377,
@@ -547,7 +645,9 @@
     "club": "Sydney FC",
     "age": 21,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1064377-1669898606.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1064377-1669898606.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 303420,
@@ -558,7 +658,9 @@
     "club": "HNK Hajduk Split",
     "age": 28,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303420-1767281226.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303420-1767281226.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 470618,
@@ -569,7 +671,9 @@
     "club": "Melbourne Victory FC",
     "age": 26,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470618-1625839037.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470618-1625839037.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 265625,
@@ -580,7 +684,9 @@
     "club": "Heracles Almelo",
     "age": 29,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265625-1764162948.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265625-1764162948.png?lm=1",
+    "internationalCaps": 34,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 479037,
@@ -591,7 +697,9 @@
     "club": "Saint Mirren FC",
     "age": 27,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/479037-1625838666.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/479037-1625838666.jpg?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 941357,
@@ -602,7 +710,9 @@
     "club": "Adelaide United FC",
     "age": 22,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/941357-1767802538.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/941357-1767802538.png?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 603863,
@@ -613,7 +723,9 @@
     "club": "Ross County FC",
     "age": 26,
     "marketValueEur": 650000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/603863-1696575126.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/603863-1696575126.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 559464,
@@ -624,7 +736,9 @@
     "club": "Western Sydney Wanderers",
     "age": 26,
     "marketValueEur": 650000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/559464-1674664504.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/559464-1674664504.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 957230,
@@ -635,7 +749,9 @@
     "club": "Newcastle United Jets FC",
     "age": 21,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/957230-1741008634.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/957230-1741008634.jpg?lm=1",
+    "internationalCaps": 25,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 979025,
@@ -646,7 +762,9 @@
     "club": "Melbourne Victory FC",
     "age": 23,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/979025-1703812625.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/979025-1703812625.png?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 616431,
@@ -657,7 +775,9 @@
     "club": "Melbourne City FC",
     "age": 24,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/616431-1703769381.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/616431-1703769381.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 189231,
@@ -668,7 +788,9 @@
     "club": "Adelaide United FC",
     "age": 30,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/189231-1410960947.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/189231-1410960947.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 528888,
@@ -679,7 +801,9 @@
     "club": "Fulham FC",
     "age": 25,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/528888-1628697596.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/528888-1628697596.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 179467,
@@ -690,7 +814,9 @@
     "club": "Melbourne City FC",
     "age": 34,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/179467-1535374331.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/179467-1535374331.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 226739,
@@ -701,7 +827,9 @@
     "club": "Macarthur South West Sydney (A-League)",
     "age": 33,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226739-1705682455.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226739-1705682455.JPG?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 500924,
@@ -712,7 +840,9 @@
     "club": "Newcastle United Jets FC",
     "age": 25,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500924-1768228977.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500924-1768228977.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 262971,
@@ -723,7 +853,9 @@
     "club": "Western Sydney Wanderers",
     "age": 31,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/262971-1664547021.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/262971-1664547021.png?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 976123,
@@ -734,7 +866,9 @@
     "club": "Brisbane Roar FC",
     "age": 22,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/976123-1768229196.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/976123-1768229196.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 259721,
@@ -745,7 +879,9 @@
     "club": "Macarthur South West Sydney (A-League)",
     "age": 29,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/259721-1473749790.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/259721-1473749790.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 857060,
@@ -756,7 +892,9 @@
     "club": "Adelaide United FC",
     "age": 21,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/857060-1758619406.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/857060-1758619406.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1075719,
@@ -767,7 +905,9 @@
     "club": "Sydney FC",
     "age": 21,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1075719-1713451413.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1075719-1713451413.png?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 373898,
@@ -778,7 +918,9 @@
     "club": "Perth Glory FC",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/373898-1722515354.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/373898-1722515354.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 677510,
@@ -789,7 +931,9 @@
     "club": "Melbourne Victory FC",
     "age": 23,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677510-1684168910.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677510-1684168910.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 916461,
@@ -800,7 +944,9 @@
     "club": "Heracles Almelo",
     "age": 21,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/916461-1768227425.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/916461-1768227425.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 956920,
@@ -811,7 +957,9 @@
     "club": "Watford FC",
     "age": 20,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/956920-1739808530.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/956920-1739808530.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 742770,
@@ -822,7 +970,9 @@
     "club": "Norwich City",
     "age": 22,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/742770-1747724540.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/742770-1747724540.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 1038441,
@@ -833,7 +983,9 @@
     "club": "Adelaide United FC",
     "age": 20,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1038441-1758619184.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1038441-1758619184.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 214798,
@@ -844,7 +996,9 @@
     "club": "Adelaide United FC",
     "age": 34,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/214798-1668506102.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/214798-1668506102.jpg?lm=1",
+    "internationalCaps": 32,
+    "internationalGoals": 7
   },
   {
     "transfermarktId": 565531,
@@ -855,7 +1009,9 @@
     "club": "Sportklub Rapid",
     "age": 24,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565531-1669893669.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565531-1669893669.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 967948,
@@ -866,7 +1022,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 21,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/967948-1697908437.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/967948-1697908437.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 865590,
@@ -877,7 +1035,9 @@
     "club": "Charlotte FC",
     "age": 21,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/865590-1757580620.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/865590-1757580620.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 899868,
@@ -888,7 +1048,9 @@
     "club": "Melbourne City FC",
     "age": 20,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/899868-1696443295.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/899868-1696443295.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 293592,
@@ -899,7 +1061,9 @@
     "club": "Western Sydney Wanderers",
     "age": 30,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293592-1685083474.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293592-1685083474.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 399165,
@@ -910,7 +1074,9 @@
     "club": "Brisbane Roar FC",
     "age": 28,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399165-1646999278.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399165-1646999278.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 697511,
@@ -921,7 +1087,9 @@
     "club": "Hibernian FC",
     "age": 25,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697511-1749883211.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697511-1749883211.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 703655,
@@ -932,7 +1100,9 @@
     "club": "Fußballklub Austria Wien",
     "age": 24,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/703655-1751110899.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/703655-1751110899.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 703657,
@@ -943,7 +1113,9 @@
     "club": "Dundee United FC",
     "age": 23,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/703657-1685084112.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/703657-1685084112.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 794777,
@@ -954,7 +1126,9 @@
     "club": "Aberdeen FC",
     "age": 24,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/794777-1757425665.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/794777-1757425665.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 507115,
@@ -965,7 +1139,9 @@
     "club": "Auckland FC",
     "age": 25,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507115-1740418172.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507115-1740418172.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 1000284,
@@ -976,7 +1152,9 @@
     "club": "Turn- und Sportverein Egger Glas Hartberg",
     "age": 22,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1000284-1707822625.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1000284-1707822625.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 888140,
@@ -987,7 +1165,9 @@
     "club": "Melbourne Victory FC",
     "age": 24,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888140-1703810289.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888140-1703810289.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 547924,
@@ -998,7 +1178,9 @@
     "club": "Sydney FC",
     "age": 27,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/547924-1768830473.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/547924-1768830473.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 171721,
@@ -1009,7 +1191,9 @@
     "club": "Perth Glory FC",
     "age": 32,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/171721-1722512977.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/171721-1722512977.png?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 7
   },
   {
     "transfermarktId": 652487,
@@ -1020,7 +1204,9 @@
     "club": "Adelaide United FC",
     "age": 23,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652487-1768228182.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652487-1768228182.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 1109953,
@@ -1031,7 +1217,9 @@
     "club": "Real Salt Lake",
     "age": 21,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109953-1771718693.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109953-1771718693.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 534304,
@@ -1042,7 +1230,9 @@
     "club": "Aalborg BK",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/534304-1657097380.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/534304-1657097380.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 692440,
@@ -1053,7 +1243,9 @@
     "club": "Sydney FC",
     "age": 25,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692440-1646998902.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692440-1646998902.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 407697,
@@ -1064,7 +1256,9 @@
     "club": "Wisła Płock Spółka Akcyjna",
     "age": 28,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/407697-1619465208.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/407697-1619465208.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 265093,
@@ -1075,7 +1269,9 @@
     "club": "Melbourne Victory FC",
     "age": 27,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265093-1625838890.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265093-1625838890.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 72651,
@@ -1086,7 +1282,9 @@
     "club": "Melbourne Victory FC",
     "age": 38,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/72651-1703766993.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/72651-1703766993.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1109827,
@@ -1097,6 +1295,8 @@
     "club": "Newcastle United Jets FC",
     "age": 22,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109827-1768226991.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109827-1768226991.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   }
 ]

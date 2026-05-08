@@ -8,7 +8,9 @@
     "club": "Crystal Palace FC",
     "age": 29,
     "marketValueEur": 28000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258919-1716297478.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258919-1716297478.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 566799,
@@ -19,7 +21,9 @@
     "club": "Manchester City FC",
     "age": 23,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/566799-1689876147.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/566799-1689876147.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 130164,
@@ -30,7 +34,9 @@
     "club": "Everton FC",
     "age": 32,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/130164-1668499964.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/130164-1668499964.jpg?lm=1",
+    "internationalCaps": 82,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 427568,
@@ -41,7 +47,9 @@
     "club": "Newcastle United FC",
     "age": 27,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/427568-1681828000.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/427568-1681828000.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 192080,
@@ -52,7 +60,9 @@
     "club": "Newcastle United FC",
     "age": 34,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192080-1663841362.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192080-1663841362.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 646353,
@@ -63,7 +73,9 @@
     "club": "Brighton and Hove Albion FC",
     "age": 24,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/646353-1664348532.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/646353-1664348532.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 226049,
@@ -74,7 +86,9 @@
     "club": "Liverpool FC",
     "age": 29,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226049-1737883837.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226049-1737883837.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 110864,
@@ -85,7 +99,9 @@
     "club": "Wolverhampton Wanderers FC",
     "age": 33,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/110864-1672915792.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/110864-1672915792.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 503769,
@@ -96,7 +112,9 @@
     "club": "Arsenal FC",
     "age": 24,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503769-1673651811.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503769-1673651811.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 670840,
@@ -107,7 +125,9 @@
     "club": "Crystal Palace FC",
     "age": 22,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670840-1669114466.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670840-1669114466.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 314353,
@@ -118,7 +138,9 @@
     "club": "Real Madrid Club de Fútbol",
     "age": 27,
     "marketValueEur": 65000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314353-1701680958.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314353-1701680958.jpg?lm=1",
+    "internationalCaps": 34,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 392757,
@@ -129,7 +151,9 @@
     "club": "Manchester City FC",
     "age": 25,
     "marketValueEur": 65000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392757-1683030598.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392757-1683030598.jpg?lm=1",
+    "internationalCaps": 26,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 472423,
@@ -140,7 +164,9 @@
     "club": "Chelsea FC",
     "age": 26,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/472423-1683900849.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/472423-1683900849.jpg?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 614258,
@@ -151,7 +177,9 @@
     "club": "Chelsea FC",
     "age": 23,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/614258-1694614507.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/614258-1694614507.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 743413,
@@ -162,7 +190,9 @@
     "club": "Manchester City FC",
     "age": 21,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743413-1751367149.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743413-1751367149.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 632349,
@@ -173,7 +203,9 @@
     "club": "Bayer 04 Leverkusen",
     "age": 23,
     "marketValueEur": 45000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/632349-1758704191.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/632349-1758704191.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 661053,
@@ -184,7 +216,9 @@
     "club": "Everton FC",
     "age": 23,
     "marketValueEur": 45000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661053-1687975679.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661053-1687975679.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 413403,
@@ -195,7 +229,9 @@
     "club": "Aston Villa FC",
     "age": 28,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413403-1700651779.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413403-1700651779.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 503981,
@@ -206,7 +242,9 @@
     "club": "Newcastle United FC",
     "age": 23,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503981-1699383321.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503981-1699383321.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 346314,
@@ -217,7 +255,9 @@
     "club": "Chelsea FC",
     "age": 26,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346314-1773301391.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346314-1773301391.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 670858,
@@ -228,7 +268,9 @@
     "club": "Newcastle United FC",
     "age": 21,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670858-1699385942.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670858-1699385942.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 890721,
@@ -239,7 +281,9 @@
     "club": "Arsenal FC",
     "age": 19,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/890721-1758053582.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/890721-1758053582.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 701057,
@@ -250,7 +294,9 @@
     "club": "Manchester City FC",
     "age": 21,
     "marketValueEur": 32000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/701057-1684856684.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/701057-1684856684.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 335721,
@@ -261,7 +307,9 @@
     "club": "Arsenal FC",
     "age": 28,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335721-1683275943.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335721-1683275943.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 483348,
@@ -272,7 +320,9 @@
     "club": "Tottenham Hotspur FC",
     "age": 25,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/483348-1746645656.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/483348-1746645656.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 597659,
@@ -283,7 +333,9 @@
     "club": "Toulouse FC",
     "age": 23,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/597659-1641461698.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/597659-1641461698.jpg?lm=1",
+    "internationalCaps": 26,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 1004708,
@@ -294,7 +346,9 @@
     "club": "Chelsea FC",
     "age": 19,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1004708-1715156243.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1004708-1715156243.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 730893,
@@ -305,7 +359,9 @@
     "club": "Crystal Palace FC",
     "age": 26,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/730893-1693826944.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/730893-1693826944.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 392775,
@@ -316,7 +372,9 @@
     "club": "Fulham FC",
     "age": 25,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392775-1722077271.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392775-1722077271.jpg?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 480116,
@@ -327,7 +385,9 @@
     "club": "Juventus FC",
     "age": 27,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/480116-1739281396.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/480116-1739281396.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 303254,
@@ -338,7 +398,9 @@
     "club": "AC Milan",
     "age": 28,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303254-1684856117.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303254-1684856117.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1078163,
@@ -349,7 +411,9 @@
     "club": "Manchester United FC",
     "age": 19,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1078163-1727382016.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1078163-1727382016.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 503977,
@@ -360,7 +424,9 @@
     "club": "Southampton FC",
     "age": 24,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503977-1687975943.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503977-1687975943.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 596446,
@@ -371,7 +437,9 @@
     "club": "Ipswich Town",
     "age": 26,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/596446-1738823882.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/596446-1738823882.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 258878,
@@ -382,7 +450,9 @@
     "club": "Chelsea FC",
     "age": 28,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258878-1646903871.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258878-1646903871.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 728733,
@@ -393,7 +463,9 @@
     "club": "Genoa Cricket and FC",
     "age": 22,
     "marketValueEur": 16000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728733-1736498622.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728733-1736498622.jpg?lm=1",
+    "internationalCaps": 14,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 525247,
@@ -404,7 +476,9 @@
     "club": "West Ham United FC",
     "age": 28,
     "marketValueEur": 16000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/525247-1688370291.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/525247-1688370291.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 693095,
@@ -415,7 +489,9 @@
     "club": "Ipswich Town",
     "age": 25,
     "marketValueEur": 16000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/693095-1727786112.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/693095-1727786112.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 186590,
@@ -426,7 +502,9 @@
     "club": "Manchester City FC",
     "age": 31,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/186590-1684764261.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/186590-1684764261.jpg?lm=1",
+    "internationalCaps": 87,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 256178,
@@ -437,7 +515,9 @@
     "club": "Liverpool FC",
     "age": 28,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256178-1746645094.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256178-1746645094.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 581678,
@@ -448,7 +528,9 @@
     "club": "Real Madrid Club de Fútbol",
     "age": 22,
     "marketValueEur": 140000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/581678-1748102891.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/581678-1748102891.jpg?lm=1",
+    "internationalCaps": 46,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 357662,
@@ -459,7 +541,9 @@
     "club": "Arsenal FC",
     "age": 27,
     "marketValueEur": 120000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/357662-1687962936.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/357662-1687962936.jpg?lm=1",
+    "internationalCaps": 72,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 568177,
@@ -470,7 +554,9 @@
     "club": "Chelsea FC",
     "age": 23,
     "marketValueEur": 110000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/568177-1712320986.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/568177-1712320986.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 406635,
@@ -481,7 +567,9 @@
     "club": "Manchester City FC",
     "age": 25,
     "marketValueEur": 80000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/406635-1668524492.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/406635-1668524492.jpg?lm=1",
+    "internationalCaps": 47,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 503743,
@@ -492,7 +580,9 @@
     "club": "Aston Villa FC",
     "age": 23,
     "marketValueEur": 80000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503743-1706786450.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503743-1706786450.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 479999,
@@ -503,7 +593,9 @@
     "club": "Arsenal FC",
     "age": 27,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/479999-1761083931.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/479999-1761083931.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 429014,
@@ -514,7 +606,9 @@
     "club": "Nottingham Forest FC",
     "age": 26,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429014-1687975822.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429014-1687975822.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 567576,
@@ -525,7 +619,9 @@
     "club": "Nottingham Forest FC",
     "age": 23,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/567576-1696453772.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/567576-1696453772.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 744149,
@@ -536,7 +632,9 @@
     "club": "Crystal Palace FC",
     "age": 22,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/744149-1716297290.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/744149-1716297290.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 820374,
@@ -547,7 +645,9 @@
     "club": "Manchester United FC",
     "age": 21,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/820374-1719349758.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/820374-1719349758.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 890719,
@@ -558,7 +658,9 @@
     "club": "Olympique de Marseille",
     "age": 19,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/890719-1730794927.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/890719-1730794927.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 855256,
@@ -569,7 +671,9 @@
     "club": "AFC Bournemouth",
     "age": 22,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/855256-1656922605.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/855256-1656922605.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 488362,
@@ -580,7 +684,9 @@
     "club": "Tottenham Hotspur FC",
     "age": 26,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/488362-1668500476.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/488362-1668500476.jpg?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 503749,
@@ -591,7 +697,9 @@
     "club": "Newcastle United FC",
     "age": 24,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503749-1687975464.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503749-1687975464.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 922693,
@@ -602,7 +710,9 @@
     "club": "Tottenham Hotspur FC",
     "age": 20,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/922693-1695108880.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/922693-1695108880.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 433188,
@@ -613,7 +723,9 @@
     "club": "Liverpool FC",
     "age": 25,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/433188-1701681163.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/433188-1701681163.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 505219,
@@ -624,7 +736,9 @@
     "club": "Everton FC",
     "age": 25,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/505219-1662067244.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/505219-1662067244.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 475188,
@@ -635,7 +749,9 @@
     "club": "Everton FC",
     "age": 27,
     "marketValueEur": 32000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/475188-1774470020.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/475188-1774470020.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 346483,
@@ -646,7 +762,9 @@
     "club": "Manchester United FC",
     "age": 27,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346483-1683291495.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/346483-1683291495.jpg?lm=1",
+    "internationalCaps": 36,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 741238,
@@ -657,7 +775,9 @@
     "club": "Nottingham Forest FC",
     "age": 22,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/741238-1770845529.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/741238-1770845529.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 796297,
@@ -668,7 +788,9 @@
     "club": "Borussia Dortmund",
     "age": 20,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/796297-1766483351.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/796297-1766483351.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 618494,
@@ -679,7 +801,9 @@
     "club": "Olympique Lyonnais",
     "age": 23,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/618494-1719220555.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/618494-1719220555.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 947411,
@@ -690,7 +814,9 @@
     "club": "Sunderland AFC",
     "age": 18,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/947411-1707494096.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/947411-1707494096.png?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 294057,
@@ -701,7 +827,9 @@
     "club": "Tottenham Hotspur FC",
     "age": 29,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/294057-1687982662.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/294057-1687982662.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 922769,
@@ -712,7 +840,9 @@
     "club": "Newcastle United FC",
     "age": 20,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/922769-1696453881.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/922769-1696453881.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 644401,
@@ -723,7 +853,9 @@
     "club": "Brentford FC",
     "age": 25,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/644401-1767003558.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/644401-1767003558.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 399434,
@@ -734,7 +866,9 @@
     "club": "AFC Bournemouth",
     "age": 27,
     "marketValueEur": 23000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399434-1700650360.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/399434-1700650360.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 565822,
@@ -745,7 +879,9 @@
     "club": "Aston Villa FC",
     "age": 23,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565822-1665128076.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/565822-1665128076.jpg?lm=1",
+    "internationalCaps": 28,
+    "internationalGoals": 14
   },
   {
     "transfermarktId": 867688,
@@ -756,7 +892,9 @@
     "club": "Brighton and Hove Albion FC",
     "age": 21,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867688-1698353957.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/867688-1698353957.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 392765,
@@ -767,7 +905,9 @@
     "club": "Fulham FC",
     "age": 25,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392765-1684164628.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392765-1684164628.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 583199,
@@ -778,7 +918,9 @@
     "club": "Nottingham Forest FC",
     "age": 23,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583199-1770845444.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583199-1770845444.jpg?lm=1",
+    "internationalCaps": 24,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 1011131,
@@ -789,7 +931,9 @@
     "club": "Fulham FC",
     "age": 19,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1011131-1752773470.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1011131-1752773470.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 340329,
@@ -800,7 +944,9 @@
     "club": "Newcastle United FC",
     "age": 26,
     "marketValueEur": 16000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340329-1761077592.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340329-1761077592.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 433177,
@@ -811,7 +957,9 @@
     "club": "Arsenal FC",
     "age": 24,
     "marketValueEur": 120000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/433177-1684155052.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/433177-1684155052.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 14
   },
   {
     "transfermarktId": 132098,
@@ -822,7 +970,9 @@
     "club": "FC Bayern München",
     "age": 32,
     "marketValueEur": 65000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/132098-1700211169.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/132098-1700211169.jpg?lm=1",
+    "internationalCaps": 112,
+    "internationalGoals": 78
   },
   {
     "transfermarktId": 503733,
@@ -833,7 +983,9 @@
     "club": "Newcastle United FC",
     "age": 25,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503733-1761080304.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503733-1761080304.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 532826,
@@ -844,7 +996,9 @@
     "club": "Olympique de Marseille",
     "age": 24,
     "marketValueEur": 55000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/532826-1693987766.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/532826-1693987766.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 503987,
@@ -855,7 +1009,9 @@
     "club": "Arsenal FC",
     "age": 24,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503987-1683102348.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503987-1683102348.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 258923,
@@ -866,7 +1022,9 @@
     "club": "Futbol Club Barcelona",
     "age": 28,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258923-1674473054.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258923-1674473054.jpg?lm=1",
+    "internationalCaps": 69,
+    "internationalGoals": 18
   },
   {
     "transfermarktId": 314875,
@@ -877,7 +1035,9 @@
     "club": "West Ham United FC",
     "age": 29,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314875-1662362005.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314875-1662362005.jpg?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 670882,
@@ -888,7 +1048,9 @@
     "club": "Chelsea FC",
     "age": 21,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670882-1736780080.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670882-1736780080.jpg?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 258889,
@@ -899,7 +1061,9 @@
     "club": "Tottenham Hotspur FC",
     "age": 28,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258889-1708340487.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258889-1708340487.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 610849,
@@ -910,7 +1074,9 @@
     "club": "Chelsea FC",
     "age": 23,
     "marketValueEur": 32000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/610849-1746646306.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/610849-1746646306.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 398065,
@@ -921,7 +1087,9 @@
     "club": "Newcastle United FC",
     "age": 28,
     "marketValueEur": 32000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/398065-1761079974.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/398065-1761079974.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 324358,
@@ -932,7 +1100,9 @@
     "club": "Aston Villa FC",
     "age": 30,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/324358-1708341279.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/324358-1708341279.jpg?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 392768,
@@ -943,7 +1113,9 @@
     "club": "Nottingham Forest FC",
     "age": 25,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392768-1659969850.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/392768-1659969850.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 203460,
@@ -954,7 +1126,9 @@
     "club": "Everton FC",
     "age": 30,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203460-1676499047.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203460-1676499047.jpg?lm=1",
+    "internationalCaps": 39,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 306024,
@@ -965,7 +1139,9 @@
     "club": "Leeds United",
     "age": 29,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/306024-1685705768.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/306024-1685705768.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 866655,
@@ -976,7 +1152,9 @@
     "club": "Everton FC",
     "age": 20,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/866655-1724485194.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/866655-1724485194.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 936874,
@@ -987,7 +1165,9 @@
     "club": "Everton FC",
     "age": 20,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/936874-1731016609.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/936874-1731016609.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 401173,
@@ -998,7 +1178,9 @@
     "club": "Aston Villa FC",
     "age": 26,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/401173-1688564217.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/401173-1688564217.jpg?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 331726,
@@ -1009,7 +1191,9 @@
     "club": "Aston Villa FC",
     "age": 28,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331726-1761563884.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331726-1761563884.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 584769,
@@ -1020,7 +1204,9 @@
     "club": "Everton FC",
     "age": 26,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/584769-1700651579.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/584769-1700651579.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 672381,
@@ -1031,7 +1217,9 @@
     "club": "Bologna FC 1909",
     "age": 23,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672381-1750074903.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672381-1750074903.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 1108466,
@@ -1042,7 +1230,9 @@
     "club": "Liverpool FC",
     "age": 17,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1108466-1730834754.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1108466-1730834754.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1187629,
@@ -1053,7 +1243,9 @@
     "club": "Arsenal FC",
     "age": 16,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1187629-1773914587.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1187629-1773914587.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 251664,
@@ -1064,7 +1256,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 30,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251664-1677676808.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251664-1677676808.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 665390,
@@ -1075,7 +1269,9 @@
     "club": "Aston Villa FC",
     "age": 24,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/665390-1737014900.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/665390-1737014900.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 696346,
@@ -1086,7 +1282,9 @@
     "club": "Fulham FC",
     "age": 23,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/696346-1669625394.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/696346-1669625394.png?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 684210,
@@ -1097,6 +1295,8 @@
     "club": "Burnley FC",
     "age": 26,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684210-1637578473.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684210-1637578473.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   }
 ]

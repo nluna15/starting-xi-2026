@@ -233,6 +233,12 @@ body {
 
 .sp-soccer-pitch .sp-bench-title {
   color: rgba(0, 0, 0, 1);
+  font-size: 0;
+}
+
+.sp-soccer-pitch .sp-bench-title::before {
+  content: "Impact substitutes";
+  font-size: 11px;
 }
 
 @media (max-width: 410px) {
@@ -249,4 +255,12 @@ body {
   .sp-soccer-pitch .sp-bench-row {
     height: 48px !important;
   }
+}
+
+/* Scoped override for the /community recent-submission feed only. */
+.recent-submission-pitch .sp-soccer-pitch {
+  --sp-dot-min: 40px !important;
+  --sp-dot-preferred: 15% !important;
+  --sp-dot-max: 56px !important;
+  --sp-flag-fs: 10px !important;
 }

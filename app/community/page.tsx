@@ -5,13 +5,15 @@ import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
 import { CommunityPitch } from "@/components/community-pitch";
 import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
+import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
 import { HorizontalBarChart, type BarRow } from "@/components/horizontal-bar-chart";
 import { db } from "@/lib/db/client";
-import { players, submissions, teams, type Player } from "@/lib/db/schema";
+import { formations, players, submissions, teams, type Player } from "@/lib/db/schema";
 import {
   getCountrySquadStats,
   getGlobalCrowdStats,
   getPickRatesForTeam,
+  getRecentSubmissions,
   getRosterStatusByCode,
 } from "@/lib/db/queries";
 import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
@@ -32,6 +34,15 @@ async function loadSubmittedContext(slug: string) {
   )[0];
   if (!teamRow) return null;
 
+  const formationRow = (
+    await db
+      .select()
+      .from(formations)
+      .where(sql`${formations.id} = ${submissionRow.formationId}`)
+      .limit(1)
+  )[0];
+  if (!formationRow) return null;
+
   const allIds = [...submissionRow.starters, ...submissionRow.bench];
   const playerRows = allIds.length
     ? await db.select().from(players).where(inArray(players.id, allIds))
@@ -50,6 +61,7 @@ async function loadSubmittedContext(slug: string) {
   return {
     team: { name: teamRow.name, flagEmoji: teamRow.flagEmoji },
     teamCode: teamRow.code,
+    formation: { name: formationRow.name, slots: formationRow.slots },
     starters,
     bench,
     pickRates,
@@ -65,10 +77,11 @@ export default async function CommunityPage({
   const submittedSlug = Array.isArray(submitted) ? submitted[0] : submitted;
   const submittedContext = submittedSlug ? await loadSubmittedContext(submittedSlug) : null;
 
-  const [stats, countryStats, statusByCode] = await Promise.all([
+  const [stats, countryStats, statusByCode, recentSubmissions] = await Promise.all([
     getGlobalCrowdStats(),
     getCountrySquadStats(),
     getRosterStatusByCode(),
+    getRecentSubmissions(12),
   ]);
 
   const readyCodes = WC_2026_SLOTS.flatMap((s) =>
@@ -96,6 +109,17 @@ export default async function CommunityPage({
     }));
   const mostExpensiveRows = valueRowsAll.slice(0, 5);
   const cheapestRows = valueRowsAll.slice(-3).reverse();
+
+  const capsRowsAll: BarRow[] = [...countryStats]
+    .sort((a, b) => b.avgInternationalCaps - a.avgInternationalCaps)
+    .map((c) => ({
+      key: c.code,
+      label: c.code,
+      flagEmoji: c.flagEmoji,
+      value: c.avgInternationalCaps,
+    }));
+  const mostCapsRows = capsRowsAll.slice(0, 4);
+  const leastCapsRows = capsRowsAll.slice(-4).reverse();
 
   if (stats.totalSubmissions === 0) {
     return (
@@ -235,49 +259,16 @@ export default async function CommunityPage({
             <HorizontalBarChart rows={cheapestRows} formatValue={formatEurCompact} />
           </div>
         </StatCard>
-        <StatCard title="Most important substitute">
-          <ol className="space-y-2.5">
-            {stats.topBench.length === 0 && (
-              <li className="text-[13px] text-ink-3">No data yet.</li>
-            )}
-            {stats.topBench.map((b) => (
-              <li key={b.player.id} className="flex items-center gap-2.5">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-[10px] font-semibold text-ink-3">
-                  {b.player.photoUrl ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={b.player.photoUrl}
-                      alt={b.player.fullName}
-                      className="h-full w-full object-cover"
-                      loading="lazy"
-                    />
-                  ) : (
-                    b.player.fullName
-                      .split(/\s+/)
-                      .filter(Boolean)
-                      .slice(0, 2)
-                      .map((w) => w[0])
-                      .join("")
-                      .toUpperCase()
-                  )}
-                </div>
-                <div className="min-w-0 flex-1">
-                  <div className="truncate text-[13px] font-semibold leading-tight text-ink">
-                    {initialAndLast(b.player.fullName)}
-                  </div>
-                  <div className="mono text-[11px] tracking-[0.08em] text-ink-3">
-                    {b.player.detailedPosition}
-                    {b.teamCode && <span className="ml-1.5 text-ink-faint">{b.teamCode}</span>}
-                  </div>
-                </div>
-                <span className="mono text-[12px] text-ink-2">
-                  {Math.round(b.rate * 100)}%
-                </span>
-              </li>
-            ))}
-          </ol>
+        <StatCard title="Int'l Caps per Player">
+          <div className="flex flex-col gap-3">
+            <Subhead>Most Int&rsquo;l caps</Subhead>
+            <HorizontalBarChart rows={mostCapsRows} formatValue={(v) => v.toFixed(0)} />
+            <Subhead className="mt-2">Least Int&rsquo;l caps</Subhead>
+            <HorizontalBarChart rows={leastCapsRows} formatValue={(v) => v.toFixed(0)} />
+          </div>
         </StatCard>
       </div>
+      <RecentSubmissionsFeed submissions={recentSubmissions} />
       {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>
   );
@@ -287,14 +278,6 @@ function formatEurCompact(eur: number): string {
   if (eur >= 1_000_000) return `€${(eur / 1_000_000).toFixed(1)}M`;
   if (eur >= 1_000) return `€${(eur / 1_000).toFixed(0)}K`;
   return `€${Math.round(eur)}`;
-}
-
-function initialAndLast(fullName: string): string {
-  const parts = fullName.trim().split(/\s+/).filter(Boolean);
-  if (parts.length <= 1) return fullName;
-  const first = parts[0];
-  const last = parts[parts.length - 1];
-  return `${first[0]}. ${last}`;
 }
 
 /* -----------------------------------------------------------------------------

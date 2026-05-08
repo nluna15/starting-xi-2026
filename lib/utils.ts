@@ -49,3 +49,35 @@ export function formatAge(value: number | null | undefined): string {
   if (value == null || Number.isNaN(value)) return "—";
   return value.toFixed(1);
 }
+
+const TRANSFERMARKT_PHOTO_PREFIX = "https://img.a.transfermarkt.technology/";
+
+/**
+ * Rewrites upstream player photo URLs to a same-origin proxy so canvas-based
+ * exporters (html-to-image) can read the bytes without tainting the canvas.
+ * Non-matching URLs pass through unchanged.
+ */
+export function proxyPhotoUrl(url: string | null | undefined): string | undefined {
+  if (!url) return undefined;
+  if (url.startsWith(TRANSFERMARKT_PHOTO_PREFIX)) {
+    return `/api/player-photo/${url.slice(TRANSFERMARKT_PHOTO_PREFIX.length)}`;
+  }
+  return url;
+}
+
+export function formatTimeAgo(date: Date | string): string {
+  const t = typeof date === "string" ? new Date(date) : date;
+  const sec = Math.max(1, Math.round((Date.now() - t.getTime()) / 1000));
+  if (sec < 60) return `${sec}S AGO`;
+  const min = Math.round(sec / 60);
+  if (min < 60) return `${min}M AGO`;
+  const hr = Math.round(min / 60);
+  if (hr < 24) return `${hr}H AGO`;
+  const d = Math.round(hr / 24);
+  if (d < 7) return `${d}D AGO`;
+  const w = Math.round(d / 7);
+  if (w < 5) return `${w}W AGO`;
+  const mo = Math.round(d / 30);
+  if (mo < 12) return `${mo}MO AGO`;
+  return `${Math.round(d / 365)}Y AGO`;
+}

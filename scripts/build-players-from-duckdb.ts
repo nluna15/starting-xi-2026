@@ -102,6 +102,8 @@ type ExportedPlayer = {
   age: number;
   marketValueEur: number;
   photoUrl: string | null;
+  internationalCaps: number | null;
+  internationalGoals: number | null;
 };
 
 function ageFromDob(dob: Date, today = new Date()): number {
@@ -155,7 +157,8 @@ async function exportTeam(
       market_value_in_eur,
       date_of_birth,
       image_url,
-      international_caps
+      international_caps,
+      international_goals
     FROM deduped
     WHERE position IS NOT NULL
       AND date_of_birth IS NOT NULL
@@ -205,6 +208,8 @@ async function exportTeam(
       age: ageFromDob(dob, today),
       marketValueEur: r.market_value_in_eur as number,
       photoUrl: (r.image_url as string | null) ?? null,
+      internationalCaps: r.international_caps != null ? Number(r.international_caps) : null,
+      internationalGoals: r.international_goals != null ? Number(r.international_goals) : null,
     });
   }
 

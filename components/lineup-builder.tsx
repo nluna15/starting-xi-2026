@@ -271,7 +271,7 @@ export function LineupBuilder({
               <span className="mono tracking-[0.04em]">
                 {benchFilled} / {BENCH_SIZE}
               </span>
-              <span>Substitutes</span>
+              <span>Impact substitutes</span>
             </Chip>
           </div>
 

@@ -8,7 +8,9 @@
     "club": "Sporting Clube de Braga",
     "age": 23,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629773-1732826321.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629773-1732826321.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 725912,
@@ -19,7 +21,9 @@
     "club": "Tottenham Hotspur FC",
     "age": 23,
     "marketValueEur": 13000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/725912-1766160431.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/725912-1766160431.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 550829,
@@ -30,7 +34,9 @@
     "club": "PSV Eindhoven",
     "age": 25,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/550829-1765213743.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/550829-1765213743.jpg?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 486604,
@@ -41,7 +47,9 @@
     "club": "AFC Ajax Amsterdam",
     "age": 24,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486604-1696603392.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486604-1696603392.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 935447,
@@ -52,7 +60,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 21,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/935447-1701891786.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/935447-1701891786.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 242089,
@@ -63,7 +73,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 30,
     "marketValueEur": 2800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242089-1716965449.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242089-1716965449.jpg?lm=1",
+    "internationalCaps": 14,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 486605,
@@ -74,7 +86,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 24,
     "marketValueEur": 2800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486605-1605982386.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486605-1605982386.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 293357,
@@ -85,7 +99,9 @@
     "club": "FC Baník Ostrava a.s",
     "age": 28,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293357-1581666944.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293357-1581666944.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 339079,
@@ -96,7 +112,9 @@
     "club": "Getafe Club de Fútbol S. A. D. Team Dubai",
     "age": 27,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339079-1714922207.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339079-1714922207.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 517126,
@@ -107,7 +125,9 @@
     "club": "FC Hradec Králové a.s",
     "age": 25,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 345911,
@@ -118,7 +138,9 @@
     "club": "Wolverhampton Wanderers FC",
     "age": 27,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345911-1716965804.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345911-1716965804.jpg?lm=1",
+    "internationalCaps": 24,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 620217,
@@ -129,7 +151,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 26,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620217-1713471898.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620217-1713471898.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 652054,
@@ -140,7 +164,9 @@
     "club": "Bologna FC 1909",
     "age": 23,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652054-1716965526.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652054-1716965526.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 944827,
@@ -151,7 +177,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 23,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/944827-1769071543.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/944827-1769071543.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 544149,
@@ -162,7 +190,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 25,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/544149-1663596313.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/544149-1663596313.jpg?lm=1",
+    "internationalCaps": 24,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 500054,
@@ -173,7 +203,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 25,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500054-1701333965.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500054-1701333965.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 929887,
@@ -184,7 +216,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 21,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 534568,
@@ -195,7 +229,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 25,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/534568-1697831971.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/534568-1697831971.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 839551,
@@ -206,7 +242,9 @@
     "club": "FC Baník Ostrava a.s",
     "age": 22,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/839551-1670007174.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/839551-1670007174.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1109671,
@@ -217,7 +255,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 22,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109671-1702193838.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109671-1702193838.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 931426,
@@ -228,7 +268,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 20,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931426-1713472140.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931426-1713472140.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 157672,
@@ -239,7 +281,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 33,
     "marketValueEur": 2700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/157672-1755091456.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/157672-1755091456.jpg?lm=1",
+    "internationalCaps": 60,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 765094,
@@ -250,7 +294,9 @@
     "club": "FK Pardubice",
     "age": 19,
     "marketValueEur": 2200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/765094-1761934379.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/765094-1761934379.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 384879,
@@ -261,7 +307,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 30,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/384879-1727419664.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/384879-1727419664.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 816875,
@@ -272,7 +320,9 @@
     "club": "FK Teplice, a.s",
     "age": 22,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/816875-1770410839.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/816875-1770410839.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 343558,
@@ -283,7 +333,9 @@
     "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
     "age": 27,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/343558-1701972525.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/343558-1701972525.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 331963,
@@ -294,7 +346,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 30,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331963-1623329582.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331963-1623329582.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 216278,
@@ -305,7 +359,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 33,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/216278-1697831325.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/216278-1697831325.png?lm=1",
+    "internationalCaps": 38,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 728635,
@@ -316,7 +372,9 @@
     "club": "MFK Karvina",
     "age": 23,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728635-1706252244.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728635-1706252244.png?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 652050,
@@ -327,7 +385,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 22,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652050-1701892567.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652050-1701892567.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 633447,
@@ -338,7 +398,9 @@
     "club": "FK Jablonec a.s",
     "age": 24,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/633447-1760492067.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/633447-1760492067.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 671518,
@@ -349,7 +411,9 @@
     "club": "MFK Karvina",
     "age": 21,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671518-1670006876.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671518-1670006876.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 293360,
@@ -360,7 +424,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 28,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293360-1699718998.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/293360-1699718998.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 724169,
@@ -371,7 +437,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 23,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724169-1701971491.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724169-1701971491.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 889437,
@@ -382,7 +450,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 22,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 430054,
@@ -393,7 +463,9 @@
     "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
     "age": 29,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/430054-1718375936.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/430054-1718375936.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 728626,
@@ -404,7 +476,9 @@
     "club": "FK Teplice, a.s",
     "age": 23,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728626-1770410758.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728626-1770410758.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 358132,
@@ -415,7 +489,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 27,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358132-1695061840.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/358132-1695061840.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 665538,
@@ -426,7 +502,9 @@
     "club": "Fodbold Club Midtjylland",
     "age": 24,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/665538-1727290765.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/665538-1727290765.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 486608,
@@ -437,7 +515,9 @@
     "club": "FC Slovan Liberec",
     "age": 24,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486608-1764433365.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486608-1764433365.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 500053,
@@ -448,7 +528,9 @@
     "club": "Olympique Lyonnais",
     "age": 25,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500053-1718742395.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/500053-1718742395.jpg?lm=1",
+    "internationalCaps": 19,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 283628,
@@ -459,7 +541,9 @@
     "club": "West Ham United FC",
     "age": 31,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/283628-1704184173.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/283628-1704184173.jpg?lm=1",
+    "internationalCaps": 88,
+    "internationalGoals": 17
   },
   {
     "transfermarktId": 292779,
@@ -470,7 +554,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 29,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/292779-1697832390.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/292779-1697832390.png?lm=1",
+    "internationalCaps": 35,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 321204,
@@ -481,7 +567,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 26,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/321204-1658219516.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/321204-1658219516.jpg?lm=1",
+    "internationalCaps": 31,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 652061,
@@ -492,7 +580,9 @@
     "club": "Olympique Lyonnais",
     "age": 22,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652061-1728398646.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652061-1728398646.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 655300,
@@ -503,7 +593,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 22,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/655300-1731173237.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/655300-1731173237.png?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 611049,
@@ -514,7 +606,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 25,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/611049-1659447996.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/611049-1659447996.jpg?lm=1",
+    "internationalCaps": 14,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 272261,
@@ -525,7 +619,9 @@
     "club": "AC Fiorentina",
     "age": 31,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/272261-1727699332.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/272261-1727699332.jpg?lm=1",
+    "internationalCaps": 44,
+    "internationalGoals": 11
   },
   {
     "transfermarktId": 539197,
@@ -536,7 +632,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 24,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/539197-1707828378.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/539197-1707828378.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 493758,
@@ -547,7 +645,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 27,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/493758-1697831504.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/493758-1697831504.png?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 724025,
@@ -558,7 +658,9 @@
     "club": "Alkmaar Zaanstreek",
     "age": 21,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724025-1714922170.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724025-1714922170.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 563033,
@@ -569,7 +671,9 @@
     "club": "FC Cincinnati",
     "age": 28,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/563033-1741200505.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/563033-1741200505.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 321195,
@@ -580,7 +684,9 @@
     "club": "Houston Dynamo",
     "age": 27,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/321195-1771689125.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/321195-1771689125.jpg?lm=1",
+    "internationalCaps": 25,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 339070,
@@ -591,7 +697,9 @@
     "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
     "age": 26,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339070-1700724782.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339070-1700724782.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 671548,
@@ -602,7 +710,9 @@
     "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
     "age": 21,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671548-1689865542.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671548-1689865542.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 337333,
@@ -613,7 +723,9 @@
     "club": "1. Fußballclub Union Berlin",
     "age": 27,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/337333-1691614545.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/337333-1691614545.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 931428,
@@ -624,7 +736,9 @@
     "club": "FC Baník Ostrava a.s",
     "age": 20,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931428-1697911653.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931428-1697911653.png?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 664456,
@@ -635,7 +749,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 25,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/664456-1762007820.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/664456-1762007820.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 928038,
@@ -646,7 +762,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 21,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928038-1727291916.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928038-1727291916.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 652047,
@@ -657,7 +775,9 @@
     "club": "Linzer Athletik-Sport-Klub",
     "age": 23,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652047-1756904824.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652047-1756904824.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1066142,
@@ -668,7 +788,9 @@
     "club": "Berner Sport Club Young Boys",
     "age": 19,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1066142-1697910947.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1066142-1697910947.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1013804,
@@ -679,7 +801,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 18,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1013804-1754428041.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1013804-1754428041.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 652060,
@@ -690,7 +814,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 23,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652060-1706253771.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652060-1706253771.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 572240,
@@ -701,7 +827,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 26,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/572240-1703023216.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/572240-1703023216.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 728609,
@@ -712,7 +840,9 @@
     "club": "FC Slovan Liberec",
     "age": 23,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728609-1701237462.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/728609-1701237462.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 464273,
@@ -723,7 +853,9 @@
     "club": "FC Baník Ostrava a.s",
     "age": 27,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464273-1755304106.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464273-1755304106.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 242084,
@@ -734,7 +866,9 @@
     "club": "Klub Sportowy Górnik Zabrze Sportowa Spółka Akcyjna",
     "age": 29,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242084-1726745688.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242084-1726745688.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 143798,
@@ -745,7 +879,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 34,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/143798-1657200722.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/143798-1657200722.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 671542,
@@ -756,7 +892,9 @@
     "club": "FC Hradec Králové a.s",
     "age": 22,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671542-1709655781.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671542-1709655781.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 400649,
@@ -767,7 +905,9 @@
     "club": "FC Verbroedering Denderhoutem Denderleeuw Eendracht Hekelgem",
     "age": 28,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400649-1693401752.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400649-1693401752.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 428189,
@@ -778,7 +918,9 @@
     "club": "St. Louis City Soccer Club",
     "age": 26,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/428189-1771788183.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/428189-1771788183.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 826103,
@@ -789,7 +931,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 23,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/826103-1750680908.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/826103-1750680908.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 928023,
@@ -800,7 +944,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 21,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928023-1749879517.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928023-1749879517.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 242086,
@@ -811,7 +957,9 @@
     "club": "Bayer 04 Leverkusen",
     "age": 30,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242086-1727378322.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242086-1727378322.jpg?lm=1",
+    "internationalCaps": 51,
+    "internationalGoals": 25
   },
   {
     "transfermarktId": 552057,
@@ -822,7 +970,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 23,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/552057-1755092070.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/552057-1755092070.jpg?lm=1",
+    "internationalCaps": 41,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 242063,
@@ -833,7 +983,9 @@
     "club": "Beşiktaş Jimnastik Kulübü",
     "age": 28,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242063-1770713580.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242063-1770713580.jpg?lm=1",
+    "internationalCaps": 30,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 396235,
@@ -844,7 +996,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 25,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/396235-1702842518.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/396235-1702842518.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 405855,
@@ -855,7 +1009,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 27,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405855-1697832425.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405855-1697832425.png?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 198614,
@@ -866,7 +1022,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 31,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/198614-1515072144.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/198614-1515072144.jpg?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 836196,
@@ -877,7 +1035,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 22,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/836196-1702842362.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/836196-1702842362.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 334802,
@@ -888,7 +1048,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 29,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/334802-1716966274.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/334802-1716966274.jpg?lm=1",
+    "internationalCaps": 30,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 544148,
@@ -899,7 +1061,9 @@
     "club": "Celtic FC",
     "age": 25,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/544148-1691249040.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/544148-1691249040.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 930998,
@@ -910,7 +1074,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 20,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/930998-1764074513.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/930998-1764074513.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 666268,
@@ -921,7 +1087,9 @@
     "club": "SK Slavia Praha, a.s",
     "age": 23,
     "marketValueEur": 2300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/666268-1739282166.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/666268-1739282166.jpg?lm=1",
+    "internationalCaps": 24,
+    "internationalGoals": 11
   },
   {
     "transfermarktId": 671519,
@@ -932,7 +1100,9 @@
     "club": "FC Slovan Liberec",
     "age": 21,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671519-1702842484.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671519-1702842484.png?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 1122556,
@@ -943,7 +1113,9 @@
     "club": "FK Mladá Boleslav, a.s",
     "age": 19,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1122556-1771650261.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1122556-1771650261.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 629777,
@@ -954,7 +1126,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 23,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629777-1764068215.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/629777-1764068215.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 248355,
@@ -965,7 +1139,9 @@
     "club": "FC Baník Ostrava a.s",
     "age": 31,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/248355-1759321029.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/248355-1759321029.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 558473,
@@ -976,7 +1152,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 27,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/558473-1618928994.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/558473-1618928994.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 405856,
@@ -987,7 +1165,9 @@
     "club": "FC Baník Ostrava a.s",
     "age": 26,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405856-1755310969.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405856-1755310969.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 995525,
@@ -998,7 +1178,9 @@
     "club": "MFK Karvina",
     "age": 19,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/995525-1713243185.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/995525-1713243185.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 101500,
@@ -1009,7 +1191,9 @@
     "club": "FC Viktoria Plzeň, a.s",
     "age": 34,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/101500-1520420314.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/101500-1520420314.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 7
   },
   {
     "transfermarktId": 707347,
@@ -1020,7 +1204,9 @@
     "club": "FK Mladá Boleslav, a.s",
     "age": 22,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/707347-1596835050.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/707347-1596835050.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 622254,
@@ -1031,7 +1217,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 23,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/622254-1701971391.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/622254-1701971391.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 464271,
@@ -1042,7 +1230,9 @@
     "club": "FK Pardubice",
     "age": 26,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464271-1761891198.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464271-1761891198.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1013797,
@@ -1053,7 +1243,9 @@
     "club": "AC Sparta Praha, a. s",
     "age": 19,
     "marketValueEur": 650000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 218299,
@@ -1064,7 +1256,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 32,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/218299-1762008314.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/218299-1762008314.png?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 765108,
@@ -1075,7 +1269,9 @@
     "club": "FC Slovan Liberec",
     "age": 20,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/765108-1719428277.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/765108-1719428277.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 318112,
@@ -1086,7 +1282,9 @@
     "club": "SK Sigma Olomouc, a.s",
     "age": 27,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/318112-1701971166.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/318112-1701971166.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 652051,
@@ -1097,6 +1295,8 @@
     "club": "FK Pardubice",
     "age": 23,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652051-1703023646.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/652051-1703023646.png?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 0
   }
 ]

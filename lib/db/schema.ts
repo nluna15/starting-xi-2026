@@ -40,6 +40,8 @@ export const players = pgTable(
     age: integer("age").notNull(),
     marketValueEur: integer("market_value_eur").notNull(),
     photoUrl: text("photo_url"),
+    internationalCaps: integer("international_caps"),
+    internationalGoals: integer("international_goals"),
   },
   (t) => ({
     teamIdx: index("players_team_idx").on(t.teamId),

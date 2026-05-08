@@ -1,7 +1,7 @@
 import { sql, eq, inArray } from "drizzle-orm";
 import { db } from "./client";
 import { formations, players, submissions, teams } from "./schema";
-import type { Formation, Player, Team } from "./schema";
+import type { Formation, FormationSlot, Player, Team } from "./schema";
 import { SLOT_TO_DETAILED } from "@/lib/formations";
 
 const DECAY_HALF_LIFE_DAYS = 10;
@@ -638,6 +638,7 @@ export type CountrySquadStat = {
   submissionCount: number;
   avgAge: number;
   avgMarketValueEur: number;
+  avgInternationalCaps: number;
 };
 
 // Per-country averages computed across all players users have actually picked
@@ -662,7 +663,8 @@ export async function getCountrySquadStats(): Promise<CountrySquadStat[]> {
            count(*)::int as pick_count,
            coalesce(sc.submission_count, 0)::int as submission_count,
            avg(p.age)::float as avg_age,
-           avg(p.market_value_eur)::float as avg_market_value_eur
+           avg(p.market_value_eur)::float as avg_market_value_eur,
+           avg(p.international_caps)::float as avg_international_caps
     from picked pk
     join ${teams} t on t.id = pk.team_id
     join ${players} p on p.id = pk.player_id
@@ -680,6 +682,7 @@ export async function getCountrySquadStats(): Promise<CountrySquadStat[]> {
     submission_count: number;
     avg_age: number;
     avg_market_value_eur: number;
+    avg_international_caps: number | null;
   }>).map((r) => ({
     code: r.code,
     name: r.name,
@@ -688,5 +691,244 @@ export async function getCountrySquadStats(): Promise<CountrySquadStat[]> {
     submissionCount: Number(r.submission_count),
     avgAge: Number(r.avg_age),
     avgMarketValueEur: Number(r.avg_market_value_eur),
+    avgInternationalCaps: Number(r.avg_international_caps ?? 0),
   }));
+}
+
+export type RecentSubmission = {
+  slug: string;
+  createdAt: Date;
+  note: string | null;
+  team: { code: string; name: string; flagEmoji: string };
+  formation: { name: string; slots: FormationSlot[] };
+  starters: Player[];
+  bench: Player[];
+  // Per-team context, used to compute deviations and badges:
+  teamTopFormation: string | null;
+  teamTotalSubmissions: number;
+  teamPickRates: Map<number, number>;
+  teamModeStarterBySlot: (Player | null)[];
+  // Team's most-featured players (starter or bench appearance), ranked by pick
+  // rate desc. Used to surface "conventional missing" candidates when a user
+  // includes a bold pick at a given position.
+  teamPopularPlayers: Player[];
+};
+
+// Returns the latest `limit` submissions joined with everything the recent
+// submissions feed needs to highlight deviations from each country's norm:
+// the team's most-popular formation, total submissions count, per-player pick
+// rates, and the per-slot mode starter for *this submission's* formation.
+//
+// Batched into 4-6 SQL round-trips regardless of `limit` — collect distinct
+// team IDs from the latest rows, then issue one query per metadata kind
+// scoped to that set.
+export async function getRecentSubmissions(limit = 9): Promise<RecentSubmission[]> {
+  const headRows = await db.execute(sql`
+    select s.id, s.public_slug, s.team_id, s.formation_id, s.starters, s.bench,
+           s.note, s.created_at,
+           t.code as team_code, t.name as team_name, t.flag_emoji as team_flag,
+           f.name as formation_name, f.slots as formation_slots
+    from ${submissions} s
+    join ${teams} t on t.id = s.team_id
+    join ${formations} f on f.id = s.formation_id
+    order by s.created_at desc
+    limit ${limit}
+  `);
+
+  type HeadRow = {
+    id: number;
+    public_slug: string;
+    team_id: number;
+    formation_id: number;
+    starters: number[];
+    bench: number[];
+    note: string | null;
+    created_at: string | Date;
+    team_code: string;
+    team_name: string;
+    team_flag: string;
+    formation_name: string;
+    formation_slots: FormationSlot[];
+  };
+  const heads = headRows.rows as HeadRow[];
+  if (heads.length === 0) return [];
+
+  const teamIds = Array.from(new Set(heads.map((h) => Number(h.team_id))));
+  const teamFormationPairs = Array.from(
+    new Set(heads.map((h) => `${Number(h.team_id)}:${Number(h.formation_id)}`)),
+  ).map((s) => {
+    const [t, f] = s.split(":").map(Number);
+    return { teamId: t, formationId: f };
+  });
+
+  // 1. Per-team top formation (highest count). Tie-break by formation name asc
+  //    for deterministic results.
+  const topFormationRows = await db.execute(sql`
+    with counts as (
+      select s.team_id, f.name as formation_name, count(*)::int as c,
+             row_number() over (partition by s.team_id order by count(*) desc, f.name asc) as rn
+      from ${submissions} s
+      join ${formations} f on f.id = s.formation_id
+      where s.team_id in ${sql.raw(`(${teamIds.join(",")})`)}
+      group by s.team_id, f.name
+    )
+    select team_id, formation_name from counts where rn = 1
+  `);
+  const teamTopFormation = new Map<number, string>();
+  for (const r of topFormationRows.rows as Array<{ team_id: number; formation_name: string }>) {
+    teamTopFormation.set(Number(r.team_id), r.formation_name);
+  }
+
+  // 2. Per-team total submissions.
+  const totalRows = await db.execute(sql`
+    select team_id, count(*)::int as c
+    from ${submissions}
+    where team_id in ${sql.raw(`(${teamIds.join(",")})`)}
+    group by team_id
+  `);
+  const teamTotal = new Map<number, number>();
+  for (const r of totalRows.rows as Array<{ team_id: number; c: number }>) {
+    teamTotal.set(Number(r.team_id), Number(r.c));
+  }
+
+  // 3. Per-team pick rates across starters + bench (a player counts once per
+  //    submission they appeared in anywhere). Mirrors getPickRatesForTeam,
+  //    batched across all teams in the result.
+  const pickRows = await db.execute(sql`
+    with featured as (
+      select distinct s.id as submission_id, s.team_id, pid::int as player_id
+      from ${submissions} s,
+        lateral (
+          select jsonb_array_elements_text(s.starters) as pid
+          union all
+          select jsonb_array_elements_text(s.bench) as pid
+        ) all_picks
+      where s.team_id in ${sql.raw(`(${teamIds.join(",")})`)}
+    )
+    select team_id, player_id, count(*)::int as picks
+    from featured
+    group by team_id, player_id
+  `);
+  const teamPickCounts = new Map<number, Map<number, number>>();
+  for (const r of pickRows.rows as Array<{ team_id: number; player_id: number; picks: number }>) {
+    const tid = Number(r.team_id);
+    if (!teamPickCounts.has(tid)) teamPickCounts.set(tid, new Map());
+    teamPickCounts.get(tid)!.set(Number(r.player_id), Number(r.picks));
+  }
+
+  // 4. Mode starter per (team_id, formation_id, slot_index) for the
+  //    (team, formation) pairs that actually appear in the result set.
+  const pairFilter = teamFormationPairs
+    .map((p) => `(${p.teamId}, ${p.formationId})`)
+    .join(",");
+  const modeRows = await db.execute(sql`
+    with picks as (
+      select s.team_id, s.formation_id,
+             (slot.ord - 1)::int as slot_index, slot.value::int as player_id
+      from ${submissions} s,
+        jsonb_array_elements_text(s.starters) with ordinality as slot(value, ord)
+      where (s.team_id, s.formation_id) in (${sql.raw(pairFilter)})
+    ),
+    ranked as (
+      select team_id, formation_id, slot_index, player_id, count(*)::int as picks,
+             row_number() over (
+               partition by team_id, formation_id, slot_index
+               order by count(*) desc, player_id asc
+             ) as rn
+      from picks
+      group by team_id, formation_id, slot_index, player_id
+    )
+    select team_id, formation_id, slot_index, player_id
+    from ranked where rn = 1
+  `);
+  const modeBySlot = new Map<string, number>();
+  for (const r of modeRows.rows as Array<{
+    team_id: number;
+    formation_id: number;
+    slot_index: number;
+    player_id: number;
+  }>) {
+    modeBySlot.set(
+      `${Number(r.team_id)}:${Number(r.formation_id)}:${Number(r.slot_index)}`,
+      Number(r.player_id),
+    );
+  }
+
+  // 5. Top popular players per team. Sorted by pick count desc (ties broken
+  //    by player_id asc for deterministic ordering). Capped per team — we only
+  //    need a short candidate list when matching missing-conventional swaps.
+  const POPULAR_PLAYERS_PER_TEAM = 20;
+  const teamPopularIds = new Map<number, number[]>();
+  for (const [tid, counts] of teamPickCounts) {
+    const sorted = [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0] - b[0])
+      .slice(0, POPULAR_PLAYERS_PER_TEAM)
+      .map(([pid]) => pid);
+    teamPopularIds.set(tid, sorted);
+  }
+
+  // 6. Batch-resolve every player referenced anywhere — submission rosters,
+  //    pick-rate rows, mode-by-slot rows, and team-popular candidates.
+  const allPlayerIds = new Set<number>();
+  for (const h of heads) {
+    for (const id of h.starters) allPlayerIds.add(Number(id));
+    for (const id of h.bench) allPlayerIds.add(Number(id));
+  }
+  for (const id of modeBySlot.values()) allPlayerIds.add(id);
+  for (const ids of teamPopularIds.values()) {
+    for (const id of ids) allPlayerIds.add(id);
+  }
+
+  const playerIds = [...allPlayerIds];
+  const playerById = new Map<number, Player>();
+  if (playerIds.length > 0) {
+    const ps = await db.select().from(players).where(inArray(players.id, playerIds));
+    for (const p of ps) playerById.set(p.id, p);
+  }
+
+  // 7. Stitch.
+  const result: RecentSubmission[] = [];
+  for (const h of heads) {
+    const teamId = Number(h.team_id);
+    const formationId = Number(h.formation_id);
+    const starters = h.starters
+      .map((id) => playerById.get(Number(id)))
+      .filter((p): p is Player => Boolean(p));
+    const bench = h.bench
+      .map((id) => playerById.get(Number(id)))
+      .filter((p): p is Player => Boolean(p));
+
+    const total = teamTotal.get(teamId) ?? 0;
+    const counts = teamPickCounts.get(teamId) ?? new Map<number, number>();
+    const pickRates = new Map<number, number>();
+    if (total > 0) {
+      for (const [pid, c] of counts) pickRates.set(pid, c / total);
+    }
+
+    const modeStarters: (Player | null)[] = h.formation_slots.map((_, i) => {
+      const pid = modeBySlot.get(`${teamId}:${formationId}:${i}`);
+      return pid != null ? playerById.get(pid) ?? null : null;
+    });
+
+    const popularPlayers = (teamPopularIds.get(teamId) ?? [])
+      .map((id) => playerById.get(id))
+      .filter((p): p is Player => Boolean(p));
+
+    result.push({
+      slug: h.public_slug,
+      createdAt: typeof h.created_at === "string" ? new Date(h.created_at) : h.created_at,
+      note: h.note,
+      team: { code: h.team_code, name: h.team_name, flagEmoji: h.team_flag },
+      formation: { name: h.formation_name, slots: h.formation_slots },
+      starters,
+      bench,
+      teamTopFormation: teamTopFormation.get(teamId) ?? null,
+      teamTotalSubmissions: total,
+      teamPickRates: pickRates,
+      teamModeStarterBySlot: modeStarters,
+      teamPopularPlayers: popularPlayers,
+    });
+  }
+
+  return result;
 }

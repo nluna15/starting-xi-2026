@@ -21,6 +21,8 @@ type SeedPlayer = {
   age: number;
   marketValueEur: number;
   photoUrl?: string | null;
+  internationalCaps?: number | null;
+  internationalGoals?: number | null;
 };
 
 type SeedFormation = {
@@ -96,6 +98,8 @@ async function main() {
             age: p.age,
             marketValueEur: p.marketValueEur,
             photoUrl: p.photoUrl ?? null,
+            internationalCaps: p.internationalCaps ?? null,
+            internationalGoals: p.internationalGoals ?? null,
           })),
         )
         .onConflictDoUpdate({
@@ -110,6 +114,8 @@ async function main() {
             age: dsql`excluded.age`,
             marketValueEur: dsql`excluded.market_value_eur`,
             photoUrl: dsql`excluded.photo_url`,
+            internationalCaps: dsql`excluded.international_caps`,
+            internationalGoals: dsql`excluded.international_goals`,
           },
         });
 

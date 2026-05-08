@@ -25,6 +25,7 @@ type Props = {
   starters: (CommunityStarter | null)[];
   bench?: (CommunityStarter | null)[];
   showPhotos?: boolean;
+  lastNameOnly?: boolean;
 };
 
 function toPkgPlayer(
@@ -87,7 +88,13 @@ function flagOverrideCSS(
   return rules.join("\n");
 }
 
-export function CommunityPitch({ formation, starters, bench, showPhotos = true }: Props) {
+export function CommunityPitch({
+  formation,
+  starters,
+  bench,
+  showPhotos = true,
+  lastNameOnly = false,
+}: Props) {
   const isNarrow = useMediaQuery("(max-width: 410px)");
   const rawId = React.useId();
   const scopeClass = `sp-scope-${rawId.replace(/[^a-zA-Z0-9]/g, "")}`;
@@ -100,8 +107,9 @@ export function CommunityPitch({ formation, starters, bench, showPhotos = true }
       role: s.slot,
     })),
   };
-  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos, isNarrow));
-  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, isNarrow));
+  const shortenName = lastNameOnly || isNarrow;
+  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos, shortenName));
+  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, shortenName));
 
   const overrideCSS = flagOverrideCSS(scopeClass, starters, bench);
 

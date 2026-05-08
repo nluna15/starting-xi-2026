@@ -8,7 +8,9 @@
     "club": "Sport-Club Freiburg",
     "age": 23,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/526845-1753984204.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/526845-1753984204.jpg?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 607720,
@@ -19,7 +21,9 @@
     "club": "FC Bayern München",
     "age": 22,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/607720-1737037032.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/607720-1737037032.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 195778,
@@ -30,7 +34,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 29,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/195778-1691998861.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/195778-1691998861.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 620295,
@@ -41,7 +47,9 @@
     "club": "Sportverein Werder Bremen von 1899",
     "age": 22,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620295-1756027825.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/620295-1756027825.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 251299,
@@ -52,7 +60,9 @@
     "club": "FC Augsburg 1907",
     "age": 28,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251299-1755200500.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251299-1755200500.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 72476,
@@ -63,7 +73,9 @@
     "club": "Fulham FC",
     "age": 34,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/72476-1774470314.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/72476-1774470314.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 800946,
@@ -74,7 +86,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 20,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/800946-1691998825.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/800946-1691998825.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 448705,
@@ -85,7 +99,9 @@
     "club": "1. Fußballclub Heidenheim 1846",
     "age": 24,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/448705-1755088320.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/448705-1755088320.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 196829,
@@ -96,7 +112,9 @@
     "club": "Feyenoord Rotterdam",
     "age": 30,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/196829-1765213835.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/196829-1765213835.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 284270,
@@ -107,7 +125,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 28,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/284270-1722945496.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/284270-1722945496.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 388198,
@@ -118,7 +138,9 @@
     "club": "Borussia Dortmund",
     "age": 26,
     "marketValueEur": 55000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/388198-1709560457.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/388198-1709560457.jpg?lm=1",
+    "internationalCaps": 24,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 521964,
@@ -129,7 +151,9 @@
     "club": "Newcastle United FC",
     "age": 24,
     "marketValueEur": 45000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/521964-1682063635.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/521964-1682063635.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 441986,
@@ -140,7 +164,9 @@
     "club": "FC Internazionale Milano",
     "age": 25,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/441986-1742497863.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/441986-1742497863.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 691892,
@@ -151,7 +177,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 22,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/691892-1724772335.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/691892-1724772335.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 196357,
@@ -162,7 +190,9 @@
     "club": "FC Bayern München",
     "age": 30,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/196357-1695367765.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/196357-1695367765.jpg?lm=1",
+    "internationalCaps": 43,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 924117,
@@ -173,7 +203,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 19,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/924117-1753307360.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/924117-1753307360.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 318204,
@@ -184,7 +216,9 @@
     "club": "RasenBallsport Leipzig",
     "age": 28,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/318204-1713945422.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/318204-1713945422.jpg?lm=1",
+    "internationalCaps": 35,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1084638,
@@ -195,7 +229,9 @@
     "club": "Sportverein Werder Bremen von 1899",
     "age": 18,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1084638-1756027638.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1084638-1756027638.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 684315,
@@ -206,7 +242,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 22,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684315-1724772257.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684315-1724772257.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 282660,
@@ -217,7 +255,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 29,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/282660-1723707584.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/282660-1723707584.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 193004,
@@ -228,7 +268,9 @@
     "club": "Borussia Dortmund",
     "age": 29,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193004-1723922551.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193004-1723922551.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 228948,
@@ -239,7 +281,9 @@
     "club": "AS Monaco FC",
     "age": 29,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/228948-1737490227.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/228948-1737490227.jpg?lm=1",
+    "internationalCaps": 28,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 328784,
@@ -250,7 +294,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 29,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/328784-1753984898.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/328784-1753984898.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 303219,
@@ -261,7 +307,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 28,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303219-1723707145.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303219-1723707145.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 327251,
@@ -272,7 +320,9 @@
     "club": "RasenBallsport Leipzig",
     "age": 28,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/327251-1764846399.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/327251-1764846399.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 798043,
@@ -283,7 +333,9 @@
     "club": "1. Fußballclub Union Berlin",
     "age": 21,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/798043-1755624376.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/798043-1755624376.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 335993,
@@ -294,7 +346,9 @@
     "club": "Sport-Club Freiburg",
     "age": 25,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335993-1753984451.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335993-1753984451.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 448258,
@@ -305,7 +359,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 25,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/448258-1691999620.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/448258-1691999620.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 86202,
@@ -316,7 +372,9 @@
     "club": "Real Madrid Club de Fútbol",
     "age": 33,
     "marketValueEur": 9000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/86202-1684484602.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/86202-1684484602.jpg?lm=1",
+    "internationalCaps": 81,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 202591,
@@ -327,7 +385,9 @@
     "club": "RasenBallsport Leipzig",
     "age": 29,
     "marketValueEur": 9000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/202591-1715858341.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/202591-1715858341.jpg?lm=1",
+    "internationalCaps": 19,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 467563,
@@ -338,7 +398,9 @@
     "club": "Verona Hellas FC",
     "age": 24,
     "marketValueEur": 7500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/467563-1663251475.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/467563-1663251475.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 580193,
@@ -349,7 +411,9 @@
     "club": "Sporting Clube de Braga",
     "age": 23,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/580193-1708164169.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/580193-1708164169.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 787151,
@@ -360,7 +424,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 22,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/787151-1691248738.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/787151-1691248738.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 124502,
@@ -371,7 +437,9 @@
     "club": "Sport-Club Freiburg",
     "age": 32,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/124502-1753984264.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/124502-1753984264.jpg?lm=1",
+    "internationalCaps": 51,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 524285,
@@ -382,7 +450,9 @@
     "club": "Nottingham Forest FC",
     "age": 22,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/524285-1760967382.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/524285-1760967382.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 599419,
@@ -393,7 +463,9 @@
     "club": "Sport-Club Freiburg",
     "age": 23,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/599419-1753955074.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/599419-1753955074.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 413843,
@@ -404,7 +476,9 @@
     "club": "FC Augsburg 1907",
     "age": 29,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413843-1755201026.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413843-1755201026.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 730484,
@@ -415,7 +489,9 @@
     "club": "Verein für Leibesübungen Wolfsburg",
     "age": 21,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/730484-1752736438.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/730484-1752736438.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 435796,
@@ -426,7 +502,9 @@
     "club": "Verein für Leibesübungen Wolfsburg",
     "age": 25,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435796-1752736015.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435796-1752736015.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 810100,
@@ -437,7 +515,9 @@
     "club": "Beşiktaş Jimnastik Kulübü",
     "age": 20,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/810100-1770375467.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/810100-1770375467.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 580195,
@@ -448,7 +528,9 @@
     "club": "FC Bayern München",
     "age": 23,
     "marketValueEur": 120000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/580195-1711745441.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/580195-1711745441.jpg?lm=1",
+    "internationalCaps": 40,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 598577,
@@ -459,7 +541,9 @@
     "club": "Liverpool FC",
     "age": 22,
     "marketValueEur": 110000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/598577-1689710503.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/598577-1689710503.jpg?lm=1",
+    "internationalCaps": 38,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 792380,
@@ -470,7 +554,9 @@
     "club": "FC Bayern München",
     "age": 21,
     "marketValueEur": 75000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/792380-1727098078.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/792380-1727098078.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1075147,
@@ -481,7 +567,9 @@
     "club": "FC Bayern München",
     "age": 18,
     "marketValueEur": 60000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1075147-1759417800.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1075147-1759417800.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 406640,
@@ -492,7 +580,9 @@
     "club": "Borussia Dortmund",
     "age": 25,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/406640-1709560961.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/406640-1709560961.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 443710,
@@ -503,7 +593,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 25,
     "marketValueEur": 45000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/443710-1753308094.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/443710-1753308094.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 161056,
@@ -514,7 +606,9 @@
     "club": "FC Bayern München",
     "age": 31,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/161056-1700039639.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/161056-1700039639.jpg?lm=1",
+    "internationalCaps": 106,
+    "internationalGoals": 10
   },
   {
     "transfermarktId": 822959,
@@ -525,7 +619,9 @@
     "club": "FC Bayern München",
     "age": 20,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/822959-1758269709.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/822959-1758269709.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 700106,
@@ -536,7 +632,9 @@
     "club": "RasenBallsport Leipzig",
     "age": 21,
     "marketValueEur": 28000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/700106-1770733562.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/700106-1770733562.jpg?lm=1",
+    "internationalCaps": 19,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 897424,
@@ -547,7 +645,9 @@
     "club": "RasenBallsport Leipzig",
     "age": 19,
     "marketValueEur": 28000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/897424-1759779834.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/897424-1759779834.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 344069,
@@ -558,7 +658,9 @@
     "club": "Leeds United",
     "age": 27,
     "marketValueEur": 25000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/344069-1723921116.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/344069-1723921116.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 187492,
@@ -569,7 +671,9 @@
     "club": "Borussia Dortmund",
     "age": 29,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/187492-1709560849.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/187492-1709560849.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 467434,
@@ -580,7 +684,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 23,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/467434-1760966939.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/467434-1760966939.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 270171,
@@ -591,7 +697,9 @@
     "club": "Brentford FC",
     "age": 27,
     "marketValueEur": 18000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/270171-1649932358.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/270171-1649932358.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 232454,
@@ -602,7 +710,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 29,
     "marketValueEur": 17000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/232454-1722885996.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/232454-1722885996.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 608832,
@@ -613,7 +723,9 @@
     "club": "Everton FC",
     "age": 23,
     "marketValueEur": 16000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/608832-1726649794.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/608832-1726649794.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 153084,
@@ -624,7 +736,9 @@
     "club": "FC Bayern München",
     "age": 31,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/153084-1700040179.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/153084-1700040179.jpg?lm=1",
+    "internationalCaps": 68,
+    "internationalGoals": 15
   },
   {
     "transfermarktId": 503160,
@@ -635,7 +749,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 23,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503160-1722886613.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503160-1722886613.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 692737,
@@ -646,7 +762,9 @@
     "club": "1. Fußballclub Union Berlin",
     "age": 21,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692737-1691614020.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692737-1691614020.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 443331,
@@ -657,7 +775,9 @@
     "club": "Sport-Club Freiburg",
     "age": 26,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/443331-1723190030.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/443331-1723190030.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 777005,
@@ -668,7 +788,9 @@
     "club": "FC Augsburg 1907",
     "age": 20,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/777005-1755201514.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/777005-1755201514.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1070979,
@@ -679,7 +801,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 17,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1070979-1760967470.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1070979-1760967470.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 190284,
@@ -690,7 +814,9 @@
     "club": "Sport-Club Freiburg",
     "age": 29,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/190284-1723189965.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/190284-1723189965.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 31909,
@@ -701,7 +827,9 @@
     "club": "Real Madrid Club de Fútbol",
     "age": 36,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31909-1700638741.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31909-1700638741.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 597000,
@@ -712,7 +840,9 @@
     "club": "1. FC Köln",
     "age": 24,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/597000-1657110079.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/597000-1657110079.jpg?lm=1",
+    "internationalCaps": 30,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 654234,
@@ -723,7 +853,9 @@
     "club": "FC Augsburg 1907",
     "age": 22,
     "marketValueEur": 7500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/654234-1773671161.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/654234-1773671161.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 159088,
@@ -734,7 +866,9 @@
     "club": "Bayer 04 Leverkusen",
     "age": 31,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/159088-1758703807.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/159088-1758703807.jpg?lm=1",
+    "internationalCaps": 19,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 592534,
@@ -745,7 +879,9 @@
     "club": "Hamburger SV",
     "age": 25,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/592534-1758188560.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/592534-1758188560.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 929943,
@@ -756,7 +892,9 @@
     "club": "Bayer 04 Leverkusen",
     "age": 19,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/929943-1753298473.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/929943-1753298473.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 904974,
@@ -767,7 +905,9 @@
     "club": "FC Bayern München",
     "age": 20,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/904974-1757924687.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/904974-1757924687.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 146155,
@@ -778,7 +918,9 @@
     "club": "Nashville SC",
     "age": 31,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/146155-1771709431.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/146155-1771709431.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 335516,
@@ -789,7 +931,9 @@
     "club": "Pisa Sporting Club",
     "age": 28,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335516-1753431661.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335516-1753431661.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 405670,
@@ -800,7 +944,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 25,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405670-1760966867.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405670-1760966867.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 455661,
@@ -811,7 +957,9 @@
     "club": "Newcastle United FC",
     "age": 24,
     "marketValueEur": 65000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/455661-1723707419.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/455661-1723707419.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 309400,
@@ -822,7 +970,9 @@
     "club": "Arsenal FC",
     "age": 26,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/309400-1683903902.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/309400-1683903902.jpg?lm=1",
+    "internationalCaps": 56,
+    "internationalGoals": 20
   },
   {
     "transfermarktId": 496094,
@@ -833,7 +983,9 @@
     "club": "Borussia Dortmund",
     "age": 24,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496094-1712859708.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496094-1712859708.jpg?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 578392,
@@ -844,7 +996,9 @@
     "club": "Borussia Dortmund",
     "age": 23,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/578392-1733829348.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/578392-1733829348.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 518505,
@@ -855,7 +1009,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 25,
     "marketValueEur": 40000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/518505-1691999306.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/518505-1691999306.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 473050,
@@ -866,7 +1022,9 @@
     "club": "Brentford FC",
     "age": 24,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/473050-1700560328.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/473050-1700560328.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 333647,
@@ -877,7 +1035,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 25,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/333647-1753985077.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/333647-1753985077.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1168219,
@@ -888,7 +1048,9 @@
     "club": "1. FC Köln",
     "age": 19,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1168219-1761497362.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1168219-1761497362.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 192565,
@@ -899,7 +1061,9 @@
     "club": "Galatasaray Spor Kulübü",
     "age": 30,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192565-1694587968.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/192565-1694587968.jpg?lm=1",
+    "internationalCaps": 72,
+    "internationalGoals": 16
   },
   {
     "transfermarktId": 339314,
@@ -910,7 +1074,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 29,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339314-1691999036.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/339314-1691999036.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 159471,
@@ -921,7 +1087,9 @@
     "club": "FC Bayern München",
     "age": 30,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/159471-1759909173.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/159471-1759909173.jpg?lm=1",
+    "internationalCaps": 58,
+    "internationalGoals": 25
   },
   {
     "transfermarktId": 429874,
@@ -932,7 +1100,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 24,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429874-1663065826.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429874-1663065826.jpg?lm=1",
+    "internationalCaps": 30,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 553285,
@@ -943,7 +1113,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 24,
     "marketValueEur": 15000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/553285-1755090691.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/553285-1755090691.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 717329,
@@ -954,7 +1126,9 @@
     "club": "Club Brugge Koninklijke Voetbalvereniging",
     "age": 21,
     "marketValueEur": 13000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/717329-1754510555.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/717329-1754510555.jpg?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 10
   },
   {
     "transfermarktId": 1035765,
@@ -965,7 +1139,9 @@
     "club": "1. Fußballclub Union Berlin",
     "age": 21,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1035765-1755624476.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1035765-1755624476.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 336012,
@@ -976,7 +1152,9 @@
     "club": "Calcio Como",
     "age": 26,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/336012-1752477155.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/336012-1752477155.jpg?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 796213,
@@ -987,7 +1165,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 21,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/796213-1692000176.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/796213-1692000176.jpg?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 272278,
@@ -998,7 +1178,9 @@
     "club": "Verein für Bewegungsspiele Stuttgart 1893",
     "age": 28,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/272278-1691999004.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/272278-1691999004.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 314288,
@@ -1009,7 +1191,9 @@
     "club": "Leeds United",
     "age": 27,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314288-1657203640.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/314288-1657203640.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 193033,
@@ -1020,7 +1204,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 30,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193033-1722945738.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193033-1722945738.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 819636,
@@ -1031,7 +1217,9 @@
     "club": "Verein für Leibesübungen Wolfsburg",
     "age": 21,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/819636-1689865855.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/819636-1689865855.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 284010,
@@ -1042,7 +1230,9 @@
     "club": "Borussia Mönchengladbach",
     "age": 27,
     "marketValueEur": 9000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/284010-1722945425.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/284010-1722945425.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 416380,
@@ -1053,7 +1243,9 @@
     "club": "1. FC Köln",
     "age": 27,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/416380-1752742777.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/416380-1752742777.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 453870,
@@ -1064,7 +1256,9 @@
     "club": "1. - und Sportverein Mainz 05",
     "age": 24,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/453870-1752587912.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/453870-1752587912.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 692368,
@@ -1075,7 +1269,9 @@
     "club": "Eintracht Frankfurt AG",
     "age": 22,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692368-1753442833.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/692368-1753442833.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 923595,
@@ -1086,7 +1282,9 @@
     "club": "Turn- und Sportgemeinschaft 1899 Hoffenheim -Spielbetriebs",
     "age": 20,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/923595-1723920909.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/923595-1723920909.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 342967,
@@ -1097,6 +1295,8 @@
     "club": "Sport-Club Freiburg",
     "age": 27,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/342967-1753984040.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/342967-1753984040.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 1
   }
 ]

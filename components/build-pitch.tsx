@@ -5,7 +5,7 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { FormationDef } from "@/lib/formations";
 import type { Player } from "@/lib/db/schema";
-import { lastName, useMediaQuery } from "@/lib/utils";
+import { lastName, proxyPhotoUrl, useMediaQuery } from "@/lib/utils";
 
 type ActiveBlank =
   | { kind: "starter"; index: number }
@@ -25,6 +25,12 @@ type Props = {
    */
   activeBlank?: ActiveBlank | null;
   showPhotos?: boolean;
+  /** Force last-name-only labels regardless of viewport width. */
+  shortenNames?: boolean;
+  /** Fixed avatar size in pixels. Overrides the package's responsive clamp. */
+  avatarSize?: number;
+  /** Gap in pixels between avatar bottom and name label. Default is 8px (sp-mt-2). */
+  avatarNameGap?: number;
 };
 
 // Pull the design-system accent into the pitch package's slot ring + avatar
@@ -42,7 +48,7 @@ function toPkgPlayer(
   return {
     id: String(p.id),
     name: shortenName ? lastName(p.fullName) : p.fullName,
-    photoUrl: showPhotos ? p.photoUrl ?? undefined : undefined,
+    photoUrl: showPhotos ? proxyPhotoUrl(p.photoUrl) : undefined,
   };
 }
 
@@ -70,6 +76,22 @@ function toPkgPlayer(
  *   .sp-bench-row
  *     > :nth-child(M)         (bench slot at index M-1)
  */
+function avatarSizeCSS(scope: string, px: number): string {
+  return `
+    .${scope} .sp-soccer-pitch .sp-aspect-square {
+      width: ${px}px !important;
+    }
+  `;
+}
+
+function avatarNameGapCSS(scope: string, px: number): string {
+  return `
+    .${scope} .sp-soccer-pitch .sp-top-full {
+      margin-top: ${px}px !important;
+    }
+  `;
+}
+
 function blankHighlightCSS(scope: string, blank: ActiveBlank): string {
   const n = blank.index + 1; // nth-child is 1-indexed
 
@@ -100,6 +122,9 @@ export function BuildPitch({
   highlightSlot = null,
   activeBlank = null,
   showPhotos = false,
+  shortenNames = false,
+  avatarSize,
+  avatarNameGap,
 }: Props) {
   const isNarrow = useMediaQuery("(max-width: 410px)");
 
@@ -115,12 +140,18 @@ export function BuildPitch({
       role: s.slot,
     })),
   };
-  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos, isNarrow));
-  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, isNarrow));
+  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos, isNarrow || shortenNames));
+  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, isNarrow || shortenNames));
   const hl = highlightSlot != null ? formation.slots[highlightSlot] ?? null : null;
 
   return (
     <div className={`relative ${scopeClass}`}>
+      {avatarSize != null && (
+        <style>{avatarSizeCSS(scopeClass, avatarSize)}</style>
+      )}
+      {avatarNameGap != null && (
+        <style>{avatarNameGapCSS(scopeClass, avatarNameGap)}</style>
+      )}
       {activeBlank && (
         <style>{blankHighlightCSS(scopeClass, activeBlank)}</style>
       )}

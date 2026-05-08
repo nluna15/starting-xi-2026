@@ -8,7 +8,9 @@
     "club": "Al-Nassr FC",
     "age": 25,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/886183-1685035404.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/886183-1685035404.PNG?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901767,
@@ -19,7 +21,9 @@
     "club": "Al-Raed SFC",
     "age": 24,
     "marketValueEur": 375000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901767-1681075355.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901767-1681075355.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 509914,
@@ -30,7 +34,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 28,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509914-1626956972.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509914-1626956972.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 951628,
@@ -41,7 +47,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 25,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/951628-1749200302.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/951628-1749200302.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 564006,
@@ -52,7 +60,9 @@
     "club": "Al-Taawoun FC",
     "age": 29,
     "marketValueEur": 275000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/564006-1685529796.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/564006-1685529796.JPG?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1060899,
@@ -63,7 +73,9 @@
     "club": "Al-Ittihad FC",
     "age": 21,
     "marketValueEur": 225000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1060899-1758548343.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1060899-1758548343.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 447495,
@@ -74,7 +86,9 @@
     "club": "Al-Nassr FC",
     "age": 29,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/447495-1685908931.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/447495-1685908931.JPG?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 743948,
@@ -85,7 +99,9 @@
     "club": "Damac FC",
     "age": 28,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743948-1680718932.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743948-1680718932.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 177956,
@@ -96,7 +112,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 34,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/177956-1697280635.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/177956-1697280635.png?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901096,
@@ -107,7 +125,9 @@
     "club": "Al-Shabab Club",
     "age": 29,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901096-1680216164.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901096-1680216164.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 631927,
@@ -118,7 +138,9 @@
     "club": "Racing Club de Lens",
     "age": 26,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/631927-1730124451.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/631927-1730124451.jpg?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 509897,
@@ -129,7 +151,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 27,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509897-1697052892.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509897-1697052892.png?lm=1",
+    "internationalCaps": 48,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 435045,
@@ -140,7 +164,9 @@
     "club": "Al-Nassr FC",
     "age": 31,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435045-1685035558.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435045-1685035558.PNG?lm=1",
+    "internationalCaps": 38,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 821377,
@@ -151,7 +177,9 @@
     "club": "Al-Nassr FC",
     "age": 26,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/821377-1685035434.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/821377-1685035434.png?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 735815,
@@ -162,7 +190,9 @@
     "club": "Al-Nassr FC",
     "age": 24,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/735815-1685034359.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/735815-1685034359.PNG?lm=1",
+    "internationalCaps": 20,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 380205,
@@ -173,7 +203,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 26,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1181852,
@@ -184,7 +216,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 23,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 672391,
@@ -195,7 +229,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 26,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672391-1705422198.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672391-1705422198.jpg?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 869509,
@@ -206,7 +242,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 26,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/869509-1685911461.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/869509-1685911461.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 928499,
@@ -217,7 +255,9 @@
     "club": "Al-Ittihad FC",
     "age": 23,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928499-1685555737.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/928499-1685555737.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 509894,
@@ -228,7 +268,9 @@
     "club": "Al-Nassr FC",
     "age": 29,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509894-1685033914.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509894-1685033914.PNG?lm=1",
+    "internationalCaps": 37,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 229879,
@@ -239,7 +281,9 @@
     "club": "Al-Ittihad FC",
     "age": 27,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/229879-1703279532.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/229879-1703279532.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1057849,
@@ -250,7 +294,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 25,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1057849-1703279237.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1057849-1703279237.png?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901334,
@@ -261,7 +307,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 24,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901334-1698420724.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901334-1698420724.JPG?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 264909,
@@ -272,7 +320,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 30,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264909-1685034200.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264909-1685034200.PNG?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 947143,
@@ -283,7 +333,9 @@
     "club": "Neom Sports Club",
     "age": 22,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/947143-1685909016.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/947143-1685909016.JPG?lm=1",
+    "internationalCaps": 11,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 922103,
@@ -294,7 +346,9 @@
     "club": "Al-Shabab Club",
     "age": 29,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 1020859,
@@ -305,7 +359,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 22,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1020859-1749200387.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1020859-1749200387.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1060901,
@@ -316,7 +372,9 @@
     "club": "Al-Ittihad FC",
     "age": 22,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1060901-1716739952.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1060901-1716739952.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 922536,
@@ -327,7 +385,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 24,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 171915,
@@ -338,7 +398,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 33,
     "marketValueEur": 650000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/171915-1697051149.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/171915-1697051149.png?lm=1",
+    "internationalCaps": 78,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 514927,
@@ -349,7 +411,9 @@
     "club": "Al-Fayha FC",
     "age": 30,
     "marketValueEur": 650000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/514927-1765232897.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/514927-1765232897.png?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 970673,
@@ -360,7 +424,9 @@
     "club": "Al-Nassr FC",
     "age": 23,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/970673-1716742255.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/970673-1716742255.png?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 888634,
@@ -371,7 +437,9 @@
     "club": "Al-Nassr FC",
     "age": 25,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888634-1686075240.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888634-1686075240.JPG?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 821382,
@@ -382,7 +450,9 @@
     "club": "Al-Shabab Club",
     "age": 26,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/821382-1685909705.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/821382-1685909705.JPG?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 364450,
@@ -393,7 +463,9 @@
     "club": "Al-Shabab Club",
     "age": 30,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/364450-1685911594.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/364450-1685911594.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1173794,
@@ -404,7 +476,9 @@
     "club": "Al-Shabab Club",
     "age": 27,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 265940,
@@ -415,7 +489,9 @@
     "club": "Al-Ettifaq FC",
     "age": 32,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265940-1685033991.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/265940-1685033991.PNG?lm=1",
+    "internationalCaps": 18,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1169185,
@@ -426,7 +502,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 23,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 10,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 319552,
@@ -437,7 +515,9 @@
     "club": "Al-Ittihad FC",
     "age": 31,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/319552-1687958573.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/319552-1687958573.JPG?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901181,
@@ -448,7 +528,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 22,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901181-1697052286.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901181-1697052286.png?lm=1",
+    "internationalCaps": 31,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 1161121,
@@ -459,7 +541,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 24,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1161121-1697980303.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1161121-1697980303.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901082,
@@ -470,7 +554,9 @@
     "club": "Al-Ittihad FC",
     "age": 24,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901082-1703280159.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901082-1703280159.png?lm=1",
+    "internationalCaps": 17,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 308120,
@@ -481,7 +567,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 31,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/308120-1697051841.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/308120-1697051841.png?lm=1",
+    "internationalCaps": 70,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 1020852,
@@ -492,7 +580,9 @@
     "club": "Al-Nassr FC",
     "age": 22,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1020852-1727291976.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1020852-1727291976.png?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 509911,
@@ -503,7 +593,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 27,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509911-1697051477.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509911-1697051477.png?lm=1",
+    "internationalCaps": 42,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 437903,
@@ -514,7 +606,9 @@
     "club": "Al-Nassr FC",
     "age": 29,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/437903-1685033951.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/437903-1685033951.PNG?lm=1",
+    "internationalCaps": 27,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901079,
@@ -525,7 +619,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 24,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901079-1749200517.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901079-1749200517.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 258911,
@@ -536,7 +632,9 @@
     "club": "Al-Ettifaq FC",
     "age": 28,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258911-1716741938.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/258911-1716741938.png?lm=1",
+    "internationalCaps": 14,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 865104,
@@ -547,7 +645,9 @@
     "club": "Neom Sports Club",
     "age": 22,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/865104-1716739220.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/865104-1716739220.png?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1145311,
@@ -558,7 +658,9 @@
     "club": "Al-Ittihad FC",
     "age": 20,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1145311-1758548632.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1145311-1758548632.jpg?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 141805,
@@ -569,7 +671,9 @@
     "club": "Al-Nassr FC",
     "age": 29,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/141805-1685034153.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/141805-1685034153.PNG?lm=1",
+    "internationalCaps": 15,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 971302,
@@ -580,7 +684,9 @@
     "club": "Al-Fayha FC",
     "age": 23,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/971302-1765232734.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/971302-1765232734.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 434672,
@@ -591,7 +697,9 @@
     "club": "Al-Nassr FC",
     "age": 29,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/434672-1685035526.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/434672-1685035526.PNG?lm=1",
+    "internationalCaps": 21,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 153172,
@@ -602,7 +710,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 32,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/153172-1685658459.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/153172-1685658459.jpg?lm=1",
+    "internationalCaps": 8,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1130616,
@@ -613,7 +723,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 24,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1130616-1716063721.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1130616-1716063721.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 593334,
@@ -624,7 +736,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 26,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/593334-1698419762.jpeg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/593334-1698419762.jpeg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1092630,
@@ -635,7 +749,9 @@
     "club": "Al-Fateh Club",
     "age": 25,
     "marketValueEur": 375000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092630-1716229375.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092630-1716229375.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901250,
@@ -646,7 +762,9 @@
     "club": "Al-Shabab Club",
     "age": 24,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901250-1728572232.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901250-1728572232.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1060930,
@@ -657,7 +775,9 @@
     "club": "Al-Shabab Club",
     "age": 22,
     "marketValueEur": 325000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 6,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 509898,
@@ -668,7 +788,9 @@
     "club": "Al-Shabab Club",
     "age": 29,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 5,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1168837,
@@ -679,7 +801,9 @@
     "club": "Al-Taawoun FC",
     "age": 24,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1168837-1716137478.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1168837-1716137478.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 155487,
@@ -690,7 +814,9 @@
     "club": "Neom Sports Club",
     "age": 36,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/155487-1697050776.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/155487-1697050776.png?lm=1",
+    "internationalCaps": 68,
+    "internationalGoals": 8
   },
   {
     "transfermarktId": 921112,
@@ -701,7 +827,9 @@
     "club": "Al-Najma Sport Club",
     "age": 27,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/921112-1680215064.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/921112-1680215064.JPG?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1190454,
@@ -712,7 +840,9 @@
     "club": "Al-Ettifaq FC",
     "age": 22,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1188906,
@@ -723,7 +853,9 @@
     "club": "Neom Sports Club",
     "age": 22,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1188906-1746703161.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1188906-1746703161.png?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 672382,
@@ -734,7 +866,9 @@
     "club": "Al-Fayha FC",
     "age": 26,
     "marketValueEur": 225000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672382-1765232886.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/672382-1765232886.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 593337,
@@ -745,7 +879,9 @@
     "club": "Al-Ittihad FC",
     "age": 27,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/593337-1685658336.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/593337-1685658336.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901163,
@@ -756,7 +892,9 @@
     "club": "Al-Ittihad FC",
     "age": 24,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901163-1687958384.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901163-1687958384.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1234622,
@@ -767,7 +905,9 @@
     "club": "Al-Najma Sport Club",
     "age": 22,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901072,
@@ -778,7 +918,9 @@
     "club": "Al-Fayha FC",
     "age": 27,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901072-1765232739.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/901072-1765232739.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 187951,
@@ -789,7 +931,9 @@
     "club": "Damac FC",
     "age": 33,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/187951-1685911889.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/187951-1685911889.jpg?lm=1",
+    "internationalCaps": 7,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 470011,
@@ -800,7 +944,9 @@
     "club": "Damac FC",
     "age": 29,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470011-1716229561.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470011-1716229561.png?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 631922,
@@ -811,7 +957,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 25,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/631922-1669121494.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/631922-1669121494.jpg?lm=1",
+    "internationalCaps": 67,
+    "internationalGoals": 15
   },
   {
     "transfermarktId": 195332,
@@ -822,7 +970,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 34,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/195332-1697051935.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/195332-1697051935.png?lm=1",
+    "internationalCaps": 104,
+    "internationalGoals": 25
   },
   {
     "transfermarktId": 164593,
@@ -833,7 +983,9 @@
     "club": "Al-Nassr FC",
     "age": 29,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/164593-1685034069.PNG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/164593-1685034069.PNG?lm=1",
+    "internationalCaps": 31,
+    "internationalGoals": 3
   },
   {
     "transfermarktId": 1238031,
@@ -844,7 +996,9 @@
     "club": "Al-Fayha FC",
     "age": 18,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1238031-1765233932.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1238031-1765233932.png?lm=1",
+    "internationalCaps": 14,
+    "internationalGoals": 5
   },
   {
     "transfermarktId": 1057857,
@@ -855,7 +1009,9 @@
     "club": "Royal Antwerp FC",
     "age": 22,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1057857-1703279572.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1057857-1703279572.png?lm=1",
+    "internationalCaps": 14,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 31671,
@@ -866,7 +1022,9 @@
     "club": "Al-Qadsiah Saudi FC",
     "age": 26,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31671-1698420599.jpeg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31671-1698420599.jpeg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 1145312,
@@ -877,7 +1035,9 @@
     "club": "Al-Ittihad FC",
     "age": 18,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1145312-1758548453.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1145312-1758548453.jpg?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 6
   },
   {
     "transfermarktId": 631923,
@@ -888,7 +1048,9 @@
     "club": "Al-Ettifaq FC",
     "age": 25,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/631923-1680950653.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/631923-1680950653.JPG?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 441191,
@@ -899,7 +1061,9 @@
     "club": "Al-Ittihad FC",
     "age": 30,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/441191-1703282806.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/441191-1703282806.png?lm=1",
+    "internationalCaps": 16,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 671043,
@@ -910,7 +1074,9 @@
     "club": "Al-Ittihad FC",
     "age": 24,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671043-1685658709.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/671043-1685658709.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 242267,
@@ -921,7 +1087,9 @@
     "club": "Al-Ittihad FC",
     "age": 32,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242267-1697051090.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/242267-1697051090.png?lm=1",
+    "internationalCaps": 51,
+    "internationalGoals": 16
   },
   {
     "transfermarktId": 1118034,
@@ -932,7 +1100,9 @@
     "club": "Al-Shabab Club",
     "age": 22,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1118034-1751449538.jpeg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1118034-1751449538.jpeg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 264888,
@@ -943,7 +1113,9 @@
     "club": "Al-Taawoun FC",
     "age": 31,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264888-1685658275.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264888-1685658275.jpg?lm=1",
+    "internationalCaps": 9,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1185707,
@@ -954,7 +1126,9 @@
     "club": "Neom Sports Club",
     "age": 22,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1185707-1741876884.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1185707-1741876884.jpg?lm=1",
+    "internationalCaps": 1,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1058345,
@@ -965,7 +1139,9 @@
     "club": "Neom Sports Club",
     "age": 27,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1058345-1685528026.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1058345-1685528026.JPG?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 229940,
@@ -976,7 +1152,9 @@
     "club": "Al-Khaleej Club (Saihat)",
     "age": 32,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/229940-1703279350.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/229940-1703279350.png?lm=1",
+    "internationalCaps": 4,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 201379,
@@ -987,7 +1165,9 @@
     "club": "Al-Taawoun FC",
     "age": 33,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/201379-1685911033.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/201379-1685911033.jpg?lm=1",
+    "internationalCaps": 40,
+    "internationalGoals": 4
   },
   {
     "transfermarktId": 888633,
@@ -998,7 +1178,9 @@
     "club": "Al-Fayha FC",
     "age": 23,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888633-1686142134.JPG?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888633-1686142134.JPG?lm=1",
+    "internationalCaps": 23,
+    "internationalGoals": 12
   },
   {
     "transfermarktId": 210349,
@@ -1009,7 +1191,9 @@
     "club": "Al-Hilal Saudi FC",
     "age": 31,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/210349-1697280616.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/210349-1697280616.png?lm=1",
+    "internationalCaps": 3,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1014574,
@@ -1020,7 +1204,9 @@
     "club": "Al-Okhdood Club",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 0,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 901129,
@@ -1031,7 +1217,9 @@
     "club": "Al-Ahli Saudi FC",
     "age": 23,
     "marketValueEur": 375000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 2
   },
   {
     "transfermarktId": 193153,
@@ -1042,7 +1230,9 @@
     "club": "Al-Shabab Club",
     "age": 31,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193153-1685911928.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/193153-1685911928.jpg?lm=1",
+    "internationalCaps": 75,
+    "internationalGoals": 17
   },
   {
     "transfermarktId": 31406,
@@ -1053,7 +1243,9 @@
     "club": "Al-Shabab Club",
     "age": 28,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31406-1703280105.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/31406-1703280105.png?lm=1",
+    "internationalCaps": 12,
+    "internationalGoals": 0
   },
   {
     "transfermarktId": 1131858,
@@ -1064,7 +1256,9 @@
     "club": "Al-Kholood Club",
     "age": 25,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1131858-1694534843.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1131858-1694534843.png?lm=1",
+    "internationalCaps": null,
+    "internationalGoals": null
   },
   {
     "transfermarktId": 68626,
@@ -1075,7 +1269,9 @@
     "club": "Al-Nassr FC",
     "age": 26,
     "marketValueEur": 325000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/68626-1697051244.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/68626-1697051244.png?lm=1",
+    "internationalCaps": 44,
+    "internationalGoals": 10
   },
   {
     "transfermarktId": 153350,
@@ -1086,7 +1282,9 @@
     "club": "Al-Ittihad FC",
     "age": 32,
     "marketValueEur": 325000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "internationalCaps": 22,
+    "internationalGoals": 1
   },
   {
     "transfermarktId": 748080,
@@ -1097,6 +1295,8 @@
     "club": "Al-Ettifaq FC",
     "age": 22,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/748080-1685033856.png?lm=1"
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/748080-1685033856.png?lm=1",
+    "internationalCaps": 13,
+    "internationalGoals": 0
   }
 ]
