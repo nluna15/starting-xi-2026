@@ -242,7 +242,11 @@ export default async function CommunityPage({
         </div>
       </div>
 
-      <div className="grid gap-3 md:grid-cols-3">
+      <section className="space-y-4">
+        <h2 className="display text-[28px] text-ink sm:text-[32px]">
+          Insights based on community lineups
+        </h2>
+        <div className="grid gap-3 md:grid-cols-3">
         <StatCard title="Average squad age">
           <div className="flex flex-col gap-3">
             <Subhead>Oldest</Subhead>
@@ -262,12 +266,13 @@ export default async function CommunityPage({
         <StatCard title="Int'l Caps per Player">
           <div className="flex flex-col gap-3">
             <Subhead>Most Int&rsquo;l caps</Subhead>
-            <HorizontalBarChart rows={mostCapsRows} formatValue={(v) => v.toFixed(0)} />
+            <HorizontalBarChart rows={mostCapsRows} formatValue={(v) => v.toFixed(1)} />
             <Subhead className="mt-2">Least Int&rsquo;l caps</Subhead>
-            <HorizontalBarChart rows={leastCapsRows} formatValue={(v) => v.toFixed(0)} />
+            <HorizontalBarChart rows={leastCapsRows} formatValue={(v) => v.toFixed(1)} />
           </div>
         </StatCard>
-      </div>
+        </div>
+      </section>
       <RecentSubmissionsFeed submissions={recentSubmissions} />
       {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>

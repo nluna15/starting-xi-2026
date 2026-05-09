@@ -223,12 +223,12 @@ export default async function CommunityCountryPage({
           <AverageCard
             title="Average squad age"
             value={formatAge(stats.averages.age)}
-            communityLabel={`Community avg ${formatAge(communityAvgAge)}`}
+            communityLabel={`International avg ${formatAge(communityAvgAge)}`}
           />
           <AverageCard
             title="Average market value per player"
             value={formatEur(stats.averages.marketValueEur)}
-            communityLabel={`Community avg ${formatEur(communityAvgValue)}`}
+            communityLabel={`International avg ${formatEur(communityAvgValue)}`}
           />
         </div>
       </div>

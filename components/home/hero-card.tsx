@@ -29,21 +29,23 @@ export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
       : `${daysUntilKickoff} day${daysUntilKickoff === 1 ? "" : "s"} until kickoff`;
 
   return (
-    <div className="p-4 sm:p-6">
-      <div className="grid items-center gap-10 md:grid-cols-2 md:gap-3">
-        <div className="mx-auto w-full max-w-[780px] md:max-w-none">
+    <div className="px-4 pb-4 sm:px-6 sm:pb-6">
+      <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12">
+        <div className="mx-auto w-[85%] max-w-[663px] md:ml-auto md:mr-0 md:w-[85%] md:max-w-none [&_.sp-soccer-pitch]:[--sp-dot-min:26px] [&_.sp-soccer-pitch]:[--sp-dot-preferred:7.18%] [&_.sp-soccer-pitch]:[--sp-dot-max:50px]">
           <HeroPitch />
         </div>
-        <div className="flex w-full flex-col items-start gap-3 text-left md:ml-auto md:w-[300px]">
+        <div className="flex w-full flex-col items-start gap-1.5 text-left md:w-[300px]">
           <h1
             className="display text-accent [text-wrap:balance]"
             style={{
-              fontSize: "clamp(60px, 12vw, 110px)",
+              fontSize: "clamp(40px, 5.5vw, 55px)",
               lineHeight: 0.92,
               letterSpacing: "-0.01em",
             }}
           >
-            Pick Your Side
+            <span className="text-black">Select Your Best</span>
+            <br />
+            Win the Cup
           </h1>
           <div className="flex flex-col gap-1">
             <p className="cond text-[15px] font-bold text-ink">{submissionsLine}</p>

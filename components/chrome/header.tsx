@@ -1,7 +1,9 @@
 "use client";
 
+import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /* -----------------------------------------------------------------------------
@@ -24,11 +26,7 @@ type NavLink = {
 const NAV: NavLink[] = [
   {
     href: "/community",
-    label: (
-      <>
-        Global Fan&rsquo;s Best 11
-      </>
-    ),
+    label: <>View Fan Lineups</>,
     matchPrefix: "/community",
   },
 ];
@@ -40,6 +38,26 @@ function isActive(pathname: string, link: NavLink): boolean {
 
 export function Header() {
   const pathname = usePathname() ?? "/";
+  const [copied, setCopied] = React.useState(false);
+  const copyTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  React.useEffect(() => {
+    return () => {
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+    };
+  }, []);
+
+  async function handleShare() {
+    if (typeof window === "undefined") return;
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+      copyTimer.current = setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // clipboard unavailable — silently ignore
+    }
+  }
 
   return (
     <header className="border-b border-line bg-bg">
@@ -63,6 +81,23 @@ export function Header() {
 
         <nav aria-label="Primary">
           <ul className="flex items-center gap-5">
+            <li>
+              <button
+                type="button"
+                onClick={handleShare}
+                aria-label={copied ? "Link copied" : "Copy link to this page"}
+                className={cn(
+                  "inline-flex items-center gap-1.5 rounded-sm px-3 py-1.5 text-accent-ink",
+                  "font-condensed text-[12px] font-bold uppercase tracking-[0.1em]",
+                  "transition-colors duration-300 ease-in-out",
+                  "focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft",
+                  copied ? "bg-success" : "bg-accent hover:bg-accent-deep",
+                )}
+              >
+                <Share2 aria-hidden className="h-[12px] w-[12px]" />
+                <span>{copied ? "Copied" : "Share"}</span>
+              </button>
+            </li>
             {NAV.map((link) => {
               const active = isActive(pathname, link);
               return (

@@ -1,3 +1,4 @@
+import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
 import { CountryTile } from "@/components/country-tile";
 import { HeroCard } from "@/components/home/hero-card";
 import { HowItWorks } from "@/components/home/how-it-works";
@@ -6,6 +7,7 @@ import { NationCarousel, type CarouselTile } from "@/components/home/nation-caro
 import { SectionHeading } from "@/components/home/section-heading";
 import {
   getHomeLeaderboard,
+  getRecentSubmissions,
   getRosterStatusByCode,
   getTotalSubmissionCount,
   type RosterStatus,
@@ -19,10 +21,11 @@ const PRIMARY_CODES = ["USA", "MEX", "ARG", "FRA"] as const;
 const CAROUSEL_CODES = ["ENG", "GER", "BRA", "MAR"] as const;
 
 export default async function Home() {
-  const [statusByCode, totalSubmissions, leaderboard] = await Promise.all([
+  const [statusByCode, totalSubmissions, leaderboard, recentSubmissions] = await Promise.all([
     getRosterStatusByCode(),
     getTotalSubmissionCount(),
     getHomeLeaderboard(),
+    getRecentSubmissions(4),
   ]);
 
   const primaryTiles = PRIMARY_CODES.map((code) => resolveTile(code, statusByCode)).filter(
@@ -64,6 +67,11 @@ export default async function Home() {
       <HowItWorks />
 
       <Leaderboard data={leaderboard} />
+
+      <RecentSubmissionsFeed
+        submissions={recentSubmissions}
+        title="Recently Shared Lineups"
+      />
     </div>
   );
 }
