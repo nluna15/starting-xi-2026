@@ -35,6 +35,13 @@ export function CommunityCountryCarousel({
   const [query, setQuery] = useState("");
   const ready = useMemo(() => new Set(readyCodes), [readyCodes]);
 
+  // "All Nations" is the active tile when we're on the general /community page
+  // (community link mode with no specific activeCode), or — in filter mode —
+  // when no country search query is in play.
+  const allNationsActive =
+    !activeCode &&
+    (linkMode === "community" || query.trim().length === 0);
+
   const filteredSlots = useMemo(() => {
     const q = normalize(query.trim());
     if (!q) return slots;
@@ -74,7 +81,7 @@ export function CommunityCountryCarousel({
           className="flex snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth px-4 pb-1 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           <AllNationsTile
-            active={!resolvedAllNationsHref && query.trim().length === 0}
+            active={allNationsActive}
             onClick={() => setQuery("")}
             href={resolvedAllNationsHref}
           />
@@ -89,7 +96,7 @@ export function CommunityCountryCarousel({
                   ? `See the ${slot.name} community XI`
                   : undefined;
               return (
-                <div key={slot.code} className="snap-start shrink-0 w-44">
+                <div key={slot.code} className="snap-start shrink-0 w-32">
                   <CountryTile
                     code={slot.code}
                     name={slot.name}
@@ -112,7 +119,7 @@ export function CommunityCountryCarousel({
             return (
               <div
                 key={slot.key}
-                className="snap-start shrink-0 flex h-16 w-44 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
+                className="snap-start shrink-0 flex h-16 w-32 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
               >
                 <span className="text-xl leading-none" aria-hidden>
                   ❔
@@ -176,7 +183,7 @@ function AllNationsTile({
   href?: string;
 }) {
   const cls = cn(
-    "snap-start shrink-0 w-44 flex h-16 items-center justify-center gap-2 rounded-md px-3 text-center",
+    "snap-start shrink-0 w-32 flex h-16 items-center justify-center gap-2 rounded-md px-3 text-center",
     "border border-line bg-surface-2",
     "cond text-[13px] font-bold text-ink",
     "transition-[background-color,border-color,color] duration-150 ease-in-out",

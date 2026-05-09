@@ -85,6 +85,7 @@ function defaultSelected(
 
 function PickerBody({
   mode,
+  onClose,
   onPick,
   onClear,
   players,
@@ -205,6 +206,18 @@ function PickerBody({
             <Button variant="destructive" size="sm" onClick={onClear}>
               Clear slot
             </Button>
+          ) : null}
+          {mode === "sheet" && onClose ? (
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Close player picker"
+              className="hidden max-[410px]:flex shrink-0 items-center justify-center h-7 w-7 rounded-full text-ink-3 transition-colors hover:bg-surface-2 hover:text-ink"
+            >
+              <svg aria-hidden="true" viewBox="0 0 12 12" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                <path d="M1 1l10 10M11 1L1 11" />
+              </svg>
+            </button>
           ) : null}
         </div>
 

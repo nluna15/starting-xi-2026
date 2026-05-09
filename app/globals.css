@@ -264,3 +264,18 @@ body {
   --sp-dot-max: 56px !important;
   --sp-flag-fs: 10px !important;
 }
+
+/* Scoped override for the homepage hero pitch only. */
+.home-hero-pitch .sp-soccer-pitch {
+  --sp-dot-min: 52px !important;
+  --sp-dot-preferred: 14% !important;
+  --sp-dot-max: 97px !important;
+}
+
+@media (max-width: 410px) {
+  .home-hero-pitch .sp-soccer-pitch {
+    --sp-dot-min: 26px !important;
+    --sp-dot-preferred: 7% !important;
+    --sp-dot-max: 48px !important;
+  }
+}

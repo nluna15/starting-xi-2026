@@ -31,7 +31,7 @@ export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
   return (
     <div className="px-4 pb-4 sm:px-6 sm:pb-6">
       <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12">
-        <div className="mx-auto w-[85%] max-w-[663px] md:ml-auto md:mr-0 md:w-[85%] md:max-w-none [&_.sp-soccer-pitch]:[--sp-dot-min:26px] [&_.sp-soccer-pitch]:[--sp-dot-preferred:7.18%] [&_.sp-soccer-pitch]:[--sp-dot-max:50px]">
+        <div className="home-hero-pitch mx-auto w-[85%] max-w-[663px] md:ml-auto md:mr-0 md:w-[85%] md:max-w-none">
           <HeroPitch />
         </div>
         <div className="flex w-full flex-col items-start gap-1.5 text-left md:w-[300px]">

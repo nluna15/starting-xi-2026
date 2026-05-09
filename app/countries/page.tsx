@@ -23,9 +23,6 @@ export default async function CountriesPage() {
   return (
     <div className="space-y-10 py-2">
       <header className="space-y-3 text-center">
-        <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
-          World Cup 2026 · 48 Teams
-        </p>
         <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
           Pick your country
         </h1>

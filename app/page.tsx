@@ -6,6 +6,12 @@ import { Leaderboard } from "@/components/home/leaderboard";
 import { NationCarousel, type CarouselTile } from "@/components/home/nation-carousel";
 import { SectionHeading } from "@/components/home/section-heading";
 import {
+  ExploreLineupCarousel,
+  type ExploreCard,
+} from "@/components/home/explore-lineup-carousel";
+import {
+  getCrowdStats,
+  getCountrySquadStats,
   getHomeLeaderboard,
   getRecentSubmissions,
   getRosterStatusByCode,
@@ -21,12 +27,38 @@ const PRIMARY_CODES = ["USA", "MEX", "ARG", "FRA"] as const;
 const CAROUSEL_CODES = ["ENG", "GER", "BRA", "MAR"] as const;
 
 export default async function Home() {
-  const [statusByCode, totalSubmissions, leaderboard, recentSubmissions] = await Promise.all([
-    getRosterStatusByCode(),
-    getTotalSubmissionCount(),
-    getHomeLeaderboard(),
-    getRecentSubmissions(4),
-  ]);
+  const [statusByCode, totalSubmissions, leaderboard, recentSubmissions, allCountryStats] =
+    await Promise.all([
+      getRosterStatusByCode(),
+      getTotalSubmissionCount(),
+      getHomeLeaderboard(),
+      getRecentSubmissions(4),
+      getCountrySquadStats(),
+    ]);
+
+  // Randomly pick up to 4 countries that have submissions
+  const shuffled = allCountryStats
+    .slice()
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 4);
+
+  const crowdStatResults = await Promise.all(shuffled.map((c) => getCrowdStats(c.code)));
+
+  const statTypes: ExploreCard["statType"][] = ["age", "value", "substitute"];
+  const exploreCards: ExploreCard[] = shuffled.map((country, i) => {
+    const crowd = crowdStatResults[i];
+    const statType = statTypes[Math.floor(Math.random() * statTypes.length)];
+    return {
+      code: country.code,
+      name: country.name,
+      flagEmoji: country.flagEmoji,
+      topFormation: crowd.topFormation?.name ?? null,
+      statType,
+      avgAge: country.avgAge,
+      avgValue: country.avgMarketValueEur,
+      topSubstituteName: crowd.topBench[0]?.player.fullName ?? null,
+    };
+  });
 
   const primaryTiles = PRIMARY_CODES.map((code) => resolveTile(code, statusByCode)).filter(
     (t): t is ResolvedTile => t !== null,
@@ -45,7 +77,7 @@ export default async function Home() {
       />
 
       <section id="pick-your-nation" className="space-y-3">
-        <SectionHeading title="Pick your Nation" />
+        <SectionHeading title="Build your lineup" />
         <ul className="grid grid-cols-2 gap-2 sm:grid-cols-4">
           {primaryTiles.map((tile) => (
             <li key={tile.code}>
@@ -65,6 +97,8 @@ export default async function Home() {
       </section>
 
       <HowItWorks />
+
+      <ExploreLineupCarousel cards={exploreCards} />
 
       <Leaderboard data={leaderboard} />
 

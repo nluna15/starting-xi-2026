@@ -722,7 +722,10 @@ export type RecentSubmission = {
 // Batched into 4-6 SQL round-trips regardless of `limit` — collect distinct
 // team IDs from the latest rows, then issue one query per metadata kind
 // scoped to that set.
-export async function getRecentSubmissions(limit = 9): Promise<RecentSubmission[]> {
+export async function getRecentSubmissions(
+  limit = 9,
+  teamCode?: string,
+): Promise<RecentSubmission[]> {
   const headRows = await db.execute(sql`
     select s.id, s.public_slug, s.team_id, s.formation_id, s.starters, s.bench,
            s.note, s.created_at,
@@ -731,6 +734,7 @@ export async function getRecentSubmissions(limit = 9): Promise<RecentSubmission[
     from ${submissions} s
     join ${teams} t on t.id = s.team_id
     join ${formations} f on f.id = s.formation_id
+    ${teamCode ? sql`where t.code = ${teamCode}` : sql``}
     order by s.created_at desc
     limit ${limit}
   `);

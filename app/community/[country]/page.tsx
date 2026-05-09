@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
+import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
 import { CommunityPitch } from "@/components/community-pitch";
 import {
   getCountrySquadStats,
   getCrowdStats,
+  getRecentSubmissions,
   getRosterStatusByCode,
 } from "@/lib/db/queries";
 import { formatAge, formatEur } from "@/lib/utils";
@@ -25,10 +27,11 @@ export default async function CommunityCountryPage({
   const { country } = await params;
   const code = country.toUpperCase();
 
-  const [stats, countryStats, statusByCode] = await Promise.all([
+  const [stats, countryStats, statusByCode, recentSubmissions] = await Promise.all([
     getCrowdStats(code),
     getCountrySquadStats(),
     getRosterStatusByCode(),
+    getRecentSubmissions(12, code),
   ]);
 
   if (!stats.team) notFound();
@@ -58,7 +61,7 @@ export default async function CommunityCountryPage({
             {team.flagEmoji}
           </span>
           <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
-            No submissions yet for {team.name}
+            No submissions yet for <span className="text-accent">{team.name}</span>
           </h1>
           <p className="max-w-md text-[14px] text-ink-3">
             Be the first to submit a {team.name} XI and this page will start to
@@ -139,12 +142,8 @@ export default async function CommunityCountryPage({
 
       <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-1">
-          <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
-            <span aria-hidden>{team.flagEmoji}</span> {team.code}
-            {stats.topFormation ? ` · ${stats.topFormation.name}` : ""}
-          </p>
           <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
-            {team.name}&rsquo;s Best 11
+            <span className="text-accent">{team.name}</span>&rsquo;s Best 11
           </h1>
           <p className="mono text-[11px] tracking-[0.16em] text-ink-faint">
             From {stats.totalSubmissions.toLocaleString()}{" "}
@@ -232,6 +231,11 @@ export default async function CommunityCountryPage({
           />
         </div>
       </div>
+
+      <RecentSubmissionsFeed
+        submissions={recentSubmissions}
+        title={`Recent ${team.name} submissions`}
+      />
     </div>
   );
 }

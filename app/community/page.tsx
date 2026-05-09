@@ -5,8 +5,9 @@ import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
 import { CommunityPitch } from "@/components/community-pitch";
 import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
+import { InsightStatCard } from "@/components/community/insight-stat-card";
 import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
-import { HorizontalBarChart, type BarRow } from "@/components/horizontal-bar-chart";
+import type { BarRow } from "@/components/horizontal-bar-chart";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams, type Player } from "@/lib/db/schema";
 import {
@@ -247,42 +248,39 @@ export default async function CommunityPage({
           Insights based on community lineups
         </h2>
         <div className="grid gap-3 md:grid-cols-3">
-        <StatCard title="Average squad age">
-          <div className="flex flex-col gap-3">
-            <Subhead>Oldest</Subhead>
-            <HorizontalBarChart rows={oldestRows} formatValue={(v) => v.toFixed(1)} />
-            <Subhead className="mt-2">Youngest</Subhead>
-            <HorizontalBarChart rows={youngestRows} formatValue={(v) => v.toFixed(1)} />
-          </div>
-        </StatCard>
-        <StatCard title="Average market value per player">
-          <div className="flex flex-col gap-3">
-            <Subhead>Most expensive</Subhead>
-            <HorizontalBarChart rows={mostExpensiveRows} formatValue={formatEurCompact} />
-            <Subhead className="mt-2">Lowest value</Subhead>
-            <HorizontalBarChart rows={cheapestRows} formatValue={formatEurCompact} />
-          </div>
-        </StatCard>
-        <StatCard title="Int'l Caps per Player">
-          <div className="flex flex-col gap-3">
-            <Subhead>Most Int&rsquo;l caps</Subhead>
-            <HorizontalBarChart rows={mostCapsRows} formatValue={(v) => v.toFixed(1)} />
-            <Subhead className="mt-2">Least Int&rsquo;l caps</Subhead>
-            <HorizontalBarChart rows={leastCapsRows} formatValue={(v) => v.toFixed(1)} />
-          </div>
-        </StatCard>
+          <InsightStatCard
+            title="Average squad age"
+            segments={[
+              { subhead: "Oldest", rows: oldestRows },
+              { subhead: "Youngest", rows: youngestRows },
+            ]}
+            allRows={ageRowsAll}
+            format="decimal"
+          />
+          <InsightStatCard
+            title="Market value per player"
+            segments={[
+              { subhead: "Most expensive", rows: mostExpensiveRows },
+              { subhead: "Lowest value", rows: cheapestRows },
+            ]}
+            allRows={valueRowsAll}
+            format="eurCompact"
+          />
+          <InsightStatCard
+            title="Int'l Caps per Player"
+            segments={[
+              { subhead: "Most Int’l caps", rows: mostCapsRows },
+              { subhead: "Least Int’l caps", rows: leastCapsRows },
+            ]}
+            allRows={capsRowsAll}
+            format="decimal"
+          />
         </div>
       </section>
       <RecentSubmissionsFeed submissions={recentSubmissions} />
       {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>
   );
-}
-
-function formatEurCompact(eur: number): string {
-  if (eur >= 1_000_000) return `€${(eur / 1_000_000).toFixed(1)}M`;
-  if (eur >= 1_000) return `€${(eur / 1_000).toFixed(0)}K`;
-  return `€${Math.round(eur)}`;
 }
 
 /* -----------------------------------------------------------------------------
@@ -301,23 +299,5 @@ function StatCard({
       <h2 className="cond border-b border-line pb-2 text-[13px] text-ink">{title}</h2>
       <div className="flex flex-col gap-2">{children}</div>
     </Card>
-  );
-}
-
-function Subhead({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <h3
-      className={`mono text-[11px] font-medium tracking-[0.16em] text-ink-faint${
-        className ? ` ${className}` : ""
-      }`}
-    >
-      {children}
-    </h3>
   );
 }

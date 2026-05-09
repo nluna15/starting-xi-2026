@@ -11,16 +11,16 @@ import { SectionHeading } from "@/components/home/section-heading";
 
 const STEPS = [
   {
-    title: "Pick Your Nation",
-    body: "Select from any of the qualified countries.",
+    title: "Pick your country",
+    body: "Select from any of the qualified countries. FYI - Some countries rosters are coming soon",
   },
   {
     title: "Assemble Your Squad",
-    body: "Set the formation, pick your starting 11, and add your best impact substitutes.",
+    body: "Set the formation, pick your starting 11, and add your best impact substitutes. Tell us why your 14 are the best suited to get a result on match day.",
   },
   {
     title: "Compare Against Others",
-    body: "See how you line up against other fans and nations.",
+    body: "See how you stack up against other fans of your nation. Also see how your lineup compares to that of other countries.",
   },
 ];
 
