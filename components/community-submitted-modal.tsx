@@ -3,6 +3,7 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 import { SubmittedModal } from "@/components/submitted-modal";
+import type { BadgeKind, BadgeTone } from "@/components/community/recent-submission-tags";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 
@@ -16,6 +17,7 @@ type Props = {
     totalSubmissions: number;
     picksByPlayerId: Map<number, number>;
   };
+  category: { badge: BadgeKind; tone: BadgeTone } | null;
 };
 
 export function CommunitySubmittedModal({
@@ -25,6 +27,7 @@ export function CommunitySubmittedModal({
   starters,
   bench,
   pickRates,
+  category,
 }: Props) {
   const router = useRouter();
   const [open, setOpen] = React.useState(true);
@@ -44,6 +47,7 @@ export function CommunitySubmittedModal({
       starters={starters}
       bench={bench}
       pickRates={pickRates}
+      category={category}
     />
   );
 }

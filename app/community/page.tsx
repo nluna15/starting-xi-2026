@@ -16,7 +16,9 @@ import {
   getPickRatesForTeam,
   getRecentSubmissions,
   getRosterStatusByCode,
+  getTopFormationNameForTeam,
 } from "@/lib/db/queries";
+import { categorize } from "@/components/community/recent-submission-tags";
 import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
@@ -57,7 +59,28 @@ async function loadSubmittedContext(slug: string) {
     .map((id) => byId.get(id) ?? null)
     .filter((p): p is Player => Boolean(p));
 
-  const pickRates = await getPickRatesForTeam(teamRow.id);
+  const [pickRates, teamTopFormation] = await Promise.all([
+    getPickRatesForTeam(teamRow.id),
+    getTopFormationNameForTeam(teamRow.id),
+  ]);
+
+  // Same badge logic the recent-submissions feed uses, evaluated against the
+  // freshly-saved submission so the share card matches what other fans will
+  // eventually see in the feed.
+  const category = categorize({
+    starters,
+    formation: { name: formationRow.name },
+    teamTopFormation,
+    teamTotalSubmissions: pickRates.totalSubmissions,
+    teamPickRates: pickRates.picksByPlayerId.size
+      ? new Map(
+          [...pickRates.picksByPlayerId].map(([id, count]) => [
+            id,
+            pickRates.totalSubmissions > 0 ? count / pickRates.totalSubmissions : 0,
+          ]),
+        )
+      : new Map(),
+  });
 
   return {
     team: { name: teamRow.name, flagEmoji: teamRow.flagEmoji },
@@ -66,6 +89,7 @@ async function loadSubmittedContext(slug: string) {
     starters,
     bench,
     pickRates,
+    category,
   };
 }
 

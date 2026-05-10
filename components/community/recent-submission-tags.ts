@@ -43,7 +43,18 @@ function oldStarterCount(starters: Player[]): number {
   return starters.filter((p) => p.age > THROWBACK_OLD_STARTER_AGE).length;
 }
 
-function boldStarterCount(submission: RecentSubmission): number {
+// Only the slice of RecentSubmission that categorize() actually reads. Lets
+// callers compute a badge for a freshly-saved submission without needing to
+// hydrate the full feed-row shape (modeStarterBySlot, popularPlayers, etc.).
+export type CategorizeInput = {
+  starters: Player[];
+  formation: { name: string };
+  teamTopFormation: string | null;
+  teamTotalSubmissions: number;
+  teamPickRates: Map<number, number>;
+};
+
+function boldStarterCount(submission: CategorizeInput): number {
   let count = 0;
   for (const p of submission.starters) {
     const rate = submission.teamPickRates.get(p.id) ?? 0;
@@ -52,7 +63,7 @@ function boldStarterCount(submission: RecentSubmission): number {
   return count;
 }
 
-export function categorize(submission: RecentSubmission): { badge: BadgeKind; tone: BadgeTone } {
+export function categorize(submission: CategorizeInput): { badge: BadgeKind; tone: BadgeTone } {
   if (submission.teamTotalSubmissions < MIN_TEAM_SUBS_FOR_BADGE) {
     return { badge: "FRESH", tone: "neutral" };
   }

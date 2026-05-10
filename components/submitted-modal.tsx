@@ -8,6 +8,8 @@ import { Card } from "@/components/ui/card";
 import { StatTile } from "@/components/ui/stat";
 import { BuildPitch } from "@/components/build-pitch";
 import { computeAverages } from "@/components/lineup-summary";
+import { ShareActions } from "@/components/share/share-actions";
+import type { BadgeKind, BadgeTone } from "@/components/community/recent-submission-tags";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 import { cn, formatAge, formatEur } from "@/lib/utils";
@@ -28,6 +30,7 @@ type Props = {
   starters: Player[];
   bench: Player[];
   pickRates: PickRates;
+  category: { badge: BadgeKind; tone: BadgeTone } | null;
 };
 
 const MIN_SUBMISSIONS_FOR_TAGS = 5;
@@ -51,11 +54,10 @@ export function SubmittedModal({
   starters,
   bench,
   pickRates,
+  category,
 }: Props) {
   const [copied, setCopied] = React.useState(false);
-  const [downloading, setDownloading] = React.useState(false);
   const copyTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
-  const captureRef = React.useRef<HTMLDivElement>(null);
   const shareUrl = typeof window === "undefined" ? "" : window.location.origin;
 
   React.useEffect(() => {
@@ -63,23 +65,6 @@ export function SubmittedModal({
       if (copyTimer.current) clearTimeout(copyTimer.current);
     };
   }, []);
-
-  async function handleDownload() {
-    if (!captureRef.current || downloading) return;
-    setDownloading(true);
-    try {
-      const { toPng } = await import("html-to-image");
-      const dataUrl = await toPng(captureRef.current, { pixelRatio: 2 });
-      const link = document.createElement("a");
-      link.download = `${team.name.replace(/\s+/g, "-").toLowerCase()}-lineup.png`;
-      link.href = dataUrl;
-      link.click();
-    } catch {
-      // silently ignore export errors
-    } finally {
-      setDownloading(false);
-    }
-  }
 
   async function handleCopy() {
     if (!shareUrl) return;
@@ -95,6 +80,8 @@ export function SubmittedModal({
 
   const squad = [...starters, ...bench];
   const squadAvg = computeAverages(squad);
+
+  const teamLabel = team.name.length >= 9 ? teamCode.toUpperCase() : team.name;
 
   const tagsEnabled = pickRates.totalSubmissions >= MIN_SUBMISSIONS_FOR_TAGS;
   const { mostConventional, mostBold } = React.useMemo(() => {
@@ -174,15 +161,13 @@ export function SubmittedModal({
           </div>
 
           <div className="mt-6 flex flex-col gap-3">
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={handleDownload}
-              disabled={downloading}
-              className="w-full"
-            >
-              {downloading ? "Saving…" : "Download Image"}
-            </Button>
+            <ShareActions
+              team={team}
+              formation={formation}
+              starters={starters}
+              bench={bench}
+              category={category}
+            />
             <Button
               variant="primary"
               size="lg"
@@ -191,7 +176,7 @@ export function SubmittedModal({
               className={cn("w-full", copied && "bg-success hover:bg-success")}
               aria-live="polite"
             >
-              {copied ? "✓ Copied — paste anywhere" : "Share with a Friend!"}
+              {copied ? "✓ Copied — paste anywhere" : "Share with a friend!"}
             </Button>
             <Link href={`/community/${teamCode}`} className="w-full">
               <Button variant="outline" size="lg" className="w-full">
@@ -201,31 +186,13 @@ export function SubmittedModal({
           </div>
         </div>
 
-        {/* Right column: pitch image card */}
-        <div
-          ref={captureRef}
-          className="mt-6 xl:mt-0 xl:w-[55%] xl:shrink-0 overflow-hidden rounded-lg bg-white"
-          style={
-            {
-              // html-to-image's clone strips CSS custom properties from
-              // computed styles, so the soccer-pitch package's grass-theme
-              // vars (consumed by SVG fill="var(...)") would resolve to
-              // nothing in the export. Inline them here so they survive.
-              "--sp-pitch-grass-1": "#2f8a3f",
-              "--sp-pitch-grass-2": "#2a7d39",
-              "--sp-pitch-line": "rgba(255, 255, 255, 0.85)",
-              "--sp-player-bg": "#ffffff",
-              "--sp-player-ring": "#ffffff",
-              "--sp-player-initials": "#1a1a1a",
-              "--sp-name-bg": "rgba(0, 0, 0, 0.78)",
-              "--sp-name-fg": "#ffffff",
-            } as React.CSSProperties
-          }
-        >
+        {/* Right column: pitch preview card. The capture flow renders an
+            independent off-screen ShareCard, so this DOM is purely visual. */}
+        <div className="mt-6 xl:mt-0 xl:w-[55%] xl:shrink-0 overflow-hidden rounded-lg bg-white">
           <div className="px-4 pt-3 pb-1 grid grid-cols-3 items-center">
             <span className="mono text-[11px] font-medium tracking-[0.14em] text-emerald-900 uppercase inline-flex items-center gap-1.5">
               <span className="text-[22px] leading-none">{team.flagEmoji}</span>
-              {team.name}
+              {teamLabel}
             </span>
             <span className="mono text-[11px] font-bold tracking-[0.18em] text-emerald-700/60 uppercase text-center">
               STARTINGXI2026.APP

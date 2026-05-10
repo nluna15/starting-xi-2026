@@ -127,6 +127,22 @@ export async function getPickRatesForTeam(teamId: number): Promise<TeamPickRates
   return { totalSubmissions, picksByPlayerId };
 }
 
+// Returns the most-popular formation name for `teamId`, or null if the team
+// has no submissions. Tie-break by formation name ascending for determinism.
+export async function getTopFormationNameForTeam(teamId: number): Promise<string | null> {
+  const rows = await db.execute(sql`
+    select f.name as name, count(*)::int as c
+    from ${submissions} s
+    join ${formations} f on f.id = s.formation_id
+    where s.team_id = ${teamId}
+    group by f.name
+    order by c desc, f.name asc
+    limit 1
+  `);
+  const row = rows.rows[0] as { name: string } | undefined;
+  return row?.name ?? null;
+}
+
 export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
   const team = await getTeamByCode(teamCode);
   if (!team) {
