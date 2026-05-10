@@ -16,6 +16,11 @@ import type { Player } from "@/lib/db/schema";
 import type { RecentSubmission } from "@/lib/db/queries";
 import { cn, formatTimeAgo, lastName, useMediaQuery } from "@/lib/utils";
 
+const TEAM_NAME_ABBREVIATIONS: Record<string, string> = {
+  "United States": "USA",
+  "Bosnia & Herzegovina": "BiH",
+};
+
 type Props = {
   submission: RecentSubmission;
 };
@@ -102,7 +107,9 @@ function CardHeader({
       <span className="text-2xl leading-none" aria-hidden="true">
         {flagEmoji}
       </span>
-      <span className="cond text-[15px] tracking-[0.06em] text-ink">{teamName}</span>
+      <span className="cond text-[15px] tracking-[0.06em] text-ink">
+        {TEAM_NAME_ABBREVIATIONS[teamName] ?? teamName}
+      </span>
       <span className="cond text-[15px] tracking-[0.06em] text-ink">· {formationName}</span>
       <span className="mono text-[10px] tracking-[0.14em] text-ink-faint">
         · {formatTimeAgo(createdAt)}
