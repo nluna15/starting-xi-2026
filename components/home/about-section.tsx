@@ -8,12 +8,12 @@ export function AboutSection() {
       <Card padding="hero" className="items-center text-center gap-4">
         <div className="font-sans text-[14px] leading-[1.55] text-ink [text-wrap:pretty] max-w-[80ch] mx-auto space-y-4">
           <p>
-            The FIFA World Cup doesn&apos;t come around often. This site is for every kind of
-            fan — the tactician who dies by formation and the casual supporter who wants to see
+            The FIFA World Cup doesn&apos;t come around often. And I wanted to celebrate the tournament's return to the USA.This site is for every kind of
+            fan - the tactician who dies by formation and the casual supporter who wants to see
             their favorite player shine.
           </p>
           <p>
-            Matches are not won by the 11 who start on the field. Assemble your starters, then
+            Coaches know, matches are not won by the 11 who start on the field. Assemble your starters, then
             go further. Share with others who you believe are the substitutes that could impact
             the game when it matters most.
           </p>
