@@ -50,12 +50,15 @@ export default async function CommunityCountryPage({
   if (stats.totalSubmissions === 0) {
     return (
       <div className="space-y-8">
-        <CommunityCountryCarousel
-          slots={WC_2026_SLOTS}
-          readyCodes={readyCodes}
-          linkMode="community"
-          activeCode={team.code}
-        />
+        <section className="space-y-3">
+          <h2 className="display text-[20px] text-ink sm:text-[22px]">Find your country</h2>
+          <CommunityCountryCarousel
+            slots={WC_2026_SLOTS}
+            readyCodes={readyCodes}
+            linkMode="community"
+            activeCode={team.code}
+          />
+        </section>
         <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
           <span className="text-4xl" aria-hidden>
             {team.flagEmoji}
@@ -133,12 +136,15 @@ export default async function CommunityCountryPage({
 
   return (
     <div className="space-y-10">
-      <CommunityCountryCarousel
-        slots={WC_2026_SLOTS}
-        readyCodes={readyCodes}
-        linkMode="community"
-        activeCode={team.code}
-      />
+      <section className="space-y-3">
+        <h2 className="display text-[20px] text-ink sm:text-[22px]">Find your country</h2>
+        <CommunityCountryCarousel
+          slots={WC_2026_SLOTS}
+          readyCodes={readyCodes}
+          linkMode="community"
+          activeCode={team.code}
+        />
+      </section>
 
       <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-1">

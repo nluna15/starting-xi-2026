@@ -8,6 +8,8 @@ import { cn, normalize } from "@/lib/utils";
 import type { WcSlot } from "@/lib/wc-2026-teams";
 
 type LinkMode = "build" | "community";
+type ConfirmedSlot = Extract<WcSlot, { kind: "confirmed" }>;
+type TbdSlot = Extract<WcSlot, { kind: "tbd" }>;
 
 type Props = {
   slots: WcSlot[];
@@ -51,6 +53,27 @@ export function CommunityCountryCarousel({
     });
   }, [slots, query]);
 
+  // When viewing a specific country page, pull its tile out of the list so it
+  // can be rendered first (before "All Fans"). Falls back gracefully when the
+  // active country isn't in the current (filtered) result set.
+  const { activeSlot, restSlots } = useMemo<{
+    activeSlot: ConfirmedSlot | null;
+    restSlots: WcSlot[];
+  }>(() => {
+    if (!activeCode) return { activeSlot: null, restSlots: filteredSlots };
+    const idx = filteredSlots.findIndex(
+      (s) => s.kind === "confirmed" && s.code === activeCode,
+    );
+    if (idx === -1) return { activeSlot: null, restSlots: filteredSlots };
+    return {
+      activeSlot: filteredSlots[idx] as ConfirmedSlot,
+      restSlots: [
+        ...filteredSlots.slice(0, idx),
+        ...filteredSlots.slice(idx + 1),
+      ],
+    };
+  }, [filteredSlots, activeCode]);
+
   useEffect(() => {
     const el = scrollerRef.current;
     if (!el) return;
@@ -73,61 +96,84 @@ export function CommunityCountryCarousel({
     el.scrollBy({ left: dir * Math.max(320, el.clientWidth * 0.8), behavior: "smooth" });
   };
 
+  const renderConfirmedTile = (slot: ConfirmedSlot) => {
+    const isActive = activeCode === slot.code;
+    const hrefOverride =
+      linkMode === "community" ? `/community/${slot.code}` : undefined;
+    const ariaLabel =
+      linkMode === "community"
+        ? `See the ${slot.name} community XI`
+        : undefined;
+    return (
+      <div key={slot.code} className="snap-start shrink-0 w-32">
+        <CountryTile
+          code={slot.code}
+          name={`${slot.code} Fans`}
+          flagEmoji={slot.flagEmoji}
+          enabled={ready.has(slot.code)}
+          layout="card"
+          size="md"
+          borderless
+          className={cn(
+            "h-16",
+            isActive &&
+              "bg-accent-soft text-accent-deep ring-2 ring-accent",
+          )}
+          hrefOverride={hrefOverride}
+          ariaLabel={ariaLabel}
+        />
+      </div>
+    );
+  };
+
+  const renderTbdTile = (slot: TbdSlot) => (
+    <div
+      key={slot.key}
+      className="snap-start shrink-0 flex h-16 w-32 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
+    >
+      <span className="text-xl leading-none" aria-hidden>
+        ❔
+      </span>
+      <span className="cond text-[11px] leading-tight">{slot.label}</span>
+    </div>
+  );
+
   return (
     <div className="space-y-3">
+      <div className="relative mx-4 sm:mx-0">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search countries…"
+          aria-label="Search countries"
+          className={cn(
+            "w-full rounded-md border border-line bg-white px-3.5 py-3 text-[14px] text-ink placeholder:text-ink-faint",
+            "transition-[border-color,box-shadow] duration-150 ease-in-out",
+            "hover:border-line-strong",
+            "focus:outline-none focus:border-accent focus:shadow-[0_0_0_3px_var(--accent-soft)]",
+          )}
+        />
+      </div>
+
       <div className="relative -mx-4 sm:mx-0">
         <div
           ref={scrollerRef}
           className="flex snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth px-4 pb-1 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
+          {activeSlot && renderConfirmedTile(activeSlot)}
+
           <AllNationsTile
             active={allNationsActive}
             onClick={() => setQuery("")}
             href={resolvedAllNationsHref}
           />
 
-          {filteredSlots.map((slot) => {
-            if (slot.kind === "confirmed") {
-              const isActive = activeCode === slot.code;
-              const hrefOverride =
-                linkMode === "community" ? `/community/${slot.code}` : undefined;
-              const ariaLabel =
-                linkMode === "community"
-                  ? `See the ${slot.name} community XI`
-                  : undefined;
-              return (
-                <div key={slot.code} className="snap-start shrink-0 w-32">
-                  <CountryTile
-                    code={slot.code}
-                    name={slot.name}
-                    flagEmoji={slot.flagEmoji}
-                    enabled={ready.has(slot.code)}
-                    layout="card"
-                    size="md"
-                    borderless
-                    className={cn(
-                      "h-16",
-                      isActive &&
-                        "bg-accent-soft text-accent-deep ring-2 ring-accent",
-                    )}
-                    hrefOverride={hrefOverride}
-                    ariaLabel={ariaLabel}
-                  />
-                </div>
-              );
-            }
-            return (
-              <div
-                key={slot.key}
-                className="snap-start shrink-0 flex h-16 w-32 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
-              >
-                <span className="text-xl leading-none" aria-hidden>
-                  ❔
-                </span>
-                <span className="cond text-[11px] leading-tight">{slot.label}</span>
-              </div>
-            );
-          })}
+          {restSlots.map((slot) =>
+            slot.kind === "confirmed"
+              ? renderConfirmedTile(slot)
+              : renderTbdTile(slot),
+          )}
 
           {filteredSlots.length === 0 && (
             <div className="flex h-16 shrink-0 items-center px-2 text-[13px] text-ink-3">
@@ -152,22 +198,6 @@ export function CommunityCountryCarousel({
         >
           <ChevronRight className="h-4 w-4" />
         </CarouselButton>
-      </div>
-
-      <div className="relative mx-4 sm:mx-0">
-        <input
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search countries…"
-          aria-label="Search countries"
-          className={cn(
-            "w-full rounded-md border border-line bg-bg px-3.5 py-3 text-[14px] text-ink placeholder:text-ink-faint",
-            "transition-[border-color,box-shadow] duration-150 ease-in-out",
-            "hover:border-line-strong",
-            "focus:outline-none focus:border-accent focus:shadow-[0_0_0_3px_var(--accent-soft)]",
-          )}
-        />
       </div>
     </div>
   );
@@ -196,7 +226,7 @@ function AllNationsTile({
       <span className="text-base leading-none" aria-hidden>
         🌍
       </span>
-      <span>All Nations</span>
+      <span>All Fans</span>
     </>
   );
   if (href) {

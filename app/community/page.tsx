@@ -188,11 +188,14 @@ export default async function CommunityPage({
 
   return (
     <div className="space-y-10">
-      <CommunityCountryCarousel
-        slots={WC_2026_SLOTS}
-        readyCodes={readyCodes}
-        linkMode="community"
-      />
+      <section className="space-y-3">
+        <h2 className="display text-[28px] text-ink sm:text-[32px]">Find your country</h2>
+        <CommunityCountryCarousel
+          slots={WC_2026_SLOTS}
+          readyCodes={readyCodes}
+          linkMode="community"
+        />
+      </section>
 
       <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-1">
