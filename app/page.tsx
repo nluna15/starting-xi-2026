@@ -1,5 +1,6 @@
 import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
 import { CountryTile } from "@/components/country-tile";
+import { AboutSection } from "@/components/home/about-section";
 import { HeroCard } from "@/components/home/hero-card";
 import { HowItWorks } from "@/components/home/how-it-works";
 import { Leaderboard } from "@/components/home/leaderboard";
@@ -106,6 +107,8 @@ export default async function Home() {
         submissions={recentSubmissions}
         title="Recently Shared Lineups"
       />
+
+      <AboutSection />
     </div>
   );
 }

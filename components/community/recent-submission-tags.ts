@@ -28,7 +28,15 @@ export type BadgeKind =
   | "THROWBACK"
   | "HATCHLINGS";
 
-export type BadgeTone = "neutral" | "neutral-strong" | "accent" | "success" | "gold";
+export const BADGE_COLORS: Record<BadgeKind, string> = {
+  FRESH: "#22c55e",
+  CONSENSUS: "#2563eb",
+  TACTICAL: "#1e3a2f",
+  "HOT TAKE": "#dc2626",
+  CONTROVERSIAL: "#c2410c",
+  THROWBACK: "#92400e",
+  HATCHLINGS: "#7c3aed",
+};
 
 export type DeviationTag =
   | { kind: "formation"; from: string; to: string }
@@ -63,17 +71,17 @@ function boldStarterCount(submission: CategorizeInput): number {
   return count;
 }
 
-export function categorize(submission: CategorizeInput): { badge: BadgeKind; tone: BadgeTone } {
+export function categorize(submission: CategorizeInput): { badge: BadgeKind } {
   if (submission.teamTotalSubmissions < MIN_TEAM_SUBS_FOR_BADGE) {
-    return { badge: "FRESH", tone: "neutral" };
+    return { badge: "FRESH" };
   }
 
   if (oldStarterCount(submission.starters) >= THROWBACK_OLD_STARTER_COUNT) {
-    return { badge: "THROWBACK", tone: "gold" };
+    return { badge: "THROWBACK" };
   }
 
   if (avgAge(submission.starters) < HATCHLINGS_AVG_AGE) {
-    return { badge: "HATCHLINGS", tone: "success" };
+    return { badge: "HATCHLINGS" };
   }
 
   const formationDiffers = Boolean(
@@ -81,11 +89,11 @@ export function categorize(submission: CategorizeInput): { badge: BadgeKind; ton
   );
   const bold = boldStarterCount(submission);
 
-  if (formationDiffers && bold >= 3) return { badge: "CONTROVERSIAL", tone: "accent" };
-  if (formationDiffers && bold >= 1) return { badge: "HOT TAKE", tone: "accent" };
-  if (formationDiffers && bold === 0) return { badge: "TACTICAL", tone: "neutral-strong" };
-  if (!formationDiffers && bold === 0) return { badge: "CONSENSUS", tone: "success" };
-  return { badge: "HOT TAKE", tone: "accent" };
+  if (formationDiffers && bold >= 3) return { badge: "HOT TAKE" };
+  if (formationDiffers && bold >= 1) return { badge: "CONTROVERSIAL" };
+  if (formationDiffers && bold === 0) return { badge: "TACTICAL" };
+  if (!formationDiffers && bold === 0) return { badge: "CONSENSUS" };
+  return { badge: "CONTROVERSIAL" };
 }
 
 const MAX_SWAP_TAGS = 2;

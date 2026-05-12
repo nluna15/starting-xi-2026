@@ -6,7 +6,7 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
-import type { BadgeKind, BadgeTone } from "@/components/community/recent-submission-tags";
+import { BADGE_COLORS, type BadgeKind } from "@/components/community/recent-submission-tags";
 import { computeAverages } from "@/components/lineup-summary";
 import { formatAge, formatEur, lastName, proxyPhotoUrl } from "@/lib/utils";
 
@@ -23,7 +23,7 @@ export type ShareCardProps = {
   formation: FormationDef;
   starters: Player[];
   bench: Player[];
-  category: { badge: BadgeKind; tone: BadgeTone } | null;
+  category: { badge: BadgeKind } | null;
   /**
    * Called once after the React tree commits and layout is stable.
    * `useShareImage` uses this signal to wait for first paint before
@@ -56,22 +56,6 @@ function toPkgPlayer(p: Player | null): PkgPlayer | null {
   };
 }
 
-function badgeToneStyles(tone: BadgeTone): { background: string; color: string } {
-  switch (tone) {
-    case "accent":
-      return { background: "#ef2f2f", color: "#ffffff" };
-    case "success":
-      return { background: "#22c55e", color: "#ffffff" };
-    case "gold":
-      return { background: "#ffc83d", color: "#0e0e10" };
-    case "neutral-strong":
-      return { background: "#0e0e10", color: "#ffffff" };
-    case "neutral":
-    default:
-      return { background: "#f0efeb", color: "#5a5a63" };
-  }
-}
-
 export function ShareCard({
   team,
   formation,
@@ -100,7 +84,7 @@ export function ShareCard({
   const pkgPlayers = starters.map(toPkgPlayer);
   const pkgBench = bench.map(toPkgPlayer);
 
-  const tone = category ? badgeToneStyles(category.tone) : null;
+  const badgeBg = category ? BADGE_COLORS[category.badge] : null;
 
   return (
     <div
@@ -258,7 +242,7 @@ export function ShareCard({
           justifyContent: "center",
         }}
       >
-        {category && tone ? (
+        {category && badgeBg ? (
           <span
             style={{
               fontFamily: "var(--font-mono), ui-monospace, monospace",
@@ -268,9 +252,8 @@ export function ShareCard({
               textTransform: "uppercase",
               padding: "8px 22px",
               borderRadius: 999,
-              background: tone.background,
-              color: tone.color,
-              border: category.tone === "neutral" ? "1px solid #e1e0db" : "none",
+              background: badgeBg,
+              color: "#ffffff",
               lineHeight: 1,
             }}
           >

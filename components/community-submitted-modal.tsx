@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 import { SubmittedModal } from "@/components/submitted-modal";
-import type { BadgeKind, BadgeTone } from "@/components/community/recent-submission-tags";
+import type { BadgeKind } from "@/components/community/recent-submission-tags";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 
@@ -17,7 +17,7 @@ type Props = {
     totalSubmissions: number;
     picksByPlayerId: Map<number, number>;
   };
-  category: { badge: BadgeKind; tone: BadgeTone } | null;
+  category: { badge: BadgeKind } | null;
 };
 
 export function CommunitySubmittedModal({

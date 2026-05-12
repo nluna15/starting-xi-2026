@@ -4,7 +4,7 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
-import type { BadgeKind, BadgeTone } from "@/components/community/recent-submission-tags";
+import type { BadgeKind } from "@/components/community/recent-submission-tags";
 import { shareImageFilename, useShareImage } from "./use-share-image";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
   formation: FormationDef;
   starters: Player[];
   bench: Player[];
-  category: { badge: BadgeKind; tone: BadgeTone } | null;
+  category: { badge: BadgeKind } | null;
 };
 
 export function ShareActions({ team, formation, starters, bench, category }: Props) {
@@ -57,7 +57,7 @@ export function ShareActions({ team, formation, starters, bench, category }: Pro
       {busy ? (
         <SpinnerLabel>Generating image…</SpinnerLabel>
       ) : (
-        "Download squad"
+        "Share Squad"
       )}
     </Button>
   );

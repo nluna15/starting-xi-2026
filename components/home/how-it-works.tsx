@@ -15,12 +15,16 @@ const STEPS = [
     body: "Select from any of the qualified countries. FYI - Some countries rosters are coming soon",
   },
   {
-    title: "Assemble Your Squad",
-    body: "Set the formation, pick your starting 11, and add your best impact substitutes. Tell us why your 14 are the best suited to get a result on match day.",
+    title: "Select a formation",
+    body: "Choose the tactical shape that fits your vision, personnel strengths, or what you believe will earn a result on match day.",
   },
   {
-    title: "Compare Against Others",
-    body: "See how you stack up against other fans of your nation. Also see how your lineup compares to that of other countries.",
+    title: "Fine tune your squad",
+    body: "Your starting 11 only tells half the story. Who are the substitutes that can break a game open?",
+  },
+  {
+    title: "Almost Kick-Off",
+    body: "See how your roster stacks up against other lineups. Is your squad inexperienced, veterans, or packed with as much talent as possible?",
   },
 ];
 
@@ -28,7 +32,7 @@ export function HowItWorks() {
   return (
     <section className="space-y-3">
       <SectionHeading title="How it Works" />
-      <div className="grid gap-3 md:grid-cols-3">
+      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
         {STEPS.map((step, i) => {
           const stepLabel = `Step ${String(i + 1).padStart(2, "0")} / ${String(STEPS.length).padStart(2, "0")}`;
           return (

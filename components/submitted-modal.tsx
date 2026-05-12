@@ -9,7 +9,7 @@ import { StatTile } from "@/components/ui/stat";
 import { BuildPitch } from "@/components/build-pitch";
 import { computeAverages } from "@/components/lineup-summary";
 import { ShareActions } from "@/components/share/share-actions";
-import type { BadgeKind, BadgeTone } from "@/components/community/recent-submission-tags";
+import type { BadgeKind } from "@/components/community/recent-submission-tags";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 import { cn, formatAge, formatEur } from "@/lib/utils";
@@ -30,7 +30,7 @@ type Props = {
   starters: Player[];
   bench: Player[];
   pickRates: PickRates;
-  category: { badge: BadgeKind; tone: BadgeTone } | null;
+  category: { badge: BadgeKind } | null;
 };
 
 const MIN_SUBMISSIONS_FOR_TAGS = 5;
@@ -58,7 +58,10 @@ export function SubmittedModal({
 }: Props) {
   const [copied, setCopied] = React.useState(false);
   const copyTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
-  const shareUrl = typeof window === "undefined" ? "" : window.location.origin;
+  const shareUrl =
+    typeof window === "undefined"
+      ? ""
+      : `${window.location.origin}/community/${teamCode}`;
 
   React.useEffect(() => {
     return () => {
@@ -149,12 +152,12 @@ export function SubmittedModal({
           </div>
           <div className="mt-3 grid grid-cols-2 gap-3">
             <PlayerStat
-              label="Most Conventional Pick"
+              label="Safest pick"
               player={mostConventional}
               placeholder="Need 5+ lineups"
             />
             <PlayerStat
-              label="Most Bold Pick"
+              label="Boldest pick"
               player={mostBold}
               placeholder="Need 5+ lineups"
             />
@@ -173,23 +176,35 @@ export function SubmittedModal({
               size="lg"
               onClick={handleCopy}
               disabled={!shareUrl}
-              className={cn("w-full", copied && "bg-success hover:bg-success")}
+              className={cn(
+                "w-full bg-[#2563eb] text-white hover:bg-[#1d4ed8] active:bg-[#1d4ed8] focus-visible:bg-[#1d4ed8]",
+                copied && "bg-success hover:bg-success",
+              )}
               aria-live="polite"
             >
-              {copied ? "✓ Copied — paste anywhere" : "Share with a friend!"}
+              {copied ? "✓ Copied — paste anywhere" : "Share StartingXI"}
             </Button>
             <Link href={`/community/${teamCode}`} className="w-full">
               <Button variant="outline" size="lg" className="w-full">
-                View {team.name} Stats
+                View {team.name}
               </Button>
             </Link>
           </div>
         </div>
 
         {/* Right column: pitch preview card. The capture flow renders an
-            independent off-screen ShareCard, so this DOM is purely visual. */}
-        <div className="mt-6 xl:mt-0 xl:w-[55%] xl:shrink-0 overflow-hidden rounded-lg bg-white">
-          <div className="px-4 pt-3 pb-1 grid grid-cols-3 items-center">
+            independent off-screen ShareCard, so this DOM is purely visual.
+            Background image mirrors the exported share PNG so the preview
+            visually matches what users download. */}
+        <div className="relative mt-6 xl:mt-0 xl:w-[55%] xl:shrink-0 overflow-hidden rounded-lg bg-white">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/lineup-background.png"
+            alt=""
+            aria-hidden
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.33]"
+          />
+          <div className="relative px-4 pt-3 pb-1 grid grid-cols-3 items-center bg-white">
             <span className="mono text-[11px] font-medium tracking-[0.14em] text-emerald-900 uppercase inline-flex items-center gap-1.5">
               <span className="text-[22px] leading-none">{team.flagEmoji}</span>
               {teamLabel}
@@ -201,7 +216,7 @@ export function SubmittedModal({
               {formation.name}
             </span>
           </div>
-          <div className="px-3 pb-3 flex justify-center">
+          <div className="relative px-3 pb-3 flex justify-center">
             <div className="w-[85%] sp-modal-pitch">
               <style>{`.sp-modal-pitch .sp-bench { margin-top: 30px !important; padding-bottom: 5px !important; } .sp-modal-pitch .sp-bench-title { margin-bottom: 10px !important; font-size: 0 !important; } .sp-modal-pitch .sp-bench-title::before { content: "Impact substitutes"; font-size: 11px; } .sp-modal-pitch .sp-bench-row { height: 44px !important; } .sp-modal-pitch .sp-pointer-events-auto { pointer-events: none !important; }`}</style>
               <BuildPitch

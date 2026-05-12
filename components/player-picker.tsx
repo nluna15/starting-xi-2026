@@ -150,7 +150,11 @@ function PickerBody({
       .filter((p) =>
         q ? normalize(p.fullName).includes(q) || normalize(p.club).includes(q) : true,
       )
-      .sort((a, b) => b.marketValueEur - a.marketValueEur);
+      .sort((a, b) => {
+        const capsDiff = (b.internationalCaps ?? 0) - (a.internationalCaps ?? 0);
+        if (capsDiff !== 0) return capsDiff;
+        return b.marketValueEur - a.marketValueEur;
+      });
   }, [players, query, selected, slotKind, slotPositionCode]);
 
   const eligibleCount = React.useMemo(
@@ -340,21 +344,33 @@ function PickerBody({
                     <div className="truncate text-[14px] font-semibold text-ink">
                       {p.fullName}
                     </div>
-                    <div className="truncate mono text-[11px] tracking-[0.08em] text-ink-3">
-                      {p.detailedPosition} · {p.age}y · {p.club}
+                    <div className="truncate mono text-[11px] tracking-[0.04em] text-ink-3">
+                      {p.detailedPosition}
+                      <span className="mx-1 text-ink-faint">·</span>
+                      {p.age}y
+                      <span className="mx-1 text-ink-faint">·</span>
+                      {p.club}
                     </div>
                   </div>
                 </div>
-                {rate > 0 && (
-                  <div className="shrink-0 text-right">
-                    <div className="mono text-[13px] font-bold text-accent">
-                      {Math.round(rate * 100)}%
+                {(() => {
+                  const pct = Math.round(rate * 100);
+                  const flames = pct >= 76 ? 3 : pct >= 51 ? 2 : pct >= 15 ? 1 : 0;
+                  if (flames === 0) return null;
+                  return (
+                    <div
+                      className="shrink-0 flex items-center text-[18px] leading-none"
+                      aria-label={`${pct}% picked`}
+                      title={`${pct}% picked`}
+                    >
+                      {Array.from({ length: flames }).map((_, i) => (
+                        <span key={i} className={i === 0 ? "" : "-ml-3"}>
+                          🔥
+                        </span>
+                      ))}
                     </div>
-                    <div className="mono text-[10px] tracking-[0.12em] text-ink-faint uppercase">
-                      picked
-                    </div>
-                  </div>
-                )}
+                  );
+                })()}
               </button>
             </li>
           );

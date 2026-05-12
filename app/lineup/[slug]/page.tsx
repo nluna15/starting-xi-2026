@@ -73,6 +73,14 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
     squadCount > 0 ? allPlayers.reduce((s, p) => s + p.age, 0) / squadCount : null;
   const totalValue =
     squadCount > 0 ? allPlayers.reduce((s, p) => s + p.marketValueEur, 0) : null;
+  const playersWithCaps = allPlayers.filter((p) => p.internationalCaps != null);
+  const avgCaps =
+    playersWithCaps.length > 0
+      ? Math.round(
+          playersWithCaps.reduce((s, p) => s + (p.internationalCaps ?? 0), 0) /
+            playersWithCaps.length,
+        )
+      : null;
 
   const tagsEnabled = pickRates.totalSubmissions >= MIN_SUBMISSIONS_FOR_TAGS;
 
@@ -110,18 +118,13 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
 
       <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_360px]">
         <div className="space-y-4">
-          <div className="space-y-3">
-            <p className="cond text-center text-[12px] tracking-[0.08em] text-ink-2">
-              Formation {formation.name}
-            </p>
-            <div className="mx-auto w-[90%]">
-              <BuildPitch
-                formation={formation}
-                starters={startersResolved}
-                bench={benchResolved}
-                showPhotos
-              />
-            </div>
+          <div className="mx-auto w-[90%]">
+            <BuildPitch
+              formation={formation}
+              starters={startersResolved}
+              bench={benchResolved}
+              showPhotos
+            />
           </div>
         </div>
 
@@ -135,8 +138,8 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
               <StatTile label="Avg Age" value={formatAge(avgAge)} size="md" />
               <StatTile label="Value" value={formatEur(totalValue)} size="md" />
               <StatTile
-                label="Fans"
-                value={pickRates.totalSubmissions.toLocaleString()}
+                label="Avg Caps"
+                value={avgCaps != null ? avgCaps.toLocaleString() : "—"}
                 size="md"
               />
             </div>

@@ -43,16 +43,16 @@ export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
               letterSpacing: "-0.01em",
             }}
           >
-            <span className="text-black">Select Your Best</span>
+            <span className="text-black">Be the Coach</span>
             <br />
-            Win the Cup
+            Select Your Best
           </h1>
           <div className="flex flex-col gap-1">
             <p className="cond text-[15px] font-bold text-ink">{submissionsLine}</p>
             <p className="font-sans text-[13px] text-ink-3">{countdownLine}</p>
           </div>
           <Link href="/countries" className="mt-1 inline-flex">
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg" className="rounded-sm">
               Build Your Squad
             </Button>
           </Link>

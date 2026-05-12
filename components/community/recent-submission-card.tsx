@@ -1,20 +1,21 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { CommunityPitch, type CommunityStarter } from "@/components/community-pitch";
 import { SubmissionPositionList } from "@/components/community/submission-position-list";
 import {
+  BADGE_COLORS,
   categorize,
   deviationTags,
   type BadgeKind,
-  type BadgeTone,
   type DeviationTag,
 } from "@/components/community/recent-submission-tags";
 import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
 import type { Player } from "@/lib/db/schema";
 import type { RecentSubmission } from "@/lib/db/queries";
-import { cn, formatTimeAgo, lastName, useMediaQuery } from "@/lib/utils";
+import { formatTimeAgo, lastName, useMediaQuery } from "@/lib/utils";
 
 const TEAM_NAME_ABBREVIATIONS: Record<string, string> = {
   "United States": "USA",
@@ -27,7 +28,7 @@ type Props = {
 
 export function RecentSubmissionCard({ submission }: Props) {
   const narrow = useMediaQuery("(max-width: 410px)");
-  const { badge, tone } = categorize(submission);
+  const { badge } = categorize(submission);
   const tags = deviationTags(submission);
 
   const flagOverride = FIFA_FLAG_OVERRIDES[submission.team.code] ?? null;
@@ -44,10 +45,10 @@ export function RecentSubmissionCard({ submission }: Props) {
       <CardHeader
         flagEmoji={submission.team.flagEmoji}
         teamName={submission.team.name}
+        teamCode={submission.team.code}
         formationName={submission.formation.name}
         createdAt={submission.createdAt}
         badge={badge}
-        tone={tone}
       />
 
       {narrow ? (
@@ -90,59 +91,45 @@ export function RecentSubmissionCard({ submission }: Props) {
 function CardHeader({
   flagEmoji,
   teamName,
+  teamCode,
   formationName,
   createdAt,
   badge,
-  tone,
 }: {
   flagEmoji: string;
   teamName: string;
+  teamCode: string;
   formationName: string;
   createdAt: Date;
   badge: BadgeKind;
-  tone: BadgeTone;
 }) {
   return (
     <div className="flex items-center gap-2">
       <span className="text-2xl leading-none" aria-hidden="true">
         {flagEmoji}
       </span>
-      <span className="cond text-[15px] tracking-[0.06em] text-ink">
+      <Link
+        href={`/community/${teamCode.toLowerCase()}`}
+        className="cond text-[15px] tracking-[0.06em] text-ink transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none"
+      >
         {TEAM_NAME_ABBREVIATIONS[teamName] ?? teamName}
-      </span>
+      </Link>
       <span className="cond text-[15px] tracking-[0.06em] text-ink">· {formationName}</span>
       <span className="mono text-[10px] tracking-[0.14em] text-ink-faint">
         · {formatTimeAgo(createdAt)}
       </span>
       <span className="ml-auto">
-        <BadgePill badge={badge} tone={tone} />
+        <BadgePill badge={badge} />
       </span>
     </div>
   );
 }
 
-function BadgePill({ badge, tone }: { badge: BadgeKind; tone: BadgeTone }) {
-  const toneClass = (() => {
-    switch (tone) {
-      case "accent":
-        return "bg-accent text-accent-ink";
-      case "success":
-        return "bg-success text-accent-ink";
-      case "gold":
-        return "bg-gold text-ink";
-      case "neutral-strong":
-        return "bg-ink text-accent-ink";
-      case "neutral":
-      default:
-        return "bg-surface-2 text-ink-3 border border-line";
-    }
-  })();
+export function BadgePill({ badge }: { badge: BadgeKind }) {
   return (
     <span
-      className={cn(
-        "mono inline-block rounded-pill px-2 py-0.5 text-[10px] font-bold tracking-[0.12em]",
-        toneClass,
-      )}
+      className="mono inline-block rounded-pill px-2 py-0.5 text-[10px] font-bold tracking-[0.12em] text-white"
+      style={{ backgroundColor: BADGE_COLORS[badge] }}
     >
       {badge}
     </span>
