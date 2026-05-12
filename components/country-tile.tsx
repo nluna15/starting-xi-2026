@@ -3,6 +3,13 @@ import { cn } from "@/lib/utils";
 
 type Layout = "card" | "row";
 type Size = "md" | "lg";
+type FlagSize = "md" | "lg" | "xl";
+
+const FLAG_SIZE_CLASS: Record<FlagSize, string> = {
+  md: "text-2xl",
+  lg: "text-4xl",
+  xl: "text-[44px]",
+};
 
 type Props = {
   code: string;
@@ -11,6 +18,8 @@ type Props = {
   enabled: boolean;
   layout?: Layout;
   size?: Size;
+  /** Override the flag emoji size independently of the tile size. */
+  flagSize?: FlagSize;
   /** No outline border (e.g. home nation pickers). */
   borderless?: boolean;
   className?: string;
@@ -47,11 +56,14 @@ export function CountryTile({
   enabled,
   layout = "card",
   size = "md",
+  flagSize,
   borderless = false,
   className,
   hrefOverride,
   ariaLabel,
 }: Props) {
+  const resolvedFlagClass =
+    FLAG_SIZE_CLASS[flagSize ?? (size === "lg" ? "lg" : "md")];
   const surface = borderless
     ? cn(
         "rounded-md border-0 bg-surface-2 text-ink",
@@ -87,17 +99,14 @@ export function CountryTile({
       <div
         className={cn(
           surface,
-          "flex flex-col items-center justify-center gap-1 px-3 text-center",
-          size === "lg" ? "h-28 gap-2 rounded-lg" : "h-24",
+          "flex flex-col items-center justify-center gap-[1px] px-3 text-center",
+          size === "lg" ? "h-28 gap-0.5 rounded-lg" : "h-24",
           enabled ? enabledSurface : disabledSurface,
           className,
         )}
       >
         <span
-          className={cn(
-            "leading-none",
-            size === "lg" ? "text-4xl" : "text-2xl",
-          )}
+          className={cn("leading-none", resolvedFlagClass)}
           aria-hidden
         >
           {flagEmoji}

@@ -200,7 +200,7 @@ export default async function CommunityPage({
       <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-1">
           <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
-            Global Fan&rsquo;s Best 11
+            All Fan's Popular 11
           </h1>
         </div>
         <Link href="/countries" className="sm:shrink-0">

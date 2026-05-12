@@ -1,4 +1,4 @@
-import { CountryTile } from "@/components/country-tile";
+import { CountrySearch } from "@/components/countries/country-search";
 import { SectionHeading } from "@/components/home/section-heading";
 import { getRosterStatusByCode } from "@/lib/db/queries";
 import { WC_2026_SLOTS } from "@/lib/wc-2026-teams";
@@ -9,15 +9,29 @@ export default async function CountriesPage() {
   const statusByCode = await getRosterStatusByCode();
 
   const HOST_ORDER = ["USA", "CAN", "MEX"];
-  const confirmed = WC_2026_SLOTS.filter((s) => s.kind === "confirmed").sort((a, b) => {
-    if (a.kind !== "confirmed" || b.kind !== "confirmed") return 0;
-    const aHost = HOST_ORDER.indexOf(a.code);
-    const bHost = HOST_ORDER.indexOf(b.code);
-    if (aHost !== -1 || bHost !== -1) {
-      return (aHost === -1 ? Infinity : aHost) - (bHost === -1 ? Infinity : bHost);
-    }
-    return a.name.localeCompare(b.name);
-  });
+  const confirmed = WC_2026_SLOTS.filter((s) => s.kind === "confirmed")
+    .sort((a, b) => {
+      if (a.kind !== "confirmed" || b.kind !== "confirmed") return 0;
+      const aHost = HOST_ORDER.indexOf(a.code);
+      const bHost = HOST_ORDER.indexOf(b.code);
+      if (aHost !== -1 || bHost !== -1) {
+        return (aHost === -1 ? Infinity : aHost) - (bHost === -1 ? Infinity : bHost);
+      }
+      return a.name.localeCompare(b.name);
+    })
+    .flatMap((slot) =>
+      slot.kind === "confirmed"
+        ? [
+            {
+              code: slot.code,
+              name: slot.name,
+              flagEmoji: slot.flagEmoji,
+              enabled: (statusByCode.get(slot.code) ?? "missing") === "ready",
+            },
+          ]
+        : [],
+    );
+
   const tbd = WC_2026_SLOTS.filter((s) => s.kind === "tbd");
 
   return (
@@ -31,31 +45,11 @@ export default async function CountriesPage() {
         </p>
       </header>
 
-      <section className="space-y-3">
-        <SectionHeading eyebrow="01" title="Confirmed teams" />
-        <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          {confirmed.map((slot) => {
-            if (slot.kind !== "confirmed") return null;
-            const status = statusByCode.get(slot.code) ?? "missing";
-            return (
-              <li key={slot.code}>
-                <CountryTile
-                  code={slot.code}
-                  name={slot.name}
-                  flagEmoji={slot.flagEmoji}
-                  enabled={status === "ready"}
-                  layout="card"
-                  size="md"
-                />
-              </li>
-            );
-          })}
-        </ul>
-      </section>
+      <CountrySearch slots={confirmed} />
 
       {tbd.length > 0 && (
         <section className="space-y-3">
-          <SectionHeading eyebrow="02" title="Awaiting qualification" />
+          <SectionHeading eyebrow="01" title="Awaiting qualification" />
           <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             {tbd.map((slot) => {
               if (slot.kind !== "tbd") return null;
