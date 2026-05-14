@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { ShareActions } from "@/components/share/share-actions";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -21,6 +20,7 @@ type Props = {
 };
 
 export function OwnerLineupActions({
+  slug,
   teamCode,
   team,
   formation,
@@ -28,8 +28,6 @@ export function OwnerLineupActions({
   bench,
   category,
 }: Props) {
-  const searchParams = useSearchParams();
-  const justSubmitted = searchParams.get("submitted") === "1";
   const [copied, setCopied] = React.useState(false);
   const copyTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -42,7 +40,8 @@ export function OwnerLineupActions({
   async function handleShare() {
     if (typeof window === "undefined") return;
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      const shareUrl = `${window.location.origin}/lineup/${slug}`;
+      await navigator.clipboard.writeText(shareUrl);
     } catch {
       return;
     }
@@ -50,8 +49,6 @@ export function OwnerLineupActions({
     if (copyTimer.current) clearTimeout(copyTimer.current);
     copyTimer.current = setTimeout(() => setCopied(false), 2000);
   }
-
-  if (!justSubmitted) return null;
 
   return (
     <div className="flex flex-col gap-2 max-[410px]:flex-row max-[410px]:gap-1.5">
