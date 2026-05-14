@@ -62,6 +62,7 @@ export function CountrySearch({ slots }: Props) {
                   layout="card"
                   size="md"
                   flagSize="xl"
+                  showComingSoon={false}
                 />
               </li>
             ))}
