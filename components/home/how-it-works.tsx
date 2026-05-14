@@ -15,17 +15,9 @@ export function HowItWorks() {
       <Card padding="hero" className="gap-5">
         <div className="mx-auto flex max-w-[68ch] flex-col gap-4 text-center font-sans text-[14px] leading-[1.55] text-ink-3 [text-wrap:pretty]">
           <p>
-            The World Cup turns everyone into a football expert. First-timers and lifelong fans
-            alike suddenly have strong opinions. Who starts? Who comes off the bench? Who do you
-            build around?
-          </p>
-          <p>
             Pick a country, choose your formation, and build your team. Submit your lineup and
-            find out if you&apos;re a Consensus, Hot Take, or Throwback manager. Then see how
-            other fans would line up the team or against you.
-          </p>
-          <p className="display text-[18px] leading-[1.2] text-ink [text-wrap:balance]">
-            Pick your country. Build your XI. See where you stand.
+            find out if you&apos;re a Consensus, Hot Take manager, or if you have an unexpected twist. Then see how
+            other fans would line up the team or even line up against you.
           </p>
         </div>
         <div className="flex justify-center pt-1">

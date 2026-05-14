@@ -48,6 +48,7 @@ export function HamburgerMenu({ scrolled, transition }: Props) {
         setHowItWorksOpen(true);
       },
     },
+    { kind: "link", label: "Feedback", href: "/feedback" },
   ];
 
   return (
