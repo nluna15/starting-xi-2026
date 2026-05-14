@@ -1,107 +1,23 @@
 import Link from "next/link";
-import { inArray, sql } from "drizzle-orm";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
 import { CommunityPitch } from "@/components/community-pitch";
-import { CommunitySubmittedModal } from "@/components/community-submitted-modal";
 import { InsightStatCard } from "@/components/community/insight-stat-card";
 import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
 import type { BarRow } from "@/components/horizontal-bar-chart";
-import { db } from "@/lib/db/client";
-import { formations, players, submissions, teams, type Player } from "@/lib/db/schema";
 import {
   getCountrySquadStats,
   getGlobalCrowdStats,
-  getPickRatesForTeam,
   getRecentSubmissions,
   getRosterStatusByCode,
-  getTopFormationNameForTeam,
 } from "@/lib/db/queries";
-import { categorize } from "@/components/community/recent-submission-tags";
 import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
 
-type SearchParams = Promise<{ submitted?: string | string[] }>;
-
-async function loadSubmittedContext(slug: string) {
-  const submissionRow = (
-    await db.select().from(submissions).where(sql`${submissions.publicSlug} = ${slug}`).limit(1)
-  )[0];
-  if (!submissionRow) return null;
-
-  const teamRow = (
-    await db.select().from(teams).where(sql`${teams.id} = ${submissionRow.teamId}`).limit(1)
-  )[0];
-  if (!teamRow) return null;
-
-  const formationRow = (
-    await db
-      .select()
-      .from(formations)
-      .where(sql`${formations.id} = ${submissionRow.formationId}`)
-      .limit(1)
-  )[0];
-  if (!formationRow) return null;
-
-  const allIds = [...submissionRow.starters, ...submissionRow.bench];
-  const playerRows = allIds.length
-    ? await db.select().from(players).where(inArray(players.id, allIds))
-    : [];
-  const byId = new Map(playerRows.map((p) => [p.id, p] as const));
-
-  const starters = submissionRow.starters
-    .map((id) => byId.get(id) ?? null)
-    .filter((p): p is Player => Boolean(p));
-  const bench = submissionRow.bench
-    .map((id) => byId.get(id) ?? null)
-    .filter((p): p is Player => Boolean(p));
-
-  const [pickRates, teamTopFormation] = await Promise.all([
-    getPickRatesForTeam(teamRow.id),
-    getTopFormationNameForTeam(teamRow.id),
-  ]);
-
-  // Same badge logic the recent-submissions feed uses, evaluated against the
-  // freshly-saved submission so the share card matches what other fans will
-  // eventually see in the feed.
-  const category = categorize({
-    starters,
-    formation: { name: formationRow.name },
-    teamTopFormation,
-    teamTotalSubmissions: pickRates.totalSubmissions,
-    teamPickRates: pickRates.picksByPlayerId.size
-      ? new Map(
-          [...pickRates.picksByPlayerId].map(([id, count]) => [
-            id,
-            pickRates.totalSubmissions > 0 ? count / pickRates.totalSubmissions : 0,
-          ]),
-        )
-      : new Map(),
-  });
-
-  return {
-    team: { name: teamRow.name, flagEmoji: teamRow.flagEmoji },
-    teamCode: teamRow.code,
-    formation: { name: formationRow.name, slots: formationRow.slots },
-    starters,
-    bench,
-    pickRates,
-    category,
-  };
-}
-
-export default async function CommunityPage({
-  searchParams,
-}: {
-  searchParams: SearchParams;
-}) {
-  const { submitted } = await searchParams;
-  const submittedSlug = Array.isArray(submitted) ? submitted[0] : submitted;
-  const submittedContext = submittedSlug ? await loadSubmittedContext(submittedSlug) : null;
-
+export default async function CommunityPage() {
   const [stats, countryStats, statusByCode, recentSubmissions] = await Promise.all([
     getGlobalCrowdStats(),
     getCountrySquadStats(),
@@ -148,21 +64,18 @@ export default async function CommunityPage({
 
   if (stats.totalSubmissions === 0) {
     return (
-      <>
-        <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
-          <span className="text-4xl" aria-hidden>
-            🏆
-          </span>
-          <h1 className="display text-[44px] text-ink sm:text-[52px]">No submissions yet</h1>
-          <p className="max-w-md text-[14px] text-ink-3">
-            Be the first to submit a lineup and the community page will start to fill in.
-          </p>
-          <Link href="/countries">
-            <Button>Pick a country</Button>
-          </Link>
-        </div>
-        {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
-      </>
+      <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
+        <span className="text-4xl" aria-hidden>
+          🏆
+        </span>
+        <h1 className="display text-[44px] text-ink sm:text-[52px]">No submissions yet</h1>
+        <p className="max-w-md text-[14px] text-ink-3">
+          Be the first to submit a lineup and the community page will start to fill in.
+        </p>
+        <Link href="/countries">
+          <Button>Pick a country</Button>
+        </Link>
+      </div>
     );
   }
 
@@ -188,29 +101,30 @@ export default async function CommunityPage({
 
   return (
     <div className="space-y-10">
-      <section className="space-y-3">
-        <h2 className="display text-[28px] text-ink sm:text-[32px]">Find your country</h2>
-        <CommunityCountryCarousel
-          slots={WC_2026_SLOTS}
-          readyCodes={readyCodes}
-          linkMode="community"
-        />
-      </section>
+      <div className="space-y-4">
+        <section>
+          <CommunityCountryCarousel
+            slots={WC_2026_SLOTS}
+            readyCodes={readyCodes}
+            linkMode="community"
+          />
+        </section>
 
-      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div className="space-y-1">
-          <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
-            All Fan's Popular 11
-          </h1>
-        </div>
-        <Link href="/countries" className="sm:shrink-0">
-          <Button size="lg">Submit your own XI</Button>
-        </Link>
-      </header>
+        <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="space-y-1">
+            <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
+              All Fan's Popular 11
+            </h1>
+          </div>
+          <Link href="/countries" className="sm:shrink-0">
+            <Button size="lg">Pick a country</Button>
+          </Link>
+        </header>
+      </div>
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         {formationDef && (
-          <div className="mx-auto w-[81%] max-w-[420px] pb-10 lg:max-w-[560px]">
+          <div className="community-page-pitch mx-auto w-[81%] max-w-[420px] pb-10 lg:max-w-[560px]">
             <CommunityPitch
               formation={formationDef}
               starters={startersResolved}
@@ -305,7 +219,6 @@ export default async function CommunityPage({
         </div>
       </section>
       <RecentSubmissionsFeed submissions={recentSubmissions} />
-      {submittedContext && <CommunitySubmittedModal {...submittedContext} />}
     </div>
   );
 }

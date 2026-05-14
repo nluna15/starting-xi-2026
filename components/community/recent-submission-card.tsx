@@ -84,6 +84,15 @@ export function RecentSubmissionCard({ submission }: Props) {
           <DeviationTagsRow tags={tags} />
         </div>
       )}
+
+      <div className="mt-auto flex justify-end">
+        <Link
+          href={`/lineup/${submission.slug}`}
+          className="cond text-[12px] tracking-[0.14em] text-ink-3 transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none"
+        >
+          See details →
+        </Link>
+      </div>
     </Card>
   );
 }
@@ -166,7 +175,7 @@ function SubsRow({ bench }: { bench: Player[] }) {
   );
 }
 
-function DeviationTagsRow({ tags }: { tags: DeviationTag[] }) {
+export function DeviationTagsRow({ tags }: { tags: DeviationTag[] }) {
   return (
     <ul className="flex flex-wrap gap-1.5">
       {tags.map((tag, i) => (

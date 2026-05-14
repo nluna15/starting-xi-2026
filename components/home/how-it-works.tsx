@@ -1,53 +1,40 @@
+"use client";
+
+import * as React from "react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/home/section-heading";
-
-/* -----------------------------------------------------------------------------
-   How it works — three numbered editorial cards.
-   - Step indicator: mono 11px ink-faint ("STEP 01 / 03").
-   - Title:          display 22px ink (a hair below the section heading so the
-                     section title still reads as the primary level).
-   - Body:           sans 14px ink-3, line-height 1.45.
-   ----------------------------------------------------------------------------- */
-
-const STEPS = [
-  {
-    title: "Pick your country",
-    body: "Select from any of the qualified countries. FYI - Some countries rosters are coming soon",
-  },
-  {
-    title: "Select a formation",
-    body: "Choose the tactical shape that fits your vision, personnel strengths, or what you believe will earn a result on match day.",
-  },
-  {
-    title: "Fine tune your squad",
-    body: "Your starting 11 only tells half the story. Who are the substitutes that can break a game open?",
-  },
-  {
-    title: "Almost Kick-Off",
-    body: "See how your roster stacks up against other lineups. Is your squad inexperienced, veterans, or packed with as much talent as possible?",
-  },
-];
+import { HowItWorksModal } from "@/components/chrome/how-it-works-modal";
 
 export function HowItWorks() {
+  const [open, setOpen] = React.useState(false);
+
   return (
     <section className="space-y-3">
       <SectionHeading title="How it Works" />
-      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
-        {STEPS.map((step, i) => {
-          const stepLabel = `Step ${String(i + 1).padStart(2, "0")} / ${String(STEPS.length).padStart(2, "0")}`;
-          return (
-            <Card key={step.title} padding="hero" className="gap-3">
-              <span className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
-                {stepLabel}
-              </span>
-              <h3 className="display text-[22px] leading-[0.95] text-ink [text-wrap:balance]">
-                {step.title}
-              </h3>
-              <p className="font-sans text-[14px] leading-[1.45] text-ink-3">{step.body}</p>
-            </Card>
-          );
-        })}
-      </div>
+      <Card padding="hero" className="gap-5">
+        <div className="mx-auto flex max-w-[68ch] flex-col gap-4 text-center font-sans text-[14px] leading-[1.55] text-ink-3 [text-wrap:pretty]">
+          <p>
+            The World Cup turns everyone into a football expert. First-timers and lifelong fans
+            alike suddenly have strong opinions. Who starts? Who comes off the bench? Who do you
+            build around?
+          </p>
+          <p>
+            Pick a country, choose your formation, and build your team. Submit your lineup and
+            find out if you&apos;re a Consensus, Hot Take, or Throwback manager. Then see how
+            other fans would line up the team or against you.
+          </p>
+          <p className="display text-[18px] leading-[1.2] text-ink [text-wrap:balance]">
+            Pick your country. Build your XI. See where you stand.
+          </p>
+        </div>
+        <div className="flex justify-center pt-1">
+          <Button variant="secondary" size="md" onClick={() => setOpen(true)}>
+            See the full guide
+          </Button>
+        </div>
+      </Card>
+      <HowItWorksModal open={open} onClose={() => setOpen(false)} />
     </section>
   );
 }

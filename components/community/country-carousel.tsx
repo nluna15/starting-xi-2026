@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { CountryTile } from "@/components/country-tile";
 import { cn, normalize } from "@/lib/utils";
 import type { WcSlot } from "@/lib/wc-2026-teams";
 
@@ -98,30 +97,58 @@ export function CommunityCountryCarousel({
 
   const renderConfirmedTile = (slot: ConfirmedSlot) => {
     const isActive = activeCode === slot.code;
-    const hrefOverride =
-      linkMode === "community" ? `/community/${slot.code}` : undefined;
+    const isReady = ready.has(slot.code);
+    const href =
+      linkMode === "community"
+        ? `/community/${slot.code}`
+        : `/${slot.code}/build`;
     const ariaLabel =
       linkMode === "community"
         ? `See the ${slot.name} community XI`
-        : undefined;
+        : `Build the ${slot.name} XI`;
+
+    const tile = (
+      <div
+        className={cn(
+          "flex h-16 w-32 flex-col items-center justify-center gap-[1px] rounded-md bg-surface-2 px-3 text-center text-ink",
+          "transition-[background-color,color] duration-150 ease-in-out",
+          // Below 410px: drop the label, enlarge the flag, and shrink the
+          // tile so more flags fit on a narrow screen.
+          "max-[410px]:h-12 max-[410px]:w-[68px] max-[410px]:px-1",
+          isReady
+            ? "hover:bg-accent-soft hover:text-accent-deep"
+            : "cursor-not-allowed opacity-55",
+          isActive && "bg-accent-soft text-accent-deep ring-2 ring-accent",
+        )}
+      >
+        <span
+          className="text-2xl leading-none max-[410px]:text-[34px]"
+          aria-hidden
+        >
+          {slot.flagEmoji}
+        </span>
+        <span className="cond text-[12px] font-bold leading-tight max-[410px]:hidden">
+          {slot.code} Fans
+        </span>
+      </div>
+    );
+
     return (
-      <div key={slot.code} className="snap-start shrink-0 w-32">
-        <CountryTile
-          code={slot.code}
-          name={`${slot.code} Fans`}
-          flagEmoji={slot.flagEmoji}
-          enabled={ready.has(slot.code)}
-          layout="card"
-          size="md"
-          borderless
-          className={cn(
-            "h-16",
-            isActive &&
-              "bg-accent-soft text-accent-deep ring-2 ring-accent",
-          )}
-          hrefOverride={hrefOverride}
-          ariaLabel={ariaLabel}
-        />
+      <div
+        key={slot.code}
+        className="snap-start shrink-0 w-32 max-[410px]:w-[68px]"
+      >
+        {isReady ? (
+          <Link
+            href={href}
+            aria-label={ariaLabel}
+            className="block rounded-md text-ink no-underline focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft"
+          >
+            {tile}
+          </Link>
+        ) : (
+          tile
+        )}
       </div>
     );
   };
@@ -129,7 +156,7 @@ export function CommunityCountryCarousel({
   const renderTbdTile = (slot: TbdSlot) => (
     <div
       key={slot.key}
-      className="snap-start shrink-0 flex h-16 w-32 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
+      className="snap-start shrink-0 flex h-16 w-32 max-[410px]:h-12 flex-col items-center justify-center gap-0.5 rounded-md bg-bg-sunk px-3 text-center text-ink-faint"
     >
       <span className="text-xl leading-none" aria-hidden>
         ❔
@@ -159,7 +186,7 @@ export function CommunityCountryCarousel({
       <div className="relative -mx-4 sm:mx-0">
         <div
           ref={scrollerRef}
-          className="flex snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth px-4 pb-1 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex items-center snap-x snap-mandatory gap-2 overflow-x-auto overflow-y-hidden overscroll-y-contain touch-pan-x scroll-smooth px-4 pb-1 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {activeSlot && renderConfirmedTile(activeSlot)}
 
@@ -214,6 +241,7 @@ function AllNationsTile({
 }) {
   const cls = cn(
     "snap-start shrink-0 w-32 flex h-16 items-center justify-center gap-2 rounded-md px-3 text-center",
+    "max-[410px]:h-12",
     "border border-line bg-surface-2",
     "cond text-[13px] font-bold text-ink",
     "transition-[background-color,border-color,color] duration-150 ease-in-out",

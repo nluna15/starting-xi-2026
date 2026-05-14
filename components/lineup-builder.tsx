@@ -31,7 +31,7 @@ type ActiveSlot = { kind: "starter"; index: number } | { kind: "bench"; index: n
 export function LineupBuilder({
   players,
   teamCode,
-  defaultFormation = "4-3-3",
+  defaultFormation = "3-4-2-1",
   pickCounts,
   totalSubmissions = 0,
 }: Props) {
@@ -207,12 +207,12 @@ export function LineupBuilder({
 
   const remainingPicks = 14 - filledCount;
   const submitLabel = allFilled
-    ? "Review Lineup"
+    ? "Create Squad"
     : `${remainingPicks} ${remainingPicks === 1 ? "pick" : "picks"} remaining`;
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line pb-4">
+    <div className="flex flex-col gap-6 max-[410px]:flex-1 max-[410px]:gap-1">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-line pb-4 max-[410px]:pb-1">
         <span className="cond text-[12px] text-ink-2">Formation</span>
         <div className="flex flex-wrap items-center gap-1.5 max-[410px]:hidden">
           {sortedFormations.map((f) => (
@@ -230,42 +230,30 @@ export function LineupBuilder({
             </Chip>
           ))}
         </div>
-        <div className="relative hidden max-[410px]:block">
-          <select
-            value={formationName}
-            onChange={(e) => setFormationName(e.target.value)}
-            aria-label="Formation"
-            className="mono h-7 appearance-none rounded-pill border border-accent bg-accent-soft pl-3 pr-7 text-[11px] font-bold uppercase tracking-[0.04em] text-accent-deep focus-visible:border-accent focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft"
-          >
-            {sortedFormations.map((f) => (
-              <option key={f.name} value={f.name}>
-                {f.name}
-              </option>
-            ))}
-          </select>
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 12 12"
-            className="pointer-events-none absolute right-2 top-1/2 h-3 w-3 -translate-y-1/2 text-accent-deep"
-          >
-            <path
-              d="M3 4.5l3 3 3-3"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+        <div className="hidden max-[410px]:flex w-full -mx-4 gap-1.5 overflow-x-auto px-4 pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {sortedFormations.map((f) => (
+            <Chip
+              key={f.name}
+              as="button"
+              type="button"
+              size="sm"
+              selected={f.name === formationName}
+              onClick={() => setFormationName(f.name)}
+              aria-pressed={f.name === formationName}
+              className="mono shrink-0 tracking-[0.04em]"
+            >
+              {f.name}
+            </Chip>
+          ))}
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-[1fr_360px]">
+      <div className="grid gap-6 md:grid-cols-[1fr_360px] md:gap-x-10">
         <div className="order-2 space-y-4 md:order-1">
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-2">
             <Chip variant="neutral" size="sm">
               <span className="mono tracking-[0.04em]">{startersFilled} / 11</span>
-              <span>Starting</span>
+              <span>Starters</span>
             </Chip>
             <Chip variant="neutral" size="sm">
               <span className="mono tracking-[0.04em]">
@@ -290,35 +278,38 @@ export function LineupBuilder({
         </div>
 
         <div className="order-1 flex flex-col gap-4 md:order-2">
-          <div className="flex justify-end">
+          <div className="flex justify-end max-[410px]:hidden">
             <Button
               variant="primary"
               size="lg"
               onClick={handleSubmit}
               disabled={!allFilled || submitting}
+              className="bg-[#1f8a3a] hover:bg-[#197030] active:bg-[#197030]"
             >
               {submitting ? "Submitting…" : submitLabel}
             </Button>
           </div>
 
-          <div className="hidden min-h-0 flex-1 md:block">
-            <PlayerPicker
-              mode="panel"
-              onPick={handlePick}
-              onClear={handleClear}
-              players={players}
-              pickedIds={pickedIds}
-              filterPosition={slotPositionCode}
-              slotLabel={slotLabel}
-              slotPositionCode={slotPositionCode}
-              slotDetailedCode={slotDetailedCode}
-              slotIndex={active.index}
-              slotKind={active.kind}
-              currentPick={currentPick}
-              showPhotos={showPhotos}
-              pickCounts={pickCountMap}
-              totalSubmissions={totalSubmissions}
-            />
+          <div className="relative hidden min-h-0 flex-1 md:block">
+            <div className="absolute inset-0">
+              <PlayerPicker
+                mode="panel"
+                onPick={handlePick}
+                onClear={handleClear}
+                players={players}
+                pickedIds={pickedIds}
+                filterPosition={slotPositionCode}
+                slotLabel={slotLabel}
+                slotPositionCode={slotPositionCode}
+                slotDetailedCode={slotDetailedCode}
+                slotIndex={active.index}
+                slotKind={active.kind}
+                currentPick={currentPick}
+                showPhotos={showPhotos}
+                pickCounts={pickCountMap}
+                totalSubmissions={totalSubmissions}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -350,6 +341,18 @@ export function LineupBuilder({
           {error}
         </div>
       )}
+
+      <div className="hidden max-[410px]:flex justify-center max-[410px]:mt-auto max-[410px]:pt-6">
+        <Button
+          variant="primary"
+          size="lg"
+          onClick={handleSubmit}
+          disabled={!allFilled || submitting}
+          className="bg-[#1f8a3a] hover:bg-[#197030] active:bg-[#197030]"
+        >
+          {submitting ? "Submitting…" : submitLabel}
+        </Button>
+      </div>
     </div>
   );
 }

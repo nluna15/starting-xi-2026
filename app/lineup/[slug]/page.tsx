@@ -1,12 +1,19 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
 import { BuildPitch } from "@/components/build-pitch";
 import { OwnerLineupActions } from "@/components/owner-lineup-actions";
+import { BadgePill, DeviationTagsRow } from "@/components/community/recent-submission-card";
+import {
+  BADGE_DEFINITIONS,
+  categorize as categorizeSubmission,
+  deviationTags,
+} from "@/components/community/recent-submission-tags";
 import { Card } from "@/components/ui/card";
 import { StatTile } from "@/components/ui/stat";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
-import { getPickRatesForTeam } from "@/lib/db/queries";
+import { getPickRatesForTeam, getTopFormationNameForTeam } from "@/lib/db/queries";
 import { readFingerprint } from "@/lib/fingerprint";
 import { cn, formatAge, formatEur } from "@/lib/utils";
 import type { Player } from "@/lib/db/schema";
@@ -59,8 +66,9 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
 
   const formation: FormationDef = { name: formationRow.name, slots: formationRow.slots };
 
-  const [pickRates, fingerprint] = await Promise.all([
+  const [pickRates, teamTopFormation, fingerprint] = await Promise.all([
     getPickRatesForTeam(teamRow.id),
+    getTopFormationNameForTeam(teamRow.id),
     readFingerprint(),
   ]);
   const isOwner = Boolean(fingerprint && fingerprint === submissionRow.fingerprint);
@@ -71,8 +79,10 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
   const squadCount = allPlayers.length;
   const avgAge =
     squadCount > 0 ? allPlayers.reduce((s, p) => s + p.age, 0) / squadCount : null;
-  const totalValue =
-    squadCount > 0 ? allPlayers.reduce((s, p) => s + p.marketValueEur, 0) : null;
+  const avgValue =
+    squadCount > 0
+      ? allPlayers.reduce((s, p) => s + p.marketValueEur, 0) / squadCount
+      : null;
   const playersWithCaps = allPlayers.filter((p) => p.internationalCaps != null);
   const avgCaps =
     playersWithCaps.length > 0
@@ -98,45 +108,142 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
   const debatedCount = pickCategories.filter((p) => p.category === "debated").length;
   const boldCount = pickCategories.filter((p) => p.category === "bold").length;
   const totalTagged = pickCategories.length;
-  const boldestPick =
-    tagsEnabled && pickCategories.length > 0
-      ? [...pickCategories].sort((a, b) => a.rate - b.rate)[0]
+  const playerCategoryMap = tagsEnabled
+    ? new Map<number, PickCategory>(pickCategories.map((p) => [p.player.id, p.category]))
+    : undefined;
+  const sortedByRate = tagsEnabled ? [...pickCategories].sort((a, b) => a.rate - b.rate) : [];
+  const boldestPick = sortedByRate[0] ?? null;
+  const mostConventionalCandidate = sortedByRate[sortedByRate.length - 1] ?? null;
+  const mostConventionalPick =
+    mostConventionalCandidate && mostConventionalCandidate.player.id !== boldestPick?.player.id
+      ? mostConventionalCandidate
       : null;
+
+  const starterPlayers = startersResolved.filter((p): p is Player => Boolean(p));
+  const benchPlayers = benchResolved.filter((p): p is Player => Boolean(p));
+  const teamPickRateMap = new Map(
+    [...pickRates.picksByPlayerId].map(([id, count]) => [
+      id,
+      pickRates.totalSubmissions > 0 ? count / pickRates.totalSubmissions : 0,
+    ]),
+  );
+  const submissionBadge = categorizeSubmission({
+    starters: starterPlayers,
+    formation: { name: formation.name },
+    teamTopFormation,
+    teamTotalSubmissions: pickRates.totalSubmissions,
+    teamPickRates: teamPickRateMap,
+  }).badge;
+
+  // Hydrate top-20 popular players for this team so `deviationTags` can match
+  // bold starters against missing fan-favorite alternatives at the same broad
+  // position. Mirrors POPULAR_PLAYERS_PER_TEAM in getRecentSubmissions.
+  const POPULAR_PLAYERS_LIMIT = 20;
+  const popularIds = [...pickRates.picksByPlayerId.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0] - b[0])
+    .slice(0, POPULAR_PLAYERS_LIMIT)
+    .map(([id]) => id);
+  const missingPopularIds = popularIds.filter((id) => !byId.has(id));
+  const extraPopularRows = missingPopularIds.length
+    ? await db.select().from(players).where(inArray(players.id, missingPopularIds))
+    : [];
+  const popularPlayerById = new Map<number, Player>(byId);
+  for (const p of extraPopularRows) popularPlayerById.set(p.id, p);
+  const teamPopularPlayers = popularIds
+    .map((id) => popularPlayerById.get(id))
+    .filter((p): p is Player => Boolean(p));
+
+  const tags = deviationTags({
+    starters: starterPlayers,
+    bench: benchPlayers,
+    formation: { name: formation.name },
+    teamTopFormation,
+    teamTotalSubmissions: pickRates.totalSubmissions,
+    teamPickRates: teamPickRateMap,
+    teamPopularPlayers,
+  });
 
   const pageTitle = `${isOwner ? "Your" : "One fan's"} ${teamRow.name} 2026`;
 
   return (
-    <div className="space-y-6">
-      <header className="flex flex-col gap-2">
-        <span className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
-          Global Fan&rsquo;s Best 11 · {teamRow.flagEmoji} {teamRow.name} · {formation.name}
-        </span>
-        <h1 className="display text-[44px] text-ink leading-[0.95] [text-wrap:balance] sm:text-[52px]">
-          {pageTitle}
-        </h1>
-      </header>
+    <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_360px] md:gap-12">
+      <div className="space-y-4 md:space-y-6">
+        <header className="flex flex-col gap-2">
+          <h1 className="display text-[44px] text-ink leading-[0.95] [text-wrap:balance] sm:text-[52px]">
+            {pageTitle}
+          </h1>
+        </header>
 
-      <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_360px]">
-        <div className="space-y-4">
-          <div className="mx-auto w-[90%]">
-            <BuildPitch
+        {isOwner && (
+          <div className="min-[411px]:hidden">
+            <OwnerLineupActions
+              slug={slug}
+              teamCode={teamRow.code}
+              team={{ name: teamRow.name, flagEmoji: teamRow.flagEmoji }}
               formation={formation}
-              starters={startersResolved}
-              bench={benchResolved}
-              showPhotos
+              starters={starterPlayers}
+              bench={benchPlayers}
+              category={{ badge: submissionBadge }}
             />
           </div>
-        </div>
+        )}
 
-        <div className="space-y-3 md:mt-7">
-          {/* Squad at a Glance */}
+        <div className="mx-auto w-[90%]">
+          <BuildPitch
+            formation={formation}
+            starters={startersResolved}
+            bench={benchResolved}
+            showPhotos
+            showPlayerDetails
+            useFirstInitial
+            playerCategories={playerCategoryMap}
+          />
+        </div>
+      </div>
+
+      <div className="space-y-3">
+          {isOwner && (
+            <div className="max-[410px]:hidden">
+              <OwnerLineupActions
+                slug={slug}
+                teamCode={teamRow.code}
+                team={{ name: teamRow.name, flagEmoji: teamRow.flagEmoji }}
+                formation={formation}
+                starters={starterPlayers}
+                bench={benchPlayers}
+                category={{ badge: submissionBadge }}
+              />
+            </div>
+          )}
+
           <Card padding="default" className="gap-3">
             <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
-              Squad at a Glance
+              Squad Profile
+            </h2>
+            <div className="self-start">
+              <BadgePill badge={submissionBadge} />
+            </div>
+            <p className="text-[12px] leading-snug text-ink-2">
+              {BADGE_DEFINITIONS[submissionBadge]}
+            </p>
+            {tags.length > 0 && (
+              <div className="flex flex-col gap-1.5 border-t border-line pt-3">
+                <h3 className="cond text-[12px] tracking-[0.14em] text-accent">
+                  Your key changes
+                </h3>
+                <DeviationTagsRow tags={tags} />
+              </div>
+            )}
+          </Card>
+
+          {/* Player Insights */}
+          <Card padding="default" className="gap-3">
+            <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
+              Player Insights
             </h2>
             <div className="grid grid-cols-3 gap-3">
               <StatTile label="Avg Age" value={formatAge(avgAge)} size="md" />
-              <StatTile label="Value" value={formatEur(totalValue)} size="md" />
+              <StatTile label="Avg Value" value={formatEur(avgValue)} size="md" />
               <StatTile
                 label="Avg Caps"
                 value={avgCaps != null ? avgCaps.toLocaleString() : "—"}
@@ -168,37 +275,44 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
                 <LegendChip color="accent" label={`${boldCount} bold`} />
               </div>
 
+              {(boldestPick || mostConventionalPick) && (
+                <div className="mt-1 border-t border-line" />
+              )}
+              {mostConventionalPick && (
+                <>
+                  <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
+                    Your Safest Pick
+                  </p>
+                  <PickHighlightCard pick={mostConventionalPick} tone="conventional" />
+                </>
+              )}
               {boldestPick && (
                 <>
-                  <div className="mt-1 border-t border-line" />
                   <p className="mono text-[11px] font-medium tracking-[0.16em] text-ink-faint">
                     Your Boldest Call
                   </p>
-                  <BoldestPickCard pick={boldestPick} />
+                  <PickHighlightCard pick={boldestPick} tone="bold" />
                 </>
               )}
             </Card>
           )}
 
-          {/* Your Take / note */}
-          {isOwner ? (
-            <OwnerLineupActions
-              slug={slug}
-              initialNote={submissionRow.note ?? null}
-            />
-          ) : submissionRow.note ? (
-            <Card padding="default" className="gap-2">
-              <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
-                Their Reasoning
-              </h2>
-              <blockquote className="text-[14px] leading-[1.5] text-ink-2 italic">
-                {submissionRow.note}
-              </blockquote>
-            </Card>
-          ) : null}
+          <Link
+            href="/countries"
+            className={cn(
+              "inline-flex h-12 w-full items-center justify-center rounded-pill",
+              "bg-blue-600 text-white shadow-2",
+              "font-condensed font-extrabold uppercase tracking-[0.1em] text-[14px]",
+              "transition-[background-color,box-shadow,transform] duration-150 ease-in-out",
+              "hover:-translate-y-px hover:bg-blue-700 hover:shadow-3",
+              "active:translate-y-0 active:bg-blue-800 active:shadow-1",
+              "focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-blue-300",
+            )}
+          >
+            Create New Team
+          </Link>
         </div>
       </div>
-    </div>
   );
 }
 
@@ -257,13 +371,16 @@ function LegendChip({
   );
 }
 
-function BoldestPickCard({
+function PickHighlightCard({
   pick,
+  tone,
 }: {
   pick: { player: Player; rate: number };
+  tone: "bold" | "conventional";
 }) {
   const { player, rate } = pick;
   const initial = player.fullName.split(" ")[0]?.[0] ?? "?";
+  const rateColor = tone === "bold" ? "text-accent" : "text-success";
 
   return (
     <div className="flex items-center gap-3">
@@ -287,12 +404,12 @@ function BoldestPickCard({
       </div>
       <div className="min-w-0 flex-1">
         <p className="truncate text-[13px] font-semibold text-ink">{player.fullName}</p>
-        <p className="truncate mono text-[11px] tracking-[0.08em] text-ink-3">
-          {player.detailedPosition} · {player.age}y · {player.club}
+        <p className="truncate mono text-[11px] tracking-[0.02em] text-ink-3">
+          {player.detailedPosition} · {player.age}y · Int&rsquo;l Caps: {player.internationalCaps ?? "—"}
         </p>
       </div>
       <div className="shrink-0 text-right">
-        <p className="mono text-[14px] font-bold text-accent">
+        <p className={cn("mono text-[14px] font-bold", rateColor)}>
           {Math.round(rate * 100)}%
         </p>
         <p className="mono text-[10px] tracking-[0.12em] text-ink-faint uppercase">picked</p>

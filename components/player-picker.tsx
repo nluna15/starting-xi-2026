@@ -63,7 +63,7 @@ export function PlayerPicker(props: PlayerPickerProps) {
   }
 
   return (
-    <div className="sticky top-4 self-start overflow-hidden rounded-xl border border-line bg-surface shadow-1">
+    <div className="flex h-full flex-col overflow-hidden rounded-xl border border-line bg-surface shadow-1">
       <PickerBody {...props} />
     </div>
   );
@@ -197,7 +197,7 @@ function PickerBody({
   const allActive = selected.size === 0;
 
   return (
-    <div className="flex flex-col">
+    <div className="flex h-full min-h-0 flex-col">
       <div className="space-y-3 border-b border-line p-4">
         <div className="flex items-center justify-between gap-3">
           <div className="min-w-0 flex-1">
@@ -296,7 +296,7 @@ function PickerBody({
       <ul
         className={cn(
           "divide-y divide-line overflow-y-auto",
-          mode === "sheet" ? "max-h-[55vh]" : "max-h-[480px]",
+          mode === "sheet" ? "max-h-[55vh]" : "min-h-0 flex-1",
         )}
       >
         {filtered.length === 0 && (
@@ -349,7 +349,7 @@ function PickerBody({
                       <span className="mx-1 text-ink-faint">·</span>
                       {p.age}y
                       <span className="mx-1 text-ink-faint">·</span>
-                      {p.club}
+                      Int&rsquo;l caps: {p.internationalCaps ?? 0}
                     </div>
                   </div>
                 </div>

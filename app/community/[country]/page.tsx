@@ -31,7 +31,7 @@ export default async function CommunityCountryPage({
     getCrowdStats(code),
     getCountrySquadStats(),
     getRosterStatusByCode(),
-    getRecentSubmissions(12, code),
+    getRecentSubmissions(12, { teamCode: code }),
   ]);
 
   if (!stats.team) notFound();
@@ -45,13 +45,12 @@ export default async function CommunityCountryPage({
   );
 
   const submitHref = `/${team.code}/build`;
-  const submitLabel = `Submit ${team.code} best XI`;
+  const submitLabel = `Build ${team.code} squad`;
 
   if (stats.totalSubmissions === 0) {
     return (
       <div className="space-y-8">
-        <section className="space-y-3">
-          <h2 className="display text-[20px] text-ink sm:text-[22px]">Find your country</h2>
+        <section>
           <CommunityCountryCarousel
             slots={WC_2026_SLOTS}
             readyCodes={readyCodes}
@@ -136,35 +135,36 @@ export default async function CommunityCountryPage({
 
   return (
     <div className="space-y-10">
-      <section className="space-y-3">
-        <h2 className="display text-[20px] text-ink sm:text-[22px]">Find your country</h2>
-        <CommunityCountryCarousel
-          slots={WC_2026_SLOTS}
-          readyCodes={readyCodes}
-          linkMode="community"
-          activeCode={team.code}
-        />
-      </section>
+      <div className="space-y-4">
+        <section>
+          <CommunityCountryCarousel
+            slots={WC_2026_SLOTS}
+            readyCodes={readyCodes}
+            linkMode="community"
+            activeCode={team.code}
+          />
+        </section>
 
-      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div className="space-y-1">
-          <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
-            <span className="text-accent">{team.name}</span>&rsquo;s Best 11
-          </h1>
-          <p className="mono text-[11px] tracking-[0.16em] text-ink-faint">
-            From {stats.totalSubmissions.toLocaleString()}{" "}
-            {stats.totalSubmissions === 1 ? "submission" : "submissions"}
-          </p>
-        </div>
-        <Link href={submitHref} className="sm:shrink-0">
-          <Button size="lg">{submitLabel}</Button>
-        </Link>
-      </header>
+        <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="space-y-1">
+            <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
+              <span className="text-accent">{team.name}</span>&rsquo;s Best 11
+            </h1>
+            <p className="mono text-[11px] tracking-[0.16em] text-ink-faint">
+              From {stats.totalSubmissions.toLocaleString()}{" "}
+              {stats.totalSubmissions === 1 ? "submission" : "submissions"}
+            </p>
+          </div>
+          <Link href={submitHref} className="sm:shrink-0">
+            <Button size="lg">{submitLabel}</Button>
+          </Link>
+        </header>
+      </div>
 
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         <div className="space-y-4">
           {formationDef && (
-            <div className="mx-auto w-[81%] max-w-[420px] pb-10 lg:max-w-[560px]">
+            <div className="community-page-pitch mx-auto w-[81%] max-w-[420px] pb-10 lg:max-w-[560px]">
               <CommunityPitch
                 formation={formationDef}
                 starters={startersResolved}

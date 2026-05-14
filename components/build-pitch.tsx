@@ -5,11 +5,34 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { FormationDef } from "@/lib/formations";
 import type { Player } from "@/lib/db/schema";
-import { lastName, proxyPhotoUrl, useMediaQuery } from "@/lib/utils";
+import { hoverCardClampCSS } from "@/lib/pitch-hover-clamp";
+import {
+  formatEur,
+  initialPlusLastName,
+  lastName,
+  proxyPhotoUrl,
+  useMediaQuery,
+} from "@/lib/utils";
+
+type NameFormat = "full" | "lastOnly" | "initialPlusLast";
+
+function formatPlayerName(fullName: string, mode: NameFormat): string {
+  if (mode === "lastOnly") return lastName(fullName);
+  if (mode === "initialPlusLast") return initialPlusLastName(fullName);
+  return fullName;
+}
 
 type ActiveBlank =
   | { kind: "starter"; index: number }
   | { kind: "bench"; index: number; total: number };
+
+export type PitchPickCategory = "conventional" | "debated" | "bold";
+
+const CATEGORY_EMOJI: Record<PitchPickCategory, string> = {
+  bold: "🔴",
+  debated: "🟡",
+  conventional: "🟢",
+};
 
 type Props = {
   formation: FormationDef;
@@ -25,12 +48,28 @@ type Props = {
    */
   activeBlank?: ActiveBlank | null;
   showPhotos?: boolean;
+  /**
+   * Show a hover card with age, market value, caps, and current club. Opt-in
+   * because the builder UI uses hover for slot interaction.
+   */
+  showPlayerDetails?: boolean;
   /** Force last-name-only labels regardless of viewport width. */
   shortenNames?: boolean;
+  /**
+   * When the viewport is wider than 410px, render names as "F. Lastname"
+   * instead of the full first name. Narrow viewports still collapse to
+   * last-name-only via the existing `isNarrow` path.
+   */
+  useFirstInitial?: boolean;
   /** Fixed avatar size in pixels. Overrides the package's responsive clamp. */
   avatarSize?: number;
   /** Gap in pixels between avatar bottom and name label. Default is 8px (sp-mt-2). */
   avatarNameGap?: number;
+  /**
+   * Map of player id → crowd-pick category. When provided, prepends a colored
+   * dot (🟢 / 🟡 / 🔴) to the player's display name on the pitch and bench.
+   */
+  playerCategories?: Map<number, PitchPickCategory>;
 };
 
 // Pull the design-system accent into the pitch package's slot ring + avatar
@@ -42,13 +81,26 @@ type Props = {
 function toPkgPlayer(
   p: Player | null,
   showPhotos: boolean,
-  shortenName: boolean,
+  nameFormat: NameFormat,
+  withDetails: boolean,
+  category?: PitchPickCategory,
 ): PkgPlayer | null {
   if (!p) return null;
+  const extras: Record<string, string | number> | undefined = withDetails
+    ? {
+        Age: p.age,
+        Value: formatEur(p.marketValueEur),
+        Caps: p.internationalCaps ?? "—",
+        Club: p.club,
+      }
+    : undefined;
+  const baseName = formatPlayerName(p.fullName, nameFormat);
+  const name = category ? `${CATEGORY_EMOJI[category]} ${baseName}` : baseName;
   return {
     id: String(p.id),
-    name: shortenName ? lastName(p.fullName) : p.fullName,
+    name,
     photoUrl: showPhotos ? proxyPhotoUrl(p.photoUrl) : undefined,
+    extras,
   };
 }
 
@@ -122,9 +174,12 @@ export function BuildPitch({
   highlightSlot = null,
   activeBlank = null,
   showPhotos = false,
+  showPlayerDetails = false,
   shortenNames = false,
+  useFirstInitial = false,
   avatarSize,
   avatarNameGap,
+  playerCategories,
 }: Props) {
   const isNarrow = useMediaQuery("(max-width: 410px)");
 
@@ -140,8 +195,20 @@ export function BuildPitch({
       role: s.slot,
     })),
   };
-  const pkgPlayers = starters.map((p) => toPkgPlayer(p, showPhotos, isNarrow || shortenNames));
-  const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, isNarrow || shortenNames));
+  const categoryFor = (p: Player | null) =>
+    p ? playerCategories?.get(p.id) : undefined;
+  const nameFormat: NameFormat =
+    isNarrow || shortenNames
+      ? "lastOnly"
+      : useFirstInitial
+        ? "initialPlusLast"
+        : "full";
+  const pkgPlayers = starters.map((p) =>
+    toPkgPlayer(p, showPhotos, nameFormat, showPlayerDetails, categoryFor(p)),
+  );
+  const pkgBench = bench?.map((p) =>
+    toPkgPlayer(p, showPhotos, nameFormat, showPlayerDetails, categoryFor(p)),
+  );
   const hl = highlightSlot != null ? formation.slots[highlightSlot] ?? null : null;
 
   return (
@@ -154,6 +221,15 @@ export function BuildPitch({
       )}
       {activeBlank && (
         <style>{blankHighlightCSS(scopeClass, activeBlank)}</style>
+      )}
+      {showPlayerDetails && (
+        <style>
+          {hoverCardClampCSS(
+            scopeClass,
+            formation.slots.map((s) => s.x),
+            bench?.length ?? 0,
+          )}
+        </style>
       )}
       <SoccerPitch
         formation={pkgFormation}

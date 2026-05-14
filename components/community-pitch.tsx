@@ -4,6 +4,7 @@ import * as React from "react";
 import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { FormationDef } from "@/lib/formations";
+import { hoverCardClampCSS } from "@/lib/pitch-hover-clamp";
 import { formatEur, lastName, useMediaQuery } from "@/lib/utils";
 
 export type CommunityStarter = {
@@ -112,10 +113,16 @@ export function CommunityPitch({
   const pkgBench = bench?.map((p) => toPkgPlayer(p, showPhotos, shortenName));
 
   const overrideCSS = flagOverrideCSS(scopeClass, starters, bench);
+  const clampCSS = hoverCardClampCSS(
+    scopeClass,
+    formation.slots.map((s) => s.x),
+    bench?.length ?? 0,
+  );
 
   return (
     <div className={scopeClass}>
       {overrideCSS && <style>{overrideCSS}</style>}
+      <style>{clampCSS}</style>
       <SoccerPitch
         formation={pkgFormation}
         players={pkgPlayers}

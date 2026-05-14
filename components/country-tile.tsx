@@ -27,6 +27,8 @@ type Props = {
   hrefOverride?: string;
   /** Override the default aria-label. */
   ariaLabel?: string;
+  /** Show the "Roster coming soon" caption under disabled tiles. */
+  showComingSoon?: boolean;
 };
 
 /* -----------------------------------------------------------------------------
@@ -34,8 +36,7 @@ type Props = {
    - Surface: `--surface-2`. Hairline `--line` (or borderless when the host
      provides its own rhythm — home nation pickers / community carousel).
    - Hover (enabled only): tint to `--accent-soft`, border to `--accent`,
-     ink to `--accent-deep`. Mirrors the NationCarousel "All Nations" tile so
-     the row reads as one rhythm.
+     ink to `--accent-deep`.
    - Names are condensed uppercase per the editorial type system.
    ----------------------------------------------------------------------------- */
 export const COUNTRY_TILE_BASE = cn(
@@ -61,6 +62,7 @@ export function CountryTile({
   className,
   hrefOverride,
   ariaLabel,
+  showComingSoon = true,
 }: Props) {
   const resolvedFlagClass =
     FLAG_SIZE_CLASS[flagSize ?? (size === "lg" ? "lg" : "md")];
@@ -120,7 +122,7 @@ export function CountryTile({
           >
             {name}
           </span>
-          {!enabled && (
+          {!enabled && showComingSoon && (
             <span className="mono text-[10px] tracking-[0.12em] text-ink-faint">
               Roster coming soon
             </span>

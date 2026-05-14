@@ -740,8 +740,21 @@ export type RecentSubmission = {
 // scoped to that set.
 export async function getRecentSubmissions(
   limit = 9,
-  teamCode?: string,
+  opts?: { teamCode?: string; fingerprint?: string },
 ): Promise<RecentSubmission[]> {
+  const { teamCode, fingerprint } = opts ?? {};
+  // Build the head WHERE by ANDing the provided filters. Both filters use
+  // indexed columns (teams.code is unique, submissions.fingerprint has its own
+  // index).
+  const whereClauses = [
+    teamCode ? sql`t.code = ${teamCode}` : null,
+    fingerprint ? sql`s.fingerprint = ${fingerprint}` : null,
+  ].filter((c): c is NonNullable<typeof c> => c != null);
+  const whereSql =
+    whereClauses.length === 0
+      ? sql``
+      : sql`where ${sql.join(whereClauses, sql` and `)}`;
+
   const headRows = await db.execute(sql`
     select s.id, s.public_slug, s.team_id, s.formation_id, s.starters, s.bench,
            s.note, s.created_at,
@@ -750,7 +763,7 @@ export async function getRecentSubmissions(
     from ${submissions} s
     join ${teams} t on t.id = s.team_id
     join ${formations} f on f.id = s.formation_id
-    ${teamCode ? sql`where t.code = ${teamCode}` : sql``}
+    ${whereSql}
     order by s.created_at desc
     limit ${limit}
   `);

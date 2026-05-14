@@ -11,6 +11,13 @@ export function lastName(fullName: string): string {
   return parts.length > 1 ? parts[parts.length - 1] : fullName;
 }
 
+export function initialPlusLastName(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/).filter(Boolean);
+  if (parts.length <= 1) return fullName;
+  const [first, ...rest] = parts;
+  return `${first[0]}. ${rest.join(" ")}`;
+}
+
 export function normalize(str: string): string {
   return str.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 }

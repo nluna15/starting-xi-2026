@@ -51,13 +51,18 @@ export function ShareActions({ team, formation, starters, bench, category }: Pro
       size="lg"
       onClick={handleSave}
       disabled={generating}
-      className="w-full"
+      className="w-full max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2"
       aria-live="polite"
     >
       {busy ? (
-        <SpinnerLabel>Generating image…</SpinnerLabel>
+        <SpinnerLabel>
+          <span className="max-[410px]:hidden">Generating image…</span>
+          <span className="hidden max-[410px]:inline">…</span>
+        </SpinnerLabel>
       ) : (
-        "Share Squad"
+        <>
+          Download<span className="max-[410px]:hidden"> Team</span>
+        </>
       )}
     </Button>
   );

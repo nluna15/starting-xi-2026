@@ -1,6 +1,5 @@
 import type { Player } from "@/lib/db/schema";
 import { lastName } from "@/lib/utils";
-import type { RecentSubmission } from "@/lib/db/queries";
 
 export const MIN_TEAM_SUBS_FOR_BADGE = 5;
 export const BOLD_PICK_RATE = 0.2;
@@ -36,6 +35,16 @@ export const BADGE_COLORS: Record<BadgeKind, string> = {
   CONTROVERSIAL: "#c2410c",
   THROWBACK: "#92400e",
   HATCHLINGS: "#7c3aed",
+};
+
+export const BADGE_DEFINITIONS: Record<BadgeKind, string> = {
+  FRESH: "Among the first submissions for this team.",
+  THROWBACK: "Eight or more starters are older than 29.",
+  HATCHLINGS: "Starting XI averages under 24.5 years old.",
+  CONSENSUS: "Plays the team's most-picked formation with no bold starters.",
+  TACTICAL: "Unconventional formation, but every starter is a fan favorite.",
+  CONTROVERSIAL: "Unconventional formation with at least one bold starter.",
+  "HOT TAKE": "Unconventional formation with three or more bold starters.",
 };
 
 export type DeviationTag =
@@ -98,11 +107,25 @@ export function categorize(submission: CategorizeInput): { badge: BadgeKind } {
 
 const MAX_SWAP_TAGS = 2;
 
+// Same fields `deviationTags` actually reads. `RecentSubmission` is a
+// superset, so existing callers still satisfy the contract; surfaces that
+// build a deviation list outside the feed (e.g. the lineup page) can pass this
+// narrower shape without inventing the rest of `RecentSubmission`.
+export type DeviationInput = {
+  starters: Player[];
+  bench: Player[];
+  formation: { name: string };
+  teamTopFormation: string | null;
+  teamTotalSubmissions: number;
+  teamPickRates: Map<number, number>;
+  teamPopularPlayers: Player[];
+};
+
 // Pairs each bold starter (rate < BOLD_PICK_RATE) with the highest-rate
 // "conventional" player at the same broad position who is missing from this
 // submission entirely (starters + bench). Each missing player is consumed by
 // at most one swap so two bold FWDs don't both point at the same Salah.
-export function deviationTags(submission: RecentSubmission): DeviationTag[] {
+export function deviationTags(submission: DeviationInput): DeviationTag[] {
   const tags: DeviationTag[] = [];
   const formationDiffers = Boolean(
     submission.teamTopFormation && submission.teamTopFormation !== submission.formation.name,

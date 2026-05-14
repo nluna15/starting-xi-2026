@@ -3,8 +3,8 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { HamburgerMenu } from "@/components/chrome/hamburger-menu";
 
 /* -----------------------------------------------------------------------------
    App header — handoff §6 "Top bar"
@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
    - Compacts to ~75% bar height / ~80% element scale once the user has scrolled
      past a small threshold, then animates back when scrolled to top.
    - Brand wordmark hidden below 410px to free up horizontal room.
-   - Action cluster (left → right): Build Lineup → Lineup Data → Share.
+   - Action cluster (left → right): Build Lineup → Lineup Data → Menu.
    ----------------------------------------------------------------------------- */
 
 type NavLink = {
@@ -38,15 +38,7 @@ const TRANSITION = "transition-all duration-200 ease-out";
 
 export function Header() {
   const pathname = usePathname() ?? "/";
-  const [copied, setCopied] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
-  const copyTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  React.useEffect(() => {
-    return () => {
-      if (copyTimer.current) clearTimeout(copyTimer.current);
-    };
-  }, []);
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -54,18 +46,6 @@ export function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  async function handleShare() {
-    if (typeof window === "undefined") return;
-    try {
-      await navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
-      if (copyTimer.current) clearTimeout(copyTimer.current);
-      copyTimer.current = setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // clipboard unavailable — silently ignore
-    }
-  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-bg/95 backdrop-blur supports-[backdrop-filter]:bg-bg/80">
@@ -146,46 +126,7 @@ export function Header() {
               );
             })}
             <li>
-              <button
-                type="button"
-                onClick={handleShare}
-                aria-label={copied ? "Link copied" : "Copy link to this page"}
-                className={cn(
-                  "inline-flex items-center justify-center overflow-hidden whitespace-nowrap rounded-sm",
-                  "border border-line-strong bg-transparent text-ink",
-                  "hover:border-ink-3 hover:bg-surface-2",
-                  "focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft",
-                  TRANSITION,
-                  scrolled ? "h-[26px]" : "h-8",
-                  copied
-                    ? cn(
-                        "border-success bg-success text-accent-ink hover:border-success hover:bg-success",
-                        "gap-1.5 px-2.5",
-                        scrolled ? "w-[104px]" : "w-[116px]",
-                      )
-                    : cn("gap-0 px-0", scrolled ? "w-[26px]" : "w-8"),
-                )}
-              >
-                <Share2
-                  aria-hidden
-                  className={cn(
-                    "shrink-0",
-                    TRANSITION,
-                    scrolled ? "h-[11px] w-[11px]" : "h-[14px] w-[14px]",
-                  )}
-                />
-                <span
-                  aria-hidden
-                  className={cn(
-                    "font-condensed font-bold uppercase tracking-[0.08em]",
-                    TRANSITION,
-                    scrolled ? "text-[10px]" : "text-[11px]",
-                    copied ? "w-auto opacity-100 delay-150" : "w-0 opacity-0",
-                  )}
-                >
-                  Link copied
-                </span>
-              </button>
+              <HamburgerMenu scrolled={scrolled} transition={TRANSITION} />
             </li>
           </ul>
         </nav>

@@ -1,105 +1,99 @@
 "use client";
 
 import * as React from "react";
-import { useRouter, useSearchParams } from "next/navigation";
-import { saveNoteAction } from "@/app/lineup/[slug]/actions";
-import { NoteForm, NOTE_MAX_LENGTH, type NoteStatus } from "@/components/note-form";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { ShareActions } from "@/components/share/share-actions";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import type { BadgeKind } from "@/components/community/recent-submission-tags";
+import type { Player } from "@/lib/db/schema";
+import type { FormationDef } from "@/lib/formations";
 
 type Props = {
   slug: string;
-  initialNote: string | null;
+  teamCode: string;
+  team: { name: string; flagEmoji: string };
+  formation: FormationDef;
+  starters: Player[];
+  bench: Player[];
+  category: { badge: BadgeKind } | null;
 };
 
 export function OwnerLineupActions({
-  slug,
-  initialNote,
+  teamCode,
+  team,
+  formation,
+  starters,
+  bench,
+  category,
 }: Props) {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const justSubmitted = searchParams.get("submitted") === "1";
-  const [value, setValue] = React.useState(initialNote ?? "");
-  const [savedValue, setSavedValue] = React.useState(initialNote ?? "");
-  const [saving, setSaving] = React.useState(false);
-  const [savedOnceThisSession, setSavedOnceThisSession] = React.useState(false);
-  const [status, setStatus] = React.useState<NoteStatus>({ kind: "idle" });
+  const [copied, setCopied] = React.useState(false);
+  const copyTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const remaining = NOTE_MAX_LENGTH - value.length;
-  const dirty = value !== savedValue;
-  const emptyNote = value.trim().length === 0;
-  const allowInitialEmptySave = emptyNote && !savedOnceThisSession;
-  const canSave = !saving && remaining >= 0 && (dirty || allowInitialEmptySave);
-  const showSubmitButton = justSubmitted;
+  React.useEffect(() => {
+    return () => {
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+    };
+  }, []);
 
-  function handleChange(nextValue: string) {
-    setValue(nextValue);
-    if (status.kind !== "idle") setStatus({ kind: "idle" });
+  async function handleShare() {
+    if (typeof window === "undefined") return;
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+    } catch {
+      return;
+    }
+    setCopied(true);
+    if (copyTimer.current) clearTimeout(copyTimer.current);
+    copyTimer.current = setTimeout(() => setCopied(false), 2000);
   }
 
-  async function saveNote(): Promise<boolean> {
-    if (remaining < 0) {
-      setStatus({ kind: "error", message: "Note is too long (max 250 characters)." });
-      return false;
-    }
-
-    if (!dirty && !allowInitialEmptySave) {
-      return true;
-    }
-
-    setSaving(true);
-    setStatus({ kind: "idle" });
-    const result = await saveNoteAction({ slug, note: value });
-    setSaving(false);
-
-    if (!result.ok) {
-      setStatus({ kind: "error", message: result.error });
-      return false;
-    }
-
-    setSavedValue(value);
-    setSavedOnceThisSession(true);
-    setStatus({ kind: "ok" });
-    return true;
-  }
-
-  async function handleManualSave() {
-    await saveNote();
-  }
-
-  async function handleSubmitSquad() {
-    if (saving) return;
-    const saved = await saveNote();
-    if (saved) {
-      router.push(`/community?submitted=${encodeURIComponent(slug)}`);
-    }
-  }
+  if (!justSubmitted) return null;
 
   return (
-    <>
-      <Card padding="default">
-        <NoteForm
-          value={value}
-          onChange={handleChange}
-          remaining={remaining}
-          status={status}
-          saving={saving}
-          showSaveButton={!showSubmitButton}
-          canSave={canSave}
-          onSave={handleManualSave}
-        />
-      </Card>
-      {showSubmitButton && (
-        <Button
-          variant="primary"
-          size="lg"
-          onClick={handleSubmitSquad}
-          disabled={saving || remaining < 0}
-          className="w-full"
-        >
-          {saving ? "Submitting…" : "Submit Squad"}
-        </Button>
-      )}
-    </>
+    <div className="flex flex-col gap-2 max-[410px]:flex-row max-[410px]:gap-1.5">
+      <Button
+        variant="primary"
+        size="lg"
+        onClick={handleShare}
+        className={cn(
+          "w-full max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",
+          copied &&
+            "bg-success hover:bg-success hover:translate-y-0 hover:shadow-2 active:bg-success",
+        )}
+        aria-live="polite"
+      >
+        {copied ? (
+          <>
+            <span className="max-[410px]:hidden">Team link copied</span>
+            <span className="hidden max-[410px]:inline">Copied</span>
+          </>
+        ) : (
+          <>
+            Share<span className="max-[410px]:hidden"> Team</span>
+          </>
+        )}
+      </Button>
+      <ShareActions
+        team={team}
+        formation={formation}
+        starters={starters}
+        bench={bench}
+        category={category}
+      />
+      <Link
+        href={`/community/${teamCode}`}
+        className={cn(
+          buttonVariants({ variant: "outline", size: "lg" }),
+          "w-full max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",
+        )}
+      >
+        View<span className="max-[410px]:hidden"> {teamCode} Page</span>
+        <span className="hidden max-[410px]:inline"> {team.flagEmoji}</span>
+      </Link>
+    </div>
   );
 }
