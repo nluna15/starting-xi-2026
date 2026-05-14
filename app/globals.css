@@ -265,12 +265,12 @@ body {
   --sp-flag-fs: 10px !important;
 }
 
-/* Scoped override for the homepage hero pitch only. */
+/* Scoped override for the homepage hero pitch only (flag 15px >410px). */
 .home-hero-pitch .sp-soccer-pitch {
   --sp-dot-min: 52px !important;
   --sp-dot-preferred: 14% !important;
   --sp-dot-max: 97px !important;
-  --sp-flag-fs: 10px !important;
+  --sp-flag-fs: 15px !important;
 }
 
 /* Scoped override for the main /community page pitches. */
@@ -283,5 +283,6 @@ body {
     --sp-dot-min: 26px !important;
     --sp-dot-preferred: 7% !important;
     --sp-dot-max: 48px !important;
+    --sp-flag-fs: 10px !important;
   }
 }

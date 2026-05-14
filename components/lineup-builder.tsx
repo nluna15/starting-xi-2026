@@ -255,7 +255,7 @@ export function LineupBuilder({
               <span className="mono tracking-[0.04em]">{startersFilled} / 11</span>
               <span>Starters</span>
             </Chip>
-            <Chip variant="neutral" size="sm">
+            <Chip variant="neutral" size="sm" className="bg-white">
               <span className="mono tracking-[0.04em]">
                 {benchFilled} / {BENCH_SIZE}
               </span>
