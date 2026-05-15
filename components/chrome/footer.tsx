@@ -6,8 +6,8 @@
 export function Footer() {
   return (
     <footer className="border-t border-line bg-bg-elev">
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-center px-7 py-4">
-        <p className="font-sans text-sm text-ink-3">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-center px-4 py-2">
+        <p className="font-sans text-[10px] text-ink-3">
           Made by Pixels and Plays &middot; Not affiliated with FIFA
         </p>
       </div>
