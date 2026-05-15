@@ -24,9 +24,27 @@ export function AboutSection() {
           <p>
             Thanks for landing on my site — I&apos;ll see you in the stands this summer!
           </p>
+          <div className="flex flex-col items-center gap-1">
+            <a
+              href="https://substack.com/@nehemiasluna"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent underline underline-offset-2 hover:text-accent-deep"
+            >
+              Read my Substack
+            </a>
+            <a
+              href="https://linkedin.com/in/nmluna"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent underline underline-offset-2 hover:text-accent-deep"
+            >
+              Find me on LinkedIn
+            </a>
+          </div>
         </div>
         <p className="font-sans text-[13px] text-ink">
-          <span aria-hidden="true">🫶</span> Pixels and Plays
+          <span aria-hidden="true">🫶</span> Nehemias Luna
         </p>
       </Card>
     </section>

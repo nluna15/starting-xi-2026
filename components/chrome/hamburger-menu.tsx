@@ -12,8 +12,8 @@ type Props = {
 };
 
 type MenuItem =
-  | { kind: "link"; label: string; href: string }
-  | { kind: "action"; label: string; onSelect: () => void };
+  | { kind: "link"; label: string; href: string; small?: boolean; external?: boolean }
+  | { kind: "action"; label: string; onSelect: () => void; small?: boolean };
 
 export function HamburgerMenu({ scrolled, transition }: Props) {
   const [open, setOpen] = React.useState(false);
@@ -49,6 +49,20 @@ export function HamburgerMenu({ scrolled, transition }: Props) {
       },
     },
     { kind: "link", label: "Feedback", href: "/feedback" },
+    {
+      kind: "link",
+      label: "Read my substack",
+      href: "https://substack.com/@nehemiasluna",
+      small: true,
+      external: true,
+    },
+    {
+      kind: "link",
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/nmluna",
+      small: true,
+      external: true,
+    },
   ];
 
   return (
@@ -89,37 +103,50 @@ export function HamburgerMenu({ scrolled, transition }: Props) {
             )}
           >
             <ul className="flex flex-col py-2">
-              {items.map((item) => (
-                <li key={item.label}>
-                  {item.kind === "link" ? (
-                    <Link
-                      role="menuitem"
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className={cn(
-                        "block w-full px-5 py-3 text-left font-condensed font-bold uppercase tracking-[0.1em]",
-                        "text-[24px] text-ink hover:bg-surface-2",
-                        "focus-visible:outline-none focus-visible:bg-surface-2",
-                      )}
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <button
-                      role="menuitem"
-                      type="button"
-                      onClick={item.onSelect}
-                      className={cn(
-                        "block w-full px-5 py-3 text-left font-condensed font-bold uppercase tracking-[0.1em]",
-                        "text-[24px] text-ink hover:bg-surface-2",
-                        "focus-visible:outline-none focus-visible:bg-surface-2",
-                      )}
-                    >
-                      {item.label}
-                    </button>
-                  )}
-                </li>
-              ))}
+              {items.map((item) => {
+                const itemClass = cn(
+                  "block w-full px-5 py-3 text-left font-condensed font-bold uppercase tracking-[0.1em]",
+                  item.small ? "text-[18px]" : "text-[24px]",
+                  "text-ink hover:bg-surface-2",
+                  "focus-visible:outline-none focus-visible:bg-surface-2",
+                );
+                return (
+                  <li key={item.label}>
+                    {item.kind === "link" ? (
+                      item.external ? (
+                        <a
+                          role="menuitem"
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setOpen(false)}
+                          className={itemClass}
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <Link
+                          role="menuitem"
+                          href={item.href}
+                          onClick={() => setOpen(false)}
+                          className={itemClass}
+                        >
+                          {item.label}
+                        </Link>
+                      )
+                    ) : (
+                      <button
+                        role="menuitem"
+                        type="button"
+                        onClick={item.onSelect}
+                        className={itemClass}
+                      >
+                        {item.label}
+                      </button>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
