@@ -275,7 +275,7 @@ body {
 
 /* Scoped override for the main /community page pitches. */
 .community-page-pitch .sp-soccer-pitch {
-  --sp-flag-fs: 10px !important;
+  --sp-flag-fs: 15px !important;
 }
 
 @media (max-width: 410px) {
@@ -283,6 +283,10 @@ body {
     --sp-dot-min: 26px !important;
     --sp-dot-preferred: 7% !important;
     --sp-dot-max: 48px !important;
+    --sp-flag-fs: 10px !important;
+  }
+
+  .community-page-pitch .sp-soccer-pitch {
     --sp-flag-fs: 10px !important;
   }
 }

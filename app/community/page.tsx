@@ -91,6 +91,7 @@ export default async function CommunityPage() {
           age: s.player.age,
           marketValueEur: s.player.marketValueEur,
           club: s.player.club,
+          pickRate: s.pickRate,
         }
       : null,
   );

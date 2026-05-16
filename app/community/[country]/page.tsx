@@ -89,6 +89,7 @@ export default async function CommunityCountryPage({
           age: s.player.age,
           marketValueEur: s.player.marketValueEur,
           club: s.player.club,
+          pickRate: s.pickRate,
         }
       : null,
   );
@@ -115,6 +116,7 @@ export default async function CommunityCountryPage({
     age: s.player.age,
     marketValueEur: s.player.marketValueEur,
     club: s.player.club,
+    pickRate: s.rate,
   }));
 
   // Pick-weighted community-wide averages so a tiny single-submission country
