@@ -4,6 +4,7 @@ import * as React from "react";
 import { Card } from "@/components/ui/card";
 import { Modal } from "@/components/ui/modal";
 import { HorizontalBarChart, type BarRow } from "@/components/horizontal-bar-chart";
+import { InsightDistributionChart } from "./insight-distribution-chart";
 
 type ValueFormat = "decimal" | "eurCompact";
 
@@ -27,6 +28,8 @@ type Props = {
   /** Full ranking, already sorted highest → lowest. */
   allRows: BarRow[];
   format: ValueFormat;
+  /** Optional unit suffix shown after the median value in the modal callout. */
+  unitLabel?: string;
   /** Defaults to the card title. Used in the modal header. */
   modalTitle?: string;
 };
@@ -36,6 +39,7 @@ export function InsightStatCard({
   segments,
   allRows,
   format,
+  unitLabel,
   modalTitle,
 }: Props) {
   const [open, setOpen] = React.useState(false);
@@ -75,14 +79,17 @@ export function InsightStatCard({
         onClose={() => setOpen(false)}
         title={modalTitle ?? title}
         size="md"
+        // On narrow phones, pin the sheet to 90% of the viewport so the full
+        // distribution chart is visible with room to spare beneath it.
+        className="max-[410px]:h-[90dvh]"
       >
-        <div className="max-h-[70dvh] overflow-y-auto px-6 py-4">
+        <div className="max-h-[70dvh] overflow-y-auto px-6 py-4 max-[410px]:max-h-none max-[410px]:overflow-y-visible">
           <p className="mb-3 text-[12px] leading-snug text-ink-3">
             Each country&rsquo;s figure is the average across every player picked &mdash;
             starters and substitutes &mdash; in community-submitted lineups for that country.
-            Ranked highest to lowest.
+            Hover or tap a dot to see the exact value.
           </p>
-          <HorizontalBarChart rows={allRows} formatValue={fmt} />
+          <InsightDistributionChart rows={allRows} formatValue={fmt} unitLabel={unitLabel} />
         </div>
       </Modal>
     </>

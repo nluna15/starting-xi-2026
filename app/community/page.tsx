@@ -198,6 +198,7 @@ export default async function CommunityPage() {
             ]}
             allRows={ageRowsAll}
             format="decimal"
+            unitLabel="years"
           />
           <InsightStatCard
             title="Market value per player"
@@ -216,6 +217,7 @@ export default async function CommunityPage() {
             ]}
             allRows={capsRowsAll}
             format="decimal"
+            unitLabel="caps"
           />
         </div>
       </section>
