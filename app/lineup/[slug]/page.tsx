@@ -9,13 +9,19 @@ import {
   categorize as categorizeSubmission,
   deviationTags,
 } from "@/components/community/recent-submission-tags";
+import { SquadAgeBar } from "@/components/squad-age-bar";
+import { SquadCapsBar } from "@/components/squad-caps-bar";
+import { SquadValueBar } from "@/components/squad-value-bar";
 import { Card } from "@/components/ui/card";
-import { StatTile } from "@/components/ui/stat";
 import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
-import { getPickRatesForTeam, getTopFormationNameForTeam } from "@/lib/db/queries";
+import {
+  getCountrySquadStats,
+  getPickRatesForTeam,
+  getTopFormationNameForTeam,
+} from "@/lib/db/queries";
 import { readFingerprint } from "@/lib/fingerprint";
-import { cn, formatAge, formatEur } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 
@@ -66,10 +72,11 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
 
   const formation: FormationDef = { name: formationRow.name, slots: formationRow.slots };
 
-  const [pickRates, teamTopFormation, fingerprint] = await Promise.all([
+  const [pickRates, teamTopFormation, fingerprint, countryStats] = await Promise.all([
     getPickRatesForTeam(teamRow.id),
     getTopFormationNameForTeam(teamRow.id),
     readFingerprint(),
+    getCountrySquadStats(),
   ]);
   const isOwner = Boolean(fingerprint && fingerprint === submissionRow.fingerprint);
 
@@ -79,9 +86,37 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
   const squadCount = allPlayers.length;
   const avgAge =
     squadCount > 0 ? allPlayers.reduce((s, p) => s + p.age, 0) / squadCount : null;
+  const youngestAge =
+    squadCount > 0 ? Math.min(...allPlayers.map((p) => p.age)) : null;
+  const oldestAge =
+    squadCount > 0 ? Math.max(...allPlayers.map((p) => p.age)) : null;
+  const countryStat = countryStats.find((c) => c.code === teamRow.code) ?? null;
+  const countryAvgAge = countryStat?.avgAge ?? null;
+  const totalCountryPicks = countryStats.reduce((sum, c) => sum + c.pickCount, 0);
+  const globalAvgAge =
+    totalCountryPicks > 0
+      ? countryStats.reduce((sum, c) => sum + c.avgAge * c.pickCount, 0) /
+        totalCountryPicks
+      : null;
   const avgValue =
     squadCount > 0
       ? allPlayers.reduce((s, p) => s + p.marketValueEur, 0) / squadCount
+      : null;
+  const minSquadValue =
+    squadCount > 0
+      ? Math.min(...allPlayers.map((p) => p.marketValueEur))
+      : null;
+  const maxSquadValue =
+    squadCount > 0
+      ? Math.max(...allPlayers.map((p) => p.marketValueEur))
+      : null;
+  const countryAvgValue = countryStat?.avgMarketValueEur ?? null;
+  const globalAvgValue =
+    totalCountryPicks > 0
+      ? countryStats.reduce(
+          (sum, c) => sum + c.avgMarketValueEur * c.pickCount,
+          0,
+        ) / totalCountryPicks
       : null;
   const playersWithCaps = allPlayers.filter((p) => p.internationalCaps != null);
   const avgCaps =
@@ -90,6 +125,14 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
           playersWithCaps.reduce((s, p) => s + (p.internationalCaps ?? 0), 0) /
             playersWithCaps.length,
         )
+      : null;
+  const countryAvgCaps = countryStat?.avgInternationalCaps ?? null;
+  const globalAvgCaps =
+    totalCountryPicks > 0
+      ? countryStats.reduce(
+          (sum, c) => sum + c.avgInternationalCaps * c.pickCount,
+          0,
+        ) / totalCountryPicks
       : null;
 
   const tagsEnabled = pickRates.totalSubmissions >= MIN_SUBMISSIONS_FOR_TAGS;
@@ -188,7 +231,24 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
           </div>
         )}
 
-        <div className="mx-auto w-[90%]">
+        <Card padding="default" className="gap-3">
+          <div className="flex items-center gap-3">
+            <BadgePill badge={submissionBadge} />
+            <p className="text-[12px] leading-snug text-ink-2">
+              {BADGE_DEFINITIONS[submissionBadge]}
+            </p>
+          </div>
+          {tags.length > 0 && (
+            <div className="flex flex-col gap-1.5 border-t border-line pt-3">
+              <h3 className="cond text-[12px] tracking-[0.14em] text-accent">
+                Your key changes
+              </h3>
+              <DeviationTagsRow tags={tags} />
+            </div>
+          )}
+        </Card>
+
+        <div className="mx-auto -mt-2 w-[90%] md:-mt-4">
           <BuildPitch
             formation={formation}
             starters={startersResolved}
@@ -216,50 +276,11 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
             </div>
           )}
 
-          <Card padding="default" className="gap-3">
-            <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
-              Squad Profile
-            </h2>
-            <div className="self-start">
-              <BadgePill badge={submissionBadge} />
-            </div>
-            <p className="text-[12px] leading-snug text-ink-2">
-              {BADGE_DEFINITIONS[submissionBadge]}
-            </p>
-            {tags.length > 0 && (
-              <div className="flex flex-col gap-1.5 border-t border-line pt-3">
-                <h3 className="cond text-[12px] tracking-[0.14em] text-accent">
-                  Your key changes
-                </h3>
-                <DeviationTagsRow tags={tags} />
-              </div>
-            )}
-          </Card>
-
-          {/* Player Insights */}
-          <Card padding="default" className="gap-3">
-            <h2 className="cond text-[13px] text-ink border-b border-line pb-2">
-              Player Insights
-            </h2>
-            <div className="grid grid-cols-3 gap-3">
-              <StatTile label="Avg Age" value={formatAge(avgAge)} size="md" />
-              <StatTile label="Avg Value" value={formatEur(avgValue)} size="md" />
-              <StatTile
-                label="Avg Caps"
-                value={avgCaps != null ? avgCaps.toLocaleString() : "—"}
-                size="md"
-              />
-            </div>
-          </Card>
-
           {/* VS. The Crowd */}
           {tagsEnabled && (
             <Card padding="default" className="gap-3">
-              <div className="flex items-center justify-between gap-3 border-b border-line pb-2">
+              <div className="border-b border-line pb-2">
                 <h2 className="cond text-[13px] text-ink">VS. The Crowd</h2>
-                <span className="mono text-[11px] tracking-[0.08em] text-ink-faint">
-                  {conventionalCount}/{totalTagged} aligned
-                </span>
               </div>
 
               <ConsensusBar
@@ -296,6 +317,38 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
               )}
             </Card>
           )}
+
+          {youngestAge != null && oldestAge != null && oldestAge > youngestAge && (
+            <SquadAgeBar
+              countryAge={countryAvgAge}
+              countryEmoji={teamRow.flagEmoji}
+              countryCode={teamRow.code}
+              globalAvgAge={globalAvgAge}
+              userAge={avgAge}
+            />
+          )}
+
+          {avgCaps != null && (
+            <SquadCapsBar
+              countryCaps={countryAvgCaps}
+              countryEmoji={teamRow.flagEmoji}
+              countryCode={teamRow.code}
+              globalCaps={globalAvgCaps}
+              userCaps={avgCaps}
+            />
+          )}
+
+          {minSquadValue != null &&
+            maxSquadValue != null &&
+            maxSquadValue > minSquadValue && (
+              <SquadValueBar
+                countryValue={countryAvgValue}
+                countryEmoji={teamRow.flagEmoji}
+                countryCode={teamRow.code}
+                globalValue={globalAvgValue}
+                userValue={avgValue}
+              />
+            )}
 
           <Link
             href="/countries"
