@@ -13,7 +13,7 @@ import { formatAge, formatEur, lastName, proxyPhotoUrl } from "@/lib/utils";
 /* -----------------------------------------------------------------------------
    ShareCard — canonical 1080x1350 portrait export layout.
    Renders into an off-screen container by `useShareImage` and is then captured
-   to a PNG by html-to-image. All sizes are absolute pixels (no responsive
+   to a PNG by modern-screenshot. All sizes are absolute pixels (no responsive
    variants) so the rendered pixel buffer is identical regardless of the host
    viewport. Keep every text node legible at full export size.
    ----------------------------------------------------------------------------- */
@@ -24,6 +24,13 @@ export type ShareCardProps = {
   starters: Player[];
   bench: Player[];
   category: { badge: BadgeKind } | null;
+  /**
+   * Pre-resolved background image src. When provided (typically a data URI),
+   * it replaces the `/lineup-background.png` path. Pre-fetching to a data URI
+   * is the only reliable way to keep the decorative bg in the captured PNG —
+   * same-origin <img> inlining inside SVG foreignObject is flaky.
+   */
+  backgroundSrc?: string;
   /**
    * Called once after the React tree commits and layout is stable.
    * `useShareImage` uses this signal to wait for first paint before
@@ -62,6 +69,7 @@ export function ShareCard({
   starters,
   bench,
   category,
+  backgroundSrc,
   onReady,
 }: ShareCardProps) {
   const rawId = React.useId();
@@ -97,7 +105,7 @@ export function ShareCard({
         position: "relative",
         overflow: "hidden",
         // Pin theme tokens consumed by the soccer-pitch package's SVGs.
-        // html-to-image's clone strips inherited custom properties from
+        // The capture lib's clone strips inherited custom properties from
         // computed styles, so we inline them at the export root.
         ["--sp-pitch-grass-1" as string]: "#2f8a3f",
         ["--sp-pitch-grass-2" as string]: "#2a7d39",
@@ -132,6 +140,9 @@ export function ShareCard({
           font-size: 0 !important;
           margin-bottom: 1px !important;
           letter-spacing: 0.18em !important;
+          /* Package sets opacity: .65; restore full opacity so the white pill
+             below isn't washed out by the parent fade. */
+          opacity: 1 !important;
         }
         .${scopeClass} .sp-soccer-pitch .sp-bench-title::before {
           content: "Impact substitutes";
@@ -139,6 +150,10 @@ export function ShareCard({
           font-weight: 700;
           letter-spacing: 0.18em;
           text-transform: uppercase;
+          display: inline-block;
+          background: #ffffff;
+          padding: 6px 18px;
+          border-radius: 8px;
         }
         .${scopeClass} .sp-soccer-pitch .sp-pointer-events-auto {
           pointer-events: none !important;
@@ -147,10 +162,11 @@ export function ShareCard({
 
       {/* Decorative kaleidoscope background — sits above the white root bg
           and below all foreground content via DOM order on positioned siblings.
-          Served from the same origin so html-to-image can capture it without
-          tainting the canvas. */}
+          The capture flow pre-fetches this as a data URI (see useShareImage)
+          because foreignObject inlining of same-origin <img> elements is
+          unreliable across browsers. */}
       <img
-        src="/lineup-background.png"
+        src={backgroundSrc ?? "/lineup-background.png"}
         alt=""
         aria-hidden
         style={{

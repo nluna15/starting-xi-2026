@@ -8,19 +8,24 @@ import { ShareCard, SHARE_CARD_DIMENSIONS, type ShareCardProps } from "./share-c
 
    Strategy
    --------
-   1. Mount a fresh React tree (createRoot) into a fixed-position offscreen
+   1. Pre-fetch /lineup-background.png as a data URI (cached for the session).
+      Inlining same-origin <img> via foreignObject is unreliable, so we feed
+      the card a data: src instead.
+   2. Mount a fresh React tree (createRoot) into a fixed-position offscreen
       host pinned at top:-10000px so layout/paint runs but the user never sees
       it.
-   2. ShareCard fires `onReady` from a useLayoutEffect after first commit.
-   3. After ready: force-load each font weight/family used in the card via
+   3. ShareCard fires `onReady` from a useLayoutEffect after first commit.
+   4. After ready: force-load each font weight/family used in the card via
       document.fonts.load(), then await document.fonts.ready. This is belt-
       and-braces — fonts.ready alone occasionally resolves before all weights
       are available in headless-style render contexts.
-   4. Walk every <img> in the host and await `img.decode()` so html-to-image
+   5. Walk every <img> in the host and await `img.decode()` so the capture
       sees decoded bitmaps. Failed decodes are tolerated; ShareCard's avatar
       fallback (the package's initials) takes over.
-   5. html-to-image.toBlob with width/height/pixelRatio:1 and cacheBust:false.
-   6. Memoize the in-flight Promise<Blob> so back-to-back Save+Share triggers
+   6. modern-screenshot.domToBlob with width/height/scale:1. modern-screenshot
+      handles 3D transforms (perspective + rotateX) in foreignObject better
+      than html-to-image, which is required for the soccer-pitch tilt.
+   7. Memoize the in-flight Promise<Blob> so back-to-back Save+Share triggers
       one capture, not two.
    ----------------------------------------------------------------------------- */
 
@@ -55,6 +60,30 @@ async function preloadFonts(): Promise<void> {
   await document.fonts.ready;
 }
 
+const BACKGROUND_URL = "/lineup-background.png";
+let backgroundDataUriPromise: Promise<string> | null = null;
+
+function fetchBackgroundDataUri(): Promise<string> {
+  if (!backgroundDataUriPromise) {
+    backgroundDataUriPromise = (async () => {
+      const res = await fetch(BACKGROUND_URL, { cache: "force-cache" });
+      if (!res.ok) throw new Error(`Failed to fetch ${BACKGROUND_URL}: ${res.status}`);
+      const blob = await res.blob();
+      return await new Promise<string>((resolve, reject) => {
+        const fr = new FileReader();
+        fr.onload = () => resolve(fr.result as string);
+        fr.onerror = () => reject(fr.error ?? new Error("FileReader error"));
+        fr.readAsDataURL(blob);
+      });
+    })().catch((err) => {
+      // Drop the cached promise so a later capture can retry.
+      backgroundDataUriPromise = null;
+      throw err;
+    });
+  }
+  return backgroundDataUriPromise;
+}
+
 async function decodeImagesIn(host: HTMLElement): Promise<void> {
   const imgs = Array.from(host.querySelectorAll("img"));
   await Promise.all(
@@ -80,13 +109,18 @@ function captureBlob(host: HTMLElement, inputs: CardInputs): Promise<Blob> {
     let resolved = false;
 
     void (async () => {
-      const { createRoot } = await import("react-dom/client");
-      const { toBlob } = await import("html-to-image");
+      const [{ createRoot }, { domToBlob }, backgroundSrc] = await Promise.all([
+        import("react-dom/client"),
+        import("modern-screenshot"),
+        // A failed bg fetch is non-fatal — fall back to the public path and
+        // accept that the bg may not render in the captured PNG.
+        fetchBackgroundDataUri().catch(() => undefined),
+      ]);
 
       const root = createRoot(host);
 
       const cleanup = () => {
-        // Defer unmount to the next task so html-to-image's clone isn't
+        // Defer unmount to the next task so the capture lib's clone isn't
         // racing with React's commit phase.
         setTimeout(() => {
           try {
@@ -110,17 +144,16 @@ function captureBlob(host: HTMLElement, inputs: CardInputs): Promise<Blob> {
 
           // Capture the ShareCard root (firstElementChild), NOT the host
           // container. The host has position:fixed;top:-10000px — inside the
-          // SVG foreignObject used by html-to-image, fixed positioning is
+          // SVG foreignObject used by the capture lib, fixed positioning is
           // relative to the foreignObject viewport, so top:-10000px clips all
           // content and produces a blank white image.
           const captureTarget = (host.firstElementChild as HTMLElement) ?? host;
-          const blob = await toBlob(captureTarget, {
+          const blob = await domToBlob(captureTarget, {
             width: SHARE_CARD_DIMENSIONS.width,
             height: SHARE_CARD_DIMENSIONS.height,
-            pixelRatio: 1,
-            cacheBust: false,
+            scale: 1,
           });
-          if (!blob) throw new Error("toBlob returned null");
+          if (!blob) throw new Error("domToBlob returned null");
           resolved = true;
           resolve(blob);
         } catch (err) {
@@ -131,7 +164,7 @@ function captureBlob(host: HTMLElement, inputs: CardInputs): Promise<Blob> {
         }
       };
 
-      root.render(<ShareCard {...inputs} onReady={handleReady} />);
+      root.render(<ShareCard {...inputs} backgroundSrc={backgroundSrc} onReady={handleReady} />);
     })().catch((err) => {
       if (!resolved) {
         resolved = true;

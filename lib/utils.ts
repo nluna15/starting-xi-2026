@@ -61,7 +61,7 @@ const TRANSFERMARKT_PHOTO_PREFIX = "https://img.a.transfermarkt.technology/";
 
 /**
  * Rewrites upstream player photo URLs to a same-origin proxy so canvas-based
- * exporters (html-to-image) can read the bytes without tainting the canvas.
+ * exporters (modern-screenshot) can read the bytes without tainting the canvas.
  * Non-matching URLs pass through unchanged.
  */
 export function proxyPhotoUrl(url: string | null | undefined): string | undefined {
