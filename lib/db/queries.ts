@@ -3,6 +3,7 @@ import { db } from "./client";
 import { formations, players, submissions, teams } from "./schema";
 import type { Formation, FormationSlot, Player, Team } from "./schema";
 import { SLOT_TO_DETAILED } from "@/lib/formations";
+import { buildMostLikelyXi, type PlayerPickEntry } from "@/lib/community/most-likely-xi";
 
 const DECAY_HALF_LIFE_DAYS = 10;
 const SMOOTHING_ALPHA = 5;
@@ -191,8 +192,10 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
   `);
   const avgRecord = avgRow.rows[0] as { avg_age: number | null; avg_value: number | null } | undefined;
 
-  // Most-likely XI: pick the most-popular formation and, for each slot index in that formation,
-  // pick the most-frequent player chosen for that slot.
+  // Most-likely XI: keep the most-popular formation as the shell, but fill each
+  // slot from picks across *all* submissions — bucketed by the detailed position
+  // the user actually placed the player in (so an LWB pick in 3-5-2 contributes
+  // to a 4-3-3 LB slot, but an LB pick never lands at ST). See buildMostLikelyXi.
   let mostLikelyFormation: Formation | null = null;
   let slotResults: CrowdStats["mostLikelyXi"]["slots"] = [];
 
@@ -205,50 +208,59 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
     mostLikelyFormation = fRows[0] ?? null;
 
     if (mostLikelyFormation) {
+      // Cross-formation pick rows: every starter pick joined to the formation
+      // it was submitted in, tagged with that formation's slot name. The
+      // jsonb path `f.slots->slot_index->>'slot'` reads the slot label out of
+      // the formation row's stored slots array.
       const slotRows = await db.execute(sql`
         with picks as (
-          select (slot.ord - 1)::int as slot_index, slot.value::int as player_id
+          select pid.value::int as player_id,
+                 (pid.ord - 1)::int as slot_index,
+                 s.formation_id
           from ${submissions} s,
-            jsonb_array_elements_text(s.starters) with ordinality as slot(value, ord)
+            jsonb_array_elements_text(s.starters) with ordinality as pid(value, ord)
           where s.team_id = ${team.id}
-            and s.formation_id = ${mostLikelyFormation.id}
-        ),
-        slot_totals as (
-          select slot_index, count(*)::int as total_picks
-          from picks
-          group by slot_index
-        ),
-        ranked as (
-          select p.slot_index, p.player_id, count(*)::int as picks,
-                 row_number() over (partition by p.slot_index order by count(*) desc) as rn
-          from picks p
-          where exists (select 1 from ${players} pl where pl.id = p.player_id)
-          group by p.slot_index, p.player_id
         )
-        select r.slot_index, r.player_id, r.picks, st.total_picks
-        from ranked r
-        join slot_totals st on st.slot_index = r.slot_index
-        where r.rn = 1
-        order by r.slot_index
+        select p.player_id,
+               (f.slots->p.slot_index->>'slot') as slot_name,
+               count(*)::int as picks
+        from picks p
+        join ${formations} f on f.id = p.formation_id
+        where exists (select 1 from ${players} pl where pl.id = p.player_id)
+        group by p.player_id, (f.slots->p.slot_index->>'slot')
       `);
 
-      const playerIds = (slotRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
+      const accum = new Map<string, number>();
+      const playerIdSet = new Set<number>();
+      for (const r of slotRows.rows as Array<{ player_id: number; slot_name: string | null; picks: number }>) {
+        if (!r.slot_name) continue;
+        const detailed = SLOT_TO_DETAILED[r.slot_name];
+        if (!detailed) continue;
+        const playerId = Number(r.player_id);
+        const key = `${playerId}|${detailed}`;
+        accum.set(key, (accum.get(key) ?? 0) + Number(r.picks));
+        playerIdSet.add(playerId);
+      }
+      const pickTable: PlayerPickEntry[] = [];
+      for (const [key, picks] of accum) {
+        const [pid, detailed] = key.split("|");
+        pickTable.push({ playerId: Number(pid), detailedPosition: detailed, picks });
+      }
+
       const playerMap = new Map<number, Player>();
-      if (playerIds.length > 0) {
-        const ps = await db.select().from(players).where(inArray(players.id, playerIds));
+      if (playerIdSet.size > 0) {
+        const ps = await db
+          .select()
+          .from(players)
+          .where(inArray(players.id, Array.from(playerIdSet)));
         for (const p of ps) playerMap.set(p.id, p);
       }
 
-      slotResults = mostLikelyFormation.slots.map((slot, idx) => {
-        const row = (slotRows.rows as Array<{
-          slot_index: number;
-          player_id: number;
-          picks: number;
-          total_picks: number;
-        }>).find((r) => Number(r.slot_index) === idx);
-        const player = row ? playerMap.get(Number(row.player_id)) ?? null : null;
-        const pickRate = row && row.total_picks ? Number(row.picks) / Number(row.total_picks) : 0;
-        return { ...slot, player, pickRate };
+      slotResults = buildMostLikelyXi({
+        formationSlots: mostLikelyFormation.slots,
+        pickTable,
+        playerMap,
+        totalSubmissions: total,
       });
     }
   }
@@ -494,47 +506,72 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
     mostLikelyFormation = fRows[0] ?? null;
 
     if (mostLikelyFormation) {
-      const playerRows = await db.execute(sql`
+      // Same pipeline as before — distinct latest submission per (fingerprint, team),
+      // time-decayed weights — but now bucket weighted picks by the slot the user
+      // actually placed each player in. This shifts the position signal from
+      // each player's static `detailedPosition` to the crowd's consensus.
+      const slotRows = await db.execute(sql`
         with latest as (
-          select distinct on (fingerprint, team_id) id, starters, created_at
+          select distinct on (fingerprint, team_id) id, starters, formation_id, created_at
           from ${submissions}
           order by fingerprint, team_id, created_at desc
         ),
         weighted as (
-          select id, starters,
+          select id, starters, formation_id,
                  exp(-extract(epoch from (now() - created_at)) / (${DECAY_HALF_LIFE_DAYS} * 86400.0)) as w
           from latest
         ),
-        starter_picks as (
-          select pid::int as player_id, w
-          from weighted s,
-            jsonb_array_elements_text(s.starters) pid
-        ),
-        scored as (
-          select sp.player_id, sum(sp.w)::float as score
-          from starter_picks sp
-          where exists (select 1 from ${players} pl where pl.id = sp.player_id)
-          group by sp.player_id
+        picks as (
+          select pid.value::int as player_id,
+                 (pid.ord - 1)::int as slot_index,
+                 w.formation_id,
+                 w.w
+          from weighted w,
+            jsonb_array_elements_text(w.starters) with ordinality as pid(value, ord)
         )
-        select s.player_id, s.score,
+        select p.player_id,
+               (f.slots->p.slot_index->>'slot') as slot_name,
+               sum(p.w)::float as picks,
                coalesce((select sum(w) from weighted), 0)::float as total_weight
-        from scored s
-        order by s.score desc, s.player_id asc
+        from picks p
+        join ${formations} f on f.id = p.formation_id
+        where exists (select 1 from ${players} pl where pl.id = p.player_id)
+        group by p.player_id, (f.slots->p.slot_index->>'slot')
       `);
 
-      type ScoredRow = { player_id: number; score: number; total_weight: number };
-      const rankedRows = playerRows.rows as ScoredRow[];
-      const ranked = rankedRows.map((r) => ({
-        playerId: Number(r.player_id),
-        score: Number(r.score),
-      }));
-      const totalWeight = Number(rankedRows[0]?.total_weight ?? 0);
+      type SlotRow = {
+        player_id: number;
+        slot_name: string | null;
+        picks: number;
+        total_weight: number;
+      };
+      const rows = slotRows.rows as SlotRow[];
+      const totalWeight = Number(rows[0]?.total_weight ?? 0);
 
-      const playerIds = ranked.map((r) => r.playerId);
+      const accum = new Map<string, number>();
+      const playerIdSet = new Set<number>();
+      for (const r of rows) {
+        if (!r.slot_name) continue;
+        const detailed = SLOT_TO_DETAILED[r.slot_name];
+        if (!detailed) continue;
+        const playerId = Number(r.player_id);
+        const key = `${playerId}|${detailed}`;
+        accum.set(key, (accum.get(key) ?? 0) + Number(r.picks));
+        playerIdSet.add(playerId);
+      }
+      const pickTable: PlayerPickEntry[] = [];
+      for (const [key, picks] of accum) {
+        const [pid, detailed] = key.split("|");
+        pickTable.push({ playerId: Number(pid), detailedPosition: detailed, picks });
+      }
+
       const playerMap = new Map<number, Player>();
       const teamCodeByTeamId = new Map<number, string>();
-      if (playerIds.length > 0) {
-        const ps = await db.select().from(players).where(inArray(players.id, playerIds));
+      if (playerIdSet.size > 0) {
+        const ps = await db
+          .select()
+          .from(players)
+          .where(inArray(players.id, Array.from(playerIdSet)));
         for (const p of ps) playerMap.set(p.id, p);
 
         const teamIds = Array.from(new Set(Array.from(playerMap.values(), (p) => p.teamId)));
@@ -547,35 +584,19 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
         }
       }
 
-      const placed = new Set<number>();
-      const findCandidate = (predicate: (p: Player) => boolean) => {
-        for (const r of ranked) {
-          if (placed.has(r.playerId)) continue;
-          if (r.score < MIN_WEIGHTED_PICKS) break;
-          const p = playerMap.get(r.playerId);
-          if (!p) continue;
-          if (predicate(p)) return { player: p, score: r.score };
-        }
-        return null;
-      };
-
-      slotResults = mostLikelyFormation.slots.map((slot) => {
-        const detailedTarget = SLOT_TO_DETAILED[slot.slot];
-        let chosen: { player: Player; score: number } | null = null;
-        if (detailedTarget) {
-          chosen = findCandidate((p) => p.detailedPosition === detailedTarget);
-        }
-        if (!chosen) {
-          chosen = findCandidate((p) => p.position === slot.position);
-        }
-        if (chosen) placed.add(chosen.player.id);
-
-        const player = chosen?.player ?? null;
-        const teamCode = player ? teamCodeByTeamId.get(player.teamId) ?? null : null;
-        const pickRate = chosen ? chosen.score / (totalWeight + SMOOTHING_ALPHA) : 0;
-
-        return { ...slot, player, pickRate, teamCode };
+      const baseSlots = buildMostLikelyXi({
+        formationSlots: mostLikelyFormation.slots,
+        pickTable,
+        playerMap,
+        totalSubmissions: total,
+        pickRateDenominator: totalWeight + SMOOTHING_ALPHA,
+        minScore: MIN_WEIGHTED_PICKS,
       });
+
+      slotResults = baseSlots.map((s) => ({
+        ...s,
+        teamCode: s.player ? teamCodeByTeamId.get(s.player.teamId) ?? null : null,
+      }));
     }
   }
 

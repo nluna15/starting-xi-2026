@@ -57,7 +57,7 @@ export function OwnerLineupActions({
         size="lg"
         onClick={handleShare}
         className={cn(
-          "w-full max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",
+          "w-full rounded-md! max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",
           copied &&
             "bg-success hover:bg-success hover:translate-y-0 hover:shadow-2 active:bg-success",
         )}
@@ -85,7 +85,7 @@ export function OwnerLineupActions({
         href={`/community/${teamCode}`}
         className={cn(
           buttonVariants({ variant: "outline", size: "lg" }),
-          "w-full max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",
+          "w-full rounded-md! max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",
         )}
       >
         View<span className="max-[410px]:hidden"> {teamCode} Page</span>

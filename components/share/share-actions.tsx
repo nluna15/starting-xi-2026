@@ -51,7 +51,7 @@ export function ShareActions({ team, formation, starters, bench, category }: Pro
       size="lg"
       onClick={handleSave}
       disabled={generating}
-      className="w-full max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2"
+      className="w-full rounded-md! max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2"
       aria-live="polite"
     >
       {busy ? (
