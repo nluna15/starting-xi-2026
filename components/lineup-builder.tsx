@@ -15,6 +15,7 @@ import {
 } from "@/lib/formations";
 import type { Player } from "@/lib/db/schema";
 import { submitLineupAction } from "@/app/[teamCode]/build/actions";
+import { useMediaQuery } from "@/lib/utils";
 
 const BENCH_SIZE = 3;
 
@@ -37,6 +38,10 @@ export function LineupBuilder({
 }: Props) {
   const router = useRouter();
   const showPhotos = true;
+  // The sheet picker is mounted but display:none on md+; only flip sheetOpen
+  // when it's actually the active picker so its body-scroll-lock effect
+  // doesn't fire invisibly on desktop.
+  const isSheetActive = useMediaQuery("(max-width: 767px)");
   const [formationName, setFormationName] = React.useState(defaultFormation);
   const formation = React.useMemo<FormationDef>(
     () => BUILDABLE_FORMATIONS.find((f) => f.name === formationName) ?? BUILDABLE_FORMATIONS[0],
@@ -94,7 +99,7 @@ export function LineupBuilder({
 
   function setActiveSlot(slot: ActiveSlot) {
     setActive(slot);
-    setSheetOpen(true);
+    if (isSheetActive) setSheetOpen(true);
   }
 
   function handlePick(player: Player) {

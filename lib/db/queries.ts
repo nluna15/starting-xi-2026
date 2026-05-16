@@ -41,7 +41,11 @@ export async function getTeamByCode(code: string) {
 }
 
 export async function getPlayersForTeam(teamId: number) {
-  return db.select().from(players).where(sql`${players.teamId} = ${teamId}`).orderBy(players.fullName);
+  return db
+    .select()
+    .from(players)
+    .where(sql`${players.teamId} = ${teamId} and ${players.selectable} = true`)
+    .orderBy(players.fullName);
 }
 
 export async function getSubmissionCountForTeam(teamId: number): Promise<number> {

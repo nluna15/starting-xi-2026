@@ -23,6 +23,7 @@ type SeedPlayer = {
   photoUrl?: string | null;
   internationalCaps?: number | null;
   internationalGoals?: number | null;
+  selectable?: boolean;
 };
 
 type SeedFormation = {
@@ -100,6 +101,7 @@ async function main() {
             photoUrl: p.photoUrl ?? null,
             internationalCaps: p.internationalCaps ?? null,
             internationalGoals: p.internationalGoals ?? null,
+            selectable: p.selectable ?? true,
           })),
         )
         .onConflictDoUpdate({
@@ -116,6 +118,7 @@ async function main() {
             photoUrl: dsql`excluded.photo_url`,
             internationalCaps: dsql`excluded.international_caps`,
             internationalGoals: dsql`excluded.international_goals`,
+            selectable: dsql`excluded.selectable`,
           },
         });
 

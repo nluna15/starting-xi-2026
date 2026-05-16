@@ -73,6 +73,10 @@ export async function submitLineupAction(input: SubmitInput): Promise<SubmitResu
   if (poolRows.length !== allIds.length) {
     return { ok: false, error: `One or more players are not in the ${teamRow.name} pool.` };
   }
+  const blocked = poolRows.find((p) => !p.selectable);
+  if (blocked) {
+    return { ok: false, error: `${blocked.fullName} is no longer selectable.` };
+  }
   const playerById = new Map(poolRows.map((p) => [p.id, p] as const));
 
   for (let i = 0; i < starters.length; i += 1) {

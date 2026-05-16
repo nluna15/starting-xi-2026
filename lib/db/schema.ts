@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
 import {
+  boolean,
   index,
   integer,
   jsonb,
@@ -42,6 +43,7 @@ export const players = pgTable(
     photoUrl: text("photo_url"),
     internationalCaps: integer("international_caps"),
     internationalGoals: integer("international_goals"),
+    selectable: boolean("selectable").notNull().default(true),
   },
   (t) => ({
     teamIdx: index("players_team_idx").on(t.teamId),
