@@ -49,6 +49,7 @@ export function RecentSubmissionCard({ submission }: Props) {
         formationName={submission.formation.name}
         createdAt={submission.createdAt}
         badge={badge}
+        compactTeam={narrow}
       />
 
       {narrow ? (
@@ -104,6 +105,7 @@ function CardHeader({
   formationName,
   createdAt,
   badge,
+  compactTeam,
 }: {
   flagEmoji: string;
   teamName: string;
@@ -111,7 +113,11 @@ function CardHeader({
   formationName: string;
   createdAt: Date;
   badge: BadgeKind;
+  compactTeam: boolean;
 }) {
+  const teamLabel = compactTeam
+    ? teamCode
+    : (TEAM_NAME_ABBREVIATIONS[teamName] ?? teamName);
   return (
     <div className="flex items-center gap-2">
       <span className="text-2xl leading-none" aria-hidden="true">
@@ -121,7 +127,7 @@ function CardHeader({
         href={`/community/${teamCode.toLowerCase()}`}
         className="cond text-[15px] tracking-[0.06em] text-ink transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none"
       >
-        {TEAM_NAME_ABBREVIATIONS[teamName] ?? teamName}
+        {teamLabel}
       </Link>
       <span className="cond text-[15px] tracking-[0.06em] text-ink">· {formationName}</span>
       <span className="mono text-[10px] tracking-[0.14em] text-ink-faint">

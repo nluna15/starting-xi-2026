@@ -50,12 +50,19 @@ export function RecentSubmissionsFeed({ submissions, title = "Recent submissions
           <h2 className="display text-[28px] text-ink sm:text-[32px]">{title}</h2>
         </header>
       )}
-      <TagKey />
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {submissions.map((s) => (
+        {submissions.slice(0, 2).map((s) => (
           <RecentSubmissionCard key={s.slug} submission={s} />
         ))}
       </div>
+      <TagKey />
+      {submissions.length > 2 && (
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {submissions.slice(2).map((s) => (
+            <RecentSubmissionCard key={s.slug} submission={s} />
+          ))}
+        </div>
+      )}
     </section>
   );
 }

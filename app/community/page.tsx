@@ -204,7 +204,7 @@ export default async function CommunityPage() {
             title="Market value per player"
             segments={[
               { subhead: "Most expensive", rows: mostExpensiveRows },
-              { subhead: "Lowest value", rows: cheapestRows },
+              { subhead: "Least expensive", rows: cheapestRows },
             ]}
             allRows={valueRowsAll}
             format="eurCompact"

@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn, normalize } from "@/lib/utils";
 import type { WcSlot } from "@/lib/wc-2026-teams";
 
@@ -30,9 +29,6 @@ export function CommunityCountryCarousel({
 }: Props) {
   const resolvedAllNationsHref =
     allNationsHref ?? (linkMode === "community" ? "/community" : undefined);
-  const scrollerRef = useRef<HTMLDivElement | null>(null);
-  const [canLeft, setCanLeft] = useState(false);
-  const [canRight, setCanRight] = useState(false);
   const [query, setQuery] = useState("");
   const ready = useMemo(() => new Set(readyCodes), [readyCodes]);
 
@@ -72,28 +68,6 @@ export function CommunityCountryCarousel({
       ],
     };
   }, [filteredSlots, activeCode]);
-
-  useEffect(() => {
-    const el = scrollerRef.current;
-    if (!el) return;
-    const update = () => {
-      setCanLeft(el.scrollLeft > 1);
-      setCanRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1);
-    };
-    update();
-    el.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => {
-      el.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
-  }, [filteredSlots]);
-
-  const scrollBy = (dir: -1 | 1) => {
-    const el = scrollerRef.current;
-    if (!el) return;
-    el.scrollBy({ left: dir * Math.max(320, el.clientWidth * 0.8), behavior: "smooth" });
-  };
 
   const renderConfirmedTile = (slot: ConfirmedSlot) => {
     const isActive = activeCode === slot.code;
@@ -185,7 +159,6 @@ export function CommunityCountryCarousel({
 
       <div className="relative -mx-4 sm:mx-0">
         <div
-          ref={scrollerRef}
           className="flex items-center snap-x snap-mandatory gap-2 overflow-x-auto overflow-y-hidden overscroll-y-contain touch-pan-x scroll-smooth px-4 pb-1 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {activeSlot && renderConfirmedTile(activeSlot)}
@@ -208,23 +181,6 @@ export function CommunityCountryCarousel({
             </div>
           )}
         </div>
-
-        <CarouselButton
-          side="left"
-          visible={canLeft}
-          onClick={() => scrollBy(-1)}
-          label="Scroll countries left"
-        >
-          <ChevronLeft className="h-4 w-4" />
-        </CarouselButton>
-        <CarouselButton
-          side="right"
-          visible={canRight}
-          onClick={() => scrollBy(1)}
-          label="Scroll countries right"
-        >
-          <ChevronRight className="h-4 w-4" />
-        </CarouselButton>
       </div>
     </div>
   );
@@ -271,37 +227,3 @@ function AllNationsTile({
   );
 }
 
-function CarouselButton({
-  side,
-  visible,
-  onClick,
-  label,
-  children,
-}: {
-  side: "left" | "right";
-  visible: boolean;
-  onClick: () => void;
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      type="button"
-      aria-label={label}
-      onClick={onClick}
-      tabIndex={visible ? 0 : -1}
-      aria-hidden={!visible}
-      className={cn(
-        "absolute top-1/2 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full",
-        "border border-line-strong bg-bg-elev text-ink shadow-1 transition-[opacity,background-color,border-color] duration-150 ease-in-out",
-        "hover:border-ink-3 hover:bg-surface-2",
-        "focus-visible:outline-none focus-visible:border-accent focus-visible:ring-[3px] focus-visible:ring-accent-soft",
-        "sm:flex",
-        side === "left" ? "left-1 sm:-left-3" : "right-1 sm:-right-3",
-        visible ? "opacity-100" : "pointer-events-none opacity-0",
-      )}
-    >
-      {children}
-    </button>
-  );
-}
