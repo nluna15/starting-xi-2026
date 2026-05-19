@@ -200,7 +200,15 @@ export const TM_COUNTRY_BY_CODE: Record<string, string> = {
   RSA: "South Africa",
   PAN: "Panama",
   NZL: "New Zealand",
-  // Confirmed slots absent from this Transfermarkt snapshot — handle manually:
+  // Confirmed slots absent from the Transfermarkt `national_teams` snapshot —
+  // handle manually:
   //   CIV (Ivory Coast), CPV (Cape Verde), COD (DR Congo),
   //   HAI (Haiti), CUW (Curaçao)
+  //
+  // Do not add these even when their data/<code>-players.json file exists.
+  // build-players-from-duckdb.ts treats this map as "regenerate this country
+  // from DuckDB," which would overwrite a hand-curated squad with whatever
+  // DuckDB's citizenship index yields (Haiti: 40 rows, missing 9 of our 26
+  // picks). The seed pipeline reads the JSON regardless of this map, so the
+  // country still ships.
 };

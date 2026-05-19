@@ -234,7 +234,24 @@ Players finalized:
 2. ...
 ```
 
-### STEP 7 — Update Linear Issue
+### STEP 7 — Seed the Database
+
+After the JSON is finalized, push it to Neon by running:
+
+```
+npm run db:seed
+```
+
+Notes:
+- `db:seed` upserts **every** confirmed-slot roster, not only the country just
+  finalized. If other `data/<code>-players.json` files have local changes
+  (check `git status`), they will also be pushed. Surface this to the
+  operator before running so nothing ships by accident.
+- Requires `DATABASE_URL` in `.env.local`.
+- On success, output ends with `Seed complete: N teams, M players, K formations.`
+  Verify the just-finalized country's player count matches the JSON length.
+
+### STEP 8 — Update Linear Issue
 
 Using the Linear MCP, identify NEH-63
 Look for the country that was just completed. 
