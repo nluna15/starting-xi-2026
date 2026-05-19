@@ -355,7 +355,7 @@ function PickerBody({
                 </div>
                 {(() => {
                   const pct = Math.round(rate * 100);
-                  const flames = pct >= 76 ? 3 : pct >= 51 ? 2 : pct >= 15 ? 1 : 0;
+                  const flames = pct >= 80 ? 3 : pct >= 60 ? 2 : pct >= 25 ? 1 : 0;
                   if (flames === 0) return null;
                   return (
                     <div
