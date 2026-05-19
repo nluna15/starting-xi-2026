@@ -37,9 +37,24 @@ const fontMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://startingxi2026.app"),
   title: "Build Your XI",
   description:
     "Pick a country and build their starting 11 + bench for the 2026 FIFA World Cup. Compare your picks against the wisdom of the crowd.",
+  openGraph: {
+    title: "Build Your XI — 2026 FIFA World Cup",
+    description:
+      "Pick a country and build their starting 11 + bench. Compare your picks against the wisdom of the crowd.",
+    siteName: "Starting XI 2026",
+    type: "website",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Build Your XI — 2026 FIFA World Cup",
+    description:
+      "Pick a country and build their starting 11 + bench. Compare your picks against the wisdom of the crowd.",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
