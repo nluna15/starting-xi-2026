@@ -32,6 +32,9 @@ type SlotProfile = {
 const EXACT_WEIGHT = 1.0;
 const BROAD_WEIGHT = 0.5;
 
+const TWO_OPT_MAX_ITERS = 4;
+const TWO_OPT_EPSILON = 1e-9;
+
 function fit(
   profile: SlotProfile,
   playerPicks: ReadonlyMap<string, number>,
@@ -142,7 +145,7 @@ export function buildMostLikelyXi(input: {
   }
 
   const used = new Set<number>();
-  const results = new Array<MostLikelyXiSlot>(formationSlots.length);
+  const assignments = new Map<number, Assignment>();
 
   for (const profile of fillOrder(profiles, maxExact, candidateCounts)) {
     let bestId: number | null = null;
@@ -170,20 +173,109 @@ export function buildMostLikelyXi(input: {
       }
     }
 
-    const player = bestId != null ? playerMap.get(bestId) ?? null : null;
-    if (player && bestId != null) used.add(bestId);
+    if (bestId !== null && bestFit !== null) {
+      used.add(bestId);
+      assignments.set(profile.idx, { playerId: bestId, fit: bestFit });
+    }
+  }
 
-    const pickRate = bestFit && rateDenom > 0 ? bestFit.compatible / rateDenom : 0;
+  twoOptImprove(assignments, profiles, picksByPlayer, minScore);
+
+  const results = new Array<MostLikelyXiSlot>(formationSlots.length);
+  for (const profile of profiles) {
+    const assignment = assignments.get(profile.idx);
+    const player =
+      assignment != null ? playerMap.get(assignment.playerId) ?? null : null;
+    const pickRate =
+      assignment != null && rateDenom > 0
+        ? assignment.fit.compatible / rateDenom
+        : 0;
 
     results[profile.idx] = {
       slot: profile.slot.slot,
       position: profile.slot.position,
       x: profile.slot.x,
       y: profile.slot.y,
-      player: player ?? null,
+      player,
       pickRate,
     };
   }
 
   return results;
+}
+
+type Assignment = { playerId: number; fit: SlotFit };
+
+// Local search refinement after the greedy fill. Each iteration finds the
+// single best improving (i, j) swap — strict gain > epsilon, both new fits
+// above minScore, no silent drop from positive to zero score — and applies
+// it. Capped at TWO_OPT_MAX_ITERS so floating-point churn can't loop.
+//
+// Best-improvement (not first-improvement) keeps output deterministic given
+// the same inputs, which the SSR/CDN cache depends on.
+function twoOptImprove(
+  assignments: Map<number, Assignment>,
+  profiles: readonly SlotProfile[],
+  picksByPlayer: ReadonlyMap<number, Map<string, number>>,
+  minScore: number,
+): void {
+  const idxs = Array.from(assignments.keys()).sort((a, b) => a - b);
+  if (idxs.length < 2) return;
+
+  for (let iter = 0; iter < TWO_OPT_MAX_ITERS; iter++) {
+    let bestGain = TWO_OPT_EPSILON;
+    let bestSwap: {
+      i: number;
+      j: number;
+      fitAtI: SlotFit;
+      fitAtJ: SlotFit;
+    } | null = null;
+
+    for (let a = 0; a < idxs.length; a++) {
+      const i = idxs[a];
+      const ai = assignments.get(i)!;
+      const profileI = profiles[i];
+      const picksI = picksByPlayer.get(ai.playerId);
+      if (!picksI) continue;
+
+      for (let b = a + 1; b < idxs.length; b++) {
+        const j = idxs[b];
+        const aj = assignments.get(j)!;
+        const profileJ = profiles[j];
+        const picksJ = picksByPlayer.get(aj.playerId);
+        if (!picksJ) continue;
+
+        const fitAtI = fit(profileI, picksJ);
+        const fitAtJ = fit(profileJ, picksI);
+
+        if (fitAtI.score <= minScore || fitAtJ.score <= minScore) continue;
+        if (
+          (ai.fit.score > 0 || aj.fit.score > 0) &&
+          (fitAtI.score === 0 || fitAtJ.score === 0)
+        ) {
+          continue;
+        }
+
+        const gain =
+          fitAtI.score + fitAtJ.score - (ai.fit.score + aj.fit.score);
+        if (gain > bestGain) {
+          bestGain = gain;
+          bestSwap = { i, j, fitAtI, fitAtJ };
+        }
+      }
+    }
+
+    if (!bestSwap) return;
+
+    const ai = assignments.get(bestSwap.i)!;
+    const aj = assignments.get(bestSwap.j)!;
+    assignments.set(bestSwap.i, {
+      playerId: aj.playerId,
+      fit: bestSwap.fitAtI,
+    });
+    assignments.set(bestSwap.j, {
+      playerId: ai.playerId,
+      fit: bestSwap.fitAtJ,
+    });
+  }
 }

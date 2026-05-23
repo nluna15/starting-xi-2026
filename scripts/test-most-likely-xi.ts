@@ -239,6 +239,192 @@ test("pickRateDenominator overrides totalSubmissions (global mashup case)", () =
   assert.equal(filled!.pickRate, 0.5, "uses denominator override (7.5 / 15)");
 });
 
+test("2-opt fixes USA-style CAM/CDM mis-assignment", () => {
+  // 4-2-3-1: GK, LB, LCB, RCB, RB, LCDM, RCDM, LW, CAM, RW, ST.
+  // A is a true CAM with only CAM picks. B is stored as CDM but the crowd
+  // placed him at CAM more often than CDM (10 vs 5). Greedy fills CAM first
+  // (max-exact=10) and picks B because B's broad fallback beats A's exact:
+  //   CAM: A=10, B=10+5*0.5=12.5 → B wins CAM, A spills into RCDM via
+  //   broad-only (score 5).
+  // 2-opt sees: A at CAM (10) + B at RCDM (5 + 10*0.5 = 10) = 20 beats the
+  // greedy sum (12.5 + 5 = 17.5) and applies the swap.
+  const slots = formation("4-2-3-1");
+  const gk = player(10, "GK", "GK");
+  const lb = player(11, "LB", "LB");
+  const lcb = player(12, "LCB", "CB");
+  const rcb = player(13, "RCB", "CB");
+  const rb = player(14, "RB", "RB");
+  const a = player(1, "Primary CAM", "CAM");
+  const b = player(2, "Versatile CDM", "CDM");
+  const c = player(3, "Pure CDM", "CDM");
+  const lw = player(15, "LW", "LW");
+  const rw = player(16, "RW", "RW");
+  const st = player(17, "ST", "ST");
+
+  const picks: PlayerPickEntry[] = [
+    { playerId: 10, detailedPosition: "GK", picks: 5 },
+    { playerId: 11, detailedPosition: "LB", picks: 5 },
+    { playerId: 12, detailedPosition: "CB", picks: 5 },
+    { playerId: 13, detailedPosition: "CB", picks: 5 },
+    { playerId: 14, detailedPosition: "RB", picks: 5 },
+    { playerId: 1, detailedPosition: "CAM", picks: 10 },
+    { playerId: 2, detailedPosition: "CAM", picks: 10 },
+    { playerId: 2, detailedPosition: "CDM", picks: 5 },
+    { playerId: 3, detailedPosition: "CDM", picks: 7 },
+    { playerId: 15, detailedPosition: "LW", picks: 5 },
+    { playerId: 16, detailedPosition: "RW", picks: 5 },
+    { playerId: 17, detailedPosition: "ST", picks: 5 },
+  ];
+
+  const out = buildMostLikelyXi({
+    formationSlots: slots,
+    pickTable: picks,
+    playerMap: playerMapOf(gk, lb, lcb, rcb, rb, a, b, c, lw, rw, st),
+    totalSubmissions: 20,
+  });
+
+  assert.equal(
+    slotByName(out, "CAM").player?.id,
+    1,
+    "CAM slot must be the true CAM (player A) after 2-opt",
+  );
+  const lcdmId = slotByName(out, "LCDM").player?.id;
+  const rcdmId = slotByName(out, "RCDM").player?.id;
+  assert.deepEqual(
+    [lcdmId, rcdmId].sort(),
+    [2, 3],
+    "Both CDM slots fill with B and C, not A",
+  );
+});
+
+test("2-opt is a no-op when greedy is already optimal", () => {
+  const slots = formation("4-3-3");
+  const gk = player(10, "GK", "GK");
+  const lb = player(11, "LB", "LB");
+  const lcb = player(12, "LCB", "CB");
+  const rcb = player(13, "RCB", "CB");
+  const rb = player(14, "RB", "RB");
+  const cm = player(15, "CM", "CM");
+  const lcm = player(16, "LCM", "CM");
+  const rcm = player(17, "RCM", "CM");
+  const lw = player(18, "LW", "LW");
+  const rw = player(19, "RW", "RW");
+  const st = player(20, "ST", "ST");
+  const picks: PlayerPickEntry[] = [
+    { playerId: 10, detailedPosition: "GK", picks: 9 },
+    { playerId: 11, detailedPosition: "LB", picks: 9 },
+    { playerId: 12, detailedPosition: "CB", picks: 9 },
+    { playerId: 13, detailedPosition: "CB", picks: 8 },
+    { playerId: 14, detailedPosition: "RB", picks: 9 },
+    { playerId: 15, detailedPosition: "CM", picks: 9 },
+    { playerId: 16, detailedPosition: "CM", picks: 8 },
+    { playerId: 17, detailedPosition: "CM", picks: 7 },
+    { playerId: 18, detailedPosition: "LW", picks: 9 },
+    { playerId: 19, detailedPosition: "RW", picks: 9 },
+    { playerId: 20, detailedPosition: "ST", picks: 9 },
+  ];
+  const out = buildMostLikelyXi({
+    formationSlots: slots,
+    pickTable: picks,
+    playerMap: playerMapOf(gk, lb, lcb, rcb, rb, cm, lcm, rcm, lw, rw, st),
+    totalSubmissions: 10,
+  });
+  assert.equal(slotByName(out, "GK").player?.id, 10);
+  assert.equal(slotByName(out, "LB").player?.id, 11);
+  assert.equal(slotByName(out, "RB").player?.id, 14);
+  assert.equal(slotByName(out, "LW").player?.id, 18);
+  assert.equal(slotByName(out, "RW").player?.id, 19);
+  assert.equal(slotByName(out, "ST").player?.id, 20);
+});
+
+test("2-opt never swaps the GK with an outfielder", () => {
+  const slots = formation("4-3-3");
+  const gk = player(1, "Small GK", "GK");
+  const cb = player(2, "Big CB", "CB");
+  const picks: PlayerPickEntry[] = [
+    { playerId: 1, detailedPosition: "GK", picks: 1 },
+    { playerId: 2, detailedPosition: "CB", picks: 100 },
+  ];
+  const out = buildMostLikelyXi({
+    formationSlots: slots,
+    pickTable: picks,
+    playerMap: playerMapOf(gk, cb),
+    totalSubmissions: 100,
+  });
+  assert.equal(
+    slotByName(out, "GK").player?.id,
+    1,
+    "GK slot must still hold the GK pick",
+  );
+  const lcb = slotByName(out, "LCB").player?.id;
+  const rcb = slotByName(out, "RCB").player?.id;
+  assert.ok(lcb === 2 || rcb === 2, "CB lands in a CB slot");
+});
+
+test("2-opt never swaps across DEF/FWD broad buckets", () => {
+  const slots = formation("4-3-3");
+  const cb = player(1, "CB", "CB");
+  const st = player(2, "ST", "ST");
+  const picks: PlayerPickEntry[] = [
+    { playerId: 1, detailedPosition: "CB", picks: 10 },
+    { playerId: 2, detailedPosition: "ST", picks: 10 },
+  ];
+  const out = buildMostLikelyXi({
+    formationSlots: slots,
+    pickTable: picks,
+    playerMap: playerMapOf(cb, st),
+    totalSubmissions: 10,
+  });
+  const cbSlot = out.find((s) => s.player?.id === 1);
+  const stSlot = out.find((s) => s.player?.id === 2);
+  assert.equal(cbSlot?.position, "DEF", "CB stays in a DEF slot");
+  assert.equal(stSlot?.position, "FWD", "ST stays in a FWD slot");
+});
+
+test("2-opt respects minScore threshold", () => {
+  const slots = formation("4-3-3");
+  const cb = player(1, "Strong CB", "CB");
+  const weak = player(2, "Weak CM", "CM");
+  const picks: PlayerPickEntry[] = [
+    { playerId: 1, detailedPosition: "CB", picks: 5 },
+    { playerId: 2, detailedPosition: "CM", picks: 0.5 },
+  ];
+  const out = buildMostLikelyXi({
+    formationSlots: slots,
+    pickTable: picks,
+    playerMap: playerMapOf(cb, weak),
+    totalSubmissions: 10,
+    minScore: 1.0,
+  });
+  for (const s of out) {
+    assert.notEqual(s.player?.id, 2, "Sub-threshold weak pick is never placed");
+  }
+});
+
+test("2-opt is deterministic on float-weighted picks", () => {
+  const slots = formation("4-2-3-1");
+  const a = player(1, "A", "CAM");
+  const b = player(2, "B", "CDM");
+  const picks: PlayerPickEntry[] = [
+    { playerId: 1, detailedPosition: "CAM", picks: 7.5 },
+    { playerId: 2, detailedPosition: "CAM", picks: 7.5 },
+    { playerId: 2, detailedPosition: "CDM", picks: 3.25 },
+  ];
+  const args = {
+    formationSlots: slots,
+    pickTable: picks,
+    playerMap: playerMapOf(a, b),
+    totalSubmissions: 20,
+  };
+  const out1 = buildMostLikelyXi(args);
+  const out2 = buildMostLikelyXi(args);
+  for (let i = 0; i < out1.length; i++) {
+    assert.equal(out1[i].slot, out2[i].slot);
+    assert.equal(out1[i].player?.id ?? null, out2[i].player?.id ?? null);
+    assert.equal(out1[i].pickRate, out2[i].pickRate);
+  }
+});
+
 test("minScore threshold drops weak candidates (global mashup case)", () => {
   const slots = formation("4-3-3");
   const weak = player(1, "Weak", "CB");
