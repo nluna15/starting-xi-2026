@@ -4,6 +4,14 @@ import { formations, players, submissions, teams } from "./schema";
 import type { Formation, FormationSlot, Player, Team } from "./schema";
 import { SLOT_TO_DETAILED } from "@/lib/formations";
 import { buildMostLikelyXi, type PlayerPickEntry } from "@/lib/community/most-likely-xi";
+import { COMMUNITY_INCLUDE_ONLY_SELECTABLE } from "@/lib/community/config";
+
+const SELECTABLE_AND = COMMUNITY_INCLUDE_ONLY_SELECTABLE
+  ? sql`and pl.selectable = true`
+  : sql``;
+const SELECTABLE_WHERE = COMMUNITY_INCLUDE_ONLY_SELECTABLE
+  ? sql`where pl.selectable = true`
+  : sql``;
 
 const DECAY_HALF_LIFE_DAYS = 10;
 const SMOOTHING_ALPHA = 5;
@@ -185,10 +193,11 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
         jsonb_array_elements_text(s.starters) pid
       where s.team_id = ${team.id}
     )
-    select avg(p.age)::float as avg_age,
-           avg(p.market_value_eur)::float as avg_value
+    select avg(pl.age)::float as avg_age,
+           avg(pl.market_value_eur)::float as avg_value
     from starter_picks sp
-    join ${players} p on p.id = sp.pid
+    join ${players} pl on pl.id = sp.pid
+    ${SELECTABLE_WHERE}
   `);
   const avgRecord = avgRow.rows[0] as { avg_age: number | null; avg_value: number | null } | undefined;
 
@@ -226,7 +235,10 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
                count(*)::int as picks
         from picks p
         join ${formations} f on f.id = p.formation_id
-        where exists (select 1 from ${players} pl where pl.id = p.player_id)
+        where exists (
+          select 1 from ${players} pl
+          where pl.id = p.player_id ${SELECTABLE_AND}
+        )
         group by p.player_id, (f.slots->p.slot_index->>'slot')
       `);
 
@@ -273,9 +285,11 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
         jsonb_array_elements_text(s.bench) pid
       where s.team_id = ${team.id}
     )
-    select player_id, count(*)::int as picks
-    from bench_picks
-    group by player_id
+    select bp.player_id, count(*)::int as picks
+    from bench_picks bp
+    join ${players} pl on pl.id = bp.player_id
+    ${SELECTABLE_WHERE}
+    group by bp.player_id
     order by picks desc
     limit 5
   `);
@@ -300,10 +314,12 @@ export async function getCrowdStats(teamCode: string): Promise<CrowdStats> {
         jsonb_array_elements_text(s.starters) pid
       where s.team_id = ${team.id}
     )
-    select player_id, count(*)::int as picks
-    from starter_picks
-    group by player_id
-    order by picks desc, player_id asc
+    select sp.player_id, count(*)::int as picks
+    from starter_picks sp
+    join ${players} pl on pl.id = sp.player_id
+    ${SELECTABLE_WHERE}
+    group by sp.player_id
+    order by picks desc, sp.player_id asc
     limit 5
   `);
   const topPlayerIds = (topPlayerRows.rows as Array<{ player_id: number }>).map((r) =>
@@ -535,7 +551,10 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
                coalesce((select sum(w) from weighted), 0)::float as total_weight
         from picks p
         join ${formations} f on f.id = p.formation_id
-        where exists (select 1 from ${players} pl where pl.id = p.player_id)
+        where exists (
+          select 1 from ${players} pl
+          where pl.id = p.player_id ${SELECTABLE_AND}
+        )
         group by p.player_id, (f.slots->p.slot_index->>'slot')
       `);
 
@@ -607,10 +626,12 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
       from ${submissions} s,
         jsonb_array_elements_text(s.starters) pid
     )
-    select player_id, count(*)::int as picks
-    from starter_picks
-    group by player_id
-    order by picks desc, player_id asc
+    select sp.player_id, count(*)::int as picks
+    from starter_picks sp
+    join ${players} pl on pl.id = sp.player_id
+    ${SELECTABLE_WHERE}
+    group by sp.player_id
+    order by picks desc, sp.player_id asc
     limit 10
   `);
   const topIds = (topRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
@@ -636,10 +657,12 @@ export async function getGlobalCrowdStats(): Promise<GlobalCrowdStats> {
       from ${submissions} s,
         jsonb_array_elements_text(s.bench) pid
     )
-    select player_id, count(*)::int as picks
-    from bench_picks
-    group by player_id
-    order by picks desc, player_id asc
+    select bp.player_id, count(*)::int as picks
+    from bench_picks bp
+    join ${players} pl on pl.id = bp.player_id
+    ${SELECTABLE_WHERE}
+    group by bp.player_id
+    order by picks desc, bp.player_id asc
     limit 5
   `);
   const benchIds = (benchRows.rows as Array<{ player_id: number }>).map((r) => Number(r.player_id));
@@ -703,13 +726,14 @@ export async function getCountrySquadStats(): Promise<CountrySquadStat[]> {
     select t.code, t.name, t.flag_emoji as flag_emoji,
            count(*)::int as pick_count,
            coalesce(sc.submission_count, 0)::int as submission_count,
-           avg(p.age)::float as avg_age,
-           avg(p.market_value_eur)::float as avg_market_value_eur,
-           avg(p.international_caps)::float as avg_international_caps
+           avg(pl.age)::float as avg_age,
+           avg(pl.market_value_eur)::float as avg_market_value_eur,
+           avg(pl.international_caps)::float as avg_international_caps
     from picked pk
     join ${teams} t on t.id = pk.team_id
-    join ${players} p on p.id = pk.player_id
+    join ${players} pl on pl.id = pk.player_id
     left join sub_counts sc on sc.team_id = t.id
+    ${SELECTABLE_WHERE}
     group by t.id, t.code, t.name, t.flag_emoji, sc.submission_count
     having count(*) > 0
     order by t.name asc
