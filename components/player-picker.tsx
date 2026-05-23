@@ -11,7 +11,7 @@ import {
   DETAILED_TO_BROAD,
   type BroadPosition,
 } from "@/lib/formations";
-import { cn, normalize } from "@/lib/utils";
+import { cn, formatEur, normalize } from "@/lib/utils";
 
 const POSITION_NOUN: Record<string, string> = {
   GK: "keepers",
@@ -78,7 +78,14 @@ function defaultSelected(
   const broad = (slotPositionCode ?? DETAILED_TO_BROAD[slotDetailedCode ?? ""]) as
     | BroadPosition
     | undefined;
-  if (broad && DETAILED_BY_BROAD[broad]) return new Set(DETAILED_BY_BROAD[broad]);
+  if (broad && DETAILED_BY_BROAD[broad]) {
+    // Midfield slots also pre-select forwards: many forwards are asked to play
+    // wider/deeper roles and we don't track those team-specific nuances here.
+    if (broad === "MID") {
+      return new Set([...DETAILED_BY_BROAD.MID, ...DETAILED_BY_BROAD.FWD]);
+    }
+    return new Set(DETAILED_BY_BROAD[broad]);
+  }
   if (slotDetailedCode) return new Set([slotDetailedCode]);
   return new Set();
 }
@@ -317,7 +324,7 @@ function PickerBody({
                 disabled={taken}
                 onClick={() => onPick(p)}
                 className={cn(
-                  "flex w-full items-center justify-between gap-3 px-4 py-3 text-left",
+                  "flex w-full items-center justify-between gap-3 px-4 py-2 text-left",
                   "transition-[background-color] duration-150 ease-in-out",
                   "focus-visible:outline-none focus-visible:bg-surface-2",
                   taken
@@ -349,7 +356,9 @@ function PickerBody({
                       <span className="mx-1 text-ink-faint">·</span>
                       {p.age}y
                       <span className="mx-1 text-ink-faint">·</span>
-                      Int&rsquo;l caps: {p.internationalCaps ?? 0}
+                      {formatEur(p.marketValueEur)}
+                      <span className="mx-1 text-ink-faint">·</span>
+                      Caps:&nbsp;{p.internationalCaps ?? 0}
                     </div>
                   </div>
                 </div>
