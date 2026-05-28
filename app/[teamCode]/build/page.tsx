@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LineupBuilder } from "@/components/lineup-builder";
 import { Button } from "@/components/ui/button";
-import { getPickRatesForTeam, getPlayersForTeam, getTeamByCode } from "@/lib/db/queries";
+import { getPlayersForTeam, getTeamByCode } from "@/lib/db/queries";
 
 export const dynamic = "force-dynamic";
 
@@ -13,10 +13,7 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
   const team = await getTeamByCode(teamCode.toUpperCase());
   if (!team) notFound();
 
-  const [pool, pickRates] = await Promise.all([
-    getPlayersForTeam(team.id),
-    getPickRatesForTeam(team.id),
-  ]);
+  const pool = await getPlayersForTeam(team.id);
 
   if (pool.length === 0) {
     return (
@@ -50,12 +47,7 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
           </div>
         </div>
       </div>
-      <LineupBuilder
-        players={pool}
-        teamCode={team.code}
-        pickCounts={Array.from(pickRates.picksByPlayerId.entries())}
-        totalSubmissions={pickRates.totalSubmissions}
-      />
+      <LineupBuilder players={pool} teamCode={team.code} />
     </div>
   );
 }

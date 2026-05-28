@@ -38,8 +38,6 @@ type PlayerPickerProps = {
   slotKind?: "starter" | "bench" | null;
   currentPick: Player | null;
   showPhotos?: boolean;
-  pickCounts?: Map<number, number>;
-  totalSubmissions?: number;
 };
 
 export function PlayerPicker(props: PlayerPickerProps) {
@@ -79,9 +77,7 @@ function defaultSelected(
     | BroadPosition
     | undefined;
   if (broad && DETAILED_BY_BROAD[broad]) {
-    // Midfield slots also pre-select forwards: many forwards are asked to play
-    // wider/deeper roles and we don't track those team-specific nuances here.
-    if (broad === "MID") {
+    if (slotDetailedCode === "CAM") {
       return new Set([...DETAILED_BY_BROAD.MID, ...DETAILED_BY_BROAD.FWD]);
     }
     return new Set(DETAILED_BY_BROAD[broad]);
@@ -103,8 +99,6 @@ function PickerBody({
   slotKind,
   currentPick,
   showPhotos = false,
-  pickCounts,
-  totalSubmissions,
 }: PlayerPickerProps) {
   const [query, setQuery] = React.useState("");
   const [selected, setSelected] = React.useState<Set<string>>(() =>
@@ -314,9 +308,6 @@ function PickerBody({
         {filtered.map((p) => {
           const taken = pickedIds.has(p.id) && p.id !== currentPick?.id;
           const isCurrent = p.id === currentPick?.id;
-          const count = pickCounts?.get(p.id) ?? 0;
-          const total = totalSubmissions ?? 0;
-          const rate = total > 0 ? count / total : 0;
           return (
             <li key={p.id}>
               <button
@@ -362,24 +353,6 @@ function PickerBody({
                     </div>
                   </div>
                 </div>
-                {(() => {
-                  const pct = Math.round(rate * 100);
-                  const flames = pct >= 80 ? 3 : pct >= 60 ? 2 : pct >= 25 ? 1 : 0;
-                  if (flames === 0) return null;
-                  return (
-                    <div
-                      className="shrink-0 flex items-center text-[18px] leading-none"
-                      aria-label={`${pct}% picked`}
-                      title={`${pct}% picked`}
-                    >
-                      {Array.from({ length: flames }).map((_, i) => (
-                        <span key={i} className={i === 0 ? "" : "-ml-3"}>
-                          🔥
-                        </span>
-                      ))}
-                    </div>
-                  );
-                })()}
               </button>
             </li>
           );

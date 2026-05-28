@@ -17,7 +17,7 @@ const STEPS: Step[] = [
   },
   {
     title: "Build Your XI",
-    body: "Fill 11 starting spots plus bench. Each player card shows position, age, and caps (appearances) — plus how often other fans have picked them. See 🔥🔥🔥? The crowd loves them. No heat? You can make a bold pick.",
+    body: "Fill your 11 starting players plus your 3 impact substitutes. In the player picker, you can see a player's most common position, age, market value, and caps (another way of saying times played with the team). Goalkeepers must be slotted into the Goalie slot. Field players can be placed anywhere on the pitch.",
   },
   {
     title: "Submit and Share",

@@ -23,8 +23,6 @@ type Props = {
   players: Player[];
   teamCode: string;
   defaultFormation?: string;
-  pickCounts?: Array<[number, number]>;
-  totalSubmissions?: number;
 };
 
 type ActiveSlot = { kind: "starter"; index: number } | { kind: "bench"; index: number };
@@ -33,8 +31,6 @@ export function LineupBuilder({
   players,
   teamCode,
   defaultFormation = "3-4-2-1",
-  pickCounts,
-  totalSubmissions = 0,
 }: Props) {
   const router = useRouter();
   const showPhotos = true;
@@ -69,12 +65,6 @@ export function LineupBuilder({
     const firstEmpty = next.findIndex((p) => p === null);
     setActive({ kind: "starter", index: firstEmpty !== -1 ? firstEmpty : 0 });
   }
-
-  const pickCountMap = React.useMemo(() => {
-    const m = new Map<number, number>();
-    if (pickCounts) for (const [id, c] of pickCounts) m.set(id, c);
-    return m;
-  }, [pickCounts]);
 
   const pickedIds = React.useMemo(() => {
     const set = new Set<number>();
@@ -245,7 +235,7 @@ export function LineupBuilder({
               selected={f.name === formationName}
               onClick={() => setFormationName(f.name)}
               aria-pressed={f.name === formationName}
-              className="mono shrink-0 tracking-[0.04em]"
+              className="mono shrink-0 tracking-[0.04em] bg-white"
             >
               {f.name}
             </Chip>
@@ -260,7 +250,7 @@ export function LineupBuilder({
               <span className="mono tracking-[0.04em]">{startersFilled} / 11</span>
               <span>Starters</span>
             </Chip>
-            <Chip variant="neutral" size="sm" className="bg-white">
+            <Chip variant="neutral" size="sm">
               <span className="mono tracking-[0.04em]">
                 {benchFilled} / {BENCH_SIZE}
               </span>
@@ -311,8 +301,6 @@ export function LineupBuilder({
                 slotKind={active.kind}
                 currentPick={currentPick}
                 showPhotos={showPhotos}
-                pickCounts={pickCountMap}
-                totalSubmissions={totalSubmissions}
               />
             </div>
           </div>
@@ -336,8 +324,6 @@ export function LineupBuilder({
           slotKind={active.kind}
           currentPick={currentPick}
           showPhotos={showPhotos}
-          pickCounts={pickCountMap}
-          totalSubmissions={totalSubmissions}
         />
       </div>
 
