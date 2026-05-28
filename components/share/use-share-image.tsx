@@ -61,27 +61,30 @@ async function preloadFonts(): Promise<void> {
 }
 
 const BACKGROUND_URL = "/lineup-background.png";
-let backgroundDataUriPromise: Promise<string> | null = null;
+const PITCH_URL = "/share-pitch.png";
 
-function fetchBackgroundDataUri(): Promise<string> {
-  if (!backgroundDataUriPromise) {
-    backgroundDataUriPromise = (async () => {
-      const res = await fetch(BACKGROUND_URL, { cache: "force-cache" });
-      if (!res.ok) throw new Error(`Failed to fetch ${BACKGROUND_URL}: ${res.status}`);
-      const blob = await res.blob();
-      return await new Promise<string>((resolve, reject) => {
-        const fr = new FileReader();
-        fr.onload = () => resolve(fr.result as string);
-        fr.onerror = () => reject(fr.error ?? new Error("FileReader error"));
-        fr.readAsDataURL(blob);
-      });
-    })().catch((err) => {
-      // Drop the cached promise so a later capture can retry.
-      backgroundDataUriPromise = null;
-      throw err;
+const dataUriCache = new Map<string, Promise<string>>();
+
+function fetchDataUri(url: string): Promise<string> {
+  const cached = dataUriCache.get(url);
+  if (cached) return cached;
+  const promise = (async () => {
+    const res = await fetch(url, { cache: "force-cache" });
+    if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
+    const blob = await res.blob();
+    return await new Promise<string>((resolve, reject) => {
+      const fr = new FileReader();
+      fr.onload = () => resolve(fr.result as string);
+      fr.onerror = () => reject(fr.error ?? new Error("FileReader error"));
+      fr.readAsDataURL(blob);
     });
-  }
-  return backgroundDataUriPromise;
+  })().catch((err) => {
+    // Drop the cached promise so a later capture can retry.
+    dataUriCache.delete(url);
+    throw err;
+  });
+  dataUriCache.set(url, promise);
+  return promise;
 }
 
 async function decodeImagesIn(host: HTMLElement): Promise<void> {
@@ -109,12 +112,13 @@ function captureBlob(host: HTMLElement, inputs: CardInputs): Promise<Blob> {
     let resolved = false;
 
     void (async () => {
-      const [{ createRoot }, { domToBlob }, backgroundSrc] = await Promise.all([
+      const [{ createRoot }, { domToBlob }, backgroundSrc, pitchSrc] = await Promise.all([
         import("react-dom/client"),
         import("modern-screenshot"),
         // A failed bg fetch is non-fatal — fall back to the public path and
         // accept that the bg may not render in the captured PNG.
-        fetchBackgroundDataUri().catch(() => undefined),
+        fetchDataUri(BACKGROUND_URL).catch(() => undefined),
+        fetchDataUri(PITCH_URL).catch(() => undefined),
       ]);
 
       const root = createRoot(host);
@@ -164,7 +168,14 @@ function captureBlob(host: HTMLElement, inputs: CardInputs): Promise<Blob> {
         }
       };
 
-      root.render(<ShareCard {...inputs} backgroundSrc={backgroundSrc} onReady={handleReady} />);
+      root.render(
+        <ShareCard
+          {...inputs}
+          backgroundSrc={backgroundSrc}
+          pitchSrc={pitchSrc}
+          onReady={handleReady}
+        />,
+      );
     })().catch((err) => {
       if (!resolved) {
         resolved = true;

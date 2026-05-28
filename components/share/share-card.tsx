@@ -6,7 +6,7 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
-import { BADGE_COLORS, type BadgeKind } from "@/components/community/recent-submission-tags";
+import type { BadgeKind } from "@/components/community/recent-submission-tags";
 import { computeAverages } from "@/components/lineup-summary";
 import { formatAge, formatEur, lastName, proxyPhotoUrl } from "@/lib/utils";
 
@@ -31,6 +31,8 @@ export type ShareCardProps = {
    * same-origin <img> inlining inside SVG foreignObject is flaky.
    */
   backgroundSrc?: string;
+  /** Pre-resolved pitch image src (data URI). Same rationale as backgroundSrc. */
+  pitchSrc?: string;
   /**
    * Called once after the React tree commits and layout is stable.
    * `useShareImage` uses this signal to wait for first paint before
@@ -43,16 +45,19 @@ const SHARE_WIDTH = 1080;
 const SHARE_HEIGHT = 1350;
 
 const HEADER_HEIGHT = 96;
-const BADGE_ROW_HEIGHT = 60;
 const STATS_STRIP_HEIGHT = 110;
 const FOOTER_HEIGHT = 60;
 
-// soccer-pitch lays the pitch field out with `aspect-ratio: 4 / (5*cos40°) ≈ 4 / 3.83`
-// (width-driven height). At width 740 the field resolves to ~708px tall, which
-// places its bottom edge at y = 318 (top stack) + 708 = 1026 — exactly 95% of
-// the 1080-wide canvas. That leaves the area below the field free for a fully
-// visible bench + footer.
-const PITCH_INNER_WIDTH = 740;
+// Explicit pixel height so the bottom edge is independently tunable; the CSS
+// override below forces the soccer-pitch package's inner container to match.
+const PITCH_INNER_WIDTH = 840;
+const PITCH_INNER_HEIGHT = 788;
+
+// Pitch PNG is rendered 10% larger than the SoccerPitch container so the field
+// markings grow without affecting player token positions (which are %-based
+// against PITCH_INNER_WIDTH/HEIGHT).
+const PITCH_IMAGE_WIDTH = Math.round(PITCH_INNER_WIDTH * 1.1);
+const PITCH_IMAGE_HEIGHT = Math.round(PITCH_INNER_HEIGHT * 1.1);
 
 function toPkgPlayer(p: Player | null): PkgPlayer | null {
   if (!p) return null;
@@ -68,8 +73,8 @@ export function ShareCard({
   formation,
   starters,
   bench,
-  category,
   backgroundSrc,
+  pitchSrc,
   onReady,
 }: ShareCardProps) {
   const rawId = React.useId();
@@ -85,14 +90,20 @@ export function ShareCard({
   const squad = [...starters, ...bench];
   const avg = computeAverages(squad);
 
+  // Lifts every STARTING player up by this many percentage points of the
+  // pitch height. Bench players are unaffected (they use a separate list).
+  // Positive = up, negative = down. 0 = no change.
+  const PLAYER_Y_LIFT = 8;
   const pkgFormation = {
     name: formation.name,
-    slots: formation.slots.map((s) => ({ x: s.x, y: 100 - s.y, role: s.slot })),
+    slots: formation.slots.map((s) => ({
+      x: s.x,
+      y: 100 - s.y - PLAYER_Y_LIFT,
+      role: s.slot,
+    })),
   };
   const pkgPlayers = starters.map(toPkgPlayer);
   const pkgBench = bench.map(toPkgPlayer);
-
-  const badgeBg = category ? BADGE_COLORS[category.badge] : null;
 
   return (
     <div
@@ -128,8 +139,21 @@ export function ShareCard({
              stay legible at the 1080px native export size. */
           --sp-name-fs: 24px !important;
         }
+        /* Hide the package's pitch surface SVG — its tilt is faked with a
+           rotateX(40deg) that modern-screenshot drops during capture. We
+           render a flat pre-rendered PNG (share-pitch.png) underneath instead. */
+        .${scopeClass} .sp-pitch-surface {
+          display: none !important;
+        }
+        /* Pin the package's inner field container to our explicit height so
+           player tokens (positioned by % within this container) line up with
+           the PNG pitch underneath. */
+        .${scopeClass} .sp-soccer-pitch > div:first-of-type {
+          aspect-ratio: auto !important;
+          height: ${PITCH_INNER_HEIGHT}px !important;
+        }
         .${scopeClass} .sp-soccer-pitch .sp-bench {
-          margin-top: 100px !important;
+          margin-top: 25px !important;
           padding-bottom: 4px !important;
         }
         .${scopeClass} .sp-soccer-pitch .sp-bench-row {
@@ -249,39 +273,11 @@ export function ShareCard({
         </div>
       </div>
 
-      {/* Badge row — single category pill, centered */}
-      <div
-        style={{
-          height: BADGE_ROW_HEIGHT,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        {category && badgeBg ? (
-          <span
-            style={{
-              fontFamily: "var(--font-mono), ui-monospace, monospace",
-              fontWeight: 800,
-              fontSize: 18,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              padding: "8px 22px",
-              borderRadius: 999,
-              background: badgeBg,
-              color: "#ffffff",
-              lineHeight: 1,
-            }}
-          >
-            {category.badge}
-          </span>
-        ) : null}
-      </div>
-
       {/* Stats strip — 3 tiles */}
       <div
         style={{
           height: STATS_STRIP_HEIGHT,
+          marginTop: 40,
           padding: "0 56px",
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
@@ -302,25 +298,60 @@ export function ShareCard({
         style={{
           flex: 1,
           minHeight: 0,
-          padding: 0,
+          padding: "10px 0 0 0",
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-start",
         }}
       >
-        <div style={{ width: PITCH_INNER_WIDTH }}>
-          {/* MotionConfig disables framer-motion animations so player tokens
-              are positioned synchronously on commit, not after rAF. */}
-          <MotionConfig reducedMotion="always" transition={{ duration: 0 }}>
-            <SoccerPitch
-              formation={pkgFormation}
-              players={pkgPlayers}
-              bench={pkgBench}
-              theme="grass"
-              showNames
-              showFlags={false}
-            />
-          </MotionConfig>
+        {/* Outer wrapper matches the pitch image so the larger PNG never
+            relies on overflowing a narrower parent (which the capture lib
+            can clip on the left). Player layer below is constrained to
+            PITCH_INNER_WIDTH and centered inside this wrapper so positions
+            stay anchored. */}
+        <div style={{ width: PITCH_IMAGE_WIDTH, position: "relative" }}>
+          {/* Pre-rendered tilted pitch PNG. Replaces the soccer-pitch
+              package's tilted SVG surface (hidden via CSS above) — the
+              package fakes its tilt with rotateX(40deg), which the capture
+              lib drops. Pre-fetched to a data URI in useShareImage. */}
+          <img
+            src={pitchSrc ?? "/share-pitch.png"}
+            alt=""
+            aria-hidden
+            style={{
+              position: "absolute",
+              top: (PITCH_INNER_HEIGHT - PITCH_IMAGE_HEIGHT) / 2,
+              left: 0,
+              width: PITCH_IMAGE_WIDTH,
+              height: PITCH_IMAGE_HEIGHT,
+              objectFit: "fill",
+              filter: "drop-shadow(0 24px 28px rgba(0, 0, 0, 0.35))",
+              pointerEvents: "none",
+            }}
+          />
+          {/* Player layer — constrained to PITCH_INNER_WIDTH and centered
+              within the wider wrapper so percentage-based slot positions
+              don't move when the pitch image grows. */}
+          <div
+            style={{
+              width: PITCH_INNER_WIDTH,
+              marginLeft: (PITCH_IMAGE_WIDTH - PITCH_INNER_WIDTH) / 2,
+              position: "relative",
+            }}
+          >
+            {/* MotionConfig disables framer-motion animations so player tokens
+                are positioned synchronously on commit, not after rAF. */}
+            <MotionConfig reducedMotion="always" transition={{ duration: 0 }}>
+              <SoccerPitch
+                formation={pkgFormation}
+                players={pkgPlayers}
+                bench={pkgBench}
+                theme="grass"
+                showNames
+                showFlags={false}
+              />
+            </MotionConfig>
+          </div>
         </div>
       </div>
 
