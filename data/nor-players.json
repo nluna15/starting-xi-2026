@@ -10,7 +10,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/549378-1768895607.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 380744,
@@ -23,7 +24,8 @@
     "marketValueEur": 1300000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/380744-1671209334.jpg?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 496341,
@@ -36,7 +38,8 @@
     "marketValueEur": 1000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496341-1702300918.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 73517,
@@ -49,7 +52,8 @@
     "marketValueEur": 900000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/73517-1532082757.jpg?lm=1",
     "internationalCaps": 67,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 228006,
@@ -62,7 +66,8 @@
     "marketValueEur": 900000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/228006-1693305938.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 955389,
@@ -75,7 +80,8 @@
     "marketValueEur": 800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/955389-1721333706.jpg?lm=1",
     "internationalCaps": 6,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 418561,
@@ -88,7 +94,8 @@
     "marketValueEur": 800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418561-1721899700.png?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 291254,
@@ -101,7 +108,8 @@
     "marketValueEur": 800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/291254-1637671999.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 794456,
@@ -114,7 +122,8 @@
     "marketValueEur": 700000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/794456-1671211364.jpg?lm=1",
     "internationalCaps": 7,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 226410,
@@ -127,7 +136,8 @@
     "marketValueEur": 600000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226410-1712184297.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 370789,
@@ -140,7 +150,8 @@
     "marketValueEur": 25000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/370789-1709561216.jpg?lm=1",
     "internationalCaps": 39,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 328658,
@@ -153,7 +164,8 @@
     "marketValueEur": 18000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/328658-1700649482.jpg?lm=1",
     "internationalCaps": 48,
-    "internationalGoals": 2
+    "internationalGoals": 2,
+    "selectable": true
   },
   {
     "transfermarktId": 464469,
@@ -166,7 +178,8 @@
     "marketValueEur": 14000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/464469-1702050091.jpg?lm=1",
     "internationalCaps": 11,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 367284,
@@ -179,7 +192,8 @@
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/367284-1708552959.jpg?lm=1",
     "internationalCaps": 34,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 661427,
@@ -192,7 +206,8 @@
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661427-1753350331.jpg?lm=1",
     "internationalCaps": 18,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 912959,
@@ -205,7 +220,8 @@
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/912959-1743175759.jpg?lm=1",
     "internationalCaps": 7,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 1129198,
@@ -218,7 +234,8 @@
     "marketValueEur": 7000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1129198-1720826278.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 592387,
@@ -231,7 +248,8 @@
     "marketValueEur": 5500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/592387-1752841294.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 869067,
@@ -244,7 +262,8 @@
     "marketValueEur": 4500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/869067-1764067891.png?lm=1",
     "internationalCaps": 10,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 502558,
@@ -257,7 +276,8 @@
     "marketValueEur": 4500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/502558-1698354398.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 370683,
@@ -270,7 +290,8 @@
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/370683-1692000124.jpg?lm=1",
     "internationalCaps": 22,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 661212,
@@ -283,7 +304,8 @@
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661212-1769002109.png?lm=1",
     "internationalCaps": 7,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 743088,
@@ -296,7 +318,22 @@
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/743088-1760563569.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
+  },
+  {
+    "transfermarktId": 737837,
+    "fullName": "Sondre Langås",
+    "position": "DEF",
+    "detailedPosition": "CB",
+    "jerseyNumber": null,
+    "club": "Derby County FC",
+    "age": 25,
+    "marketValueEur": 4000000,
+    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/737837-1711131237.jpg?lm=1",
+    "internationalCaps": 2,
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 583404,
@@ -309,7 +346,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/583404-1660759624.jpg?lm=1",
     "internationalCaps": 30,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 364938,
@@ -322,7 +360,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/364938-1771971421.jpg?lm=1",
     "internationalCaps": 17,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 890617,
@@ -335,7 +374,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/890617-1712614734.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 185636,
@@ -348,7 +388,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/185636-1771691267.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 418553,
@@ -361,7 +402,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418553-1760020547.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 588649,
@@ -374,7 +416,8 @@
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/588649-1763565272.jpg?lm=1",
     "internationalCaps": 13,
-    "internationalGoals": 2
+    "internationalGoals": 2,
+    "selectable": false
   },
   {
     "transfermarktId": 814992,
@@ -387,7 +430,8 @@
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814992-1711151509.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 405375,
@@ -400,7 +444,8 @@
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/405375-1743175233.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 230140,
@@ -413,7 +458,8 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/230140-1771527464.jpg?lm=1",
     "internationalCaps": 11,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 342129,
@@ -426,7 +472,8 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/342129-1771971495.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 282250,
@@ -439,7 +486,8 @@
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/282250-1695237819.jpg?lm=1",
     "internationalCaps": 39,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 331575,
@@ -452,7 +500,8 @@
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/331575-1740921297.jpg?lm=1",
     "internationalCaps": 23,
-    "internationalGoals": 7
+    "internationalGoals": 7,
+    "selectable": false
   },
   {
     "transfermarktId": 790245,
@@ -465,7 +514,8 @@
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/790245-1678885603.jpg?lm=1",
     "internationalCaps": 18,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 894050,
@@ -478,7 +528,8 @@
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/894050-1764067740.png?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 507310,
@@ -491,7 +542,8 @@
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/507310-1613847004.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 794758,
@@ -504,7 +556,8 @@
     "marketValueEur": 1500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/794758-1671210731.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 442470,
@@ -517,7 +570,8 @@
     "marketValueEur": 1200000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/442470-1771788400.jpg?lm=1",
     "internationalCaps": 3,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 316264,
@@ -530,7 +584,8 @@
     "marketValueEur": 65000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/316264-1678877651.jpg?lm=1",
     "internationalCaps": 67,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": true
   },
   {
     "transfermarktId": 333014,
@@ -543,7 +598,8 @@
     "marketValueEur": 25000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/333014-1679676693.jpg?lm=1",
     "internationalCaps": 62,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 223367,
@@ -556,7 +612,8 @@
     "marketValueEur": 17000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/223367-1737497700.jpg?lm=1",
     "internationalCaps": 20,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 911736,
@@ -569,7 +626,8 @@
     "marketValueEur": 15000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/911736-1743175613.jpg?lm=1",
     "internationalCaps": 10,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": false
   },
   {
     "transfermarktId": 564785,
@@ -582,7 +640,8 @@
     "marketValueEur": 10000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/564785-1692883043.jpg?lm=1",
     "internationalCaps": 33,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": true
   },
   {
     "transfermarktId": 308439,
@@ -595,7 +654,8 @@
     "marketValueEur": 8000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/308439-1712614235.jpg?lm=1",
     "internationalCaps": 39,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 923535,
@@ -608,7 +668,8 @@
     "marketValueEur": 7000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/923535-1711151620.jpg?lm=1",
     "internationalCaps": 6,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 476836,
@@ -621,7 +682,8 @@
     "marketValueEur": 5000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/476836-1678012976.jpg?lm=1",
     "internationalCaps": 17,
-    "internationalGoals": 2
+    "internationalGoals": 2,
+    "selectable": false
   },
   {
     "transfermarktId": 394688,
@@ -634,7 +696,8 @@
     "marketValueEur": 5000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/394688-1743175971.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 663424,
@@ -647,7 +710,8 @@
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/663424-1689319708.jpg?lm=1",
     "internationalCaps": 3,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 367274,
@@ -660,7 +724,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/367274-1743175866.jpg?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 2
+    "internationalGoals": 2,
+    "selectable": false
   },
   {
     "transfermarktId": 510310,
@@ -673,7 +738,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/510310-1668692766.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 226524,
@@ -686,7 +752,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/226524-1725529624.jpg?lm=1",
     "internationalCaps": 29,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 257805,
@@ -699,7 +766,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/257805-1762264592.jpg?lm=1",
     "internationalCaps": 12,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": false
   },
   {
     "transfermarktId": 619657,
@@ -712,7 +780,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/619657-1699864964.jpg?lm=1",
     "internationalCaps": 11,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": false
   },
   {
     "transfermarktId": 499758,
@@ -725,7 +794,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/499758-1754511519.jpg?lm=1",
     "internationalCaps": 6,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": false
   },
   {
     "transfermarktId": 432700,
@@ -738,7 +808,8 @@
     "marketValueEur": 3000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/432700-1771709675.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 647384,
@@ -751,7 +822,8 @@
     "marketValueEur": 2800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/647384-1645614893.png?lm=1",
     "internationalCaps": 6,
-    "internationalGoals": 5
+    "internationalGoals": 5,
+    "selectable": true
   },
   {
     "transfermarktId": 538670,
@@ -764,7 +836,8 @@
     "marketValueEur": 2800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/538670-1738749736.jpg?lm=1",
     "internationalCaps": 0,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 581112,
@@ -777,7 +850,8 @@
     "marketValueEur": 2700000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/581112-1711127023.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 370894,
@@ -790,7 +864,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/370894-1753430008.png?lm=1",
     "internationalCaps": 19,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": false
   },
   {
     "transfermarktId": 432694,
@@ -803,7 +878,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/432694-1755698220.jpg?lm=1",
     "internationalCaps": 9,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 715508,
@@ -816,7 +892,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/715508-1702732432.jpg?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 651735,
@@ -829,7 +906,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/651735-1721850811.jpg?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 268327,
@@ -842,7 +920,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/268327-1714468559.png?lm=1",
     "internationalCaps": 3,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 418567,
@@ -855,7 +934,8 @@
     "marketValueEur": 2200000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418567-1687764418.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 418557,
@@ -868,7 +948,8 @@
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418557-1723456286.jpg?lm=1",
     "internationalCaps": 24,
-    "internationalGoals": 3
+    "internationalGoals": 3,
+    "selectable": false
   },
   {
     "transfermarktId": 700078,
@@ -881,7 +962,8 @@
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/700078-1709544633.jpg?lm=1",
     "internationalCaps": 16,
-    "internationalGoals": 3
+    "internationalGoals": 3,
+    "selectable": false
   },
   {
     "transfermarktId": 504189,
@@ -894,7 +976,8 @@
     "marketValueEur": 2000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/504189-1771788438.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 804936,
@@ -907,7 +990,8 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/804936-1718958144.jpg?lm=1",
     "internationalCaps": 8,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": false
   },
   {
     "transfermarktId": 335298,
@@ -920,7 +1004,8 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/335298-1698354551.jpg?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 1027708,
@@ -933,7 +1018,8 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1027708-1760563673.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 574495,
@@ -946,7 +1032,8 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/574495-1630591341.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 418560,
@@ -959,7 +1046,8 @@
     "marketValueEur": 200000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418560-1709108116.png?lm=1",
     "internationalCaps": 48,
-    "internationalGoals": 55
+    "internationalGoals": 55,
+    "selectable": true
   },
   {
     "transfermarktId": 429983,
@@ -972,7 +1060,8 @@
     "marketValueEur": 45000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429983-1743541067.jpg?lm=1",
     "internationalCaps": 24,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": true
   },
   {
     "transfermarktId": 894914,
@@ -985,7 +1074,8 @@
     "marketValueEur": 32000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/894914-1724337096.jpg?lm=1",
     "internationalCaps": 20,
-    "internationalGoals": 7
+    "internationalGoals": 7,
+    "selectable": true
   },
   {
     "transfermarktId": 661207,
@@ -998,7 +1088,8 @@
     "marketValueEur": 30000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661207-1770716679.png?lm=1",
     "internationalCaps": 16,
-    "internationalGoals": 2
+    "internationalGoals": 2,
+    "selectable": true
   },
   {
     "transfermarktId": 238407,
@@ -1011,7 +1102,8 @@
     "marketValueEur": 20000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/238407-1716403969.jpg?lm=1",
     "internationalCaps": 68,
-    "internationalGoals": 26
+    "internationalGoals": 26,
+    "selectable": true
   },
   {
     "transfermarktId": 670103,
@@ -1024,7 +1116,8 @@
     "marketValueEur": 20000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670103-1697191976.jpg?lm=1",
     "internationalCaps": 8,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": true
   },
   {
     "transfermarktId": 422355,
@@ -1037,7 +1130,8 @@
     "marketValueEur": 12000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/422355-1662411697.jpg?lm=1",
     "internationalCaps": 13,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": true
   },
   {
     "transfermarktId": 980787,
@@ -1050,7 +1144,8 @@
     "marketValueEur": 7000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/980787-1711131015.jpg?lm=1",
     "internationalCaps": 5,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 903359,
@@ -1063,7 +1158,8 @@
     "marketValueEur": 6000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/903359-1711132318.jpg?lm=1",
     "internationalCaps": 9,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": false
   },
   {
     "transfermarktId": 1002305,
@@ -1076,7 +1172,8 @@
     "marketValueEur": 6000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1002305-1764689287.png?lm=1",
     "internationalCaps": 7,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 435587,
@@ -1089,7 +1186,8 @@
     "marketValueEur": 6000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/435587-1737298549.jpg?lm=1",
     "internationalCaps": null,
-    "internationalGoals": null
+    "internationalGoals": null,
+    "selectable": false
   },
   {
     "transfermarktId": 1213681,
@@ -1102,7 +1200,8 @@
     "marketValueEur": 5000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1213681-1758188019.jpg?lm=1",
     "internationalCaps": 12,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": false
   },
   {
     "transfermarktId": 661205,
@@ -1115,7 +1214,8 @@
     "marketValueEur": 5000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/661205-1723714552.jpg?lm=1",
     "internationalCaps": 10,
-    "internationalGoals": 1
+    "internationalGoals": 1,
+    "selectable": false
   },
   {
     "transfermarktId": 581106,
@@ -1128,7 +1228,8 @@
     "marketValueEur": 5000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/581106-1704873743.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 186644,
@@ -1141,7 +1242,8 @@
     "marketValueEur": 4500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/186644-1695238306.jpg?lm=1",
     "internationalCaps": 55,
-    "internationalGoals": 10
+    "internationalGoals": 10,
+    "selectable": false
   },
   {
     "transfermarktId": 1007817,
@@ -1154,7 +1256,8 @@
     "marketValueEur": 4500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1007817-1684347740.jpg?lm=1",
     "internationalCaps": 8,
-    "internationalGoals": 4
+    "internationalGoals": 4,
+    "selectable": false
   },
   {
     "transfermarktId": 499859,
@@ -1167,7 +1270,8 @@
     "marketValueEur": 4500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/499859-1771715496.jpg?lm=1",
     "internationalCaps": 1,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 374326,
@@ -1180,7 +1284,8 @@
     "marketValueEur": 4000000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/374326-1723035430.jpg?lm=1",
     "internationalCaps": 3,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 418559,
@@ -1193,7 +1298,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418559-1743174977.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 272206,
@@ -1206,7 +1312,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/272206-1723809264.jpg?lm=1",
     "internationalCaps": null,
-    "internationalGoals": null
+    "internationalGoals": null,
+    "selectable": false
   },
   {
     "transfermarktId": 644607,
@@ -1219,7 +1326,8 @@
     "marketValueEur": 3500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/644607-1691575814.jpg?lm=1",
     "internationalCaps": null,
-    "internationalGoals": null
+    "internationalGoals": null,
+    "selectable": false
   },
   {
     "transfermarktId": 418751,
@@ -1232,7 +1340,8 @@
     "marketValueEur": 2800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/418751-1735076835.png?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 781270,
@@ -1245,7 +1354,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/781270-1707922041.jpg?lm=1",
     "internationalCaps": 12,
-    "internationalGoals": 3
+    "internationalGoals": 3,
+    "selectable": false
   },
   {
     "transfermarktId": 499759,
@@ -1258,7 +1368,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/499759-1740819080.jpg?lm=1",
     "internationalCaps": 4,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 912078,
@@ -1271,7 +1382,8 @@
     "marketValueEur": 2500000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/912078-1711137015.jpg?lm=1",
     "internationalCaps": 2,
-    "internationalGoals": 0
+    "internationalGoals": 0,
+    "selectable": false
   },
   {
     "transfermarktId": 329714,
@@ -1284,7 +1396,8 @@
     "marketValueEur": 2200000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/329714-1691069272.png?lm=1",
     "internationalCaps": 9,
-    "internationalGoals": 2
+    "internationalGoals": 2,
+    "selectable": false
   },
   {
     "transfermarktId": 508371,
@@ -1297,6 +1410,7 @@
     "marketValueEur": 1800000,
     "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/508371-1663594454.jpg?lm=1",
     "internationalCaps": 14,
-    "internationalGoals": 5
+    "internationalGoals": 5,
+    "selectable": false
   }
 ]
