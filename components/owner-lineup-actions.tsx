@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ShareActions } from "@/components/share/share-actions";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/track";
 import type { BadgeKind } from "@/components/community/recent-submission-tags";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
@@ -39,6 +40,7 @@ export function OwnerLineupActions({
 
   async function handleShare() {
     if (typeof window === "undefined") return;
+    trackEvent("share_squad");
     try {
       const shareUrl = `${window.location.origin}/lineup/${slug}`;
       await navigator.clipboard.writeText(shareUrl);

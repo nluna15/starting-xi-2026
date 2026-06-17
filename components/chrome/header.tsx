@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/track";
 import { HamburgerMenu } from "@/components/chrome/hamburger-menu";
 
 /* -----------------------------------------------------------------------------
@@ -19,6 +20,7 @@ type NavLink = {
   href: string;
   label: React.ReactNode;
   matchPrefix?: string;
+  event?: Parameters<typeof trackEvent>[0];
 };
 
 const NAV: NavLink[] = [
@@ -26,6 +28,7 @@ const NAV: NavLink[] = [
     href: "/community",
     label: <>Lineup Data</>,
     matchPrefix: "/community",
+    event: "lineup_data",
   },
 ];
 
@@ -91,6 +94,7 @@ export function Header() {
             <li>
               <Link
                 href="/countries"
+                onClick={() => trackEvent("build_lineup")}
                 className={cn(
                   "inline-flex items-center rounded-sm text-accent-ink",
                   "font-condensed font-bold uppercase tracking-[0.1em]",
@@ -109,6 +113,7 @@ export function Header() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    onClick={link.event ? () => trackEvent(link.event!) : undefined}
                     aria-current={active ? "page" : undefined}
                     className={cn(
                       "relative inline-flex items-center font-condensed font-bold uppercase tracking-[0.1em]",

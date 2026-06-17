@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 import type { BadgeKind } from "@/components/community/recent-submission-tags";
+import { trackEvent } from "@/lib/track";
 import { shareImageFilename, useShareImage } from "./use-share-image";
 
 type Props = {
@@ -23,6 +24,7 @@ export function ShareActions({ team, formation, starters, bench, category }: Pro
 
   const handleSave = React.useCallback(async () => {
     if (busy) return;
+    trackEvent("download_squad");
     setBusy(true);
     try {
       const blob = await ensureBlob();

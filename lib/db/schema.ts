@@ -85,8 +85,27 @@ export const submissions = pgTable(
   }),
 );
 
+export const events = pgTable(
+  "events",
+  {
+    id: serial("id").primaryKey(),
+    name: text("name").notNull(),
+    fingerprint: text("fingerprint"),
+    path: text("path"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .default(sql`now()`),
+  },
+  (t) => ({
+    nameCreatedIdx: index("events_name_created_idx").on(t.name, t.createdAt),
+    fingerprintIdx: index("events_fingerprint_idx").on(t.fingerprint),
+  }),
+);
+
 export type Team = typeof teams.$inferSelect;
 export type Player = typeof players.$inferSelect;
 export type Formation = typeof formations.$inferSelect;
 export type Submission = typeof submissions.$inferSelect;
 export type NewSubmission = typeof submissions.$inferInsert;
+export type Event = typeof events.$inferSelect;
+export type NewEvent = typeof events.$inferInsert;

@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackEvent, type TrackEventName } from "@/lib/track";
 import { HowItWorksModal } from "@/components/chrome/how-it-works-modal";
 
 type Props = {
@@ -12,7 +13,7 @@ type Props = {
 };
 
 type MenuItem =
-  | { kind: "link"; label: string; href: string; small?: boolean; external?: boolean }
+  | { kind: "link"; label: string; href: string; small?: boolean; external?: boolean; event?: TrackEventName }
   | { kind: "action"; label: string; onSelect: () => void; small?: boolean };
 
 export function HamburgerMenu({ scrolled, transition }: Props) {
@@ -38,12 +39,13 @@ export function HamburgerMenu({ scrolled, transition }: Props) {
   }, [open]);
 
   const items: MenuItem[] = [
-    { kind: "link", label: "My Lineups", href: "/my-lineups" },
+    { kind: "link", label: "My Lineups", href: "/my-lineups", event: "my_lineups" },
     { kind: "link", label: "About", href: "/about" },
     {
       kind: "action",
       label: "How it Works",
       onSelect: () => {
+        trackEvent("how_it_works");
         setOpen(false);
         setHowItWorksOpen(true);
       },
@@ -128,7 +130,10 @@ export function HamburgerMenu({ scrolled, transition }: Props) {
                         <Link
                           role="menuitem"
                           href={item.href}
-                          onClick={() => setOpen(false)}
+                          onClick={() => {
+                            if (item.event) trackEvent(item.event);
+                            setOpen(false);
+                          }}
                           className={itemClass}
                         >
                           {item.label}
