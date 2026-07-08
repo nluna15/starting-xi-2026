@@ -1,7 +1,6 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
+import { PickCountryCta } from "@/components/community/pick-country-cta";
 import { CommunityPitch } from "@/components/community-pitch";
 import { InsightStatCard } from "@/components/community/insight-stat-card";
 import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
@@ -72,9 +71,7 @@ export default async function CommunityPage() {
         <p className="max-w-md text-[14px] text-ink-3">
           Be the first to submit a lineup and the community page will start to fill in.
         </p>
-        <Link href="/countries">
-          <Button>Pick a country</Button>
-        </Link>
+        <PickCountryCta />
       </div>
     );
   }
@@ -117,9 +114,7 @@ export default async function CommunityPage() {
               All Fan's Popular 11
             </h1>
           </div>
-          <Link href="/countries" className="sm:shrink-0">
-            <Button size="lg">Pick a country</Button>
-          </Link>
+          <PickCountryCta size="lg" className="sm:shrink-0" />
         </header>
       </div>
 

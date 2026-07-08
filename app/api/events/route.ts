@@ -10,6 +10,11 @@ const EVENTS = new Set([
   "share_squad",
   "how_it_works",
   "my_lineups",
+  "community_country",
+  "community_recent_card",
+  "community_insight_expand",
+  "community_pick_cta",
+  "page_view",
 ]);
 
 export async function POST(request: NextRequest) {

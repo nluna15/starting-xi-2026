@@ -4,6 +4,7 @@ import * as React from "react";
 import { Card } from "@/components/ui/card";
 import { Modal } from "@/components/ui/modal";
 import { HorizontalBarChart, type BarRow } from "@/components/horizontal-bar-chart";
+import { trackEvent } from "@/lib/track";
 import { InsightDistributionChart } from "./insight-distribution-chart";
 
 type ValueFormat = "decimal" | "eurCompact";
@@ -52,7 +53,10 @@ export function InsightStatCard({
           <h2 className="cond text-[13px] text-ink">{title}</h2>
           <button
             type="button"
-            onClick={() => setOpen(true)}
+            onClick={() => {
+              trackEvent("community_insight_expand", `/community#${title.toLowerCase()}`);
+              setOpen(true);
+            }}
             aria-label={`View all ${title.toLowerCase()} rankings`}
             className="mono -my-1 -mr-1 rounded-pill px-2 py-1 text-[11px] font-medium tracking-[0.16em] text-ink-faint transition-colors hover:bg-surface-2 hover:text-ink focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft focus-visible:text-ink"
           >

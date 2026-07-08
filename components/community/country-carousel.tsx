@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { cn, normalize } from "@/lib/utils";
+import { trackEvent } from "@/lib/track";
 import type { WcSlot } from "@/lib/wc-2026-teams";
 
 type LinkMode = "build" | "community";
@@ -116,6 +117,7 @@ export function CommunityCountryCarousel({
           <Link
             href={href}
             aria-label={ariaLabel}
+            onClick={() => trackEvent("community_country", href)}
             className="block rounded-md text-ink no-underline focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft"
           >
             {tile}
@@ -215,13 +217,25 @@ function AllNationsTile({
   );
   if (href) {
     return (
-      <Link href={href} className={cls}>
+      <Link
+        href={href}
+        onClick={() => trackEvent("community_country", href)}
+        className={cls}
+      >
         {inner}
       </Link>
     );
   }
   return (
-    <button type="button" onClick={onClick} aria-pressed={active} className={cls}>
+    <button
+      type="button"
+      onClick={() => {
+        trackEvent("community_country", "/community");
+        onClick();
+      }}
+      aria-pressed={active}
+      className={cls}
+    >
       {inner}
     </button>
   );

@@ -3,6 +3,7 @@ import { Bebas_Neue, Barlow_Condensed, Barlow, JetBrains_Mono } from "next/font/
 import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "@/components/chrome/footer";
 import { Header } from "@/components/chrome/header";
+import { PageViewTracker } from "@/components/analytics/page-view-tracker";
 import "./globals.css";
 
 // Display — single weight (Bebas Neue ships only 400).
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-4 py-6 max-[410px]:pb-2">{children}</main>
         <Footer />
         <Analytics />
+        <PageViewTracker />
       </body>
     </html>
   );

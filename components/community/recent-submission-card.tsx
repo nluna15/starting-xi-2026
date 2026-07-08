@@ -16,6 +16,7 @@ import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
 import type { Player } from "@/lib/db/schema";
 import type { RecentSubmission } from "@/lib/db/queries";
 import { formatTimeAgo, lastName, useMediaQuery } from "@/lib/utils";
+import { trackEvent } from "@/lib/track";
 
 const TEAM_NAME_ABBREVIATIONS: Record<string, string> = {
   "United States": "USA",
@@ -64,7 +65,6 @@ export function RecentSubmissionCard({ submission }: Props) {
             formation={submission.formation}
             starters={starters}
             showPhotos
-            lastNameOnly
           />
         </div>
       )}
@@ -89,6 +89,7 @@ export function RecentSubmissionCard({ submission }: Props) {
       <div className="mt-auto flex justify-end">
         <Link
           href={`/lineup/${submission.slug}`}
+          onClick={() => trackEvent("community_recent_card", `/lineup/${submission.slug}`)}
           className="cond text-[12px] tracking-[0.14em] text-ink-3 transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none"
         >
           See details →

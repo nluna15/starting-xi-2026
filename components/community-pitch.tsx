@@ -5,7 +5,7 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { FormationDef } from "@/lib/formations";
 import { hoverCardClampCSS } from "@/lib/pitch-hover-clamp";
-import { formatEur, lastName, useMediaQuery } from "@/lib/utils";
+import { formatEur, initialPlusLastName, useMediaQuery } from "@/lib/utils";
 
 export type CommunityStarter = {
   id: number;
@@ -27,13 +27,11 @@ type Props = {
   starters: (CommunityStarter | null)[];
   bench?: (CommunityStarter | null)[];
   showPhotos?: boolean;
-  lastNameOnly?: boolean;
 };
 
 function toPkgPlayer(
   p: CommunityStarter | null,
   showPhotos: boolean,
-  shortenName: boolean,
   showPickRateInExtras: boolean,
 ): PkgPlayer | null {
   if (!p) return null;
@@ -46,7 +44,9 @@ function toPkgPlayer(
   }
   return {
     id: String(p.id),
-    name: shortenName ? lastName(p.fullName) : p.fullName,
+    // Community pitches always show "first-initial + last name" (e.g. "L. Messi").
+    // Single-name players like Neymar pass through unchanged.
+    name: initialPlusLastName(p.fullName),
     photoUrl: showPhotos ? p.photoUrl ?? undefined : undefined,
     countryCode: p.countryCode ?? undefined,
     extras: Object.keys(extras).length > 0 ? extras : undefined,
@@ -143,7 +143,6 @@ export function CommunityPitch({
   starters,
   bench,
   showPhotos = true,
-  lastNameOnly = false,
 }: Props) {
   const isNarrow = useMediaQuery("(max-width: 410px)");
   const rawId = React.useId();
@@ -157,12 +156,11 @@ export function CommunityPitch({
       role: s.slot,
     })),
   };
-  const shortenName = lastNameOnly || isNarrow;
   const pkgPlayers = starters.map((p) =>
-    toPkgPlayer(p, showPhotos, shortenName, isNarrow),
+    toPkgPlayer(p, showPhotos, isNarrow),
   );
   const pkgBench = bench?.map((p) =>
-    toPkgPlayer(p, showPhotos, shortenName, isNarrow),
+    toPkgPlayer(p, showPhotos, isNarrow),
   );
 
   const overrideCSS = flagOverrideCSS(scopeClass, starters, bench);
