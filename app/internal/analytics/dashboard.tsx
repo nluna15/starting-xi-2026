@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import type { AnalyticsData } from "@/lib/db/analytics";
+import { ConversionChart } from "./conversion-chart";
+import { LineupsHistoryChart } from "./lineups-history-chart";
 import { DateRangePicker } from "./date-range-picker";
 
 /* Presentational dashboard for /internal/analytics. All figures are
@@ -109,9 +111,33 @@ export function AnalyticsDashboard({
         </div>
       </Section>
 
+      {/* Conversion over time */}
+      <Section
+        title="Conversion over time"
+        hint="3-day buckets · converters ÷ builders within each bucket"
+      >
+        <Card padding="compact">
+          <ConversionChart buckets={data.conversionSeries} />
+        </Card>
+      </Section>
+
+      {/* Lineups over time */}
+      <Section title="Lineups over time" hint="Submissions by UTC day within the selected window">
+        <div className="grid gap-3 sm:grid-cols-3">
+          <StatTile
+            label="Total to date"
+            value={num(data.totalLineupsToDate)}
+            sub="all-time, all countries"
+          />
+        </div>
+        <Card padding="compact">
+          <LineupsHistoryChart points={data.lineupsHistory} />
+        </Card>
+      </Section>
+
       {/* Lineups per user */}
       <Section title="Lineups per user">
-        <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
           <StatTile label="Users" value={num(data.lineupsPerUser.users)} sub="submitted ≥ 1" />
           <StatTile label="Mean" value={dec(data.lineupsPerUser.mean)} sub="lineups / user" />
           <StatTile label="Median" value={dec(data.lineupsPerUser.median)} sub="lineups / user" />
@@ -120,6 +146,11 @@ export function AnalyticsDashboard({
             label="1 vs 2+"
             value={`${data.lineupsPerUser.exactlyOne} / ${data.lineupsPerUser.twoPlus}`}
             sub="one-time / repeat"
+          />
+          <StatTile
+            label="Repeat cadence"
+            value={`${data.lineupsPerUser.twoPlusSameDay} / ${data.lineupsPerUser.twoPlusMultiDay}`}
+            sub="same-day / multi-day repeats"
           />
         </div>
       </Section>

@@ -13,20 +13,16 @@ import { Button } from "@/components/ui/button";
    ----------------------------------------------------------------------------- */
 
 type Props = {
-  totalSubmissions: number;
+  latestLineup: { name: string; flagEmoji: string } | null;
   daysUntilKickoff: number;
 };
 
-export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
-  const submissionsLine =
-    totalSubmissions === 0
-      ? "Be the first to submit a lineup"
-      : `${totalSubmissions.toLocaleString()} Lineup${totalSubmissions === 1 ? "" : "s"} Submitted`;
+export function HeroCard({ latestLineup, daysUntilKickoff }: Props) {
+  const submissionsLine = latestLineup
+    ? `Latest submitted lineup: ${latestLineup.name} ${latestLineup.flagEmoji}`
+    : "Be the first to submit a lineup";
 
-  const countdownLine =
-    daysUntilKickoff <= 0
-      ? "Tournament underway"
-      : `${daysUntilKickoff} day${daysUntilKickoff === 1 ? "" : "s"} until kickoff`;
+  const countdownLine = daysUntilKickoff > 0 ? `${daysUntilKickoff} day${daysUntilKickoff === 1 ? "" : "s"} until kickoff` : null;
 
   return (
     <div className="px-4 pb-4 sm:px-6 sm:pb-6">
@@ -43,15 +39,15 @@ export function HeroCard({ totalSubmissions, daysUntilKickoff }: Props) {
               letterSpacing: "-0.01em",
             }}
           >
-            <span className="text-black">Be the Coach</span>
+            <span className="text-black">Shape the tactics</span>
             <br />
-            Select Your Best
+            Win the cup
           </h1>
           <div className="flex flex-col gap-1">
             <p className="cond text-[15px] font-bold text-ink">{submissionsLine}</p>
-            <p className="font-sans text-[13px] text-ink-3">{countdownLine}</p>
+            {countdownLine && <p className="font-sans text-[13px] text-ink-3">{countdownLine}</p>}
           </div>
-          <Link href="/countries" className="mt-1 inline-flex">
+          <Link href="/countries" className="mt-4 inline-flex">
             <Button variant="primary" size="lg" className="rounded-sm">
               Build Your Squad
             </Button>

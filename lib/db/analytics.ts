@@ -48,6 +48,28 @@ export type LineupsPerUser = {
   max: number | null;
   exactlyOne: number;
   twoPlus: number;
+  /** Repeat (2+) users whose submissions all fall on one UTC calendar day. */
+  twoPlusSameDay: number;
+  /** Repeat (2+) users who submitted across 2+ distinct UTC calendar days. */
+  twoPlusMultiDay: number;
+};
+
+export type ConversionBucket = {
+  /** Inclusive bucket start, UTC YYYY-MM-DD. */
+  start: string;
+  /** Exclusive bucket end, UTC YYYY-MM-DD. The last bucket is truncated to the
+   *  window's `to`, so it may span fewer than 3 days. */
+  end: string;
+  builders: number;
+  converters: number;
+  /** converters / builders, or null when the bucket has no builders. */
+  rate: number | null;
+};
+
+export type LineupsHistoryPoint = {
+  /** UTC YYYY-MM-DD calendar day. */
+  date: string;
+  count: number;
 };
 
 export type ClickBreakdown = {
@@ -76,6 +98,9 @@ export type AnalyticsData = {
   completionTime: CompletionTime;
   lineupsPerUser: LineupsPerUser;
   clicks: ClickBreakdown[];
+  conversionSeries: ConversionBucket[];
+  lineupsHistory: LineupsHistoryPoint[];
+  totalLineupsToDate: number;
   shareConversion: ShareConversion;
   topPages: TopPage[];
 };
@@ -176,6 +201,119 @@ export async function getFunnel({ from, to }: Window): Promise<Funnel> {
   };
 }
 
+/** The funnel conversion rate over time, in 3-day buckets anchored at the
+ *  window's `from`. A bucket's converters are builders who also submitted
+ *  within the same bucket, so a user who builds in one bucket and submits in
+ *  the next counts as a converter in neither — buckets won't reconcile exactly
+ *  with the window-wide funnel. Empty buckets are zero-filled; the last bucket
+ *  is truncated to `to`. */
+export async function getConversionSeries({ from, to }: Window): Promise<ConversionBucket[]> {
+  const BUCKET_SECS = 3 * 86400;
+  const nBuckets = Math.max(
+    1,
+    Math.ceil((to.getTime() - from.getTime()) / (BUCKET_SECS * 1000)),
+  );
+
+  const res = await db.execute(sql`
+    with buckets as (
+      select i as idx,
+             ${from.toISOString()}::timestamptz + (i * interval '3 days') as bucket_start,
+             least(
+               ${from.toISOString()}::timestamptz + ((i + 1) * interval '3 days'),
+               ${to.toISOString()}::timestamptz
+             ) as bucket_end
+      from generate_series(0, ${nBuckets - 1}) as g(i)
+    ),
+    builders as (
+      select distinct
+             floor(extract(epoch from (created_at - ${from.toISOString()}::timestamptz)) / ${BUCKET_SECS})::int as idx,
+             fingerprint
+      from events
+      where name = 'page_view'
+        and path ~ '^/[^/]+/build/?$'
+        and created_at >= ${from.toISOString()} and created_at < ${to.toISOString()}
+        and fingerprint is not null
+    ),
+    subs as (
+      select distinct
+             floor(extract(epoch from (created_at - ${from.toISOString()}::timestamptz)) / ${BUCKET_SECS})::int as idx,
+             fingerprint
+      from submissions
+      where created_at >= ${from.toISOString()} and created_at < ${to.toISOString()}
+        and fingerprint is not null
+    ),
+    agg as (
+      select b.idx,
+             count(distinct b.fingerprint)::int as builders,
+             count(distinct b.fingerprint) filter (where s.fingerprint is not null)::int as converters
+      from builders b
+      left join subs s on s.idx = b.idx and s.fingerprint = b.fingerprint
+      group by b.idx
+    )
+    select
+      to_char(bk.bucket_start at time zone 'UTC', 'YYYY-MM-DD') as bucket_start,
+      to_char(bk.bucket_end at time zone 'UTC', 'YYYY-MM-DD') as bucket_end,
+      coalesce(a.builders, 0)::int as builders,
+      coalesce(a.converters, 0)::int as converters
+    from buckets bk
+    left join agg a on a.idx = bk.idx
+    order by bk.idx
+  `);
+
+  return (
+    res.rows as {
+      bucket_start: string;
+      bucket_end: string;
+      builders: number;
+      converters: number;
+    }[]
+  ).map((row) => ({
+    start: row.bucket_start,
+    end: row.bucket_end,
+    builders: row.builders,
+    converters: row.converters,
+    rate: row.builders > 0 ? row.converters / row.builders : null,
+  }));
+}
+
+/** Lineups submitted per UTC calendar day within the window, zero-filled for
+ *  days with no submissions. */
+export async function getLineupsHistory({ from, to }: Window): Promise<LineupsHistoryPoint[]> {
+  const res = await db.execute(sql`
+    with days as (
+      select generate_series(
+        ${from.toISOString()}::timestamptz,
+        ${to.toISOString()}::timestamptz - interval '1 day',
+        interval '1 day'
+      ) as day
+    ),
+    counts as (
+      select (created_at at time zone 'UTC')::date as day, count(*)::int as n
+      from submissions
+      where created_at >= ${from.toISOString()} and created_at < ${to.toISOString()}
+      group by 1
+    )
+    select
+      to_char(d.day at time zone 'UTC', 'YYYY-MM-DD') as date,
+      coalesce(c.n, 0)::int as count
+    from days d
+    left join counts c on c.day = (d.day at time zone 'UTC')::date
+    order by d.day
+  `);
+
+  return (res.rows as { date: string; count: number }[]).map((row) => ({
+    date: row.date,
+    count: row.count,
+  }));
+}
+
+/** Total lineups submitted across all time, independent of the selected
+ *  window — the "to date" figure. */
+export async function getTotalLineupsToDate(): Promise<number> {
+  const res = await db.execute(sql`select count(*)::int as count from submissions`);
+  return (res.rows[0] as { count: number } | undefined)?.count ?? 0;
+}
+
 /** Median/mean seconds from first `/:teamCode/build` view to the matching
  *  submission (same fingerprint + team), excluding pairs longer than 10
  *  minutes (treated as abandoned attempts). */
@@ -227,11 +365,14 @@ export async function getCompletionTime({ from, to }: Window): Promise<Completio
 }
 
 /** Lineups submitted per fingerprint in the window: mean/median/max plus the
- *  1-vs-2+ split. */
+ *  1-vs-2+ split, with repeat (2+) users further split by whether all their
+ *  submissions landed on the same UTC calendar day. */
 export async function getLineupsPerUser({ from, to }: Window): Promise<LineupsPerUser> {
   const res = await db.execute(sql`
     with per_user as (
-      select fingerprint, count(*)::int as n
+      select fingerprint,
+             count(*)::int as n,
+             count(distinct (created_at at time zone 'UTC')::date)::int as days
       from submissions
       where created_at >= ${from.toISOString()} and created_at < ${to.toISOString()}
       group by fingerprint
@@ -242,7 +383,9 @@ export async function getLineupsPerUser({ from, to }: Window): Promise<LineupsPe
       percentile_cont(0.5) within group (order by n)::float as median,
       max(n)::int as max,
       count(*) filter (where n = 1)::int as exactly_one,
-      count(*) filter (where n >= 2)::int as two_plus
+      count(*) filter (where n >= 2)::int as two_plus,
+      count(*) filter (where n >= 2 and days = 1)::int as two_plus_same_day,
+      count(*) filter (where n >= 2 and days > 1)::int as two_plus_multi_day
     from per_user
   `);
   const row = (res.rows[0] as {
@@ -252,7 +395,18 @@ export async function getLineupsPerUser({ from, to }: Window): Promise<LineupsPe
     max: number | null;
     exactly_one: number;
     two_plus: number;
-  }) ?? { users: 0, mean: null, median: null, max: null, exactly_one: 0, two_plus: 0 };
+    two_plus_same_day: number;
+    two_plus_multi_day: number;
+  }) ?? {
+    users: 0,
+    mean: null,
+    median: null,
+    max: null,
+    exactly_one: 0,
+    two_plus: 0,
+    two_plus_same_day: 0,
+    two_plus_multi_day: 0,
+  };
   return {
     users: row.users,
     mean: row.mean,
@@ -260,6 +414,8 @@ export async function getLineupsPerUser({ from, to }: Window): Promise<LineupsPe
     max: row.max,
     exactlyOne: row.exactly_one,
     twoPlus: row.two_plus,
+    twoPlusSameDay: row.two_plus_same_day,
+    twoPlusMultiDay: row.two_plus_multi_day,
   };
 }
 
@@ -350,16 +506,29 @@ export async function getTopPages({ from, to }: Window): Promise<TopPage[]> {
 
 /** Runs every dashboard query for the given window in parallel. */
 export async function getAnalyticsData(window: Window): Promise<AnalyticsData> {
-  const [returnRates, funnel, completionTime, lineupsPerUser, clicks, shareConversion, topPages] =
-    await Promise.all([
-      getReturnRates(window),
-      getFunnel(window),
-      getCompletionTime(window),
-      getLineupsPerUser(window),
-      getClickBreakdown(window),
-      getShareConversion(window),
-      getTopPages(window),
-    ]);
+  const [
+    returnRates,
+    funnel,
+    completionTime,
+    lineupsPerUser,
+    clicks,
+    conversionSeries,
+    lineupsHistory,
+    totalLineupsToDate,
+    shareConversion,
+    topPages,
+  ] = await Promise.all([
+    getReturnRates(window),
+    getFunnel(window),
+    getCompletionTime(window),
+    getLineupsPerUser(window),
+    getClickBreakdown(window),
+    getConversionSeries(window),
+    getLineupsHistory(window),
+    getTotalLineupsToDate(),
+    getShareConversion(window),
+    getTopPages(window),
+  ]);
 
   return {
     window: { from: window.from.toISOString(), to: window.to.toISOString() },
@@ -368,6 +537,9 @@ export async function getAnalyticsData(window: Window): Promise<AnalyticsData> {
     completionTime,
     lineupsPerUser,
     clicks,
+    conversionSeries,
+    lineupsHistory,
+    totalLineupsToDate,
     shareConversion,
     topPages,
   };

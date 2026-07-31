@@ -15,7 +15,6 @@ import {
   getHomeLeaderboard,
   getRecentSubmissions,
   getRosterStatusByCode,
-  getTotalSubmissionCount,
   type RosterStatus,
 } from "@/lib/db/queries";
 import { daysUntilKickoff } from "@/lib/kickoff";
@@ -27,14 +26,16 @@ const NATION_CODES = ["USA", "MEX", "ARG", "FRA", "ENG", "GER", "BRA", "MAR"] as
 const HIDE_BELOW_410 = new Set(["GER", "BRA", "MAR"]);
 
 export default async function Home() {
-  const [statusByCode, totalSubmissions, leaderboard, recentSubmissions, allCountryStats] =
-    await Promise.all([
-      getRosterStatusByCode(),
-      getTotalSubmissionCount(),
-      getHomeLeaderboard(),
-      getRecentSubmissions(4),
-      getCountrySquadStats(),
-    ]);
+  const [statusByCode, leaderboard, recentSubmissions, allCountryStats] = await Promise.all([
+    getRosterStatusByCode(),
+    getHomeLeaderboard(),
+    getRecentSubmissions(4),
+    getCountrySquadStats(),
+  ]);
+
+  const latestLineup = recentSubmissions[0]
+    ? { name: recentSubmissions[0].team.name, flagEmoji: recentSubmissions[0].team.flagEmoji }
+    : null;
 
   // Randomly pick up to 4 countries that have submissions
   const shuffled = allCountryStats
@@ -66,10 +67,7 @@ export default async function Home() {
 
   return (
     <div className="space-y-8 py-2">
-      <HeroCard
-        totalSubmissions={totalSubmissions}
-        daysUntilKickoff={daysUntilKickoff()}
-      />
+      <HeroCard latestLineup={latestLineup} daysUntilKickoff={daysUntilKickoff()} />
 
       <section id="pick-your-nation" className="space-y-3">
         <SectionHeading title="Build your lineup" />
@@ -94,16 +92,16 @@ export default async function Home() {
         </ul>
       </section>
 
+      <RecentSubmissionsFeed
+        submissions={recentSubmissions}
+        title="Recently Shared Lineups"
+      />
+
       <ExploreLineupCarousel cards={exploreCards} />
 
       <HowItWorks />
 
       <Leaderboard data={leaderboard} />
-
-      <RecentSubmissionsFeed
-        submissions={recentSubmissions}
-        title="Recently Shared Lineups"
-      />
     </div>
   );
 }
