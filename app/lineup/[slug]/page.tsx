@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
@@ -17,6 +18,7 @@ import { db } from "@/lib/db/client";
 import { formations, players, submissions, teams } from "@/lib/db/schema";
 import {
   getCountrySquadStats,
+  getLineupMeta,
   getPickRatesForTeam,
   getTopFormationNameForTeam,
 } from "@/lib/db/queries";
@@ -27,6 +29,23 @@ import type { FormationDef } from "@/lib/formations";
 
 export const dynamic = "force-dynamic";
 
+type Params = { slug: string };
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { slug } = await params;
+  const meta = await getLineupMeta(slug);
+  if (!meta) return {};
+
+  const title = `${meta.teamName} ${meta.formationName} Lineup`;
+  const description = `A fan-built ${meta.teamName} starting XI in a ${meta.formationName} formation for the 2026 FIFA World Cup.`;
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+  };
+}
+
 const MIN_SUBMISSIONS_FOR_TAGS = 5;
 
 type PickCategory = "conventional" | "debated" | "bold";
@@ -36,8 +55,6 @@ function categorize(rate: number): PickCategory {
   if (rate <= 0.15) return "bold";
   return "debated";
 }
-
-type Params = { slug: string };
 
 export default async function LineupPage({ params }: { params: Promise<Params> }) {
   const { slug } = await params;

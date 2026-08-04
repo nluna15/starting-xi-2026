@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LineupBuilder } from "@/components/lineup-builder";
@@ -7,6 +8,21 @@ import { getPlayersForTeam, getTeamByCode } from "@/lib/db/queries";
 export const dynamic = "force-dynamic";
 
 type Params = { teamCode: string };
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { teamCode } = await params;
+  const team = await getTeamByCode(teamCode.toUpperCase());
+  if (!team) return {};
+
+  const title = `Build ${team.name} XI`;
+  const description = `Pick ${team.name}'s starting 11 + bench for the 2026 FIFA World Cup and compare your picks against the crowd.`;
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+  };
+}
 
 export default async function BuildPage({ params }: { params: Promise<Params> }) {
   const { teamCode } = await params;

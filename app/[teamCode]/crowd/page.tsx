@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,21 @@ export const dynamic = "force-dynamic";
 export const revalidate = 60;
 
 type Params = { teamCode: string };
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { teamCode } = await params;
+  const team = await getTeamByCode(teamCode.toUpperCase());
+  if (!team) return {};
+
+  const title = `${team.name} Crowd Stats`;
+  const description = `See how the crowd built ${team.name}'s starting XI for the 2026 FIFA World Cup — most-picked players, formations, and averages.`;
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+  };
+}
 
 export default async function CrowdPage({ params }: { params: Promise<Params> }) {
   const { teamCode } = await params;

@@ -39,7 +39,10 @@ const fontMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://startingxi2026.app"),
-  title: "Build Your XI",
+  title: {
+    default: "Build Your XI — 2026 FIFA World Cup",
+    template: "%s | Starting XI 2026",
+  },
   description:
     "Pick a country and build their starting 11 + bench for the 2026 FIFA World Cup. Compare your picks against the wisdom of the crowd.",
   openGraph: {

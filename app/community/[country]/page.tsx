@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -20,6 +21,22 @@ export const dynamic = "force-dynamic";
 export const revalidate = 60;
 
 type Params = { country: string };
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { country } = await params;
+  const code = country.toUpperCase();
+  const slot = WC_2026_SLOTS.find((s) => s.kind === "confirmed" && s.code === code);
+  if (!slot || slot.kind !== "confirmed") return {};
+
+  const title = `${slot.name} Community Picks`;
+  const description = `See the crowd's consensus starting XI for ${slot.name} at the 2026 FIFA World Cup — most-picked players, popular formations, and recent submissions.`;
+
+  return {
+    title,
+    description,
+    openGraph: { title, description },
+  };
+}
 
 export default async function CommunityCountryPage({
   params,

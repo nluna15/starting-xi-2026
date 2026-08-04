@@ -1,0 +1,12 @@
+import type { MetadataRoute } from "next";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/internal/", "/my-lineups/"],
+    },
+    sitemap: "https://startingxi2026.app/sitemap.xml",
+  };
+}

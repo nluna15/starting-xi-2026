@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { sql, eq, inArray } from "drizzle-orm";
 import { db } from "./client";
 import { formations, players, submissions, teams } from "./schema";
@@ -44,8 +45,26 @@ export type CrowdStats = {
   topPlayers: Array<{ player: Player; count: number; rate: number }>;
 };
 
-export async function getTeamByCode(code: string) {
+// Wrapped in React.cache so generateMetadata and the page component share one
+// round-trip per request when both resolve the same team code.
+export const getTeamByCode = cache(async (code: string) => {
   const rows = await db.select().from(teams).where(sql`${teams.code} = ${code}`).limit(1);
+  return rows[0] ?? null;
+});
+
+/** Lightweight join for generateMetadata on /lineup/[slug]. */
+export async function getLineupMeta(slug: string) {
+  const rows = await db
+    .select({
+      teamName: teams.name,
+      teamCode: teams.code,
+      formationName: formations.name,
+    })
+    .from(submissions)
+    .innerJoin(teams, eq(teams.id, submissions.teamId))
+    .innerJoin(formations, eq(formations.id, submissions.formationId))
+    .where(eq(submissions.publicSlug, slug))
+    .limit(1);
   return rows[0] ?? null;
 }
 

@@ -2,6 +2,8 @@ import { FeedbackForm } from "@/components/feedback-form";
 
 export const metadata = {
   title: "Feedback",
+  description:
+    "Spotted a bug, missing player, or have a feature idea? Share your feedback on Starting XI 2026.",
 };
 
 export default function FeedbackPage() {

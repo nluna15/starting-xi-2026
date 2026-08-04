@@ -5,6 +5,12 @@ import { WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Choose a Country",
+  description:
+    "Pick one of the 48 nations competing in the 2026 FIFA World Cup and build your ideal starting XI.",
+};
+
 export default async function CountriesPage() {
   const statusByCode = await getRosterStatusByCode();
 

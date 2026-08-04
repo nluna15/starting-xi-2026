@@ -16,6 +16,12 @@ import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
 
+export const metadata = {
+  title: "Community Picks",
+  description:
+    "See how fans around the world are building their 2026 FIFA World Cup starting XIs — crowd consensus, popular formations, and recent submissions.",
+};
+
 export default async function CommunityPage() {
   const [stats, countryStats, statusByCode, recentSubmissions] = await Promise.all([
     getGlobalCrowdStats(),

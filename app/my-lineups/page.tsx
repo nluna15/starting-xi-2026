@@ -8,6 +8,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "My Lineups",
+  description:
+    "View and manage the 2026 FIFA World Cup lineups you've built on this device.",
 };
 
 // Per-browser lineup history. Identity is the wcr_fp cookie set by
