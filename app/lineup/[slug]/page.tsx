@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { sql, inArray } from "drizzle-orm";
 import { BuildPitch } from "@/components/build-pitch";
+import { JsonLd } from "@/components/json-ld";
 import { OwnerLineupActions } from "@/components/owner-lineup-actions";
 import { BadgePill, DeviationTagsRow } from "@/components/community/recent-submission-card";
 import {
@@ -23,6 +24,7 @@ import {
   getTopFormationNameForTeam,
 } from "@/lib/db/queries";
 import { readFingerprint } from "@/lib/fingerprint";
+import { buildBreadcrumbSchema } from "@/lib/json-ld";
 import { cn } from "@/lib/utils";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
@@ -43,6 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     openGraph: { title, description },
+    alternates: { canonical: `/lineup/${slug}` },
   };
 }
 
@@ -224,9 +227,15 @@ export default async function LineupPage({ params }: { params: Promise<Params> }
   });
 
   const pageTitle = `${isOwner ? "Your" : "One fan's"} ${teamRow.name} 2026`;
+  const breadcrumbJsonLd = buildBreadcrumbSchema([
+    { name: "Home", href: "/" },
+    { name: teamRow.name, href: `/${teamRow.code.toLowerCase()}/build` },
+    { name: "Lineup", href: `/lineup/${slug}` },
+  ]);
 
   return (
     <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_360px] md:gap-12">
+      <JsonLd data={breadcrumbJsonLd} />
       <div className="space-y-4 md:space-y-6">
         <header className="flex flex-col gap-2">
           <h1 className="display text-[44px] text-ink leading-[0.95] [text-wrap:balance] sm:text-[52px]">

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/json-ld";
 import { LineupBuilder } from "@/components/lineup-builder";
 import { Button } from "@/components/ui/button";
 import { getPlayersForTeam, getTeamByCode } from "@/lib/db/queries";
+import { buildBreadcrumbSchema, buildSportsTeamSchema } from "@/lib/json-ld";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     openGraph: { title, description },
+    alternates: { canonical: `/${team.code.toLowerCase()}/build` },
   };
 }
 
@@ -31,9 +34,19 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
 
   const pool = await getPlayersForTeam(team.id);
 
+  const sportsTeamJsonLd = buildSportsTeamSchema({ name: team.name, code: team.code });
+  const breadcrumbJsonLd = buildBreadcrumbSchema([
+    { name: "Home", href: "/" },
+    { name: "Countries", href: "/countries" },
+    { name: team.name, href: `/${team.code.toLowerCase()}/build` },
+    { name: "Build XI", href: `/${team.code.toLowerCase()}/build` },
+  ]);
+
   if (pool.length === 0) {
     return (
       <div className="flex flex-1 flex-col items-center justify-center gap-3 py-16 text-center">
+        <JsonLd data={sportsTeamJsonLd} />
+        <JsonLd data={breadcrumbJsonLd} />
         <span className="text-4xl" aria-hidden>
           {team.flagEmoji}
         </span>
@@ -51,6 +64,8 @@ export default async function BuildPage({ params }: { params: Promise<Params> })
 
   return (
     <div className="flex flex-1 flex-col gap-3">
+      <JsonLd data={sportsTeamJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
       <div className="flex items-end justify-between gap-3 border-b border-line pb-2">
         <div className="flex items-center gap-3">
           <span className="text-6xl leading-none sm:text-7xl" aria-hidden>

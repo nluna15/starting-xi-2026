@@ -10,6 +10,7 @@ export const metadata = {
   title: "My Lineups",
   description:
     "View and manage the 2026 FIFA World Cup lineups you've built on this device.",
+  alternates: { canonical: "/my-lineups" },
 };
 
 // Per-browser lineup history. Identity is the wcr_fp cookie set by

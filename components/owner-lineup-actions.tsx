@@ -84,7 +84,7 @@ export function OwnerLineupActions({
         category={category}
       />
       <Link
-        href={`/community/${teamCode}`}
+        href={`/community/${teamCode.toLowerCase()}`}
         className={cn(
           buttonVariants({ variant: "outline", size: "lg" }),
           "w-full rounded-md! max-[410px]:flex-1 max-[410px]:basis-0 max-[410px]:min-w-0 max-[410px]:px-2",

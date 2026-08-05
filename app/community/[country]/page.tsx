@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CommunityCountryCarousel } from "@/components/community/country-carousel";
@@ -15,7 +15,9 @@ import {
   getRecentSubmissions,
   getRosterStatusByCode,
 } from "@/lib/db/queries";
+import { buildBreadcrumbSchema, buildSportsTeamSchema } from "@/lib/json-ld";
 import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
+import { JsonLd } from "@/components/json-ld";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 60;
@@ -35,6 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title,
     description,
     openGraph: { title, description },
+    alternates: { canonical: `/community/${code.toLowerCase()}` },
   };
 }
 
@@ -44,6 +47,9 @@ export default async function CommunityCountryPage({
   params: Promise<Params>;
 }) {
   const { country } = await params;
+  if (country !== country.toLowerCase()) {
+    permanentRedirect(`/community/${country.toLowerCase()}`);
+  }
   const code = country.toUpperCase();
 
   const [stats, countryStats, statusByCode, recentSubmissions] = await Promise.all([
@@ -65,10 +71,18 @@ export default async function CommunityCountryPage({
 
   const submitHref = `/${team.code}/build`;
   const submitLabel = `Build ${team.code} squad`;
+  const sportsTeamJsonLd = buildSportsTeamSchema({ name: team.name, code: team.code });
+  const breadcrumbJsonLd = buildBreadcrumbSchema([
+    { name: "Home", href: "/" },
+    { name: "Community", href: "/community" },
+    { name: team.name, href: `/community/${team.code.toLowerCase()}` },
+  ]);
 
   if (stats.totalSubmissions === 0) {
     return (
       <div className="space-y-8">
+        <JsonLd data={sportsTeamJsonLd} />
+        <JsonLd data={breadcrumbJsonLd} />
         <section>
           <CommunityCountryCarousel
             slots={WC_2026_SLOTS}
@@ -165,6 +179,8 @@ export default async function CommunityCountryPage({
 
   return (
     <div className="space-y-10">
+      <JsonLd data={sportsTeamJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
       <div className="space-y-4">
         <div className="space-y-4">
           <section>

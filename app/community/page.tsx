@@ -3,6 +3,7 @@ import { CommunityCountryCarousel } from "@/components/community/country-carouse
 import { PickCountryCta } from "@/components/community/pick-country-cta";
 import { CommunityPitch } from "@/components/community-pitch";
 import { InsightStatCard } from "@/components/community/insight-stat-card";
+import { JsonLd } from "@/components/json-ld";
 import { RecentSubmissionsFeed } from "@/components/community/recent-submissions-feed";
 import type { BarRow } from "@/components/horizontal-bar-chart";
 import {
@@ -11,6 +12,7 @@ import {
   getRecentSubmissions,
   getRosterStatusByCode,
 } from "@/lib/db/queries";
+import { buildBreadcrumbSchema } from "@/lib/json-ld";
 import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2, WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +22,7 @@ export const metadata = {
   title: "Community Picks",
   description:
     "See how fans around the world are building their 2026 FIFA World Cup starting XIs — crowd consensus, popular formations, and recent submissions.",
+  alternates: { canonical: "/community" },
 };
 
 export default async function CommunityPage() {
@@ -67,9 +70,15 @@ export default async function CommunityPage() {
   const mostCapsRows = capsRowsAll.slice(0, 4);
   const leastCapsRows = capsRowsAll.slice(-4).reverse();
 
+  const breadcrumbJsonLd = buildBreadcrumbSchema([
+    { name: "Home", href: "/" },
+    { name: "Community", href: "/community" },
+  ]);
+
   if (stats.totalSubmissions === 0) {
     return (
       <div className="flex flex-1 flex-col items-center justify-center gap-4 py-16 text-center">
+        <JsonLd data={breadcrumbJsonLd} />
         <span className="text-4xl" aria-hidden>
           🏆
         </span>
@@ -105,6 +114,7 @@ export default async function CommunityPage() {
 
   return (
     <div className="space-y-10">
+      <JsonLd data={breadcrumbJsonLd} />
       <div className="space-y-4">
         <section>
           <CommunityCountryCarousel

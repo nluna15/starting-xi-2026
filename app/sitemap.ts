@@ -16,10 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/feedback`, changeFrequency: "monthly", priority: 0.3 },
   ];
 
-  const teamPages: MetadataRoute.Sitemap = confirmedCodes.flatMap((code) => [
-    { url: `${BASE_URL}/${code}/build`, changeFrequency: "weekly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/${code}/crowd`, changeFrequency: "daily" as const, priority: 0.6 },
-  ]);
+  const teamPages: MetadataRoute.Sitemap = confirmedCodes.map((code) => ({
+    url: `${BASE_URL}/${code}/build`,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
 
   const communityPages: MetadataRoute.Sitemap = confirmedCodes.map((code) => ({
     url: `${BASE_URL}/community/${code}`,

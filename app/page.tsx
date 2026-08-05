@@ -20,6 +20,10 @@ import {
 import { daysUntilKickoff } from "@/lib/kickoff";
 import { WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 export const dynamic = "force-dynamic";
 
 const NATION_CODES = ["USA", "MEX", "ARG", "FRA", "ENG", "GER", "BRA", "MAR"] as const;

@@ -27,7 +27,7 @@ export function ExploreLineupCarousel({ cards }: Props) {
         {cards.map((card) => (
           <li key={card.code}>
             <Link
-              href={`/community/${card.code}`}
+              href={`/community/${card.code.toLowerCase()}`}
               aria-label={`Explore ${card.name} lineup data`}
               className="block h-full rounded-md text-ink no-underline focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-accent-soft"
             >

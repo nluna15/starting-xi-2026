@@ -1,6 +1,8 @@
 import { CountrySearch } from "@/components/countries/country-search";
 import { SectionHeading } from "@/components/home/section-heading";
+import { JsonLd } from "@/components/json-ld";
 import { getRosterStatusByCode } from "@/lib/db/queries";
+import { buildBreadcrumbSchema } from "@/lib/json-ld";
 import { WC_2026_SLOTS } from "@/lib/wc-2026-teams";
 
 export const dynamic = "force-dynamic";
@@ -9,6 +11,7 @@ export const metadata = {
   title: "Choose a Country",
   description:
     "Pick one of the 48 nations competing in the 2026 FIFA World Cup and build your ideal starting XI.",
+  alternates: { canonical: "/countries" },
 };
 
 export default async function CountriesPage() {
@@ -42,6 +45,10 @@ export default async function CountriesPage() {
 
   return (
     <div className="space-y-10 py-2">
+      <JsonLd data={buildBreadcrumbSchema([
+        { name: "Home", href: "/" },
+        { name: "Countries", href: "/countries" },
+      ])} />
       <header className="space-y-3 text-center">
         <h1 className="display text-[44px] text-ink [text-wrap:balance] sm:text-[52px]">
           Pick your country

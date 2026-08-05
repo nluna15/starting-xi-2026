@@ -4,6 +4,7 @@ export const metadata = {
   title: "Feedback",
   description:
     "Spotted a bug, missing player, or have a feature idea? Share your feedback on Starting XI 2026.",
+  alternates: { canonical: "/feedback" },
 };
 
 export default function FeedbackPage() {
