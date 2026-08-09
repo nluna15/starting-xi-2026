@@ -8,7 +8,7 @@
     "club": "Al-Talaba",
     "age": 31,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/377268-1705016778.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/377268-1705016778.png",
     "internationalCaps": 19,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Al-Shorta",
     "age": 29,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/560952-1730810244.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/560952-1730810244.png",
     "internationalCaps": 12,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "Al-Zawraa",
     "age": 35,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/206782-1705017271.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/206782-1705017271.png",
     "internationalCaps": 96,
     "internationalGoals": 0,
     "selectable": true
@@ -50,7 +50,7 @@
     "club": "Viktoria Plzeň",
     "age": 26,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/530527-1705017663.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/530527-1705017663.png",
     "internationalCaps": 29,
     "internationalGoals": 0,
     "selectable": true
@@ -64,7 +64,7 @@
     "club": "Persib Bandung",
     "age": 32,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/166460-1730326039.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/166460-1730326039.png",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": true
@@ -78,7 +78,7 @@
     "club": "Pakhtakor",
     "age": 25,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/931147-1759064522.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/931147-1759064522.png",
     "internationalCaps": 23,
     "internationalGoals": 1,
     "selectable": true
@@ -92,7 +92,7 @@
     "club": "Pogoń Szczecin",
     "age": 24,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/585325-1705017013.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/585325-1705017013.png",
     "internationalCaps": 24,
     "internationalGoals": 1,
     "selectable": true
@@ -106,7 +106,7 @@
     "club": "Al-Shorta",
     "age": 29,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/945266-1730751366.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/945266-1730751366.png",
     "internationalCaps": 30,
     "internationalGoals": 1,
     "selectable": true
@@ -120,7 +120,7 @@
     "club": "Al-Shorta",
     "age": 25,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/952341-1691265624.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/952341-1691265624.jpg",
     "internationalCaps": 14,
     "internationalGoals": 0,
     "selectable": true
@@ -134,7 +134,7 @@
     "club": "Al-Zawraa",
     "age": 27,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/933541-1705017331.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/933541-1705017331.png",
     "internationalCaps": 10,
     "internationalGoals": 1,
     "selectable": true
@@ -148,7 +148,7 @@
     "club": "Al-Shorta",
     "age": 30,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/949320-1730810996.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/949320-1730810996.png",
     "internationalCaps": 17,
     "internationalGoals": 0,
     "selectable": true
@@ -162,7 +162,7 @@
     "club": "Port FC",
     "age": 34,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/217073-1728051145.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/217073-1728051145.png",
     "internationalCaps": 52,
     "internationalGoals": 1,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "Utrecht",
     "age": 23,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/686845-1723460350.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/686845-1723460350.jpg",
     "internationalCaps": 22,
     "internationalGoals": 2,
     "selectable": true
@@ -190,7 +190,7 @@
     "club": "Sarpsborg 08",
     "age": 23,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/579294-1664972912.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/579294-1664972912.jpg",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "Cracovia",
     "age": 28,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/303766-1740127197.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/303766-1740127197.png",
     "internationalCaps": 47,
     "internationalGoals": 3,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "AGF Aarhus",
     "age": 25,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/413268-1689244158.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/413268-1689244158.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Al-Dhafra",
     "age": 26,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/560957-1705017215.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/560957-1705017215.png",
     "internationalCaps": 71,
     "internationalGoals": 8,
     "selectable": true
@@ -246,7 +246,7 @@
     "club": "Al-Talaba",
     "age": 24,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1132850-1769951640.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1132850-1769951640.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "Nashville SC",
     "age": 22,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/833817-1771709601.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/833817-1771709601.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "Luton Town",
     "age": 24,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/610581-1705017216.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/610581-1705017216.png",
     "internationalCaps": 16,
     "internationalGoals": 4,
     "selectable": true
@@ -288,7 +288,7 @@
     "club": "Al-Najma",
     "age": 22,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877672-1738057702.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/877672-1738057702.jpg",
     "internationalCaps": 34,
     "internationalGoals": 2,
     "selectable": true
@@ -302,7 +302,7 @@
     "club": "AEK Larnaca",
     "age": 22,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/684307-1763132234.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/684307-1763132234.jpg",
     "internationalCaps": 24,
     "internationalGoals": 2,
     "selectable": true
@@ -316,7 +316,7 @@
     "club": "Venezia",
     "age": 22,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/663153-1691265801.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/663153-1691265801.jpg",
     "internationalCaps": 8,
     "internationalGoals": 0,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "Dibba",
     "age": 25,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589646-1730810213.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/589646-1730810213.png",
     "internationalCaps": 67,
     "internationalGoals": 26,
     "selectable": true
@@ -344,7 +344,7 @@
     "club": "Al-Karma",
     "age": 30,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/401054-1740662943.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/401054-1740662943.png",
     "internationalCaps": 88,
     "internationalGoals": 31,
     "selectable": true
@@ -358,7 +358,7 @@
     "club": "Al-Talaba",
     "age": 30,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/576265-1689486955.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/576265-1689486955.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": true

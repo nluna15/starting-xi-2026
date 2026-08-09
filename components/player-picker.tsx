@@ -12,6 +12,7 @@ import {
   type BroadPosition,
 } from "@/lib/formations";
 import { cn, formatEur, normalize } from "@/lib/utils";
+import { PlayerPhoto } from "@/components/player-photo";
 
 const POSITION_NOUN: Record<string, string> = {
   GK: "keepers",
@@ -327,15 +328,7 @@ function PickerBody({
                 <div className="flex min-w-0 items-center gap-3">
                   {showPhotos && (
                     <div className="h-9 w-9 shrink-0 overflow-hidden rounded-full border border-line bg-surface-2">
-                      {p.photoUrl && (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          src={p.photoUrl}
-                          alt=""
-                          className="h-full w-full object-cover"
-                          loading="lazy"
-                        />
-                      )}
+                      <PlayerPhoto photoUrl={p.photoUrl} alt="" fallback={null} />
                     </div>
                   )}
                   <div className="min-w-0">

@@ -5,7 +5,12 @@ import { SoccerPitch, type Player as PkgPlayer } from "soccer-pitch";
 import "soccer-pitch/style.css";
 import type { FormationDef } from "@/lib/formations";
 import { hoverCardClampCSS } from "@/lib/pitch-hover-clamp";
-import { formatEur, initialPlusLastName, useMediaQuery } from "@/lib/utils";
+import {
+  formatEur,
+  initialPlusLastName,
+  proxyPhotoUrl,
+  useMediaQuery,
+} from "@/lib/utils";
 
 export type CommunityStarter = {
   id: number;
@@ -47,7 +52,7 @@ function toPkgPlayer(
     // Community pitches always show "first-initial + last name" (e.g. "L. Messi").
     // Single-name players like Neymar pass through unchanged.
     name: initialPlusLastName(p.fullName),
-    photoUrl: showPhotos ? p.photoUrl ?? undefined : undefined,
+    photoUrl: showPhotos ? proxyPhotoUrl(p.photoUrl) : undefined,
     countryCode: p.countryCode ?? undefined,
     extras: Object.keys(extras).length > 0 ? extras : undefined,
   };

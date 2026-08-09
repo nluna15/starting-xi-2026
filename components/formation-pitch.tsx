@@ -3,7 +3,7 @@
 import * as React from "react";
 import type { FormationDef } from "@/lib/formations";
 import type { Player, FormationSlot } from "@/lib/db/schema";
-import { cn } from "@/lib/utils";
+import { cn, proxyPhotoUrl } from "@/lib/utils";
 
 type Props = {
   formation: FormationDef;
@@ -131,7 +131,7 @@ function SlotMarker({
           {usePhoto ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              src={player!.photoUrl!}
+              src={proxyPhotoUrl(player!.photoUrl)}
               alt={player!.fullName}
               className="h-full w-full object-cover"
               loading="lazy"

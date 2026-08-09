@@ -8,7 +8,7 @@
     "club": "Navbahor Namangan",
     "age": 35,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/311958-1598182890.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/311958-1598182890.png",
     "internationalCaps": 43,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Neftchi Fergana",
     "age": 30,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/312690-1745331173.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/312690-1745331173.png",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "Nasaf Qarshi",
     "age": 25,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/527866-1743416641.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/527866-1743416641.png",
     "internationalCaps": 12,
     "internationalGoals": 0,
     "selectable": true
@@ -50,7 +50,7 @@
     "club": "Manchester City",
     "age": 22,
     "marketValueEur": 50000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/763079-1740493347.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/763079-1740493347.jpg",
     "internationalCaps": 24,
     "internationalGoals": 0,
     "selectable": true
@@ -64,7 +64,7 @@
     "club": "Pakhtakor Tashkent",
     "age": 29,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/492558-1745332442.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/492558-1745332442.png",
     "internationalCaps": 50,
     "internationalGoals": 3,
     "selectable": true
@@ -78,7 +78,7 @@
     "club": "Neftchi Fergana",
     "age": 35,
     "marketValueEur": 225000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/212499-1745331595.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/212499-1745331595.png",
     "internationalCaps": 65,
     "internationalGoals": 1,
     "selectable": true
@@ -92,7 +92,7 @@
     "club": "Esteghlal FC",
     "age": 29,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/288883-1722142124.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/288883-1722142124.png",
     "internationalCaps": 47,
     "internationalGoals": 1,
     "selectable": true
@@ -120,7 +120,7 @@
     "club": "Nasaf Qarshi",
     "age": 33,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/493725-1743416751.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/493725-1743416751.png",
     "internationalCaps": 38,
     "internationalGoals": 0,
     "selectable": true
@@ -134,7 +134,7 @@
     "club": "FC OKMK Olmaliq",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/538764-1726298244.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/538764-1726298244.png",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": true
@@ -148,7 +148,7 @@
     "club": "Dinamo Samarqand",
     "age": 22,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/989069-1745338930.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/989069-1745338930.png",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "Dibba SCC",
     "age": 28,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/570272-1745332711.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/570272-1745332711.png",
     "internationalCaps": 28,
     "internationalGoals": 0,
     "selectable": true
@@ -190,7 +190,7 @@
     "club": "Pakhtakor Tashkent",
     "age": 27,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/562022-1743417096.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/562022-1743417096.png",
     "internationalCaps": 21,
     "internationalGoals": 1,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "FC Baniyas",
     "age": 29,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/294525-1728579364.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/294525-1728579364.png",
     "internationalCaps": 85,
     "internationalGoals": 9,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Neftchi Fergana",
     "age": 32,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/260857-1745331701.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/260857-1745331701.png",
     "internationalCaps": 43,
     "internationalGoals": 4,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Tractor FC",
     "age": 30,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/288915-1745401035.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/288915-1745401035.png",
     "internationalCaps": 71,
     "internationalGoals": 1,
     "selectable": true
@@ -246,7 +246,7 @@
     "club": "Esteghlal FC",
     "age": 32,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/274536-1685034960.PNG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/274536-1685034960.PNG",
     "internationalCaps": 74,
     "internationalGoals": 13,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "Al-Bataeh CSC",
     "age": 28,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/431911-1762622827.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/431911-1762622827.png",
     "internationalCaps": 20,
     "internationalGoals": 0,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "FC Buxoro",
     "age": 23,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/989068-1688483980.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/989068-1688483980.png",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": true
@@ -288,7 +288,7 @@
     "club": "Basaksehir FK",
     "age": 22,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/754037-1759747064.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/754037-1759747064.jpg",
     "internationalCaps": 30,
     "internationalGoals": 8,
     "selectable": true
@@ -316,7 +316,7 @@
     "club": "Persepolis FC",
     "age": 33,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/185372-1745332996.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/185372-1745332996.png",
     "internationalCaps": 81,
     "internationalGoals": 24,
     "selectable": true
@@ -344,7 +344,7 @@
     "club": "Persepolis FC",
     "age": 25,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/492556-1614842509.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/492556-1614842509.png",
     "internationalCaps": 39,
     "internationalGoals": 10,
     "selectable": true
@@ -358,7 +358,7 @@
     "club": "Pakhtakor Tashkent",
     "age": 29,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/294502-1745333041.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/294502-1745333041.png",
     "internationalCaps": 35,
     "internationalGoals": 5,
     "selectable": true

@@ -8,7 +8,7 @@
     "club": "Klub Sportowy Lechia Gdańsk",
     "age": 23,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617009-1765112812.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/617009-1765112812.png",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Auckland FC",
     "age": 27,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/350347-1446020335.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/350347-1446020335.jpg",
     "internationalCaps": 6,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "GAIS",
     "age": 23,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/733234-1721917318.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/733234-1721917318.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -50,7 +50,7 @@
     "club": "Auckland FC",
     "age": 30,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/290838-1722513133.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/290838-1722513133.png",
     "internationalCaps": 9,
     "internationalGoals": 0,
     "selectable": false
@@ -64,7 +64,7 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -78,7 +78,7 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -92,7 +92,7 @@
     "club": "Wellington Phoenix FC",
     "age": 18,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -106,7 +106,7 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -120,7 +120,7 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 75000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1142610-1746783123.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1142610-1746783123.png",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -134,7 +134,7 @@
     "club": "Auckland FC",
     "age": 19,
     "marketValueEur": 75000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1375572-1746779915.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1375572-1746779915.png",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -148,7 +148,7 @@
     "club": "Millwall FC",
     "age": 32,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/207843-1756666566.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/207843-1756666566.jpg",
     "internationalCaps": 21,
     "internationalGoals": 0,
     "selectable": true
@@ -162,7 +162,7 @@
     "club": "Wrexham AFC",
     "age": 25,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/469211-1730125371.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/469211-1730125371.jpg",
     "internationalCaps": 35,
     "internationalGoals": 1,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "Sheffield United",
     "age": 21,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1007720-1695905864.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1007720-1695905864.jpg",
     "internationalCaps": 21,
     "internationalGoals": 2,
     "selectable": true
@@ -190,7 +190,7 @@
     "club": "Portland Timbers",
     "age": 22,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/724809-1771715473.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/724809-1771715473.jpg",
     "internationalCaps": 16,
     "internationalGoals": 2,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "Auckland FC",
     "age": 31,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/207061-1511087669.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/207061-1511087669.jpg",
     "internationalCaps": 17,
     "internationalGoals": 1,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877290-1721917559.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/877290-1721917559.jpg",
     "internationalCaps": 11,
     "internationalGoals": 0,
     "selectable": false
@@ -232,7 +232,7 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877294-1721917682.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/877294-1721917682.jpg",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": false
@@ -246,7 +246,7 @@
     "club": "Wellington Phoenix FC",
     "age": 22,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/953953-1768229329.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/953953-1768229329.png",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -260,7 +260,7 @@
     "club": "Wellington Phoenix FC",
     "age": 32,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/149901-1415819896.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/149901-1415819896.jpg",
     "internationalCaps": 49,
     "internationalGoals": 3,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "Wellington Phoenix FC",
     "age": 31,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/172333-1740594362.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/172333-1740594362.jpg",
     "internationalCaps": 47,
     "internationalGoals": 4,
     "selectable": false
@@ -288,7 +288,7 @@
     "club": "Auckland FC",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/455425-1558942512.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/455425-1558942512.png",
     "internationalCaps": 23,
     "internationalGoals": 0,
     "selectable": true
@@ -302,7 +302,7 @@
     "club": "Brisbane Roar FC",
     "age": 28,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345343-1747850285.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/345343-1747850285.png",
     "internationalCaps": 6,
     "internationalGoals": 0,
     "selectable": false
@@ -316,7 +316,7 @@
     "club": "Auckland FC",
     "age": 26,
     "marketValueEur": 375000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/482204-1558942642.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/482204-1558942642.png",
     "internationalCaps": 8,
     "internationalGoals": 0,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "Perth Glory FC",
     "age": 24,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/470986-1625845029.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/470986-1625845029.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -344,7 +344,7 @@
     "club": "Central Coast Mariners FC",
     "age": 33,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/175699-1497616562.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/175699-1497616562.jpg",
     "internationalCaps": 17,
     "internationalGoals": 0,
     "selectable": false
@@ -358,7 +358,7 @@
     "club": "Auckland FC",
     "age": 24,
     "marketValueEur": 225000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -372,7 +372,7 @@
     "club": "Auckland FC",
     "age": 30,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/264905-1705967127.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/264905-1705967127.jpg",
     "internationalCaps": 6,
     "internationalGoals": 0,
     "selectable": false
@@ -386,7 +386,7 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617015-1705967164.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/617015-1705967164.jpg",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": false
@@ -400,7 +400,7 @@
     "club": "Kilmarnock FC",
     "age": 25,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/509709-1558942459.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/509709-1558942459.png",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -414,7 +414,7 @@
     "club": "Wellington Phoenix FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/881221-1758547172.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/881221-1758547172.jpg",
     "internationalCaps": 6,
     "internationalGoals": 1,
     "selectable": false
@@ -428,7 +428,7 @@
     "club": "Minnesota United FC",
     "age": 37,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/81723-1771697078.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/81723-1771697078.jpg",
     "internationalCaps": 6,
     "internationalGoals": 0,
     "selectable": true
@@ -442,7 +442,7 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -456,7 +456,7 @@
     "club": "Sønderjyske Fodbold",
     "age": 27,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": false
@@ -470,7 +470,7 @@
     "club": "Wellington Phoenix FC",
     "age": 27,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -484,7 +484,7 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -498,7 +498,7 @@
     "club": "Wellington Phoenix FC",
     "age": 18,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1183555-1758546960.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1183555-1758546960.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": false
@@ -512,7 +512,7 @@
     "club": "Auckland FC",
     "age": 24,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": false
@@ -526,7 +526,7 @@
     "club": "Auckland FC",
     "age": 17,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1153793-1746779946.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1153793-1746779946.png",
     "internationalCaps": 7,
     "internationalGoals": 0,
     "selectable": false
@@ -540,7 +540,7 @@
     "club": "Braintree Town FC",
     "age": 36,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/54381-1550087802.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/54381-1550087802.jpg",
     "internationalCaps": 56,
     "internationalGoals": 2,
     "selectable": true
@@ -554,7 +554,7 @@
     "club": "Swansea City",
     "age": 24,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617018-1728417778.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/617018-1728417778.png",
     "internationalCaps": 35,
     "internationalGoals": 3,
     "selectable": true
@@ -568,7 +568,7 @@
     "club": "Viking Fotballklubb",
     "age": 27,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345700-1711129756.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/345700-1711129756.jpg",
     "internationalCaps": 30,
     "internationalGoals": 1,
     "selectable": true
@@ -582,7 +582,7 @@
     "club": "Silkeborg Idrætsforening",
     "age": 27,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400797-1763565137.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/400797-1763565137.jpg",
     "internationalCaps": 29,
     "internationalGoals": 4,
     "selectable": true
@@ -596,7 +596,7 @@
     "club": "Prins Hendrik Ende Desespereert Nimmer Combinatie Zwolle",
     "age": 31,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203357-1724750728.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/203357-1724750728.jpg",
     "internationalCaps": 24,
     "internationalGoals": 3,
     "selectable": true
@@ -610,7 +610,7 @@
     "club": "Wellington Phoenix FC",
     "age": 29,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/256019-1721932700.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/256019-1721932700.jpg",
     "internationalCaps": 23,
     "internationalGoals": 0,
     "selectable": true
@@ -624,7 +624,7 @@
     "club": "Wellington Phoenix FC",
     "age": 27,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/350357-1689944061.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/350357-1689944061.jpg",
     "internationalCaps": 26,
     "internationalGoals": 3,
     "selectable": true
@@ -638,7 +638,7 @@
     "club": "Peterborough United FC",
     "age": 24,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617019-1661846532.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/617019-1661846532.jpg",
     "internationalCaps": 5,
     "internationalGoals": 1,
     "selectable": true
@@ -652,7 +652,7 @@
     "club": "Fulham FC",
     "age": 22,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/817611-1686496044.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/817611-1686496044.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -666,7 +666,7 @@
     "club": "Örgryte IS",
     "age": 27,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/400799-1446020943.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/400799-1446020943.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": false
@@ -680,7 +680,7 @@
     "club": "Newcastle United Jets FC",
     "age": 23,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1109358-1721917080.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1109358-1721917080.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": true
@@ -694,7 +694,7 @@
     "club": "Auckland FC",
     "age": 31,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/172323-1705966788.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/172323-1705966788.jpg",
     "internationalCaps": 21,
     "internationalGoals": 1,
     "selectable": false
@@ -708,7 +708,7 @@
     "club": "Wellington Phoenix FC",
     "age": 22,
     "marketValueEur": 275000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/857968-1721917414.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/857968-1721917414.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -722,7 +722,7 @@
     "club": "Auckland FC",
     "age": 30,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -736,7 +736,7 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1122320-1688038414.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1122320-1688038414.jpg",
     "internationalCaps": 7,
     "internationalGoals": 0,
     "selectable": false
@@ -750,7 +750,7 @@
     "club": "Central Coast Mariners FC",
     "age": 25,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 5,
     "internationalGoals": 1,
     "selectable": false
@@ -764,7 +764,7 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -778,7 +778,7 @@
     "club": "Auckland FC",
     "age": 25,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -792,7 +792,7 @@
     "club": "Wellington Phoenix FC",
     "age": 17,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1225803-1709412323.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1225803-1709412323.jpg",
     "internationalCaps": 3,
     "internationalGoals": 1,
     "selectable": false
@@ -806,7 +806,7 @@
     "club": "Auckland FC",
     "age": 20,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1010896-1705968208.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1010896-1705968208.JPG",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": false
@@ -820,7 +820,7 @@
     "club": "Wellington Phoenix FC",
     "age": 20,
     "marketValueEur": 125000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -834,7 +834,7 @@
     "club": "Nottingham Forest FC",
     "age": 34,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/108725-1740646786.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/108725-1740646786.jpg",
     "internationalCaps": 88,
     "internationalGoals": 45,
     "selectable": true
@@ -848,7 +848,7 @@
     "club": "Motherwell FC",
     "age": 26,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/485672-1768832018.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/485672-1768832018.png",
     "internationalCaps": 41,
     "internationalGoals": 8,
     "selectable": true
@@ -862,7 +862,7 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/677509-1572443463.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/677509-1572443463.png",
     "internationalCaps": 8,
     "internationalGoals": 1,
     "selectable": true
@@ -876,7 +876,7 @@
     "club": "AS Saint-Étienne",
     "age": 23,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/617021-1727721943.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/617021-1727721943.jpg",
     "internationalCaps": 20,
     "internationalGoals": 2,
     "selectable": true
@@ -890,7 +890,7 @@
     "club": "Wellington Phoenix FC",
     "age": 34,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/114940-1680006990.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/114940-1680006990.jpg",
     "internationalCaps": 45,
     "internationalGoals": 5,
     "selectable": false
@@ -904,7 +904,7 @@
     "club": "Auckland FC",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/312317-1712677027.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/312317-1712677027.png",
     "internationalCaps": 17,
     "internationalGoals": 2,
     "selectable": false
@@ -918,7 +918,7 @@
     "club": "Wellington Phoenix FC",
     "age": 23,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888602-1748212611.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/888602-1748212611.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -932,7 +932,7 @@
     "club": "Saint Mirren FC",
     "age": 26,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/835410-1649409396.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/835410-1649409396.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -946,7 +946,7 @@
     "club": "Western Sydney Wanderers",
     "age": 36,
     "marketValueEur": 325000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/50200-1497616905.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/50200-1497616905.jpg",
     "internationalCaps": 73,
     "internationalGoals": 9,
     "selectable": true
@@ -960,7 +960,7 @@
     "club": "Auckland FC",
     "age": 23,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/878242-1705967043.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/878242-1705967043.jpg",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": false
@@ -974,7 +974,7 @@
     "club": "Wellington Phoenix FC",
     "age": 20,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1200303-1758547306.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1200303-1758547306.jpg",
     "internationalCaps": 7,
     "internationalGoals": 2,
     "selectable": false
@@ -988,7 +988,7 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -1002,7 +1002,7 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 11,
     "internationalGoals": 9,
     "selectable": false
@@ -1016,7 +1016,7 @@
     "club": "Auckland FC",
     "age": 21,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1000925-1746780172.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1000925-1746780172.png",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -1030,7 +1030,7 @@
     "club": "Wellington Phoenix FC",
     "age": 20,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092670-1758547426.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1092670-1758547426.jpg",
     "internationalCaps": 7,
     "internationalGoals": 2,
     "selectable": false
@@ -1044,7 +1044,7 @@
     "club": "Wellington Phoenix FC",
     "age": 18,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1092678-1733394474.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1092678-1733394474.png",
     "internationalCaps": 7,
     "internationalGoals": 2,
     "selectable": false
@@ -1058,7 +1058,7 @@
     "club": "Auckland FC",
     "age": 19,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -1072,7 +1072,7 @@
     "club": "Auckland FC",
     "age": 24,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -1086,7 +1086,7 @@
     "club": "Port Vale FC",
     "age": 24,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/539502-1752176158.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/539502-1752176158.jpg",
     "internationalCaps": 28,
     "internationalGoals": 8,
     "selectable": true

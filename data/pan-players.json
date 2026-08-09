@@ -8,7 +8,7 @@
     "club": "Al-Fayha FC",
     "age": 31,
     "marketValueEur": 650000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/402979-1765233655.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/402979-1765233655.png",
     "internationalCaps": 45,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "CD Marathón",
     "age": 32,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/865550-1717420702.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/865550-1717420702.jpg",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "Club Nacional",
     "age": 35,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/76715-1719941459.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/76715-1719941459.png",
     "internationalCaps": 55,
     "internationalGoals": 0,
     "selectable": true
@@ -50,7 +50,7 @@
     "club": "Beşiktaş JK",
     "age": 30,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/354482-1770806107.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/354482-1770806107.png",
     "internationalCaps": 90,
     "internationalGoals": 9,
     "selectable": true
@@ -64,7 +64,7 @@
     "club": "Norwich City",
     "age": 24,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/698415-1720429585.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/698415-1720429585.jpg",
     "internationalCaps": 28,
     "internationalGoals": 0,
     "selectable": true
@@ -78,7 +78,7 @@
     "club": "Slovan Bratislava",
     "age": 28,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/440383-1713528857.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/440383-1713528857.png",
     "internationalCaps": 35,
     "internationalGoals": 3,
     "selectable": true
@@ -92,7 +92,7 @@
     "club": "LASK Linz",
     "age": 27,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/403808-1754322165.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/403808-1754322165.png",
     "internationalCaps": 47,
     "internationalGoals": 1,
     "selectable": true
@@ -106,7 +106,7 @@
     "club": "Pari Nizhny Novgorod",
     "age": 24,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/923177-1754201558.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/923177-1754201558.png",
     "internationalCaps": 15,
     "internationalGoals": 0,
     "selectable": true
@@ -120,7 +120,7 @@
     "club": "Deportivo La Guaira",
     "age": 27,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/443379-1739806241.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/443379-1739806241.jpg",
     "internationalCaps": 15,
     "internationalGoals": 0,
     "selectable": true
@@ -134,7 +134,7 @@
     "club": "Academia Puerto Cabello",
     "age": 29,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/403809-1717420791.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/403809-1717420791.jpg",
     "internationalCaps": 19,
     "internationalGoals": 0,
     "selectable": true
@@ -148,7 +148,7 @@
     "club": "Deportivo Saprissa",
     "age": 31,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345716-1715905027.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/345716-1715905027.png",
     "internationalCaps": 96,
     "internationalGoals": 4,
     "selectable": true
@@ -162,7 +162,7 @@
     "club": "FC Turan-Tovuz",
     "age": 34,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/157154-1523606096.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/157154-1523606096.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "CD Plaza Amador",
     "age": 35,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/121791-1719228967.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/121791-1719228967.jpg",
     "internationalCaps": 103,
     "internationalGoals": 9,
     "selectable": true
@@ -190,7 +190,7 @@
     "club": "Pumas UNAM",
     "age": 27,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/375300-1709581138.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/375300-1709581138.jpg",
     "internationalCaps": 71,
     "internationalGoals": 3,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "FC Juárez",
     "age": 27,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/425028-1719229010.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/425028-1719229010.jpg",
     "internationalCaps": 66,
     "internationalGoals": 8,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Ironi Kiryat Shmona",
     "age": 29,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/419247-1719228755.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/419247-1719228755.jpg",
     "internationalCaps": 61,
     "internationalGoals": 2,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Mazatlán FC",
     "age": 32,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/283473-1719228611.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/283473-1719228611.jpg",
     "internationalCaps": 99,
     "internationalGoals": 9,
     "selectable": true
@@ -246,7 +246,7 @@
     "club": "Minnesota United",
     "age": 26,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/628806-1741201644.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/628806-1741201644.jpg",
     "internationalCaps": 24,
     "internationalGoals": 2,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "CD Cobresal",
     "age": 30,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/741098-1722908344.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/741098-1722908344.png",
     "internationalCaps": 52,
     "internationalGoals": 5,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "San Diego FC",
     "age": 36,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/161671-1771754371.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/161671-1771754371.jpg",
     "internationalCaps": 156,
     "internationalGoals": 4,
     "selectable": true
@@ -288,7 +288,7 @@
     "club": "Club León",
     "age": 29,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/243298-1741625334.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/243298-1741625334.png",
     "internationalCaps": 52,
     "internationalGoals": 17,
     "selectable": true
@@ -302,7 +302,7 @@
     "club": "U. Católica",
     "age": 32,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/546803-1741626228.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/546803-1741626228.png",
     "internationalCaps": 63,
     "internationalGoals": 17,
     "selectable": true
@@ -316,7 +316,7 @@
     "club": "Deportivo Saprissa",
     "age": 27,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/569205-1773092753.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/569205-1773092753.png",
     "internationalCaps": 11,
     "internationalGoals": 3,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "U. de Concepción",
     "age": 35,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/177064-1772650278.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/177064-1772650278.JPG",
     "internationalCaps": 50,
     "internationalGoals": 14,
     "selectable": true
@@ -344,7 +344,7 @@
     "club": "U. Católica",
     "age": 24,
     "marketValueEur": 175000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/860998-1741625093.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/860998-1741625093.png",
     "internationalCaps": 11,
     "internationalGoals": 1,
     "selectable": true
@@ -358,7 +358,7 @@
     "club": "CD Plaza Amador",
     "age": 38,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/126019-1735325689.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/126019-1735325689.png",
     "internationalCaps": 139,
     "internationalGoals": 7,
     "selectable": true

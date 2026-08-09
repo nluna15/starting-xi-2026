@@ -8,7 +8,7 @@
     "club": "Al-Hussein SC (Irbid)",
     "age": 33,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/261850-1693307769.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/261850-1693307769.jpg",
     "internationalCaps": 64,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Al-Wehdat SC",
     "age": 26,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/658805-1698756465.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/658805-1698756465.png",
     "internationalCaps": 10,
     "internationalGoals": 0,
     "selectable": true
@@ -50,7 +50,7 @@
     "club": "FC Seoul",
     "age": 30,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/539961-1563115087.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/539961-1563115087.jpg",
     "internationalCaps": 70,
     "internationalGoals": 3,
     "selectable": true
@@ -64,7 +64,7 @@
     "club": "Al-Quwa Al-Jawiya",
     "age": 23,
     "marketValueEur": 550000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/883111-1698757315.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/883111-1698757315.png",
     "internationalCaps": 25,
     "internationalGoals": 1,
     "selectable": true
@@ -92,7 +92,7 @@
     "club": "Al-Zawraa SC",
     "age": 32,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/882197-1705681650.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/882197-1705681650.jpg",
     "internationalCaps": 55,
     "internationalGoals": 2,
     "selectable": true
@@ -106,7 +106,7 @@
     "club": "Al-Karma",
     "age": 31,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/895249-1707241610.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/895249-1707241610.jpg",
     "internationalCaps": 47,
     "internationalGoals": 1,
     "selectable": true
@@ -120,7 +120,7 @@
     "club": "Selangor FC",
     "age": 25,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/658052-1759700839.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/658052-1759700839.jpg",
     "internationalCaps": 14,
     "internationalGoals": 0,
     "selectable": true
@@ -148,7 +148,7 @@
     "club": "Al-Hussein SC (Irbid)",
     "age": 32,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/310943-1705681769.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/310943-1705681769.jpg",
     "internationalCaps": 76,
     "internationalGoals": 1,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "Qatar SC",
     "age": 27,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/734751-1705681693.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/734751-1705681693.jpg",
     "internationalCaps": 40,
     "internationalGoals": 4,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Selangor FC",
     "age": 29,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/561485-1725800629.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/561485-1725800629.JPG",
     "internationalCaps": 58,
     "internationalGoals": 3,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Al-Karma",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/709974-1723145705.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/709974-1723145705.jpg",
     "internationalCaps": 45,
     "internationalGoals": 3,
     "selectable": true
@@ -246,7 +246,7 @@
     "club": "Al-Zawraa SC",
     "age": 23,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/744040-1744645208.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/744040-1744645208.jpg",
     "internationalCaps": 15,
     "internationalGoals": 1,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "Al-Hussein SC (Irbid)",
     "age": 32,
     "marketValueEur": 325000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/261842-1706541704.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/261842-1706541704.jpg",
     "internationalCaps": 57,
     "internationalGoals": 0,
     "selectable": true
@@ -288,7 +288,7 @@
     "club": "Stade Rennais FC",
     "age": 29,
     "marketValueEur": 10000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/551505-1702663087.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/551505-1702663087.JPG",
     "internationalCaps": 77,
     "internationalGoals": 23,
     "selectable": true
@@ -302,7 +302,7 @@
     "club": "Al-Sailiya SC",
     "age": 26,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/664057-1725801104.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/664057-1725801104.JPG",
     "internationalCaps": 59,
     "internationalGoals": 27,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "Al-Hussein SC (Irbid)",
     "age": 32,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/401086-1705681813.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/401086-1705681813.jpg",
     "internationalCaps": 71,
     "internationalGoals": 7,
     "selectable": true

@@ -8,7 +8,7 @@
     "club": "Standard Liège",
     "age": 21,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/680218-1705580908.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/680218-1705580908.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0
   },
@@ -21,7 +21,7 @@
     "club": "FC Noah",
     "age": 26,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/541420-1739451911.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/541420-1739451911.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0
   },
@@ -34,7 +34,7 @@
     "club": "Le Havre AC",
     "age": 31,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/164915-1666190720.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/164915-1666190720.JPG",
     "internationalCaps": 25,
     "internationalGoals": 0
   },
@@ -47,7 +47,7 @@
     "club": "West Ham United",
     "age": 28,
     "marketValueEur": 22000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/477758-1769112496.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/477758-1769112496.jpg",
     "internationalCaps": 9,
     "internationalGoals": 0
   },
@@ -60,7 +60,7 @@
     "club": "Burnley",
     "age": 28,
     "marketValueEur": 5000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/342046-1774470130.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/342046-1774470130.jpg",
     "internationalCaps": 10,
     "internationalGoals": 0
   },
@@ -73,7 +73,7 @@
     "club": "Aris Thessaloniki",
     "age": 28,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395685-1583422141.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/395685-1583422141.jpg",
     "internationalCaps": null,
     "internationalGoals": null
   },
@@ -86,7 +86,7 @@
     "club": "LOSC Lille",
     "age": 31,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/203348-1767006126.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/203348-1767006126.jpg",
     "internationalCaps": 103,
     "internationalGoals": 7
   },
@@ -99,7 +99,7 @@
     "club": "Widzew Łódź",
     "age": 28,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/679709-1669141167.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/679709-1669141167.png",
     "internationalCaps": 2,
     "internationalGoals": 0
   },
@@ -112,7 +112,7 @@
     "club": "RC Lens",
     "age": 32,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/181380-1767006082.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/181380-1767006082.jpg",
     "internationalCaps": 42,
     "internationalGoals": 4
   },
@@ -125,7 +125,7 @@
     "club": "KRC Genk",
     "age": 31,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/129586-1714036942.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/129586-1714036942.png",
     "internationalCaps": 23,
     "internationalGoals": 0
   },
@@ -138,7 +138,7 @@
     "club": "Hibernian",
     "age": 26,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/511802-1500892061.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/511802-1500892061.jpg",
     "internationalCaps": 7,
     "internationalGoals": 1
   },
@@ -151,7 +151,7 @@
     "club": "AE Larissa",
     "age": 30,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/289432-1727722809.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/289432-1727722809.jpg",
     "internationalCaps": 15,
     "internationalGoals": 1
   },
@@ -164,7 +164,7 @@
     "club": "Sunderland",
     "age": 21,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/727089-1767005980.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/727089-1767005980.jpg",
     "internationalCaps": 17,
     "internationalGoals": 0
   },
@@ -177,7 +177,7 @@
     "club": "LOSC Lille",
     "age": 21,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1016015-1741120243.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1016015-1741120243.jpg",
     "internationalCaps": 11,
     "internationalGoals": 0
   },
@@ -190,7 +190,7 @@
     "club": "Watford FC",
     "age": 27,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/486477-1532343230.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/486477-1532343230.jpg",
     "internationalCaps": null,
     "internationalGoals": null
   },
@@ -203,7 +203,7 @@
     "club": "Espanyol",
     "age": 29,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/243879-1658483049.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/243879-1658483049.jpg",
     "internationalCaps": 32,
     "internationalGoals": 1
   },
@@ -216,7 +216,7 @@
     "club": "Atromitos",
     "age": 29,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/353403-1726065611.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/353403-1726065611.jpg",
     "internationalCaps": 55,
     "internationalGoals": 0
   },
@@ -229,7 +229,7 @@
     "club": "AE Larissa",
     "age": 34,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/74297-1744354564.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/74297-1744354564.png",
     "internationalCaps": 30,
     "internationalGoals": 5
   },
@@ -242,7 +242,7 @@
     "club": "Newcastle United",
     "age": 29,
     "marketValueEur": 30000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/388165-1740646948.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/388165-1740646948.jpg",
     "internationalCaps": 35,
     "internationalGoals": 8
   },
@@ -255,7 +255,7 @@
     "club": "Al-Jazira",
     "age": 29,
     "marketValueEur": 11000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/344869-1726586877.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/344869-1726586877.jpg",
     "internationalCaps": 14,
     "internationalGoals": 2
   },
@@ -268,7 +268,7 @@
     "club": "Spartak Moscow",
     "age": 30,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/280701-1689146026.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/280701-1689146026.png",
     "internationalCaps": 36,
     "internationalGoals": 7
   },
@@ -281,7 +281,7 @@
     "club": "Montpellier",
     "age": 24,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/557614-1773267950.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/557614-1773267950.png",
     "internationalCaps": 16,
     "internationalGoals": 2
   },
@@ -294,7 +294,7 @@
     "club": "Alanyaspor",
     "age": 28,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/423678-1761655792.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/423678-1761655792.jpg",
     "internationalCaps": 64,
     "internationalGoals": 12
   },
@@ -333,7 +333,7 @@
     "club": "Real Betis",
     "age": 35,
     "marketValueEur": 1400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/127048-1766415258.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/127048-1766415258.jpg",
     "internationalCaps": 66,
     "internationalGoals": 21
   }

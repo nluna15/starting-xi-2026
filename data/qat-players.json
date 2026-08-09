@@ -8,7 +8,7 @@
     "club": "Al-Sadd SC",
     "age": 28,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/560423-1725787457.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/560423-1725787457.jpg",
     "internationalCaps": 54,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Al-Duhail SC",
     "age": 27,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/632912-1737911673.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/632912-1737911673.jpg",
     "internationalCaps": 8,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "Al-Rayyan SC",
     "age": 26,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/669629-1725823800.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/669629-1725823800.png",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": true
@@ -50,7 +50,7 @@
     "club": "Al-Rayyan SC",
     "age": 24,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/735813-1725823687.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/735813-1725823687.png",
     "internationalCaps": 32,
     "internationalGoals": 1,
     "selectable": true
@@ -64,7 +64,7 @@
     "club": "Al-Wakrah SC",
     "age": 35,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/83983-1740661376.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/83983-1740661376.jpg",
     "internationalCaps": 25,
     "internationalGoals": 2,
     "selectable": true
@@ -78,7 +78,7 @@
     "club": "Al-Gharafa SC",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/556713-1737911388.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/556713-1737911388.jpg",
     "internationalCaps": 67,
     "internationalGoals": 3,
     "selectable": true
@@ -92,7 +92,7 @@
     "club": "Al-Arabi SC",
     "age": 22,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/943150-1762258519.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/943150-1762258519.jpg",
     "internationalCaps": 7,
     "internationalGoals": 0,
     "selectable": true
@@ -106,7 +106,7 @@
     "club": "Al-Sadd SC",
     "age": 35,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/228727-1725787600.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/228727-1725787600.jpg",
     "internationalCaps": 99,
     "internationalGoals": 3,
     "selectable": true
@@ -120,7 +120,7 @@
     "club": "Al-Duhail SC",
     "age": 30,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/336665-1737911354.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/336665-1737911354.jpg",
     "internationalCaps": 17,
     "internationalGoals": 0,
     "selectable": true
@@ -134,7 +134,7 @@
     "club": "Al-Gharafa SC",
     "age": 21,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1054631-1762259857.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1054631-1762259857.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": true
@@ -148,7 +148,7 @@
     "club": "Al-Arabi SC",
     "age": 28,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1264176-1741193319.JPG?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1264176-1741193319.JPG",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": true
@@ -162,7 +162,7 @@
     "club": "Al-Sadd SC",
     "age": 35,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/222669-1725787279.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/222669-1725787279.jpg",
     "internationalCaps": 120,
     "internationalGoals": 21,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "Al-Shamal SC",
     "age": 22,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/822935-1739291004.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/822935-1739291004.jpg",
     "internationalCaps": 9,
     "internationalGoals": 0,
     "selectable": true
@@ -190,7 +190,7 @@
     "club": "Al-Arabi SC",
     "age": 33,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/251183-1725823489.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/251183-1725823489.png",
     "internationalCaps": 44,
     "internationalGoals": 0,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "Al-Wakrah SC",
     "age": 29,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/336667-1762278060.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/336667-1762278060.jpg",
     "internationalCaps": 60,
     "internationalGoals": 0,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Al-Rayyan SC",
     "age": 35,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/113915-1740665022.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/113915-1740665022.jpg",
     "internationalCaps": 121,
     "internationalGoals": 11,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Al-Duhail SC",
     "age": 35,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/222385-1737911305.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/222385-1737911305.jpg",
     "internationalCaps": 120,
     "internationalGoals": 6,
     "selectable": true
@@ -246,7 +246,7 @@
     "club": "Al-Sadd SC",
     "age": 29,
     "marketValueEur": 4500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/336646-1725787211.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/336646-1725787211.jpg",
     "internationalCaps": 126,
     "internationalGoals": 40,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "Al-Duhail SC",
     "age": 31,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/237846-1737911253.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/237846-1737911253.jpg",
     "internationalCaps": 14,
     "internationalGoals": 0,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "Al-Duhail SC",
     "age": 29,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/345095-1737911544.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/345095-1737911544.jpg",
     "internationalCaps": 118,
     "internationalGoals": 55,
     "selectable": true
@@ -288,7 +288,7 @@
     "club": "Al-Wakrah SC",
     "age": 26,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589099-1725787818.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/589099-1725787818.jpg",
     "internationalCaps": 37,
     "internationalGoals": 3,
     "selectable": true
@@ -302,7 +302,7 @@
     "club": "Al-Sadd SC",
     "age": 35,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/86286-1725787366.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/86286-1725787366.jpg",
     "internationalCaps": 167,
     "internationalGoals": 35,
     "selectable": true
@@ -316,7 +316,7 @@
     "club": "Al-Gharafa SC",
     "age": 25,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670659-1738110806.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/670659-1738110806.jpg",
     "internationalCaps": 13,
     "internationalGoals": 1,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "Al-Duhail SC",
     "age": 19,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1143849-1762259649.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1143849-1762259649.jpg",
     "internationalCaps": 8,
     "internationalGoals": 0,
     "selectable": true
@@ -344,7 +344,7 @@
     "club": "Al-Rayyan SC",
     "age": 33,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/187987-1725823454.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/187987-1725823454.png",
     "internationalCaps": 67,
     "internationalGoals": 8,
     "selectable": true
@@ -358,7 +358,7 @@
     "club": "Al-Gharafa SC",
     "age": 32,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/266935-1738110954.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/266935-1738110954.jpg",
     "internationalCaps": 70,
     "internationalGoals": 16,
     "selectable": true

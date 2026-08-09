@@ -8,7 +8,7 @@
     "club": "Persepolis",
     "age": 33,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/229081-1760614207.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/229081-1760614207.jpg",
     "internationalCaps": 83,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Sepahan",
     "age": 31,
     "marketValueEur": 750000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/343044-1663311007.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/343044-1663311007.png",
     "internationalCaps": 12,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "Esteghlal",
     "age": 33,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/132561-1669371312.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/132561-1669371312.jpg",
     "internationalCaps": 12,
     "internationalGoals": 0,
     "selectable": true
@@ -50,7 +50,7 @@
     "club": "Persepolis",
     "age": 32,
     "marketValueEur": 1300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/333355-1712243520.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/333355-1712243520.png",
     "internationalCaps": 72,
     "internationalGoals": 1,
     "selectable": true
@@ -78,7 +78,7 @@
     "club": "Esteghlal",
     "age": 32,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/249400-1716552219.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/249400-1716552219.jpg",
     "internationalCaps": 60,
     "internationalGoals": 6,
     "selectable": true
@@ -92,7 +92,7 @@
     "club": "Sepahan",
     "age": 36,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/188312-1716552273.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/188312-1716552273.jpg",
     "internationalCaps": 70,
     "internationalGoals": 6,
     "selectable": true
@@ -106,7 +106,7 @@
     "club": "Persepolis",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/697155-1735468820.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/697155-1735468820.jpg",
     "internationalCaps": 16,
     "internationalGoals": 1,
     "selectable": true
@@ -120,7 +120,7 @@
     "club": "Esteghlal",
     "age": 24,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/932724-1663310525.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/932724-1663310525.png",
     "internationalCaps": 9,
     "internationalGoals": 0,
     "selectable": true
@@ -134,7 +134,7 @@
     "club": "Persepolis",
     "age": 30,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/527092-1760614145.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/527092-1760614145.jpg",
     "internationalCaps": 14,
     "internationalGoals": 0,
     "selectable": true
@@ -148,7 +148,7 @@
     "club": "Athlitiki Enosi Konstantinoupoleos",
     "age": 36,
     "marketValueEur": 275000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/77547-1728415346.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/77547-1728415346.png",
     "internationalCaps": 142,
     "internationalGoals": 7,
     "selectable": true
@@ -162,7 +162,7 @@
     "club": "Sepahan",
     "age": 37,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/213715-1760615870.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/213715-1760615870.jpg",
     "internationalCaps": 52,
     "internationalGoals": 2,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "Esteghlal",
     "age": 32,
     "marketValueEur": 2000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/204294-1760359209.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/204294-1760359209.jpg",
     "internationalCaps": 63,
     "internationalGoals": 2,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "Esteghlal",
     "age": 29,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/249271-1707245122.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/249271-1707245122.jpg",
     "internationalCaps": 80,
     "internationalGoals": 1,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Sepahan",
     "age": 25,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/856087-1755380279.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/856087-1755380279.jpg",
     "internationalCaps": 13,
     "internationalGoals": 0,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Sepahan",
     "age": 20,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1051591-1736157350.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1051591-1736157350.jpg",
     "internationalCaps": 9,
     "internationalGoals": 2,
     "selectable": true
@@ -246,7 +246,7 @@
     "club": "Esteghlal",
     "age": 32,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/273879-1669379251.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/273879-1669379251.jpg",
     "internationalCaps": 39,
     "internationalGoals": 2,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "FK Rostov",
     "age": 27,
     "marketValueEur": 2800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/603149-1721923287.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/603149-1721923287.png",
     "internationalCaps": 33,
     "internationalGoals": 12,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "Olympiakos Syndesmos Filathlon Peiraios",
     "age": 33,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/307058-1757716838.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/307058-1757716838.png",
     "internationalCaps": 101,
     "internationalGoals": 55,
     "selectable": true
@@ -302,7 +302,7 @@
     "club": "Persepolis",
     "age": 30,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/249360-1710239440.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/249360-1710239440.jpg",
     "internationalCaps": 11,
     "internationalGoals": 1,
     "selectable": true
@@ -316,7 +316,7 @@
     "club": "Tractor",
     "age": 31,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/357125-1760359381.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/357125-1760359381.jpg",
     "internationalCaps": 16,
     "internationalGoals": 1,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "Esteghlal",
     "age": 27,
     "marketValueEur": 900000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/478192-1707245004.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/478192-1707245004.jpg",
     "internationalCaps": 25,
     "internationalGoals": 7,
     "selectable": true
@@ -344,7 +344,7 @@
     "club": "Esteghlal",
     "age": 25,
     "marketValueEur": 700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/542380-1760614107.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/542380-1760614107.jpg",
     "internationalCaps": 14,
     "internationalGoals": 5,
     "selectable": true
@@ -358,7 +358,7 @@
     "club": "FC Verbroedering Denderhoutem Denderleeuw Eendracht Hekelgem",
     "age": 32,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/213268-1660812135.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/213268-1660812135.jpg",
     "internationalCaps": 96,
     "internationalGoals": 17,
     "selectable": true

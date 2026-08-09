@@ -26,6 +26,7 @@ import {
 import { readFingerprint } from "@/lib/fingerprint";
 import { buildBreadcrumbSchema } from "@/lib/json-ld";
 import { cn } from "@/lib/utils";
+import { PlayerPhoto } from "@/components/player-photo";
 import type { Player } from "@/lib/db/schema";
 import type { FormationDef } from "@/lib/formations";
 
@@ -464,17 +465,11 @@ function PickHighlightCard({
   return (
     <div className="flex items-center gap-3">
       <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-[13px] font-semibold text-ink-3">
-        {player.photoUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={player.photoUrl}
-            alt={player.fullName}
-            className="h-full w-full object-cover"
-            loading="lazy"
-          />
-        ) : (
-          initial
-        )}
+        <PlayerPhoto
+          photoUrl={player.photoUrl}
+          alt={player.fullName}
+          fallback={initial}
+        />
         {player.jerseyNumber != null && (
           <span className="absolute bottom-0 right-0 flex h-4 w-4 items-center justify-center rounded-full bg-ink mono text-[9px] font-bold text-bg-elev">
             {player.jerseyNumber}

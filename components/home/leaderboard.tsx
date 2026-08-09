@@ -2,6 +2,7 @@ import type { HomeLeaderboard } from "@/lib/db/queries";
 import { Card } from "@/components/ui/card";
 import { SectionHeading } from "@/components/home/section-heading";
 import { cn } from "@/lib/utils";
+import { PlayerPhoto } from "@/components/player-photo";
 
 /* -----------------------------------------------------------------------------
    Crowd Favorites — three editorial cards listing the top players, countries,
@@ -217,17 +218,11 @@ function PlayerAvatar({
         dimensions,
       )}
     >
-      {player.photoUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={player.photoUrl}
-          alt={player.fullName}
-          className="h-full w-full object-cover"
-          loading="lazy"
-        />
-      ) : (
-        getInitials(player.fullName)
-      )}
+      <PlayerPhoto
+        photoUrl={player.photoUrl}
+        alt={player.fullName}
+        fallback={getInitials(player.fullName)}
+      />
     </div>
   );
 }

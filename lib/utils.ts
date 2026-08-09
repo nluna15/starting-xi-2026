@@ -60,9 +60,14 @@ export function formatAge(value: number | null | undefined): string {
 const TRANSFERMARKT_PHOTO_PREFIX = "https://img.a.transfermarkt.technology/";
 
 /**
- * Rewrites upstream player photo URLs to a same-origin proxy so canvas-based
- * exporters (modern-screenshot) can read the bytes without tainting the canvas.
- * Non-matching URLs pass through unchanged.
+ * Routes any remaining Transfermarkt portrait through our same-origin proxy,
+ * which retries that host's intermittent 503s.
+ *
+ * Portraits are normally served from our own Vercel Blob store (see
+ * `scripts/migrate-photos-to-blob.ts`) and pass through unchanged — Blob sends
+ * `access-control-allow-origin: *`, so modern-screenshot can still inline them
+ * as data URIs for the share-card export without tainting the canvas. Only the
+ * handful of portraits Transfermarkt could never serve still hit the proxy.
  */
 export function proxyPhotoUrl(url: string | null | undefined): string | undefined {
   if (!url) return undefined;

@@ -16,6 +16,7 @@ import { FIFA_FLAG_OVERRIDES, FIFA_TO_ISO2 } from "@/lib/wc-2026-teams";
 import type { Player } from "@/lib/db/schema";
 import type { RecentSubmission } from "@/lib/db/queries";
 import { formatTimeAgo, lastName, useMediaQuery } from "@/lib/utils";
+import { PlayerPhoto } from "@/components/player-photo";
 import { trackEvent } from "@/lib/track";
 
 const TEAM_NAME_ABBREVIATIONS: Record<string, string> = {
@@ -160,17 +161,11 @@ function SubsRow({ bench }: { bench: Player[] }) {
         {bench.map((p) => (
           <li key={p.id} className="flex items-center gap-1.5 text-[12px] text-ink-2">
             <span className="flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full border border-line bg-surface-2 text-[9px] font-semibold text-ink-3">
-              {p.photoUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={p.photoUrl}
-                  alt=""
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              ) : (
-                getInitials(p.fullName)
-              )}
+              <PlayerPhoto
+                photoUrl={p.photoUrl}
+                alt=""
+                fallback={getInitials(p.fullName)}
+              />
             </span>
             <span className="cond text-[11px] tracking-[0.04em]">
               {lastName(p.fullName).toUpperCase()}

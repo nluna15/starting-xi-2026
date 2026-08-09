@@ -8,7 +8,7 @@
     "club": "Club Internacional de Fútbol Miami",
     "age": 28,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/439750-1771695035.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/439750-1771695035.jpg",
     "internationalCaps": 18,
     "internationalGoals": 0,
     "selectable": true
@@ -22,7 +22,7 @@
     "club": "Orlando City Soccer Club",
     "age": 31,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/189014-1771712360.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/189014-1771712360.jpg",
     "internationalCaps": 29,
     "internationalGoals": 0,
     "selectable": true
@@ -36,7 +36,7 @@
     "club": "Portland Timbers",
     "age": 29,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/429217-1771715367.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/429217-1771715367.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -50,7 +50,7 @@
     "club": "FC Dallas",
     "age": 24,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/749407-1771675907.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/749407-1771675907.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -64,7 +64,7 @@
     "club": "Brighton and Hove Albion FC",
     "age": 26,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/406556-1718472851.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/406556-1718472851.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -78,7 +78,7 @@
     "club": "Atlanta United FC",
     "age": 21,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1223311-1771527605.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1223311-1771527605.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -92,7 +92,7 @@
     "club": "Club de Foot Montréal",
     "age": 28,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/459842-1771706925.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/459842-1771706925.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -106,7 +106,7 @@
     "club": "Al-Riyadh Saudi Club",
     "age": 38,
     "marketValueEur": 275000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/67797-1713529293.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/67797-1713529293.png",
     "internationalCaps": 80,
     "internationalGoals": 0,
     "selectable": false
@@ -120,7 +120,7 @@
     "club": "Vancouver Whitecaps FC",
     "age": 24,
     "marketValueEur": 250000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/802143-1771861348.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/802143-1771861348.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -134,7 +134,7 @@
     "club": "Los Angeles FC",
     "age": 26,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/487505-1771689988.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/487505-1771689988.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -148,7 +148,7 @@
     "club": "Crystal Palace FC",
     "age": 22,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/814848-1739357014.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/814848-1739357014.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": true
@@ -162,7 +162,7 @@
     "club": "FC Bayern München",
     "age": 25,
     "marketValueEur": 45000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/424204-1711745534.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/424204-1711745534.jpg",
     "internationalCaps": 58,
     "internationalGoals": 15,
     "selectable": true
@@ -176,7 +176,7 @@
     "club": "Celtic FC",
     "age": 27,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/637446-1701212171.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/637446-1701212171.jpg",
     "internationalCaps": 56,
     "internationalGoals": 1,
     "selectable": true
@@ -190,7 +190,7 @@
     "club": "Olympique Gymnaste Club Nice Côte d'Azur",
     "age": 26,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1089202-1756826846.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1089202-1756826846.jpg",
     "internationalCaps": 19,
     "internationalGoals": 0,
     "selectable": true
@@ -204,7 +204,7 @@
     "club": "HNK Hajduk Split",
     "age": 22,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1045375-1767281251.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1045375-1767281251.jpg",
     "internationalCaps": 15,
     "internationalGoals": 2,
     "selectable": true
@@ -218,7 +218,7 @@
     "club": "Olympique de Marseille",
     "age": 28,
     "marketValueEur": 3000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/328609-1618857970.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/328609-1618857970.jpg",
     "internationalCaps": 40,
     "internationalGoals": 1,
     "selectable": true
@@ -232,7 +232,7 @@
     "club": "Portland Timbers",
     "age": 28,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/487504-1771715237.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/487504-1771715237.jpg",
     "internationalCaps": 51,
     "internationalGoals": 0,
     "selectable": false
@@ -246,7 +246,7 @@
     "club": "Chicago Fire Soccer Club",
     "age": 30,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/441738-1771696324.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/441738-1771696324.jpg",
     "internationalCaps": 15,
     "internationalGoals": 0,
     "selectable": true
@@ -260,7 +260,7 @@
     "club": "Middlesbrough FC",
     "age": 28,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/340990-1642684544.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/340990-1642684544.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": true
@@ -274,7 +274,7 @@
     "club": "St. Louis City Soccer Club",
     "age": 28,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/982519-1771787852.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/982519-1771787852.jpg",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": false
@@ -288,7 +288,7 @@
     "club": "Red Bull New York",
     "age": 21,
     "marketValueEur": 1500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/640852-1771716625.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/640852-1771716625.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -302,7 +302,7 @@
     "club": "Toronto FC",
     "age": 31,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/417348-1771789769.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/417348-1771789769.jpg",
     "internationalCaps": 72,
     "internationalGoals": 1,
     "selectable": true
@@ -316,7 +316,7 @@
     "club": "Fulham FC",
     "age": 20,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/921995-1760114291.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/921995-1760114291.jpg",
     "internationalCaps": 11,
     "internationalGoals": 0,
     "selectable": true
@@ -330,7 +330,7 @@
     "club": "St. Louis City Soccer Club",
     "age": 31,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/657940-1771788054.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/657940-1771788054.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -344,7 +344,7 @@
     "club": "Toronto FC",
     "age": 23,
     "marketValueEur": 850000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/893148-1771790052.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/893148-1771790052.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -358,7 +358,7 @@
     "club": "Vancouver Whitecaps FC",
     "age": 31,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/287578-1771861228.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/287578-1771861228.jpg",
     "internationalCaps": 44,
     "internationalGoals": 1,
     "selectable": false
@@ -372,7 +372,7 @@
     "club": "Toronto FC",
     "age": 30,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/367429-1771789470.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/367429-1771789470.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -386,7 +386,7 @@
     "club": "Portland Timbers",
     "age": 28,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/788522-1771715181.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/788522-1771715181.jpg",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": false
@@ -400,7 +400,7 @@
     "club": "Club de Foot Montréal",
     "age": 25,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/494826-1771707513.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/494826-1771707513.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -414,7 +414,7 @@
     "club": "Club de Foot Montréal",
     "age": 19,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1108459-1771707114.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1108459-1771707114.jpg",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": false
@@ -428,7 +428,7 @@
     "club": "GAIS",
     "age": 23,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/797623-1714820104.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/797623-1714820104.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -442,7 +442,7 @@
     "club": "FC Lugano",
     "age": 27,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395676-1755185495.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/395676-1755185495.jpg",
     "internationalCaps": 8,
     "internationalGoals": 1,
     "selectable": false
@@ -456,7 +456,7 @@
     "club": "Toronto FC",
     "age": 22,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/718086-1771789539.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/718086-1771789539.jpg",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": false
@@ -470,7 +470,7 @@
     "club": "Toronto FC",
     "age": 19,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1010899-1771790008.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1010899-1771790008.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": false
@@ -484,7 +484,7 @@
     "club": "Wellington Phoenix FC",
     "age": 32,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/222686-1731610117.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/222686-1731610117.png",
     "internationalCaps": 17,
     "internationalGoals": 2,
     "selectable": false
@@ -498,7 +498,7 @@
     "club": "Morski Związkowy Klub Sportowy Arka Gdynia Spółka Akcyjna",
     "age": 31,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/496606-1753989475.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/496606-1753989475.jpg",
     "internationalCaps": 3,
     "internationalGoals": 0,
     "selectable": false
@@ -512,7 +512,7 @@
     "club": "Kilmarnock FC",
     "age": 20,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1128515-1683140298.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1128515-1683140298.jpg",
     "internationalCaps": 6,
     "internationalGoals": 0,
     "selectable": false
@@ -526,7 +526,7 @@
     "club": "Nashville SC",
     "age": 23,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/990585-1771709254.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/990585-1771709254.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -540,7 +540,7 @@
     "club": "D.C. United",
     "age": 21,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1492790-1771687325.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1492790-1771687325.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -554,7 +554,7 @@
     "club": "Boavista FC",
     "age": 39,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/54716-1630252446.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/54716-1630252446.jpg",
     "internationalCaps": 46,
     "internationalGoals": 5,
     "selectable": false
@@ -568,7 +568,7 @@
     "club": "Unione Sportiva Sassuolo Calcio",
     "age": 23,
     "marketValueEur": 20000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/921655-1757604633.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/921655-1757604633.jpg",
     "internationalCaps": 37,
     "internationalGoals": 4,
     "selectable": true
@@ -582,7 +582,7 @@
     "club": "Villarreal Club de Fútbol",
     "age": 27,
     "marketValueEur": 12000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/638793-1758059596.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/638793-1758059596.jpg",
     "internationalCaps": 57,
     "internationalGoals": 8,
     "selectable": true
@@ -596,7 +596,7 @@
     "club": "Los Angeles FC",
     "age": 29,
     "marketValueEur": 7000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/512913-1720430046.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/512913-1720430046.jpg",
     "internationalCaps": 54,
     "internationalGoals": 4,
     "selectable": true
@@ -610,7 +610,7 @@
     "club": "Royal Sporting Club Anderlecht",
     "age": 22,
     "marketValueEur": 6000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/842420-1740597560.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/842420-1740597560.jpg",
     "internationalCaps": 11,
     "internationalGoals": 2,
     "selectable": true
@@ -624,7 +624,7 @@
     "club": "Los Angeles FC",
     "age": 26,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/637632-1771690425.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/637632-1771690425.jpg",
     "internationalCaps": 31,
     "internationalGoals": 6,
     "selectable": true
@@ -638,7 +638,7 @@
     "club": "Club Tigres UANL Sinergia Deportiva",
     "age": 22,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/668495-1608204598.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/668495-1608204598.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": true
@@ -652,7 +652,7 @@
     "club": "Hull City",
     "age": 26,
     "marketValueEur": 1700000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/487417-1738999688.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/487417-1738999688.jpg",
     "internationalCaps": 37,
     "internationalGoals": 1,
     "selectable": true
@@ -666,7 +666,7 @@
     "club": "Toronto FC",
     "age": 33,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/260807-1771789904.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/260807-1771789904.jpg",
     "internationalCaps": 88,
     "internationalGoals": 9,
     "selectable": true
@@ -680,7 +680,7 @@
     "club": "Norwich City",
     "age": 25,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/995642-1740765149.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/995642-1740765149.jpg",
     "internationalCaps": 22,
     "internationalGoals": 1,
     "selectable": true
@@ -694,7 +694,7 @@
     "club": "Sporting Kansas City",
     "age": 26,
     "marketValueEur": 1000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/531835-1771760813.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/531835-1771760813.jpg",
     "internationalCaps": 8,
     "internationalGoals": 0,
     "selectable": false
@@ -708,7 +708,7 @@
     "club": "Club de Foot Montréal",
     "age": 31,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/189019-1740597521.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/189019-1740597521.jpg",
     "internationalCaps": 69,
     "internationalGoals": 0,
     "selectable": false
@@ -722,7 +722,7 @@
     "club": "Los Angeles FC",
     "age": 27,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/589006-1771689836.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/589006-1771689836.jpg",
     "internationalCaps": 22,
     "internationalGoals": 0,
     "selectable": true
@@ -736,7 +736,7 @@
     "club": "Vancouver Whitecaps FC",
     "age": 23,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/657271-1771861854.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/657271-1771861854.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -750,7 +750,7 @@
     "club": "Club de Foot Montréal",
     "age": 24,
     "marketValueEur": 800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/670119-1771707342.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/670119-1771707342.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -764,7 +764,7 @@
     "club": "Vancouver Whitecaps FC",
     "age": 20,
     "marketValueEur": 600000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1067259-1771861258.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1067259-1771861258.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -778,7 +778,7 @@
     "club": "Los Angeles FC",
     "age": 27,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/638798-1771690366.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/638798-1771690366.jpg",
     "internationalCaps": 4,
     "internationalGoals": 0,
     "selectable": false
@@ -792,7 +792,7 @@
     "club": "Miejski Klub Sportowy Korona Kielce Spółka Akcyjna",
     "age": 28,
     "marketValueEur": 400000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/381069-1655492706.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/381069-1655492706.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -806,7 +806,7 @@
     "club": "Motherwell FC",
     "age": 27,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/395833-1762719516.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/395833-1762719516.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -820,7 +820,7 @@
     "club": "Toronto FC",
     "age": 21,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1010912-1771789346.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1010912-1771789346.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -834,7 +834,7 @@
     "club": "Toronto FC",
     "age": 23,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1381448-1771789651.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1381448-1771789651.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -848,7 +848,7 @@
     "club": "Reial Club Deportiu Espanyol de Barcelona",
     "age": 23,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/904712-1760544046.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/904712-1760544046.jpg",
     "internationalCaps": 6,
     "internationalGoals": 0,
     "selectable": false
@@ -862,7 +862,7 @@
     "club": "Vancouver Whitecaps FC",
     "age": 19,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1067266-1771861689.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1067266-1771861689.jpg",
     "internationalCaps": 4,
     "internationalGoals": 2,
     "selectable": false
@@ -876,7 +876,7 @@
     "club": "Ross County FC",
     "age": 25,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/503782-1634025246.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/503782-1634025246.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -890,7 +890,7 @@
     "club": "Örgryte IS",
     "age": 22,
     "marketValueEur": 100000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -904,7 +904,7 @@
     "club": "Nashville SC",
     "age": 22,
     "marketValueEur": 75000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1504946-1771709170.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1504946-1771709170.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -918,7 +918,7 @@
     "club": "Livingston FC",
     "age": 37,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/55291-1709368059.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/55291-1709368059.jpg",
     "internationalCaps": 19,
     "internationalGoals": 2,
     "selectable": false
@@ -932,7 +932,7 @@
     "club": "Juventus FC",
     "age": 26,
     "marketValueEur": 35000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/533738-1760114012.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/533738-1760114012.jpg",
     "internationalCaps": 73,
     "internationalGoals": 37,
     "selectable": true
@@ -946,7 +946,7 @@
     "club": "Royale Union Saint-Gilloise",
     "age": 24,
     "marketValueEur": 17000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/888785-1772107518.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/888785-1772107518.jpg",
     "internationalCaps": 8,
     "internationalGoals": 3,
     "selectable": true
@@ -960,7 +960,7 @@
     "club": "Villarreal Club de Fútbol",
     "age": 25,
     "marketValueEur": 8000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/972465-1758059359.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/972465-1758059359.jpg",
     "internationalCaps": 21,
     "internationalGoals": 2,
     "selectable": true
@@ -974,7 +974,7 @@
     "club": "Unknown",
     "age": 22,
     "marketValueEur": 4000000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/746740-1743015657.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/746740-1743015657.jpg",
     "internationalCaps": 5,
     "internationalGoals": 0,
     "selectable": false
@@ -988,7 +988,7 @@
     "club": "Southampton FC",
     "age": 31,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/343463-1720430112.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/343463-1720430112.jpg",
     "internationalCaps": 87,
     "internationalGoals": 30,
     "selectable": true
@@ -1002,7 +1002,7 @@
     "club": "Toulouse FC",
     "age": 23,
     "marketValueEur": 3500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/683625-1740676078.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/683625-1740676078.jpg",
     "internationalCaps": 8,
     "internationalGoals": 1,
     "selectable": false
@@ -1016,7 +1016,7 @@
     "club": "Austin FC",
     "age": 23,
     "marketValueEur": 2500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/635445-1771529471.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/635445-1771529471.jpg",
     "internationalCaps": 13,
     "internationalGoals": 2,
     "selectable": false
@@ -1030,7 +1030,7 @@
     "club": "FC Lausanne-Sport",
     "age": 26,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/501709-1618858914.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/501709-1618858914.jpg",
     "internationalCaps": 7,
     "internationalGoals": 1,
     "selectable": false
@@ -1044,7 +1044,7 @@
     "club": "Toronto FC",
     "age": 23,
     "marketValueEur": 1800000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/568535-1771789406.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/568535-1771789406.jpg",
     "internationalCaps": 7,
     "internationalGoals": 2,
     "selectable": false
@@ -1058,7 +1058,7 @@
     "club": "Toronto FC",
     "age": 23,
     "marketValueEur": 1200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/718098-1771789732.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/718098-1771789732.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -1072,7 +1072,7 @@
     "club": "Sporting Kansas City",
     "age": 25,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1089573-1771760676.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1089573-1771760676.jpg",
     "internationalCaps": 2,
     "internationalGoals": 0,
     "selectable": false
@@ -1086,7 +1086,7 @@
     "club": "Toronto FC",
     "age": 23,
     "marketValueEur": 500000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/877417-1771790097.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/877417-1771790097.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -1100,7 +1100,7 @@
     "club": "Nooit Opgeven Altijd Doorzetten Aangenaam Door Vermaak En Nuttig Door Ontspanning Combinatie Breda",
     "age": 27,
     "marketValueEur": 450000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/595028-1755785394.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/595028-1755785394.jpg",
     "internationalCaps": 13,
     "internationalGoals": 1,
     "selectable": false
@@ -1114,7 +1114,7 @@
     "club": "1. FC Slovácko",
     "age": 21,
     "marketValueEur": 350000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1157676-1771651517.png?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1157676-1771651517.png",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -1128,7 +1128,7 @@
     "club": "Vitória Sport Clube",
     "age": 22,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -1142,7 +1142,7 @@
     "club": "GAIS",
     "age": 25,
     "marketValueEur": 300000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/862698-1762719993.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/862698-1762719993.jpg",
     "internationalCaps": null,
     "internationalGoals": null,
     "selectable": false
@@ -1156,7 +1156,7 @@
     "club": "Colorado Rapids",
     "age": 21,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1128512-1771673789.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1128512-1771673789.jpg",
     "internationalCaps": 7,
     "internationalGoals": 0,
     "selectable": false
@@ -1170,7 +1170,7 @@
     "club": "Idrottsföreningen Kamraterna Göteborg",
     "age": 22,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1002288-1762760396.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1002288-1762760396.jpg",
     "internationalCaps": 1,
     "internationalGoals": 0,
     "selectable": false
@@ -1184,7 +1184,7 @@
     "club": "Fudbalski klub Čukarički Beograd",
     "age": 24,
     "marketValueEur": 200000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1089531-1740509580.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1089531-1740509580.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
@@ -1198,7 +1198,7 @@
     "club": "Club de Foot Montréal",
     "age": 18,
     "marketValueEur": 150000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/1341188-1771707083.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/1341188-1771707083.jpg",
     "internationalCaps": 4,
     "internationalGoals": 5,
     "selectable": false
@@ -1212,7 +1212,7 @@
     "club": "Unknown",
     "age": 35,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/58993-1554051302.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/58993-1554051302.jpg",
     "internationalCaps": 68,
     "internationalGoals": 17,
     "selectable": false
@@ -1226,7 +1226,7 @@
     "club": "Club Universidad Nacional A. C",
     "age": 20,
     "marketValueEur": 50000,
-    "photoUrl": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1",
+    "photoUrl": "https://a8sh3xkgqkkpo6s8.public.blob.vercel-storage.com/portrait/header/default.jpg",
     "internationalCaps": 0,
     "internationalGoals": 0,
     "selectable": false
