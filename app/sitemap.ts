@@ -13,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/countries`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/community`, changeFrequency: "daily", priority: 0.8 },
     { url: `${BASE_URL}/about`, changeFrequency: "monthly", priority: 0.4 },
-    { url: `${BASE_URL}/feedback`, changeFrequency: "monthly", priority: 0.3 },
   ];
 
   const teamPages: MetadataRoute.Sitemap = confirmedCodes.map((code) => ({

@@ -8,6 +8,10 @@
 
 // Concrete top-level routes. A single-segment path that matches one of these is
 // a real static page, not a `/:teamCode` landing page.
+//
+// `/feedback` is a removed route but stays listed: `events.path` still holds
+// historical rows for it, and dropping it here would silently reclassify every
+// one of them as a `/:teamCode` country landing page.
 const STATIC_ROUTES = new Set([
   "/",
   "/about",

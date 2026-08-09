@@ -1,2 +1,0 @@
-export const FEEDBACK_MAX_LENGTH = 300;
-export const FEEDBACK_SUBJECT_MAX_LENGTH = 120;

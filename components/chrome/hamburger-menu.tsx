@@ -50,7 +50,6 @@ export function HamburgerMenu({ scrolled, transition }: Props) {
         setHowItWorksOpen(true);
       },
     },
-    { kind: "link", label: "Feedback", href: "/feedback" },
     {
       kind: "link",
       label: "Read my substack",
